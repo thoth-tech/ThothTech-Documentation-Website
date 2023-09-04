@@ -223,6 +223,14 @@ export default defineConfig({
                   autogenerate: {
                     directory: "products/splashkit/documentation",
                   },
+                  items: [
+                    {
+                      label: "Applications",
+                      autogenerate: {
+                        directory: "products/splashkit/documentation/applications",
+                      },
+                    },
+                  ],
                 },
                 {
                   label: "Issues and Resolutions",
