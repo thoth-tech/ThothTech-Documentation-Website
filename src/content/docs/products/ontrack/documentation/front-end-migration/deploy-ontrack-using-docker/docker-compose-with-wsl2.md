@@ -46,12 +46,12 @@ wsl --set-version <distro name> 2
 Once installed, you can either launch the application directly from the store or search for Ubuntu
 in your Windows search bar.
 
-![Search Bar](/public/search_bar.png)
+![Search Bar](/search_bar.png)
 
 Once Ubuntu has finished its initial setup you will need to create a username and password (this
 does not need to match your Windows user credentials).
 
-![Sub System](/public/ubuntu_sub_system.png)
+![Sub System](/ubuntu_sub_system.png)
 
 Finally, it’s always good practice to install the latest updates with the following commands,
 entering your password when prompted.
@@ -64,7 +64,7 @@ sudo apt-get install net-tools (windows/linux installation)
 
 ## Enable Docker Support for WSL2
 
-![Docker Support](/public/dockersupport.png)
+![Docker Support](/dockersupport.png)
 
 1. From the Docker menu, select Settings > General.
 2. Select the Use WSL 2 based engine check box. _If you have installed Docker Desktop on a system
