@@ -75,6 +75,20 @@ img.ontrack {
   align-items: center;
 }
 
+.starlight {
+  --sl-color-gray-1: #545454; /*??*/
+  --sl-color-gray-2: #545454; /*hover outline*/
+  --sl-color-gray-3: #545454; /*Text Colour*/
+  --sl-color-gray-4: #545454; /*??*/
+  --sl-color-gray-5: #2a2a2a; /*non-hover outline*/
+  --sl-color-gray-6: #131313; /*hover background*/
+  --sl-color-black: #545454; /*Text colour light mode*/
+  --sl-color-white: #545454; /*Text colour dark mode*/
+  display: flex;
+  justify-content: center;
+}
+
+
 .artGallery {
   --sl-color-gray-1: #545454; /*??*/
   --sl-color-gray-2: #545454; /*hover outline*/
