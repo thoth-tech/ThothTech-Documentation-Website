@@ -1,5 +1,5 @@
 ---
-title: On Boarding Documentation
+title: Thoth Tech Welcome Package
 ---
 
 We at Thoth Tech are delighted to have you join our team. We want to take a moment to express how
@@ -17,7 +17,8 @@ enhance education outcomes by empowering students, connecting them with tutors, 
 personalised learning experiences
 
 Thoth Tech currently runs with below products/ projects for T2 2023. These projects have respective
-Teams channel (links embedded) for the communications.
+Teams channel (links embedded) for the communications. To get familiar with Thoth Tech, watch this
+short welcome video - <https://video.deakin.edu.au/media/t/1_kbi75vmk>
 
 Once you have selected Thoth Tech as your company you will have access to relevant channels on
 Microsoft teams. For company wide communication you will need to check the
@@ -33,6 +34,9 @@ channel under Thoth Tech
 - [Art Gallery](https://teams.microsoft.com/l/channel/19%3ad3cd3317976a4ae1b35edb32b73e3cef%40thread.tacv2/Art%2520Gallery?groupId=0e15669c-3f66-49aa-b023-640fe1dda2e0&tenantId=d02378ec-1688-46d5-8540-1c28b5f470f6)
 
 - [Company Operations](https://teams.microsoft.com/l/channel/19%3aac7a48118f7d4d12b77c587aa2d0b808%40thread.tacv2/Company%2520Operations?groupId=0e15669c-3f66-49aa-b023-640fe1dda2e0&tenantId=d02378ec-1688-46d5-8540-1c28b5f470f6)
+
+**Please fill out this form to indicate your project of interest:**
+<https://forms.gle/c9HPFvDRAUon9uEk9>
 
 ## Our Culture and Values
 
@@ -177,10 +181,10 @@ Specific Tasks based on your Role:
 
 ## Documentation Website
 
-This website is a location for all Thoth Tech document, it provides ease of access for all Thoth
-Tech employees to be up to date with what is going on in the company. This website is currently
-still in the build stage however, you can catch a glimpse of the work done so far
-[here](https://main--stunning-speculoos-7350f4.netlify.app/)
+This website is a location for all Thoth Tech documents, it provides ease of access for all Thoth
+Tech employees to be up to date with what is going on in the company. Kindly follow this link to
+navigate to the website -
+[https://main--strong-fairy-c1bde1.netlify.app/](https://main--strong-fairy-c1bde1.netlify.app/)
 
 ## Trello Board
 
@@ -239,8 +243,7 @@ work would reside
 
   ![Image 4](/image4.png)
 
-- Once the exe file is downloaded, click and start the installation process
-  ![Image 5](/image5.png)
+- Once the exe file is downloaded, click and start the installation process ![Image 5](/image5.png)
 - Accept the terms and conditions ![Image 6](/image6.png)
 
 - Select the location where you want to store the file ![Image 7](/image7.png)
@@ -258,16 +261,14 @@ work would reside
 
 - For git pull setting select as below ![Image 12](/image12.png)
 
-- Configuring experimental options select both and hit install button
-  ![Image 13](/image13.png)
+- Configuring experimental options select both and hit install button ![Image 13](/image13.png)
 
 - Once installed select “Launch Git Bash” ![Image 14](/image14.png)
 
 - Git Bash would open up ![Image 15](/image15.png)
 
 - In order to work on any Thoth Tech projects or relevant git links you would need to clone and then
-  create pull request for merging the work with the master repository
-  ![Image 16](/image16.png)
+  create pull request for merging the work with the master repository ![Image 16](/image16.png)
 
 ## Getting help in Thoth Tech
 
@@ -304,3 +305,26 @@ company, if you have not read that its important to go through it.
 
 Remember it’s on you to take the initiative and to use all these different means of communicating,
 its not just about being given the answer, but about finding the answer for yourself.
+
+## Support Protocols
+
+1. Ask questions on the forum and wait for reply.
+2. Make good use of the weekly team meetings to resolve any issues or doubts
+3. Key an eye for help and training session ran by the product leads throughout, these will be
+   posted on the team's channel.
+4. Be polite when asking for assistance.
+5. You can ask for help outside of your local team, Thoth Tech is a company full of great students
+   with varying skillsets.
+6. Keep your mentor updated on your progress and ask them questions around Ontrack tasks if you have
+   any.
+
+## Useful Videos
+
+1. Using GitHub: <https://www.linkedin.com/learning/learning-git-and-github-14213624>
+2. Forking a repo in GitHub: <https://video.deakin.edu.au/media/t/1_jt9mit59>
+3. Angular intro guide: <https://www.youtube.com/watch?v=3qBXWUpoPHo&ab_channel=freeCodeCamp.org>
+4. Ruby on Rails intro guide:
+   <https://www.youtube.com/watch?v=wkNR1hG4yOk&list=PLm8ctt9NhMNV75T9WYIrA6m9I_uw7vS>
+5. ASP.net web API:
+   <https://www.youtube.com/watch?v=_8nLSsK5NDo&list=PL82C6-O4XrHdiS10BLh23x71ve9mQCln0&ab_channel=TeddySmith>
+6. Getting started with Trello: <https://www.youtube.com/watch?v=xky48zyL9iA&ab_channel=Trello>
