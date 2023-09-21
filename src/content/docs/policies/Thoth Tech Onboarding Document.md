@@ -308,7 +308,7 @@ its not just about being given the answer, but about finding the answer for your
 
 ## Support Protocols
 
-1. Ask questions on the forum and wait for reply.
+1. Ask questions on the forum and wait for a reply.
 2. Make good use of the weekly team meetings to resolve any issues or doubts
 3. Key an eye for help and training session ran by the product leads throughout, these will be
    posted on the team's channel.
