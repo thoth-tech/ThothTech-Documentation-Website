@@ -3,19 +3,21 @@ title: CourseFlow Software Design Document
 description: Outlines the overall design of the CourseFlow web application.
 ---
 
-- [Introduction](#introduction)
-  - [Problem Definition](#problem-definition)
-  - [Target Audience](#target-audience)
-  - [Scope](#scope)
+- [1. Introduction](#1-introduction)
+  - [1.1 Problem Definition](#11-problem-definition)
+  - [1.2 Target Audience](#12-target-audience)
+  - [1.3 Intended Use](#13-intended-use)
+  - [1.4 Scope](#14-scope)
 - [High-Level Overview and Requirements](#high-level-overview-and-requirements)
   - [User Stories](#user-stories)
-  - [Functional Requirements](#functional-requirements)
+  - [High-Level Requirements](#high-level-requirements)
+  - [Asumptions](#asumptions)
 - [System Architecture](#system-architecture)
   - [Overall System Diagramatic Representation](#overall-system-diagramatic-representation)
   - [Data Flow Diagrams](#data-flow-diagrams)
 
 
-## Introduction
+## 1. Introduction
 
 CourseFlow is a clear and easy-to-use course planning platform that helps students navigate their course requirements and graduate with confidence.
 
@@ -32,7 +34,7 @@ To fully realize this project into a working minimum viable product, this docume
 - A detailed break-down of key components of the overall system.
 
 
-### Problem Definition
+### 1.1 Problem Definition
 
 At Deakin University, a large repertoire of courses are available for potential students to enrol in to help shape their future career goals. Each of these courses will have a set of requirements ranging from minimum credit points achieved, completion of core units and minor/major stream for set units etc. Additionally, the units themselves can also have certain requirements/restrictions such as pre-requisites, co-requisites and minimum number of units completed etc.
 
@@ -40,18 +42,22 @@ These course and unit requirements can prove to be a challenge to keep track off
 
 CourseFlow aims to be that tool which will facilitate an easy-to-use interface for students to plan their degree and be capable of considering course and unit requirements to ensure students can fulfill all requirements of their course.
 
-### Target Audience
+### 1.2 Target Audience
 
 Students who struggle to or simply desire to keep track of and manage their course and unit requirements.
 
-### Scope
+### 1.3 Intended Use
+
+To be used by students studying at Deakin University for the purposes of course planning and tracking.
+
+### 1.4 Scope
 
 A working MVP that aims to have a functioning editable course map for each year and trimester with a saveable state and unit/course requirements handled accordingly.
 
 
 ## High-Level Overview and Requirements
 
-This will provide a high level overview and key requirements of the product.
+This will provide a high-level overview and key requirements of the product.
 
 ### User Stories
 
@@ -63,7 +69,7 @@ This will provide a high level overview and key requirements of the product.
 | As a student, I want to be able to have flexibility in the number units and trimesters I take part in so that I can allow flexibility in my course due to being a part-time student or for general flexibility due to my commitments.|
 | As a student, I want units presented to me to be groupable by categories so that I can easily filter through units based on my selection criteria.                                                                                   |
 
-### Functional Requirements
+### High-Level Requirements
 
 This application requires the following:
 - A selection interface for students to select the course they are studying.
@@ -73,6 +79,15 @@ This application requires the following:
 - Have indicators for unit selection and on the course map if requirements for a unit are not met.
 - A window to show units for selection which are categorized by logical groupings to make it easier to filter units based on user selection criteria.
 - Have the course map state saved at all times.
+
+### Asumptions
+
+At this stage, the key assumption will be that there will be no or limited access to Deakin University’s API to get course and unit information. 
+
+Additionally, as an extension to that, it will be assumed that there will be no or limited access to student information, including their enrolment information and their unit status.
+
+These assumptions are subject to change as the project progresses and will be reviewed again at a later date.
+
 
 ## System Architecture
 
