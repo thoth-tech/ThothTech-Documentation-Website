@@ -3,21 +3,29 @@ title: CourseFlow Software Design Document
 description: Outlines the overall design of the CourseFlow web application.
 ---
 
-- [1. Introduction](#1-introduction)
-  - [1.1 Problem Definition](#11-problem-definition)
-  - [1.2 Target Audience](#12-target-audience)
-  - [1.3 Intended Use](#13-intended-use)
-  - [1.4 Scope](#14-scope)
-- [High-Level Overview and Requirements](#high-level-overview-and-requirements)
-  - [User Stories](#user-stories)
-  - [High-Level Requirements](#high-level-requirements)
-  - [Asumptions](#asumptions)
-- [System Architecture](#system-architecture)
-  - [Overall System Diagramatic Representation](#overall-system-diagramatic-representation)
-  - [Data Flow Diagrams](#data-flow-diagrams)
+- [1 - Introduction](#1---introduction)
+  - [1.1 - Problem Definition](#11---problem-definition)
+  - [1.2 - Target Audience](#12---target-audience)
+  - [1.3 - Intended Use](#13---intended-use)
+  - [1.4 - Scope](#14---scope)
+- [2 - High-Level Overview and Requirements](#2---high-level-overview-and-requirements)
+  - [2.1 - User Stories](#21---user-stories)
+  - [2.2 - High-Level Requirements](#22---high-level-requirements)
+  - [2.3 - Asumptions](#23---asumptions)
+- [3 - System Architecture](#3---system-architecture)
+  - [3.1 Overall System Diagramatic Representation](#31-overall-system-diagramatic-representation)
+  - [3.2 - Data Flow Diagrams](#32---data-flow-diagrams)
+- [4 - Detailed System Design](#4---detailed-system-design)
+  - [4.1 - Technology Stack](#41---technology-stack)
+  - [4.2 - Front-End](#42---front-end)
+    - [4.2.1 - Wireframes](#421---wireframes)
+    - [4.2.1 - UI Designs](#421---ui-designs)
+  - [4.3 - Back-End](#43---back-end)
+    - [4.3.1 - Functional Requirements](#431---functional-requirements)
 
 
-## 1. Introduction
+## 1 - Introduction
+---
 
 CourseFlow is a clear and easy-to-use course planning platform that helps students navigate their course requirements and graduate with confidence.
 
@@ -34,7 +42,7 @@ To fully realize this project into a working minimum viable product, this docume
 - A detailed break-down of key components of the overall system.
 
 
-### 1.1 Problem Definition
+### 1.1 - Problem Definition
 
 At Deakin University, a large repertoire of courses are available for potential students to enrol in to help shape their future career goals. Each of these courses will have a set of requirements ranging from minimum credit points achieved, completion of core units and minor/major stream for set units etc. Additionally, the units themselves can also have certain requirements/restrictions such as pre-requisites, co-requisites and minimum number of units completed etc.
 
@@ -42,24 +50,25 @@ These course and unit requirements can prove to be a challenge to keep track off
 
 CourseFlow aims to be that tool which will facilitate an easy-to-use interface for students to plan their degree and be capable of considering course and unit requirements to ensure students can fulfill all requirements of their course.
 
-### 1.2 Target Audience
+### 1.2 - Target Audience
 
 Students who struggle to or simply desire to keep track of and manage their course and unit requirements.
 
-### 1.3 Intended Use
+### 1.3 - Intended Use
 
 To be used by students studying at Deakin University for the purposes of course planning and tracking.
 
-### 1.4 Scope
+### 1.4 - Scope
 
 A working MVP that aims to have a functioning editable course map for each year and trimester with a saveable state and unit/course requirements handled accordingly.
 
 
-## High-Level Overview and Requirements
+## 2 - High-Level Overview and Requirements
+---
 
 This will provide a high-level overview and key requirements of the product.
 
-### User Stories
+### 2.1 - User Stories
 
 | User Stories                                                                                                                                                                                                                         |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -69,7 +78,7 @@ This will provide a high-level overview and key requirements of the product.
 | As a student, I want to be able to have flexibility in the number units and trimesters I take part in so that I can allow flexibility in my course due to being a part-time student or for general flexibility due to my commitments.|
 | As a student, I want units presented to me to be groupable by categories so that I can easily filter through units based on my selection criteria.                                                                                   |
 
-### High-Level Requirements
+### 2.2 - High-Level Requirements
 
 This application requires the following:
 - A selection interface for students to select the course they are studying.
@@ -80,7 +89,7 @@ This application requires the following:
 - A window to show units for selection which are categorized by logical groupings to make it easier to filter units based on user selection criteria.
 - Have the course map state saved at all times.
 
-### Asumptions
+### 2.3 - Asumptions
 
 At this stage, the key assumption will be that there will be no or limited access to Deakin University’s API to get course and unit information. 
 
@@ -89,16 +98,119 @@ Additionally, as an extension to that, it will be assumed that there will be no 
 These assumptions are subject to change as the project progresses and will be reviewed again at a later date.
 
 
-## System Architecture
+## 3 - System Architecture
+---
 
 The overall system architecture will be provided in this section.
 
-### Overall System Diagramatic Representation
+### 3.1 Overall System Diagramatic Representation
 
 ![CourseFlow System Architecture](/courseflow-system-architecture.png)
 
-### Data Flow Diagrams
+### 3.2 - Data Flow Diagrams
 
 The image shown below represents the data flow between a student on the client side and the CourseFlow system.
 
 ![CourseFlow DFD Level 0](/courseflow-dfd-level-0.png)
+
+## 4 - Detailed System Design
+---
+
+This section will provide in depth detail of the CourseFlow system with respect to the Frontend and the Backend components.
+
+### 4.1 - Technology Stack
+
+Front-End: Angular
+Back-End: ASP.net
+Database: MongoDB
+
+### 4.2 - Front-End
+
+#### 4.2.1 - Wireframes
+
+#### 4.2.1 - UI Designs
+
+### 4.3 - Back-End
+
+There will be 4 major bounded contexts that need to be defined:
+-	Course
+-	Unit
+-	Course Map
+-	User
+
+#### 4.3.1 - Functional Requirements
+
+**Course**
+
+Course data formulates an important aspect of this application. This serves as a base for the course map which will be structured by a student, based on their course requirements.
+
+As such, the endpoints need to be defined based on the following criteria:
+-	Need to be able to get a list of course data.
+-	Need to be able to get a list of course names.
+-	Need to be able to get a specific course by its ID.
+-	Need to be able to add a new course.
+-	Need to be able to update an existing course.
+-	Need to be able to delete an existing course.
+
+The data associated with courses in the context of CourseFlow will have some minimum requirements that will be needed to be presented to the user on the client side. Additionally, this needs to be capable of capturing course requirements (such as minimum credit points, core units etc.) in its data which will be used for logical processes in relation to validation of a student’s course map choices, and as general information on the client side.
+
+The minimum data structure is as follows:
+-	Course Id
+-	Course Name
+-	Course Year
+-	Course Description
+-	Course Requirements
+-	Date Added
+-	Date Modified
+
+It is important to note that at this point in time, as mentioned in the assumptions section, that Deakin’s API access is not available or limited and as such, the addition/update/deletion of course data to the CourseFlow system will need a separate pathway.
+
+**Unit**
+
+Similar to the course data, unit data will also be important due to the planning of the course map and providing requirements to ensure validation in student’s course map choices.
+
+The requirements are as follows:
+-	Need to be able to get a list of all unit data.
+-	Need to be able to filter and get a list of unit data based on user selected criteria.
+-	Need to be able to get a unit data by its id.
+-	Need to be able to add a new unit
+-	Need to be able to update a unit.
+-	Need to be able to delete a unit.
+
+An important aspect of the data that needs to be captured by the unit is the requirements. Requirements can include specific pre-requisite units, co- requisite units and minimum units belonging to a specific Deakin University school (SIT etc.) to be completed.
+
+The minimum data structure is as follows:
+-	Unit Id
+-	Unit Name
+-	Unit Year
+-	Unit Description
+-	Unit Requirements
+-	Date Added
+-	Date Modified
+
+**Course Map**
+
+This is the key aspect of the CourseFlow application and serves as the main solution to the problem defined earlier in this documentation where a student can plan for their course. 
+
+This has the following key requirements:
+-	Be able to save the state of the course map exactly as the user has set on the client side.
+-	Be able to validate choices of units against all unit requirement criteria when a unit is added to the course map.
+-	Be able to validate choices based on all course requirement criteria when a unit is added.
+
+**User**
+
+This will mainly be used to define users of the CourseFlow system, to fetch a user’s course map data via their user id and will be needed for the authentication processes when introduced.
+
+Here are the requirements:
+-	Need to be able to get a list of all user data.
+-	Need to be get a user data by first name and/or last name.
+-	Need to be able to get a user data by id.
+-	Need to be able to add a new user.
+-	Need to be able to update a user.
+-	Need to be able to delete a user.
+
+The following data structure will be required as a minimum:
+-	User Id
+-	User’s Name
+-	Date Added
+-	Date Modified
