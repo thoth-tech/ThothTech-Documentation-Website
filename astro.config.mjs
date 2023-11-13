@@ -121,6 +121,12 @@ export default defineConfig({
                         directory: "products/company-operations/projects/docusaurus-documentation",
                       },
                     },
+                    {
+                      label: "Thoth Tech Website",
+                      autogenerate: {
+                        directory: "products/company-operations/projects/thoth-tech-website",
+                      },
+                    },
                   ],
                 },
                 {
