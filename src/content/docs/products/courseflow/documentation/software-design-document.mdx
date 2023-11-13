@@ -11,9 +11,9 @@ description: Outlines the overall design of the CourseFlow web application.
 - [2 - High-Level Overview and Requirements](#2---high-level-overview-and-requirements)
   - [2.1 - User Stories](#21---user-stories)
   - [2.2 - High-Level Requirements](#22---high-level-requirements)
-  - [2.3 - Asumptions](#23---asumptions)
+  - [2.3 - Assumptions](#23---assumptions)
 - [3 - System Architecture](#3---system-architecture)
-  - [3.1 Overall System Diagramatic Representation](#31-overall-system-diagramatic-representation)
+  - [3.1 Overall System Diagrammatic Representation](#31-overall-system-diagrammatic-representation)
   - [3.2 - Data Flow Diagrams](#32---data-flow-diagrams)
 - [4 - Detailed System Design](#4---detailed-system-design)
   - [4.1 - Technology Stack](#41---technology-stack)
@@ -89,7 +89,7 @@ This application requires the following:
 - A window to show units for selection which are categorized by logical groupings to make it easier to filter units based on user selection criteria.
 - Have the course map state saved at all times.
 
-### 2.3 - Asumptions
+### 2.3 - Assumptions
 
 At this stage, the key assumption will be that there will be no or limited access to Deakin University’s API to get course and unit information. 
 
@@ -103,7 +103,7 @@ These assumptions are subject to change as the project progresses and will be re
 
 The overall system architecture will be provided in this section.
 
-### 3.1 Overall System Diagramatic Representation
+### 3.1 Overall System Diagrammatic Representation
 
 ![CourseFlow System Architecture](/courseflow-system-architecture.png)
 
@@ -120,54 +120,91 @@ This section will provide in depth detail of the CourseFlow system with respect 
 
 ### 4.1 - Technology Stack
 
-Front-End: Angular
-Back-End: ASP.net
-Database: MongoDB
+**Front-End**: Angular
 
-### 4.2 - Front-End
+**Back-End**: ASP.net
 
-#### 4.2.1 - Wireframes
+**Database**: MongoDB
 
-#### 4.2.1 - UI Designs
+### 4.2 - Functional Requirements
 
-### 4.3 - Back-End
+This section will provide a detailed analysis of the key requirements for the CourseFlow application to function correctly.
 
-There will be 4 major bounded contexts that need to be defined:
+#### 4.2.1 - Bounded Contexts
+
+There will be 5 major bounded contexts that need to be defined in this API:
+-	Course Map
+- Requirements
 -	Course
 -	Unit
--	Course Map
 -	User
 
-#### 4.3.1 - Functional Requirements
+**Course Map**
+
+The handling of the course map context contributes to the key function of CourseFlow which is to allow a student to plan their course and see if said plan meets any requirements. As such, it is important that the course map has the structural capabilities to accommodate slots for multiple years, trimesters and units to cater for part-time and full-time students.
+
+This has the following key requirements:
+-	Be able to save the state of the course map exactly as the user has set on the client side.
+-	Have the required data structure to flexibly add/remove years, trimesters and units.
+
+The following data structures are required as a minimum:
+
+```js
+// CourseMap Schema
+{
+  courseMapId: Integer,
+  studentId: Integer,
+  units: CourseMapUnit[] 
+}
+
+// CourseMapUnit Schema
+{
+  courseMapUnitId: Integer,
+  unitId: Integer,
+  yearContainer: String,
+  trimesterContainer: String
+}
+```
+
+** Requirements ** 
+
+The requirements data forms a crucial aspect of this application as it defines requirements/constraints for courses and units that will be utilized to indicate to the user if their course map is valid or not.
 
 **Course**
 
-Course data formulates an important aspect of this application. This serves as a base for the course map which will be structured by a student, based on their course requirements.
+Course data formulates an important aspect of this application for the following reasons:
 
-As such, the endpoints need to be defined based on the following criteria:
+- Students need to select a course from a list of courses (ideally categorized properties such as discipline area or school).
+- The course map will need a course to be set in order to display the correct information in relation to course requirements.
+
+To accommodate for this, endpoints in the API need to be defined based on the following criteria:
 -	Need to be able to get a list of course data.
--	Need to be able to get a list of course names.
+- Need to be able to get a list of course data based on a selection criteria.
 -	Need to be able to get a specific course by its ID.
 -	Need to be able to add a new course.
 -	Need to be able to update an existing course.
 -	Need to be able to delete an existing course.
 
-The data associated with courses in the context of CourseFlow will have some minimum requirements that will be needed to be presented to the user on the client side. Additionally, this needs to be capable of capturing course requirements (such as minimum credit points, core units etc.) in its data which will be used for logical processes in relation to validation of a student’s course map choices, and as general information on the client side.
+The data associated with courses in the context of CourseFlow will have some minimum requirements that will be needed so that it can be presented to the user on the client side. 
 
-The minimum data structure is as follows:
--	Course Id
--	Course Name
--	Course Year
--	Course Description
--	Course Requirements
--	Date Added
--	Date Modified
+Most importantly, course requirements (such as minimum credit points, core units etc.) will also need to be captured in each course.
 
-It is important to note that at this point in time, as mentioned in the assumptions section, that Deakin’s API access is not available or limited and as such, the addition/update/deletion of course data to the CourseFlow system will need a separate pathway.
+As such, the general schema for the course context will be as follows:
+
+| Field        | Type           | Description                                              |
+|--------------|----------------|----------------------------------------------------------|
+| id           | String         | MongoDB auto generated id.                               |
+| name         | String         | Name of course.                                          |
+| description  | String         | Description of the course.                               |
+| year         | Integer        | Respective year of course.                               |
+| categories   | String[]       | A list of string based categories to help group courses. |
+| requirements | Requirements[] | A list of requirements for the course.                   |
+| dateAdded    | Date           | Date this entry was added.                             |
+| dateUpdated  | Date           | Date this entry was updated.                           |
 
 **Unit**
 
-Similar to the course data, unit data will also be important due to the planning of the course map and providing requirements to ensure validation in student’s course map choices.
+Similar to the course data, unit data will also be important for course map planning and ensuring unit requirements are correctly presented to students.
 
 The requirements are as follows:
 -	Need to be able to get a list of all unit data.
@@ -177,25 +214,18 @@ The requirements are as follows:
 -	Need to be able to update a unit.
 -	Need to be able to delete a unit.
 
-An important aspect of the data that needs to be captured by the unit is the requirements. Requirements can include specific pre-requisite units, co- requisite units and minimum units belonging to a specific Deakin University school (SIT etc.) to be completed.
+Much like the course data, an important aspect of the data that needs to be captured by the unit is the requirements. Requirements can include specific pre-requisite units, co-requisite units and minimum number of units belonging to a specific Deakin University school (SIT etc.) to be completed.
 
-The minimum data structure is as follows:
--	Unit Id
--	Unit Name
--	Unit Year
--	Unit Description
--	Unit Requirements
--	Date Added
--	Date Modified
-
-**Course Map**
-
-This is the key aspect of the CourseFlow application and serves as the main solution to the problem defined earlier in this documentation where a student can plan for their course. 
-
-This has the following key requirements:
--	Be able to save the state of the course map exactly as the user has set on the client side.
--	Be able to validate choices of units against all unit requirement criteria when a unit is added to the course map.
--	Be able to validate choices based on all course requirement criteria when a unit is added.
+| Field        | Type           | Description                                            |
+|--------------|----------------|--------------------------------------------------------|
+| id           | String         | MongoDB auto generated id.                             |
+| name         | String         | Name of unt.                                           |
+| description  | String         | Description of the unit.                               |
+| year         | Integer        | Respective year of unit.                               |
+| categories   | String[]       | A list of string based categories to help group units. |
+| requirements | Requirements[] | A list of requirements for the unit.                   |
+| dateAdded    | Date           | Date this entry was added.                             |
+| dateUpdated  | Date           | Date this entry was updated.                           |
 
 **User**
 
@@ -203,14 +233,18 @@ This will mainly be used to define users of the CourseFlow system, to fetch a us
 
 Here are the requirements:
 -	Need to be able to get a list of all user data.
--	Need to be get a user data by first name and/or last name.
--	Need to be able to get a user data by id.
+-	Need to be able to get a user data by username.
 -	Need to be able to add a new user.
 -	Need to be able to update a user.
 -	Need to be able to delete a user.
 
-The following data structure will be required as a minimum:
--	User Id
--	User’s Name
--	Date Added
--	Date Modified
+| Field       | Type   | Description                  |
+|-------------|--------|------------------------------|
+| id          | String | MongoDB auto generated id.   |
+| userName    | String | User's username.             |
+| password    | String | User's hashed password.      |
+| name        | String | User's name.                 |
+| dateAdded   | Date   | Date this entry was added.   |
+| dateUpdated | Date   | Date this entry was updated. |
+
+### 4.3 - UI Designs
