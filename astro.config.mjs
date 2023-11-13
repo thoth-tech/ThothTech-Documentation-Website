@@ -201,6 +201,12 @@ export default defineConfig({
                         directory: "products/ontrack/documentation/numbas",
                       },
                     },
+                    {
+                      label: "Deployment",
+                      autogenerate: {
+                        directory: "products/ontrack/documentation/deployment",
+                      },
+                    },
                   ],
                 },
                 {
