@@ -23,82 +23,109 @@ description: Outlines the overall design of the CourseFlow web application.
   - [4.3 - Back-End](#43---back-end)
     - [4.3.1 - Functional Requirements](#431---functional-requirements)
 
-
 ## 1 - Introduction
+
 ---
 
-CourseFlow is a clear and easy-to-use course planning platform that helps students navigate their course requirements and graduate with confidence.
+CourseFlow is a clear and easy-to-use course planning platform that helps students navigate through
+their course requirements and graduate with confidence.
 
 This product was initially a RapidX project founded in Trimester 1, 2023 by:
-- Mel
-- Kieron
-- Ted
 
-To fully realize this project into a working minimum viable product, this document will utilize previously established foundational work from diagrams, proof of concepts and prototypes to provide these key points:
+- Mel David Bugay
+- Kieron Anthony Boyle
+- Ted Wang
+
+To fully realize this project into a working minimum viable product, this document will utilize
+previously established foundational work from diagrams, proof of concepts and prototypes to provide
+these key coverage points:
 
 - A clear outline of the problem to be solved.
 - A proposed solution.
 - A high level overview of requirements in relation to the problem.
 - A detailed break-down of key components of the overall system.
 
-
 ### 1.1 - Problem Definition
 
-At Deakin University, a large repertoire of courses are available for potential students to enrol in to help shape their future career goals. Each of these courses will have a set of requirements ranging from minimum credit points achieved, completion of core units and minor/major stream for set units etc. Additionally, the units themselves can also have certain requirements/restrictions such as pre-requisites, co-requisites and minimum number of units completed etc.
+At Deakin University, a large repertoire of courses are available for potential students to enrol in
+to help shape their future career goals. Each of these courses will have a set of requirements
+ranging from minimum credit points achieved, completion of core units and completion of minor/major sequences with required
+units etc. Additionally, the units themselves can also have certain requirements/restrictions such
+as pre-requisites, co-requisites and minimum number of units completed etc.
 
-These course and unit requirements can prove to be a challenge to keep track off and manage for some students. As such, there is a need for a tool that can help students plan their course and help them manage their course and unit requirements. This allows them to have a seamless experience with their degree where requirements can easily be managed so that they can focus on their studies and achieve their goals.
+These course and unit requirements can prove to be a challenge to keep track off and manage for some
+students. As such, there is a need for a tool that can help students plan their course and help them
+manage their course and unit requirements. Ultimately, this allows them to have a seamless experience with their
+degree where requirements can easily be managed so that they can focus on their studies and achieve
+their goals.
 
-CourseFlow aims to be that tool which will facilitate an easy-to-use interface for students to plan their degree and be capable of considering course and unit requirements to ensure students can fulfill all requirements of their course.
+### 1.2 - Solution
+
+CourseFlow aims to be a solution to the above defined problem where it will provide as easy-to-use interface for students to plan
+their degree and be capable of considering course and unit requirements.
 
 ### 1.2 - Target Audience
 
-Students who struggle to or simply desire to keep track of and manage their course and unit requirements.
+Students who struggle to or simply desire to keep track of and manage their course and unit
+requirements.
 
 ### 1.3 - Intended Use
 
-To be used by students studying at Deakin University for the purposes of course planning and tracking.
+To be used by students studying at Deakin University for the purposes of course planning and
+tracking.
 
 ### 1.4 - Scope
 
-A working MVP that aims to have a functioning editable course map for each year and trimester with a saveable state and unit/course requirements handled accordingly.
-
+A working MVP that aims to have:
+- A functioning editable and saveable course map for each year and trimester.
+- Requirements for courses and units defined and displayed.
+- Requirements not being met indicated to the user.
+- Query system for course and unit selection based on criteria such as interest area etc.
 
 ## 2 - High-Level Overview and Requirements
+
 ---
 
 This will provide a high-level overview and key requirements of the product.
 
 ### 2.1 - User Stories
 
-| User Stories                                                                                                                                                                                                                         |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| As a student, I want to have my course requirements clearly defined and presented to me so that I know what I need to complete my degree and thus, plan accordingly.                                                                 |
-| As a student, I want to have unit requirements to be clearly defined and presented to me so that I know if I can take a unit or not.                                                                                                 | 
-| As a student, I want to be able to plan ahead for my course and map out all of my units so that I can ensure all requirements of my degree are met.                                                                                  |
-| As a student, I want to be able to have flexibility in the number units and trimesters I take part in so that I can allow flexibility in my course due to being a part-time student or for general flexibility due to my commitments.|
-| As a student, I want units presented to me to be groupable by categories so that I can easily filter through units based on my selection criteria.                                                                                   |
+| User Stories                                                                                                                                                                                                                          |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| As a student, I want to have my course requirements clearly defined and presented to me so that I know what I need to complete my degree and thus, plan accordingly.                                                                  |
+| As a student, I want to have unit requirements to be clearly defined and presented to me so that I know if I can take a unit or not.                                                                                                  |
+| As a student, I want to be able to plan ahead for my course and map out all of my units so that I can ensure all requirements of my degree are met.                                                                                   |
+| As a student, I want to be able to have flexibility in the number units and trimesters I take part in so that I can allow flexibility in my course due to being a part-time student or for general flexibility due to my commitments. |
+| As a student, I want units presented to me to be groupable by categories so that I can easily filter through units based on my selection criteria.                                                                                    |
 
 ### 2.2 - High-Level Requirements
 
 This application requires the following:
+
 - A selection interface for students to select the course they are studying.
-- An interface for students to be able to add/update/remove units, trimesters and years in their course map.
+- An interface for students to be able to add/update/remove units, trimesters and years in their
+  course map.
 - Have course requirements clearly presented to the user.
-- Have indicators to inform user if course requirements have not been met if the course map has been filled.
+- Have indicators to inform user if course requirements have not been met if the course map has been
+  filled.
 - Have indicators for unit selection and on the course map if requirements for a unit are not met.
-- A window to show units for selection which are categorized by logical groupings to make it easier to filter units based on user selection criteria.
+- A window to show units for selection which are categorized by logical groupings to make it easier
+  to filter units based on user selection criteria.
 - Have the course map state saved at all times.
 
 ### 2.3 - Assumptions
 
-At this stage, the key assumption will be that there will be no or limited access to Deakin University’s API to get course and unit information. 
+At this stage, the key assumption will be that there will be no or limited access to Deakin
+University’s API to get course and unit information.
 
-Additionally, as an extension to that, it will be assumed that there will be no or limited access to student information, including their enrolment information and their unit status.
+Additionally, as an extension to that, it will be assumed that there will be no or limited access to
+student information, including their enrolment information and their unit status.
 
-These assumptions are subject to change as the project progresses and will be reviewed again at a later date.
-
+These assumptions are subject to change as the project progresses and will be reviewed again at a
+later date.
 
 ## 3 - System Architecture
+
 ---
 
 The overall system architecture will be provided in this section.
@@ -109,43 +136,52 @@ The overall system architecture will be provided in this section.
 
 ### 3.2 - Data Flow Diagrams
 
-The image shown below represents the data flow between a student on the client side and the CourseFlow system.
+The image shown below represents the data flow between a student on the client side and the
+CourseFlow system.
 
 ![CourseFlow DFD Level 0](/courseflow-dfd-level-0.png)
 
 ## 4 - Detailed System Design
+
 ---
 
-This section will provide in depth detail of the CourseFlow system with respect to the Frontend and the Backend components.
+This section will provide in depth detail of the CourseFlow system with respect to the Frontend and
+the Backend components.
 
 ### 4.1 - Technology Stack
 
 **Front-End**: Angular
 
-**Back-End**: ASP.net
+**Back-End**: Ruby on Rails
 
 **Database**: MongoDB
 
 ### 4.2 - Functional Requirements
 
-This section will provide a detailed analysis of the key requirements for the CourseFlow application to function correctly.
+This section will provide a detailed analysis of the key requirements for the CourseFlow application
+to function correctly.
 
 #### 4.2.1 - Bounded Contexts
 
 There will be 5 major bounded contexts that need to be defined in this API:
--	Course Map
+
+- Course Map
 - Requirements
--	Course
--	Unit
--	User
+- Course
+- Unit
+- User
 
 **Course Map**
 
-The handling of the course map context contributes to the key function of CourseFlow which is to allow a student to plan their course and see if said plan meets any requirements. As such, it is important that the course map has the structural capabilities to accommodate slots for multiple years, trimesters and units to cater for part-time and full-time students.
+The handling of the course map context contributes to the key function of CourseFlow which is to
+allow a student to plan their course and see if said plan meets any requirements. As such, it is
+important that the course map has the structural capabilities to accommodate slots for multiple
+years, trimesters and units to cater for part-time and full-time students.
 
 This has the following key requirements:
--	Be able to save the state of the course map exactly as the user has set on the client side.
--	Have the required data structure to flexibly add/remove years, trimesters and units.
+
+- Be able to save the state of the course map exactly as the user has set on the client side.
+- Have the required data structure to flexibly add/remove years, trimesters and units.
 
 The following data structures are required as a minimum:
 
@@ -154,7 +190,7 @@ The following data structures are required as a minimum:
 {
   courseMapId: Integer,
   studentId: Integer,
-  units: CourseMapUnit[] 
+  units: CourseMapUnit[]
 }
 
 // CourseMapUnit Schema
@@ -166,58 +202,69 @@ The following data structures are required as a minimum:
 }
 ```
 
-** Requirements ** 
+** Requirements **
 
-The requirements data forms a crucial aspect of this application as it defines requirements/constraints for courses and units that will be utilized to indicate to the user if their course map is valid or not.
+The requirements data forms a crucial aspect of this application as it defines
+requirements/constraints for courses and units that will be utilized to indicate to the user if
+their course map is valid or not.
 
 **Course**
 
 Course data formulates an important aspect of this application for the following reasons:
 
-- Students need to select a course from a list of courses (ideally categorized properties such as discipline area or school).
-- The course map will need a course to be set in order to display the correct information in relation to course requirements.
+- Students need to select a course from a list of courses (ideally categorized properties such as
+  discipline area or school).
+- The course map will need a course to be set in order to display the correct information in
+  relation to course requirements.
 
 To accommodate for this, endpoints in the API need to be defined based on the following criteria:
--	Need to be able to get a list of course data.
+
+- Need to be able to get a list of course data.
 - Need to be able to get a list of course data based on a selection criteria.
--	Need to be able to get a specific course by its ID.
--	Need to be able to add a new course.
--	Need to be able to update an existing course.
--	Need to be able to delete an existing course.
+- Need to be able to get a specific course by its ID.
+- Need to be able to add a new course.
+- Need to be able to update an existing course.
+- Need to be able to delete an existing course.
 
-The data associated with courses in the context of CourseFlow will have some minimum requirements that will be needed so that it can be presented to the user on the client side. 
+The data associated with courses in the context of CourseFlow will have some minimum requirements
+that will be needed so that it can be presented to the user on the client side.
 
-Most importantly, course requirements (such as minimum credit points, core units etc.) will also need to be captured in each course.
+Most importantly, course requirements (such as minimum credit points, core units etc.) will also
+need to be captured in each course.
 
 As such, the general schema for the course context will be as follows:
 
 | Field        | Type           | Description                                              |
-|--------------|----------------|----------------------------------------------------------|
+| ------------ | -------------- | -------------------------------------------------------- |
 | id           | String         | MongoDB auto generated id.                               |
 | name         | String         | Name of course.                                          |
 | description  | String         | Description of the course.                               |
 | year         | Integer        | Respective year of course.                               |
 | categories   | String[]       | A list of string based categories to help group courses. |
 | requirements | Requirements[] | A list of requirements for the course.                   |
-| dateAdded    | Date           | Date this entry was added.                             |
-| dateUpdated  | Date           | Date this entry was updated.                           |
+| dateAdded    | Date           | Date this entry was added.                               |
+| dateUpdated  | Date           | Date this entry was updated.                             |
 
 **Unit**
 
-Similar to the course data, unit data will also be important for course map planning and ensuring unit requirements are correctly presented to students.
+Similar to the course data, unit data will also be important for course map planning and ensuring
+unit requirements are correctly presented to students.
 
 The requirements are as follows:
--	Need to be able to get a list of all unit data.
--	Need to be able to filter and get a list of unit data based on user selected criteria.
--	Need to be able to get a unit data by its id.
--	Need to be able to add a new unit
--	Need to be able to update a unit.
--	Need to be able to delete a unit.
 
-Much like the course data, an important aspect of the data that needs to be captured by the unit is the requirements. Requirements can include specific pre-requisite units, co-requisite units and minimum number of units belonging to a specific Deakin University school (SIT etc.) to be completed.
+- Need to be able to get a list of all unit data.
+- Need to be able to filter and get a list of unit data based on user selected criteria.
+- Need to be able to get a unit data by its id.
+- Need to be able to add a new unit
+- Need to be able to update a unit.
+- Need to be able to delete a unit.
+
+Much like the course data, an important aspect of the data that needs to be captured by the unit is
+the requirements. Requirements can include specific pre-requisite units, co-requisite units and
+minimum number of units belonging to a specific Deakin University school (SIT etc.) to be completed.
 
 | Field        | Type           | Description                                            |
-|--------------|----------------|--------------------------------------------------------|
+| ------------ | -------------- | ------------------------------------------------------ |
 | id           | String         | MongoDB auto generated id.                             |
 | name         | String         | Name of unt.                                           |
 | description  | String         | Description of the unit.                               |
@@ -229,17 +276,19 @@ Much like the course data, an important aspect of the data that needs to be capt
 
 **User**
 
-This will mainly be used to define users of the CourseFlow system, to fetch a user’s course map data via their user id and will be needed for the authentication processes when introduced.
+This will mainly be used to define users of the CourseFlow system, to fetch a user’s course map data
+via their user id and will be needed for the authentication processes when introduced.
 
 Here are the requirements:
--	Need to be able to get a list of all user data.
--	Need to be able to get a user data by username.
--	Need to be able to add a new user.
--	Need to be able to update a user.
--	Need to be able to delete a user.
+
+- Need to be able to get a list of all user data.
+- Need to be able to get a user data by username.
+- Need to be able to add a new user.
+- Need to be able to update a user.
+- Need to be able to delete a user.
 
 | Field       | Type   | Description                  |
-|-------------|--------|------------------------------|
+| ----------- | ------ | ---------------------------- |
 | id          | String | MongoDB auto generated id.   |
 | userName    | String | User's username.             |
 | password    | String | User's hashed password.      |
