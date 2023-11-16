@@ -49,20 +49,22 @@ these key coverage points:
 
 At Deakin University, a large repertoire of courses are available for potential students to enrol in
 to help shape their future career goals. Each of these courses will have a set of requirements
-ranging from minimum credit points achieved, completion of core units and completion of minor/major sequences with required
-units etc. Additionally, the units themselves can also have certain requirements/restrictions such
-as pre-requisites, co-requisites and minimum number of units completed etc.
+ranging from minimum credit points achieved, completion of core units and completion of minor/major
+sequences with required units etc. Additionally, the units themselves can also have certain
+requirements/restrictions such as pre-requisites, co-requisites and minimum number of units
+completed etc.
 
 These course and unit requirements can prove to be a challenge to keep track off and manage for some
 students. As such, there is a need for a tool that can help students plan their course and help them
-manage their course and unit requirements. Ultimately, this allows them to have a seamless experience with their
-degree where requirements can easily be managed so that they can focus on their studies and achieve
-their goals.
+manage their course and unit requirements. Ultimately, this allows them to have a seamless
+experience with their degree where requirements can easily be managed so that they can focus on
+their studies and achieve their goals.
 
 ### 1.2 - Solution
 
-CourseFlow aims to be a solution to the above defined problem where it will provide as easy-to-use interface for students to plan
-their degree and be capable of considering course and unit requirements.
+CourseFlow aims to be a solution to the above defined problem where it will provide as easy-to-use
+interface for students to plan their degree and be capable of considering course and unit
+requirements.
 
 ### 1.2 - Target Audience
 
@@ -77,6 +79,7 @@ tracking.
 ### 1.4 - Scope
 
 A working MVP that aims to have:
+
 - A functioning editable and saveable course map for each year and trimester.
 - Requirements for courses and units defined and displayed.
 - Requirements not being met indicated to the user.
@@ -91,7 +94,7 @@ This section will provide a high-level overview and key requirements of the prod
 ### 2.1 - User Stories
 
 | User Stories                                                                                                                                                                                                                          |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | As a student, I want to have my course requirements clearly defined and presented to me so that I know what I need to complete my degree and thus, plan accordingly.                                                                  |
 | As a student, I want to have unit requirements to be clearly defined and presented to me so that I know if I can take a unit or not.                                                                                                  |
 | As a student, I want to be able to plan ahead for my course and map out all of my units so that I can ensure all requirements of my degree are met.                                                                                   |
@@ -99,20 +102,21 @@ This section will provide a high-level overview and key requirements of the prod
 | As a student, I want courses and units presented to me to be groupable by categories so that I can easily filter through units based on my selection criteria.                                                                        |
 | As a student, I want to be able to choose a course or unit based on my interest area so that I can study in areas I have interest in and would like to work in.                                                                       |
 
-
 ### 2.2 - High-Level Requirements
 
 This application requires the following:
 
-- A selection interface for students to select the course they are studying.
+- A selection interface for students to select the course they are studying or want to study with a
+  query system to filter out courses based on factors such as interest area.
+- Have course requirements clearly presented to the user with completion indication based on the
+  current course map.
 - An interface for students to be able to add/update/remove units, trimesters and years in their
-  course map.
-- Have course requirements clearly presented to the user.
-- Have indicators to inform user if course requirements have not been met if the course map has been
-  filled.
-- Have indicators for unit selection and on the course map if requirements for a unit are not met.
-- A window to show units for selection which are categorized by logical groupings to make it easier
-  to filter units based on user selection criteria.
+  course map. with indications for requirements being met or not.
+- A system for selection of units with a query system to filter out units based on factors such as
+  interest area. to filter units based on user selection criteria either through drop down
+  selections or a series of questions.
+- Core units for the course and units belonging to a major/minor sequence needs to be easily
+  accessible to the user.
 - Have the course map state saved at all times.
 
 ### 2.3 - Assumptions
@@ -124,7 +128,7 @@ Additionally, as an extension to that, it will be assumed that there will be no 
 student information, including their enrolment information and their unit status.
 
 These assumptions are subject to change as the project progresses and will be reviewed again at a
-later date.
+later date and updated in this document accordingly.
 
 ## 3 - System Architecture
 
@@ -158,12 +162,7 @@ the Backend components.
 
 **Database**: MongoDB
 
-### 4.2 - Functional Requirements
-
-This section will provide a detailed analysis of the key requirements for the CourseFlow application
-to function correctly.
-
-#### 4.2.1 - Bounded Contexts
+### 4.2 - Bounded Contexts
 
 There will be 5 major bounded contexts that need to be defined in this API:
 
