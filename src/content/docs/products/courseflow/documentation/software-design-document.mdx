@@ -162,36 +162,38 @@ the Backend components.
 
 ### 4.2 - Feature Requirements
 
-This section will provide more detail on the requirements listed earlier as clear features. This
-will also provide context to the backend APIs that need to be defined and what their role will be in
-supporting these features.
+Features of CourseFlow will be described here in more detail. This will also provide context to the
+backend APIs that need to be defined and what their role will be in supporting these features.
 
 **Editable Course Map**
 
-- The initial presentation of the course map will be based on course selection.
+- The initial presentation of the course map will be based on the course selected.
 - Course requirements, along with progression to completing said requirements will need to be
   clearly presented to the user.
   - This will be achieved by comparing the current set units in the course map against the course
     requirements.
-- Each unit that has been set needs to be able to be dragged and dropped into other slots or into
-  other units which will trigger a swap between the unit positions.
+- Course map needs to be able to support units being dragged and dropped into slots.
+  - Additionally, each unit that has been set needs to be able to be dragged and dropped into other
+    slots or into other units which will trigger a swap between the unit positions.
+- Need to be able to add/remove year containers, trimester contains and unit slot containers.
 - The exact state of the course map in terms of unit placement in a specific year and trimester
   container needs to be saved at all times.
+- To cater for units being removed from the map (making some units potentially invalid) and to allow
+  users to set a unit regardless of validity, the unit display on the course map needs to have a
+  visual indicator to inform the user of invalid units.
+- A panel is required to display a unit's requirements and the progression to meeting those
+  requirements upon clicking on the respective UI element (button etc.).
 
 **Course Selection**
 
 - This will be presented to the user if the user is not associated with a course map or if they want
   to change their course choice.
 - A query system will need to be implemented where either drop down menus or a series of questions
-  will be presented to the user to gauge what their interest areas are (and other forms of
-  categorization of courses and units).
-  - As such, courses and units will be associated with categories to support this system.
-  - For the purposes of the MVP, this will be manually set. Future iterations of this application
-    can explore the use of Machine Learning to categorize units and courses based on their textual
-    description.
+  will be presented to the user to gauge what their interest areas are.
+  - For the purposes of the MVP, interest areas will be manually set. Future iterations of this
+    application can explore the use of Machine Learning to categorize units and courses based on
+    their textual description.
   - Queries will be used to get back course data with the respective matching selection criteria.
-- Course requirements will need to be a part of the course data that is requests from the client
-  side.
 
 **Unit Selection**
 
@@ -205,20 +207,12 @@ supporting these features.
   be valid for selection based on the current course map settings.
   - This is not a restriction in placing a unit and just a visual indicator so that users are aware
     they do not meet the requirements with their current settings.
-- To cater for units being removed from the map (making some units potentially invalid) and to allow
-  users to set a unit regardless of validity, the unit display on the course map needs to have a
-  visual indicator to inform the user of invalid units.
-- A panel is required to display a unit's requirements and the progression to meeting those
-  requirements upon clicking on the respective UI element (button etc.).
 
 **Requirements Indicators**
 
-- This has already been mentioned in the previous features but worth adding as a feature of
-  CourseFlow as it forms an integral part of this application.
-- Course requirements with the current progress needs to be displayed in an interface.
-- Unit requirements such as pre-requisites etc. needs an interface to be displayed with current
-  progress to meeting those requirements where applicable (completing 2 SIT coded units for
-  example).
+- Course requirements with the current progress needs to be displayed.
+- Unit requirements such as pre-requisites etc. needs to be displayed with current progress to
+  meeting those requirements where applicable (completing 2 SIT coded units for example).
 - To accommodate for these requirements, course and unit data will need to contain their respective
   requirements and compared to the current course map settings to update the appropriate visuals.
 
@@ -246,7 +240,8 @@ is the units field, which contains a CourseMapUnit array to hold a user's set un
 | dateUpdated | Date            | Date this entry was updated.                |
 
 Displaying the units correctly in their respective year, trimester and positional slot will be
-handled by the front end by using the fields defined in the course map unit model as shown below.
+handled by the front end by using the returned data with the fields defined in the course map unit
+model as shown below.
 
 | Field              | Type   | Description                                     |
 | ------------------ | ------ | ----------------------------------------------- |
@@ -276,14 +271,14 @@ that will be needed so that it can be presented to the user on the client side.
 Most importantly, course requirements (such as minimum credit points, core units etc.) will also
 need to be captured in each course (requirements details provided later in this section).
 
-Furthermore, to accommodate the query system that will be used to categorize courses based on
+Furthermore, to accommodate for the query system that will be used to categorize courses based on
 criteria, this data also needs to include an array of strings consisting of interest areas.
 
 As such, the model for the course will be as follows:
 
 | Field         | Type           | Description                                     |
 | ------------- | -------------- | ----------------------------------------------- |
-| id            | String         | MongoDB auto generated id.                      |
+| courseId      | String         | MongoDB auto generated id.                      |
 | name          | String         | Name of course.                                 |
 | description   | String         | Description of the course.                      |
 | year          | Integer        | Respective year of course.                      |
@@ -302,7 +297,9 @@ The required endpoints will be:
 | PUT /course/courseId    | Updates an existing course via its id.                | Course       | Course        |
 | DELETE /course/courseId | Deletes an existing course via its id.                | None         | None          |
 
-Please note, at this point in time, default course data will be added to the database. Further considerations will be made once more options are available in handling of course data (separate stream to add data, Deakin API access).
+Please note, at this point in time, default course data will be added to the database. Further
+considerations will be made once more options are available in handling of course data (separate
+stream to add data such as an admin role access to CourseFlow, Deakin API access).
 
 **Unit**
 
@@ -318,7 +315,7 @@ Additionally, units will also be grouped by interest areas.
 
 | Field         | Type           | Description                                     |
 | ------------- | -------------- | ----------------------------------------------- |
-| id            | String         | MongoDB auto generated id.                      |
+| unitId        | String         | MongoDB auto generated id.                      |
 | name          | String         | Name of unt.                                    |
 | description   | String         | Description of the unit.                        |
 | year          | Integer        | Respective year of unit.                        |
@@ -337,33 +334,38 @@ The endpoints that are required:
 | PUT /unit/unitId      | Updates an existing unit via its id.                | Unit         | Unit          |
 | DELETE /unit/unitId   | Deletes an existing unit via its id.                | None         | None          |
 
-Please note, at this point in time, default unit data will be added to the database. Further considerations will be made once more options are available in handling of course data (separate stream to add data, Deakin API access).
+Please note, at this point in time, default unit data will be added to the database. Further
+considerations will be made once more options are available in handling of course data (separate
+stream to add data such as an admin role access to CourseFlow, Deakin API access).
 
 **User**
 
-This will mainly be used to define users of the CourseFlow system, to fetch a user’s course map data
-via their user id and will be needed for the authentication processes when introduced.
-
-Here are the requirements:
-
-- Need to be able to get a list of all user data.
-- Need to be able to get a user data by username.
-- Need to be able to add a new user.
-- Need to be able to update a user.
-- Need to be able to delete a user.
+This will mainly be used to define users of the CourseFlow system so that we have a user id to match
+with course map data. This will also be important for authentication and authorization (if needed)
+when these features are introduced.
 
 | Field       | Type   | Description                  |
 | ----------- | ------ | ---------------------------- |
-| id          | String | MongoDB auto generated id.   |
+| userId      | String | MongoDB auto generated id.   |
 | userName    | String | User's username.             |
 | password    | String | User's hashed password.      |
 | name        | String | User's name.                 |
 | dateAdded   | Date   | Date this entry was added.   |
 | dateUpdated | Date   | Date this entry was updated. |
 
+Endpoints required:
+
+| Endpoint            | Description                          | Request Body | Response Body |
+| ------------------- | ------------------------------------ | ------------ | ------------- |
+| GET /user           | Get all user data.                   | None         | User[]        |
+| GET /user/username  | Get a user by username query param.  | None         | User[]        |
+| POST /user          | Add a new user.                      | User         | User          |
+| PUT /user/userId    | Updates an existing user via its id. | Unit         | User          |
+| DELETE /user/userId | Deletes an existing user via its id. | None         | None          |
+
 **Requirements**
 
-This model will play an important role with defining the requirements of a courses and units which
+This model will play an important role with defining the requirements of courses and units which
 will be used on the client side to update visuals for the user.
 
 An approach to handle this is to have a base Requirement model that has a field to define the type
@@ -417,7 +419,9 @@ As more courses and units are added, more requirement types will be added accord
 
 This will be the development plan in order of priorities:
 
-1. Gather course data (will focus on adding one course first which will likely be the Bachelor of Computer Science) and place the required information in a json file - this will be the default course data.
+1. Gather course data (will focus on adding one course first which will likely be the Bachelor of
+   Computer Science) and place the required information in a json file - this will be the default
+   course data.
 2. Gather some unit data and add to json file - this will be the default data.
 3. Define the endpoints for the CourseFlow backend and the database.
 4. Create some tests in Postman to ensure all endpoints are working properly.
