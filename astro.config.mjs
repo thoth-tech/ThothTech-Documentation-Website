@@ -124,7 +124,7 @@ export default defineConfig({
                     {
                       label: "Thoth Tech Website",
                       autogenerate: {
-                        directory: "products/company-operations/projects/thoth-tech-website",
+                        directory: "products/company-operations/projects/Thoth-Tech-Website",
                       },
                     },
                   ],
