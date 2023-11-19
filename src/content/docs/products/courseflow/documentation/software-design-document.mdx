@@ -220,51 +220,6 @@ backend APIs that need to be defined and what their role will be in supporting t
 
 ### 4.3 - API and Data Requirements
 
-**Course Map**
-
-The handling of the course map contributes to the key function of CourseFlow which is to allow a
-student to plan their course. Through the units being set into the course map, a student will then
-be able to see if requirements for the course and unit are being met.
-
-A core requirement mentioned earlier with regards to this is the containers to represent a year,
-trimester and a unit slot. To avoid nesting the data within these groups, an alternative solution is
-to have a list of units and have fields for year, trimester and slots.
-
-As such, the data can be modelled as shown below to achieve this result. Here, the key point to note
-is the units field, which contains a CourseMapUnit array to hold a user's set units.
-
-| Field       | Type            | Description                                 |
-| ----------- | --------------- | ------------------------------------------- |
-| courseMapId | String          | MongoDB auto generated id.                  |
-| studentId   | String          | Student id that this course map belongs to. |
-| units       | CourseMapUnit[] | A list of course map unit data.             |
-| dateAdded   | Date            | Date this entry was added.                  |
-| dateUpdated | Date            | Date this entry was updated.                |
-
-Displaying the units correctly in their respective year, trimester and positional slot will be
-handled by the front end by using the returned data with the fields defined in the course map unit
-model as shown below.
-
-| Field              | Type   | Description                                     |
-| ------------------ | ------ | ----------------------------------------------- |
-| unitId             | String | Unit id of the added unit.                      |
-| yearContainer      | int    | The year container this unit was added to.      |
-| trimesterContainer | int    | The trimester container this unit was added to. |
-| slotContainer      | int    | The slot container this unit was added to.      |
-
-The endpoints that will be required:
-
-| Endpoint                      | Description                                             | Request Body | Response Body |
-| ----------------------------- | ------------------------------------------------------- | ------------ | ------------- |
-| GET /coursemap/studentId      | Get the course map with all of its data via student id. | None         | CourseMap     |
-| POST /coursemap               | Add a new course map for a student.                     | CourseMap    | CourseMap     |
-| PUT /coursemap/coursemapId    | Updates an existing course map via its id.              | CourseMap    | CourseMap     |
-| DELETE /coursemap/coursemapId | Deletes an existing course map via its id.              | None         | None          |
-
-An important thing to note with the above endpoints is that manipulation of units (add, remove,
-swapping two units) will trigger an update to the entire course map for a student. This simplifies
-handling of updating course unit data when performing drag and drop swaps between two units.
-
 **Course**
 
 The data associated with courses in the context of CourseFlow will have some minimum requirements
@@ -280,7 +235,7 @@ As such, the model for the course will be as follows:
 
 | Field         | Type           | Description                                     |
 | ------------- | -------------- | ----------------------------------------------- |
-| courseId      | String         | MongoDB auto generated id.                      |
+| courseId      | String         | Auto generated id.                              |
 | name          | String         | Name of course.                                 |
 | description   | String         | Description of the course.                      |
 | year          | Integer        | Respective year of course.                      |
@@ -317,7 +272,7 @@ Additionally, units will also be grouped by interest areas.
 
 | Field         | Type           | Description                                     |
 | ------------- | -------------- | ----------------------------------------------- |
-| unitId        | String         | MongoDB auto generated id.                      |
+| unitId        | String         | Auto generated id.                              |
 | name          | String         | Name of unt.                                    |
 | description   | String         | Description of the unit.                        |
 | year          | Integer        | Respective year of unit.                        |
@@ -342,28 +297,53 @@ stream to add data such as an admin role access to CourseFlow, Deakin API access
 
 **User**
 
-This will mainly be used to define users of the CourseFlow system so that we have a user id to match
-with course map data. This will also be important for authentication and authorization (if needed)
-when these features are introduced.
+The user will play an important role in storing the user's respective course map and also, some
+general information such as name, username and password. Outside of this, the user model will also
+be required for authentication/authorization purposes once these features are introduced.
 
-| Field       | Type   | Description                  |
-| ----------- | ------ | ---------------------------- |
-| userId      | String | MongoDB auto generated id.   |
-| userName    | String | User's username.             |
-| password    | String | User's hashed password.      |
-| name        | String | User's name.                 |
-| dateAdded   | Date   | Date this entry was added.   |
-| dateUpdated | Date   | Date this entry was updated. |
+The data wil be modelled as shown in the table below:
+
+| Field       | Type            | Description                  |
+| ----------- | --------------- | ---------------------------- |
+| userId      | String          | Auto generated id.           |
+| userName    | String          | User's username.             |
+| password    | String          | User's hashed password.      |
+| name        | String          | User's name.                 |
+| courseMap   | CourseMapUnit[] | Course map data.             |
+| dateAdded   | Date            | Date this entry was added.   |
+| dateUpdated | Date            | Date this entry was updated. |
 
 Endpoints required:
 
 | Endpoint            | Description                          | Request Body | Response Body |
 | ------------------- | ------------------------------------ | ------------ | ------------- |
 | GET /user           | Get all user data.                   | None         | User[]        |
-| GET /user/username  | Get a user by username query param.  | None         | User[]        |
+| GET /user/username  | Get a user by username query param.  | None         | User          |
 | POST /user          | Add a new user.                      | User         | User          |
 | PUT /user/userId    | Updates an existing user via its id. | Unit         | User          |
 | DELETE /user/userId | Deletes an existing user via its id. | None         | None          |
+
+The handling of the course map contributes to a key function of CourseFlow which is to allow a
+student to plan their course. Through the units being set into the course map, a student will then
+be able to see if requirements for the course and unit are being met.
+
+A core requirement mentioned earlier with regards to this is the containers to represent a year,
+trimester and a unit. To avoid nesting the data within these groups inside the database, an
+alternative solution is to have a list of units and have fields for the respective year, trimester
+and unit containers that will be populated on the client side web application.
+
+As such, the CourseMapUnit structure can be modelled as shown below to achieve this result.
+
+| Field              | Type   | Description                                     |
+| ------------------ | ------ | ----------------------------------------------- |
+| unitId             | String | Unit id of the added unit.                      |
+| yearContainer      | int    | The year container this unit was added to.      |
+| trimesterContainer | int    | The trimester container this unit was added to. |
+| slotContainer      | int    | The slot container this unit was added to.      |
+
+In the user data model, it simply needs to keep track of an array of this course map unit data
+(stored as a json object). Displaying the units correctly in their respective year, trimester and
+positional slot will be handled by the front end by using the returned data.
 
 **Requirements**
 
