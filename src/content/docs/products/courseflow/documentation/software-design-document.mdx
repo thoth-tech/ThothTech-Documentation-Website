@@ -160,7 +160,7 @@ the Backend components.
 
 **Back-End**: Ruby on Rails
 
-**Database**: MongoDB
+**Database**: Sqlite3
 
 ### 4.2 - Feature Requirements
 
@@ -190,11 +190,11 @@ backend APIs that need to be defined and what their role will be in supporting t
 
 - This will be presented to the user if the user is not associated with a course map or if they want
   to change their course choice.
-- A query system will need to be implemented where either drop down menus or a series of questions
-  will be presented to the user to gauge what their interest areas are.
-  - For the purposes of the MVP, interest areas will be manually set. Future iterations of this
-    application can explore the use of Machine Learning to categorize units and courses based on
-    their textual description.
+- A query system for interests will need to be implemented to gauge what a user's interest areas
+  are.
+  - For the purposes of the MVP, interest areas will be manually set when adding courses. Future
+    iterations of this application can explore the use of Machine Learning to categorize units and
+    courses based on their textual description.
   - Queries will be used to get back course data with the respective matching selection criteria.
 
 **Unit Selection**
@@ -229,30 +229,33 @@ Most importantly, course requirements (such as minimum credit points, core units
 need to be captured in each course (requirements details provided later in this section).
 
 Furthermore, to accommodate for the query system that will be used to categorize courses based on
-criteria, this data also needs to include an array of strings consisting of interest areas.
+interest area, this data also needs to include an array of strings to represent each interest areas.
+For reference to ensure clarity, interest areas will include categories such as Application
+Development, Game Development, Animation etc...
 
 As such, the model for the course will be as follows:
 
-| Field         | Type           | Description                                     |
-| ------------- | -------------- | ----------------------------------------------- |
-| courseId      | String         | Auto generated id.                              |
-| name          | String         | Name of course.                                 |
-| description   | String         | Description of the course.                      |
-| year          | Integer        | Respective year of course.                      |
-| interestAreas | String[]       | A list of interest areas to help group courses. |
-| requirements  | Requirements[] | A list of requirements for the course.          |
-| dateAdded     | Date           | Date this entry was added.                      |
-| dateUpdated   | Date           | Date this entry was updated.                    |
+| Field        | Type           | Description                                |
+| ------------ | -------------- | ------------------------------------------ |
+| courseId     | Integer        | Auto generated id.                         |
+| name         | String         | Name of course.                            |
+| description  | String         | Description of the course.                 |
+| year         | Integer        | Respective year of course.                 |
+| interests    | String[]       | A list of interests to help group courses. |
+| requirements | Requirements[] | A list of requirements for the course.     |
+| dateAdded    | Date           | Date this entry was added.                 |
+| dateUpdated  | Date           | Date this entry was updated.               |
 
 The required endpoints will be:
 
-| Endpoint                | Description                                           | Request Body | Response Body |
-| ----------------------- | ----------------------------------------------------- | ------------ | ------------- |
-| GET /course             | Get all course data.                                  | None         | Course[]      |
-| GET /course/queryParams | Get all course data that match with the query params. | None         | Course[]      |
-| POST /course            | Add a new course.                                     | Course       | Course        |
-| PUT /course/courseId    | Updates an existing course via its id.                | Course       | Course        |
-| DELETE /course/courseId | Deletes an existing course via its id.                | None         | None          |
+| Endpoint                 | Description                                              | Request Body | Response Body |
+| ------------------------ | -------------------------------------------------------- | ------------ | ------------- |
+| GET /courses             | Get all course data.                                     | None         | Course[]      |
+| GET /courses/courseId    | Get a course by id.                                      | None         | Course        |
+| GET /courses/interests   | Get all course data that match with the interest params. | None         | Course[]      |
+| POST /courses            | Add a new course.                                        | Course       | Course        |
+| PUT /courses/courseId    | Updates an existing course via its id.                   | Course       | Course        |
+| DELETE /courses/courseId | Deletes an existing course via its id.                   | None         | None          |
 
 Please note, at this point in time, default course data will be added to the database. Further
 considerations will be made once more options are available in handling of course data (separate
@@ -268,28 +271,31 @@ the requirements. Requirements can include specific pre-requisite units, co-requ
 minimum number of units belonging to a specific Deakin University school (SIT etc.) to be completed
 (details on requirements later in this section).
 
-Additionally, units will also be grouped by interest areas.
+Additionally, units will also be categorized by interest areas.
 
-| Field         | Type           | Description                                     |
-| ------------- | -------------- | ----------------------------------------------- |
-| unitId        | String         | Auto generated id.                              |
-| name          | String         | Name of unt.                                    |
-| description   | String         | Description of the unit.                        |
-| year          | Integer        | Respective year of unit.                        |
-| interestAreas | String[]       | A list of interest areas to help group courses. |
-| requirements  | Requirements[] | A list of requirements for the unit.            |
-| dateAdded     | Date           | Date this entry was added.                      |
-| dateUpdated   | Date           | Date this entry was updated.                    |
+The unit model will be as follows:
+
+| Field        | Type           | Description                              |
+| ------------ | -------------- | ---------------------------------------- |
+| unitId       | Integer        | Auto generated id.                       |
+| name         | String         | Name of unt.                             |
+| description  | String         | Description of the unit.                 |
+| year         | Integer        | Respective year of unit.                 |
+| interests    | String[]       | A list of interests to help group units. |
+| requirements | Requirements[] | A list of requirements for the unit.     |
+| dateAdded    | Date           | Date this entry was added.               |
+| dateUpdated  | Date           | Date this entry was updated.             |
 
 The endpoints that are required:
 
-| Endpoint              | Description                                         | Request Body | Response Body |
-| --------------------- | --------------------------------------------------- | ------------ | ------------- |
-| GET /unit             | Get all unit data.                                  | None         | Unit[]        |
-| GET /unit/queryParams | Get all unit data that match with the query params. | None         | Unit[]        |
-| POST /unit            | Add a new unit.                                     | Unit         | Unit          |
-| PUT /unit/unitId      | Updates an existing unit via its id.                | Unit         | Unit          |
-| DELETE /unit/unitId   | Deletes an existing unit via its id.                | None         | None          |
+| Endpoint            | Description                                           | Request Body | Response Body |
+| ------------------- | ----------------------------------------------------- | ------------ | ------------- |
+| GET /unit           | Get all unit data.                                    | None         | Unit[]        |
+| GET /unit/unitId    | Get unit by id.                                       | None         | Unit          |
+| GET /unit/interests | Get all unit data that match with the interest param. | None         | Unit[]        |
+| POST /unit          | Add a new unit.                                       | Unit         | Unit          |
+| PUT /unit/unitId    | Updates an existing unit via its id.                  | Unit         | Unit          |
+| DELETE /unit/unitId | Deletes an existing unit via its id.                  | None         | None          |
 
 Please note, at this point in time, default unit data will be added to the database. Further
 considerations will be made once more options are available in handling of course data (separate
@@ -305,7 +311,7 @@ The data wil be modelled as shown in the table below:
 
 | Field       | Type            | Description                  |
 | ----------- | --------------- | ---------------------------- |
-| userId      | String          | Auto generated id.           |
+| userId      | Integer         | Auto generated id.           |
 | userName    | String          | User's username.             |
 | password    | String          | User's hashed password.      |
 | name        | String          | User's name.                 |
@@ -341,21 +347,14 @@ As such, the CourseMapUnit structure can be modelled as shown below to achieve t
 | trimesterContainer | int    | The trimester container this unit was added to. |
 | slotContainer      | int    | The slot container this unit was added to.      |
 
-In the user data model, it simply needs to keep track of an array of this course map unit data
-(stored as a json object). Displaying the units correctly in their respective year, trimester and
-positional slot will be handled by the front end by using the returned data.
+In the user data model, it simply needs to keep track of an array of this course map unit data.
+Displaying the units correctly in their respective year, trimester and positional slot will be
+handled by the front end by using the returned data.
 
 **Requirements**
 
 This model will play an important role with defining the requirements of courses and units which
 will be used on the client side to update visuals for the user.
-
-An approach to handle this is to have a base Requirement model that has a field to define the type
-of requirement it is.
-
-| Field           | Type   | Description              |
-| --------------- | ------ | ------------------------ |
-| requirementType | String | Requirement type string. |
 
 Requirement types can be defined as a string (or Enum) and some examples include:
 
@@ -366,23 +365,20 @@ Requirement types can be defined as a string (or Enum) and some examples include
 | PreRequisite        |
 | CoRequisite         |
 
-For specific requirements, we can either inherit from the base requirement type or simply define a
-flexible model that has the requirement type field and a second field that defines the requirement.
+To handle the specific requirements, we can model the data with the requirement type and the requirement definition.
 
-As an example, take minimum credit points, either approach mentioned above will result in a model
-that looks like:
+As an example, for minimum credit points, the model will look like the table below.
 
 | Field               | Type   | Description                      |
 | ------------------- | ------ | -------------------------------- |
 | requirementTpe      | String | Requirement type string.         |
 | minimumCreditPoints | int    | Minimum number of credit points. |
 
-In the course or units data, their list of requirements will then contain the above model with the
+In the course or units data, their list of requirements will then contain the above model as an entry with the
 respective minimum credit points type and an integer defining the actual credit points requirement
 (24 for example).
 
-Pre-requisite will have a list of unit string ids which can then be utilized to get the respective
-unit information and thus display it accordingly on the client side:
+Another example includes pre-requisites, which will have a list of unit string ids, along with a requirement type that may be labelled as "pre-requisites".
 
 | Field               | Type     | Description                                        |
 | ------------------- | -------- | -------------------------------------------------- |
