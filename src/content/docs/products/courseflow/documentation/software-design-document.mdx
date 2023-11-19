@@ -365,7 +365,8 @@ Requirement types can be defined as a string (or Enum) and some examples include
 | PreRequisite        |
 | CoRequisite         |
 
-To handle the specific requirements, we can model the data with the requirement type and the requirement definition.
+To handle the specific requirements, we can model the data with the requirement type and the
+requirement definition.
 
 As an example, for minimum credit points, the model will look like the table below.
 
@@ -374,11 +375,12 @@ As an example, for minimum credit points, the model will look like the table bel
 | requirementTpe      | String | Requirement type string.         |
 | minimumCreditPoints | int    | Minimum number of credit points. |
 
-In the course or units data, their list of requirements will then contain the above model as an entry with the
-respective minimum credit points type and an integer defining the actual credit points requirement
-(24 for example).
+In the course or units data, their list of requirements will then contain the above model as an
+entry with the respective minimum credit points type and an integer defining the actual credit
+points requirement (24 for example).
 
-Another example includes pre-requisites, which will have a list of unit string ids, along with a requirement type that may be labelled as "pre-requisites".
+Another example includes pre-requisites, which will have a list of unit string ids, along with a
+requirement type that may be labelled as "pre-requisites".
 
 | Field               | Type     | Description                                        |
 | ------------------- | -------- | -------------------------------------------------- |
