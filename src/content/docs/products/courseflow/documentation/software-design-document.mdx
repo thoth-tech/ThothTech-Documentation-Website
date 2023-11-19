@@ -99,7 +99,6 @@ This section will provide a high-level overview and key requirements of the prod
 | As a student, I want to have unit requirements to be clearly defined and presented to me so that I know if I can take a unit or not.                                                                                                  |
 | As a student, I want to be able to plan ahead for my course and map out all of my units so that I can ensure all requirements of my degree are met.                                                                                   |
 | As a student, I want to be able to have flexibility in the number units and trimesters I take part in so that I can allow flexibility in my course due to being a part-time student or for general flexibility due to my commitments. |
-| As a student, I want courses and units presented to me to be groupable by categories so that I can easily filter through units based on my selection criteria.                                                                        |
 | As a student, I want to be able to choose a course or unit based on my interest area so that I can study in areas I have interest in and would like to work in.                                                                       |
 
 ### 2.2 - High-Level Requirements
@@ -113,8 +112,7 @@ This application requires the following:
 - An interface for students to be able to add/update/remove units, trimesters and years in their
   course map. with indications for requirements being met or not.
 - A system for selection of units with a query system to filter out units based on factors such as
-  interest area. to filter units based on user selection criteria either through drop down
-  selections or a series of questions.
+  interest area.
 - Core units for the course and units belonging to a major/minor sequence needs to be easily
   accessible to the user.
 - Have the course map state saved at all times.
@@ -201,8 +199,8 @@ backend APIs that need to be defined and what their role will be in supporting t
 
 - There are two key parts to this feature:
   - Core units of any kind will be shown to the user in an easy to access manner. This can be
-    through a course based template or through a window with course units already present and ready
-    to be drag and dropped.
+    through a course based template or through a window with core units already present and ready to
+    be drag and dropped.
   - Electives will have a separate interface and much like the course, will also need a query system
     to filter units based on user criteria such as interest area.
 - In both of the above mentioned key parts, units will need to have a clear indicator if they will
@@ -288,17 +286,17 @@ The unit model will be as follows:
 
 The endpoints that are required:
 
-| Endpoint            | Description                                           | Request Body | Response Body |
-| ------------------- | ----------------------------------------------------- | ------------ | ------------- |
-| GET /unit           | Get all unit data.                                    | None         | Unit[]        |
-| GET /unit/unitId    | Get unit by id.                                       | None         | Unit          |
-| GET /unit/interests | Get all unit data that match with the interest param. | None         | Unit[]        |
-| POST /unit          | Add a new unit.                                       | Unit         | Unit          |
-| PUT /unit/unitId    | Updates an existing unit via its id.                  | Unit         | Unit          |
-| DELETE /unit/unitId | Deletes an existing unit via its id.                  | None         | None          |
+| Endpoint             | Description                                           | Request Body | Response Body |
+| -------------------- | ----------------------------------------------------- | ------------ | ------------- |
+| GET /units           | Get all unit data.                                    | None         | Unit[]        |
+| GET /units/unitId    | Get unit by id.                                       | None         | Unit          |
+| GET /units/interests | Get all unit data that match with the interest param. | None         | Unit[]        |
+| POST /units          | Add a new unit.                                       | Unit         | Unit          |
+| PUT /units/unitId    | Updates an existing unit via its id.                  | Unit         | Unit          |
+| DELETE /units/unitId | Deletes an existing unit via its id.                  | None         | None          |
 
 Please note, at this point in time, default unit data will be added to the database. Further
-considerations will be made once more options are available in handling of course data (separate
+considerations will be made once more options are available in handling of unit data (separate
 stream to add data such as an admin role access to CourseFlow, Deakin API access).
 
 **User**
@@ -435,12 +433,12 @@ requirement with progress tracking.
 
 This will be the development plan in order of priorities:
 
-1. Gather course data (will focus on adding one course first which will likely be the Bachelor of
+1. Define the endpoints for the CourseFlow backend.
+2. Create some tests in Postman to ensure all endpoints are working properly.
+3. Gather course data (will focus on adding one course first which will likely be the Bachelor of
    Computer Science) and place the required information in a json file - this will be the default
-   course data.
-2. Gather some unit data and add to json file - this will be the default data.
-3. Define the endpoints for the CourseFlow backend and the database.
-4. Create some tests in Postman to ensure all endpoints are working properly.
-5. Mock up the UI/UX designs.
+   course data for development.
+4. Gather some unit data and add to json file - this will be the default data for development.
+5. Make more detailed UI/UX designs that expand on the wireframes already done.
 6. Implement the designs for the frontend.
 7. Connect the frontend with the backend.
