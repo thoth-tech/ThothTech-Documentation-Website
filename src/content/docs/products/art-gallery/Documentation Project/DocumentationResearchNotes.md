@@ -1,3 +1,8 @@
+---
+title: DocumentationResearchNotes
+---
+
+
 # Indigenous Art Gallery
 
 ## Documentation/Knowledge Bases: Research

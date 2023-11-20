@@ -1,3 +1,8 @@
+---
+title: DockerizationResearchNotes
+---
+
+
 # Dockerization: Preliminary Research
 
 ## Chloe Hulme

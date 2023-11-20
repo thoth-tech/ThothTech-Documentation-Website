@@ -1,3 +1,8 @@
+---
+title: DocumentationContentDiscussion
+---
+
+
 # Indigenous Art Gallery
 
 ## Documentation Content Discussion

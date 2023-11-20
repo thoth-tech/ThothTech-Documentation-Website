@@ -1,4 +1,9 @@
-﻿## CI/CD Mock Pipeline
+﻿---
+title: CICDPipeline
+---
+
+
+## CI/CD Mock Pipeline
 
 **Author:** Ayan Masood, [amasood@deakin.edu.au](mailto:amasood@deakin.edu.au)
 

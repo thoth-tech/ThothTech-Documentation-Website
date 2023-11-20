@@ -1,3 +1,7 @@
+---
+title: NET8Migration
+---
+
 # A Complete Guide: Migrating the Art Gallery API to .NET8
 
 Author: Chloe Hulme

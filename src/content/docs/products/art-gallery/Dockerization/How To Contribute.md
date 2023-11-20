@@ -1,3 +1,8 @@
+---
+title: How to Contribute
+---
+
+
 #Summary: how to contribute to repo# ##Written by Chloe Hulme##
 
 **Fork repo in GUI (only needs to be done once per repo at the start) -> then clone forked repo into

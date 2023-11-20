@@ -1,3 +1,8 @@
+---
+title: LighthouseReviewReport
+---
+
+
 # Report on task: Review Research from T1 and create backlog
 
 I have reviewed two reports on the Lighthouse scores and identified the issues that needed to be

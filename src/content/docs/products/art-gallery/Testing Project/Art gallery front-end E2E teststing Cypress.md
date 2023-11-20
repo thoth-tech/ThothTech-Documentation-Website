@@ -1,3 +1,8 @@
+---
+title: Art gallery front-end E2E teststing Cypress
+---
+
+
 # Running the Art Gallery site – Windows
 
 ## Cypress has been added to the project develpoment and requires no addtional dependancies.

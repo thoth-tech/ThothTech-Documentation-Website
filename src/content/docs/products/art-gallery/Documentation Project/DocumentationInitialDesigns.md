@@ -1,3 +1,8 @@
+---
+title: DocumentationInitialDesigns
+---
+
+
 # Indigenous Art Gallery
 
 ## Documentation Knowledge Base Initial Designs

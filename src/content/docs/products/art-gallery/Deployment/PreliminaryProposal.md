@@ -1,4 +1,8 @@
-﻿# Preliminary Proposal
+﻿---
+title: PreliminaryProposal
+---
+
+# Preliminary Proposal
 
 **Author:** Ayan Masood, amasood@deakin.edu.au
 

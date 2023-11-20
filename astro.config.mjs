@@ -83,21 +83,41 @@ export default defineConfig({
                   link: "/products/art-gallery/example",
                 },
                 {
-                  label: "Projects",
+                  label: "BackendUpgrades",
                   autogenerate: {
-                    directory: "products/art-gallery/projects",
+                    directory: "products/art-gallery/BackendUpgrades",
                   },
                 },
                 {
-                  label: "Documentation",
+                  label: "Deployment",
                   autogenerate: {
-                    directory: "products/art-gallery/documentation",
+                    directory: "products/art-gallery/Deployment",
                   },
                 },
                 {
-                  label: "Issues and Resolutions",
+                  label: "Documentation Project",
                   autogenerate: {
-                    directory: "products/art-gallery/issues-and-resolution",
+                    directory: "products/art-gallery/Documentation Project",
+                  },
+                  items: [
+                    {
+                      label: "Documentation Design Sketchesn",
+                      autogenerate: {
+                        directory: "products/art-gallery/Documentation Project/Documentation Design Sketchesn",
+                      },
+                    },
+                  ],
+                },
+                {
+                  label: "Lighthouse Project",
+                  autogenerate: {
+                    directory: "products/art-gallery/Lighthouse Project",
+                  },
+                },
+                {
+                  label: "Testing Project",
+                  autogenerate: {
+                    directory: "products/art-gallery/Testing Projectt",
                   },
                 },
               ],

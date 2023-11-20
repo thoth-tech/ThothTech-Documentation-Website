@@ -1,3 +1,8 @@
+---
+title: DockerizationProjextOutline
+---
+
+
 # Indigenous Art Gallery
 
 ## Dockerization project outline

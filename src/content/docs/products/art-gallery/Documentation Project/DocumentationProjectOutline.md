@@ -1,3 +1,8 @@
+---
+title: DocumentationProjectOutline
+---
+
+
 # Indigenous Art Gallery
 
 ## Documentation Project Outline

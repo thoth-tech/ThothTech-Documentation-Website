@@ -1,3 +1,8 @@
+---
+title: Art gallery front-end Unit testting setup Vitest
+---
+
+
 #### Requirements for running the front end unit tests
 
 #### vitest has been added to the project with dependencies listed below

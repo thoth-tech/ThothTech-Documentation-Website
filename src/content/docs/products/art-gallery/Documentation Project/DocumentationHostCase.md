@@ -1,3 +1,8 @@
+---
+title: DocumentationHostCase
+---
+
+
 # Indigenous Art Gallery
 
 ## Documentation Host Case

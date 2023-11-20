@@ -1,3 +1,7 @@
+---
+title: Art gallery site setup guide
+---
+
 # Running the Art Gallery site – Windows
 
 ## Programs required:
