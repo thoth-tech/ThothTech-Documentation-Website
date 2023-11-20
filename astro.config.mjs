@@ -124,7 +124,7 @@ export default defineConfig({
                     {
                       label: "Thoth Tech Website",
                       autogenerate: {
-                        directory: "products/company-operations/projects/thoth-tech-website",
+                        directory: "products/company-operations/projects/Thoth-Tech-Website",
                       },
                     },
                   ],
@@ -199,6 +199,12 @@ export default defineConfig({
                       label: "Numbas",
                       autogenerate: {
                         directory: "products/ontrack/documentation/numbas",
+                      },
+                    },
+                    {
+                      label: "Deployment",
+                      autogenerate: {
+                        directory: "products/ontrack/documentation/deployment",
                       },
                     },
                   ],
