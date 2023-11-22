@@ -30,11 +30,13 @@ sidebar:
 
 ### Purpose
 
-The worklog is designed to record and track various work activities. It is a valuable tool for monitoring individual and team productivity, analyzing time allocation, and summarizing tasks.
+The worklog is designed to record and track various work activities. It is a valuable tool for
+monitoring individual and team productivity, analyzing time allocation, and summarizing tasks.
 
 ### Structure
 
-The document comprises rows and columns. Each row represents a unique activity entry, and columns hold specific information related to each activity.
+The document comprises rows and columns. Each row represents a unique activity entry, and columns
+hold specific information related to each activity.
 
 ## Column Descriptions
 
