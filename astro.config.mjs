@@ -85,7 +85,7 @@ export default defineConfig({
                 {
                   label: "Projects",
                   autogenerate: {
-                    directory: "products/art-gallery/projects",
+                    directory: "products/art-gallery/Projects",
                   },
                   items: [
                     {
@@ -111,7 +111,7 @@ export default defineConfig({
                 {
                   label: "Issues and Resolutions",
                   autogenerate: {
-                    directory: "products/art-gallery/issues-and-resolutions",
+                    directory: "products/art-gallery/Issues-and-Resolutions",
                   },
                 },
               ],
