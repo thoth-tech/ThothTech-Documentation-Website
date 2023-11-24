@@ -80,9 +80,12 @@ git push -u origin main
 
 - Netlify will create your Astro site by automatically detecting the settings for your project.
 
-Automatic deployments are offered by Netlify anytime you push updates to your linked Git repository. A fresh deployment is initiated with every push to the main branch.
+Automatic deployments are offered by Netlify anytime you push updates to your linked Git repository.
+A fresh deployment is initiated with every push to the main branch.
 
-Well done! On Netlify, your Astro website is now active. If you have set up a custom domain, you can use it to access it instead of the Netlify domain that is provided. Every time you push changes to your repository, Netlify will take care of the build and deployment procedure automatically.
+Well done! On Netlify, your Astro website is now active. If you have set up a custom domain, you can
+use it to access it instead of the Netlify domain that is provided. Every time you push changes to
+your repository, Netlify will take care of the build and deployment procedure automatically.
 
 For further detailed explanation, please refer to these helpful links below:
 
@@ -91,4 +94,3 @@ For further detailed explanation, please refer to these helpful links below:
 2. https://docs.netlify.com/welcome/add-new-site/
 
 3. https://dev.to/whitep4nth3r/how-to-deploy-an-astro-site-m8h
-
