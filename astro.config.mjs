@@ -3,7 +3,7 @@ import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [
+    integrations: [
     starlight({
       title: "Thoth Tech",
       customCss: ["./src/styles/custom.css"],
@@ -160,15 +160,6 @@ export default defineConfig({
                   label: "Documentation",
                   autogenerate: {
                     directory: "products/courseflow/documentation",
-                    directory: "products/courseflow/Documentation",
-                    items: [
-                      {
-                        label: "Meeting Minutes",
-                        autogenerate: {
-                          directory: "/products/courseflow/Documentation/Meeting-Minutes",
-                        },
-                      },
-                    ]
                   },
                 },
                 {
