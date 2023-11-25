@@ -12,14 +12,7 @@ sidebar:
 - [Column Descriptions](#column-descriptions)
   - [Name](#name)
   - [Date of Activity](#date-of-activity)
-  - [Duration](#duration)
-  - [Activity type](#activity-type)
-  - [Short Description](#short-description)
-  - [Evidence](#evidence)
-- [Data Entry Guidelines](#data-entry-guidelines)
-  - [Name](#name)
-  - [Date of Activity](#date-of-activity)
-  - [Duration](#duration)
+  - [Duration in Minutes](#duration-in-minutes)
   - [Activity type](#activity-type)
   - [Short Description](#short-description)
   - [Evidence](#evidence)
@@ -50,7 +43,7 @@ hold specific information related to each activity.
 - Purpose: Records the date when the activity occurred.
 - Usage: Input the date in a consistent format (6/11/2023).
 
-### Duration (Minutes)
+### Duration in Minutes
 
 - Purpose: Indicates the duration of the activity in minutes.
 - Usage: Enter the time spent on the activity in minutes.
@@ -69,29 +62,3 @@ hold specific information related to each activity.
 
 - Purpose: Contains links or references to Trello task cards as evidence of the completed activity.
 - Usage: Enter the Trello task card links or references for documentation.
-
-## Data Entry Guidelines
-
-### Name
-
-Enter the name of the person associated with the activity.
-
-### Date of Activity
-
-Input the date in the specified format (DD/MM/YYYY).
-
-### Duration (Minutes)
-
-Enter the time spent on the activity in minutes.
-
-### Activity Type
-
-Select the appropriate activity type from the list.
-
-### Short Description
-
-Provide a concise description of the task or activity.
-
-### Evidence
-
-Enter the Trello task card links or references for documentation.
