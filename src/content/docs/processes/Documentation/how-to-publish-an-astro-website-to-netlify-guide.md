@@ -14,7 +14,7 @@ online by following these steps.
 ### - Node.js and npm
 
 Ensure that Node.js and npm are installed on your machine. You can download and install them from
-https://nodejs.org/.
+<https://nodejs.org/>.
 
 ### - Astrol CLI
 
@@ -64,7 +64,7 @@ git push -u origin main
 
 ### 5. Set up Netlify
 
-- Go to https://www.netlify.com/ and sign in or create a new account.
+- Go to <https://www.netlify.com/> and sign in or create a new account.
 
 - "Click on "New site from Git" on the Netlify dashboard.
 
@@ -89,8 +89,8 @@ your repository, Netlify will take care of the build and deployment procedure au
 
 For further detailed explanation, please refer to these helpful links below:
 
-1. https://docs.astro.build/en/guides/deploy/netlify/
+1. <https://docs.astro.build/en/guides/deploy/netlify/>
 
-2. https://docs.netlify.com/welcome/add-new-site/
+2. <https://docs.netlify.com/welcome/add-new-site/>
 
-3. https://dev.to/whitep4nth3r/how-to-deploy-an-astro-site-m8h
+3. <https://dev.to/whitep4nth3r/how-to-deploy-an-astro-site-m8h>
