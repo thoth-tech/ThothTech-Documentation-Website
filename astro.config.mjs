@@ -83,6 +83,14 @@ export default defineConfig({
                   link: "/products/art-gallery/example",
                 },
                 {
+                  label: "Art Gallery Project",
+                  link: "products/art-gallery/Documentation/_2023T2-handover",
+                },
+                {
+                  label: "Postman Workspace and Collection Guide",
+                  link: "products/art-gallery/Documentation/_Postman.README",
+                },
+                {
                   label: "Projects",
                   autogenerate: {
                     directory: "products/art-gallery/Projects",
@@ -95,9 +103,9 @@ export default defineConfig({
                       },
                     },
                     {
-                      label: "Dockerization",
+                      label: "Testing Project",
                       autogenerate: {
-                        directory: "products/art-gallery/Projects/dockerization",
+                        directory: "products/art-gallery/Projects/Testing Project",
                       },
                     },
                   ],
@@ -107,6 +115,32 @@ export default defineConfig({
                   autogenerate: {
                     directory: "products/art-gallery/Documentation",
                   },
+                  items: [
+                    {
+                      label: "BackendUpgrades",
+                      autogenerate: {
+                        directory: "products/art-gallery/Documentation/BackendUpgrades",
+                      },
+                    },
+                    {
+                      label: "Deployment",
+                      autogenerate: {
+                        directory: "products/art-gallery/Documentation/Deployment",
+                      },
+                    },
+                    {
+                      label: "Dockerization",
+                      autogenerate: {
+                        directory: "products/art-gallery/Documentation/Dockerization",
+                      },
+                    },
+                    {
+                      label: "Documentation Project",
+                      autogenerate: {
+                        directory: "products/art-gallery/Documentation/Documentation Project",
+                      },
+                    },
+                  ],
                 },
                 {
                   label: "Issues and Resolutions",
