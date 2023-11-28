@@ -87,17 +87,31 @@ export default defineConfig({
                   autogenerate: {
                     directory: "products/art-gallery/projects",
                   },
+                  items: [
+                    {
+                      label: "Lighthouse",
+                      autogenerate: {
+                        directory: "products/art-gallery/Projects/Lighthouse",
+                      },
+                    },
+                    {
+                      label: "Dockerization",
+                      autogenerate: {
+                        directory: "products/art-gallery/Projects/dockerization",
+                      },
+                    },
+                  ],
                 },
                 {
                   label: "Documentation",
                   autogenerate: {
-                    directory: "products/art-gallery/documentation",
+                    directory: "products/art-gallery/Documentation",
                   },
                 },
                 {
                   label: "Issues and Resolutions",
                   autogenerate: {
-                    directory: "products/art-gallery/issues-and-resolution",
+                    directory: "products/art-gallery/issues-and-resolutions",
                   },
                 },
               ],
@@ -124,7 +138,7 @@ export default defineConfig({
                     {
                       label: "Thoth Tech Website",
                       autogenerate: {
-                        directory: "products/company-operations/projects/thoth-tech-website",
+                        directory: "products/company-operations/projects/Thoth-Tech-Website",
                       },
                     },
                   ],
@@ -153,7 +167,7 @@ export default defineConfig({
                 {
                   label: "Projects",
                   autogenerate: {
-                    directory: "products/courseflow/projects",
+                    directory: "products/courseflow/Projects",
                   },
                 },
                 {
@@ -169,12 +183,13 @@ export default defineConfig({
                         },
                       },
                     ]
+                    directory: "products/courseflow/Documentation",
                   },
                 },
                 {
                   label: "Issues and Resolutions",
                   autogenerate: {
-                    directory: "products/courseflow/issues-and-resolution",
+                    directory: "products/courseflow/issues-and-resolutions",
                   },
                 },
               ],
@@ -210,12 +225,18 @@ export default defineConfig({
                         directory: "products/ontrack/documentation/numbas",
                       },
                     },
+                    {
+                      label: "Deployment",
+                      autogenerate: {
+                        directory: "products/ontrack/documentation/deployment",
+                      },
+                    },
                   ],
                 },
                 {
                   label: "Issues and Resolutions",
                   autogenerate: {
-                    directory: "products/ontrack/issues-and-resolution",
+                    directory: "products/ontrack/issues-and-resolutions",
                   },
                 },
               ],
@@ -238,19 +259,19 @@ export default defineConfig({
                   autogenerate: {
                     directory: "products/splashkit/documentation",
                   },
-                  items: [
-                    {
-                      label: "Applications",
-                      autogenerate: {
-                        directory: "products/splashkit/documentation/applications",
-                      },
-                    },
-                  ],
+                  // items: [
+                  //   {
+                  //     label: "Applications",
+                  //     autogenerate: {
+                  //       directory: "products/splashkit/documentation/applications",
+                  //     },
+                  //   },
+                  // ],
                 },
                 {
                   label: "Issues and Resolutions",
                   autogenerate: {
-                    directory: "products/splashkit/issues-and-resolution",
+                    directory: "products/splashkit/issues-and-resolutions",
                   },
                 },
               ],
