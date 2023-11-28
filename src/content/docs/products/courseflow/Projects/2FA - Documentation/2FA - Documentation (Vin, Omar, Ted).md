@@ -2,10 +2,6 @@
 title: CourseFlow Website - Two Factor Authentication (2FA)
 ---
 
-## Documentation
-
-Sovinhou Ung Hazratomar Hassanzada Ted Wang_
-
 ## Introduction
 
 2FA, also known as 2 factor authentication. It is an extra layer of security used to protect user
@@ -50,7 +46,7 @@ done through the language JavaScript.
 
 ## User Interface (UI) Components
 
-Login Page_
+Login Page\_
 
 The user is redirected to a login page, here the user would log in and have an easily accessible and
 concise way of enabling 2FA. A simple yet effective way of doing this would be to add a checkbox.
@@ -58,7 +54,7 @@ concise way of enabling 2FA. A simple yet effective way of doing this would be t
 After enabling there would be a form of visual cue that shows the 2FA has been set up for the
 specified account, this could be through a visual cue.
 
-Registration Page_
+Registration Page\_
 
 The registration page is important as the user would set up their account initially. Here the user
 would be prompted to turn on 2FA right away.

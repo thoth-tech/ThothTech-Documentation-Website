@@ -174,17 +174,15 @@ export default defineConfig({
                   label: "Documentation",
                   autogenerate: {
                     directory: "products/courseflow/documentation",
-                    directory: "products/courseflow/Documentation",
-                    items: [
-                      {
-                        label: "Meeting Minutes",
-                        autogenerate: {
-                          directory: "/products/courseflow/Documentation/Meeting-Minutes",
-                        },
-                      },
-                    ]
-                    directory: "products/courseflow/Documentation",
                   },
+                  items: [
+                    {
+                      label: "Meeting Minutes",
+                      autogenerate: {
+                        directory: "products/courseflow/Documentation/Meeting-Minutes",
+                      },
+                    },
+                  ],
                 },
                 {
                   label: "Issues and Resolutions",
