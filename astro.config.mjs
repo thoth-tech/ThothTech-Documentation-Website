@@ -83,14 +83,6 @@ export default defineConfig({
                   link: "/products/art-gallery/example",
                 },
                 {
-                  label: "Art Gallery Project",
-                  link: "products/art-gallery/Documentation/_2023T2-handover",
-                },
-                {
-                  label: "Postman Workspace and Collection Guide",
-                  link: "products/art-gallery/Documentation/_Postman.README",
-                },
-                {
                   label: "Projects",
                   autogenerate: {
                     directory: "products/art-gallery/Projects",
@@ -138,6 +130,12 @@ export default defineConfig({
                       label: "Documentation Project",
                       autogenerate: {
                         directory: "products/art-gallery/Documentation/Documentation Project",
+                      },
+                    },
+                    {
+                      label: "Guidance",
+                      autogenerate: {
+                        directory: "products/art-gallery/Documentation/Guidance",
                       },
                     },
                   ],
