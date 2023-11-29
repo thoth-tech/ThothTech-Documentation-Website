@@ -257,6 +257,14 @@ export default defineConfig({
                   //     },
                   //   },
                   // ],
+                   items: [
+                     {
+                       label: "Tutorials",
+                       autogenerate: {
+                         directory: "products/splashkit/documentation/tutorials",
+                       },
+                     },
+                   ],
                 },
                 {
                   label: "Issues and Resolutions",
