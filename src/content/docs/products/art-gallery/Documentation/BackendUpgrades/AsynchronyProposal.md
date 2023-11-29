@@ -1,5 +1,7 @@
 ---
-title: Proposal:Leveraging Asynchrony in our C# API for Improved Performance and Responsiveness into the Future
+title:
+  Proposal:Leveraging Asynchrony in our C# API for Improved Performance and Responsiveness into the
+  Future
 ---
 
 Author: Chloe Hulme

@@ -2,7 +2,6 @@
 title: Report on Upskilling
 ---
 
-
 ## JavaScript basics with HTML and CSS
 
 I have spent some time upskilling to contribute to this project. So far, I have learnt the basics of

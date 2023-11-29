@@ -1,4 +1,6 @@
-# CI/CD Technologies
+---
+title: CI/CD Technologies
+---
 
 Author: Chloe Hulme
 

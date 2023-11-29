@@ -3,7 +3,7 @@ title: Dockerization feasibility check
 ---
 
 
-**Capstone SIT374 - Chloe Hulme**
+## Capstone SIT374 - Chloe Hulme
 
 _Preamble_
 

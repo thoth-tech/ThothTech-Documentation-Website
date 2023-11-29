@@ -2,7 +2,6 @@
 title: Documentation Project Outline
 ---
 
-
 ### Aim
 
 The aim of this project is to produce a knowledge base that can be utilized by members of the Art

@@ -2,8 +2,6 @@
 title: Running the Art Gallery site – Windows
 ---
 
-
-
 ## Programs required:
 
 **Nodejs**

@@ -1,4 +1,6 @@
-# 2023 T2 Handover - Art Gallery Project
+---
+title: 2023 T2 Handover - Art Gallery Project
+---
 
 Author: Chloe Hulme (Product Lead)
 

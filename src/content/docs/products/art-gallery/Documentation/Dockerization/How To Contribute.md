@@ -2,19 +2,18 @@
 title: Summary:how to contribute to repo# ##Written by Chloe Hulme
 ---
 
-
 **Fork repo in GUI (only needs to be done once per repo at the start) -> then clone forked repo into
 a local directory:**
 
 git clone <<http://> etc... the link from the repo>
 
-**Creating a new branch:**
+## Creating a new branch:
 
 git checkout -b <topic>/<branch description>
 
 _Using 'checkout' will automatically switch you onto this branch_
 
-**After making your changes:**
+## After making your changes:
 
 git add .
 
@@ -23,7 +22,7 @@ git commit ------>> press **'i**' key to edit then: <topic>:<message>, hit **esc
 
 git push -u origin <your new branch name>
 
-**Creating a draft pull request:**
+## Creating a draft pull request:
 
 Go into GUI and create a draft pull request **(pull request will be between Thoth Techs file vs your
 repo's file, ie. Thoth tech/Art Gallery/README.md vs My Forked Repo/Art Gallery/README.md)**, add in

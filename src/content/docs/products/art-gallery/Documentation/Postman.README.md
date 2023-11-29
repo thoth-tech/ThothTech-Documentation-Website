@@ -2,7 +2,6 @@
 title: Postman Workspace and Collection Guide
 ---
 
-
 Author: Chloe Hulme
 
 ## Introduction

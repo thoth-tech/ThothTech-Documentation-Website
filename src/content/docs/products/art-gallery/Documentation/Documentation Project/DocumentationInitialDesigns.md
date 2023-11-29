@@ -2,7 +2,6 @@
 title: Documentation Knowledge Base Initial Designs
 ---
 
-
 ### Preamble
 
 This document displays and explains some of the initial design sketches created during

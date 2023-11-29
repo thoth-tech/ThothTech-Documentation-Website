@@ -2,7 +2,6 @@
 title: Documentation Host Case
 ---
 
-
 ### Preamble
 
 This was a case created during contact with Andrew Cain concerning hosting options for a BookStack

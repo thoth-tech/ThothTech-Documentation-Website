@@ -2,8 +2,7 @@
 title: Dockerization project outline
 ---
 
-
-**Capstone SIT374 - Chloe Hulme**
+## Capstone SIT374 - Chloe Hulme
 
 _Aim_
 

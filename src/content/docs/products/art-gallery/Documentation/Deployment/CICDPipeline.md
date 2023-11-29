@@ -2,16 +2,16 @@
 title: CI/CD Mock Pipeline
 ---
 
-**Author:** Ayan Masood, [amasood@deakin.edu.au](mailto:amasood@deakin.edu.au)
+## Author: Ayan Masood, [amasood@deakin.edu.au](mailto:amasood@deakin.edu.au)
 
-**Introduction**
+## Introduction
 
 This document contains a step-by-step guide on CI/CD Pipeline integration within the processes of
 the online Art Gallery application. It will go over steps to setup tests for both CI and CD in order
 to ensure all commits to the GitHub repository and changes to Google Cloud Platform (GCP) meet
 requirements set.
 
-**CI Tests**
+## CI Tests
 
 Tests will need to be included in the **art-gallery/.github/workflows/ci.yml** file. To add tests
 the defined environments have to be added under the “steps” line in the yml file.
@@ -73,7 +73,7 @@ identification and Prettier support for formatting style of all commits. These t
 on both pull and push requests in the repository. It also sets up Node.js and, Vale for prose
 checks.
 
-**Additional Tests**
+## Additional Tests
 
 Testing and building a Docker image and tagging with timestamp and date for traceability:
 
@@ -115,7 +115,7 @@ Security and code formatting issues with ESLint for JavaScript applications:
 
 `wait-for-processing: true`
 
-**CD Tests**
+## CD Tests
 
 A new cd YAML file can be created in the workflows path with all information related to deploying
 code on commits which affect the running of the application. An extremely helpful video on editing

@@ -2,7 +2,6 @@
 title: Identify other front end testing tools - SEO
 ---
 
-
 ## Adrienne Gelbhauer
 
 ## SEO Considerations, Testing and Analysis Tools

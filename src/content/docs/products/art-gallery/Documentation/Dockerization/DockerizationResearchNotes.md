@@ -40,7 +40,7 @@ complete this, as well as projected timelines and useful tutorials.
 
 **To build container:**
 
-`docker build - -rm -t productive-dev/proj-name:latest .` ^^ must be run inside root directory of
+`docker build --rm -t productive-dev/proj-name:latest .` ^^ must be run inside root directory of
 project
 
 `docker image ls -> lists built images (use to check if built)`

@@ -2,7 +2,6 @@
 title: Project Report
 ---
 
-
 # _Rhonda Jorgensen_
 
 ## Capstone SIT374 - Part A

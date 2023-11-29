@@ -2,7 +2,6 @@
 title: Technical notes for the backend testing
 ---
 
-
 #### Information and Dependencies
 
 Programming Language and Framework: programming language and framework used in the backend project

@@ -2,7 +2,6 @@
 title: Documentation/Knowledge Bases:Research
 ---
 
-
 ### Preamble
 
 The aim of this research is to better understand how BookStack can be used to produce a knowledge

@@ -2,7 +2,6 @@
 title: Running the Art Gallery site – Window
 ---
 
-
 ## Cypress has been added to the project develpoment and requires no addtional dependancies.
 
 [Cypress](https://www.cypress.io/)
