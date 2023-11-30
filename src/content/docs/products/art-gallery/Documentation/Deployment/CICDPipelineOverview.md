@@ -6,12 +6,9 @@ title: CI/CD Pipeline Integration with GitHub Actions
 
 ## Introduction
 
-Integration of a continuous integration (CI) and
-deployment (CD) pipeline involves automation of
-different processes such as building, testing and
-deploying of code and/or documentation. This
-process ensure that code quality remains consistent
-and overall collaboration is more polished
+Integration of a continuous integration (CI) and deployment (CD) pipeline involves automation of
+different processes such as building, testing and deploying of code and/or documentation. This
+process ensure that code quality remains consistent and overall collaboration is more polished
 andrefined due to error and bug identification.
 
 ## Creating a Configuration File (Workflow File)

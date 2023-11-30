@@ -2,14 +2,13 @@
 title: Dockerization feasibility check
 ---
 
-
 ## Capstone SIT374 - Chloe Hulme
 
-_Preamble_
+### Preamble
 
 The aim of this study is to check the feasibility of Dockerizing the Indigenous Art Gallery Project.
 
-_Research Information_
+### Research Information
 
 The biggest hurdle within this project will be understanding the Docker platform and gaining some
 familiarity with it as I have no prior experience using Docker. I have identified the following
@@ -29,7 +28,7 @@ resources to cross check the feasibility of this task.
 
 <https://www.youtube.com/watch?v=3s-RfwvijpY>
 
-_Outcome_
+### Outcome
 
 After some preliminary research, it was determined that a Docker image must first be created. This
 is done by including a Dockerfile in the root directory of the project. Once the requisite details
@@ -39,7 +38,7 @@ container.
 This process will ned to be completed for both the front and back ends as they should be kept in
 seperate containers as best practice.
 
-_Plan_
+### Plan
 
 From this week I will begin more serious up-skilling on Docker. Once I am equipped with a better
 understanding of the platform, I will begin preparing the Dockerfiles for the front and back ends

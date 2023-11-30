@@ -2,7 +2,6 @@
 title: Documentation Content Discussion
 ---
 
-
 ### Preamble
 
 This document was created during a series of interviews with the delivery leads of the art gallery

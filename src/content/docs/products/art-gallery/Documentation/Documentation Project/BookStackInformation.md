@@ -2,8 +2,6 @@
 title: Documentation BookStack Information
 ---
 
-
-
 This is information related to the bookstack.sql database.
 
 ### User
