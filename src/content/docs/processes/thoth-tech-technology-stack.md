@@ -7,21 +7,29 @@ primary reason for creating this document was to showcase the various kinds of t
 used across different products, along with the skills required for those who are interested in
 joining a product.
 
-## Company Operations
+### Company Operations
 
-### Company Operations Tools
+#### Tools used in Company Operations
 
-- GitHub, Trello Board
+- GitHub
+- Trello Board
 
-### Company Operations Languages
+#### Languages used in Company Operations
 
-- Typescript, Tailwind CSS, Python, Astro, Markdown
+- Markdown
+- Typescript
+- Tailwind CSS
+- Python
+- Astro
 
-### Company Operations Software
+#### Software used in Company Operations
 
-- Visual Studio Code, Microsoft Teams, Astro Starlight, Netlify.
+- Microsoft Teams
+- Visual Studio Code
+- Astro Starlight
+- Netlify
 
-### Skills required to work within Company Operations product
+#### Skills required to work within Company Operations product
 
 - Having leadership skills will be necessary for collaboration within team and providing support to
   other team members.
@@ -33,22 +41,34 @@ joining a product.
   completion of tasks.
 - Knowledge and skills in data science will be helpful.
 
-## OnTrack
+### OnTrack
 
-### OnTrack Tools
+#### Tools used in OnTrack
 
-- GitHub, Trello Board, Git
+- GitHub
+- Git
+- Trello Board
 
-### OnTrack Languages
+#### Languages used in OnTrack
 
-- Markdown, Angular JS, + Angular 17 with Angular JS using coffee script, Angular 17 using
-  Typescript, HTML, SCSS, Ruby on Rails Grape, Tailwind CSS, TypeScript.
+- Markdown
+- Angular JS
+- Angular 17 with Angular JS using coffee script
+- Angular 17 using Typescript
+- HTML
+- SCSS
+- Ruby on Rails Grape
+- Tailwind CSS
+- TypeScript
 
-### OnTrack Software
+#### Software used in OnTrack
 
-- MariaDB Database, Visual Studio Code, Docker Desktop, Microsoft Teams.
+- Microsoft Teams
+- Visual Studio Code
+- Docker Desktop
+- MariaDB Database
 
-### Skills required to work within Ontrack product
+#### Skills required to work within Ontrack product
 
 - Having solid understanding of frontend and backend.
 - Being familiar with GitHub, will ensure smooth onboarding within the product.
@@ -62,48 +82,68 @@ joining a product.
 - Willing to adapt new technologies and tools over time.
 - Positive attitude toward learning range of new skills such as Angular/ Typescript and Ruby.
 
-## SplashKit
+### SplashKit
 
-### SplashKit Tools
+#### Tools used in SplashKit
 
-- Trello Board, Git, GitHub, GitHub Actions
+- GitHub
+- Git
+- GitHub Actions
+- Trello Board
+- Raspberry Pi
 
-### SplashKit Languages
+#### Languages used in SplashKit
 
-- C++, C#, Bash Scripts, Markdown
+- Markdown
+- C++
+- C#
+- Bash Scripts
 
-### SplashKit Software
+#### Software used in SplashKit
 
-- Visual Studio Code, Microsoft Teams, SharePoint, Clockify, Docker, WSL and Astro Starlight
+- Microsoft Teams
+- Visual Studio Code
+- Docker Desktop
+- WSL
+- SharePoint
+- Clockify
+- Astro Starlight
 
-### Skills required to work within SplashKit product
+#### Skills required to work within SplashKit product
 
 - Having solid understanding of C++ and C# is required.
 - Having the ability to figure out syntax of the other programming languages, even if not confident
   in C++ and C#.
 - When it comes to working with arcade machine, having knowledge of Linux based systems is
-  beneficial for raspberry pi work.
+  beneficial for Raspberry Pi work.
 - For starlight version of splashkit.io having basic web development experience and understanding of
   website design is useful. But it is not mandatory to have such experience since individual can put
   extra effort to learn the basic.
 - In terms of the SplashKit expansion, the ability to update the SplashKit library and functionality
   is important.
 
-## CourseFlow
+### CourseFlow
 
-### Tools
+#### Tools used in CourseFlow
 
-- GitHub, Trello Board, Figma, Draw.io (now integrated into diagrams.net)
+- GitHub
+- Trello Board
+- Figma
+- Draw.io (now integrated into diagrams.net)
 
-### Languages
+#### Languages used in CourseFlow
 
-- Ruby on Rails, TypeScript (for creating frontend web applications using Angular), Markdown
+- Markdown
+- Ruby on Rails
+- TypeScript (for creating frontend web applications using Angular)
 
-### Software
+#### Software used in CourseFlow
 
-- Visual Studio Code, Docker, Microsoft Teams.
+- Microsoft Teams
+- Visual Studio Code
+- Docker
 
-### Skills required to work within CourseFlow product
+#### Skills required to work within CourseFlow product
 
 - CourseFlow uses Angular for the frontend, so having knowledge in that area would be beneficial.
   For example, if a person has skills in web technologies, picking up Angular wouldn’t be hard.
