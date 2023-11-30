@@ -66,3 +66,38 @@ Key observations:
 Upon clicking the add a subject button, a window/panel will pop out and provide the user to select a
 subject. The main thing to note regarding this is that you can filter subjects by level, study
 period and area of study, with the toggles to only show breadth and/or discipline subjects.
+
+## Data analysis
+
+To help rationalize how this course planner works and relate it to CourseFlow to draw in inspiration
+for CourseFlow's data modelling, an analysis of the data needs to be done.
+
+Upon adding a subject in the course planner, json data is returned which can be used for this
+analysis.
+
+### Subjects Data
+
+The key and relevant data include:
+
+- Course planner itself with subject assignment with reference to a subject record id.
+- Full subject information for the subjects that have been placed on the course planner:
+- In terms of the subject data itself, one key thing to note that is going to be important for
+  CourseFlow is the availability field that contains an array of JSON objects which detail
+  information such as:
+  - Campus
+  - Mode of delivery (on campus etc.)
+  - Study period (semester 1 etc.)
+  - Period start and end date.
+  - Year
+
+### Requirements/Rules Data
+
+In terms of subject requirements, it seems that this system keeps track of individual requirements
+for a subject via the recordId. This also applies to the course requirements where it is tracked as
+an individual entries via the recordId of the course.
+
+Other key factors to note include:
+- Each rule has a rule type such as progression, points constraint or count-constraint etc.
+- Each rule has a section that the rule falls under such as pre-requisites.
+- Some rules have a progress field that keeps track of information relevant to the rule.
+  - For example, a points constraint could have 
