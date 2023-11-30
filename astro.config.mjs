@@ -1,14 +1,21 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import starlightBlog from "starlight-blog";
 
 // https://astro.build/config
 export default defineConfig({
-    integrations: [
+  integrations: [
+    starlightBlog(),
     starlight({
       title: "Thoth Tech",
       customCss: ["./src/styles/custom.css"],
       social: {
         github: "https://github.com/thoth-tech",
+      },
+      components: {
+        MarkdownContent: "starlight-blog/overrides/MarkdownContent.astro",
+        Sidebar: "starlight-blog/overrides/Sidebar.astro",
+        ThemeSelect: "starlight-blog/overrides/ThemeSelect.astro",
       },
       sidebar: [
         {
@@ -87,17 +94,31 @@ export default defineConfig({
                   autogenerate: {
                     directory: "products/art-gallery/projects",
                   },
+                  items: [
+                    {
+                      label: "Lighthouse",
+                      autogenerate: {
+                        directory: "products/art-gallery/Projects/Lighthouse",
+                      },
+                    },
+                    {
+                      label: "Dockerization",
+                      autogenerate: {
+                        directory: "products/art-gallery/Projects/dockerization",
+                      },
+                    },
+                  ],
                 },
                 {
                   label: "Documentation",
                   autogenerate: {
-                    directory: "products/art-gallery/documentation",
+                    directory: "products/art-gallery/Documentation",
                   },
                 },
                 {
                   label: "Issues and Resolutions",
                   autogenerate: {
-                    directory: "products/art-gallery/issues-and-resolution",
+                    directory: "products/art-gallery/issues-and-resolutions",
                   },
                 },
               ],
@@ -119,6 +140,12 @@ export default defineConfig({
                       label: "Docusaurus Documentation",
                       autogenerate: {
                         directory: "products/company-operations/projects/docusaurus-documentation",
+                      },
+                    },
+                    {
+                      label: "Thoth Tech Website",
+                      autogenerate: {
+                        directory: "products/company-operations/projects/Thoth-Tech-Website",
                       },
                     },
                   ],
@@ -147,19 +174,19 @@ export default defineConfig({
                 {
                   label: "Projects",
                   autogenerate: {
-                    directory: "products/courseflow/projects",
+                    directory: "products/courseflow/Projects",
                   },
                 },
                 {
                   label: "Documentation",
                   autogenerate: {
-                    directory: "products/courseflow/documentation",
+                    directory: "products/courseflow/Documentation",
                   },
                 },
                 {
                   label: "Issues and Resolutions",
                   autogenerate: {
-                    directory: "products/courseflow/issues-and-resolution",
+                    directory: "products/courseflow/issues-and-resolutions",
                   },
                 },
               ],
@@ -195,12 +222,18 @@ export default defineConfig({
                         directory: "products/ontrack/documentation/numbas",
                       },
                     },
+                    {
+                      label: "Deployment",
+                      autogenerate: {
+                        directory: "products/ontrack/documentation/deployment",
+                      },
+                    },
                   ],
                 },
                 {
                   label: "Issues and Resolutions",
                   autogenerate: {
-                    directory: "products/ontrack/issues-and-resolution",
+                    directory: "products/ontrack/issues-and-resolutions",
                   },
                 },
               ],
@@ -223,19 +256,19 @@ export default defineConfig({
                   autogenerate: {
                     directory: "products/splashkit/documentation",
                   },
-                  items: [
-                    {
-                      label: "Applications",
-                      autogenerate: {
-                        directory: "products/splashkit/documentation/applications",
-                      },
-                    },
-                  ],
+                  // items: [
+                  //   {
+                  //     label: "Applications",
+                  //     autogenerate: {
+                  //       directory: "products/splashkit/documentation/applications",
+                  //     },
+                  //   },
+                  // ],
                 },
                 {
                   label: "Issues and Resolutions",
                   autogenerate: {
-                    directory: "products/splashkit/issues-and-resolution",
+                    directory: "products/splashkit/issues-and-resolutions",
                   },
                 },
               ],
