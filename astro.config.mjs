@@ -14,6 +14,10 @@ export default defineConfig({
         {
           label: "Processes",
           items: [
+            { label: "Thoth Tech Technology Stack Document", 
+              link: "processes/thoth-tech-technology-stack",
+            },
+
             { label: "Introduction", link: "/processes/introduction" },
             {
               label: "Cyber Security Guidelines",
