@@ -64,6 +64,12 @@ export default defineConfig({
           },
         },
         {
+          label: "Company Wide Submissions",
+          autogenerate: {
+            directory: "companywidesubmissions",
+          },
+        },
+        {
           label: "Reference",
           autogenerate: {
             directory: "reference",
