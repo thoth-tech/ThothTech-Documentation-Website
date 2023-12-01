@@ -8,9 +8,9 @@ description: Frequently Asked Questions
   
 ### Heading
 
-  1. Foo
-  2. Bar
-     * Baz
-     * Qux
+1. Foo
+2. Bar
+   - Baz
+   - Qux
 
 </details>
