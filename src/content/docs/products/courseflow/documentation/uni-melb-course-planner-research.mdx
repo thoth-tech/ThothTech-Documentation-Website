@@ -28,7 +28,7 @@ CourseFlow in the near future.
 
 ### On Creation of Course Planner
 
-This initial transition is important to capture is it will be relevant to CourseFlow and the
+This initial transition is important to capture as it will be relevant to CourseFlow and the
 discussions around course templates.
 
 On creation of a new course planner, an overlay window will appear and present a number of samples
@@ -37,39 +37,73 @@ the samples covered numerous majors in different specializations such as Bioengi
 Science etc.
 
 Upon selection of Computing and Software Systems, the course planner was auto populated with units
-associated with that major. More information on the course requirements panel and the unit details
-(which describe unit requirements) will be shown later in the respective section.
+associated with that major.
+
+A similar feature was discussed for CourseFlow to auto-populate a new course map with core units for
+a particular course.
 
 ### Main Page
+
+The main page is similar to CourseFlow in terms of intended functionality. Here, users can see
+course requirements, add/update/remove/move units and have them clearly grouped by the study period
+and year.
 
 Key things to note:
 
 - Ability to select a slot (slot itself cannot be removed or added) and choose a unit.
-- Slots are grouped by semester where you have a maximum of 4 slots and semesters are grouped by
-  year.
+- Slots are grouped by semester and semesters are grouped by year.
+  - You can overload and add an additional slot.
+- No indication of ability to add extra years. However, you can add additional semesters (for UoM,
+  they are known as summer and winter term).
 - Course requirements has a panel with subsections (accordions) and visuals to indicate if you meet
   that requirement or not.
 
-### Detailed Subject Cards
+### Subject Cards
+
+These are the cards representing a subject.
+
+Key observations:
+
+- Heading to indicate if subject is compulsory, discipline specific or a breadth subject for the
+  course.
+- Other information also include subject code, level, credit points, name of unit and the semesters
+  they are available in.
+- Clicking the 3 dotted button will show more options such as details, change and remove.
+- Visual indicator (in the form of an x) will tell users if rules of the subject has not been met.
+
+Unit cards is a planned feature for CourseFlow with likely less information populating the cards.
+
+### Detailed Subject Panels
 
 This essentially provides a full description of the subject, along with assessment information and
 subject rules (basically subject requirements).
 
 Similar to the main page, there are visuals to indicate if you meet the subject requirements.
 
-Key observations:
+The key things to note:
 
-- Information regarding the subject being compulsory for the course, discipline specific (computing
-  as an example) and breadth are shown.
-- Other information also include subject code, level, credit points, name of unit and the semesters
-  they are available in.
-- Clicking the 3 dotted button will show more options such as details, change and remove.
+- In cases where users have a choice of different prerequisite pathways to take, the system simply
+  displays this in the rules panel and rules being met will update independently.
+- Some subjects have VCE related prerequisite which is tracked manually by the user via a slide
+  toggle.
+
+Given the focus of CourseFlow will be on course planning and seeing if requirements are met for
+course/units, it will not follow the same system here in displaying other information such as the
+full description, coordinate information (equivalent to unit chairs) and assessment etc. Instead,
+CourseFlow will utilize the unit information website and simply provide the link or embed the page
+via an IFrame.
+
+Requirements/rules of the unit for CourseFlow will still need to be displayed with progression
+tracking.
 
 ### Subject Panel
 
 Upon clicking the add a subject button, a window/panel will pop out and provide the user to select a
 subject. The main thing to note regarding this is that you can filter subjects by level, study
 period and area of study, with the toggles to only show breadth and/or discipline subjects.
+
+Courseflow will be implementing a similar feature where users can filter units based on interest
+areas. Additional filters can be considered.
 
 ## Data analysis
 
@@ -85,7 +119,8 @@ The key and relevant data include:
 
 - Course planner itself with subject assignment with reference to a subject record id.
 - Full subject information for the subjects that have been placed on the course planner:
-- There is a published year and version field which might be a good way to keep track of different versions of a subject (2023.3).
+- There is a published year and version field which might be a good way to keep track of different
+  versions of a subject (2023.3).
 - In terms of the subject data itself, one key thing to note that is going to be important for
   CourseFlow is the availability field that contains an array of JSON objects which detail
   information such as:
@@ -102,7 +137,9 @@ for a subject via the recordId. This also applies to the course requirements whe
 an individual entries via the recordId of the course.
 
 Other key factors to note include:
+
 - Each rule has a rule type such as progression, points constraint or count-constraint etc.
 - Each rule has a section that the rule falls under such as pre-requisites.
 - Some rules have a progress field that keeps track of information relevant to the rule.
-  - For example, a points constraint could have 
+  - For example, a count constraint for adding of two subjects into the course map will have a minimum, maximum and current count field where current count keeps track of those subjects being present or not.
+  - In addition to this, there is a field for an array referencing each of those required units.
