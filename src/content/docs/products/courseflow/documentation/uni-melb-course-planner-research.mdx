@@ -141,5 +141,37 @@ Other key factors to note include:
 - Each rule has a rule type such as progression, points constraint or count-constraint etc.
 - Each rule has a section that the rule falls under such as pre-requisites.
 - Some rules have a progress field that keeps track of information relevant to the rule.
-  - For example, a count constraint for adding of two subjects into the course map will have a minimum, maximum and current count field where current count keeps track of those subjects being present or not.
+  - For example, a count constraint for adding of two subjects into the course map will have a
+    minimum, maximum and current count field where current count keeps track of those subjects being
+    present or not.
   - In addition to this, there is a field for an array referencing each of those required units.
+
+## Key Takeaways in Context of CourseFlow
+
+There are two major takeaways from this analysis that can be beneficial to the data modelling in
+CourseFlow.
+
+### Unit Modelling
+
+One of the challenges with CourseFlow was the handling of unit data with the following
+considerations:
+
+- OnTrack already has a unit table for unit definitions.
+- Keeping track of multiple versions of the same unit.
+  - Unit information and requirements could change in future trimesters.
+  - Not sure if this has happened before but this could have an impact on students depending on when
+    they started their course and the units taken leading up to the changed unit in question where
+    changes could impact their eligibility.
+  - Also, completed/placed units from previous trimester or year would still need to be available
+    despite the change purely for the course map.
+  - This means the system needs to keep track of unit "history".
+- Unit offerings in different teaching periods also need to be tracked.
+
+Based on the analysis of the course planner data, possible solutions to explore include:
+
+- Maintaining the OnTrack unit table as the ground truth of the current unit.
+- Maintaining a separate course flow unit table with instances of the OnTrack unit:
+  - This can also keep track of the version of the unit. Depending on the rules set (previously
+    taken units, course commencement), this version field can allow for units with the relevant
+    versions to be sent to the client side for setting in the course map.
+- We can either have the same version of the unit appear multiple times for different teaching periods or have a separate table that instantiates different unit versions for the available teaching periods.
