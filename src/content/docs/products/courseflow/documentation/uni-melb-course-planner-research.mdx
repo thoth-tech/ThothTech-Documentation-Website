@@ -175,3 +175,23 @@ Based on the analysis of the course planner data, possible solutions to explore 
     taken units, course commencement), this version field can allow for units with the relevant
     versions to be sent to the client side for setting in the course map.
 - We can either have the same version of the unit appear multiple times for different teaching periods or have a separate table that instantiates different unit versions for the available teaching periods.
+
+### Requirements Modelling
+
+Basically, we can follow a similar procedure to UoM's course planner where:
+
+- Have a generic requirements table that can cover multiple requirement types (or we can split into separate tables if it clutters too much).
+- For example, if we have something similar to the count constraint for a unit's pre-requisite:
+  - We keep track of a progress json object inside a field which contains the minimum, maximum and current count (exactly like the data from UoM course planner).
+  - We keep track of the required units.
+  - If we have two unit requirements, then the minimum will be set to 2, meaning both need to be completed.
+  - The requirement visuals for the unit on the client side will track each unit individually based on their presence in the course map and update a progression visual.
+- If we have a situation where we can choose between two units for a unit's pre-requisite:
+  - Then we do exactly as above but set the minimum to 1.
+- Handling of requirement options where the user can choose between requirements (for example, picking a major sequence out of multiple options):
+  - Similar to the UoM system, each requirement will have an entry.
+  - The progression to completing the major sequence based on units placed in the course map will be tracked on an individual basis.
+  - Users won't need to "choose/commit" to an option. 
+  - This means that you could have a situation where progression to multiple major sequences will be seen.
+  - Much like how pre-requisites can be referenced in a count constraint, we could introduce the same for requirements and utilize the progress field in a similar fashion.
+
