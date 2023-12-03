@@ -182,6 +182,14 @@ export default defineConfig({
                   autogenerate: {
                     directory: "products/courseflow/documentation",
                   },
+                  items: [
+                    {
+                      label: "Research",
+                      autogenerate: {
+                        directory: "products/courseflow/documentation/research",
+                      },
+                    },
+                  ]
                 },
                 {
                   label: "Issues and Resolutions",
