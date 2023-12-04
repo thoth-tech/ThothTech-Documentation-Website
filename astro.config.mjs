@@ -2319,6 +2319,10 @@ derived from the development branch. Feature branches isolate individual work, a
         {
           label: "Processes",
           items: [
+            { label: "Thoth Tech Technology Stack Document", 
+              link: "processes/thoth-tech-technology-stack",
+            },
+
             { label: "Introduction", link: "/processes/introduction" },
             {
               label: "Cyber Security Guidelines",
@@ -2359,6 +2363,12 @@ derived from the development branch. Feature branches isolate individual work, a
           label: "Teams and Leadership",
           autogenerate: {
             directory: "teams-and-leadership",
+          },
+        },
+        {
+          label: "Company Wide Submissions",
+          autogenerate: {
+            directory: "companywidesubmissions",
           },
         },
         {
