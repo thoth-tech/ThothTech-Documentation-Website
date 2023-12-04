@@ -281,6 +281,12 @@ export default defineConfig({
                          directory: "products/splashkit/documentation/tutorials",
                        },
                      },
+                     {
+                       label: "Expansions",
+                       autogenerate: {
+                         directory: "products/splashkit/documentation/expansions",
+                       },
+                     },
                    ],
                 },
                 {
