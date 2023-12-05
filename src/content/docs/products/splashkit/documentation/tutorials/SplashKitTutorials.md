@@ -525,6 +525,34 @@ tutorials cohesive even when written by different people.
 - Overview: Proposal for how to use Sprite Animation. May already exist in previous tutorials.
 - Status: Incomplete
 
+#### _Introduction to Splashkit Audio and Music Functions_
+
+- Overview: Proposal for introduction to audio and music functions.
+- Status: Incomplete
+  - Seems to overlap with 'Get started with SplashKit Audio' but much more in-depth. Possibly a good
+    replacement.
+- Repo Links:
+  [_SplashKit-Tutorial_](https://github.com/thoth-tech/SplashKit-Tutorial/blob/main/Tutorial%20Proposals/Audio%20Series/Basic%20Audio%20Manipulation%20in%20Splashkit.md)
+  [_documentation_](https://github.com/thoth-tech/documentation/blob/main/docs/Splashkit/Applications/Tutorials%20and%20Research/Tutorial%20Proposals/Basic%20Audio%20Manipulation%20in%20Splashkit.md)
+
+#### _Managing Audio Resources in Splashkit_
+
+- Overview: Covers sound and music resource management.
+- Status: Incomplete
+  - Seems to overlap with 'Get started with SplashKit Audio' but much more in-depth. Possibly a good
+    replacement.
+- Repo Links:
+  [_SplashKit-Tutorial_](https://github.com/thoth-tech/SplashKit-Tutorial/blob/main/Tutorial%20Proposals/Audio%20Series/Managing%20Audio%20Resources%20in%20Splashkit.md)
+
+#### _Working with Sound Effects in Splashkit_
+
+- Overview: Covers specifically sound effects, playing them, etc.
+- Status: Incomplete
+  - Seems to overlap with 'Get started with SplashKit Audio' but much more in-depth. Possibly a good
+    replacement.
+- Repo Links:
+  [_SplashKit-Tutorial_](https://github.com/thoth-tech/SplashKit-Tutorial/blob/main/Tutorial%20Proposals/Audio%20Series/Working%20with%20Sound%20Effects%20in%20Splashkit.md)
+
 ---
 
 ### Incomplete (Not on Trello)
@@ -564,34 +592,6 @@ tutorials cohesive even when written by different people.
 - Repo Links:
   [_SplashKit-Tutorial_](<https://github.com/thoth-tech/SplashKit-Tutorial/blob/main/Tutorial%20Proposals/Understanding%20SplashKit%20Manager%20(SKM)%20Shell%20Commands.md>)
   [_documentation_](<https://github.com/thoth-tech/documentation/blob/main/docs/Splashkit/Applications/Tutorials%20and%20Research/Tutorial%20Proposals/Understanding%20SplashKit%20Manager%20(SKM)%20Shell%20Commands.md>)
-
-#### _Introduction to Splashkit Audio and Music Functions_
-
-- Overview: Proposal for introduction to audio and music functions.
-- Status: Probably incomplete.
-  - Seems to overlap with 'Get started with SplashKit Audio' but much more in-depth. Possibly a good
-    replacement.
-- Repo Links:
-  [_SplashKit-Tutorial_](https://github.com/thoth-tech/SplashKit-Tutorial/blob/main/Tutorial%20Proposals/Audio%20Series/Basic%20Audio%20Manipulation%20in%20Splashkit.md)
-  [_documentation_](https://github.com/thoth-tech/documentation/blob/main/docs/Splashkit/Applications/Tutorials%20and%20Research/Tutorial%20Proposals/Basic%20Audio%20Manipulation%20in%20Splashkit.md)
-
-#### _Managing Audio Resources in Splashkit_
-
-- Overview: Covers sound and music resource management.
-- Status: Probably incomplete.
-  - Seems to overlap with 'Get started with SplashKit Audio' but much more in-depth. Possibly a good
-    replacement.
-- Repo Links:
-  [_SplashKit-Tutorial_](https://github.com/thoth-tech/SplashKit-Tutorial/blob/main/Tutorial%20Proposals/Audio%20Series/Managing%20Audio%20Resources%20in%20Splashkit.md)
-
-#### _Working with Sound Effects in Splashkit_
-
-- Overview: Covers specifically sound effects, playing them, etc.
-- Status: Probably incomplete.
-  - Seems to overlap with 'Get started with SplashKit Audio' but much more in-depth. Possibly a good
-    replacement.
-- Repo Links:
-  [_SplashKit-Tutorial_](https://github.com/thoth-tech/SplashKit-Tutorial/blob/main/Tutorial%20Proposals/Audio%20Series/Working%20with%20Sound%20Effects%20in%20Splashkit.md)
 
 ## [For Reference] Current SplashKit Tutorial/Proposal Directories
 
