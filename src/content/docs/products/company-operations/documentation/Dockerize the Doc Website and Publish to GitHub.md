@@ -62,6 +62,11 @@ You should now see the docker image being pushed to GitHub package. ![Dockerimag
 ## Test Image Pushed to GitHub
 
 1. Run the below command to obtain the ID of the image running locally on your machine.
+
+```
+docker image ls
+```
+
 2. Delete local image to ensure your run image from the remote GitHub repository. In the command
    below, **889** is the first 3 digits of my image ID.
 
