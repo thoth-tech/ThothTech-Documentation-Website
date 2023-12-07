@@ -56,10 +56,10 @@ It is worth mentioning just for extra clarity that the course version the course
 will be important due to possible changes in the course in each year. For example, students who
 enrolled in the 2021 version of Computer Science need to follow requirements specific to that
 intake. The 2022 version of Computer Science introduced major/minor sequences which is not
-applicable to 2021 enrolled students. This requirement is catered for by having a separate entry within the
-course data for different years and versions (technically speaking, each new year would count as a
-different version but this field is present just incase a change is made within the year itself and we might need
-to keep track of the older versions).
+applicable to 2021 enrolled students. This requirement is catered for by having a separate entry
+within the course data for different years and versions (technically speaking, each new year would
+count as a different version but this field is present just incase a change is made within the year
+itself and we might need to keep track of the older versions).
 
 ### Course Map and Course Map Unit
 
@@ -76,3 +76,24 @@ In terms of the course map unit itself, we simply need to keep track of which ye
 and unit slot they were contained in when originally set by the student (or within the template).
 This will allow the unit to appear in the correct slot when loaded and can be used for logic to
 restrict placement of the unit in incorrect spots.
+
+### Unit Offering, Unit and Course Map Unit
+
+The handling of units can be relatively complex.
+
+The idea behind what the diagrams represent is that we are creating instances of a unit based on a
+base unit. Units Offering is a proposed name change of an existing table in OnTrack for units. The
+idea here is to have this entity as the base unit.
+
+The Unit entity will then be instantiating the base unit information from Unit Offering and will
+have more information such as the year, version, teaching period and url to the handbook which will
+all be represented as a new entry in the data. Similar to courses, we need to keep track of each
+version of a unit so that the course map unit references the correct version of the unit a student
+would have taken. This could be further extended to utilize OnTrack's Project Entity to keep track
+of the correct unit enrolment and to perhaps use to see if the student has passed the unit. This
+approach however will require further considerations for units not used with OnTrack and as such,
+will be left out of the diagrams for now.
+
+Finally, the course map unit will be an instance of a specific unit instance (with the specific year
+and teaching period) per coursemap and in itself, will contain its own relevant information
+regarding slot positions.
