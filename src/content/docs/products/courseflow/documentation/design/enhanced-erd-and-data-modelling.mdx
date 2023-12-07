@@ -116,3 +116,34 @@ multiple times across different units and to make it easier to fetch a list of s
 Specialization entity was created to hold all specializations. This way, the Unit Specialization
 entity can reference the respective specialization id. This also opens up possibilities for
 associating courses to specializations if ever required down the line.
+
+### Course, Units and Requirements
+
+The requirements related entities will by far, be the most complex aspect of CourseFlow. However,
+this forms a crucial and core aspect of the system and as such, needs to be explored and analyzed
+properly.
+
+The idea behind the Requirements entity is that each requirement for a course or unit will be
+treated as a single entry. For example, we can have these as separate entries:
+
+- Complete Introduction to Programming as a pre-requisite to the Object Oriented Programming unit.
+- Complete a minimum of these 18 core units for Bachelor of Computer Science.
+
+These would be classified as count based requirements where you need to complete a minimum number of
+units linked to an actual list of units based on the requirement set group id. This is another
+entity where each entry would contain a unit id or requirement id for a respective requirement set
+group id. This can then be used in conjunction with the requirement to see if units have been
+placed/completed within the course map.
+
+The possible point of confusion will be the above mentioned requirement id within the Requirement
+Set entity. The idea behind this a nesting/chaining of requirements to build a group of requirements
+that can be chosen out of the given options. As an example, for recent versions of the Computer
+Science degree, major/minor sequences are part of the requirements. Here, we can chain the
+requirements for picking a major sequence:
+
+1. The Requirement table would have an entry for completing a minimum of 1 where we reference a
+   requirement set.
+2. The requirement set would have entries referencing requirements corresponding to different major
+   sequences.
+3. These requirement entries making up the major sequence would be a minimum count and then
+   reference another requirement set containing the required units.
