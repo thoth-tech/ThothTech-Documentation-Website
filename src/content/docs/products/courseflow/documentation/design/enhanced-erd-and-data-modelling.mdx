@@ -52,6 +52,15 @@ Functionally, when the course map data is received, a different API request can 
 related route to retrieve the course data via the course id which will be stored with the course map
 entity. This data will then be used to load up course related information on the client side.
 
+It is worth mentioning just for extra clarity that the course version the course map is referencing
+will be important due to possible changes in the course in each year. For example, students who
+enrolled in the 2021 version of Computer Science need to follow requirements specific to that
+intake. The 2022 version of Computer Science introduced major/minor sequences which is not
+applicable to 2021 enrolled students. This requirement is catered for by having a separate entry within the
+course data for different years and versions (technically speaking, each new year would count as a
+different version but this field is present just incase a change is made within the year itself and we might need
+to keep track of the older versions).
+
 ### Course Map and Course Map Unit
 
 Each course map will consist of course map units which will form a core aspect of CourseFlow as this
@@ -65,6 +74,5 @@ the course map id and fetch all the respective units.
 
 In terms of the course map unit itself, we simply need to keep track of which year, teaching period
 and unit slot they were contained in when originally set by the student (or within the template).
-This will allow the unit to appear in the correct slot when loaded and can be used for logic to restrict placement of
-the unit in incorrect spots.
-
+This will allow the unit to appear in the correct slot when loaded and can be used for logic to
+restrict placement of the unit in incorrect spots.
