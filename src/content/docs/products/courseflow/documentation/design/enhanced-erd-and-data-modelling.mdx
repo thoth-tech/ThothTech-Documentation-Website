@@ -33,7 +33,7 @@ entities.
 This section will provide a detailed analysis of the key entities of CourseFlow and how they will
 relation to each other.
 
-### Users and Course Map
+### User and Course Map
 
 The users entity already exists within OnTrack and it represents the users of the system (students
 etc.). Since CourseFlow will be a new feature of OnTrack, it can utilize this entity for association
@@ -43,7 +43,7 @@ this is achieved by referencing the user id of the User entity.
 Functionally, a student entering the CourseFlow section in OnTrack can use their user id in the API
 request and fetch their respective CourseMap.
 
-### Course Map and Courses
+### Course Map and Course
 
 This is a simple association. Essentially, each course map will be associated with a single course
 that the student is enrolled in.
@@ -51,4 +51,20 @@ that the student is enrolled in.
 Functionally, when the course map data is received, a different API request can be made to a course
 related route to retrieve the course data via the course id which will be stored with the course map
 entity. This data will then be used to load up course related information on the client side.
+
+### Course Map and Course Map Unit
+
+Each course map will consist of course map units which will form a core aspect of CourseFlow as this
+is what students will be dragging and dropping into slots on the client side to construct their
+course map.
+
+As such, this system needs to store the course map units and have them all associated to their
+respective course map. In this specific CourseMapUnits entity, each entry will represent a single
+unit which will reference the course map they belong to. So, upon loading the course map, we can use
+the course map id and fetch all the respective units.
+
+In terms of the course map unit itself, we simply need to keep track of which year, teaching period
+and unit slot they were contained in when originally set by the student (or within the template).
+This will allow the unit to appear in the correct slot when loaded and can be used for logic to restrict placement of
+the unit in incorrect spots.
 
