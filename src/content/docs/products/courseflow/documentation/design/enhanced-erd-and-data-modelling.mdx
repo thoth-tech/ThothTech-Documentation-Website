@@ -108,3 +108,11 @@ Each unit entry will then reference a teaching period id. For example, "Introduc
 in 2021 could be taken in either trimester 1 or 2. So, in the units table, we would have two
 entries, each of them referencing the teaching period relevant to them for the given year.
 
+### Unit, Unit Specialization and Specialization
+
+The idea behind the Unit Specialization entity is to associate multiple specializations to a
+specific instance/entry of a unit. To avoid having to have the same specialization label appear
+multiple times across different units and to make it easier to fetch a list of specializations, a
+Specialization entity was created to hold all specializations. This way, the Unit Specialization
+entity can reference the respective specialization id. This also opens up possibilities for
+associating courses to specializations if ever required down the line.
