@@ -97,3 +97,14 @@ will be left out of the diagrams for now.
 Finally, the course map unit will be an instance of a specific unit instance (with the specific year
 and teaching period) per coursemap and in itself, will contain its own relevant information
 regarding slot positions.
+
+### Unit and Teaching period
+
+This relationship is relatively simple. We need to keep track of each teaching period and keep the
+naming generic to be used by other Universities. Here, we simply keep track of the label (trimester
+1 etc.), the year and the teaching time frame.
+
+Each unit entry will then reference a teaching period id. For example, "Introduction to Programming"
+in 2021 could be taken in either trimester 1 or 2. So, in the units table, we would have two
+entries, each of them referencing the teaching period relevant to them for the given year.
+
