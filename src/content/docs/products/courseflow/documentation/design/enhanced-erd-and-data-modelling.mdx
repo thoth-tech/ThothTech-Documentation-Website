@@ -11,6 +11,8 @@ through the use of diagrams and text based explanations.
 
 ## Diagrams
 
+---
+
 This section will present some diagrams that will be referenced multiple times throughout the
 document.
 
@@ -26,7 +28,18 @@ entities.
 
 ## Analysis of the Entity Relationships
 
+---
+
 This section will provide a detailed analysis of the key entities of CourseFlow and how they will
 relation to each other.
 
+### Users and Course Map
+
+The users entity already exists within OnTrack and it represents the users of the system (students
+etc.). Since CourseFlow will be a new feature of OnTrack, it can utilize this entity for association
+to a CourseMap. The aim of this relationship is to associate a student with a single course map and
+this is achieved by referencing the user id of the User entity.
+
+Functionally, a student entering the CourseFlow section in OnTrack can use their user id in the API
+request and fetch their respective CourseMap.
 
