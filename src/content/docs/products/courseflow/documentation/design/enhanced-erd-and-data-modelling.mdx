@@ -43,3 +43,12 @@ this is achieved by referencing the user id of the User entity.
 Functionally, a student entering the CourseFlow section in OnTrack can use their user id in the API
 request and fetch their respective CourseMap.
 
+### Course Map and Courses
+
+This is a simple association. Essentially, each course map will be associated with a single course
+that the student is enrolled in.
+
+Functionally, when the course map data is received, a different API request can be made to a course
+related route to retrieve the course data via the course id which will be stored with the course map
+entity. This data will then be used to load up course related information on the client side.
+
