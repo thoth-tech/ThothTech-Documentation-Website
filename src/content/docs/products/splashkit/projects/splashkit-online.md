@@ -4,6 +4,8 @@ title: Splashkit Online
 
 SplashKit Online is a beginner friendly programming environment that runs right inside the browser, designed for educational purposes and use with SplashKit. The user can create projects in it, import resources like images and music, and then write and execute Javascript that calls the SplashKit library. You can use it to make an entire game right inside your browser without downloading or installing anything, making it a really easy way to get started with programming! Development spans both low level elements like building SplashKit so that it can be used in the browser, and higher level Javascript development related to UX for the IDE, and security for code execution.
 
+![Splashkit-Online](/splashkit-online1.png)
+
 **In case it's useful, on the technical side there are currently two main areas:**
 
 1. **Compiling SplashKit to WebAssembly and creating bindings to it so that it can be used as a library in the browser.** Here one gets to work on something a bit low level, with a mixture of C++ and technical Javascript development to bridge it to the browser, including data marshaling and writing wrappers. It's mostly complete, but there are some parts of SplashKit that have not been ported fully yet, particularly with regards to networking and the terminal.
@@ -17,5 +19,3 @@ SplashKit Online is a beginner friendly programming environment that runs right 
 - Creating tutorials on how to use the IDE
 - Write ports for ncurses and cURL that build under Emscripten to WebAssembly
 - In-browser compilation or intepretation of C++ code
-
-![Splashkit-Online](/splashkit-online1.png)
