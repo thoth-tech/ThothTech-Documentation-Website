@@ -1,3 +1,7 @@
+---
+title: "Spike Research: Integrating Sidekiq with Ruby on Rails"
+---
+
 # Spike Research Document: Integrating Sidekiq with Ruby on Rails
 
 ## Objective
