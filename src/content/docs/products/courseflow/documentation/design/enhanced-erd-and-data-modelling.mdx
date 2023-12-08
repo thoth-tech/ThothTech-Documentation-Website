@@ -123,7 +123,8 @@ unit that a student would have taken.
 In terms of adding new units to the system, we can leverage out OnTrack's admin panel and add in an
 additional interface for unit variants (different teaching periods, years etc.). Fetching specific
 versions of units will be done via presentation of unit requirements (which will tie to a unit
-instance) or presentation of electives in the respective interfaces on the client side (which will allow for filtering based on specializations, teaching periods and years).
+instance) or presentation of electives in the respective interfaces on the client side (which will
+allow for filtering based on specializations, teaching periods and years).
 
 ### Unit and Teaching period
 
@@ -143,6 +144,12 @@ multiple times across different units and to make it easier to fetch a list of s
 Specialization entity was created to hold all specializations. This way, the Unit Specialization
 entity can reference the respective specialization id. This also opens up possibilities for
 associating courses to specializations if ever required down the line.
+
+Functionally, when we proceed to add a new unit, we would have a specific panel for associating the
+specializations. Here, we can fetch the specializations and present them as a drop down menu (or any
+other kind of list based UI element) and as we select the specializations, we can make POST requests
+to the Unit Specialization and create separate entries associating the specific unit instance to the
+specialization/s. We can introduce an input box for adding completely new specializations here too.
 
 ### Course, Units and Requirements
 
