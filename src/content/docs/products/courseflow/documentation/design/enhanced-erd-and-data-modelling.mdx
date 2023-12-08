@@ -177,10 +177,16 @@ requirements for picking a major sequence:
 
 1. The Requirement table would have an entry for completing a minimum of 1 where we reference a
    requirement set.
-2. The requirement set would have entries referencing requirements corresponding to different major
-   sequences.
+2. The requirement set would have entries referencing requirement ids corresponding to different
+   major sequences.
 3. These requirement entries making up the major sequence would be a minimum count and then
-   reference another requirement set containing the required units.
+   reference another requirement set containing the required units for that major (each entry would
+   have the respective unit id and the same group id).
 
 Overall, we can build a requirements table where each unit or course will have multiple requirements
 referenced by the unit or course id.
+
+In terms of updating and adding new requirements, this would be an interface present in the
+course/unit admin panel where we will fill this out. The good thing about this approach is that we
+can fetch existing requirements and requirement sets and then re-use them for other courses and
+units by using the data to create new entries.
