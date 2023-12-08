@@ -66,7 +66,8 @@ does not have a course map and therefore, does not have an attached course id (w
 getting templates). This association can be created upon creation of the course map through
 communication with Deakin's API. However, in the case where we don't have access to a student's
 enrolment, an alternative is to introduce a client side interface for a student to chose their
-enrolled course. A simple search functionality with some filters for year etc. can facilitate this functionality.
+enrolled course. A simple search functionality with some filters for year etc. can facilitate this
+functionality.
 
 It is worth mentioning just for extra clarity that the course version the course map is referencing
 will be important due to possible changes in the course in each year. For example, students who
@@ -86,7 +87,10 @@ course map.
 As such, this system needs to store the course map units and have them all associated to their
 respective course map. In this specific CourseMapUnits entity, each entry will represent a single
 unit which will reference the course map they belong to. So, upon loading the course map, we can use
-the course map id and fetch all the respective units.
+the course map id and fetch all the respective units. Entry specific ids can then be used for any
+updates made to the course map unit (updating their placement in the trimester on year containers).
+Adding new course map units will involve the usage of the Unit entity and creating instances of it
+upon selection or drag and drop operations on the client side.
 
 In terms of the course map unit itself, we simply need to keep track of which year, teaching period
 and unit slot they were contained in when originally set by the student (or within the template).
@@ -115,6 +119,11 @@ Finally, the course map unit will be an instance of a specific unit instance (wi
 and teaching period) per coursemap and in itself, will contain its own relevant information
 regarding slot positions. This way, the course map will always retain the correct version of the
 unit that a student would have taken.
+
+In terms of adding new units to the system, we can leverage out OnTrack's admin panel and add in an
+additional interface for unit variants (different teaching periods, years etc.). Fetching specific
+versions of units will be done via presentation of unit requirements (which will tie to a unit
+instance) or presentation of electives in the respective interfaces on the client side (which will allow for filtering based on specializations, teaching periods and years).
 
 ### Unit and Teaching period
 
