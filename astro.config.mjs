@@ -21,6 +21,10 @@ export default defineConfig({
         {
           label: "Processes",
           items: [
+            { label: "Thoth Tech Technology Stack Document", 
+              link: "processes/thoth-tech-technology-stack",
+            },
+
             { label: "Introduction", link: "/processes/introduction" },
             {
               label: "Cyber Security Guidelines",
@@ -61,6 +65,12 @@ export default defineConfig({
           label: "Teams and Leadership",
           autogenerate: {
             directory: "teams-and-leadership",
+          },
+        },
+        {
+          label: "Company Wide Submissions",
+          autogenerate: {
+            directory: "companywidesubmissions",
           },
         },
         {
@@ -174,7 +184,7 @@ export default defineConfig({
                 {
                   label: "Projects",
                   autogenerate: {
-                    directory: "products/courseflow/Projects",
+                    directory: "products/courseflow/projects",
                   },
                 },
                 {
@@ -190,6 +200,12 @@ export default defineConfig({
                       },
                     },
                   ],
+                      label: "Research",
+                      autogenerate: {
+                        directory: "products/courseflow/documentation/research",
+                      },
+                    },
+                  ]
                 },
                 {
                   label: "Issues and Resolutions",
@@ -272,6 +288,20 @@ export default defineConfig({
                   //     },
                   //   },
                   // ],
+                   items: [
+                     {
+                       label: "Tutorials",
+                       autogenerate: {
+                         directory: "products/splashkit/documentation/tutorials",
+                       },
+                     },
+                     {
+                       label: "Expansions",
+                       autogenerate: {
+                         directory: "products/splashkit/documentation/expansions",
+                       },
+                     },
+                   ],
                 },
                 {
                   label: "Issues and Resolutions",
