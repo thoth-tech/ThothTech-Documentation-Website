@@ -59,6 +59,15 @@ entity. This data will then be used to load up course related information on the
 requirements is in another table, we would make a separate request for all course requirements using
 the course id).
 
+Adding new courses to the system can be done via the POST route where data can be imported or added
+manually in an admin panel (possible communication with Student Connect in the future). However,
+considerations will need to be made in terms of how a course will be associated to a student who
+does not have a course map and therefore, does not have an attached course id (which also prevents
+getting templates). This association can be created upon creation of the course map through
+communication with Deakin's API. However, in the case where we don't have access to a student's
+enrolment, an alternative is to introduce a client side interface for a student to chose their
+enrolled course. A simple search functionality with some filters for year etc. can facilitate this functionality.
+
 It is worth mentioning just for extra clarity that the course version the course map is referencing
 will be important due to possible changes in the course in each year. For example, students who
 enrolled in the 2021 version of Computer Science need to follow requirements specific to that
