@@ -31,17 +31,22 @@ entities.
 ---
 
 This section will provide a detailed analysis of the key entities of CourseFlow and how they will
-relation to each other.
+relate to each other.
 
 ### User and Course Map
 
 The users entity already exists within OnTrack and it represents the users of the system (students
 etc.). Since CourseFlow will be a new feature of OnTrack, it can utilize this entity for association
 to a CourseMap. The aim of this relationship is to associate a student with a single course map and
-this is achieved by referencing the user id of the User entity.
+this is achieved by referencing the user id of the User entity within the CourseMap entity.
 
-Functionally, a student entering the CourseFlow section in OnTrack can use their user id in the API
-request and fetch their respective CourseMap.
+Functionally, a student entering the CourseFlow section of OnTrack can use their user id in the API
+request and fetch their respective course map. If a course map for that student does not exist, we
+would then have a POST request to add a new course map. Additional functionality with the
+appropriate route can be added to handle templates for the course map where we can return
+pre-defined course maps where a lack of a user id marks them as templates. Once a template is
+selected, we can make a POST request with that pre-defined data to add a new entry to the respective
+entities (CourseMap and CourseMapUnit).
 
 ### Course Map and Course
 
@@ -50,7 +55,9 @@ that the student is enrolled in.
 
 Functionally, when the course map data is received, a different API request can be made to a course
 related route to retrieve the course data via the course id which will be stored with the course map
-entity. This data will then be used to load up course related information on the client side.
+entity. This data will then be used to load up course related information on the client side (since
+requirements is in another table, we would make a separate request for all course requirements using
+the course id).
 
 It is worth mentioning just for extra clarity that the course version the course map is referencing
 will be important due to possible changes in the course in each year. For example, students who
@@ -82,8 +89,9 @@ restrict placement of the unit in incorrect spots.
 The handling of units can be relatively complex.
 
 The idea behind what the diagrams represent is that we are creating instances of a unit based on a
-base unit. Units Offering is a proposed name change of an existing table in OnTrack for units. The
-idea here is to have this entity as the base unit.
+base unit. Units Offering is a proposed name change of an existing table in OnTrack for units with
+has information such as the name and unit code. The idea here is to have this entity as the base
+unit.
 
 The Unit entity will then be instantiating the base unit information from Unit Offering and will
 have more information such as the year, version, teaching period and url to the handbook which will
@@ -96,7 +104,8 @@ will be left out of the diagrams for now.
 
 Finally, the course map unit will be an instance of a specific unit instance (with the specific year
 and teaching period) per coursemap and in itself, will contain its own relevant information
-regarding slot positions.
+regarding slot positions. This way, the course map will always retain the correct version of the
+unit that a student would have taken.
 
 ### Unit and Teaching period
 
