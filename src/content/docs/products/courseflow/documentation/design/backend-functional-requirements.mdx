@@ -175,3 +175,43 @@ So, the key factors here are:
     associated to the Trimester 1 slot).
   - If the unit slot is 4, this will go to the 4th unit slot within the respective teaching period
     container.
+
+## Course
+
+---
+
+### Routes
+
+The routes involved with this will be relatively straightforward.
+
+| Endpoint                | Description                            | Request Body | Response Body |
+|-------------------------|----------------------------------------|--------------|---------------|
+| GET /course             | Get all course data.                   | None         | Course[]      |
+| GET /course/courseId    | Get a course by id.                    | None         | Course        |
+| POST /course            | Add a new course.                      | Course       | Course        |
+| PUT /course/courseId    | Updates an existing course via its id. | Course       | Course        |
+| DELETE /course/courseId | Deletes an existing course via its id. | None         | None          |
+
+The table above covers the function of each route quite well and thus, further explanation for each will be excluded here.
+
+### Model
+
+The Course model will be as follows:
+
+| Field       | Type    | Description                  |
+|-------------|---------|------------------------------|
+| courseId    | Integer | Auto generated id.           |
+| name        | String  | Name of course.              |
+| code        | String  | Course code.                 |
+| year        | Integer | Respective year of course.   |
+| version     | String  | Course version number.       |
+| url         | String  | Link to the course webpage.  |
+| dateAdded   | Date    | Date this entry was added.   |
+| dateUpdated | Date    | Date this entry was updated. |
+
+Here, the main thing worth mentioning is the year, version and url.
+
+In terms of the year and version, this is the way the system keeps track of different versions of courses. Technically speaking, a course would likely only have different versions on a per year basis. However, to cater for the possibility that a course of a particular year gets updated, it would be a good idea to keep a history of this. The course map will keep track of a specific entry of a Course which will allow students to load up the correct version of the course (which by extension, will allow loading of the correct course requirements which will also be tied to specific course versions).
+
+The url will link to the course page which will provide more information about the course (that don't need to be present in CourseFlow such as contacts and entry requirements etc.). This can either be presented on the client side as a simple link or used to embed the course page within an IFrame element.
+
