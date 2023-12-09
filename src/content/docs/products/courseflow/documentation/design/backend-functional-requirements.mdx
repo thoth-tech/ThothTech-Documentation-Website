@@ -6,4 +6,76 @@ description:
 
 ## Introduction
 
+---
+
 This document will provide an overview of the backend requirements of CourseFlow within OnTrack.
+There will be some cross-over of information with other documentation such as the
+enhanced-erd-and-data-modelling document and the software design document.
+
+## Course Map
+
+---
+
+### Routes
+
+Upon entry to the CourseFlow system within OnTrack, the course map associated with the authenticated
+user will need to be fetched or created.
+
+As such, the backend needs to have the following routes to cater for this:
+
+| Endpoint                      | Description                                | Request Body | Response Body |
+| ----------------------------- | ------------------------------------------ | ------------ | ------------- |
+| GET /coursemap/userId         | Get a user's course map via their userId.  | None         | CourseMap     |
+| POST /coursemap               | Add a new course map for a user.           | CourseMap    | CourseMap     |
+| PUT /coursemap/coursemapId    | Updates an existing course map via its id. | CourseMap    | CourseMap     |
+| DELETE /coursemap/coursemapId | Deletes an existing course map via its id. | None         | None          |
+
+To further elaborate on each route:
+
+**GET /coursemap/userId**
+
+We need a route to get a course map associated with a user - we can do this via the user id.
+
+**POST /coursemap**
+
+We need to have a way to create a new course map for the user (or a template course map). The client
+side interface presenting a list of courses or mechanism connecting with a student's enrollment will
+be required to associate the course map with a specific course.
+
+**PUT /coursemap/coursemapId**
+
+Technically speaking, there shouldn't be a need to update the course map entry itself since we can
+make direct updates to the course map unit entries. However, the route will be included in case it
+is ever needed.
+
+**DELETE /coursemap/coursemapId**
+
+We need a way to delete a course map. This will also require all course map units associated with
+this course map to be deleted as well.
+
+### Model
+
+The model for the course map will be as follows:
+
+| Field       | Type    | Description                               |
+| ----------- | ------- | ----------------------------------------- |
+| courseMapId | Integer | Auto generated id.                        |
+| userId      | Integer | OnTrack user id.                          |
+| courseId    | Integer | Course id associated with this course map |
+| dateAdded   | Date    | Date this entry was added.                |
+| dateUpdated | Date    | Date this entry was updated.              |
+
+The main thing to note regarding this model is the course id which will need to be obtained before
+creating a new course map entry. This will be utilized to fetch information about the course such as
+requirements etc. For the purposes of this model and the associated POST route, the mechanism in
+getting the associated course itself is not crucial. The options at present involves:
+
+- Getting student enrolment information via an API to Deakin University's systems.
+- Importing student enrolment information.
+- Manually setting the course via a client side user interface (will be an input box presenting best
+  matching courses).
+- Associating a course upon creation of the user and have the course map created at this point in
+  time.
+
+This aspect of CourseFlow will require further discussions before more details can be documented
+here.
