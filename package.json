@@ -17,12 +17,12 @@
     "@astrojs/netlify": "^3.0.0",
     "@astrojs/starlight": "^0.13.0",
     "astro": "^3.6.0",
-    "prettier": "^3.1.0",
     "sharp": "^0.32.3",
     "starlight": "^0.3.9",
     "starlight-blog": "^0.4.0"
   },
   "devDependencies": {
-    "markdownlint": "^0.31.0"
+    "markdownlint": "^0.31.0",
+    "prettier": "^3.1.0"
   }
 }
