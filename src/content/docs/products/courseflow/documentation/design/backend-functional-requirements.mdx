@@ -283,3 +283,23 @@ all units that match the teaching period ids.
 
 Ultimately, the end result will be a list of units that need to take into consideration all of the
 search parameters and include/exclude units accordingly.
+
+### Model
+
+The model will be as follows:
+
+| Field            | Type    | Description                                                    |
+|------------------|---------|----------------------------------------------------------------|
+| unitId           | Integer | Auto generated id.                                             |
+| unitOfferingId   | Integer | Unit offering id.                                              |
+| year             | Integer | Respective year of unit.                                       |
+| version          | String  | Unit version number.                                           |
+| level            | Integer | Unit level.                                                    |
+| teachingPeriodId | Integer | Id of the teaching period for this specific entry of the unit. |
+| url              | String  | Link to the unit webpage.                                      |
+| dateAdded        | Date    | Date this entry was added.                                     |
+| dateUpdated      | Date    | Date this entry was updated.                                   |
+
+The main thing to note here is that each entry of the unit needs to keep track of the Unit Offering that it will be based off. Other fields are explained within the description of the table above.
+
+This unit will form the basis of the course map unit which will contain specific course map related properties.
