@@ -26,6 +26,7 @@ As such, the backend needs to have the following routes to cater for this:
 | Endpoint                      | Description                                | Request Body | Response Body |
 | ----------------------------- | ------------------------------------------ | ------------ | ------------- |
 | GET /coursemap/userId         | Get a user's course map via their userId.  | None         | CourseMap     |
+| GET /coursemap/courseId       | Get all course maps via the course id.     | None         | CourseMap[]   |
 | POST /coursemap               | Add a new course map for a user.           | CourseMap    | CourseMap     |
 | PUT /coursemap/coursemapId    | Updates an existing course map via its id. | CourseMap    | CourseMap     |
 | DELETE /coursemap/coursemapId | Deletes an existing course map via its id. | None         | None          |
@@ -35,6 +36,13 @@ To further elaborate on each route:
 **GET /coursemap/userId**
 
 We need a route to get a course map associated with a user - we can do this via the user id.
+
+**GET /coursemap/courseId**
+
+This specific route is mostly going to be for templates of a course map. Essentially, if we cannot find a course map for a user, we will need to trigger a response to add a new course map. Once we have the associated course for the student (obtained via mechanisms described below), we can use the course id to fetch all course maps with that id that do not have a user id which will be implied to be templates (with pre-set course map units at the proper position).
+
+As mentioned but worth repeating, for this to work properly, this has to only include course map data without a user id (we do not want to fetch course maps belonging to other students). When a template is chosen, we will create a duplicate of the associated data to be added as new entries for both the course map (with the associated user id this time) and the course map units.
+
 
 **POST /coursemap**
 
@@ -79,3 +87,4 @@ getting the associated course itself is not crucial. The options at present invo
 
 This aspect of CourseFlow will require further discussions before more details can be documented
 here.
+
