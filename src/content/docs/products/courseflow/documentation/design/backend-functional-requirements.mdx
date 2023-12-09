@@ -184,22 +184,24 @@ So, the key factors here are:
 
 The routes involved with this will be relatively straightforward.
 
-| Endpoint                | Description                            | Request Body | Response Body |
-|-------------------------|----------------------------------------|--------------|---------------|
-| GET /course             | Get all course data.                   | None         | Course[]      |
-| GET /course/courseId    | Get a course by id.                    | None         | Course        |
-| POST /course            | Add a new course.                      | Course       | Course        |
-| PUT /course/courseId    | Updates an existing course via its id. | Course       | Course        |
-| DELETE /course/courseId | Deletes an existing course via its id. | None         | None          |
+| Endpoint                | Description                                         | Request Body | Response Body |
+| ----------------------- | --------------------------------------------------- | ------------ | ------------- |
+| GET /course             | Get all course data.                                | None         | Course[]      |
+| GET /course/courseId    | Get a course by id.                                 | None         | Course        |
+| GET /course/search      | Get courses that partially match the search params. | None         | Course[]      |
+| POST /course            | Add a new course.                                   | Course       | Course        |
+| PUT /course/courseId    | Updates an existing course via its id.              | Course       | Course        |
+| DELETE /course/courseId | Deletes an existing course via its id.              | None         | None          |
 
-The table above covers the function of each route quite well and thus, further explanation for each will be excluded here.
+The table above covers the function of each route quite well and thus, further explanation for each
+will be excluded here.
 
 ### Model
 
 The Course model will be as follows:
 
 | Field       | Type    | Description                  |
-|-------------|---------|------------------------------|
+| ----------- | ------- | ---------------------------- |
 | courseId    | Integer | Auto generated id.           |
 | name        | String  | Name of course.              |
 | code        | String  | Course code.                 |
@@ -211,7 +213,73 @@ The Course model will be as follows:
 
 Here, the main thing worth mentioning is the year, version and url.
 
-In terms of the year and version, this is the way the system keeps track of different versions of courses. Technically speaking, a course would likely only have different versions on a per year basis. However, to cater for the possibility that a course of a particular year gets updated, it would be a good idea to keep a history of this. The course map will keep track of a specific entry of a Course which will allow students to load up the correct version of the course (which by extension, will allow loading of the correct course requirements which will also be tied to specific course versions).
+In terms of the year and version, this is the way the system keeps track of different versions of
+courses. Technically speaking, a course would likely only have different versions on a per year
+basis. However, to cater for the possibility that a course of a particular year gets updated, it
+would be a good idea to keep a history of this. The course map will keep track of a specific entry
+of a Course which will allow students to load up the correct version of the course (which by
+extension, will allow loading of the correct course requirements which will also be tied to specific
+course versions).
 
-The url will link to the course page which will provide more information about the course (that don't need to be present in CourseFlow such as contacts and entry requirements etc.). This can either be presented on the client side as a simple link or used to embed the course page within an IFrame element.
+The url will link to the course page which will provide more information about the course (that
+don't need to be present in CourseFlow such as contacts and entry requirements etc.). This can
+either be presented on the client side as a simple link or used to embed the course page within an
+IFrame element.
 
+## Unit
+
+---
+
+### Routes
+
+| Endpoint            | Description                          | Request Body | Response Body |
+| ------------------- | ------------------------------------ | ------------ | ------------- |
+| GET /unit           | Get all units                        | None         | Unit[]        |
+| GET /unit/unitId    | Get a unit by id.                    | None         | Unit          |
+| GET /unit/search    | Get all units by search params       | None         | Unit[]        |
+| POST /unit          | Add a new unit.                      | Unit         | Unit          |
+| PUT /unit/uniteId   | Updates an existing unit via its id. | Unit         | Unit          |
+| DELETE /unit/unitId | Deletes an existing unit via its id. | None         | None          |
+
+With the exception of this route: "GET /unit/specializationId", all other routes can be explained by
+the table above.
+
+**GET /unit/specializationId**
+
+The aim of this route is to cater for the functionality of returning a list of units based on search
+criteria. The search criteria will at this point in time, consist of:
+
+- specializations
+- year
+- level
+- teaching period
+
+In terms of year and level, these fields will be present within the Unit model and we can perform a
+query to include data within the table that conforms to these criteria.
+
+Searching for specializations will require additional considerations. The data modelling for this
+consists of:
+
+- Specializations
+- UnitSpecializations
+- Units
+
+Firstly, we will have a specializations table (more details on routes and model later) which will
+consist of a list of different specializations. The ids for these specializations are used in
+conjunction with the unit id to create a unit specialization entry. In other words, within the
+UnitSpecializations, we can have a single unit marked by the same unit id, appear multiple times,
+each with different specialization ids. This will essentially create the list of specializations
+associated with a specific version of a unit.
+
+On the client side, we would have performed a fetch for all specializations to populate a drop down
+menu or some kind of list where we can select the specializations we want to search for. The data
+here will contain the specialization ids. As such, an approach for this searching functionality is
+to include the list of specialization ids which can be used to query the UnitSpecializations table
+to return back all unit ids which match the specialization ids.
+
+The teaching period search will follow a similar process where teaching periods will be loaded on
+the client side with their ids. Upon selection, we can use the ids and search the Units table for
+all units that match the teaching period ids.
+
+Ultimately, the end result will be a list of units that need to take into consideration all of the
+search parameters and include/exclude units accordingly.
