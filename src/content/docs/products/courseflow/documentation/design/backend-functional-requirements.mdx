@@ -208,8 +208,8 @@ The Course model will be as follows:
 | year        | Integer | Respective year of course.   |
 | version     | String  | Course version number.       |
 | url         | String  | Link to the course webpage.  |
-| dateAdded   | Date    | Date this entry was added.   |
-| dateUpdated | Date    | Date this entry was updated. |
+| createdAt   | Date    | Date this entry was added.   |
+| updatedAt   | Date    | Date this entry was updated. |
 
 Here, the main thing worth mentioning is the year, version and url.
 
@@ -297,9 +297,37 @@ The model will be as follows:
 | level            | Integer | Unit level.                                                    |
 | teachingPeriodId | Integer | Id of the teaching period for this specific entry of the unit. |
 | url              | String  | Link to the unit webpage.                                      |
-| dateAdded        | Date    | Date this entry was added.                                     |
-| dateUpdated      | Date    | Date this entry was updated.                                   |
+| createdAt        | Date    | Date this entry was added.                                     |
+| updatedAt        | Date    | Date this entry was updated.                                   |
 
 The main thing to note here is that each entry of the unit needs to keep track of the Unit Offering that it will be based off. Other fields are explained within the description of the table above.
 
 This unit will form the basis of the course map unit which will contain specific course map related properties.
+
+## Specialization
+
+---
+
+### Routes
+
+This will be relatively straightforward. We simply need routes that can get/add/update/delete specializations.
+
+| Endpoint                                | Description                                    | Request Body   | Response Body    |
+|-----------------------------------------|------------------------------------------------|----------------|------------------|
+| GET /specialization                     | Get all specializations.                       | None           | Specialization[] |
+| GET /specialization/specializationId    | Get specialization by id.                      | None           | Specialization   |
+| POST /specialization                    | Add a new specialization.                      | Specialization | Specialization   |
+| PUT /specialization/specializationId    | Updates an existing specialization via its id. | Specialization | Specialization   |
+| DELETE /specialization/specializationId | Deletes an existing specialization via its id. | None           | None             |
+
+### Model
+
+The model will be as follows:
+
+| Field            | Type    | Description                  |
+|------------------|---------|------------------------------|
+| specializationId | Integer | Auto generated id.           |
+| specialization   | String  | Specialization name.         |
+| createdAt        | Date    | Date this entry was added.   |
+| updatedAt        | Date    | Date this entry was updated. |
+
