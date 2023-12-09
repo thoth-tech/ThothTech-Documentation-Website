@@ -101,11 +101,11 @@ here.
 ### Routes
 
 This has a strong association with the course map and upon entry into the CourseFlow system, once we
-have the course map associated with the user fetched, we can use the course map id to fetch all course map
-units that belongs to the specific course map.
+have the course map associated with the user fetched, we can use the course map id to fetch all
+course map units that belongs to the specific course map.
 
 | Endpoint                              | Description                                                    | Request Body  | Response Body   |
-|---------------------------------------|----------------------------------------------------------------|---------------|-----------------|
+| ------------------------------------- | -------------------------------------------------------------- | ------------- | --------------- |
 | GET /coursemapunit/courseMapId        | Get a all course map units associated with the course map id.  | None          | CourseMapUnit[] |
 | POST /coursemapunit                   | Add a new course map unit for a user.                          | CourseMapUnit | CourseMapUnit   |
 | PUT /coursemapunit/courseMapUnitId    | Updates an existing course map unit via its id.                | CourseMapUnit | CourseMapUnit   |
@@ -116,17 +116,22 @@ To further elaborate on each route:
 
 **GET /coursemapunit/courseMapId**
 
-Here, we use the course map id to fetch all course map units associated with that id. This will essentially retrieve user/student specific set course map units.
+Here, we use the course map id to fetch all course map units associated with that id. This will
+essentially retrieve user/student specific set course map units.
 
 **POST /coursemapunit**
 
-This is needed to add new course map units for a specific course map. 
+This is needed to add new course map units for a specific course map.
 
-Please note that for this to be correct, we will not only need to associate this with a course map, but also to specific instance of a unit (a unit version that belongs to a specific year and teaching period etc.).
+Please note that for this to be correct, we will not only need to associate this with a course map,
+but also to specific instance of a unit (a unit version that belongs to a specific year and teaching
+period etc.).
 
 **PUT /coursemapunit/courseMapUnitId**
 
-This allows for updating a course map unit. The main use case for this is when a user is moving a unit around within the course map or performing a swap with another unit. Here, we can make direct calls to this route and update the data with new positional information (slot positions).
+This allows for updating a course map unit. The main use case for this is when a user is moving a
+unit around within the course map or performing a swap with another unit. Here, we can make direct
+calls to this route and update the data with new positional information (slot positions).
 
 **DELETE /coursemapunit/courseMapUnitId**
 
@@ -134,16 +139,20 @@ A simple delete route where we can delete a course map unit via its id.
 
 **DELETE /coursemapunit/courseMapId**
 
-This extra delete route will allow for deleting of all course map units based on the course map id. This will be useful when deleting the course map which will also require a delete of all course map units. 
+This extra delete route will allow for deleting of all course map units based on the course map id.
+This will be useful when deleting the course map which will also require a delete of all course map
+units.
 
-It is worth mentioning that there might be functionality with regards to Ruby on Rails that can delete all course map units once the course map has been deleted. If this is the case, this route will be redundant and we only need the delete route for the course map.
+It is worth mentioning that there might be functionality with regards to Ruby on Rails that can
+delete all course map units once the course map has been deleted. If this is the case, this route
+will be redundant and we only need the delete route for the course map.
 
 ### Model
 
 The model for the course map unit will be as follows:
 
 | Field              | Type    | Description                  |
-|--------------------|---------|------------------------------|
+| ------------------ | ------- | ---------------------------- |
 | courseMapUnitId    | Integer | Auto generated id.           |
 | courseMapId        | Integer | Associated course map id.    |
 | unitId             | Integer | Associated unit id.          |
@@ -156,8 +165,13 @@ The model for the course map unit will be as follows:
 So, the key factors here are:
 
 - Course map id which will associate a specific course map to the respective course map units.
-- Unit id which will associate the course map unit with a unit. This in itself will allow obtaining of unit information such as name, unit code, handbook url and requirements etc.
-- All three slot fields and their respective values will allow for matching to the correct spot on the client side visuals. For example:
+- Unit id which will associate the course map unit with a unit. This in itself will allow obtaining
+  of unit information such as name, unit code, handbook url and requirements etc.
+- All three slot fields and their respective values will allow for matching to the correct spot on
+  the client side visuals. For example:
   - If we have 2021 as a year slot value, the unit will go to the 2021 container.
-  - If teaching period slot is 1, the unit will go to the teaching period container inside the respective year container associated with that value (in the case of Deakin, this will be associated to the Trimester 1 slot).
-  - If the unit slot is 4, this will go to the 4th unit slot within the respective teaching period container.
+  - If teaching period slot is 1, the unit will go to the teaching period container inside the
+    respective year container associated with that value (in the case of Deakin, this will be
+    associated to the Trimester 1 slot).
+  - If the unit slot is 4, this will go to the 4th unit slot within the respective teaching period
+    container.
