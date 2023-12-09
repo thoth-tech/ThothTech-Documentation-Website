@@ -39,10 +39,16 @@ We need a route to get a course map associated with a user - we can do this via 
 
 **GET /coursemap/courseId**
 
-This specific route is mostly going to be for templates of a course map. Essentially, if we cannot find a course map for a user, we will need to trigger a response to add a new course map. Once we have the associated course for the student (obtained via mechanisms described below), we can use the course id to fetch all course maps with that id that do not have a user id which will be implied to be templates (with pre-set course map units at the proper position).
+This specific route is mostly going to be for templates of a course map. Essentially, if we cannot
+find a course map for a user, we will need to trigger a response to add a new course map. Once we
+have the associated course for the student (obtained via mechanisms described below), we can use the
+course id to fetch all course maps with that id that do not have a user id which will be implied to
+be templates (with pre-set course map units at the proper position).
 
-As mentioned but worth repeating, for this to work properly, this has to only include course map data without a user id (we do not want to fetch course maps belonging to other students). When a template is chosen, we will create a duplicate of the associated data to be added as new entries for both the course map (with the associated user id this time) and the course map units.
-
+As mentioned but worth repeating, for this to work properly, this has to only include course map
+data without a user id (we do not want to fetch course maps belonging to other students). When a
+template is chosen, we will create a duplicate of the associated data to be added as new entries for
+both the course map (with the associated user id this time) and the course map units.
 
 **POST /coursemap**
 
@@ -87,4 +93,46 @@ getting the associated course itself is not crucial. The options at present invo
 
 This aspect of CourseFlow will require further discussions before more details can be documented
 here.
+
+## Course Map Unit
+
+---
+
+### Routes
+
+This has a strong association with the course map and upon entry into the CourseFlow system, once we
+have the course map associated with the user fetched, we can use the course map id to fetch all course map
+units that belongs to the specific course map.
+
+| Endpoint                              | Description                                                    | Request Body  | Response Body   |
+|---------------------------------------|----------------------------------------------------------------|---------------|-----------------|
+| GET /coursemapunit/courseMapId        | Get a all course map units associated with the course map id.  | None          | CourseMapUnit[] |
+| POST /coursemapunit                   | Add a new course map unit for a user.                          | CourseMapUnit | CourseMapUnit   |
+| PUT /coursemapunit/courseMapUnitId    | Updates an existing course map unit via its id.                | CourseMapUnit | CourseMapUnit   |
+| DELETE /coursemapunit/courseMapUnitId | Deletes an existing course map unit via its id.                | None          | None            |
+| DELETE /coursemapunit/courseMapId     | Deletes all course map units via the associated course map id. | None          | None            |
+
+To further elaborate on each route:
+
+**GET /coursemapunit/courseMapId**
+
+Here, we use the course map id to fetch all course map units associated with that id. This will essentially retrieve user/student specific set course map units.
+
+**POST /coursemapunit**
+
+This is needed to add new course map units for a specific course map.
+
+**PUT /coursemapunit/courseMapUnitId**
+
+This allows for updating a course map unit. The main use case for this is when a user is moving a unit around within the course map or performing a swap with another unit. Here, we can make direct calls to this route and update the data with new positional information (slot positions).
+
+**DELETE /coursemapunit/courseMapUnitId**
+
+A simple delete route where we can delete a course map unit via its id.
+
+**DELETE /coursemapunit/courseMapId**
+
+This extra delete route will allow for deleting of all course map units based on the course map id. This will be useful when deleting the course map which will also require a delete of all course map units. 
+
+It is worth mentioning that there might be functionality with regards to Ruby on Rails that can delete all course map units once the course map has been deleted. If this is the case, this route will be redundant and we only need the delete route for the course map.
 
