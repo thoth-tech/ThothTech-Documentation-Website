@@ -331,3 +331,33 @@ The model will be as follows:
 | createdAt        | Date    | Date this entry was added.   |
 | updatedAt        | Date    | Date this entry was updated. |
 
+## Teaching Period
+
+---
+
+### Routes
+
+This will also be relatively straightforward. We simply need routes that can get/add/update/delete teaching periods.
+
+| Endpoint                                | Description                                     | Request Body   | Response Body    |
+|-----------------------------------------|-------------------------------------------------|----------------|------------------|
+| GET /teachingperiod                     | Get all teaching periods.                       | None           | TeachingPeriod[] |
+| GET /teachingperiod/teachingperiodId    | Get teaching period via its id.                 | None           | TeachingPeriod   |
+| POST /teachingperiod                    | Add a new teaching period.                      | TeachingPeriod | TeachingPeriod   |
+| PUT /teachingperiod/teachingperiodId    | Updates an existing teaching period via its id. | TeachingPeriod | TeachingPeriod   |
+| DELETE /teachingperiod/teachingperiodId | Deletes an existing teaching period via its id. | None           | None             |
+
+### Model
+
+The model will be as follows:
+
+| Field               | Type    | Description                  |
+|---------------------|---------|------------------------------|
+| teachingPeriodId    | Integer | Auto generated id.           |
+| teachingPeriodLabel | String  | Name of the teaching period. |
+| year                | Integer | Year of the teaching period. |
+| teachingStart       | Date    | Teaching start date.         |
+| teachingEnd         | Date    | Teaching end date.           |
+| createdAt           | Date    | Date this entry was added.   |
+| updatedAt           | Date    | Date this entry was updated. |
+
