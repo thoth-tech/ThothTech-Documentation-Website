@@ -1,6 +1,4 @@
----
-title: Project feasability study document
----
+# Project feasability study document
 
 **Daniel Maddern**.
 
