@@ -42,14 +42,14 @@ ensure it meets the needs of running Ontrack effectively.
    - Click on the "Code" button and select "Open with Codespaces" or navigate to "Code" > "New
      Codespace."
 
-   ![figure-1](/public/codespaces-8.png)
+   ![figure-1](/codespaces-8.png)
 
 2. Install Docker-in-Docker in Codespace
 
    - Confirm that Docker is installed and running in the Codespace by running the following command
      in the terminal: wihch docker
 
-   ![figure-2](/public/codespaces-1.png)
+   ![figure-2](/codespaces-1.png)
 
 3. Configuring Codespace for Ontrack:
 
@@ -63,11 +63,11 @@ ensure it meets the needs of running Ontrack effectively.
      automatically install dependencies, clone the repository, and set up Ontrack based on the
      configuration provided.
 
-   ![figure-3](/public/codespaces-3.png)
+   ![figure-3](/codespaces-3.png)
 
-   ![figure-4](/public/codespaces-4.png)
+   ![figure-4](/codespaces-4.png)
 
-   ![figure-5](/public/codespaces-2.png)
+   ![figure-5](/codespaces-2.png)
 
 ## What we found out
 
@@ -79,9 +79,9 @@ terminal:
 ERROR: ActionDispatch::HostAuthorization::DefaultResponseApp Blocked host: <github codespace host name>
 ```
 
-![figure-6](/public/codespaces-7.png)
+![figure-6](/codespaces-7.png)
 
-![figure-7](/public/codespaces-6.png)
+![figure-7](/codespaces-6.png)
 
 ![figure-8](/public/codespaces-5.png)
 
@@ -112,7 +112,7 @@ without issues.
 
 **Important**:
 
-![figure-9](/public/codespaces-9.png)
+![figure-9](/codespaces-9.png)
 
 Ontrack demands substantial resources, specifically a minimum of a 4-core, 16GB RAM, 32GB virtual
 machine for smooth operation. This high resource demand could pose a potential issue with
