@@ -1,6 +1,8 @@
-## Meeting minutes - Build an Exceptional Game 
+---
+title: Meeting minutes - Build an Exceptional Game
+---
 
-### Saturday: 6/08/2022 
+### Saturday: 6/08/2022
 
 Attendees at 5:00pm\*: Morgaine Barter, Lachlan Morgan, Daniel Agbay, Robert Osborne Absent: Roy
 Chen, Jiahao Zheng, Lily Lan
@@ -9,7 +11,7 @@ Next meeting: Monday 8/08/2022 4:30-5:30 & Thursday 6:15pm
 
 Minutes by: Morgaine Barter
 
-<b>Agenda:</b> Morgaine Barter  \*(either posted or discussed on Trello)
+**Agenda:** Morgaine Barter  \*(either posted or discussed on Trello)
 
 - To make sure everyone has made contributions to GitHub
 - explaining the programming contribution plan/workflow
@@ -17,7 +19,7 @@ Minutes by: Morgaine Barter
 - how to make meeting minutes (quick rundown)
 - set next week's meeting - do we want to have a retrospective meeting on Monday 4:30-5:30? yes
 
-<b>Announcements:</b> Check unit channel general for these\*
+**Announcements:** Check unit channel general for these\*
 
 Important!
 
@@ -36,13 +38,13 @@ This is a reminder that the tasks must be submitted by Sunday, 7 August.
 
 It is required that two documents be submitted via Ontrack for tasks 4.1P, 4.2C, and 4.3D:
 
-1.  Individual retrospective/progress report,
+1. Individual retrospective/progress report,
 
-2.  Evidence.
+2. Evidence.
 
 In the task 4.4HD, the slides for a presentation of three minutes must be submitted.
 
-<b>Discussion:</b>
+**Discussion:**
 
 - discussed level editor and its functionality: when modified and tested between 64x64 cells, 32x32
   cells and 16x16 cells 32x32 was found the most appropriate tile size.
@@ -52,8 +54,7 @@ In the task 4.4HD, the slides for a presentation of three minutes must be submit
 - Logo has been uploaded by Jiahao
 - Game music is being worked on by Robert and demo was added to channel
 
-<b>Action Items: General/Everyone: </b>
-
+**Action Items: General/Everyone:**
 Complete 4.x Ontrack tasks by this Sunday update worklog hours!
 
 Upload contributions to GitHub (such as completed image assets for enemies, logo, etc.)

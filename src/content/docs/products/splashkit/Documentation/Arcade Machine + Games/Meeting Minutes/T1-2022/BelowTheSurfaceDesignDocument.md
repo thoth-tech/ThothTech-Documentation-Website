@@ -1,4 +1,6 @@
-# Thoth Tech
+---
+title: Thoth Tech
+---
 
 ## Application Team | Build An Exception Game
 

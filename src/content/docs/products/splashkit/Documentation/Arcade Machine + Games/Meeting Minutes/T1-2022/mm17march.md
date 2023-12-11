@@ -1,4 +1,6 @@
-# Meeting Minutes
+---
+title: Meeting minutes
+---
 
 Sunday 17/03/2022 (start time: 6pm – 7pm)
 

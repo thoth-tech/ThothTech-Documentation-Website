@@ -1,4 +1,6 @@
-## Meeting minutes - Build an Exceptional Game 
+---
+title: Meeting minutes - Build an Exceptional Game
+---
 
 ### Monday: 8/08/2022  
 
@@ -11,11 +13,11 @@ Next meeting: \*Thursday 6:15pm
 
 Minutes by: \*everyone?
 
-<b>Agenda:</b> by Morgaine Barter posted in Calander invite
+**Agenda:** by Morgaine Barter posted in Calander invite
 
 - Retrospective meeting covering the points in announcements
 
-<b>Announcements:</b>
+**Announcements:**
 
 6/08 12:21 pm ANTHONY GEORGE
 
@@ -47,7 +49,7 @@ Is this something operations/processes/documentation can take care of?  Then it
 each team lead can then update their section and do a pull request for it to be included in the
 final submission.
 
-<b>Discussion:</b>
+**Discussion:**
 
 Add descriptions of progress to each project
 
@@ -68,7 +70,7 @@ this requires: -  a thumbnail for game selection of 600x540pixels - a welcome
 title and student name/creator) - a no toggle function to remove border around game with x - an esc
 quit option (while !quit requested) - a max window size of 1600 x 900 for game
 
-_Include a forecast of the likely state for each project at the end of the trimester_
+## Include a forecast of the likely state for each project at the end of the trimester_
 
 Below the Surface: (group game: main focus)
 
@@ -125,6 +127,6 @@ information
 You can also scroll the camera by holding the alt key to reach areas of the level beyond the window
 size
 
-<b>Action Items: General/Everyone:</b>
+**Action Items: General/Everyone:**
 
 Create MD file of the discussion section for 5.1 submission collaboration.

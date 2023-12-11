@@ -1,4 +1,6 @@
-# Meeting minutes
+---
+title: Meeting minutes
+---
 
 Monday at 4:40 14/04/2022
 

@@ -1,6 +1,8 @@
-## Meeting minutes - Build an Exceptional Game 
+---
+title: Meeting minutes - Build an Exceptional Game
+---
 
-### Saturday: 3/09/2022 
+### Saturday: 3/09/2022
 
 Attendees at 2:00pm: Morgaine Barter, Lily Lan, Lachlan Morgan, Daniel Agbay, Roy Chen, Jiahao
 Zheng, Robert Osborne
@@ -9,21 +11,21 @@ Next meeting: 8/9/2022 1:30pm Thursday\* On campus
 
 Minutes by: Morgaine Barter
 
-<b>Agenda:</b> Morgaine Barter
+**Agenda:** Morgaine Barter
 
-1.  Make levels
+1. Make levels
 
-2.  Assign new tasks and update current Trello cards
+2. Assign new tasks and update current Trello cards
 
-3.  Discuss progress of current ongoing tasks.
+3. Discuss progress of current ongoing tasks.
 
-<b>Announcements:</b>
+**Announcements:**
 
 Start Ontrack tasks for this week
 
 - We need more levels! And we need to order these levels appropriately. (on Thursday)
 
-<b>Discussion:</b>
+**Discussion:**
 
 Level editor can now load working progress of levels via the following command:  (this example is
 for 1 layer USING the level editor)
@@ -35,7 +37,7 @@ Player 2: <- ^ -> arrow movements action buttons: U, I, O, J, K, L
 
 Listened to demo of long music loop. (still in progress, very cool)
 
-<b>Action Items: General/Everyone:</b>
+**Action Items: General/Everyone:**
 
 - Making levels before Thursday (everyone must make at least 1 functioning level!)
 - Death sequence for enemies needs to be implemented in the next week

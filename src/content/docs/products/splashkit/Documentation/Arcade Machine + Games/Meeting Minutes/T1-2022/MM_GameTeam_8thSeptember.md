@@ -1,6 +1,8 @@
-## Meeting minutes - Build an Exceptional Game 
+---
+title: Meeting minutes - Build an Exceptional Game
+---
 
-### Thursday: 08/09/2022 
+### Thursday: 08/09/2022
 
 Attendees at 1:00pm: Morgaine Barter, Lily Lan, Lachlan Morgan, Robert Osborne
 
@@ -10,13 +12,13 @@ Next meeting: 12/09/2022 2pm Monday for InnoFes reps\*
 
 Minutes by: Morgaine Barter and Robert Osborne
 
-<b>Agenda:</b> Morgaine Barter
+**Agenda:** Morgaine Barter
 
 - decide the order of levels, and ensure everyone has made at least one.
 
 - Share the progress of other tasks
 
-<b>Announcements:</b>
+**Announcements:**
 
 - speech night and pizza 6pm Friday for InnoFes 16/09/2022 (building T)
 
@@ -25,7 +27,7 @@ order)
 
 - task sheets are now updated for Ontrack, so please make a start on the next lot of tasks soon.
 
-<b>Discussion:</b>
+**Discussion:**
 
 - tested different levels
 
@@ -53,6 +55,6 @@ Level order so far: '
 
 Bonus level too many roaches (where to put this in as a hidden level?)
 
-<b>Action Items: General/Everyone:</b>
+**Action Items: General/Everyone:**
 
 - finish up design tasks as quickly as possible so their implementation can begin

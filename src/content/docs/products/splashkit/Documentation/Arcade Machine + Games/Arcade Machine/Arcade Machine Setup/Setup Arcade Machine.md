@@ -17,7 +17,7 @@ Arcade image.
 3. select target USB or SD Card
 4. Click FLASH
    ![Image of the program etcher](/docs/Splashkit/Applications/Arcade%20Machines/Arcade%20Machine%20Setup/Images/ScreenShotEtcher.png)
-   <!-- <img src="/docs/Splashkit/Applications/Arcade Machines/Arcade Machine Setup/Images/ScreenShotEtcher.png" alt="Image of the program etcher" width="200"/> -->
+   <!-- <img src="/ScreenShotEtcher.png" alt="Image of the program etcher" width="200"/> -->
 
 These are the Credentials setup on the image
 
@@ -115,7 +115,8 @@ These are the Credentials setup on the image
       [here](/docs/Splashkit/Applications/Arcade%20Machines/Arcade%20Machine%20Setup/Files/es_systems.cfg)
 
       ```shell
-      <!-- This is the EmulationStation Systems configuration file. All systems must be contained within the <systemList> tag.-->
+      <!-- This is the EmulationStation Systems configuration file. All systems must be contained
+       within the <systemList> tag.-->
 
       <systemList>
           <!-- Here's an example system to get you started. -->
@@ -127,22 +128,28 @@ These are the Credentials setup on the image
               <!-- A "pretty" name, displayed in menus and such. -->
               <fullname>PC</fullname>
 
-              <!-- The path to start searching for ROMs in. '~' will be expanded to $HOME on Linux or %HOMEPATH% on Windows. -->
+              <!-- The path to start searching for ROMs in. '~' will be expanded to $HOME on Linux or
+               %HOMEPATH% on Windows. -->
               <path>/home/deakin/Games/LaunchScripts</path>
 
-              <!-- A list of extensions to search for, delimited by any of the whitespace characters (", \r\n\t").
+              <!-- A list of extensions to search for, delimited by any of the whitespace characters
+               (", \r\n\t").
               You MUST include the period at the start of the extension! It's also case sensitive. -->
               <extension>.exe .sh</extension>
 
-              <!-- The shell command executed when a game is selected. A few special tags are replaced if found in a command:
+              <!-- The shell command executed when a game is selected. A few special tags are replaced
+               if found in a command:
               %ROM% is replaced by a bash-special-character-escaped absolute path to the ROM.
-              %BASENAME% is replaced by the "base" name of the ROM.  For example, "/foo/bar.rom" would have a basename of "bar". Useful for MAME.
+              %BASENAME% is replaced by the "base" name of the ROM.  For example, "/foo/bar.rom" would
+               have a basename of "bar". Useful for MAME.
               %ROM_RAW% is the raw, unescaped path to the ROM. -->
               <command>%ROM%</command>
 
-              <!-- The platform to use when scraping. You can see the full list of accepted platforms in src/PlatformIds.cpp.
+              <!-- The platform to use when scraping. You can see the full list of accepted platforms
+               in src/PlatformIds.cpp.
               It's case sensitive, but everything is lowercase. This tag is optional.
-              You can use multiple platforms too, delimited with any of the whitespace characters (", \r\n\t"), eg: "genesis, megadrive" -->
+              You can use multiple platforms too, delimited with any of the whitespace characters
+               (", \r\n\t"), eg: "genesis, megadrive" -->
               <platform>PC</platform>
 
               <!-- The theme to load from the current theme set.  See THEMES.md for more information.

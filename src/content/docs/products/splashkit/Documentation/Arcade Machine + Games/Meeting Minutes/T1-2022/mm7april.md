@@ -1,4 +1,6 @@
-# Meeting Minutes
+---
+title: Meeting minutes
+---
 
 Thursday 7/4/2022 (start time: 6pm – 7pm)
 
@@ -24,7 +26,7 @@ Next meeting: 14/04/2022 (After Unit Lecture)
 - (How many buttons, what types of buttons, what size of display)
 - How is the integration going to work from laptop-arcade machine versions?
 - Use the link below to plan this documentation:
-  https://www.perforce.com/blog/alm/how-write-software-requirements-specification-srs-document  
+  <https://www.perforce.com/blog/alm/how-write-software-requirements-specification-srs-document>  
   “In the coming future, I look forward to your plan and design of implementation (the medium level
   of description, not the low level coding details) based your listed goals/expected deliverables.
   Please refer to the above indicated SRS reference Step 3. Detail the requirements. 4. Deliver it

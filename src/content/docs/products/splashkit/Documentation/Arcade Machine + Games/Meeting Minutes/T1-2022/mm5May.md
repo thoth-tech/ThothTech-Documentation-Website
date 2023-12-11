@@ -1,4 +1,6 @@
-# Meeting minutes
+---
+title: Meeting minutes
+---
 
 Thurday at 4:40 5/05/2022
 
@@ -18,7 +20,7 @@ Minutes by: Morgaine Barter
 
 - New Team Member joining us
 
-## Discussion:
+## Discussion
 
 - Documentation Chat
 - Introducing the Agenda and Lachlan Morgan
@@ -34,7 +36,7 @@ Minutes by: Morgaine Barter
 
 - 7:05 different way to block input? Using delay? Mouse (if mouse leaves window...)
 
-## Action Items:
+## Action Items
 
 - how to build documentation for ‘build a cool game’
 

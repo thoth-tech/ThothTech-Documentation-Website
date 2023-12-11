@@ -1,4 +1,6 @@
-## Meeting Minutes - Build an Exceptional Game
+---
+title: Meeting minutes - Build an Exceptional Game
+---
 
 ### Saturday: 30/07/2022
 
@@ -9,24 +11,24 @@ Next meeting: 1/8/2022 4:30-5:30pm Monday\* & Thursday on campus building T 1:00
 
 Minutes by: Morgaine Barter
 
-<b>Agenda</b>: Morgaine Barter
+**Agenda**: Morgaine Barter
 
-1.  Trello decisions
+1. Trello decisions
 
-2.  design document clean up
+2. design document clean up
 
-3.  ask if anyone has comfortability creating a character or visual assets for the game
+3. ask if anyone has comfortability creating a character or visual assets for the game
 
-4.  create a list of the visual assets we require for our game of choice, and add this information
-    to the design doc for planning
+4. create a list of the visual assets we require for our game of choice, and add this information to
+   the design doc for planning
 
-5.  set another meeting for thursday to continue brainstorming
+5. set another meeting for thursday to continue brainstorming
 
-6.  make sure 5pm Monday is the best time for B.A.E.G team for stand-up meet
+6. make sure 5pm Monday is the best time for B.A.E.G team for stand-up meet
 
-<b>Announcements:</b>
+**Announcements:**
 
-<b>Discussion:</b>
+**Discussion:**
 
 | Name            | Intro to Programming | OOP                  | game making experience   |
 | --------------- | -------------------- | -------------------- | ------------------------ |
@@ -38,15 +40,14 @@ Minutes by: Morgaine Barter
 | Jiahao Zheng    | 2019                 | 2022 (currently) yes | basic                    |
 | Robert Osborne  | 2020                 | 2021 yes             | game design 2021         |
 
-<b>Comfortable making visual assets:</b>
+**Comfortable making visual assets:**
 
 Morgaine Barter - yes (I love doing this but don’t want to JUST do this) Lily Lan - yes Lachlan
 Morgan - is working on his own game as well so does not need to contribute visual assets Daniel
 Agbay - yes Roy Chen yes Jiahao Zheng making the game logo Robert Osborne no (is making our sound
 assets)
 
-<b>Action Items: General/Everyone:</b>
-
+**Action Items: General/Everyone:**
 Collect information on people's experience and skills
 
 Fix T1 GitHub recommended processes (there was a lint error in sound effect uploads and a

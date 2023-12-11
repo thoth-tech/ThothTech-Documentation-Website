@@ -1,4 +1,6 @@
-# Guide to Contribute a Game to the Arcade Machine
+---
+title: Guide to Contribute a Game to the Arcade Machine
+---
 
 This guide takes you through the steps required for your game to be added into the arcade-machine
 library.

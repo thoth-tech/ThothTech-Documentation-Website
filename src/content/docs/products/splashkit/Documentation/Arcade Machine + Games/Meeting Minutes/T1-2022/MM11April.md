@@ -1,4 +1,6 @@
-# Meeting minutes
+---
+title: Meeting minutes
+---
 
 Monday at 4:40 11/04/2022
 
@@ -67,4 +69,4 @@ documents, along with a project update
 - [ ] Everyone: Project report - (power point slides) updates with user stories, and as mentioned
       documents as slides.
 - [ ] Everyone: Trello board clean up
-- [ ] Everyone: Retrospective: Miro (update) at https://miro.com/app/board/uXjVOBrtXD4=/
+- [ ] Everyone: Retrospective: Miro (update) at <https://miro.com/app/board/uXjVOBrtXD4=/>

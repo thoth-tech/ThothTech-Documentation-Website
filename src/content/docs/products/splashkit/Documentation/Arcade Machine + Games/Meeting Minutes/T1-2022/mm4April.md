@@ -1,4 +1,6 @@
-# Meeting Minutes
+---
+title: Meeting minutes
+---
 
 Monday 4/04/22 (start time: 6pm – 7pm)
 
@@ -26,7 +28,7 @@ Next meeting: 11/04/2022 (After Unit Lecture)
 - Create a new repo to work on your new game development
 - Branch and merge as usual within that repo until game is finished
 - Create a new branch in arcade-games repo
-- Clone <your-branch> of arcade-games repo
+- Clone \<your-branch\> of arcade-games repo
 - Add game to your branch
 - Push to remote
 - Create pull request to merge to main
