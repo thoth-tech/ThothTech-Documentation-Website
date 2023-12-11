@@ -200,16 +200,16 @@ will be excluded here.
 
 The Course model will be as follows:
 
-| Field       | Type    | Description                  |
-| ----------- | ------- | ---------------------------- |
-| courseId    | Integer | Auto generated id.           |
-| name        | String  | Name of course.              |
-| code        | String  | Course code.                 |
-| year        | Integer | Respective year of course.   |
-| version     | String  | Course version number.       |
-| url         | String  | Link to the course webpage.  |
-| createdAt   | Date    | Date this entry was added.   |
-| updatedAt   | Date    | Date this entry was updated. |
+| Field     | Type    | Description                  |
+| --------- | ------- | ---------------------------- |
+| courseId  | Integer | Auto generated id.           |
+| name      | String  | Name of course.              |
+| code      | String  | Course code.                 |
+| year      | Integer | Respective year of course.   |
+| version   | String  | Course version number.       |
+| url       | String  | Link to the course webpage.  |
+| createdAt | Date    | Date this entry was added.   |
+| updatedAt | Date    | Date this entry was updated. |
 
 Here, the main thing worth mentioning is the year, version and url.
 
@@ -289,7 +289,7 @@ search parameters and include/exclude units accordingly.
 The model will be as follows:
 
 | Field            | Type    | Description                                                    |
-|------------------|---------|----------------------------------------------------------------|
+| ---------------- | ------- | -------------------------------------------------------------- |
 | unitId           | Integer | Auto generated id.                                             |
 | unitOfferingId   | Integer | Unit offering id.                                              |
 | year             | Integer | Respective year of unit.                                       |
@@ -300,9 +300,11 @@ The model will be as follows:
 | createdAt        | Date    | Date this entry was added.                                     |
 | updatedAt        | Date    | Date this entry was updated.                                   |
 
-The main thing to note here is that each entry of the unit needs to keep track of the Unit Offering that it will be based off. Other fields are explained within the description of the table above.
+The main thing to note here is that each entry of the unit needs to keep track of the Unit Offering
+that it will be based off. Other fields are explained within the description of the table above.
 
-This unit will form the basis of the course map unit which will contain specific course map related properties.
+This unit will form the basis of the course map unit which will contain specific course map related
+properties.
 
 ## Specialization
 
@@ -310,10 +312,11 @@ This unit will form the basis of the course map unit which will contain specific
 
 ### Routes
 
-This will be relatively straightforward. We simply need routes that can get/add/update/delete specializations.
+This will be relatively straightforward. We simply need routes that can get/add/update/delete
+specializations.
 
 | Endpoint                                | Description                                    | Request Body   | Response Body    |
-|-----------------------------------------|------------------------------------------------|----------------|------------------|
+| --------------------------------------- | ---------------------------------------------- | -------------- | ---------------- |
 | GET /specialization                     | Get all specializations.                       | None           | Specialization[] |
 | GET /specialization/specializationId    | Get specialization by id.                      | None           | Specialization   |
 | POST /specialization                    | Add a new specialization.                      | Specialization | Specialization   |
@@ -325,7 +328,7 @@ This will be relatively straightforward. We simply need routes that can get/add/
 The model will be as follows:
 
 | Field            | Type    | Description                  |
-|------------------|---------|------------------------------|
+| ---------------- | ------- | ---------------------------- |
 | specializationId | Integer | Auto generated id.           |
 | specialization   | String  | Specialization name.         |
 | createdAt        | Date    | Date this entry was added.   |
@@ -337,10 +340,11 @@ The model will be as follows:
 
 ### Routes
 
-This will also be relatively straightforward. We simply need routes that can get/add/update/delete teaching periods.
+This will also be relatively straightforward. We simply need routes that can get/add/update/delete
+teaching periods.
 
 | Endpoint                                | Description                                     | Request Body   | Response Body    |
-|-----------------------------------------|-------------------------------------------------|----------------|------------------|
+| --------------------------------------- | ----------------------------------------------- | -------------- | ---------------- |
 | GET /teachingperiod                     | Get all teaching periods.                       | None           | TeachingPeriod[] |
 | GET /teachingperiod/teachingperiodId    | Get teaching period via its id.                 | None           | TeachingPeriod   |
 | POST /teachingperiod                    | Add a new teaching period.                      | TeachingPeriod | TeachingPeriod   |
@@ -352,7 +356,7 @@ This will also be relatively straightforward. We simply need routes that can get
 The model will be as follows:
 
 | Field               | Type    | Description                  |
-|---------------------|---------|------------------------------|
+| ------------------- | ------- | ---------------------------- |
 | teachingPeriodId    | Integer | Auto generated id.           |
 | teachingPeriodLabel | String  | Name of the teaching period. |
 | year                | Integer | Year of the teaching period. |
@@ -361,3 +365,96 @@ The model will be as follows:
 | createdAt           | Date    | Date this entry was added.   |
 | updatedAt           | Date    | Date this entry was updated. |
 
+The main thing to note here is that having this model lets us associate units to a specific teaching
+period of a particular year.
+
+## Requirements
+
+---
+
+### Routes
+
+The core factor with the Requirement routes is the ability to fetch requirements based on the unitId
+or courseId.
+
+| Endpoint                          | Description                                 | Request Body | Response Body  |
+| --------------------------------- | ------------------------------------------- | ------------ | -------------- |
+| GET /requirement/                 | Get all requirements.                       | None         | Requirement[]  |
+| GET /requirement/unitId           | Get all requirements for a given unit id.   | None         | Requirement[]  |
+| GET /requirement/courseId         | Get all requirements for a given course id  | None         | Requirement[]  |
+| POST /requirement                 | Add a new requirement.                      | Requirement  | TeachingPeriod |
+| PUT /requirement/requirementId    | Updates an existing requirement via its id. | Requirement  | Requirement    |
+| DELETE /requirement/requirementId | Deletes an existing requirement via its id. | None         | None           |
+
+**GET /requirement/unitId and GET /requirement/courseId**
+
+Basically, when we obtain the course data when loading up CourseFlow upon user entry or when loading
+up a specific unit's data, we need to obtain their respective requirements.
+
+This is achievable by using the unitId or courseId and fetching all the requirements in this manner.
+Each requirement will then chain into the respective requirement set through separate requests (or
+through a join operation to retrieve the requirement set together with the requirement itself) which
+will contain more information such as the required list of units to complete.
+
+**POST /requirement**
+
+Adding requirements can be done in the respective sections where we can add new courses or new
+units.
+
+Since some courses (and perhaps some units) can share similar requirements such as the same major
+and minor sequences, it would be worthwhile to include within the interface, a drop down list of
+pre-set requirements. In a similar fashion to the course map templates mentioned earlier, we can
+make use of empty unit and course id entries as a mechanism to indicate that it is a template
+requirement. We can then create an entry based on the template and have the course or unit id added
+on to the data.
+
+### Model
+
+The model of this will be as follows:
+
+| Field                 | Type    | Description                                          |
+| --------------------- | ------- | ---------------------------------------------------- |
+| requirementsId        | Integer | Auto generated id.                                   |
+| unitId                | Integer | Associated unit id.                                  |
+| courseId              | Integer | Associated course id.                                |
+| type                  | String  | The requirement type (count, minimum constrain etc.) |
+| category              | String  | Category of the requirement (pre-requsuite etc.)     |
+| description           | String  | A description of what this requirement is.           |
+| minimum               | Integer | The minimum number of units to complete.             |
+| maximum               | Integer | The maximum number of units to complete.             |
+| requirementSetGroupId | Integer | Id of the associated requirement group set.          |
+| createdAt             | Date    | Date this entry was added.                           |
+| updatedAt             | Date    | Date this entry was updated.                         |
+
+This model has a few key factors to consider.
+
+As mentioned, the unit and course id will be how we associate each requirement to the respective
+instance/entry of a unit or course.
+
+The type is an indicator of what type of requirement we are dealing with. We can use the type within
+the client side code to influence the type of checking that needs to be done to update the visuals.
+For example, if we have a Count type where the requirement is completion of Introduction to
+Programming:
+
+- We can set the minimum to 1 and have the requirement set contain the specific unit which the
+  client side will check against with the course map to see if the unit has been set before the unit
+  that requires it.
+- We can also break down the count type to MinimumCount and do the same thing if more specificity is
+  required in the logic handling in the front-end.
+
+Category and description will be utilized by the client side to provide headings and information
+respectively.
+
+Minimum and maximum will be used in conjunction with the type where logic on the client side will
+utilize to see if requirements have been met.
+
+The requirement set group id will be used to fetch all of the entries in the respective table. The
+purpose of this is to get back either a list of units or requirement ids which will be used to chain
+requirements (further information for this provided in the Enhanced erd and data modelling
+document).
+
+It is worth pointing out that at this point in time, the current progress of a student in achieving
+the requirement (complete 5 out of 21 units for example) will not be recorded. The primary aim is to
+have the client side utilize the requirement data in conjunction with the units set on the course
+map (and potentially units marked as complete) to provide visual indicators on the client side to
+show requirement progression.
