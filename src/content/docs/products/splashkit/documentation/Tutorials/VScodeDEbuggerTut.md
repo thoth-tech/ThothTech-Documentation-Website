@@ -1,11 +1,13 @@
-
 # Debugging Your Application in Visual Studio Code (VSCode)
 
 ## Introduction
+
 As a student, you may encounter bugs or unexpected behavior in your code. Debugging is an essential skill to identify and fix issues in your applications. This guide will walk you through the process of using the debugging features in Visual Studio Code (VSCode).
 
 ## Prerequisites
+
 Before you start debugging, make sure you have:
+
 - Installed Visual Studio Code (VSCode)
 - Created a project or opened an existing one in VSCode
 - Written and saved your code
@@ -13,7 +15,7 @@ Before you start debugging, make sure you have:
 
 ## How to Start the Debugger
 
-![](images\runDebug.png)
+![Debugger](images\runDebug.png)
 
 1. Open your project in VSCode.
 
@@ -30,7 +32,8 @@ Before you start debugging, make sure you have:
 7. Your code will start running in debugging mode. VSCode will stop at the first breakpoint (if you have any).
 
 ## Creating Breakpoints
-![](images\breakpoint.png)
+
+![Breakpoint](images\breakpoint.png)
 
 Breakpoints are markers in your code where the debugger will pause execution, allowing you to inspect variables and step through your code.
 
@@ -41,6 +44,7 @@ Breakpoints are markers in your code where the debugger will pause execution, al
 3. You can add multiple breakpoints to different lines in your code.
 
 ## Creating Watches on Variables
+
 Watches are expressions that you can monitor while debugging. They help you keep an eye on specific variables or values.
 
 1. While debugging (paused at a breakpoint), locate the "Watches" section in the Debug sidebar on the left.
@@ -56,19 +60,17 @@ Watches are expressions that you can monitor while debugging. They help you keep
 ![debug toolbar](images\toolbar.png)
 
 | Action | Shortcut | Explanation |
-| ------ | -------- | ------------| 
-| Continue / Pause | `F5` | Continue: resumes normal execution upto the next breakpoint. | 
+| ------ | -------- | ------------|
+| Continue / Pause | `F5` | Continue: resumes normal execution upto the next breakpoint. |
 | Step over | `F10` | Executes the next method as single command without inspecting or following its component steps. |
 | Stept into | `F11` | Enter the next method to follow its execution line by line |
 | Step out | `Shift+F11` | When inside a method execute the remaining code and return to the earlier code execution.
-| Restart | `Shift+F5` | Terminate the current program and start debugging again using the same configuration. 
-| Stop | `Shift+F5` | Terminate the current program execution. 
-
-
+| Restart | `Shift+F5` | Terminate the current program and start debugging again using the same configuration.
+| Stop | `Shift+F5` | Terminate the current program execution.
 
 ## Debugging Your Application
 
-![](images\watches.png)
+![Debugging](images\watches.png)
 
 1. Start your debugging session as mentioned earlier.
 
@@ -87,4 +89,5 @@ Watches are expressions that you can monitor while debugging. They help you keep
 6. When you've identified and fixed the issue, you can either stop debugging or let the program continue to its end.
 
 ## Conclusion
+
 Debugging in Visual Studio Code is a powerful tool to identify and resolve issues in your code. By setting breakpoints, watching variables, and using the debugger's various features, you can gain valuable insights into your code's behavior and ensure it runs smoothly.

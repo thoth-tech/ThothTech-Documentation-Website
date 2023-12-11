@@ -1,6 +1,6 @@
 # Tutorial Proposal
 
-## Title: Getting Started With Sprites in Splashkit Outline - C#
+## Title: Getting Started With Sprites in Splashkit Outline - C
 
 ### Introduction
 

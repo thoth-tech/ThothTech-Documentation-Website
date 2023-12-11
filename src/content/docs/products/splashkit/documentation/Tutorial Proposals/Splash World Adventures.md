@@ -1,6 +1,6 @@
-## Software Requirements Specification for Mario-Like Game Tutorial Using Splashkit
+# Software Requirements Specification for Mario-Like Game Tutorial Using Splashkit
 
-### 1. Purpose Description
+## 1. Purpose Description
 
 The purpose of this game tutorial is to create an engaging and educational Mario-like game that
 utilizes various functionalities of Splashkit.
@@ -11,7 +11,7 @@ movement, collision detection, sprite animation, and interactive gameplay.
 By building this game, users will gain hands-on experience with Splashkit's capabilities and learn
 how to apply them effectively in real-world game development scenarios.
 
-### 2. Features
+## 2. Features
 
 The Mario-like game tutorial will include the following **features**:
 
@@ -28,12 +28,12 @@ The Mario-like game tutorial will include the following **features**:
    functionalities.
 1. **Level Design**: Creating multiple levels with increasing difficulty and unique challenges.
 
-#### Stretch Features
+### Stretch Features
 
 Menu system to start the game. Utilizes mouse input and States to change scenes using Splashkit game
 engine.
 
-### 3. User Case
+## 3. User Case
 
 As a user, I want to follow the Mario-like game tutorial to **learn how to develop** a game using
 Splashkit's functionalities effectively.
@@ -48,93 +48,93 @@ create my own games with similar functionalities.
 
 ---
 
-**Stretch User story**
+### Stretch User story
 
 As a prospective Deakin University student, I want to play the Mario-like game developed using
 Splashkit at the Deakin Arcade Showcase, so that I can experience and appreciate the programming
 skills showcased at Deakin and get inspired to learn programming myself.
 
-### 4. Class Diagram
+## 4. Class Diagram
 
 This is a high-level plan of the game
 
 ```mermaid
 classDiagram
     class Game {
-	    -gameEngine: IGameEngine
+     -gameEngine: IGameEngine
     }
-	class IRenderer {
-		<<interface>>
-		Init()*: void
-		Clear()*: void
-		RenderObject()*: void
-		Present()*: void
-		Shutdown()*: void
+ class IRenderer {
+  <<interface>>
+  Init()*: void
+  Clear()*: void
+  RenderObject()*: void
+  Present()*: void
+  Shutdown()*: void
     }
     class SplashkitRenderer {
-	    Init(): void
-		Clear(): void
-		RenderObject(): void
-		Present(): void
-		Shutdown(): void
+     Init(): void
+  Clear(): void
+  RenderObject(): void
+  Present(): void
+  Shutdown(): void
     }
 
-	class ILogger {
-		<<interface>>
-		+Log(): void
-		+LogError(): void
-		+LogException(): void
-		+LogFormat(): void
-		+LogWarning(): void
-	}
+ class ILogger {
+  <<interface>>
+  +Log(): void
+  +LogError(): void
+  +LogException(): void
+  +LogFormat(): void
+  +LogWarning(): void
+ }
 
-	class SplashkitLogger {
-		+logEnabled: bool
-		+IsLogTypeAllowed(): bool
-		+Log(): void
-		+LogError(): void
-		+LogException(): void
-		+LogFormat(): void
-		+LogWarning(): void
-	}
+ class SplashkitLogger {
+  +logEnabled: bool
+  +IsLogTypeAllowed(): bool
+  +Log(): void
+  +LogError(): void
+  +LogException(): void
+  +LogFormat(): void
+  +LogWarning(): void
+ }
 
-	class IGameStateManager {
-		<<interface>>
-		-gameStates: stack[GameState]
+ class IGameStateManager {
+  <<interface>>
+  -gameStates: stack[GameState]
         +changeState()*: void
-		+getCurrentState()* : GameState*
-		+popState()* : void
-		+pushState()* : void
-		+render()* : void
-		+update()* : void
-	}
+  +getCurrentState()* : GameState*
+  +popState()* : void
+  +pushState()* : void
+  +render()* : void
+  +update()* : void
+ }
 
-	class IGameEngine {
-		<<interface>>
-		#renderer: IRenderer
-		#gameStateManager: IGameStateManager
-	    #logger: ILogger
+ class IGameEngine {
+  <<interface>>
+  #renderer: IRenderer
+  #gameStateManager: IGameStateManager
+     #logger: ILogger
         +Start()*: void
         +Update()*: void
         +Draw()*: void
-	}
+ }
 
-	class GameEngine {
-		#gameStateManager: IGameStateManager
-	    #logger: ILogger
+ class GameEngine {
+  #gameStateManager: IGameStateManager
+     #logger: ILogger
         +Start(): void
         +Update(): void
         +Draw(): void
-	}
+ }
 
     class GameStateManager {
-	    -gameStates: stack[GameState]
+     -gameStates: stack[GameState]
         +changeState(): void
-		+getCurrentState() : GameState*
-		+popState() : void
-		+pushState() : void
-		+render() : void
-		+update() : void
+  +getCurrentState() : GameState*
+  +popState() : void
+  +pushState() : void
+  +render() : void
+  +update() : void
     }
 
     class IGameState {
@@ -149,20 +149,20 @@ classDiagram
     }
 
     class PlayGameState {
-	    +Levels: Level
+     +Levels: Level
         +update()
         +draw()
     }
 
     class IGameLevel {
-	    <<interface>>
+     <<interface>>
         +gameObjects : vector~GameObject~
         +AddGameObject(GameObject gameObject)*
         +RemoveGameObject(GameObject gameObject)*
     }
 
     class GameObject {
-	    <<abstract>>
+     <<abstract>>
         #name : str
         #components : vector~IComponent~
         #transform: Transform
@@ -182,25 +182,25 @@ classDiagram
         +Update()
     }
 
-	class Transform {
-		#gameObject: GameObject
-		+childCount: int
-		+hasChanged: bool
-		+localPosition: Vector2D
-		+parent: gameObject
-		+up: Vector2D
-		+forward: Vector2D
-		+hasChanged: bool
-		+Awake()
+ class Transform {
+  #gameObject: GameObject
+  +childCount: int
+  +hasChanged: bool
+  +localPosition: Vector2D
+  +parent: gameObject
+  +up: Vector2D
+  +forward: Vector2D
+  +hasChanged: bool
+  +Awake()
         +Start()
         +Update()
         +Translate()
-	}
+ }
 
-	Game *-- IGameEngine
-	IGameEngine <|-- GameEngine: Implements
-	IRenderer <|-- SplashkitRenderer: Implements
-	IGameEngine  *-- IGameStateManager
+ Game *-- IGameEngine
+ IGameEngine <|-- GameEngine: Implements
+ IRenderer <|-- SplashkitRenderer: Implements
+ IGameEngine  *-- IGameStateManager
     IGameEngine *-- ILogger
     IGameEngine *-- IRenderer
     IGameStateManager <|.. GameStateManager: Implements
@@ -215,7 +215,7 @@ classDiagram
     Component <|.. Transform: Implements
 ```
 
-### 5. Sequence Diagrams
+## 5. Sequence Diagrams
 
 ```mermaid
 sequenceDiagram

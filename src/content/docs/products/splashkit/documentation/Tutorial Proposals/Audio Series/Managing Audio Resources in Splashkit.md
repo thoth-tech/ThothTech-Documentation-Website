@@ -1,6 +1,6 @@
-## Tutorial Proposal: Managing Audio Resources in Splashkit
+# Tutorial Proposal: Managing Audio Resources in Splashkit
 
-### Introduction
+## Introduction
 
 Welcome to Tutorial 3, where we will delve into the art of managing audio resources in Splashkit. In
 this tutorial, you'll gain valuable insights into efficiently handling music and sound effects,
