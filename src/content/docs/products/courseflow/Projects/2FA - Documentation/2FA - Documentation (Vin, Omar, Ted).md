@@ -83,8 +83,8 @@ seamline and connected. However, we are currently working on a prototype using g
 
 ![Courseflow DFD](/Aspose.Words.c1eaed0e-7d01-4b23-bd08-e2a37f23ccf6.001.png)
 
-Figma
-Design: [Figma File](https://www.figma.com/file/8ysP7PILvnv8Qensruz7X6/Untitled?type=design&node-id=0-1&mode=design&t=gf1Q60nXWClcf97T-0)
+Figma Design:
+[Figma File](https://www.figma.com/file/8ysP7PILvnv8Qensruz7X6/Untitled?type=design&node-id=0-1&mode=design&t=gf1Q60nXWClcf97T-0)
 
 ![Courseflow DFD](/Aspose.Words.c1eaed0e-7d01-4b23-bd08-e2a37f23ccf6.002.png)
 ![Courseflow DFD](/Aspose.Words.c1eaed0e-7d01-4b23-bd08-e2a37f23ccf6.003.jpeg)

@@ -186,6 +186,20 @@ export default defineConfig({
                   autogenerate: {
                     directory: "products/courseflow/projects",
                   },
+                  items: [
+                    {
+                      label: "2FA - Documentation",
+                      autogenerate: {
+                        directory: "products/courseflow/Projects/2FA - Documentation",
+                      },
+                    },
+                    {
+                      label: "ngx-graph",
+                      autogenerate: {
+                        directory: "products/courseflow/Projects/ngx-graph",
+                      },
+                    },
+                  ]
                 },
                 {
                   label: "Documentation",
@@ -194,15 +208,15 @@ export default defineConfig({
                   },
                   items: [
                     {
+                      label: "Research",
+                      autogenerate: {
+                        directory: "products/courseflow/Documentation/research",
+                      },
+                    },
+                    {
                       label: "Meeting Minutes",
                       autogenerate: {
                         directory: "products/courseflow/Documentation/Meeting-Minutes",
-                      },
-                    },
-                  ],
-                      label: "Research",
-                      autogenerate: {
-                        directory: "products/courseflow/documentation/research",
                       },
                     },
                   ]
