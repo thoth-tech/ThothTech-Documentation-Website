@@ -8,7 +8,7 @@ title: Spike - Investigate running Dev container and code base in CodeSpaces
 
 **Author:** Brian Caldera, hcaldera@deakin.edu.au
 
-![GitHub CodeSpaces Logo](/public/spike-cover-1.jpg)
+![GitHub CodeSpaces Logo](/spike-cover-1.jpg)
 
 ## Goals / Deliverables
 
