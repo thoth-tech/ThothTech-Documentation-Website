@@ -377,14 +377,14 @@ period of a particular year.
 The core factor with the Requirement routes is the ability to fetch requirements based on the unitId
 or courseId.
 
-| Endpoint                          | Description                                 | Request Body | Response Body  |
-| --------------------------------- | ------------------------------------------- | ------------ | -------------- |
-| GET /requirement/                 | Get all requirements.                       | None         | Requirement[]  |
-| GET /requirement/unitId           | Get all requirements for a given unit id.   | None         | Requirement[]  |
-| GET /requirement/courseId         | Get all requirements for a given course id  | None         | Requirement[]  |
-| POST /requirement                 | Add a new requirement.                      | Requirement  | TeachingPeriod |
-| PUT /requirement/requirementId    | Updates an existing requirement via its id. | Requirement  | Requirement    |
-| DELETE /requirement/requirementId | Deletes an existing requirement via its id. | None         | None           |
+| Endpoint                          | Description                                 | Request Body | Response Body |
+| --------------------------------- | ------------------------------------------- | ------------ | ------------- |
+| GET /requirement/                 | Get all requirements.                       | None         | Requirement[] |
+| GET /requirement/unitId           | Get all requirements for a given unit id.   | None         | Requirement[] |
+| GET /requirement/courseId         | Get all requirements for a given course id  | None         | Requirement[] |
+| POST /requirement                 | Add a new requirement.                      | Requirement  | Requirement   |
+| PUT /requirement/requirementId    | Updates an existing requirement via its id. | Requirement  | Requirement   |
+| DELETE /requirement/requirementId | Deletes an existing requirement via its id. | None         | None          |
 
 **GET /requirement/unitId and GET /requirement/courseId**
 
@@ -418,7 +418,7 @@ The model of this will be as follows:
 | unitId                | Integer | Associated unit id.                                  |
 | courseId              | Integer | Associated course id.                                |
 | type                  | String  | The requirement type (count, minimum constrain etc.) |
-| category              | String  | Category of the requirement (pre-requsuite etc.)     |
+| category              | String  | Category of the requirement (pre-requisite etc.)     |
 | description           | String  | A description of what this requirement is.           |
 | minimum               | Integer | The minimum number of units to complete.             |
 | maximum               | Integer | The maximum number of units to complete.             |
@@ -458,3 +458,50 @@ the requirement (complete 5 out of 21 units for example) will not be recorded. T
 have the client side utilize the requirement data in conjunction with the units set on the course
 map (and potentially units marked as complete) to provide visual indicators on the client side to
 show requirement progression.
+
+## RequirementsSet
+
+---
+
+### Routes
+
+This particular entity works in conjunction with Requirements where this provides a mechanism to
+list out required units that belong to a requirement. Additionally, this also provides a way to
+chain requirements to handle requirement choices. The routes will be as follow:
+
+| Endpoint                                  | Description                                     | Request Body | Response Body    |
+| ----------------------------------------- | ----------------------------------------------- | ------------ | ---------------- |
+| GET /requirementset/                      | Get all requirement sets.                       | None         | RequirementSet[] |
+| GET /requirementset/requirementSetGroupId | Get all requirements set for a given group id.  | None         | RequirementSet[] |
+| POST /requirementset                      | Add a new requirement set.                      | Requirement  | RequirementSet   |
+| PUT /requirementset/requirementSetId      | Updates an existing requirement set via its id. | Requirement  | RequirementSet   |
+| DELETE /requirementset/requirementSetId   | Deletes an existing requirement set via its id. | None         | None             |
+
+**GET /requirementset/requirementSetGroupId **
+
+The only route worth elaborating on is this route where we obtain requirement set entries based on
+the group id. Here, we use the group id recorded with a requirement to find all entries associated
+with this id.
+
+For example, if a unit has 2 pre-requisites as a minimum count requirement, the entries of this
+table associated with this requirement will have 2 entries with the same group id. Each entry will
+reference the respective unit id.
+
+### Model
+
+The model will be as follows:
+
+| Field                 | Type    | Description                                                       |
+| --------------------- | ------- | ----------------------------------------------------------------- |
+| requirementSetId      | Integer | Auto generated id.                                                |
+| requirementSetGroupId | Integer | Associated requirement set group id.                              |
+| description           | String  | Description/message of the requirement set if needed.             |
+| unitId                | Integer | Id of the associated unit.                                        |
+| requirementId         | Integer | Id of a chained requirement associated with this requirement set. |
+| createdAt             | Date    | Date this entry was added.                                        |
+| updatedAt             | Date    | Date this entry was updated.                                      |
+
+Most of the explanations regarding how this model will work has already been mentioned. Just to
+further emphasize the point, each instance of this entity will be associated to a requirement and it
+will be our way of tracking a list of units associated with a requirement or chaining to another
+requirement to essentially create a group of selectable requirements.
