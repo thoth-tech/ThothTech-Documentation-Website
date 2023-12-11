@@ -21,7 +21,8 @@ export default defineConfig({
         {
           label: "Processes",
           items: [
-            { label: "Thoth Tech Technology Stack Document", 
+            {
+              label: "Thoth Tech Technology Stack Document",
               link: "processes/thoth-tech-technology-stack",
             },
 
@@ -199,7 +200,7 @@ export default defineConfig({
                         directory: "products/courseflow/Projects/ngx-graph",
                       },
                     },
-                  ]
+                  ],
                 },
                 {
                   label: "Documentation",
@@ -219,7 +220,7 @@ export default defineConfig({
                         directory: "products/courseflow/Documentation/Meeting-Minutes",
                       },
                     },
-                  ]
+                  ],
                 },
                 {
                   label: "Issues and Resolutions",
@@ -302,20 +303,20 @@ export default defineConfig({
                   //     },
                   //   },
                   // ],
-                   items: [
-                     {
-                       label: "Tutorials",
-                       autogenerate: {
-                         directory: "products/splashkit/documentation/tutorials",
-                       },
-                     },
-                     {
-                       label: "Expansions",
-                       autogenerate: {
-                         directory: "products/splashkit/documentation/expansions",
-                       },
-                     },
-                   ],
+                  items: [
+                    {
+                      label: "Tutorials",
+                      autogenerate: {
+                        directory: "products/splashkit/documentation/tutorials",
+                      },
+                    },
+                    {
+                      label: "Expansions",
+                      autogenerate: {
+                        directory: "products/splashkit/documentation/expansions",
+                      },
+                    },
+                  ],
                 },
                 {
                   label: "Issues and Resolutions",
