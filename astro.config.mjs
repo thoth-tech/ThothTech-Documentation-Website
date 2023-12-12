@@ -102,7 +102,7 @@ export default defineConfig({
                 {
                   label: "Projects",
                   autogenerate: {
-                    directory: "products/art-gallery/projects",
+                    directory: "products/art-gallery/Projects",
                   },
                   items: [
                     {
@@ -112,9 +112,9 @@ export default defineConfig({
                       },
                     },
                     {
-                      label: "Dockerization",
+                      label: "Testing Project",
                       autogenerate: {
-                        directory: "products/art-gallery/Projects/dockerization",
+                        directory: "products/art-gallery/Projects/Testing Project",
                       },
                     },
                   ],
@@ -124,11 +124,43 @@ export default defineConfig({
                   autogenerate: {
                     directory: "products/art-gallery/Documentation",
                   },
+                  items: [
+                    {
+                      label: "BackendUpgrades",
+                      autogenerate: {
+                        directory: "products/art-gallery/Documentation/BackendUpgrades",
+                      },
+                    },
+                    {
+                      label: "Deployment",
+                      autogenerate: {
+                        directory: "products/art-gallery/Documentation/Deployment",
+                      },
+                    },
+                    {
+                      label: "Dockerization",
+                      autogenerate: {
+                        directory: "products/art-gallery/Documentation/Dockerization",
+                      },
+                    },
+                    {
+                      label: "Documentation Project",
+                      autogenerate: {
+                        directory: "products/art-gallery/Documentation/Documentation Project",
+                      },
+                    },
+                    {
+                      label: "Guidance",
+                      autogenerate: {
+                        directory: "products/art-gallery/Documentation/Guidance",
+                      },
+                    },
+                  ],
                 },
                 {
                   label: "Issues and Resolutions",
                   autogenerate: {
-                    directory: "products/art-gallery/issues-and-resolutions",
+                    directory: "products/art-gallery/Issues-and-Resolutions",
                   },
                 },
               ],
