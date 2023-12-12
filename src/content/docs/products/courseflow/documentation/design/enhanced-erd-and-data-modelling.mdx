@@ -1,0 +1,203 @@
+---
+title: CourseFlow Enhanced ERD and Data Modelling
+description:
+  In-depth explanation of the ERD and handling of data in CourseFlow within the context of OnTrack.
+---
+
+- [Introduction](#introduction)
+- [Diagrams](#diagrams)
+- [Analysis of the Entity Relationships](#analysis-of-the-entity-relationships)
+  - [User and Course Map](#user-and-course-map)
+  - [Course Map and Course](#course-map-and-course)
+  - [Course Map and Course Map Unit](#course-map-and-course-map-unit)
+  - [Unit Offering, Unit and Course Map Unit](#unit-offering-unit-and-course-map-unit)
+  - [Unit and Teaching period](#unit-and-teaching-period)
+  - [Unit, Unit Specialization and Specialization](#unit-unit-specialization-and-specialization)
+  - [Course, Units and Requirements](#course-units-and-requirements)
+
+## Introduction
+
+This document aims to provide a detailed overview of the data that will be required for CourseFlow
+through the use of diagrams and text based explanations.
+
+## Diagrams
+
+---
+
+This section will present some diagrams that will be referenced multiple times throughout the
+document.
+
+The diagram below provides an easier to digest, high-level overview of the more detailed Entity
+Relationship Diagram (ERD).
+
+![Courseflow High Level Entity Relationship](/courseflow-high-level-entity-relationship.png)
+
+The next diagram is the fully fleshed out ERD with the different fields and relationships to other
+entities.
+
+![Courseflow Enhanced ERD](/courseflow-enhanced-erd.png)
+
+## Analysis of the Entity Relationships
+
+---
+
+This section will provide a detailed analysis of the key entities of CourseFlow and how they will
+relate to each other.
+
+### User and Course Map
+
+The users entity already exists within OnTrack and it represents the users of the system (students
+etc.). Since CourseFlow will be a new feature of OnTrack, it can utilize this entity for association
+to a CourseMap. The aim of this relationship is to associate a student with a single course map and
+this is achieved by referencing the user id of the User entity within the CourseMap entity.
+
+Functionally, a student entering the CourseFlow section of OnTrack can use their user id in the API
+request and fetch their respective course map. If a course map for that student does not exist, we
+would then have a POST request to add a new course map. Additional functionality with the
+appropriate route can be added to handle templates for the course map where we can return
+pre-defined course maps where a lack of a user id marks them as templates. Once a template is
+selected, we can make a POST request with that pre-defined data to add a new entry to the respective
+entities (CourseMap and CourseMapUnit).
+
+### Course Map and Course
+
+This is a simple association. Essentially, each course map will be associated with a single course
+that the student is enrolled in.
+
+Functionally, when the course map data is received, a different API request can be made to a course
+related route to retrieve the course data via the course id which will be stored with the course map
+entity. This data will then be used to load up course related information on the client side (since
+requirements is in another table, we would make a separate request for all course requirements using
+the course id).
+
+Adding new courses to the system can be done via the POST route where data can be imported or added
+manually in an admin panel (possible communication with Student Connect in the future). However,
+considerations will need to be made in terms of how a course will be associated to a student who
+does not have a course map and therefore, does not have an attached course id (which also prevents
+getting templates). This association can be created upon creation of the course map through
+communication with Deakin's API. However, in the case where we don't have access to a student's
+enrolment, an alternative is to introduce a client side interface for a student to chose their
+enrolled course. A simple search functionality with some filters for year etc. can facilitate this
+functionality.
+
+It is worth mentioning just for extra clarity that the course version the course map is referencing
+will be important due to possible changes in the course in each year. For example, students who
+enrolled in the 2021 version of Computer Science need to follow requirements specific to that
+intake. The 2022 version of Computer Science introduced major/minor sequences which is not
+applicable to 2021 enrolled students. This requirement is catered for by having a separate entry
+within the course data for different years and versions (technically speaking, each new year would
+count as a different version but this field is present just incase a change is made within the year
+itself and we might need to keep track of the older versions).
+
+### Course Map and Course Map Unit
+
+Each course map will consist of course map units which will form a core aspect of CourseFlow as this
+is what students will be dragging and dropping into slots on the client side to construct their
+course map.
+
+As such, this system needs to store the course map units and have them all associated to their
+respective course map. In this specific CourseMapUnits entity, each entry will represent a single
+unit which will reference the course map they belong to. So, upon loading the course map, we can use
+the course map id and fetch all the respective units. Entry specific ids can then be used for any
+updates made to the course map unit (updating their placement in the trimester on year containers).
+Adding new course map units will involve the usage of the Unit entity and creating instances of it
+upon selection or drag and drop operations on the client side.
+
+In terms of the course map unit itself, we simply need to keep track of which year, teaching period
+and unit slot they were contained in when originally set by the student (or within the template).
+This will allow the unit to appear in the correct slot when loaded and can be used for logic to
+restrict placement of the unit in incorrect spots.
+
+### Unit Offering, Unit and Course Map Unit
+
+The handling of units can be relatively complex.
+
+The idea behind what the diagrams represent is that we are creating instances of a unit based on a
+base unit. Units Offering is a proposed name change of an existing table in OnTrack for units with
+has information such as the name and unit code. The idea here is to have this entity as the base
+unit.
+
+The Unit entity will then be instantiating the base unit information from Unit Offering and will
+have more information such as the year, version, teaching period and url to the handbook which will
+all be represented as a new entry in the data. Similar to courses, we need to keep track of each
+version of a unit so that the course map unit references the correct version of the unit a student
+would have taken. This could be further extended to utilize OnTrack's Project Entity to keep track
+of the correct unit enrolment and to perhaps use to see if the student has passed the unit. This
+approach however will require further considerations for units not used with OnTrack and as such,
+will be left out of the diagrams for now.
+
+Finally, the course map unit will be an instance of a specific unit instance (with the specific year
+and teaching period) per coursemap and in itself, will contain its own relevant information
+regarding slot positions. This way, the course map will always retain the correct version of the
+unit that a student would have taken.
+
+In terms of adding new units to the system, we can leverage out OnTrack's admin panel and add in an
+additional interface for unit variants (different teaching periods, years etc.). Fetching specific
+versions of units will be done via presentation of unit requirements (which will tie to a unit
+instance) or presentation of electives in the respective interfaces on the client side (which will
+allow for filtering based on specializations, teaching periods and years).
+
+### Unit and Teaching period
+
+This relationship is relatively simple. We need to keep track of each teaching period and keep the
+naming generic to be used by other Universities. Here, we simply keep track of the label (trimester
+1 etc.), the year and the teaching time frame.
+
+Each unit entry will then reference a teaching period id. For example, "Introduction to Programming"
+in 2021 could be taken in either trimester 1 or 2. So, in the units table, we would have two
+entries, each of them referencing the teaching period relevant to them for the given year.
+
+### Unit, Unit Specialization and Specialization
+
+The idea behind the Unit Specialization entity is to associate multiple specializations to a
+specific instance/entry of a unit. To avoid having to have the same specialization label appear
+multiple times across different units and to make it easier to fetch a list of specializations, a
+Specialization entity was created to hold all specializations. This way, the Unit Specialization
+entity can reference the respective specialization id. This also opens up possibilities for
+associating courses to specializations if ever required down the line.
+
+Functionally, when we proceed to add a new unit, we would have a specific panel for associating the
+specializations. Here, we can fetch the specializations and present them as a drop down menu (or any
+other kind of list based UI element) and as we select the specializations, we can make POST requests
+to the Unit Specialization and create separate entries associating the specific unit instance to the
+specialization/s. We can introduce an input box for adding completely new specializations here too.
+
+### Course, Units and Requirements
+
+The requirements related entities will by far, be the most complex aspect of CourseFlow. However,
+this forms a crucial and core aspect of the system and as such, needs to be explored and analyzed
+properly.
+
+The idea behind the Requirements entity is that each requirement for a course or unit will be
+treated as a single entry. For example, we can have these as separate entries:
+
+- Complete Introduction to Programming as a pre-requisite to the Object Oriented Programming unit.
+- Complete a minimum of these 18 core units for Bachelor of Computer Science.
+
+These would be classified as count based requirements where you need to complete a minimum number of
+units linked to an actual list of units based on the requirement set group id. This is another
+entity where each entry would contain a unit id or requirement id for a respective requirement set
+group id. This can then be used in conjunction with the requirement to see if units have been
+placed/completed within the course map.
+
+The possible point of confusion will be the above mentioned requirement id within the Requirement
+Set entity. The idea behind this a nesting/chaining of requirements to build a group of requirements
+that can be chosen out of the given options. As an example, for recent versions of the Computer
+Science degree, major/minor sequences are part of the requirements. Here, we can chain the
+requirements for picking a major sequence:
+
+1. The Requirement table would have an entry for completing a minimum of 1 where we reference a
+   requirement set.
+2. The requirement set would have entries referencing requirement ids corresponding to different
+   major sequences.
+3. These requirement entries making up the major sequence would be a minimum count and then
+   reference another requirement set containing the required units for that major (each entry would
+   have the respective unit id and the same group id).
+
+Overall, we can build a requirements table where each unit or course will have multiple requirements
+referenced by the unit or course id.
+
+In terms of updating and adding new requirements, this would be an interface present in the
+course/unit admin panel where we will fill this out. The good thing about this approach is that we
+can fetch existing requirements and requirement sets and then re-use them for other courses and
+units by using the data to create new entries.
