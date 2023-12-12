@@ -219,8 +219,52 @@ export default defineConfig({
                 {
                   label: "Projects",
                   autogenerate: {
-                    directory: "products/ontrack/projects",
+                    directory: "products/ontrack/Projects",
                   },
+                  items: [
+                    {
+                      label: "Group_Task_Submission",
+                      link: "/products/ontrack/Projects/Group_Task_Submissio",
+                    },
+                    {
+                      label: "Numbas",
+                      autogenerate: {
+                        directory: "products/ontrack/Projects/Numbas",
+                      },
+                    },
+                    {
+                      label: "Staff Grant Extension",
+                      autogenerate: {
+                        directory: "products/ontrack/Projects/Staff Grant Extension",
+                      },
+                    },
+                    {
+                      label: "Task Submission & Redesign",
+                      autogenerate: {
+                        directory: "products/ontrack/Projects/Task Submission & Redesign",
+                      },
+                    },
+                    {
+                      label: "Tutor Times",
+                      autogenerate: {
+                        directory: "products/ontrack/Projects/Tutor Times",
+                      },
+                      items: [
+                        {
+                          label: "Documentation",
+                          autogenerate: {
+                            directory: "products/ontrack/Projects/Tutor Times/Documentation",
+                          },
+                        },
+                        {
+                          label: "UML Diagrams",
+                          autogenerate: {
+                            directory: "products/ontrack/Projects/Tutor Times/UML Diagrams",
+                          },
+                        },
+                      ]
+                    },
+                  ]
                 },
                 {
                   label: "Documentation",
@@ -229,21 +273,103 @@ export default defineConfig({
                   },
                   items: [
                     {
-                      label: "Front End Migration",
-                      autogenerate: {
-                        directory: "products/ontrack/documentation/front-end-migration",
-                      },
-                    },
-                    {
-                      label: "Numbas",
-                      autogenerate: {
-                        directory: "products/ontrack/documentation/numbas",
-                      },
-                    },
-                    {
                       label: "Deployment",
                       autogenerate: {
-                        directory: "products/ontrack/documentation/deployment",
+                        directory: "products/ontrack/Documentation/Deployment",
+                      },
+                      items: [
+                        {
+                          label: "Enhanced Authentication",
+                          autogenerate: {
+                            directory: "products/ontrack/Documentation/Deployment/Enhanced Authentication",
+                          },
+                        },
+                        {
+                          label: "Google Cloud",
+                          autogenerate: {
+                            directory: "products/ontrack/Documentation/Deployment/Google Cloud",
+                          },
+                        },
+                      ]
+                    },
+                    {
+                      label: "Documentation",
+                      autogenerate: {
+                        directory: "products/ontrack/Documentation/Documentation",
+                      },
+                    },
+                    {
+                      label: "File Submission Enhancements",
+                      autogenerate: {
+                        directory: "products/ontrack/Documentation/File Submission Enhancements",
+                      },
+                    },
+                    {
+                      label: "Front-End-Migration",
+                      autogenerate: {
+                        directory: "products/ontrack/Documentation/Front-End-Migration",
+                      },
+                      items: [
+                        {
+                          label: "Deploy OnTrack",
+                          autogenerate: {
+                            directory: "products/ontrack/Documentation/Front-End-Migration/Deploy OnTrack",
+                          },
+                        },
+                        {
+                          label: "Framework",
+                          autogenerate: {
+                            directory: "products/ontrack/Documentation/Front-End-Migration/Framework",
+                          },
+                        },
+                        {
+                          label: "Migration",
+                          autogenerate: {
+                            directory: "products/ontrack/Documentation/Front-End-Migration/Migration",
+                          },
+                        },
+                        {
+                          label: "Research & Findings",
+                          autogenerate: {
+                            directory: "products/ontrack/Documentation/Front-End-Migration/Research & Findings",
+                          },
+                        },
+                        {
+                          label: "Testing",
+                          autogenerate: {
+                            directory: "products/ontrack/Documentation/Front-End-Migration/Testing",
+                          },
+                        },
+                        {
+                          label: "UI Enhancement",
+                          autogenerate: {
+                            directory: "products/ontrack/Documentation/Front-End-Migration/UI Enhancement",
+                          },
+                        },
+                      ]
+                    },
+                    {
+                      label: "Incorporate Content Ontrack",
+                      autogenerate: {
+                        directory: "products/ontrack/Documentation/Incorporate Content Ontrack",
+                      },
+                    },
+                    {
+                      label: "Jupyter Notebook",
+                      autogenerate: {
+                        directory: "products/ontrack/Documentation/Jupyter Notebook",
+                      },
+                    },
+                    {
+                      label: "Multiple Organisations",
+                      autogenerate: {
+                        directory: "products/ontrack/Documentation/Multiple Organisations",
+                      },
+                    },
+                    {
+                      label: "Voice Verification",
+                      autogenerate: {
+                        directory: "products/ontrack/Documentation/Voice Verification",
                       },
                     },
                   ],
@@ -252,6 +378,12 @@ export default defineConfig({
                   label: "Issues and Resolutions",
                   autogenerate: {
                     directory: "products/ontrack/issues-and-resolutions",
+                  },
+                },
+                {
+                  label: "Ontrack-setup",
+                  autogenerate: {
+                    directory: "products/ontrack/Ontrack-setup",
                   },
                 },
               ],

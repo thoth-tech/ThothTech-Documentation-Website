@@ -1,4 +1,6 @@
-# View Task and Submission Redesign Documentation Index
+---
+title: View Task and Submission Redesign Documentation Index
+---
 
 ## [T1, 2023 Hand-over Document](2023-T1-Hand-Over-Document.md)
 
@@ -6,7 +8,8 @@ A document created to reflect what has been so far accomplished in the project.
 
 ## [T1, 2023 Project Scope Sign Off Document](ProjectScope-SignOff-Document.md)
 
-A document created to reflect the scope of the project and its deliverables for T1 / 2023.
+A document created to reflect the scope of the project and its deliverables for
+T1 / 2023.
 
 ## [T2, 2022 Hand-over Document](2022-T2-Hand-Over-Document.md)
 
@@ -14,8 +17,8 @@ A document created to be the first document read on the project.
 
 ## [Project On-boarding](Project-On-Boarding.md)
 
-A document created to assist with the on-boarding process of new contributors to the Task View and
-Submission Redesign project.
+A document created to assist with the on-boarding process of new contributors to
+the Task View and Submission Redesign project.
 
 ## [View Task and Submission Redesign Epic](Epic.md)
 

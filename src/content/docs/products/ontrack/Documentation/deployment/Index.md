@@ -1,4 +1,6 @@
-# Google Cloud - Documentation Index
+---
+title: Google Cloud - Documentation Index
+---
 
 ## [Overview](Overview.md)
 

@@ -1,4 +1,6 @@
-# Project Name: \<\<Project Name Goes Here\>\>
+---
+title: Project Name:\<\<Project Name Goes Here\>\>
+---
 
 ## Delivery Lead: \<\<Delivery Lead for your project\>\>
 
@@ -18,7 +20,8 @@
 
 ## **Delivery**
 
-\<\<Add here how you will achieve the project and any planning or research you have done, include
+\<\<Add here how you will achieve the project and any planning or research you
+have done, include
 screenshots where needed\>\>
 
 \<\< Also include Delivery times for stages of the project\>\>

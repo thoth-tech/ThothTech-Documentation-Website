@@ -1,4 +1,6 @@
-# OnTrack Component Review
+---
+title: OnTrack Component Review
+---
 
 ## Team Member
 
@@ -15,25 +17,27 @@ Relevant files:
 
 ## Component Purpose
 
-The purpose of the component is to edit the details for a teaching period. It also allows the user
-to update key properties of a teaching period, such as the name and length.
+The purpose of the component is to edit the details for a teaching period. It
+also allows the user to update key properties of a teaching period, such as the
+name and length.
 
 ![teaching-period-details-editor](Resources/teaching-period-details-editor.png)
 
 ## Component Outcomes and Interactions
 
-The expected outcome of the component is to provide a user-friendly interface for updating the key
-properties of a teaching period.
+The expected outcome of the component is to provide a user-friendly interface
+for updating the key properties of a teaching period.
 
-Interaction occurs with the user through a form which contains a series of text and date inputs.
+Interaction occurs with the user through a form which contains a series of text
+and date inputs.
 
 ## Component Migration Plan
 
-The migration plan is to review similar form based components that have already been migrated to
-TypeScript and Material UI.
+The migration plan is to review similar form based components that have already
+been migrated to TypeScript and Material UI.
 
-For example, the `edit-profile-form` component. Based on this review, migrate the component in such
-a way that is in line with the previous works to maintain consistency.
+For example, the `edit-profile-form` component. Based on this review, migrate
+the component in such a way that is in line with the previous works to maintain consistency.
 
 `edit-profile-form`
 
@@ -41,7 +45,7 @@ a way that is in line with the previous works to maintain consistency.
 
 ## Component Post-Migration
 
-The work required to migrate the component is now complete and the migrated component is shown
-below.
+The work required to migrate the component is now complete and the migrated
+component is shown below.
 
 ![teaching-period-details-editor-migrated](Resources/teaching-period-details-editor-migrated.png)

@@ -1,4 +1,6 @@
-# Thoth Tech Documentation Template
+---
+title: Thoth Tech Documentation Template
+---
 
 ## Author Information
 

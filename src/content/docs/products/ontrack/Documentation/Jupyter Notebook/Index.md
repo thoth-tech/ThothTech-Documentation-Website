@@ -1,4 +1,6 @@
-# Jupyter Notebook Documentation Index
+---
+title: Jupyter Notebook Documentation Index
+---
 
 ## [Jupyter Notebook Epic](Jupyter-Notebook-Epic-T1-2022.md)
 

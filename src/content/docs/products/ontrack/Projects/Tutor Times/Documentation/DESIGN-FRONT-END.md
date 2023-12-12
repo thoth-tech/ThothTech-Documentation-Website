@@ -1,31 +1,34 @@
-# Frontend Design Document for "Tutor Times" Feature in OnTrack
+---
+title: Frontend Design Document for "Tutor Times" Feature in OnTrack
+---
 
 ## 1. Introduction
 
 ### 1.1 Purpose
 
-This document outlines the design of the frontend for the "Tutor Times" feature in OnTrack (formerly
-known as Doubtfire). The purpose is to provide an intuitive and user-friendly interface for tutors
-to track and manage the time spent on providing feedback to students.
+This document outlines the design of the frontend for the "Tutor Times" feature
+in OnTrack (formerly known as Doubtfire). The purpose is to provide an intuitive
+and user-friendly interface for tutors to track and manage the time spent on
+providing feedback to students.
 
 ### 1.2 Scope
 
-The scope of this design document covers the user interface (UI) and user experience (UX) aspects of
-the "Tutor Times" feature within the OnTrack Learning Management System. This feature will enhance
-the skill-based course delivery model by enabling tutors to monitor their time management
-efficiently.
+The scope of this design document covers the user interface (UI) and user
+experience (UX) aspects of the "Tutor Times" feature within the OnTrack Learning
+Management System. This feature will enhance the skill-based course delivery
+model by enabling tutors to monitor their time management efficiently.
 
 ### 1.3 Intended Audience
 
-This document is intended for frontend developers, designers, and stakeholders involved in the
-implementation of the "Tutor Times" feature.
+This document is intended for frontend developers, designers, and stakeholders
+involved in the implementation of the "Tutor Times" feature.
 
 ## 2. User Interface (UI) Design
 
 ### 2.1 Overview
 
-The "Tutor Times" feature will seamlessly integrate into the existing OnTrack UI, maintaining a
-cohesive visual identity and navigation structure.
+The "Tutor Times" feature will seamlessly integrate into the existing OnTrack UI,
+maintaining a cohesive visual identity and navigation structure.
 
 ### 2.2 Wireframes and Mockups
 
@@ -33,19 +36,20 @@ cohesive visual identity and navigation structure.
 
 - A link will be provided here in future to the mockup for the Dashboard.
 
-- The dashboard provides an overview of marking time statistics, including total time spent, average
-  time per student, and notifications.
+- The dashboard provides an overview of marking time statistics, including total
+  time spent, average time per student, and notifications.
 
 #### 2.2.2 Student Feedback Page
 
 - A link will be provided here in future to the mockup for the Student Feedback Page.
 
-- The Student Feedback Page displays a list of students and their respective marking times. Tutors
-  can start, stop, or manually input time for each student.
+- The Student Feedback Page displays a list of students and their respective
+  marking times. Tutors can start, stop, or manually input time for each student.
 
 ### 2.3 Responsive Design
 
-The UI will be responsive to ensure a consistent user experience across various devices, including
+The UI will be responsive to ensure a consistent user experience across various
+devices, including
 desktops, tablets, and mobile phones.
 
 ### 2.4 Colour Scheme
@@ -62,23 +66,24 @@ desktops, tablets, and mobile phones.
 
 ### 2.6 Icons
 
-Standard icons will be used for actions such as starting and stopping timers, along with custom
-icons for notifications.
+Standard icons will be used for actions such as starting and stopping timers,
+along with custom icons for notifications.
 
 ### 2.7 Navigation
 
-The "Tutor Times" feature will be accessible through the main navigation menu within OnTrack. Clear
-breadcrumbs will guide users through the application.
+The "Tutor Times" feature will be accessible through the main navigation menu
+within OnTrack. Clear breadcrumbs will guide users through the application.
 
 ### 2.8 Forms and Inputs
 
-Input forms will include text fields for manual time input, along with start and stop buttons for
-timers. Error handling will include validation and user-friendly error messages.
+Input forms will include text fields for manual time input, along with start and
+stop buttons for timers. Error handling will include validation and user-friendly
+error messages.
 
 ### 2.9 Notifications
 
-Notifications will be displayed at the top of the dashboard, providing real-time feedback on marking
-progress and milestones.
+Notifications will be displayed at the top of the dashboard, providing real-time
+feedback on marking progress and milestones.
 
 ### 2.10 User Profiles
 
@@ -99,13 +104,13 @@ Tutors will have access to their profiles to view personal information and setti
 
 ### 3.2 Accessibility
 
-Accessibility features will be implemented, including alt text for images, keyboard navigation, and
-screen reader compatibility.
+Accessibility features will be implemented, including alt text for images,
+keyboard navigation, and screen reader compatibility.
 
 ### 3.3 Usability
 
-The UI will prioritize usability, with clear and intuitive interactions, ensuring tutors can
-efficiently manage marking times.
+The UI will prioritize usability, with clear and intuitive interactions,
+ensuring tutors can efficiently manage marking times.
 
 ### 3.4 User Feedback
 
@@ -116,16 +121,18 @@ enhancing the feature over time.
 
 ### 4.1 Timer/Stopwatch Feature
 
-- Tutors can start, stop, and reset timers to track marking time for each student accurately.
+- Tutors can start, stop, and reset timers to track marking time for each student
+  accurately.
 
 ### 4.2 Manual Time Input
 
-- Tutors have the option to manually input marking time for students, providing flexibility in time
-  tracking.
+- Tutors have the option to manually input marking time for students, providing
+  flexibility in time tracking.
 
 ### 4.3 Notification System
 
-- Real-time notifications will alert tutors of milestones and progress, enhancing user engagement.
+- Real-time notifications will alert tutors of milestones and progress, enhancing
+  user engagement.
 
 ## 5. Performance Considerations
 
@@ -146,8 +153,8 @@ Caching mechanisms will be implemented to reduce load times and improve overall 
 
 ### 6.2 Device Compatibility
 
-Responsive design will ensure compatibility with various devices, including desktops, tablets, and
-mobile phones.
+Responsive design will ensure compatibility with various devices, including
+desktops, tablets, and mobile phones.
 
 ## 7. Security
 
@@ -168,19 +175,20 @@ mobile phones.
 
 ### 8.2 Collaboration Tools
 
-- Tools like Slack and project management software will facilitate communication among team members.
+- Tools like Slack and project management software will facilitate communication
+  among team members.
 
 ## 9. Testing Plan
 
 ### 9.1 Unit Testing
 
-- Unit tests will be developed for frontend components, including timers, input forms, and
-  notifications.
+- Unit tests will be developed for frontend components, including timers, input
+  forms, and notifications.
 
 ### 9.2 User Acceptance Testing
 
-- User acceptance testing (UAT) will ensure that the "Tutor Times" feature meets user requirements
-  and expectations.
+- User acceptance testing (UAT) will ensure that the "Tutor Times" feature meets
+  user requirements and expectations.
 
 ## 10. Deployment Plan
 
@@ -190,16 +198,17 @@ mobile phones.
 
 ### 10.2 Deployment Process
 
-- A systematic deployment process will be followed to release frontend updates to the live
-  environment.
+- A systematic deployment process will be followed to release frontend updates
+  to the live environment.
 
 ## 11. Conclusion
 
-This design document provides a comprehensive plan for the frontend implementation of the "Tutor
-Times" feature in OnTrack. It outlines the UI/UX design, interactive features, performance
-considerations, compatibility, security measures, and testing strategies. This design will enhance
-the learning experience for tutors and students, promoting efficient time management and feedback
-delivery.
+This design document provides a comprehensive plan for the frontend
+implementation of the "Tutor Times" feature in OnTrack. It outlines the UI/UX
+design, interactive features, performance considerations, compatibility,
+security measures, and testing strategies. This design will enhance
+the learning experience for tutors and students, promoting efficient time
+management and feedback delivery.
 
 ## 12. Appendices
 

@@ -1,6 +1,7 @@
-# Steps For Migration
-
 ---
+title: Steps For Migration
+---
+
 
 We have **two steps** for migration a component.
 

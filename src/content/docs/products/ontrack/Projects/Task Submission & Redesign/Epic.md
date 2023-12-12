@@ -1,8 +1,8 @@
-[Back to index](Index.md)
-
-## Author Information
-
 ---
+title: Author Information
+---
+
+[Back to index](Index.md)
 
 - Authors: [Yaser Deeb](https://github.com/YADEEB21)
 - Team: OnTrack - Task View and Submission Redesign
@@ -14,8 +14,8 @@
 
 - Documentation Title: Epic Document
 - Documentation Type: Technical
-- Documentation Information Summary: Critical links and resources; the background, context, and
-  business value of the project; and the acceptance criteria.
+- Documentation Information Summary: Critical links and resources; the background,
+  context, and business value of the project; and the acceptance criteria.
 
 ## Document Review Information
 
@@ -30,20 +30,21 @@
 
 ---
 
-Trello: A web-based list-making application designed with a focus on teams that implement a scrum
-style of organisation.
+Trello: A web-based list-making application designed with a focus on teams that
+implement a scrum style of organisation.
 
 Figma: A web-based application for user interface and user experience design.
 
-UI: User Interface; the means by which a human interacts with a machine, these are typically
-graphical interfaces that accept input from an end-user.
+UI: User Interface; the means by which a human interacts with a machine, these
+are typically graphical interfaces that accept input from an end-user.
 
-UX: User Experience; all aspects of the end-user's interactions with an application or device.
+UX: User Experience; all aspects of the end-user's interactions with an
+application or device.
 
-Flow: A frame-by-frame image of a user (a student, tutor, convenor, or administrator) performing a
-necessary function from beginning to end. Flows allow designers to think critically about how the
-usability of a design. It may save the project from investing time and resources into unusable
-dead-ends.
+Flow: A frame-by-frame image of a user (a student, tutor, convenor, or administrator)
+performing a necessary function from beginning to end. Flows allow designers to
+think critically about how the usability of a design. It may save the project
+from investing time and resources into unusable dead-ends.
 
 ## Key Links/Resources
 
@@ -69,19 +70,21 @@ see [Thoth Tech Handbook](https://github.com/thoth-tech/handbook/blob/main/READM
 
 - [Task Submission redesign requirements and specifications document](Requirements.md)
 
-# View Task and Submission Epic Document
+## View Task and Submission Epic Document
 
 ## Background / Context
 
-OnTrack is employed by multiple institutions as a learning management system. The View Task and
-Submission project intends to create user-centric modifications to existing features, addition of
+OnTrack is employed by multiple institutions as a learning management system.
+The View Task and Submission project intends to create user-centric
+modifications to existing features, addition of
 new features to the task submission and view in the OnTrack platform.
 
 ## Business Value
 
-By further modernising OnTrack, institutions can deploy the OnTrack platform to satisfy the needs of
-their students, markers, assessors, and auditors. The platform can support all stakeholders to
-fulfil their obligations and, in the case of the student, support the learning of essential
+By further modernising OnTrack, institutions can deploy the OnTrack platform to
+satisfy the needs of their students, markers, assessors, and auditors. The
+platform can support all stakeholders to fulfil their obligations and, in the
+case of the student, support the learning of essential
 concepts. By streamlining the experience of markers, then associated costs may decrease.
 Additionally, the feedback loop for students (the learning feedback loop) may shorten.
 
@@ -121,7 +124,8 @@ Additionally, the feedback loop for students (the learning feedback loop) may sh
 
 ## Operations / Support / Training Considerations
 
-Team members may require training/up-skilling in applications, technologies, and languages, such as:
+Team members may require training/up-skilling in applications, technologies, and
+languages, such as:
 
 - [git](https://git-scm.com/)
 - [GitHub](https://github.com/),
@@ -137,13 +141,13 @@ Team members may require training/up-skilling in applications, technologies, and
 - [React](https://reactjs.org/),
 - [MUI](https://mui.com/).
 
-Team members must express testing skills by use of various testing tools to ensure functionalities
-work as intended. They also must be able to fix and/or document and report on issues or bugs as they
-arise.
+Team members must express testing skills by use of various testing tools to
+ensure functionalitie work as intended. They also must be able to fix and/or
+document and report on issues or bugs as they arise.
 
 ## Acceptance Criteria
 
 - Managing director must approve of the design before implementation.
-- If a change is required, then an alteration to the design (with approval from the managing
-  director) must be completed first.
+- If a change is required, then an alteration to the design (with approval from
+  the managine director) must be completed first.
 - All code must be tested before an attempt to pull into the upstream repositories.

@@ -1,4 +1,6 @@
-# How to Run OnTrack with Ubuntu on an External SSD
+---
+title: How to Run OnTrack with Ubuntu on an External SSD
+---
 
 ## Requirements
 
@@ -15,7 +17,8 @@
 
 1. Open Rufus.
 2. Select the USB drive from the 'Device' dropdown.
-3. Click the 'SELECT' button to choose the Ubuntu ISO (should be in your downloads folder).
+3. Click the 'SELECT' button to choose the Ubuntu ISO (should be in your
+   downloads folder).
 4. Click the 'START' button at the bottom.
 
    ![Rufus Start](images/rufus_screenshot.png)
@@ -27,14 +30,14 @@
 
    ![Boot Keys](images/bootkeys.png)
 
-3. There should be a list of boot options including Windows Boot Manager. Select the bootable USB
-   with the Ubuntu ISO.
+3. There should be a list of boot options including Windows Boot Manager. Select
+   the bootable USB with the Ubuntu ISO.
 4. The Ubuntu OS will load in portable mode from the USB.
 
 ## 4. Install Ubuntu on External SSD
 
-1. After booting into Ubuntu you should be provided with the option to Try Ubuntu or Install Ubuntu.
-   Select Install Ubuntu.
+1. After booting into Ubuntu you should be provided with the option to Try
+   Ubuntu or Install Ubuntu. Select Install Ubuntu.
 
    ![Ubuntu Boot Options](images/ubuntu_options.png)
 
@@ -75,8 +78,8 @@
    cd Downloads
    ```
 
-5. Enter the following command in the terminal to connect to the wifi network and follow the prompts
-   to enter your Deakin username and password.
+5. Enter the following command in the terminal to connect to the wifi network
+   and follow the prompts to enter your Deakin username and password.
 
    ```shell
     sh SecureW2_JoinNow.run
@@ -120,7 +123,8 @@
    code .
    ```
 
-3. Run change remotes script in the integrated terminal to change the remote to your own repository.
+3. Run change remotes script in the integrated terminal to change the remote to
+   your own repository.
 
    ```shell
    ./change-remotes.sh
@@ -130,6 +134,6 @@
 
 ## 8. Run OnTrack
 
-1. After re-opening vscode, the script should automatically run and open the OnTrack application in
-   your browser.
+1. After re-opening vscode, the script should automatically run and open the
+   OnTrack application in your browser.
 2. Happy coding!

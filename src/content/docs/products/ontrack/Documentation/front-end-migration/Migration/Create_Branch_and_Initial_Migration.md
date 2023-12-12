@@ -1,4 +1,6 @@
-# Create Brance and Initial Migration
+---
+title: Create Brance and Initial Migration
+---
 
 > Trimester 3 2022
 
@@ -13,7 +15,8 @@
 
 ```console
 git checkout development # make sure you are on develop
-git pull --rebase upstream development # sync your local develop with upstream's develop
+git pull --rebase upstream development # sync your local develop with upstream's
+develop
 ```
 
 ```console
@@ -63,8 +66,8 @@ Add the start of the TypeScript using something based on the following:
 
 ![Start of the TypeScript](imgs/start_typescript.png)
 
-We can’t see any of these changes yet, but it is a good clean start so let’s commit this before we
-move on.
+We can’t see any of these changes yet, but it is a good clean start so let’s
+commit this before we move on.
 
 ```console
 git add .
@@ -72,9 +75,9 @@ git commit -m "build: create initial files for migration”
 git push --set-upstream origin touth/migrate/not-found
 ```
 
-Then we should make sure to push this back to GitHub so others can see our progress. As this is a
-new branch you will need to set the upstram branch, but if you forget the `git push` will remind you
-anyway.
+Then we should make sure to push this back to GitHub so others can see our
+progress. As this is a new branch you will need to set the upstram branch, but
+if you forget the `git push` will remind you anyway.
 
 ![Push to origin](imgs/push_to_origin.png)
 
@@ -92,8 +95,8 @@ In the ./src/app you should see
 
 ![Dependency Injection](imgs/Dependency_Injection.png)
 
-Because we want to migrate AngularJS to Angular, therefore we need to unlink the module from
-AngularJS and link to Angular.
+Because we want to migrate AngularJS to Angular, therefore we need to unlink the
+module from AngularJS and link to Angular.
 
 1. Delete the import from related module from (doubtfire-web/src/app.doubtfire-angularjs.module.ts)
    - ![delete import](imgs/delete_import.png)
@@ -112,6 +115,6 @@ AngularJS and link to Angular.
 
 ## **Congratulations**
 
-It is **DONE** for the initial migration. At this stage, you will need to upskill yourself about
-TypeScript, Angular and AngularJS and working in the code base and read the document about Regular
-Migration. Good Luck!
+It is **DONE** for the initial migration. At this stage, you will need to upskill
+yourself about TypeScript, Angular and AngularJS and working in the code base
+and read the document about Regular Migration. Good Luck!

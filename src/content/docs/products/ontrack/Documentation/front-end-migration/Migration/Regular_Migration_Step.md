@@ -1,10 +1,13 @@
-# You should do this after Create the Branch and Finish the Initial Migration
+---
+title: You should do this after Create the Branch and Finish the Initial Migration
+---
 
 > Trimester 2 2022 – SIT374
 
 ## Ensure you have your author credentials set up
 
-You should ensure your git user config details are set to the email address you use with GitHub:
+You should ensure your git user config details are set to the email address you
+use with GitHub:
 
 ```shell
 git config --global user.email "my-github-email@gmail.com"
@@ -17,7 +20,8 @@ git config --global user.name "Freddy Smith"
 
 ````shell
 git checkout development                # make sure you are on develop
-git pull --rebase upstream development  # sync your local develop with upstream's develop
+git pull --rebase upstream development  # sync your local develop with 
+                                          upstream's develop
 git fetch thoth
 git checkout -b my-new-branch           # create your new feature branch```
 ````
