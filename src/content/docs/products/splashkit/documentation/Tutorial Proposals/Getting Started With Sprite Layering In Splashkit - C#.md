@@ -1,6 +1,6 @@
 # Tutorial Proposal
 
-## Title: Getting Started With Sprite Layering In Splashkit - C#
+## Title: Getting Started With Sprite Layering In Splashkit - C
 
 ### Introduction
 
@@ -19,7 +19,7 @@ sprites to create visually appealing scenes without excess Sprite / Bitmap manag
 
 1. [Create Sprite](https://splashkit.io/api/sprites/#create-sprite)
 2. [Sprite Add Layer](https://splashkit.io/api/sprites/#sprite-add-layer)
-3. [Bring Layer Forward ](https://splashkit.io/api/sprites/#sprite-bring-layer-forward)
+3. [Bring Layer Forward](https://splashkit.io/api/sprites/#sprite-bring-layer-forward)
 4. [Sprite Bring Layer To Front](https://splashkit.io/api/sprites/#sprite-bring-layer-to-front)
 5. [Sprite Hide Layer](https://splashkit.io/api/sprites/#sprite-hide-layer-named)
 6. [Sprite Toggle Layer Visible](https://splashkit.io/api/sprites/#sprite-toggle-layer-visible-named)
