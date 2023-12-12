@@ -4,6 +4,32 @@ description:
   Details of what will be required of the backend for CourseFlow within the OnTrack system.
 ---
 
+- [Introduction](#introduction)
+- [Course Map](#course-map)
+  - [Routes](#routes)
+  - [Model](#model)
+- [Course Map Unit](#course-map-unit)
+  - [Routes](#routes-1)
+  - [Model](#model-1)
+- [Course](#course)
+  - [Routes](#routes-2)
+  - [Model](#model-2)
+- [Unit](#unit)
+  - [Routes](#routes-3)
+  - [Model](#model-3)
+- [Specialization](#specialization)
+  - [Routes](#routes-4)
+  - [Model](#model-4)
+- [Teaching Period](#teaching-period)
+  - [Routes](#routes-5)
+  - [Model](#model-5)
+- [Requirements](#requirements)
+  - [Routes](#routes-6)
+  - [Model](#model-6)
+- [RequirementsSet](#requirementsset)
+  - [Routes](#routes-7)
+  - [Model](#model-7)
+
 ## Introduction
 
 ---
@@ -43,7 +69,7 @@ This specific route is mostly going to be for templates of a course map. Essenti
 find a course map for a user, we will need to trigger a response to add a new course map. Once we
 have the associated course for the student (obtained via mechanisms described below), we can use the
 course id to fetch all course maps with that id that do not have a user id which will be implied to
-be templates (with pre-set course map units at the proper position).
+be templates (with pre-set course map units at the proper positions).
 
 As mentioned but worth repeating, for this to work properly, this has to only include course map
 data without a user id (we do not want to fetch course maps belonging to other students). When a
@@ -82,12 +108,13 @@ The model for the course map will be as follows:
 The main thing to note regarding this model is the course id which will need to be obtained before
 creating a new course map entry. This will be utilized to fetch information about the course such as
 requirements etc. For the purposes of this model and the associated POST route, the mechanism in
-getting the associated course itself is not crucial. The options at present involves:
+getting the associated course itself is not important (as this will be handled separately). The
+options at present involves:
 
 - Getting student enrolment information via an API to Deakin University's systems.
 - Importing student enrolment information.
-- Manually setting the course via a client side user interface (will be an input box presenting best
-  matching courses).
+- Manually setting the course via a client side user interface (will be an input box resulting in
+  best matching courses based on search query).
 - Associating a course upon creation of the user and have the course map created at this point in
   time.
 
@@ -119,23 +146,31 @@ To further elaborate on each route:
 Here, we use the course map id to fetch all course map units associated with that id. This will
 essentially retrieve user/student specific set course map units.
 
+An alternative to having this handled as a separate route is potentially a join operation when
+fetching the course map. In this situation, we combine the course map units together with the course
+map data in the request body.
+
 **POST /coursemapunit**
 
 This is needed to add new course map units for a specific course map.
 
 Please note that for this to be correct, we will not only need to associate this with a course map,
 but also to specific instance of a unit (a unit version that belongs to a specific year and teaching
-period etc.).
+period etc.). This is achievable through the client side processes when dragging and dropping (or
+selecting) a unit into the respective slot where the unit Id will be available at that point in
+time.
 
 **PUT /coursemapunit/courseMapUnitId**
 
 This allows for updating a course map unit. The main use case for this is when a user is moving a
 unit around within the course map or performing a swap with another unit. Here, we can make direct
-calls to this route and update the data with new positional information (slot positions).
+calls to this route and update the data with new positional information (slot positions for year
+etc.).
 
 **DELETE /coursemapunit/courseMapUnitId**
 
-A simple delete route where we can delete a course map unit via its id.
+A simple delete route where we can delete a course map unit via its id. There will be an option
+available on the client side to delete course map units from the course map.
 
 **DELETE /coursemapunit/courseMapId**
 
@@ -454,10 +489,10 @@ requirements (further information for this provided in the Enhanced erd and data
 document).
 
 It is worth pointing out that at this point in time, the current progress of a student in achieving
-the requirement (complete 5 out of 21 units for example) will not be recorded. The primary aim is to
-have the client side utilize the requirement data in conjunction with the units set on the course
-map (and potentially units marked as complete) to provide visual indicators on the client side to
-show requirement progression.
+the requirement (complete 5 out of 21 units for example) will not be recorded in the database. The
+primary aim is to have the client side utilize the requirement data in conjunction with the units
+set on the course map (and potentially units marked as complete) to provide visual indicators on the
+client side to show requirement progression.
 
 ## RequirementsSet
 
