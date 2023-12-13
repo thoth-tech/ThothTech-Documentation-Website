@@ -1,9 +1,9 @@
-## Controls
+# Controls
 
 The following keys are required to be the functional keys of your game to be compatible with the
 arcade machine.
 
-### Player One
+## Player One
 
 Up: `Up` | Left: `Left` | Down: `Down` | Right: `Right`  
 Button 1: `LeftCtrl` | Button 2: `LeftAlt`  
@@ -11,7 +11,7 @@ Button 3: `Space` | Button 4: `LeftShift`
 Button 5: `Z` | Button 6: `X`  
 Button 7: `C` | Button 8: `V`
 
-### Player Two
+## Player Two
 
 Up: `R` | Left: `D` | Down: `F` | Right: `G`  
 Button 1: `A` | Button 2: `S`  
@@ -19,7 +19,7 @@ Button 3: `Q` | Button 4: `W`
 Button 5: `I` | Button 6: `K`  
 Button 7: `J` | Button 8: `L`
 
-### General
+## General
 
 Start Player 1: `Num1` | Start Player 2: `Num2`  
 Coin 1: `Num5` | Coin 2: `Num6`  

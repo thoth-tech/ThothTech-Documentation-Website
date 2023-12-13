@@ -1,10 +1,10 @@
-## Title: Understanding CMakeLists.txt for Building the SplashKit Core Library
+# Title: Understanding CMakeLists.txt for Building the SplashKit Core Library
 
 As a Splashkit developer I want to learn how the CMakeLists.txt file works for building the
 SplashKit core library, So that I can effectively compile and link SplashKit on various platforms
 for my game development and multimedia projects.
 
-### Introduction
+## Introduction
 
 This tutorial aims to provide readers with a basic understanding of the CMakeLists.txt file used for
 building the SplashKit core library. CMake is a powerful build system generator that simplifies the

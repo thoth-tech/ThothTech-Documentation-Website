@@ -1,6 +1,6 @@
-## Tutorial Proposal: Working with Sound Effects in Splashkit
+# Tutorial Proposal: Working with Sound Effects in Splashkit
 
-### Introduction
+## Introduction
 
 In this tutorial, we will delve into the world of sound effects in Splashkit, a library designed to
 facilitate game development. By the end of this tutorial, you will have a solid understanding of how

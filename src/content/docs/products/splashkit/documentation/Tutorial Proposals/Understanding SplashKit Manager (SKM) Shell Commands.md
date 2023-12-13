@@ -1,6 +1,6 @@
-## Title: Understanding SplashKit Manager (SKM) Shell Commands
+# Title: Understanding SplashKit Manager (SKM) Shell Commands
 
-### Introduction
+## Introduction
 
 This tutorial aims to provide a comprehensive understanding of the SplashKit Manager (SKM) shell
 commands. SKM is a powerful command-line tool used for managing SplashKit projects and resources. By

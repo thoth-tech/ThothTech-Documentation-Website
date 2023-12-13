@@ -1,4 +1,4 @@
-# Title: Getting Started With Sprites in Splashkit - C#
+# Title: Getting Started With Sprites in Splashkit - C
 
 ## What _is_ a Sprite in Splashkit?
 
@@ -37,7 +37,7 @@ Bitmap(string name, string file);
 Bitmap(string name, int width int height);
 ```
 
-2. Instantiate a new `Object happySunSprite`, of `Type Sprite`
+1. Instantiate a new `Object happySunSprite`, of `Type Sprite`
 
    ```csharp
    Sprite happySunSprite;
@@ -174,7 +174,7 @@ reading on ahead. What specific process are we missing that would cause _every_ 
 
 Truth is it's just a single line, if we add in
 
-```
+```c
   spriteWindow.Clear(Color.White);
 ```
 
