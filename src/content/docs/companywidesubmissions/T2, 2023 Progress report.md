@@ -230,7 +230,9 @@ Researched the proper platform for hosting the documentation website.
 https: //github.com/thoth-tech/Company-Operations/pull/24
 Documented learnings from investigating various documentation platforms.
 Docs: knowledge base prior learning and test documentation by Kyle-Dav · Pull Request
+
 # 9 · thoth-tech/Company-Operations (github.com)
+
 Kyle
 Adams
 Improved the side navigation bars on Starlight.
@@ -243,7 +245,9 @@ Add documentation platform research by QuinnCurtis02 · Pull Request #13 · thot
 Created test documentation to temporarily fill knowledge base.
 docs: created ExampleDocMD and ExampleDocRJS · Kyle-Dav/thothoperations@15e3c66 (github.com)
 Docs: knowledge base prior learning and test documentation by Kyle-Dav · Pull Request
+
 # 9 · thoth-tech/Company-Operations (github.com)
+
 Started the testing for changing product repository.
 Move updated Starlight to the documentation repo root on Company Operations |
 Trello
@@ -1252,7 +1256,9 @@ Refactor and
 improve
 authentication
 service code
+
 # 738
+
 https: //github.com/doubtfi
 re-lms/doubtfireweb/pull/738
 5
