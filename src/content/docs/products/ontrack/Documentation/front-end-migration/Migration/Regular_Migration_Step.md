@@ -20,7 +20,7 @@ git config --global user.name "Freddy Smith"
 
 ````shell
 git checkout development                # make sure you are on develop
-git pull --rebase upstream development  # sync your local develop with 
+git pull --rebase upstream development  # sync your local develop with
                                           upstream's develop
 git fetch thoth
 git checkout -b my-new-branch           # create your new feature branch```

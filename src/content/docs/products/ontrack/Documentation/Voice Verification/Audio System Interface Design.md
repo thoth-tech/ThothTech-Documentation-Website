@@ -18,10 +18,10 @@ title: Audio System Interface Design Document
 - Documentation Type: Technical
 - Documentation Information Summary: Design document detailing the
   implementation of the OnTrack Voice Verification audio system interface,
-  showcased by wire frames for frontend development.
-  Interface to allow tutors to see the results from the voice verification test
-  with the new OnTrack Overseer system as well. The perspective is from a tutors
-  as they are the only ones who have access to it.
+  showcased by wire frames for frontend development. Interface to allow tutors
+  to see the results from the voice verification test with the new OnTrack
+  Overseer system as well. The perspective is from a tutors as they are the
+  only ones who have access to it.
 
 ## Document Review Information
 
@@ -60,11 +60,11 @@ for the tutors interface when accessing the voice verification results.
 
 ![figure 1](Research%20&%20Findings/images/figure1.jpeg)
 
-**Figure 2** below shows a digital draft design for the flowchart between the
-three different results and visualisations shown in Figure 1. The visualisations
-are shown for the results and similar conventions used for display. Branching
-off to the main processes that would subsequently become an output from
-clicking on these results.
+**Figure 2** below shows a digital draft design for the flowchart between
+the three different results and visualisations shown in Figure 1. The
+visualisations are shown for the results and similar conventions used for
+display. Branching off to the main processes that would subsequently
+become an output from clicking on these results.
 
 ![figure 2](Research%20&%20Findings/images/figure2.PNG)
 
@@ -72,22 +72,22 @@ clicking on these results.
 
 ---
 
-**Figures 3 and 4** below shows the process and results when the tutor clicks on
-an audio file. These figures show files that are still pending.
+**Figures 3 and 4** below shows the process and results when the tutor clicks
+on an audio file. These figures show files that are still pending.
 
 ![figure 2](Research%20&%20Findings/images/figure3.PNG)
 
 ![figure 3](Research%20&%20Findings/images/figure4.PNG)
 
-**Figures 5 and 6** below shows the process and results of when the tutor clicks
-on an verification pending audio file.
+**Figures 5 and 6** below shows the process and results of when the tutor
+clicks on an verification pending audio file.
 
 ![figure 5](Research%20&%20Findings/images/figure5.PNG)
 
 ![figure 6](Research%20&%20Findings/images/figure6.PNG)
 
-**Figures 7 and 8** shows the process and results of when the tutor clicks on an
-audio file that has completed the Verification process.
+**Figures 7 and 8** shows the process and results of when the tutor clicks on
+an audio file that has completed the Verification process.
 
 ![figure 7](Research%20&%20Findings/images/figure7.PNG)
 

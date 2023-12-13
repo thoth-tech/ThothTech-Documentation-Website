@@ -8,8 +8,8 @@ title: Test Cases for Incorporating Multiple Organisations on OnTrack Server
 
 ## Introduction
 
-This document outlines test cases for incorporating multiple organisations on
-the OnTrack server, enhancing its functionality to accommodate various
+This document outlines test cases for incorporating multiple organisations
+on the OnTrack server, enhancing its functionality to accommodate various
 organizations within a single system instance.
 
 ## Backend Functionality
@@ -85,8 +85,8 @@ Steps:
 
 4\. Assign the user to an organisation.
 
-Expected Outcome: The user is associated with the chosen organisation, and their
-profile reflects the change.
+Expected Outcome: The user is associated with the chosen organisation, and
+their profile reflects the change.
 
 Test Case 5: User Switching Between Organisations
 
@@ -101,8 +101,8 @@ Steps:
 
 3\. Select a different organisation to switch to.
 
-Expected Outcome: The user's context changes to the selected organisation, and
-they can access its resources and functionalities.
+Expected Outcome: The user's context changes to the selected organisation,
+and they can access its resources and functionalities.
 
 ## Access Control
 
@@ -154,8 +154,8 @@ Steps:
 
 4\. Submit the form.
 
-Expected Outcome: A new organisation is created, and it is displayed in the list
-of organisations managed by the Site Administrator.
+Expected Outcome: A new organisation is created, and it is displayed in the
+list of organisations managed by the Site Administrator.
 
 Test Case 9: Frontend - Editing an Organisation
 
@@ -190,15 +190,15 @@ Steps:
 
 4\. Disable the organisation using the frontend interface.
 
-Expected Outcome: The organisation is visually disabled and no longer accessible
-to users via the frontend. It remains in the system for reference.
+Expected Outcome: The organisation is visually disabled and no longer
+accessible to users via the frontend. It remains in the system for reference.
 
 ## User Organisation Assignment``
 
 Test Case 11: Frontend - Associating a User with an Organisation
 
-Description: Test the frontend functionality to associate a user with a specific
-organisation.
+Description: Test the frontend functionality to associate a user with a
+specific organisation.
 
 Steps:
 
@@ -231,6 +231,6 @@ organisation in the frontend, and they can access its resources and functionalit
 
 ## Conclusion
 
-These test cases cover both backend and frontend functionalities comprehensively
-to ensure that the multi-organisation feature functions correctly and provides
-a seamless experience for the users.
+These test cases cover both backend and frontend functionalities
+comprehensively to ensure that the multi-organisation feature functions
+correctly and provides a seamless experience for the users.

@@ -45,18 +45,22 @@ title: Frontend Requirements Document
 ### 1.1 Purpose
 
 The purpose of this document is to outline the requirements for the frontend
-development of the "Tutor Times" feature. This feature will enable tutors to
-track and manage the time spent on providing feedback to students.
+development of the
+"Tutor Times" feature. This feature will enable tutors to track and manage the
+time spent on
+providing feedback to students.
 
 ### 1.2 Scope
 
 The scope of this document covers the functional and non-functional requirements
-for the frontend implementation of the "Tutor Times" feature.
+for the frontend
+implementation of the "Tutor Times" feature.
 
 ### 1.3 Intended Audience
 
 This document is intended for frontend developers and the development team
-responsible for implementing the "Tutor Times" feature.
+responsible for
+implementing the "Tutor Times" feature.
 
 ## 2. Functional Requirements
 
@@ -67,21 +71,23 @@ responsible for implementing the "Tutor Times" feature.
 
 ### 2.2 User Interface
 
-- Design an intuitive and user-friendly interface for the Tutor's Marking Progress
-  Page.
+- Design an intuitive and user-friendly interface for the Tutor's Marking
+Progress Page.
 - Ensure responsive design for various screen sizes and devices.
 - Provide an option for tutors to manually input marking time.
 
 ### 2.3 Timer/Stopwatch Feature
 
 - Implement a timer or stopwatch feature that tutors can start and stop to track
-  time spent on each student.
+time spent on each
+  student.
 - Ensure accuracy in time tracking.
 
 ### 2.4 Manual Time Input
 
 - Allow tutors to manually input marking time for each student in case they
-  forget to start or stop the timer.
+forget to start or stop
+  the timer.
 
 ### 2.5 Notification System
 
@@ -107,7 +113,8 @@ responsible for implementing the "Tutor Times" feature.
 ## 3.4 Security
 
 - Implement necessary security measures to protect user data and prevent
-  unauthorized access to arking time records.
+unauthorized access to
+  arking time records.
 
 ## 4. User Stories
 
@@ -115,26 +122,27 @@ responsible for implementing the "Tutor Times" feature.
 
 **# As a tutor, I want to see how long I have spent providing feedback to each student.**
 
-- Tutors should be able to view the time spent on each student's feedback on the
-Tutor's Marking Progress Page.
+- Tutors should be able to view the time spent on each student's feedback on
+the Tutor's Marking
+  Progress Page.
 
 ### 4.2 User Story 2
 
 ### As a unit chair, I want to see how long each tutor has spent providing
 
-feedback to each student.**
+feedback to each student.\*\*
 
 - Unit chairs should have access to view the total marking time for each tutor
-  on the Tutor's
+on the Tutor's
   Marking Progress Page.
 
 ## 4.3 User Story 3
 
-**As a unit chair, I want to see how long each tutor has spent providing feedback
- to each task.**
+**As a unit chair, I want to see how long each tutor has spent providing
+feedback to each task.**
 
-- Unit chairs should be able to see the time spent by each tutor on specific tasks
- on the Tutor's
+- Unit chairs should be able to see the time spent by each tutor on specific
+tasks on the Tutor's
   Marking Progress Page.
 
 ## 5. Design Mockups
@@ -146,10 +154,11 @@ feedback to each student.**
 ## 6.1 Unit Testing
 
 - Develop unit tests to ensure the correctness and reliability of frontend ]
-  components, including
+components, including
   timers, manual input, and notifications.
 
 ## 6.2 User Acceptance Testing
 
-- Conduct user acceptance testing to verify that the "Tutor Times" feature meets
-  the requirement and user expectations.
+- Conduct user acceptance testing to verify that the "Tutor Times" feature
+meets the requirement and
+  user expectations.

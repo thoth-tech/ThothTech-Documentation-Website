@@ -30,8 +30,8 @@ title: How to Run OnTrack with Ubuntu on an External SSD
 
    ![Boot Keys](images/bootkeys.png)
 
-3. There should be a list of boot options including Windows Boot Manager. Select
-   the bootable USB with the Ubuntu ISO.
+3. There should be a list of boot options including Windows Boot Manager.
+   Select the bootable USB with the Ubuntu ISO.
 4. The Ubuntu OS will load in portable mode from the USB.
 
 ## 4. Install Ubuntu on External SSD

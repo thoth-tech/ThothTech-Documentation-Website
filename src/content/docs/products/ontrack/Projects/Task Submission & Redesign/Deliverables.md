@@ -5,15 +5,15 @@ title: Deliverable Items
 ## Purpose of this Document
 
 This document outlines the deliverable items the Task View and Submission
-Redesign project intends to deliver upon. Each trimester, this document is to be
-reassessed. All team members are expected to express their expertise by breaking
-down deliverable items into smaller, actionable tasks on a
-collaborative technology such as Trello.
+Redesign project intends to deliver upon. Each trimester, this document is
+to be reassessed. All team members are expected to
+express their expertise by breaking down deliverable items into smaller,
+actionable tasks on a collaborative technology such as Trello.
 
 ## Structure of the Deliverable Items Document
 
-All deliverable items are grouped into roles, but team members are allowed (and
-encouraged) to operate outside of their selected roles.
+All deliverable items are grouped into roles, but team members are allowed
+(and encouraged) to operate outside of their selected roles.
 
 All deliverable items have the common form:
 
@@ -27,8 +27,8 @@ These deliverable items should then be decomposed into constituting tasks,
 mediated by some collaborative technology (for example, [Trello](https://trello.com/)).
 
 All team members should participate in the decomposition of deliverable items.
-Team members are also encouraged to contribute ideas for deliverable items, as
-informed by their CLOs.
+Team members are also encouraged to contribute ideas for deliverable items,
+as informed by their CLOs.
 
 ## Deliverable Items
 
@@ -52,12 +52,14 @@ informed by their CLOs.
 
 - [ ] Create frame-by-frame flows of tutors performing current and new features.
 
-  - Multiple images and a video showcase, as output from [Figma](https://www.figma.com/),
-    in [thoth-tech/documentation](https://github.com/thoth-tech/documentation/),
-    as output from [Figma](https://www.figma.com/).
+  - Multiple images and a video showcase, as output from
+   [Figma](https://www.figma.com/), in
+    [thoth-tech/documentation](https://github.com/thoth-tech/documentation/),
+    as output from
+    [Figma](https://www.figma.com/).
 
   - Pre-requisite: A single, primary design must be selected for this to be
-    followed through with.
+  followed through with.
 
 - [ ] Create frame-by-frame flows of students performing current and new features.
 
@@ -65,12 +67,12 @@ informed by their CLOs.
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/).
 
   - Pre-requisite: A single, primary design must be selected for this to be
-    followed through with.
+  followed through with.
 
   - Additional information: These flows should determine whether an alteration
-    to the single, primary design is required and what specific alteration is
-    required. This could be broken down into tasks regarding specific flows for
-    showing the use of specific features.
+    to the single, primary design is required and what specific alteration
+    is required. This could be broken down
+    into tasks regarding specific flows for showing the use of specific features.
 
 - [ ] Complete the tutor-view design on [Figma](https://www.figma.com/).
 
@@ -78,11 +80,11 @@ informed by their CLOs.
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/).
 
   - Pre-requisite: The creation of all the flows of the single, primary
-    tutor-view design.
+  tutor-view design.
 
-  - Additional information: This deliverable item is completed once all changes,
-    as informed by usability and smart default problems obtained from the
-    construction of the flows, are fixed.
+  - Additional information: This deliverable item is completed once all
+    changes, as informed by usability and smart default problems obtained
+    from the construction of the flows, are fixed.
 
 - [x] Complete the student-view design on [Figma](https://www.figma.com/).
 
@@ -90,17 +92,18 @@ informed by their CLOs.
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/)
 
   - Pre-requisite: The creation of all the flows of the single, primary
-    student-view design.
+  student-view design.
 
-  - Additional information: This deliverable item is completed once all changes,
-    as informed by usability and smart default problems obtained from the
-    construction of the flows, are fixed.
+  - Additional information: This deliverable item is completed once all
+  changes, as informed by usability and smart default problems obtained
+  from the construction of the flows, are fixed.
 
 - [ ] Create new `TaskSubmissionEnhancement` Features to the student-view
       [Figma](https://www.figma.com/) design.
 
   - An image and video showcase, as output from [Figma](https://www.figma.com/),
-    in [thoth-tech/documentation](https://github.com/thoth-tech/documentation/).
+    in
+    [thoth-tech/documentation](https://github.com/thoth-tech/documentation/).
 
 - [ ] Create an administrator-view [Figma](https://www.figma.com/) design.
 
@@ -155,13 +158,13 @@ informed by their CLOs.
 
 - [x] Implement Docker at `chathistorydisplayer-web`.
 
-- [x] Integrate Docker Compose at the root of the [thoth-tech/ChatHistoryDisplayer]
-      repository.
+- [x] Integrate Docker Compose at the root of the
+ [thoth-tech/ChatHistoryDisplayer] repository.
 
 - [x] Add functionality to `chathistorydisplayer-api`: create user directories.
 
-- [x] Add functionality to `chathistorydisplayer-api`: create project directories
-      in user directories.
+- [x] Add functionality to `chathistorydisplayer-api`: create project
+    directories in user directories.
 
   - Additional information: Project directories must be initialised as git repositories.
 
@@ -170,18 +173,18 @@ informed by their CLOs.
   - Additional information: Pertains to text files.
 
 - [x] Add functionality to `chathistorydisplayer-api`: API end-point that
-      retrieves the last `git diff` of a text file.
+    retrieves the last `git diff` of a text file.
 
 - [ ] Add functionality to `chathistorydisplayer-api`: authorisation at API end-points.
 
 - [ ] Add functionality to `chathistorydisplayer-api`: version control of PDF
-      documents using the `git gem`.
+    documents using the `git gem`.
 
 #### `TaskSubmissionEnhancement`
 
 - [ ] Create a prototype of `TaskSubmissionEnhancement` Component of the Ontrack
-      platform that adds the following four features that would benefit both
-      students and teaching staff:
+    platform that adds the following four features that would benefit both
+    students and teaching staff:
   - The ability to submit files regardless of the task state.
   - The ability to submit individual task files.
   - The ability to submit optional additional files outside of the task requirements.
@@ -193,18 +196,19 @@ informed by their CLOs.
 
   - Additional information: This contributes towards the integration of the
     `chathistorydisplayer-api` into the OnTrack platform, as the OnTrack
-    platform needs PDF processing removed and separate handling for different
-    classes of files (text files and PDFs come to mind).
+    platform needs PDF processing removed and separate handling for
+    different classes of files (text files and PDFs
+    come to mind).
 
-- [ ] The integration of `chathistorydisplayer-api` into the Docker environment
-      of the OnTrack platform.
+- [ ] The integration of `chathistorydisplayer-api` into the Docker
+    environment of the OnTrack platform.
 
 - [ ] Integrate `TaskSubmissionEnhancement` into the OnTrack platform.
 
 ### Cyber-security Oriented
 
 - [ ] Create a document that outlines the cyber-security protocols for project
-      group members.
+   group members.
 
   - A markdown document in [thoth-tech/documentation](https://github.com/thoth-tech/documentation/).
 
@@ -215,7 +219,7 @@ informed by their CLOs.
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/).
 
 - [ ] Create a document outlining the security concerns of propositional changes
-      (or current enacted changes).
+    (or current enacted changes).
 
   - A markdown document in [thoth-tech/documentation](https://github.com/thoth-tech/documentation/).
 

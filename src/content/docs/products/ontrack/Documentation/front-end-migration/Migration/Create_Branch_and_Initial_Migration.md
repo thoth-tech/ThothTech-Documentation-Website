@@ -76,8 +76,8 @@ git push --set-upstream origin touth/migrate/not-found
 ```
 
 Then we should make sure to push this back to GitHub so others can see our
-progress. As this is a new branch you will need to set the upstram branch, but
-if you forget the `git push` will remind you anyway.
+progress. As this is a new branch you will need to set the upstram branch,
+but if you forget the `git push` will remind you anyway.
 
 ![Push to origin](imgs/push_to_origin.png)
 
@@ -115,6 +115,6 @@ module from AngularJS and link to Angular.
 
 ## **Congratulations**
 
-It is **DONE** for the initial migration. At this stage, you will need to upskill
-yourself about TypeScript, Angular and AngularJS and working in the code base
-and read the document about Regular Migration. Good Luck!
+It is **DONE** for the initial migration. At this stage, you will need to
+upskill yourself about TypeScript, Angular and AngularJS and working in the
+code base and read the document about Regular Migration. Good Luck!

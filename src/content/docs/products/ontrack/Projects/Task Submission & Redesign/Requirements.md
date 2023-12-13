@@ -31,16 +31,16 @@ message to their student. This can be communicated to the tutor via the [chat bo
 
 ### Time-based log
 
-Displaying student/tutor and teacher events in a time-based log with the ability
-to scroll back and view previous events. This uses a git-based ruby backend to
-store submission files. There is a repository created for each individual
-submission task.
+Displaying student/tutor and teacher events in a time-based log with the
+ability to scroll back and view previous events. This uses a git-based ruby
+backend to store submission files. There is a
+repository created for each individual submission task.
 
 ### Stages for tasks
 
 The implementation of stages as extra resources for students who require more
-resources and confidence. This enables students to tackle the task in different
-ways to help support their learning.
+resources and confidence. This enables students to tackle the task in
+different ways to help support their learning.
 
 ### Commit system
 
@@ -49,9 +49,10 @@ core files to be uploaded in the form of a commit.
 
 ### File replacer
 
-The ability for students, tutors/teachers to view submitted files in their browser
-as well as write and view submitted comments regarding those files. The file
-replacer is supported by the uplifted file management system.
+The ability for students, tutors/teachers to view submitted files in their
+browser as well as write and view submitted comments regarding those files.
+The file replacer is supported by the uplifted
+file management system.
 
 ### Diff viewer
 

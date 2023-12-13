@@ -9,15 +9,15 @@ title: Incorporate Multiple Organisations on a Single OnTrack Server
 ## Introduction
 
 This documentation outlines the requirements for implementing a feature that
-enables the incorporation of multiple organisations within a single OnTrack
+enables the ncorporation of multiple organisations within a single OnTrack
 server. This feature aims to enhance the administrative capabilities of the
-OnTrack application by allowing server operators to manage and segregate
-multiple organisations efficiently.
+OnTrack application by allowing server operators to manage
+and segregate multiple organisations efficiently.
 
 ## User Story
 
-As an OnTrack server operator, I want to be able to host multiple organisations
-within my server.
+As an OnTrack server operator, I want to be able to host multiple
+organisations within my server.
 
 ## Functional Requirements
 
@@ -28,8 +28,8 @@ within my server.
   providing a unique identifier for each organisation.
 - Implement a new user role named "Site Administrator" with permissions to
   manage organisations, including the ability to add, disable, and edit them.
-- Enhance the user profile system to associate users with specific organisations
-  and allow users to switch between organisations.
+- Enhance the user profile system to associate users with specific
+  organisations and allow users to switch between organisations.
 
 ### Frontend
 
@@ -49,8 +49,8 @@ within my server.
 
 ### Reliability
 
-- Implement data isolation mechanisms to prevent cross-organisation data leaks
-  or unauthorized access.
+- Implement data isolation mechanisms to prevent cross-organisation data
+  leaks or unauthorized access.
 - Apply robust error handling to prevent disruptions due to organisational changes.
 
 ## Test Cases
@@ -105,7 +105,7 @@ Verify users can be associated with specific organisations.
 
 The user is now associated with the selected organisation.
 
-### Test Case 4: Access Control**
+### Test Case 4: Access Control\*\*
 
 Description: Verify users can access only the resources within their organisation.
 
@@ -116,8 +116,7 @@ Description: Verify users can access only the resources within their organisatio
 
 ### `Expected Outcome``
 
-Access is denied, and the user can only access resources within their own
-organisation.
+Access is denied, and the user can only access resources within their own organisation.
 
 ### Testing``
 
@@ -132,6 +131,7 @@ organisation.
 
 In conclusion, the incorporation of multiple organisations within a single
 OnTrack server brings a significant enhancement to the application's
-administrative capabilities. By following the outlined requirements and test
-cases, this feature will enable server operators to effectively manage and
-segregate various organisations, ensuring a more streamlined and organised user experience.
+administrative capabilities. By following the outlined
+requirements and test cases, this feature will enable server operators to
+effectively manage and segregate various organisations, ensuring a more
+streamlined and organised user experience.

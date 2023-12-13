@@ -39,8 +39,8 @@ Key Tasks
 
 ## What we found out
 
-There are some big changes between SCORM 1.1 and 2004, the key methods used in
-2004 are:
+There are some big changes between SCORM 1.1 and 2004, the key methods used
+in 2004 are:
 
 - Initialize( “” ) : bool – Begins a communication session with the LMS.
 
@@ -49,55 +49,55 @@ There are some big changes between SCORM 1.1 and 2004, the key methods used in
 - GetValue( element : CMIElement ) : string – Retrieves a value from the LMS.
 
 - SetValue( element : CMIElement, value : string) : string – Saves a value to
-  the LMS.
+the LMS.
 
-- Commit( “” ) : bool – Indicates to the LMS that all data should be persisted
-  (not required).
+- Commit( “” ) : bool – Indicates to the LMS that all data should be
+persisted (not required).
 
-- GetLastError() : CMIErrorCode – Returns the error code that resulted from the
-  last API call.
+- GetLastError() : CMIErrorCode – Returns the error code that resulted from
+the last API call.
 
 - GetErrorString( errorCode : CMIErrorCode ) : string – Returns a short string
-  describing the specified error code.
+describing the specified error code.
 
 - GetDiagnostic( errorCode : CMIErrorCode ) : string – Returns detailed
-  information about the last error that occurred.
+information about the last error that occurred.
 
 They Key Data Model elements for our use are:
 
 - cmi.entry (ab_initio, resume, “”, RO) Asserts whether the learner has
-  previously accessed the SCO
+previously accessed the SCO
 
 - cmi.exit (timeout, suspend, logout, normal, “”, WO) Indicates how or why the
-  learner left the SCO
+learner left the SCO
 
 - cmi.learner_id (long_identifier_type (SPM: 4000), RO) Identifies the learner
-  on behalf of whom the SCO was launched
+on behalf of whom the SCO was launched
 
-- cmi.mode (“browse”, “normal”, “review”, RO) Identifies one of three possible
-  modes in which the SCO may be presented to the learner
+- cmi.mode (“browse”, “normal”, “review”, RO) Identifies one of three
+possible modes in which the SCO may be presented to the learner
 
 - cmi.score.scaled (real (10,7) range (-1..1), RW) Number that reflects the
-  performance of the learner
+performance of the learner
 
 - cmi.score.raw (real (10,7), RW) Number that reflects the performance of the
-  learner relative to the range bounded by the values of min and max
+learner relative to the range bounded by the values of min and max
 
 - cmi.score.min (real (10,7), RW) Minimum value in the range for the raw score
 
 - cmi.score.max (real (10,7), RW) Maximum value in the range for the raw score
 
 - cmi.suspend_data (characterstring (SPM: 64000), RW) Provides space to store
-  and retrieve data between learner sessions
+and retrieve data between learner sessions
 
 - cmi.total_time (timeinterval (second,10,2), RO) Sum of all of the learner’s
-  session times accumulated in the current learner attempt
+session times accumulated in the current learner attempt
 
-- cmi.success_status (“passed”, “failed”, “unknown”, RW) Indicates whether the
-  learner has mastered the SCO
+- cmi.success_status (“passed”, “failed”, “unknown”, RW) Indicates whether
+the learner has mastered the SCO
 
 - cmi.session_time (time interval (second,10,2), WO) Amount of time that the
-  learner has spent in the current learner session for this SCO
+learner has spent in the current learner session for this SCO
 
 By making use of the flags in the data model we can implement a resume test
 functionality, this will be done by saving the suspend data json string in the DB.

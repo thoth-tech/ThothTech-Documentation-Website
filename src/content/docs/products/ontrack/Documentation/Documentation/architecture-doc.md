@@ -20,7 +20,7 @@ title: Architecture Document
 
 ## Document Summary
 
-### Documentation Title: **Architecture Document
+### Documentation Title: \*\*Architecture Document
 
 ### Documentation Type
 
@@ -38,15 +38,15 @@ and container diagram which explains its working.
 ### Purpose This document provides a high-level overview of the OnTrack system
 
 it intends tocommunicate the project structure and architecture to varying
-levels of complexity appropriate for various stakeholders withing the
-organisation and varying levels of technical literacy.
+levels of complexity appropriate for various stakeholders withing
+the organisation and varying levels of technical literacy.
 
 ### Scope This Architecture document uses a context diagram
 
-and container diagram to provide ahigh-level overview of the system，both are
-highly visual and aim to be easy to comprehend, the context diagram aims to be
-non-technical, and the container diagram provides further information to
-understand system structures.
+and container diagram to provide ahigh-level overview of the system，
+both are highly visual and aim to be easy to comprehend, the context diagram
+aims to be non-technical, and the container diagram
+provides further information to understand system structures.
 
 ---
 
@@ -62,8 +62,8 @@ understand system structures.
 
 ## Architectural Goals and Constraints
 
-- Maintaining a base system that supports future work towards developing new or
-  enhancing currentfeatures that improve the teaching and learning experience.
+- Maintaining a base system that supports future work towards developing new or enhancing
+  currentfeatures that improve the teaching and learning experience.
 - front-end components are clear to understand, user friendly, and
   straightforward to use.
 - System allows tutors to upload assessment tasks, resources, and assign
@@ -72,10 +72,11 @@ understand system structures.
   goal, they can then view each task and download the related task resources.
 - Through the same task view, students can check deadlines, submit extension
   requests, send query's to tutors, and make task submissions.
-- Tutors can view and download submissions, manage extension requests, respond
-  to queries and leave feedback.
-- System generates progress reports that are sent through email system, users
-  can also track progress relating to each unit and their set learning outcome goals.
+- Tutors can view and download submissions, manage extension requests,
+  respond to queries and leave feedback.
+- System generates progress reports that are sent through email system,
+  users can also track progress relating to each unit and their set
+  learning outcome goals.
 
 ## Use-Case View
 

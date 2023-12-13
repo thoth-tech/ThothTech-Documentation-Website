@@ -8,8 +8,9 @@ title: Docker Compose with WSL2
 
 If you're facing problems installing Linux bash shell on Windows 10, one of the
 issues might be you've not enabled Windows Subsystem for Linux. If that's the
-case, you'll bump into an error: "The Windows Subsystem for Linux optional
-component is not enabled. Please enable it and try again."
+case, you'll bump into an error: "The
+Windows Subsystem for Linux optional component is not enabled. Please enable
+it and try again."
 
 Here's how to enable Windows Subsystem for Linux component in Windows 10:
 
@@ -19,7 +20,7 @@ Here's how to enable Windows Subsystem for Linux component in Windows 10:
    <!-- ![programs and Features](imgs/programs_and_features.png) -->
    ![programs and features](/programs_and_features.png)
 4. Under the Programs and Features page, click Turn Windows features on or off
-   on the left panel.
+on the left panel.
 5. Scroll down and enable Windows Subsystem for Linux. ![Windows Features](/windows_features.png)
 6. Click OK to save your changes.
 7. Hit Restart now to finish the process.
@@ -69,16 +70,17 @@ sudo apt-get install net-tools (windows/linux installation)
 
 1. From the Docker menu, select Settings > General.
 2. Select the Use WSL 2 based engine check box. _If you have installed Docker
-   Desktop on a system that supports WSL 2, this option will be enabled by default._
+Desktop on a system that supports WSL 2, this option will be enabled by default._
 3. Click Apply & Restart.
 
 ## Converting WSL 1 Operating Systems to WSL 2 on Windows
 
 If you are using WSL1 You will need Windows 10 build 18917 or higher to be able
-to use WSL 2. Please note, you will need to have the Powershell Administrator
-window up. If you are converting WSL 1 to WSL 2 I’d assume you have Linux
-Subsystem for Windows installed. If not, the following command will
-install it for you.
+to use WSL 2. Please note, you will need to have the Powershell
+
+Administrator window up. If you are converting WSL 1 to
+WSL 2 I’d assume you have Linux Subsystem for Windows installed. If not,
+the following command will install it for you.
 
 ```console
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux

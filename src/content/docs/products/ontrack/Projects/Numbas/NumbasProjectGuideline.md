@@ -11,9 +11,10 @@ title: Project guideline document
 The aim is to introduce Numbas tests into the Ontrack platform, to ultimately
 save these results in the Database.
 
-The first part of the project will be to enable the creation and use of a Numbas
-test, without storing the data, then time dependent we will look at enhancing
-this to saving the data to the backend and a means to access that information.
+The first part of the project will be to enable the creation and use of a
+Numbas test, without storing the data, then time dependent we will look at
+enhancing this to saving the data to the
+backend and a means to access that information.
 
 ## Key Outcomes
 
@@ -29,8 +30,8 @@ this to saving the data to the backend and a means to access that information.
 I will be aiming to have the feasibility report and the Front end integration
 working to a standard of production by the end of T1 2023.
 
-We will be aiming for Back end configuration and storing of tests by the end of
-T2 2023.
+We will be aiming for Back end configuration and storing of tests by the end
+of T2 2023.
 
 ## Team Members
 

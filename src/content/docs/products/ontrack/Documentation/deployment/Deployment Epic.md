@@ -11,8 +11,9 @@ separately hosted platform for Thoth Tech's code implementation to operate on.
 ## Business Value
 
 Now that Thoth Tech has been established and development work on OnTrack will
-start to increase, we need a Thoth Tech hosted deployment of OnTrack. This
-will provide greater freedom to develop OnTrack to the evolving vision of the company.
+start to increase, we need a Thoth Tech hosted deployment of OnTrack. This will
+provide greater freedom to develop OnTrack
+to the evolving vision of the company.
 
 ## In scope
 
@@ -30,10 +31,10 @@ New features
 ## What needs to happen
 
 The deployment team will need to create an employee-run/hosted version of
-OnTrack to Google Cloud, which will be separate to the Deakin version. This
-will be completed by three teams, which will all be working together to migrate
-to google cloud, build a CI/CD pipeline, and create the authentication for the
-platform for students.
+OnTrack to Google Cloud, which will be separate to the Deakin version.
+This will be completed by three teams, which will all
+be working together to migrate to google cloud, build a CI/CD pipeline, and
+create the authentication for the platform for students.
 
 - Thoth Tech Ontrack deployment to Google Cloud
 - CI/CD Pipeline built

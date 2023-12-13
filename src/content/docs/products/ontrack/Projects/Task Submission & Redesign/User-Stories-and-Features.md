@@ -22,14 +22,14 @@ In the form, "As a \[persona\], I \[want to\], \[so that\]."
 
 1. As a \[student\], I \[want to be able to traverse OnTrack in a sensible way\],
    so that I \[can submit my work with ease\].
-1. As a student, I \[want to be able to re-submit some of many files\], so that
-   I \[do not have to re-upload all files related to a task\].
+1. As a student, I \[want to be able to re-submit some of many files\],
+   so that I \[do not have to re-upload all files related to a task\].
 1. As a student, I \[want to be able to see a history of events\], so that I \
    [can see the last time a file was uploaded or a message was sent by the tutor\].
-1. As a student, I \[want to be able to include comments with my uploads\], so
-   that I \[may discuss the task with my tutor\].
-1. As a student, I \[want to be able to view my submissions in my browser\], so
-   that I \[don't have to keep downloading copies of my submissions\].
+1. As a student, I \[want to be able to include comments with my uploads\],
+   so that I \[may discuss the task with my tutor\].
+1. As a student, I \[want to be able to view my submissions in my browser\],
+   so that I \[don't have to keep downloading copies of my submissions\].
 
 ### Tutors
 
@@ -38,8 +38,8 @@ In the form, "As a \[persona\], I \[want to\], \[so that\]."
 1. As a tutor, I \[want to see a clear log of my interactions\], so that I \
    [can orient quicker\].
 1. As a tutor, I \[want to be able to compare student code files they have submitted\].
-1. As a masker, I \[want to be able to highlight and leave notes on files\], so
-   that I \[can provide feedback to my students\].
+1. As a masker, I \[want to be able to highlight and leave notes on files\],
+   so that I \[can provide feedback to my students\].
 
 ### Convenors
 
@@ -48,14 +48,15 @@ In the form, "As a \[persona\], I \[want to\], \[so that\]."
 
 ### Developers
 
-1. As a developer, I \[want a high-fidelity wire-frame\], so that I \[can create
-   a design that further incorporates OnTrack/Doubtfire's visual style and nuance\].
+1. As a developer, I \[want a high-fidelity wire-frame\], so that I \[can
+   create a design that
+   further incorporates OnTrack/Doubtfire's visual style and nuance\].
 1. As a developer, I \[want a UI\UX prototype of the product\], so that I \[can
    create documentation on the design\].
 1. As a developer, I \[want a UI/UX prototype of the product\], so that I \[can
    create a prototype of the design\].
-1. As a developer, I \[want more interaction facilitated by a chat-bot\], so
-   that \[interactions are streamlined and feel modern\].
+1. As a developer, I \[want more interaction facilitated by a chat-bot\],
+   so that \[interactions are streamlined and feel modern\].
 
 ## Features
 

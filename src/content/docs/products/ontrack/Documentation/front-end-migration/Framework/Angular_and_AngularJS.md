@@ -10,14 +10,14 @@ language. By extending HTML attributes with directives and binding data to HTML
 with expressions, AngularJS creates an environment that is
 readable, extraordinarily expressive, and quick to develop.
 
-**Angular 2** is the blanket term used to refer to Angular 2, Angular 4 and all
-other versions that come after AngularJS. Both Angular 2 and 4 are open-source,
-TypeScript-based front-end web application platforms.
+**Angular 2** is the blanket term used to refer to Angular 2, Angular 4 and
+all other versions that come after AngularJS. Both Angular 2 and 4 are
+open-source, TypeScript-based front-end web application platforms.
 
 **Angular 4** is the latest version of Angular. Although Angular 2 was a
-complete rewrite of AngularJS, there are no major differences between Angular 2
-and Angular 4. Angular 4 is only an improvement and is backward compatible with
-Angular 2.
+complete rewrite of AngularJS, there are no major differences between Angular
+2 and Angular 4. Angular 4 is only an
+improvement and is backward compatible with Angular 2.
 
 ## Angular JS vs Angular
 
@@ -54,6 +54,7 @@ reusable components for its users.
 ## Reference
 
 Simplilearn.com. (2018). AngularJS Vs. Angular 2 Vs. Angular 4: Understanding
-the Differences. [online] Available at:
+the Differences.
+[online] Available at:
 <https://www.simplilearn.com/angularjs-vs-angular-2-vs-angular-4-differences-article>
 [Accessed 20 Sep. 2022].

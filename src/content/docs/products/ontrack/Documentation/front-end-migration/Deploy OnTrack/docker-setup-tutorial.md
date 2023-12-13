@@ -22,7 +22,8 @@ title: Docker Setup Tutorial
 
 3. Change directory to doubtfire-deploy by using: cd doubtfire-deploy. Open a
    Terminal that supports sh scripts (on Windows, you will need WSL, Msys2, or
-   Cygwin). Run the following command to set your fork as the remote.
+   Cygwin). Run the following command to set
+   your fork as the remote.
 
    ```console
    bash ./change_remotes.sh

@@ -5,25 +5,26 @@ title: Requirements Document:OnTrack - Staff Grant Extension Feature
 ## 1-Introduction
 
 The purpose of this document is to outline the requirements for the
-implementation of the "Staff Grant Extension" feature in the OnTrack (also known
-as Doubtfire). This feature aims to empower staff members to grant extensions
-to students, even in cases where there are no formal extension requests within
-the system.
+implementation of the "Staff Grant Extension" feature in the OnTrack
+(also known as Doubtfire). This feature aims to empower
+staff members to grant extensions to students, even in cases where there are
+no formal extension requests within the system.
 
 ## 2-Use Case
 
 ### 2-1-User Story
 
 As a staff member, I want to be able to grant extensions to students, even when
-no formal extension requests are submitted through the system. This allows me to
-accommodate special circumstances that may have been communicated through other means.
+no formal extension requests are submitted through the system. This allows
+me to accommodate special circumstances that
+may have been communicated through other means.
 
 ### 2-2-Acceptance Criteria
 
 - Staff members can initiate extension requests for specific students.
 - Staff members can specify the duration of the extension.
 - Extension requests initiated by staff members are recorded in the system for
-  future reference.
+future reference.
 - Students receive notifications about granted extensions.
 
 ## 3-Functional Requirements
@@ -33,9 +34,9 @@ accommodate special circumstances that may have been communicated through other 
 #### _3-1-1-Grant Extension Form_
 
 - A new option should be added to the staff dashboard or relevant pages for
-  granting extensions.
+granting extensions.
 - The form should include fields for selecting the student, entering the
-  extension duration, and adding any relevant notes.
+extension duration, and adding any relevant notes.
 - The reason for the extension to be granted.
 - The medium the extension was requested (if not formal).
 - An interface to search for and select students should be provided.
@@ -43,7 +44,7 @@ accommodate special circumstances that may have been communicated through other 
 #### _3-1-2-Notifications_
 
 - Students should receive notifications via email or within the system when a
-  staff member grants an extension.
+staff member grants an extension.
 - Notifications should include details about the granted extension and its duration.
 
 ### 3-2-Backend Functionality
@@ -66,8 +67,8 @@ technology stack of the Doubtfire system.
 
 ### 4-2-Data Management
 
-- Extension records should be stored in the system's database, associated with
-  the relevant student and staff member.
+- Extension records should be stored in the system's database, associated
+  with the relevant student and staff member.
 
 ### 4-3-User Authentication and Authorisation
 
@@ -97,8 +98,8 @@ technology stack of the Doubtfire system.
 
 #### _Test Case 1: Successful Extension Granting_
 
-Description: Verify that a staff member can successfully grant an extension to a
-student.
+Description: Verify that a staff member can successfully grant an extension to
+a student.
 
 Steps:
 
@@ -108,14 +109,14 @@ Steps:
 4. Enter a valid extension duration.
 5. Submit the form.
 
-Expected Outcome: The extension is granted, and a new extension record is created
-in the database. The student receives a notification, and the staff member can
-view the granted extension details.
+Expected Outcome: The extension is granted, and a new extension record is
+created in the database. The student receives a notification, and the staff
+member can view the granted extension details.
 
 #### _Test Case 2: Invalid Extension Duration_
 
-Description: Test the system's response when a staff member enters an invalid
-extension duration.
+Description: Test the system's response when a staff member enters an
+invalid extension duration.
 
 Steps:
 
@@ -177,10 +178,11 @@ extension and its duration.
 
 The "Staff Grant Extension" feature enhances the flexibility and responsiveness
 of the OnTrack learning management system by allowing staff members to grant
-extensions to students based on individual circumstances. This document outlines
-the functional, technical, and non-functional requirements for the successful
-implementation of this feature. Thorough testing of the backend extension
-granting endpoint ensures that the "Staff Grant Extension" feature functions as expected.
-The test cases cover various scenarios, including successful extension granting,
-error handling, and notifications. Running the tests and interpreting the
-results helps identify and address issues before deploying the feature to production.
+extensions to students based on individual circumstances. This document
+outlines the functional, technical, and non-functional
+requirements for the successful implementation of this feature. Thorough
+testing of the backend extension granting endpoint ensures that the "Staff
+Grant Extension" feature functions as expected. The test cases cover various
+scenarios, including successful extension granting, error handling, and
+notifications. Running the tests and interpreting the results helps identify
+and address issues before deploying the feature to production.

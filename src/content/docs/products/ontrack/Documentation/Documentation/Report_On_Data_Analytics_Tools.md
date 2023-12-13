@@ -5,17 +5,17 @@ title: Research Spike - Report on Data Analytics Tools
 ## Introduction
 
 In today's data-driven educational landscape, schools and universities rely on
-advanced analytics tools to gain insights, make informed decisions, and optimize
-operations. This report offers an in-depth comparison of three prominent
-analytics tools: OctopusBI, Tableau, and Track One. The focus
-is on their features, potential integration with the OnTrack platform, and
-alignment with the specific needs of educational institutions.
+advanced analytics tools to gain insights, make informed decisions,
+and optimize operations. This report offers an
+in-depth comparison of three prominent analytics tools: OctopusBI, Tableau,
+and Track One. The focus is on their features, potential integration with
+the OnTrack platform, and alignment with the specific needs of educational institutions.
 
 ## OctopusBI
 
 OctopusBI is a robust business intelligence platform with a range of features
-designed to facilitate data exploration, visualization, and reporting. It offers
-the following key features:
+designed to facilitate data exploration, visualization, and reporting.
+It offers the following key features:
 
 - Customizable Dashboards and Reports: OctopusBI provides a user-friendly
   interface for creating and customizing dashboards and reports, allowing
@@ -23,30 +23,30 @@ the following key features:
 - Data Integration: OctopusBI supports integration with various data sources,
   enabling seamless connectivity to student information systems, learning
   management systems, and other relevant databases.
-- Interactive Data Visualization: The platform offers interactive charting tools
-  and visualizations, enabling stakeholders to explore data trends and insights
-  more effectively.
+- Interactive Data Visualization: The platform offers interactive charting
+  tools and visualizations, enabling stakeholders to explore data trends
+  and insights more effectively.
 - Collaboration and Sharing: OctopusBI facilitates collaboration through
-  commenting and sharing functionalities, enhancing communication among faculty
-  and staff members.
+  commenting and sharing functionalities, enhancing communication
+  among faculty and staff members.
 
 ## Tableau
 
 Tableau is a renowned data visualization and analytics tool known for its
 user-friendly interface and comprehensive capabilities. Key features include:
 
-- Advanced Data Visualization: Tableau's drag-and-drop interface empowers users
-  to create sophisticated visualizations, aiding educational institutions in
-  presenting complex data in an easily understandable manner.
+- Advanced Data Visualization: Tableau's drag-and-drop interface empowers
+  users to create sophisticated visualizations, aiding educational
+  institutions in presenting complex data in an easily understandable manner.
 - Wide Range of Connectors: Tableau offers an extensive library of connectors,
   enabling seamless data integration from various sources, including cloud
   platforms, databases, and spreadsheets.
 - Predictive Analytics and Forecasting: Educational institutions can leverage
   Tableau's advanced analytics and forecasting tools to identify trends,
   patterns, and future scenarios, enhancing proactive decision-making.
-- Scalability and Performance: Tableau's scalable architecture ensures that as
-  data volumes grow, the system remains efficient and capable of handling
-  increasing demands.
+- Scalability and Performance: Tableau's scalable architecture ensures that
+  as data volumes grow, the system remains efficient and capable of
+  handling increasing demands.
 
 ## Track One Studio
 
@@ -59,9 +59,9 @@ institutions and other sectors:
   sources, allowing educational institutions to consolidate and analyse data
   from student information systems, academic records, financial databases, and more.
 - Visualization and Dashboards: The platform offers tools for creating
-  interactive dashboards and visualizations, enabling users to explore data
-  trends and patterns visually. Customizable dashboards can provide insights
-  into student performance, enrolment data, resource allocation, and
+  interactive dashboards and visualizations, enabling users to explore
+  data trends and patterns visually. Customizable dashboards can provide
+  insights into student performance, enrolment data, resource allocation, and
   more.
 - Advanced Analytics: Track One Studio may provide advanced analytics
   capabilities, such as predictive modelling, forecasting, and statistical
@@ -77,17 +77,17 @@ institutions and other sectors:
   Studio might offer security features to protect sensitive student information
   and comply with data privacy regulations.
 - Customization: Educational institutions often have unique data requirements.
-  Track One Studio may provide customization options to tailor the platform to
-  the specific needs of schools and universities.
+  Track One Studio may provide customization options to tailor the platform
+  to the specific needs of schools and universities.
 
 ## Integration with OnTrack
 
 The successful integration of an analytics tool with the OnTrack platform is
-crucial for maximizing data utilization in educational institutions. Integration
-considerations include data compatibility, API availability, and seamless
-workflow alignment. Each tool's integration potential with OnTrack
-needs to be assessed based on the platform's requirements and APIs provided by
-the analytics tools.
+crucial for maximizing data utilization in educational institutions.
+Integration considerations include data compatibility,
+API availability, and seamless workflow alignment. Each tool's integration
+potential with OnTrack needs to be assessed based on the platform's
+requirements and APIs provided by the analytics tools.
 
 ## What Schools and Universities Seek
 
@@ -123,9 +123,10 @@ analytics system:
 
 After analyzing the features and capabilities of OctopusBI, Tableau, and Track
 One Studio, it's evident that each tool offers distinct advantages that can
-benefit educational institutions seeking to leverage data analytics for better decision-making.
+benefit educational institutions seeking
+to leverage data analytics for better decision-making.
 
-When considering integration with the OnTrack platform, it's essential to assess
-the compatibility and integration options provided by each tool. Additionally,
-budget, user preferences, and specific institutional requirements should be
-taken into account when making a decision.
+When considering integration with the OnTrack platform, it's essential to
+assess the compatibility and integration options provided by each tool.
+Additionally, budget, user preferences, and specific
+institutional requirements should be taken into account when making a decision.

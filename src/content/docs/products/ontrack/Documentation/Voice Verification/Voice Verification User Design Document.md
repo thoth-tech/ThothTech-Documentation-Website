@@ -32,8 +32,8 @@ title: OnTrack Voice Verification User Document
 
 ---
 
-A voiceprint is another way to use your unique features to identify who you are,
-similar to a fingerprint.
+A voiceprint is another way to use your unique features to identify who you
+are, similar to a fingerprint.
 
 ## Key Links/Resources
 
@@ -74,16 +74,16 @@ Voice Verification system has two phases:
   extracted into a voice print.
 
 - Verification - Student's audio submission is compared against a previously
-created voice print.
+  created voice print.
 
 ## Main Process
 
 ![Proposed how voice verification system work](Research%20&%20Findings/images/Voice-Verification-Overview-Process.png)
 
 - Verified: The audio file passed a certain confidence value and concluded as
-  same person
+same person
 - Unverified:The audio file is under a confidence value range and concluded as
-  not a same person
+not a same person
 - Pending: The audio is pending/in awaiting queue for comparing
 
 ## Constraints
@@ -96,7 +96,7 @@ created voice print.
 4. The voice must be between three seconds and one minute
 5. The volumes must not exceed 5 MB
 6. Supported file types: .wav, mp3, m4a, .flac (now the voice system only
-   accepts .flac type files)
+accepts .flac type files)
 
 Tips: Speak at a normal cadence and clearly.
 

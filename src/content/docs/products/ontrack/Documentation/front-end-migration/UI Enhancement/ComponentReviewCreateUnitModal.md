@@ -26,8 +26,8 @@ It creates a new unit.
 
 ![existing modal](/Image/ComponentReviewCreateUnitModal.png)
 
-Currently, the modal had 2 text input fields unit code and unit name. In the new
-modal a 3rd dorp down field is to be added, teaching period.
+Currently, the modal had 2 text input fields unit code and unit name. In the
+new modal a 3rd dorp down field is to be added, teaching period.
 
 So, in the updated modal the user provides the following:
 

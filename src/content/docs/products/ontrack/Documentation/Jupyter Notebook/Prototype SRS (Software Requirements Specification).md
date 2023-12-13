@@ -9,10 +9,10 @@ title: Jupyter Notebook Week 6 Prototype - Software Requirement Specification (S
 ### 1.1 Purpose
 
 - The purpose of this prototype is to ensure the code written thus far by team
-  members sufficiently completes the two key functionalities of converting both
-  Jupyter Notebook files and Word document files into PDF format. The successful
-  implementation will ensure the team is on the right track in terms of both
-  their ideas and their coding work.
+  members sufficiently completes the two key functionalities of converting
+  both Jupyter Notebook files and Word document files into PDF format.
+  The successful implementation will ensure the team is on the right track in
+  terms of both their ideas and their coding work.
 
 ### 1.2 Intended Audience
 
@@ -22,16 +22,17 @@ title: Jupyter Notebook Week 6 Prototype - Software Requirement Specification (S
 ### 1.3 Intended Use
 
 - The intended use of this prototype is to be a more-basic first draft of the
-  logic the team wishes to implement in the final product of the project scope.
-  It will test the conversion to PDF for both Jupyter Notebook and Word document
-  files. The successful implementation of this prototype will give the team the
-  knowledge that the code they’ve written works on a smaller scale than OnTrack.
+  logic the team wishes to implement in the final product of the project
+  scope. It will test the conversion to PDF for both Jupyter Notebook and
+  Word document files. The successful implementation of this prototype
+  will give the team the knowledge that the code they’ve written works on a
+  smaller scale than OnTrack.
 
 ### 1.4 Scope
 
 - The scope of the prototype is to create a simple front-end interface similar
-  to that of OnTrack and, through the use of command-line commands, allow for
-  the following functionalities:
+  to that of OnTrack and, through the use of command-line commands, allow
+  for the following functionalities:
   - Converting a Jupyter Notebook file into PDF format
   - Converting a Word file into PDF format
 
@@ -48,14 +49,14 @@ title: Jupyter Notebook Week 6 Prototype - Software Requirement Specification (S
   inaccessible. This is done importing the library at the beginning of the program.
 - HTML – HyperText Markup Language
 - RubyOnRails – a server-side web application framework written in Ruby.
-- Nbconvert – is a library of pre-written code used to convert Jupyter Notebook
-  file to PDF.
+- Nbconvert – is a library of pre-written code used to convert Jupyter
+  Notebook file to PDF.
 - Backend – Is development that happens behind the scenes, it is all the parts
   of a computer system or application that is not directly accessed by the
   user, it is responsible for storing and manipulating data through code.
 - Frontend – Is development on what the user can see and/or directly interact
-  with (i.e., what can be seen on the computer screen, such as a window, or
-  buttons and input fields/boxes)
+  with (i.e., what can be seen on the computer screen, such as a window,
+  or buttons and input fields/boxes)
 
 ## 2. Overall Description
 
@@ -63,14 +64,14 @@ title: Jupyter Notebook Week 6 Prototype - Software Requirement Specification (S
 
 - As a student, I want to be able to upload Jupyter Notebook (.ipynb) files
   without having to go through the extra step of converting them to a PDF first.
-- As a tutor, I want students to be able to upload any file they are working on
-  so they can focus on the quality of the work.
+- As a tutor, I want students to be able to upload any file they are working
+  on so they can focus on the quality of the work.
 
 ### 2.2 Assumptions and Dependencies
 
 - Assumptions include:
-  - The user has a working and valid Jupyter Notebook/Word Document ready to be
-    converted to PDF.
+  - The user has a working and valid Jupyter Notebook/Word Document ready to
+  be converted to PDF.
   - The user wants the input file to be converted as uploaded.
 - The user has access to OnTrack.
 - Key project member’s availability
@@ -108,10 +109,10 @@ title: Jupyter Notebook Week 6 Prototype - Software Requirement Specification (S
 
 - Usability – User standards
 - Scalability – ability of software to be scaled to encompass project scope in
-  its entirety
+its entirety
 - Maintainability – ability of software to be maintained, ensuring consistent
-  and upmost performance
+and upmost performance
 - Reliability – The ability of the system to consistently perform its required
-  functions under stated conditions.
+functions under stated conditions.
 - Documentation – User documentation, testing results, meeting minutes and
-  notes, contribution notes, discussions.
+ notes, contribution notes, discussions.

@@ -14,8 +14,8 @@ title: Author Information
 
 - Documentation Title: Epic Document
 - Documentation Type: Technical
-- Documentation Information Summary: Critical links and resources; the background,
-  context, and business value of the project; and the acceptance criteria.
+- Documentation Information Summary: Critical links and resources; the
+background, context, and business value of the project; and the acceptance criteria.
 
 ## Document Review Information
 
@@ -41,10 +41,11 @@ are typically graphical interfaces that accept input from an end-user.
 UX: User Experience; all aspects of the end-user's interactions with an
 application or device.
 
-Flow: A frame-by-frame image of a user (a student, tutor, convenor, or administrator)
-performing a necessary function from beginning to end. Flows allow designers to
-think critically about how the usability of a design. It may save the project
-from investing time and resources into unusable dead-ends.
+Flow: A frame-by-frame image of a user (a student, tutor, convenor, or
+administrator) performing a necessary function from beginning to end.
+Flows allow designers to think critically about how the
+usability of a design. It may save the project from investing time and
+resources into unusable dead-ends.
 
 ## Key Links/Resources
 
@@ -82,9 +83,9 @@ new features to the task submission and view in the OnTrack platform.
 ## Business Value
 
 By further modernising OnTrack, institutions can deploy the OnTrack platform to
-satisfy the needs of their students, markers, assessors, and auditors. The
-platform can support all stakeholders to fulfil their obligations and, in the
-case of the student, support the learning of essential
+satisfy the needs of their students, markers, assessors, and auditors.
+The platform can support all stakeholders to fulfil their obligations and, in
+the case of the student, support the learning of essential
 concepts. By streamlining the experience of markers, then associated costs may decrease.
 Additionally, the feedback loop for students (the learning feedback loop) may shorten.
 
@@ -148,6 +149,6 @@ document and report on issues or bugs as they arise.
 ## Acceptance Criteria
 
 - Managing director must approve of the design before implementation.
-- If a change is required, then an alteration to the design (with approval from
-  the managine director) must be completed first.
+- If a change is required, then an alteration to the design (with approval
+  from the managine director) must be completed first.
 - All code must be tested before an attempt to pull into the upstream repositories.
