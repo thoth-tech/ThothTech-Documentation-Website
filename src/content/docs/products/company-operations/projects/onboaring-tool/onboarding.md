@@ -114,7 +114,7 @@ let splashkit = 0;
 let artGallery = 0;
 let courseFlow = 0;
 
-//toggle function. Arguments as follows: id = array of button in ID. Should be in order. 
+//toggle function. Arguments as follows: id = array of button in ID. Should be in order.
 //ot = ontrack, co = company operations, sk = splashkit, ag = art gallery, cf = courseflow.
 function toggleButton(id, ot, co, sk, ag, cf) {
   var button = document.getElementById(dataButtons[id].id);
