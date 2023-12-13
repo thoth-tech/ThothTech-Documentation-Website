@@ -153,7 +153,7 @@ tasks on the Tutor's
 
 ## 6.1 Unit Testing
 
-- Develop unit tests to ensure the correctness and reliability of frontend ]
+- Develop unit tests to ensure the correctness and reliability of frontend
 components, including
   timers, manual input, and notifications.
 
