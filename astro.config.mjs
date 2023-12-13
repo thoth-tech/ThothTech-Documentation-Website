@@ -243,25 +243,25 @@ export default defineConfig({
                 {
                   label: "Documentation",
                   autogenerate: {
-                    directory: "products/courseflow/documentation",
+                    directory: "products/courseflow/Documentation",
                   },
                   items: [
                     {
                       label: "Design",
                       autogenerate: {
-                        directory: "products/courseflow/documentation/design",
+                        directory: "products/courseflow/Documentation/design",
                       },
                     },
                     {
                       label: "Research",
                       autogenerate: {
-                        directory: "products/courseflow/documentation/research",
+                        directory: "products/courseflow/Documentation/research",
                       },
                     },
                     {
                       label: "Meeting Minutes",
                       autogenerate: {
-                        directory: "products/courseflow/documentation/Meeting-Minutes",
+                        directory: "products/courseflow/Documentation/Meeting-Minutes",
                       },
                     },
                   ],
