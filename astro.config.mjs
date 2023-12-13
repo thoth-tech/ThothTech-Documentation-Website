@@ -191,6 +191,12 @@ export default defineConfig({
                         directory: "products/company-operations/projects/Thoth-Tech-Website",
                       },
                     },
+                    {
+                      label:"Onboarding Tool",
+                      autogenerate: {
+                        directory: "products/company-operations/projects/onboaring-tool",
+                      },
+                    },
                   ],
                 },
                 {
