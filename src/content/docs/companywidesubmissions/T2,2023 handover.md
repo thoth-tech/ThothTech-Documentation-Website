@@ -8,8 +8,8 @@
 </head>
 <body>
     <h1>Thoth Tech</h1>
-    Thoth Tech 
-    
+    Thoth Tech
+
     # Company Structure and Objectives for 2023 TRIMESTER 2
 
     ## Executive Summary
