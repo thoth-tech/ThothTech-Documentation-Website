@@ -16,8 +16,8 @@ title: OnTrack Voice Verification User Document
 
 - Documentation Title: Voice Verification User Document
 - Documentation Type: Documentation
-- Documentation Information Summary: User Design Document detailing guide on
-  Enrolment - How Students can register their voice to Voice Verification System
+- Documentation Information Summary: User Design Document detailing guide on Enrolment - How
+  Students can register their voice to Voice Verification System
 
 ## Document Review Information
 
@@ -32,8 +32,8 @@ title: OnTrack Voice Verification User Document
 
 ---
 
-A voiceprint is another way to use your unique features to identify who you
-are, similar to a fingerprint.
+A voiceprint is another way to use your unique features to identify who you are, similar to a
+fingerprint.
 
 ## Key Links/Resources
 
@@ -62,28 +62,25 @@ See [Thoth Tech Handbook](https://github.com/thoth-tech/handbook/blob/main/READM
 
 ---
 
-The OnTrack Voice Verification system allows student to enrol their voice and
-use their voice print to verify their identity when discussing or submitting works
+The OnTrack Voice Verification system allows student to enrol their voice and use their voice print
+to verify their identity when discussing or submitting works
 
-This system would be implemented inside the existing OnTrack Project, and
-integrated into OnTrack by using the pre-existing audio submission system.
+This system would be implemented inside the existing OnTrack Project, and integrated into OnTrack by
+using the pre-existing audio submission system.
 
 Voice Verification system has two phases:
 
-- Enrolment - Student's voice is recorded and specific voice features are
-  extracted into a voice print.
+- Enrolment - Student's voice is recorded and specific voice features are extracted into a voice
+  print.
 
-- Verification - Student's audio submission is compared against a previously
-  created voice print.
+- Verification - Student's audio submission is compared against a previously created voice print.
 
 ## Main Process
 
 ![Proposed how voice verification system work](/Voice-Verification-Overview-Process.png)
 
-- Verified: The audio file passed a certain confidence value and concluded as
-same person
-- Unverified:The audio file is under a confidence value range and concluded as
-not a same person
+- Verified: The audio file passed a certain confidence value and concluded as same person
+- Unverified:The audio file is under a confidence value range and concluded as not a same person
 - Pending: The audio is pending/in awaiting queue for comparing
 
 ## Constraints
@@ -95,8 +92,7 @@ not a same person
 3. Speaking language: English
 4. The voice must be between three seconds and one minute
 5. The volumes must not exceed 5 MB
-6. Supported file types: .wav, mp3, m4a, .flac (now the voice system only
-accepts .flac type files)
+6. Supported file types: .wav, mp3, m4a, .flac (now the voice system only accepts .flac type files)
 
 Tips: Speak at a normal cadence and clearly.
 

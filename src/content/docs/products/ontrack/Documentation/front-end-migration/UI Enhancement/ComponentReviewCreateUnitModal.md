@@ -26,8 +26,8 @@ It creates a new unit.
 
 ![existing modal](/Image/ComponentReviewCreateUnitModal.png)
 
-Currently, the modal had 2 text input fields unit code and unit name. In the
-new modal a 3rd dorp down field is to be added, teaching period.
+Currently, the modal had 2 text input fields unit code and unit name. In the new modal a 3rd dorp
+down field is to be added, teaching period.
 
 So, in the updated modal the user provides the following:
 
@@ -35,16 +35,15 @@ So, in the updated modal the user provides the following:
 2. Unit Name
 3. Teaching period
 
-New design sketch: Existing UI components are to be used for the input fields
-and button etc.
+New design sketch: Existing UI components are to be used for the input fields and button etc.
 
 ![new modal sketch](/Image/ComponentReviewCreateUnitModal.png)
 
 Link to figma:
 [here](<https://www.figma.com/file/yv8tVzvOfoxmYCugxqHkK1/Material-Design-2-UI-Kit-(Community)?node-id=80873-1307&t=09VKMykq65Jcgpr9-0>)
 
-**Component migration Check list** – What is needs to be checked for this
-component to work once migrated?
+**Component migration Check list** – What is needs to be checked for this component to work once
+migrated?
 
 [ ] ability to collect details from the user
 

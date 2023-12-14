@@ -28,8 +28,8 @@ title: Architecture Document
 
 ### Documentation Information Summary
 
-This document is visual report for architecture for OnTrack consist of context
-and container diagram which explains its working.
+This document is visual report for architecture for OnTrack consist of context and container diagram
+which explains its working.
 
 ---
 
@@ -37,15 +37,14 @@ and container diagram which explains its working.
 
 ### Purpose This document provides a high-level overview of the OnTrack system
 
-it intends tocommunicate the project structure and architecture to varying
-levels of complexity appropriate for various stakeholders withing
-the organisation and varying levels of technical literacy.
+it intends tocommunicate the project structure and architecture to varying levels of complexity
+appropriate for various stakeholders withing the organisation and varying levels of technical
+literacy.
 
 ### Scope This Architecture document uses a context diagram
 
-and container diagram to provide ahigh-level overview of the system，
-both are highly visual and aim to be easy to comprehend, the context diagram
-aims to be non-technical, and the container diagram
+and container diagram to provide ahigh-level overview of the system，both are highly visual and aim
+to be easy to comprehend, the context diagram aims to be non-technical, and the container diagram
 provides further information to understand system structures.
 
 ---
@@ -64,19 +63,17 @@ provides further information to understand system structures.
 
 - Maintaining a base system that supports future work towards developing new or enhancing
   currentfeatures that improve the teaching and learning experience.
-- front-end components are clear to understand, user friendly, and
-  straightforward to use.
-- System allows tutors to upload assessment tasks, resources, and assign
-  learning outcomes to each task.
-- Students can set a learning outcome goal and filter tasks required for this
-  goal, they can then view each task and download the related task resources.
-- Through the same task view, students can check deadlines, submit extension
-  requests, send query's to tutors, and make task submissions.
-- Tutors can view and download submissions, manage extension requests,
-  respond to queries and leave feedback.
-- System generates progress reports that are sent through email system,
-  users can also track progress relating to each unit and their set
-  learning outcome goals.
+- front-end components are clear to understand, user friendly, and straightforward to use.
+- System allows tutors to upload assessment tasks, resources, and assign learning outcomes to each
+  task.
+- Students can set a learning outcome goal and filter tasks required for this goal, they can then
+  view each task and download the related task resources.
+- Through the same task view, students can check deadlines, submit extension requests, send query's
+  to tutors, and make task submissions.
+- Tutors can view and download submissions, manage extension requests, respond to queries and leave
+  feedback.
+- System generates progress reports that are sent through email system, users can also track
+  progress relating to each unit and their set learning outcome goals.
 
 ## Use-Case View
 

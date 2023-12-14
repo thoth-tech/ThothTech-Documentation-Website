@@ -6,8 +6,7 @@ title: You should do this after Create the Branch and Finish the Initial Migrati
 
 ## Ensure you have your author credentials set up
 
-You should ensure your git user config details are set to the email address you
-use with GitHub:
+You should ensure your git user config details are set to the email address you use with GitHub:
 
 ```shell
 git config --global user.email "my-github-email@gmail.com"

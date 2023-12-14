@@ -20,9 +20,8 @@ title: Docker Setup Tutorial
    git clone -b development --recurse-submodules https://github.com/[your_github_username]/doubtfire-deploy
    ```
 
-3. Change directory to doubtfire-deploy by using: cd doubtfire-deploy. Open a
-   Terminal that supports sh scripts (on Windows, you will need WSL, Msys2, or
-   Cygwin). Run the following command to set
+3. Change directory to doubtfire-deploy by using: cd doubtfire-deploy. Open a Terminal that supports
+   sh scripts (on Windows, you will need WSL, Msys2, or Cygwin). Run the following command to set
    your fork as the remote.
 
    ```console
@@ -38,8 +37,8 @@ title: Docker Setup Tutorial
    environment:set RAILS_ENV=development && bundle exec rake db:populate"
    ```
 
-5. Change into the development directory and use Docker Compose to setup the
-   database. Run in the development folder
+5. Change into the development directory and use Docker Compose to setup the database. Run in the
+   development folder
 
    ```console
    docker compose up -d
