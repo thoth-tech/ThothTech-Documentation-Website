@@ -1,4 +1,6 @@
-# Company Structure and Objectives for 2023 TRIMESTER 2
+---
+title: Company Structure and Objectives for 2023 TRIMESTER 2
+---
 
 ## Executive Summary
 
