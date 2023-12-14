@@ -22,7 +22,7 @@ Relevant files:
 
 this component local-storage.coffee is used to configures 'localstorage' usage in the application
 
-![local-congig](local-config.png)
+![local-congig](/local-config.png)
 
 ## Component outcomes/interactions
 
