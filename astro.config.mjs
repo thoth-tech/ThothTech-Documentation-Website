@@ -2319,7 +2319,8 @@ derived from the development branch. Feature branches isolate individual work, a
         {
           label: "Processes",
           items: [
-            { label: "Thoth Tech Technology Stack Document", 
+            {
+              label: "Thoth Tech Technology Stack Document",
               link: "processes/thoth-tech-technology-stack",
             },
 
@@ -2400,7 +2401,7 @@ derived from the development branch. Feature branches isolate individual work, a
                 {
                   label: "Projects",
                   autogenerate: {
-                    directory: "products/art-gallery/projects",
+                    directory: "products/art-gallery/Projects",
                   },
                   items: [
                     {
@@ -2410,9 +2411,9 @@ derived from the development branch. Feature branches isolate individual work, a
                       },
                     },
                     {
-                      label: "Dockerization",
+                      label: "Testing Project",
                       autogenerate: {
-                        directory: "products/art-gallery/Projects/dockerization",
+                        directory: "products/art-gallery/Projects/Testing Project",
                       },
                     },
                   ],
@@ -2422,11 +2423,43 @@ derived from the development branch. Feature branches isolate individual work, a
                   autogenerate: {
                     directory: "products/art-gallery/Documentation",
                   },
+                  items: [
+                    {
+                      label: "BackendUpgrades",
+                      autogenerate: {
+                        directory: "products/art-gallery/Documentation/BackendUpgrades",
+                      },
+                    },
+                    {
+                      label: "Deployment",
+                      autogenerate: {
+                        directory: "products/art-gallery/Documentation/Deployment",
+                      },
+                    },
+                    {
+                      label: "Dockerization",
+                      autogenerate: {
+                        directory: "products/art-gallery/Documentation/Dockerization",
+                      },
+                    },
+                    {
+                      label: "Documentation Project",
+                      autogenerate: {
+                        directory: "products/art-gallery/Documentation/Documentation Project",
+                      },
+                    },
+                    {
+                      label: "Guidance",
+                      autogenerate: {
+                        directory: "products/art-gallery/Documentation/Guidance",
+                      },
+                    },
+                  ],
                 },
                 {
                   label: "Issues and Resolutions",
                   autogenerate: {
-                    directory: "products/art-gallery/issues-and-resolutions",
+                    directory: "products/art-gallery/Issues-and-Resolutions",
                   },
                 },
               ],
@@ -2456,6 +2489,12 @@ derived from the development branch. Feature branches isolate individual work, a
                         directory: "products/company-operations/projects/Thoth-Tech-Website",
                       },
                     },
+                    {
+                      label:"Onboarding Tool",
+                      autogenerate: {
+                        directory: "products/company-operations/projects/onboaring-tool",
+                      },
+                    },
                   ],
                 },
                 {
@@ -2482,104 +2521,152 @@ derived from the development branch. Feature branches isolate individual work, a
                 {
                   label: "Projects",
                   autogenerate: {
-                    directory: "products/courseflow/Projects",
-                  },
-                },
-                {
-                  label: "Documentation",
-                  autogenerate: {
-                    directory: "products/courseflow/Documentation",
-                  },
-                },
-                {
-                  label: "Issues and Resolutions",
-                  autogenerate: {
-                    directory: "products/courseflow/issues-and-resolutions",
-                  },
-                },
-              ],
-            },
-            {
-              label: "OnTrack",
-              items: [
-                {
-                  label: "Get to Know Us",
-                  link: "/products/ontrack/example",
-                },
-                {
-                  label: "Projects",
-                  autogenerate: {
-                    directory: "products/ontrack/projects",
-                  },
-                },
-                {
-                  label: "Documentation",
-                  autogenerate: {
-                    directory: "products/ontrack/documentation",
+                    directory: "products/courseflow/projects",
                   },
                   items: [
                     {
-                      label: "Front End Migration",
+                      label: "2FA - Documentation",
                       autogenerate: {
-                        directory: "products/ontrack/documentation/front-end-migration",
+                        directory: "products/courseflow/Projects/2FA - Documentation",
                       },
                     },
                     {
-                      label: "Numbas",
+                      label: "ngx-graph",
                       autogenerate: {
-                        directory: "products/ontrack/documentation/numbas",
-                      },
-                    },
-                    {
-                      label: "Deployment",
-                      autogenerate: {
-                        directory: "products/ontrack/documentation/deployment",
+                        directory: "products/courseflow/Projects/ngx-graph",
                       },
                     },
                   ],
                 },
                 {
-                  label: "Issues and Resolutions",
+                  label: "Documentation",
                   autogenerate: {
-                    directory: "products/ontrack/issues-and-resolutions",
+                    directory: "products/courseflow/documentation",
+                  },
+                  items: [
+                    {
+                      label: "Design",
+                      autogenerate: {
+                        directory: "products/courseflow/documentation/design",
+                      },
+                    },
+                    {
+                      label: "Research",
+                      autogenerate: {
+                        directory: "products/courseflow/documentation/research",
+                      },
+                    },
+                    {
+                      label: "Meeting Minutes",
+                      autogenerate: {
+                        directory: "products/courseflow/documentation/Meeting-Minutes",
+                      },
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              label: "Issues and Resolutions",
+              autogenerate: {
+                directory: "products/courseflow/issues-and-resolutions",
+              },
+            },
+          ],
+        },
+        {
+          label: "OnTrack",
+          items: [
+            {
+              label: "Get to Know Us",
+              link: "/products/ontrack/example",
+            },
+            {
+              label: "Projects",
+              autogenerate: {
+                directory: "products/ontrack/projects",
+              },
+            },
+            {
+              label: "Documentation",
+              autogenerate: {
+                directory: "products/ontrack/documentation",
+              },
+              items: [
+                {
+                  label: "Front End Migration",
+                  autogenerate: {
+                    directory: "products/ontrack/documentation/front-end-migration",
+                  },
+                },
+                {
+                  label: "Numbas",
+                  autogenerate: {
+                    directory: "products/ontrack/documentation/numbas",
+                  },
+                },
+                {
+                  label: "Deployment",
+                  autogenerate: {
+                    directory: "products/ontrack/documentation/deployment",
                   },
                 },
               ],
             },
             {
-              label: "SplashKit",
+              label: "Issues and Resolutions",
+              autogenerate: {
+                directory: "products/ontrack/issues-and-resolutions",
+              },
+            },
+          ],
+        },
+        {
+          label: "SplashKit",
+          items: [
+            {
+              label: "Get to Know Us",
+              link: "/products/splashkit/example",
+            },
+            {
+              label: "Projects",
+              autogenerate: {
+                directory: "products/splashkit/projects",
+              },
+            },
+            {
+              label: "Documentation",
+              autogenerate: {
+                directory: "products/splashkit/documentation",
+              },
+              // items: [
+              //   {
+              //     label: "Applications",
+              //     autogenerate: {
+              //       directory: "products/splashkit/documentation/applications",
+              //     },
+              //   },
+              // ],
               items: [
                 {
-                  label: "Get to Know Us",
-                  link: "/products/splashkit/example",
-                },
-                {
-                  label: "Projects",
+                  label: "Tutorials",
                   autogenerate: {
-                    directory: "products/splashkit/projects",
+                    directory: "products/splashkit/documentation/tutorials",
                   },
                 },
                 {
-                  label: "Documentation",
+                  label: "Expansions",
                   autogenerate: {
-                    directory: "products/splashkit/documentation",
-                  },
-                  // items: [
-                  //   {
-                  //     label: "Applications",
-                  //     autogenerate: {
-                  //       directory: "products/splashkit/documentation/applications",
-                  //     },
-                  //   },
-                  // ],
-                },
-                {
-                  label: "Issues and Resolutions",
-                  autogenerate: {
-                    directory: "products/splashkit/issues-and-resolutions",
+                    directory: "products/splashkit/documentation/expansions",
                   },
                 },
               ],
+            },
+            {
+              label: "Issues and Resolutions",
+              autogenerate: {
+                directory: "products/splashkit/issues-and-resolutions",
+              },
             },
           ],
         },
