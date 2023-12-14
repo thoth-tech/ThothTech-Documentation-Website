@@ -1,7 +1,5 @@
 ---
 title: Thoth Tech Worklog Guideline
-sidebar:
-  label: Documenting for Thoth Tech
 ---
 
 ## Table of contents

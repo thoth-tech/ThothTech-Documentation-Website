@@ -1,4 +1,6 @@
-# Splashkit Tutorials
+---
+title: Splashkit Tutorials
+---
 
 Welcome to the Splashkit Tutorials repository! This repository is dedicated to providing a
 comprehensive series of tutorials that aim to help readers learn how to effectively use Splashkit, a

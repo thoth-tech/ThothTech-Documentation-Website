@@ -1,4 +1,6 @@
-# Contributing
+---
+title: Contributing
+---
 
 If you're eager to contribute to our collection of tutorials or propose new ones, here's how you can
 get started:

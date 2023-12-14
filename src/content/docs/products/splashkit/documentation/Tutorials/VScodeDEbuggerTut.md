@@ -1,4 +1,6 @@
-# Debugging Your Application in Visual Studio Code (VSCode)
+---
+title: Debugging Your Application in Visual Studio Code (VSCode)
+---
 
 ## Introduction
 

@@ -1,7 +1,5 @@
 ---
 title: How to Publish An Astro Website to Netlify Guide
-sidebar:
-  label: How to Publsih An Astro Website to Netlify Guide
 ---
 
 This guide provides you a step-by-step instructions for publishing an Astro website to Netlify are
