@@ -20,7 +20,7 @@ Relevant files:
 The purpose of the component is to edit the details for a teaching period. It also allows the user
 to update key properties of a teaching period, such as the name and length.
 
-![teaching-period-details-editor](Resources/teaching-period-details-editor.png)
+![teaching-period-details-editor](/teaching-period-details-editor.png)
 
 ## Component Outcomes and Interactions
 
@@ -39,11 +39,11 @@ a way that is in line with the previous works to maintain consistency.
 
 `edit-profile-form`
 
-![edit-profile-form](Resources/edit-profile-form.png)
+![edit-profile-form](/edit-profile-form.png)
 
 ## Component Post-Migration
 
 The work required to migrate the component is now complete and the migrated component is shown
 below.
 
-![teaching-period-details-editor-migrated](Resources/teaching-period-details-editor-migrated.png)
+![teaching-period-details-editor-migrated](/teaching-period-details-editor-migrated.png)

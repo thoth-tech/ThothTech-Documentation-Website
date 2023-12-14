@@ -21,7 +21,7 @@ The purpose of the component is to display the units that have been registered a
 period. It also allows the user to search for specific units, sort the list by different criteria,
 and navigate to a unit detail view.
 
-![teaching-period-units](Resources/teaching-period-units.png)
+![teaching-period-units](/teaching-period-units.png)
 
 ## Component Outcomes and Interactions
 
@@ -46,11 +46,11 @@ such a way that is in line with the previous works to maintain consistency.
 
 `unit-students-editor`
 
-![unit-students-editor](Resources/unit-students-editor.png)
+![unit-students-editor](/unit-students-editor.png)
 
 ## Component Post-Migration
 
 The work required to migrate the component is now complete and the migrated component is shown
 below.
 
-![teaching-period-units-migrated](Resources/teaching-period-units-migrated.png)
+![teaching-period-units-migrated](/teaching-period-units-migrated.png)

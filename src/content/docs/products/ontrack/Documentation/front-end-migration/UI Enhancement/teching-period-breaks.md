@@ -20,7 +20,7 @@ Relevant files:
 The purpose of the component is to display the breaks that have been registered against a teaching
 period. It also allows the user to sort the list by different criteria.
 
-![teaching-period-breaks](Resources/teaching-period-breaks.png)
+![teaching-period-breaks](/teaching-period-breaks.png)
 
 ## Component Outcomes and Interactions
 
@@ -44,11 +44,11 @@ such a way that is in line with the previous works to maintain consistency.
 
 `unit-students-editor`
 
-![unit-students-editor](Resources/unit-students-editor.png)
+![unit-students-editor](/unit-students-editor.png)
 
 ## Component Post-Migration
 
 The work required to migrate the component is now complete and the migrated component is shown
 below.
 
-![teaching-period-breaks-migrated](Resources/teaching-period-breaks-migrated.png)
+![teaching-period-breaks-migrated](/teaching-period-breaks-migrated.png)

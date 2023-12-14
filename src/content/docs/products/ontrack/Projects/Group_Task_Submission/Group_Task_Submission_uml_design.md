@@ -13,7 +13,7 @@ a user submits the task, the system checks the CanSubmitTask attribute to determ
 submission is allowed. If allowed, the SubmissionStatus attribute of the task is updated to
 "Submitted." If not, the submission is rejected.
 
-![solution](Solution_1.png)
+![solution](/Solution_1.png)
 
 ## Solution 2: Adding Password for Certain Students
 
@@ -26,4 +26,4 @@ validates this password against the user's stored password. If the passwords mat
 considered submitted, and the SubmissionStatus attribute of the task is updated to "Submitted."
 Otherwise, the submission is rejected.
 
-![solution](Solution_2.png)
+![solution](/Solution_2.png)

@@ -368,12 +368,6 @@ export default defineConfig({
                           },
                         },
                         {
-                          label: "Testing",
-                          autogenerate: {
-                            directory: "products/ontrack/Documentation/Front-End-Migration/Testing",
-                          },
-                        },
-                        {
                           label: "UI Enhancement",
                           autogenerate: {
                             directory: "products/ontrack/Documentation/Front-End-Migration/UI Enhancement",
