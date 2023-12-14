@@ -2,11 +2,13 @@
 title: Component Review - Create Unit Modal
 ---
 
-**Student Names:** 
+**Student Names:**
+
 - Brian Caldera (hacaldera@deakin.edu.au)
 - Bruce Wang (s223140522@deakin.edu.au)
 
-**Student IDs:** 
+**Student IDs:**
+
 - Brian Caldera - 221033693
 - Bruce Wang - 223140522
 
@@ -141,9 +143,7 @@ What is needs to be checked for this component to work once migrated?
               [routerLink]="['/units/tasks/inbox', unitRole.unit.id]"
             >
               <td>
-                <label class="label label-info">
-                  {{ unitRole.unit.code }}
-                </label>
+                <label class="label label-info"> {{ unitRole.unit.code }} </label>
               </td>
               <td>{{ unitRole.unit.name }}</td>
               <td>{{ unitRole.role || 'N/A' }}</td>
@@ -190,17 +190,17 @@ What is needs to be checked for this component to work once migrated?
 
 ```typescript
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import {Component, Inject, OnInit} from '@angular/core';
+import { Component, Inject, OnInit } from "@angular/core";
 
-import {dateService} from 'src/app/ajs-upgraded-providers';
-import {GlobalStateService} from 'src/app/projects/states/index/global-state.service';
-import {UserService} from 'src/app/api/services/user.service';
-import {UnitService} from 'src/app/api/services/unit.service';
-import {ViewType} from 'src/app/projects/states/index/global-state.service';
+import { dateService } from "src/app/ajs-upgraded-providers";
+import { GlobalStateService } from "src/app/projects/states/index/global-state.service";
+import { UserService } from "src/app/api/services/user.service";
+import { UnitService } from "src/app/api/services/unit.service";
+import { ViewType } from "src/app/projects/states/index/global-state.service";
 
 @Component({
-  selector: 'f-all-units-list',
-  templateUrl: './f-all-units-list.component.html',
+  selector: "f-all-units-list",
+  templateUrl: "./f-all-units-list.component.html",
 })
 export class AllUnitsListComponent implements OnInit {
   externalName: any;
@@ -223,7 +223,7 @@ export class AllUnitsListComponent implements OnInit {
     @Inject(UserService) private userService: any,
     @Inject(UnitService) private unitService: any,
   ) {
-    this.sortOrder = 'start_date';
+    this.sortOrder = "start_date";
     this.reverse = true;
     this.currentPage = 1;
     this.maxSize = 5;
@@ -246,7 +246,7 @@ export class AllUnitsListComponent implements OnInit {
       this.timeout.cancel();
     });
 
-    if (this.userService.currentUser.role !== 'Student') {
+    if (this.userService.currentUser.role !== "Student") {
       this.unitService.query().subscribe((units) => {
         this.units = units;
       });
@@ -273,7 +273,7 @@ export class AllUnitsListComponent implements OnInit {
       return;
     }
     this.notEnrolled = () => {
-      return this.unitRoles.length === 0 && this.userService.currentUser.role === 'Tutor';
+      return this.unitRoles.length === 0 && this.userService.currentUser.role === "Tutor";
     };
   }
 }
@@ -285,141 +285,131 @@ export class AllUnitsListComponent implements OnInit {
 
 ```html
 <div class="table-padding">
-    <div class="flex flex-row gap-8">
-      <div class="flex-grow flex flex-col gap-8 gap-y-0">
-        <div class="flex flex-row">
-          <div>
-            <h3>Units</h3>
-            <p>Modify units registered with OnTrack</p>
-          </div>
-          <div class="flex-grow"></div>
-          <div>
-            <mat-form-field appearance="outline">
-              <mat-label>Search</mat-label>
-              <input matInput (keyup)="applyFilter($event)" />
-            </mat-form-field>
-          </div>
+  <div class="flex flex-row gap-8">
+    <div class="flex-grow flex flex-col gap-8 gap-y-0">
+      <div class="flex flex-row">
+        <div>
+          <h3>Units</h3>
+          <p>Modify units registered with OnTrack</p>
         </div>
-        <table
-          class="flex-grow f-table selectable"
-          mat-table
-          [dataSource]="dataSource"
-          matSort
-          (matSortChange)="sortTableData($event)"
-        >
-          <!-- Unit Code Column -->
-          <ng-container matColumnDef="unit_code" sticky>
-            <th mat-header-cell *matHeaderCellDef mat-sort-header>Unit Code</th>
-            <td mat-cell *matCellDef="let element" class="w-0 min-w-full">
-              <f-chip class="shrink">{{ element.code }}</f-chip>
-            </td>
-          </ng-container>
-  
-          <!-- Name Column -->
-          <ng-container matColumnDef="name" sticky>
-            <th mat-header-cell *matHeaderCellDef mat-sort-header>Name</th>
-            <td mat-cell *matCellDef="let element">{{ element.name }}</td>
-          </ng-container>
-  
-          <!-- Unit Role Column -->
-          <ng-container matColumnDef="unit_role" sticky>
-            <th mat-header-cell *matHeaderCellDef mat-sort-header>Unit Role</th>
-            <td mat-cell *matCellDef="let element">{{ element.myRole }}</td>
-          </ng-container>
-  
-          <!-- Teaching Period Column -->
-          <ng-container matColumnDef="teaching_period" sticky>
-            <th mat-header-cell *matHeaderCellDef mat-sort-header>Teaching Period</th>
-            <td mat-cell *matCellDef="let element">
-              @if (element.teachingPeriod) {
-                {{ element.teachingPeriod.name }}
-              } @else {
-                Custom
-              }
-            </td>
-          </ng-container>
-  
-          <!-- Start Date Column -->
-          <ng-container matColumnDef="start_date" sticky>
-            <th mat-header-cell *matHeaderCellDef mat-sort-header>Start Time</th>
-            <td mat-cell *matCellDef="let element">{{ element.startDate | date: 'EEE d MMM y' }}</td>
-          </ng-container>
-  
-          <!-- End Date Column -->
-          <ng-container matColumnDef="end_date" sticky>
-            <th mat-header-cell *matHeaderCellDef mat-sort-header>End Time</th>
-            <td mat-cell *matCellDef="let element">{{ element.endDate | date: 'EEE d MMM y' }}</td>
-          </ng-container>
-  
-          <!-- Active Column -->
-          <ng-container matColumnDef="active" sticky>
-            <th mat-header-cell *matHeaderCellDef mat-sort-header>Active</th>
-            <td mat-cell *matCellDef="let element">
-              <!-- If element.teachingPeriod exists -->
-              @if (element.teachingPeriod) {
-                @if (element.teachingPeriod.active && element.active) {
-                  <i class="fa fa-check"></i>
-                }
-                @if (!element.teachingPeriod.active || !element.active) {
-                  <i class="fa fa-times"></i>
-                }
-              } @else {
-                @if (element.active) {
-                  <i class="fa fa-check"></i>
-                }
-                @if (!element.active) {
-                  <i class="fa fa-times"></i>
-                }
-              }
-  
-              <!-- If element.teachingPeriod does not exist -->
-            </td>
-          </ng-container>
-  
-          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-          <tr
-            mat-row
-            *matRowDef="let row; columns: displayedColumns"
-            uiSref="units/admin"
-            [uiParams]="{unitId: row.id}"
-          ></tr>
-        </table>
+        <div class="flex-grow"></div>
+        <div>
+          <mat-form-field appearance="outline">
+            <mat-label>Search</mat-label>
+            <input matInput (keyup)="applyFilter($event)" />
+          </mat-form-field>
+        </div>
       </div>
+      <table
+        class="flex-grow f-table selectable"
+        mat-table
+        [dataSource]="dataSource"
+        matSort
+        (matSortChange)="sortTableData($event)"
+      >
+        <!-- Unit Code Column -->
+        <ng-container matColumnDef="unit_code" sticky>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Unit Code</th>
+          <td mat-cell *matCellDef="let element" class="w-0 min-w-full">
+            <f-chip class="shrink">{{ element.code }}</f-chip>
+          </td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="name" sticky>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Name</th>
+          <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+        </ng-container>
+
+        <!-- Unit Role Column -->
+        <ng-container matColumnDef="unit_role" sticky>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Unit Role</th>
+          <td mat-cell *matCellDef="let element">{{ element.myRole }}</td>
+        </ng-container>
+
+        <!-- Teaching Period Column -->
+        <ng-container matColumnDef="teaching_period" sticky>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Teaching Period</th>
+          <td mat-cell *matCellDef="let element">
+            @if (element.teachingPeriod) { {{ element.teachingPeriod.name }} } @else { Custom }
+          </td>
+        </ng-container>
+
+        <!-- Start Date Column -->
+        <ng-container matColumnDef="start_date" sticky>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Start Time</th>
+          <td mat-cell *matCellDef="let element">{{ element.startDate | date: 'EEE d MMM y' }}</td>
+        </ng-container>
+
+        <!-- End Date Column -->
+        <ng-container matColumnDef="end_date" sticky>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>End Time</th>
+          <td mat-cell *matCellDef="let element">{{ element.endDate | date: 'EEE d MMM y' }}</td>
+        </ng-container>
+
+        <!-- Active Column -->
+        <ng-container matColumnDef="active" sticky>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Active</th>
+          <td mat-cell *matCellDef="let element">
+            <!-- If element.teachingPeriod exists -->
+            @if (element.teachingPeriod) { @if (element.teachingPeriod.active && element.active) {
+            <i class="fa fa-check"></i>
+            } @if (!element.teachingPeriod.active || !element.active) {
+            <i class="fa fa-times"></i>
+            } } @else { @if (element.active) {
+            <i class="fa fa-check"></i>
+            } @if (!element.active) {
+            <i class="fa fa-times"></i>
+            } }
+
+            <!-- If element.teachingPeriod does not exist -->
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr
+          mat-row
+          *matRowDef="let row; columns: displayedColumns"
+          uiSref="units/admin"
+          [uiParams]="{unitId: row.id}"
+        ></tr>
+      </table>
     </div>
   </div>
+</div>
 ```
 
 **f-all-units-list.component.ts**
 
 ```typescript
-import {Component, AfterViewInit, ViewChild, OnDestroy} from '@angular/core';
-import {Unit} from 'src/app/api/models/unit';
-import {UnitRole} from 'src/app/api/models/unit-role';
-import {UnitService} from 'src/app/api/services/unit.service';
-import {UserService} from 'src/app/api/services/user.service';
-import {MatTable, MatTableDataSource} from '@angular/material/table';
-import {MatSort, Sort} from '@angular/material/sort';
-import {MatPaginator} from '@angular/material/paginator';
-import {Subscription} from 'rxjs';
+import { Component, AfterViewInit, ViewChild, OnDestroy } from "@angular/core";
+import { Unit } from "src/app/api/models/unit";
+import { UnitRole } from "src/app/api/models/unit-role";
+import { UnitService } from "src/app/api/services/unit.service";
+import { UserService } from "src/app/api/services/user.service";
+import { MatTable, MatTableDataSource } from "@angular/material/table";
+import { MatSort, Sort } from "@angular/material/sort";
+import { MatPaginator } from "@angular/material/paginator";
+import { Subscription } from "rxjs";
 
 @Component({
-  selector: 'f-all-units-list',
-  templateUrl: './f-all-units-list.component.html',
-  styleUrls: ['./f-all-units-list.component.scss'],
+  selector: "f-all-units-list",
+  templateUrl: "./f-all-units-list.component.html",
+  styleUrls: ["./f-all-units-list.component.scss"],
 })
 export class FUnitsComponent implements AfterViewInit, OnDestroy {
-  @ViewChild(MatTable, {static: false}) table: MatTable<Unit>;
-  @ViewChild(MatSort, {static: false}) sort: MatSort;
-  @ViewChild(MatPaginator, {static: false}) paginator: MatPaginator;
+  @ViewChild(MatTable, { static: false }) table: MatTable<Unit>;
+  @ViewChild(MatSort, { static: false }) sort: MatSort;
+  @ViewChild(MatPaginator, { static: false }) paginator: MatPaginator;
 
   displayedColumns: string[] = [
-    'unit_code',
-    'name',
-    'unit_role',
-    'teaching_period',
-    'start_date',
-    'end_date',
-    'active',
+    "unit_code",
+    "name",
+    "unit_role",
+    "teaching_period",
+    "start_date",
+    "end_date",
+    "active",
   ];
   dataSource: MatTableDataSource<Unit>;
   clickedRows = new Set<Unit>();
@@ -469,19 +459,19 @@ export class FUnitsComponent implements AfterViewInit, OnDestroy {
   // Sorting function to sort data when sort
   // event is triggered
   sortTableData(sort: Sort) {
-    if (!sort.active || sort.direction === '') {
+    if (!sort.active || sort.direction === "") {
       return;
     }
     this.dataSource.data = this.dataSource.data.sort((a, b) => {
-      const isAsc = sort.direction === 'asc';
+      const isAsc = sort.direction === "asc";
       switch (sort.active) {
-        case 'unit_code':
-        case 'name':
-        case 'unit_role':
-        case 'teaching_period':
-        case 'start_date':
-        case 'end_date':
-        case 'active':
+        case "unit_code":
+        case "name":
+        case "unit_role":
+        case "teaching_period":
+        case "start_date":
+        case "end_date":
+        case "active":
           return this.sortCompare(a[sort.active], b[sort.active], isAsc);
         default:
           return 0;
@@ -490,5 +480,7 @@ export class FUnitsComponent implements AfterViewInit, OnDestroy {
   }
 }
 ```
+
 - At this point we are getting few error in the terminal and they should be easy to fix.
-- And make sure to change **doubtfire-angular.module.ts** and **doubtfire-angularjs.module.ts** files to include the new component.
+- And make sure to change **doubtfire-angular.module.ts** and **doubtfire-angularjs.module.ts**
+  files to include the new component.
