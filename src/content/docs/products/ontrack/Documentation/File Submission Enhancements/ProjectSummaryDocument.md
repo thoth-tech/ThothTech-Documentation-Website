@@ -119,7 +119,7 @@ which we evaluated each technology against. \
 More detail is available in the benchmarking tool itself, a summary is provided
 below. \
 \
-![figure 1](Images/figure1.PNG) \
+![figure 1](/figure1.PNG) \
 \
 
 - \*An average of three conversions of a 1MB .docx file. Speed should be used
@@ -134,7 +134,7 @@ below. \
   \
   See below for comments regarding conversion quality. \
   \
-  ![figure 2](Images/figure2.PNG)
+  ![figure 2](/figure2.PNG)
 
 ## Future Students
 
@@ -163,7 +163,7 @@ In brief, Doubtfire (OnTrack) can be described as a â€œmodern, lightweight LMSâ€
 (Learning Management System) that helps students submit work and
 receive feedback on it. \
 \
-![figure 3](Images/figure3.PNG) \
+![figure 3](/figure3.PNG) \
 \
 When looking at the OnTrack Architecture diagram, the red box, representing the
 API, is where most of our work will be in, as it is mainly backend work
