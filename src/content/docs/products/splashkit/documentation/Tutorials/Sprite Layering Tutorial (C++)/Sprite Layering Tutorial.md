@@ -2,8 +2,11 @@
 
 ## Introduction
 
-In this tutorial, we are going to cover the concept of sprite layering. Before we get dive into it let's look at what does layering mean. Before we dive into it, let's first understand what layering means. Think of layers like sheets of paper stacked on top of each other. In short, layering involves stacking 'layers' on top of each other to achieve the desired result.
-Here's an example of layering looks like:
+In this tutorial, we are going to cover the concept of sprite layering. Before we get dive into it
+let's look at what does layering mean. Before we dive into it, let's first understand what layering
+means. Think of layers like sheets of paper stacked on top of each other. In short, layering
+involves stacking 'layers' on top of each other to achieve the desired result. Here's an example of
+layering looks like:
 [I Made the PERFECT 3D Pokémon Cards!!! by Jazza](https://www.youtube.com/watch?app=desktop&v=JCfpVvy5Rhs)
 
 ### Functions Used (Link to Splashkit documentation)
@@ -15,7 +18,8 @@ Here's an example of layering looks like:
 
 ## Apply the method to Splashkit sprite
 
-To demonstrate this, we are going to create a simple move around program which uses 4 custom made sprite images. Those 4 images represent 4 sided face:
+To demonstrate this, we are going to create a simple move around program which uses 4 custom made
+sprite images. Those 4 images represent 4 sided face:
 
 ```c
 LEFT
@@ -33,7 +37,8 @@ bitmap left_image = load_bitmap("face_left", "face_left.png");
 bitmap right_image = load_bitmap("face_right", "face_right.png");
 ```
 
-Then we create a sprite call Y_face which is basically just yellow face and add the 4 layers for the sprite:
+Then we create a sprite call Y_face which is basically just yellow face and add the 4 layers for the
+sprite:
 
 ```cpp
 sprite Yellow_face = create_sprite("Y_face",front_image);
@@ -43,7 +48,9 @@ sprite_add_layer(Yellow_face, left_image ,"left");
 sprite_add_layer(Yellow_face, right_image ,"right");
 ```
 
-Now we create a enumeration and a function call `face_swap()` which is a function to swap layers when we press the arrow key to move around(Note: you can do it in other ways if you feel like to, this is just a way to make the explaination easier):
+Now we create a enumeration and a function call `face_swap()` which is a function to swap layers
+when we press the arrow key to move around(Note: you can do it in other ways if you feel like to,
+this is just a way to make the explaination easier):
 
 ```cpp
 enum  face{
@@ -88,8 +95,7 @@ void  face_swap(sprite  Yellow_face, int  face){
 }
 ```
 
-`sprite_hide_layer`: Hides the layer
-`sprite_show_layer`: Shows the layer
+`sprite_hide_layer`: Hides the layer `sprite_show_layer`: Shows the layer
 
 Now we declare the enumeration:
 
@@ -97,7 +103,7 @@ Now we declare the enumeration:
 face  face;
 
 // those code below are optional
-// because my image files are too small I have to do this 
+// because my image files are too small I have to do this
 double  x = 100;
 double  y = 100;
 
@@ -114,7 +120,7 @@ while (!quit_requested()){
  if (key_down(UP_KEY)){
   face = BACK;
   y -= 0.1; // Move up by decreasing the y-coordinate
- 
+
  }else  if (key_down(DOWN_KEY)){
   face = FRONT;
   y += 0.1; // Move down by increasing the y-coordinate
@@ -127,7 +133,7 @@ while (!quit_requested()){
   face = RIGHT;
   x += 0.1; // Move right by increasing the x-coordinate
  }
- 
+
  face_swap(Yellow_face, face);
  clear_screen(COLOR_WHITE);
  draw_sprite(Yellow_face, x, y);
@@ -141,10 +147,13 @@ That's all the code implementation, here's the result:
 
 ### Other functions
 
-While this is one basic example of using layering, there are other functions that we haven't use but it's good to know them incase we ever needed them:
+While this is one basic example of using layering, there are other functions that we haven't use but
+it's good to know them incase we ever needed them:
 
-1. [sprite_bring_layer_to_front(sprite s, int visible_layer)](https://splashkit.io/api/sprites/#sprite-bring-layer-to-front) : Brings the layer to the front of other layers
-2. [sprite_bring_layer_forward(sprite s, int visible_layer)](https://splashkit.io/api/sprites/#sprite-bring-layer-forward) : Bring a layer 1 step forward of another layer.
+1. [sprite_bring_layer_to_front(sprite s, int visible_layer)](https://splashkit.io/api/sprites/#sprite-bring-layer-to-front)
+   : Brings the layer to the front of other layers
+2. [sprite_bring_layer_forward(sprite s, int visible_layer)](https://splashkit.io/api/sprites/#sprite-bring-layer-forward)
+   : Bring a layer 1 step forward of another layer.
 
 ### Expected Learning Outcomes
 
