@@ -404,7 +404,7 @@ export default defineConfig({
                 {
                   label: "Issues-and-resolutions",
                   autogenerate: {
-                    directory: "products/ontrack/issues-and-resolutions",
+                    directory: "products/ontrack/Issues-and-resolutions",
                   },
                 },
                 {
