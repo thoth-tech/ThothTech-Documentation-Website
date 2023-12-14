@@ -6,7 +6,7 @@ Author: Sanah Quazi
 
 Company: Thoth tech
 
-![a](uml.png)
+![a]/(uml.png)
 
 The UML diagram presented above focuses on achieving efficient organisation
 management, user association with organisations, and robust access control.
