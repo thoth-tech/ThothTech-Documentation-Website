@@ -40,7 +40,7 @@ address the issues concerning contract cheating on online learning management pl
 
 ### Architecturally Significant Use Cases
 
-![Figure 1: Architecturally Significant Use Cases](/figure1.PNG)
+![Figure 1: Architecturally Significant Use Cases](/Use%20Cases.png)
 
 1. As a student, I want Ontrack to have a function that can identifies me by my voice.
    **Description:** The feature highlighted through this user story is having
@@ -67,7 +67,7 @@ address the issues concerning contract cheating on online learning management pl
 
 ### Architecture
 
-![Figure 2: High Level Architecture](/figure2.PNG)
+![Figure 2: High Level Architecture](/Architecture%20Diagram.png)
 
 ### Detailed description of the architecture diagram
 
@@ -81,7 +81,7 @@ is deployed in a docker container format.
 
 ### General Flow diagram
 
-![Figure 3: General Flow Diagram](/figure3.PNG)
+![Figure 3: General Flow Diagram](/Flow%20Diagram.png)
 
 The User has its requests go through the existing OnTrack system, with the
 OnTrack system sending further requests to the Voice Verification API. The

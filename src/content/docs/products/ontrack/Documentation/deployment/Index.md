@@ -6,7 +6,7 @@ title: Google Cloud - Documentation Index
 
 Google Cloud team's overview and high-level documentation.
 
-## [Research & Findings](Research%20%26%20Findings/google-cloud-research.md)
+## [Research & Findings](/google-cloud-research.md)
 
 Google Cloud team's research and findings -
 

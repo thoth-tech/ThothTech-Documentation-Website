@@ -31,7 +31,7 @@ required for different conversion processes, such as:
 
 ## Overview of Conversion Process
 
-![] (docker_flow.png)
+![ ](/docker_flow.png)
 
 When the OnTrack front-end sends a new file to the OnTrack back-end, the
 back-end will be able to determine the file type, and if the file needs to be

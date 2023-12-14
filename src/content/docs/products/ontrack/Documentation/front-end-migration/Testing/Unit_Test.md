@@ -36,7 +36,7 @@ npm install
 npm test
 ```
 
-![unit test terminal output]("imgs/unit_test_terminal_output.png")
+![unit test terminal output]("/unit_test_terminal_output.png")
 
 ```console
 git add .

@@ -137,7 +137,7 @@ is requested for marking.
 
 ### Architecture
 
-![Proposed Architecture of Voice Verification implementation](Research%20&%20Findings/images/Voice-Verification-Architecture-Diagram.png)
+![Proposed Architecture of Voice Verification implementation](/Voice-Verification-Architecture-Diagram.png)
 
 ### Data Formats
 

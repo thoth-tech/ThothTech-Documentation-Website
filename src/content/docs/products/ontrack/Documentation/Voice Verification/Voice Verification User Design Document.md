@@ -78,7 +78,7 @@ Voice Verification system has two phases:
 
 ## Main Process
 
-![Proposed how voice verification system work](Research%20&%20Findings/images/Voice-Verification-Overview-Process.png)
+![Proposed how voice verification system work](/Voice-Verification-Overview-Process.png)
 
 - Verified: The audio file passed a certain confidence value and concluded as
 same person
@@ -104,11 +104,11 @@ Tips: Speak at a normal cadence and clearly.
 
 ### Voice Enrolment Check Flow
 
-![Voice Enrolment GUI](Research%20&%20Findings/images/Voice-Enrolment-Process-Flow.png)
+![Voice Enrolment GUI](/Voice-Enrolment-Process-Flow.png)
 
 ### Voice Enrolment GUI
 
-![Voice Enrolment GUI](Research%20&%20Findings/images/Voiceprint-Enrolment-GUI.png)
+![Voice Enrolment GUI](/Voiceprint-Enrolment-GUI.png)
 
 ## References
 

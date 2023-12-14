@@ -224,7 +224,7 @@ export default defineConfig({
                   items: [
                     {
                       label: "Group_Task_Submission",
-                      link: "/products/ontrack/Projects/Group_Task_Submissio",
+                      link: "/products/ontrack/Projects/Group_Task_Submission",
                     },
                     {
                       label: "Numbas",
@@ -269,7 +269,7 @@ export default defineConfig({
                 {
                   label: "Documentation",
                   autogenerate: {
-                    directory: "products/ontrack/documentation",
+                    directory: "products/ontrack/Documentation",
                   },
                   items: [
                     {
@@ -375,7 +375,7 @@ export default defineConfig({
                   ],
                 },
                 {
-                  label: "Issues and Resolutions",
+                  label: "Issues-and-resolutions",
                   autogenerate: {
                     directory: "products/ontrack/issues-and-resolutions",
                   },

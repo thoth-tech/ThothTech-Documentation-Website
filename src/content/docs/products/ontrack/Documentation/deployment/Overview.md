@@ -23,7 +23,7 @@ run version of OnTrack which is hosted on Google Cloud Platform (GCP).
 The goal is for Thoth Tech to have their own
 deployment to develop OnTrack that is separate to Deakin's deployment.
 
-![Google Cloud - Doubtfire](assets/GoogleCloud_Doubtfire.jpg "Google Cloud - Doubtfire")
+![Google Cloud - Doubtfire](/GoogleCloud_Doubtfire.jpg "Google Cloud - Doubtfire")
 
 The Google cloud team have deployed a functional instance of Doubtfire (also
 known as OnTrack) hosted on GCP.
@@ -58,16 +58,16 @@ successfully. On our individual workstations, we cloned the
 <https://github.com/thoth-tech/doubtfire-deploy-GCP> and modified
 the necessary files. We then used docker compose and Docker to run and deploy containers.
 
-![doubtfire-localhost-compose](assets/doubtfire-localhost-compose.png "docker compose output")
+![doubtfire-localhost-compose](/doubtfire-localhost-compose.png "docker compose output")
 
 Success! We have Docker containers running locally.
 
-![doubtfire-localhost-docker](assets/doubtfire-localhost-docker.png "Docker containers running")
+![doubtfire-localhost-docker](/doubtfire-localhost-docker.png "Docker containers running")
 
 Success again! We have OnTrack being hosted locally and is accessible via
 <https://localhost:443> .
 
-![doubtfire-localhost](assets/doubtfire-localhost.png "Doubtfire running on localhost")
+![doubtfire-localhost](/doubtfire-localhost.png "Doubtfire running on localhost")
 
 ### Google Compute Engine instance
 
@@ -93,7 +93,7 @@ command-line shell via SSH. In the Google Cloud console, you can view the
 options to connect by clicking the drop-down menu
 beside _Connect SSH_ on the instance view.
 
-![gcp-instance-connect](assets/gcp-instance-connect.png "Instance connection options")
+![gcp-instance-connect](/gcp-instance-connect.png "Instance connection options")
 
 Alternatively, you can SSH to the instance via gcloud CLI -
 
@@ -120,12 +120,12 @@ From here, we pulled down the doubtfire-deploy repository, generated a
 new certificate and private key for the host, and ran docker compose to
 deploy the containers for the OnTrack deployment.
 
-![gcp-instance-docker](assets/gcp-instance-docker.png "Instance running docker containers")
+![gcp-instance-docker](/gcp-instance-docker.png "Instance running docker containers")
 
 And we can browse to OnTrack over the internet using our public IP address
 via HTTPS (port 443).
 
-![ontrack-login](assets/ontrack-login.png "OnTrack Login")
+![ontrack-login](/ontrack-login.png "OnTrack Login")
 
 ## Next stages
 
@@ -143,7 +143,7 @@ project objectives, such as -
 Here's a high-level diagram of using CI/CD pipeline to automate the
 deployment of OnTrack onto GCP -
 
-![Google Cloud - CI/CD](assets/GoogleCloud_CICD.jpg "Google Cloud - CICD")
+![Google Cloud - CI/CD](/GoogleCloud_CICD.jpg "Google Cloud - CICD")
 
 ## Links
 
