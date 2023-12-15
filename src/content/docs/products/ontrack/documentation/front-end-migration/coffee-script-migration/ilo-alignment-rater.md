@@ -27,6 +27,7 @@ learning outcomes of the unit.
 ### Existing model
 
 ![figure_1](/public/iloalignment-rater-existing.png)
+
 ### Component outcomes/interactions
 
 1. Allow students to align their submitted task with learning outomes.
