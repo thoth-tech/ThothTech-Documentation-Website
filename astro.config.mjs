@@ -103,7 +103,7 @@ export default defineConfig({
                 {
                   label: "Projects",
                   autogenerate: {
-                    directory: "products/art-gallery/projects",
+                    directory: "products/art-gallery/Projects",
                   },
                   items: [
                     {
@@ -113,9 +113,9 @@ export default defineConfig({
                       },
                     },
                     {
-                      label: "Dockerization",
+                      label: "Testing Project",
                       autogenerate: {
-                        directory: "products/art-gallery/Projects/dockerization",
+                        directory: "products/art-gallery/Projects/Testing Project",
                       },
                     },
                   ],
@@ -125,11 +125,43 @@ export default defineConfig({
                   autogenerate: {
                     directory: "products/art-gallery/Documentation",
                   },
+                  items: [
+                    {
+                      label: "BackendUpgrades",
+                      autogenerate: {
+                        directory: "products/art-gallery/Documentation/BackendUpgrades",
+                      },
+                    },
+                    {
+                      label: "Deployment",
+                      autogenerate: {
+                        directory: "products/art-gallery/Documentation/Deployment",
+                      },
+                    },
+                    {
+                      label: "Dockerization",
+                      autogenerate: {
+                        directory: "products/art-gallery/Documentation/Dockerization",
+                      },
+                    },
+                    {
+                      label: "Documentation Project",
+                      autogenerate: {
+                        directory: "products/art-gallery/Documentation/Documentation Project",
+                      },
+                    },
+                    {
+                      label: "Guidance",
+                      autogenerate: {
+                        directory: "products/art-gallery/Documentation/Guidance",
+                      },
+                    },
+                  ],
                 },
                 {
                   label: "Issues and Resolutions",
                   autogenerate: {
-                    directory: "products/art-gallery/issues-and-resolutions",
+                    directory: "products/art-gallery/Issues-and-Resolutions",
                   },
                 },
               ],
@@ -157,6 +189,12 @@ export default defineConfig({
                       label: "Thoth Tech Website",
                       autogenerate: {
                         directory: "products/company-operations/projects/Thoth-Tech-Website",
+                      },
+                    },
+                    {
+                      label:"Onboarding Tool",
+                      autogenerate: {
+                        directory: "products/company-operations/projects/onboaring-tool",
                       },
                     },
                   ],
@@ -187,23 +225,17 @@ export default defineConfig({
                   autogenerate: {
                     directory: "products/courseflow/projects",
                   },
-                },
-                {
-                  label: "Documentation",
-                  autogenerate: {
-                    directory: "products/courseflow/documentation",
-                  },
                   items: [
                     {
-                      label: "Design",
+                      label: "2FA - Documentation",
                       autogenerate: {
-                        directory: "products/courseflow/documentation/design",
+                        directory: "products/courseflow/Projects/2FA - Documentation",
                       },
                     },
                     {
-                      label: "Research",
+                      label: "ngx-graph",
                       autogenerate: {
-                        directory: "products/courseflow/documentation/research",
+                        directory: "products/courseflow/Projects/ngx-graph",
                       },
                     },
                   ],
@@ -403,6 +435,25 @@ export default defineConfig({
                       autogenerate: {
                         directory:
                           "products/splashkit/Documentation/API-Expansion/Windows-DevContainer",
+                    directory: "products/courseflow/Documentation",
+                  },
+                  items: [
+                    {
+                      label: "Design",
+                      autogenerate: {
+                        directory: "products/courseflow/Documentation/design",
+                      },
+                    },
+                    {
+                      label: "Research",
+                      autogenerate: {
+                        directory: "products/courseflow/Documentation/research",
+                      },
+                    },
+                    {
+                      label: "Meeting Minutes",
+                      autogenerate: {
+                        directory: "products/courseflow/Documentation/Meeting-Minutes",
                       },
                       items: [
                         {
@@ -630,6 +681,100 @@ export default defineConfig({
                   label: "SplashKit Online",
                   autogenerate: {
                     directory: "products/splashkit/Documentation/SplashKit-Online",
+              ],
+            },
+            {
+              label: "Issues and Resolutions",
+              autogenerate: {
+                directory: "products/courseflow/issues-and-resolutions",
+              },
+            },
+          ],
+        },
+        {
+          label: "OnTrack",
+          items: [
+            {
+              label: "Get to Know Us",
+              link: "/products/ontrack/example",
+            },
+            {
+              label: "Projects",
+              autogenerate: {
+                directory: "products/ontrack/projects",
+              },
+            },
+            {
+              label: "Documentation",
+              autogenerate: {
+                directory: "products/ontrack/documentation",
+              },
+              items: [
+                {
+                  label: "Front End Migration",
+                  autogenerate: {
+                    directory: "products/ontrack/documentation/front-end-migration",
+                  },
+                },
+                {
+                  label: "Numbas",
+                  autogenerate: {
+                    directory: "products/ontrack/documentation/numbas",
+                  },
+                },
+                {
+                  label: "Deployment",
+                  autogenerate: {
+                    directory: "products/ontrack/documentation/deployment",
+                  },
+                },
+              ],
+            },
+            {
+              label: "Issues and Resolutions",
+              autogenerate: {
+                directory: "products/ontrack/issues-and-resolutions",
+              },
+            },
+          ],
+        },
+        {
+          label: "SplashKit",
+          items: [
+            {
+              label: "Get to Know Us",
+              link: "/products/splashkit/example",
+            },
+            {
+              label: "Projects",
+              autogenerate: {
+                directory: "products/splashkit/projects",
+              },
+            },
+            {
+              label: "Documentation",
+              autogenerate: {
+                directory: "products/splashkit/documentation",
+              },
+              // items: [
+              //   {
+              //     label: "Applications",
+              //     autogenerate: {
+              //       directory: "products/splashkit/documentation/applications",
+              //     },
+              //   },
+              // ],
+              items: [
+                {
+                  label: "Tutorials",
+                  autogenerate: {
+                    directory: "products/splashkit/documentation/tutorials",
+                  },
+                },
+                {
+                  label: "Expansions",
+                  autogenerate: {
+                    directory: "products/splashkit/documentation/expansions",
                   },
                 },
               ],
