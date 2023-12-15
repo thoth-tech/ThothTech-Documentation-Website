@@ -26,8 +26,7 @@ learning outcomes of the unit.
 
 ### Existing model
 
-![existing modal](public/iloalignment-rater-existing.png)
-
+![figure_1](/public/iloalignment-rater-existing.png)
 ### Component outcomes/interactions
 
 1. Allow students to align their submitted task with learning outomes.
@@ -45,11 +44,11 @@ proposed model , these are the suggested changes;
    button etc. New design sketches: Existing UI components are to be used for the input fields and
    button etc.
 
-![new modal sketch 1](public/iloalignment-rater-updated1.png)
+![figure_1](/public/iloalignment-rater-updated1.png)
 
-![new modal sketch 2](public/iloalignment-rater-updated2.png)
+![figure_1](/public/iloalignment-rater-updated2.png)
 
-![new modal sketch 3](public/iloalignment-rater-updated3.png)
+![figure_1](/public/iloalignment-rater-updated3.png)
 
 ### Component migration Check list
 
