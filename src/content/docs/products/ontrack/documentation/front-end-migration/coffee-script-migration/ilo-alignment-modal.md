@@ -26,9 +26,9 @@ account.
 
 ### Existing model
 
-![ilo-alignment-modal](public/ilo_allignment_modal_1.png)
+![figure_1](/public/ilo_alignment_modal_1.png)
 
-![ilo-alignment-modal_rating](public/ilo_alignment_modal2.png)
+![figure_1](/public/ilo_alignment_modal2.png)
 
 ### Component outcomes/interactions
 
@@ -52,7 +52,7 @@ learning outcome is displayed through bold letters, not in the colored boxes 3.T
 should be displayed with proper alignment and font size.
 
 New design sketch: Existing UI components are to be used for the input fields and button etc. ``
-![new modal sketch](public/ilo_allignment_modal.png)
+![figure_1](/public/ilo_allignment_modal.png)
 
 In these two proposed models, the user provides the following changes:
 
@@ -62,9 +62,9 @@ can be added to rate learning outcomes.
 New design sketch: proposed different design, existing UI components are to be used for the input
 fields and button etc.
 
-![new modal sketch](public/ilo_allignment_modal_design2.png)
+![figure_1](/public/ilo_alignment_modal_design2%20.png)
 
-![new modal sketch](public/ilo_allignment_modal_design3.png)
+![figure_1](/public/ilo_alignment_modal_design3.png)
 
 ### Component migration Check list
 
