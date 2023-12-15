@@ -1,0 +1,263 @@
+---
+title: CourseFlow Software Design Document
+description: Outlines the overall design of the CourseFlow web application.
+---
+
+- [1 - Introduction](#1---introduction)
+  - [1.1 - Problem Definition](#11---problem-definition)
+  - [1.2 - Solution](#12---solution)
+  - [1.3 - Target Audience](#13---target-audience)
+  - [1.4 - Intended Use](#14---intended-use)
+  - [1.5 - Scope](#15---scope)
+- [2 - High-Level Overview and Requirements](#2---high-level-overview-and-requirements)
+  - [2.1 - User Stories](#21---user-stories)
+  - [2.2 - High-Level Requirements](#22---high-level-requirements)
+  - [2.3 - Assumptions](#23---assumptions)
+- [3 - System Architecture](#3---system-architecture)
+  - [3.1 - Overall System Diagrammatic Representation](#31---overall-system-diagrammatic-representation)
+  - [3.2 - Data Flow Diagrams](#32---data-flow-diagrams)
+  - [3.3 - Entity Relationship Diagram](#33---entity-relationship-diagram)
+- [4 - Detailed System Design](#4---detailed-system-design)
+  - [4.1 - Feature Requirements](#41---feature-requirements)
+  - [4.2 - API and Data Requirements](#42---api-and-data-requirements)
+  - [4.3 - Wireframes](#43---wireframes)
+- [5 - Development Plan](#5---development-plan)
+
+## 1 - Introduction
+
+---
+
+CourseFlow is a clear and easy-to-use course planning platform that helps students navigate through
+their course requirements and graduate with confidence.
+
+This product was initially a RapidX project founded in Trimester 1, 2023 by:
+
+- Mel David Bugay
+- Kieron Anthony Boyle
+- Ted Wang
+
+To fully realize this project as a new feature of OnTrack, this document will utilize previously
+established foundational work from diagrams, proof of concepts and prototypes to provide these key
+coverage points:
+
+- A clear outline of the problem to be solved.
+- A proposed solution.
+- A high level overview of requirements in relation to the problem.
+- A detailed break-down of key components of the overall system.
+
+### 1.1 - Problem Definition
+
+At Deakin University, a large repertoire of courses are available for potential students to enrol in
+to help shape their future career goals. Each of these courses will have a set of requirements
+ranging from minimum credit points achieved, completion of core units and completion of minor/major
+sequences with required units etc. Additionally, the units themselves can also have certain
+requirements/restrictions such as pre-requisites, co-requisites and minimum number of units
+completed etc.
+
+These course and unit requirements can prove to be a challenge to keep track off and manage for some
+students. As such, there is a need for a tool that can help students plan their course and help them
+manage their course and unit requirements. Ultimately, this allows them to have a seamless
+experience with their degree where requirements can easily be managed so that they can focus on
+their studies and achieve their goals.
+
+### 1.2 - Solution
+
+CourseFlow aims to be a solution to the above defined problem where it will provide as easy-to-use
+interface for students to plan their degree and be capable of considering course and unit
+requirements.
+
+### 1.3 - Target Audience
+
+Students who struggle to or simply desire to keep track of and manage their course and unit
+requirements.
+
+### 1.4 - Intended Use
+
+To be used by students studying at Deakin University for the purposes of course planning and
+tracking.
+
+### 1.5 - Scope
+
+A working new feature that aims to have:
+
+- A functioning editable and saveable course map for each year and trimester.
+- Requirements for courses and units defined and displayed.
+- Requirements not being met indicated to the user.
+- Query system for course and unit selection based on interest area.
+
+## 2 - High-Level Overview and Requirements
+
+---
+
+This section will provide a high-level overview and key requirements of the product.
+
+### 2.1 - User Stories
+
+| User Stories                                                                                                                                                                                                                          |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| As a student, I want to have my course requirements clearly defined and presented to me so that I know what I need to complete my degree and thus, plan accordingly.                                                                  |
+| As a student, I want to have unit requirements to be clearly defined and presented to me so that I know if I can take a unit or not.                                                                                                  |
+| As a student, I want to be able to plan ahead for my course and map out all of my units so that I can ensure all requirements of my degree are met.                                                                                   |
+| As a student, I want to be able to have flexibility in the number units and trimesters I take part in so that I can allow flexibility in my course due to being a part-time student or for general flexibility due to my commitments. |
+| As a student, I want to be able to choose a course or unit based on my interest area so that I can study in areas I have interest in and would like to work in.                                                                       |
+
+### 2.2 - High-Level Requirements
+
+This application requires the following:
+
+- A selection interface for students to select the course they are studying or want to study with a
+  query system to filter out courses based on interest area.
+- Have course requirements clearly presented to the user with completion indication based on the
+  current course map.
+- An interface for students to be able to add/update/remove units, trimesters and years in their
+  course map. with indications for requirements being met or not.
+- A system for selection of units with a query system to filter out units based on interest area.
+- Core units for the course needs to be easily accessible to the user.
+- Have the course map state saved at all times.
+
+### 2.3 - Assumptions
+
+At this stage, the key assumption will be that there will be no or limited access to Deakin
+University’s API to get course and unit information.
+
+Additionally, as an extension to that, it will be assumed that there will be no or limited access to
+student information, including their enrolment information and their unit status.
+
+These assumptions are subject to change as the project progresses and will be reviewed again at a
+later date and updated in this document accordingly.
+
+## 3 - System Architecture
+
+---
+
+The overall system architecture is shown below.
+
+### 3.1 - Overall System Diagrammatic Representation
+
+![CourseFlow System Architecture](/courseflow-system-architecture.png)
+
+### 3.2 - Data Flow Diagrams
+
+The image shown below depicts the data flow between a student on the client side and the CourseFlow
+system.
+
+![CourseFlow DFD Level 0](/courseflow-dfd-level-0.png)
+
+### 3.3 - Entity Relationship Diagram
+
+The image below depicts an entity relationship diagram of the CourseFlow system. Please refer to the
+CourseFlow Enhanced ERD and Data Modelling document within the same design folder as this document
+for more detailed explanations.
+
+![CourseFlow ERD](/courseflow-enhanced-erd.png)
+
+## 4 - Detailed System Design
+
+---
+
+This section will provide in depth detail of the CourseFlow system with respect to the Frontend and
+the Backend components. Since this project will be a part of OnTrack, references to existing systems
+in OnTrack will be made where applicable.
+
+### 4.1 - Feature Requirements
+
+Features of CourseFlow will be described here in more detail. This will also provide context to the
+backend API that will need to be defined and what their role will be in supporting these features.
+
+**Editable Course Map**
+
+- The initial presentation of the course map will be based on the course selected.
+- Course requirements, along with progression to completing said requirements will need to be
+  clearly presented to the user.
+  - This will be achieved by comparing the current set units in the course map against the course
+    requirements.
+- Course map needs to be able to support units being dragged and dropped into slots.
+  - Additionally, each unit that has been set needs to be able to be dragged and dropped into other
+    slots or into other units which will trigger a swap between the unit positions.
+- Need to be able to add/remove year containers, trimester contains and unit slot containers.
+- The exact state of the course map in terms of unit placement in a specific year and trimester
+  container needs to be saved at all times.
+  - Containers being added don't need to be saved unless a unit has been placed inside it.
+- To cater for units being removed from the map (making some units potentially invalid) and to allow
+  users to set a unit regardless of validity, the unit display on the course map needs to have a
+  visual indicator to inform the user of invalid units.
+- A panel is required to display a unit's requirements and the progression to meeting those
+  requirements upon clicking on the respective UI element (button etc.).
+
+**Course Selection**
+
+- This feature will require further discussions due to the possibility of associating the student's
+  enrolled course through mechanisms such as Deakin API or importing of data.
+- However, if the above is not possible, a feature can be implemented where courses can be searched
+  for and selected.
+
+**Unit Selection**
+
+- There are two key parts to this feature:
+  - Core units of any kind will be shown to the user in an easy to access manner. This will shown
+    via a window/panel with core units already present and ready to be drag and dropped.
+  - Electives will have a separate interface and much like the course, will also need a query system
+    to filter units based on user criteria such as unit level and associated specialization etc.
+- In both of the above mentioned key parts, units will need to have a clear indicator if they will
+  be valid for selection based on the current course map settings.
+  - This is not a restriction in placing a unit and just a visual indicator so that users are aware
+    they do not meet the requirements with their current settings.
+
+**Requirements Indicators**
+
+- Course requirements with the current progress needs to be displayed.
+- Unit requirements such as pre-requisites etc. needs to be displayed with current progress to
+  meeting those requirements where applicable (completing 2 SIT coded units for example).
+- To accommodate for these requirements, course and unit data will need to be associated with set
+  requirements and compared to the current course map settings to update the appropriate visuals.
+
+### 4.2 - API and Data Requirements
+
+Due to the large amounts of detail present in this section, this content has been detailed in
+another document named "Backend Functional Requirements" within the same design folder with this
+document.
+
+### 4.3 - Wireframes
+
+**CourseFlow Course Map with Courses Tab Selected**
+
+This is the wireframe of the course map with the course menu selected.
+
+A few things to note:
+
+- Course requirements displayed on the left.
+- Containers for years, trimesters and unit slots.
+- Unit cards with validity indicators.
+- Ability to add/delete the the above mentioned containers
+
+![CourseFlow Course Map with Course Menu](/course-flow-course-map-1.png)
+
+**CourseFlow Course Map with Unit Tab Selected**
+
+This is the same wireframe as above but with the unit side menu selected. This will allow users to
+select units based on interest area.
+
+![CourseFlow Course Map with Unit Menu](/course-flow-course-map-2.png)
+
+**CourseFlow Detailed Unit Overlay**
+
+Basically an overlay interface that shows more details about the unit and provides more details on
+requirement with progress tracking.
+
+![CourseFlow Detailed Unit](/course-flow-detailed-unit.png)
+
+## 5 - Development Plan
+
+This will be the development plan in order of priorities:
+
+1. Define the endpoints for the CourseFlow backend.
+2. Create some tests in Postman to ensure all endpoints are working properly.
+3. Gather course data (will focus on adding one course first which will likely be the Bachelor of
+   Computer Science) and place the required information in a json file - this will be the default
+   course data for development.
+4. Gather some unit data and add to json file - this will be the default data for development.
+5. Make more detailed UI/UX designs that expand on the wireframes already done.
+6. Implement the designs for the frontend.
+7. Connect the frontend with the backend.
+
+More detailed tasks that need to be completed will be present in the OnTrack Trello board.
