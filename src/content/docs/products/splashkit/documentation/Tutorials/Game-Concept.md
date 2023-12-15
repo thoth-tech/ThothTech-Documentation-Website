@@ -61,8 +61,6 @@ Bird, racing, etc. One example of generating ideas is the site
 <https://firith.studio/game-idea-generator>. This can generate a basic theme, genre and mechanic on
 what game you could create.
 
-![Game generation](/https://www.flickr.com/photos/198993917@N08/53111581748/in/dateposted-public/)
-
 Other ideas can be centred around pop culture references, personal favourite show or movie plots, or
 ideas from multiple games. Other common tropes used is the use of history and mythical folklore, or
 creating a new twist on a childish or simple game for a new challenge. Once your idea is decided

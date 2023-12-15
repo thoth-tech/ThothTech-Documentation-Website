@@ -19,7 +19,7 @@ Before you start debugging, make sure you have:
 
 ## How to Start the Debugger
 
-![Debugger](images\runDebug.png)
+![Debugger](/runDebug.png)
 
 1. Open your project in VSCode.
 
@@ -41,7 +41,7 @@ Before you start debugging, make sure you have:
 
 ## Creating Breakpoints
 
-![Breakpoint](images\breakpoint.png)
+![Breakpoint](/breakpoint.png)
 
 Breakpoints are markers in your code where the debugger will pause execution, allowing you to
 inspect variables and step through your code.
@@ -70,7 +70,7 @@ variables or values.
 
 ## Debubg actions
 
-![debug toolbar](images\toolbar.png)
+![debug toolbar](/toolbar.png)
 
 | Action           | Shortcut    | Explanation                                                                                     |
 | ---------------- | ----------- | ----------------------------------------------------------------------------------------------- |
@@ -83,7 +83,7 @@ variables or values.
 
 ## Debugging Your Application
 
-![Debugging](images\watches.png)
+![Debugging](/watches.png)
 
 1. Start your debugging session as mentioned earlier.
 
