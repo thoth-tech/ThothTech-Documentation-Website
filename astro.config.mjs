@@ -192,7 +192,7 @@ export default defineConfig({
                       },
                     },
                     {
-                      label:"Onboarding Tool",
+                      label: "Onboarding Tool",
                       autogenerate: {
                         directory: "products/company-operations/projects/onboaring-tool",
                       },
@@ -435,148 +435,89 @@ export default defineConfig({
                       autogenerate: {
                         directory:
                           "products/splashkit/Documentation/API-Expansion/Windows-DevContainer",
-                    directory: "products/courseflow/Documentation",
-                  },
-                  items: [
-                    {
-                      label: "Design",
-                      autogenerate: {
-                        directory: "products/courseflow/Documentation/design",
-                      },
-                    },
-                    {
-                      label: "Research",
-                      autogenerate: {
-                        directory: "products/courseflow/Documentation/research",
-                      },
-                    },
-                    {
-                      label: "Meeting Minutes",
-                      autogenerate: {
-                        directory: "products/courseflow/Documentation/Meeting-Minutes",
+                        directory: "products/courseflow/Documentation",
                       },
                       items: [
                         {
-                          label: ".devcontainer",
+                          label: "Design",
                           autogenerate: {
-                            directory:
-                              "products/splashkit/Documentation/API-Expansion/Windows-DevContainer/.devcontainer",
+                            directory: "products/courseflow/Documentation/design",
                           },
-                          items: [
-                            {
-                              label: "DXball",
-                              autogenerate: {
-                                directory:
-                                  "products/splashkit/Documentation/API-Expansion/Windows-DevContainer/.devcontainer/DXball",
-                              },
-                              items: [
-                                {
-                                  label: "logs",
-                                  autogenerate: {
-                                    directory:
-                                      "products/splashkit/Documentation/API-Expansion/Windows-DevContainer/.devcontainer/DXball/logs",
-                                  },
-                                },
-                                {
-                                  label: "Resources",
-                                  autogenerate: {
-                                    directory:
-                                      "products/splashkit/Documentation/API-Expansion/Windows-DevContainer/.devcontainer/DXball/Resources",
-                                  },
-                                  items: [
-                                    {
-                                      label: "bundles",
-                                      autogenerate: {
-                                        directory:
-                                          "products/splashkit/Documentation/API-Expansion/Windows-DevContainer/.devcontainer/DXball/Resources/bundles",
-                                      },
-                                    },
-                                    {
-                                      label: "fonts",
-                                      autogenerate: {
-                                        directory:
-                                          "products/splashkit/Documentation/API-Expansion/Windows-DevContainer/.devcontainer/DXball/Resources/fonts",
-                                      },
-                                    },
-                                    {
-                                      label: "images",
-                                      autogenerate: {
-                                        directory:
-                                          "products/splashkit/Documentation/API-Expansion/Windows-DevContainer/.devcontainer/DXball/Resources/images",
-                                      },
-                                    },
-                                    {
-                                      label: "json",
-                                      autogenerate: {
-                                        directory:
-                                          "products/splashkit/Documentation/API-Expansion/Windows-DevContainer/.devcontainer/DXball/Resources/json",
-                                      },
-                                    },
-                                    {
-                                      label: "sounds",
-                                      autogenerate: {
-                                        directory:
-                                          "products/splashkit/Documentation/API-Expansion/Windows-DevContainer/.devcontainer/DXball/Resources/sounds",
-                                      },
-                                    },
-                                  ],
-                                },
-                              ],
-                            },
-                          ],
                         },
-                      ],
-                    },
-                  ],
-                },
-                {
-                  label: "Arcade Machine + Games",
-                  items: [
-                    {
-                      label: "Arcade Machine",
-                      items: [
                         {
-                          label: "Arcade Machine Setup",
+                          label: "Research",
                           autogenerate: {
-                            directory: "products/splashkit/Documentation/Arcade-Machine-Setup",
+                            directory: "products/courseflow/Documentation/research",
+                          },
+                        },
+                        {
+                          label: "Meeting Minutes",
+                          autogenerate: {
+                            directory: "products/courseflow/Documentation/Meeting-Minutes",
                           },
                           items: [
                             {
-                              label: "Files",
+                              label: ".devcontainer",
                               autogenerate: {
                                 directory:
-                                  "products/splashkit/Documentation/Arcade-Machine-Setup/Files",
+                                  "products/splashkit/Documentation/API-Expansion/Windows-DevContainer/.devcontainer",
                               },
                               items: [
                                 {
-                                  label: "themes/splashkit",
+                                  label: "DXball",
                                   autogenerate: {
                                     directory:
-                                      "products/splashkit/Documentation/Arcade-Machine-Setup/Files/themes/splashkit",
+                                      "products/splashkit/Documentation/API-Expansion/Windows-DevContainer/.devcontainer/DXball",
                                   },
                                   items: [
                                     {
-                                      label: "art",
+                                      label: "logs",
                                       autogenerate: {
                                         directory:
-                                          "products/splashkit/Documentation/Arcade-Machine-Setup/Files/themes/splashkit/art",
+                                          "products/splashkit/Documentation/API-Expansion/Windows-DevContainer/.devcontainer/DXball/logs",
+                                      },
+                                    },
+                                    {
+                                      label: "Resources",
+                                      autogenerate: {
+                                        directory:
+                                          "products/splashkit/Documentation/API-Expansion/Windows-DevContainer/.devcontainer/DXball/Resources",
                                       },
                                       items: [
                                         {
-                                          label: "sk",
+                                          label: "bundles",
                                           autogenerate: {
                                             directory:
-                                              "products/splashkit/Documentation/Arcade-Machine-Setup/Files/themes/splashkit/art/sk",
+                                              "products/splashkit/Documentation/API-Expansion/Windows-DevContainer/.devcontainer/DXball/Resources/bundles",
                                           },
-                                          items: [
-                                            {
-                                              label: "art",
-                                              autogenerate: {
-                                                directory:
-                                                  "products/splashkit/Documentation/Arcade-Machine-Setup/Files/themes/splashkit/art/sk/art",
-                                              },
-                                            },
-                                          ],
+                                        },
+                                        {
+                                          label: "fonts",
+                                          autogenerate: {
+                                            directory:
+                                              "products/splashkit/Documentation/API-Expansion/Windows-DevContainer/.devcontainer/DXball/Resources/fonts",
+                                          },
+                                        },
+                                        {
+                                          label: "images",
+                                          autogenerate: {
+                                            directory:
+                                              "products/splashkit/Documentation/API-Expansion/Windows-DevContainer/.devcontainer/DXball/Resources/images",
+                                          },
+                                        },
+                                        {
+                                          label: "json",
+                                          autogenerate: {
+                                            directory:
+                                              "products/splashkit/Documentation/API-Expansion/Windows-DevContainer/.devcontainer/DXball/Resources/json",
+                                          },
+                                        },
+                                        {
+                                          label: "sounds",
+                                          autogenerate: {
+                                            directory:
+                                              "products/splashkit/Documentation/API-Expansion/Windows-DevContainer/.devcontainer/DXball/Resources/sounds",
+                                          },
                                         },
                                       ],
                                     },
@@ -584,110 +525,174 @@ export default defineConfig({
                                 },
                               ],
                             },
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      label: "Arcade Machine + Games",
+                      items: [
+                        {
+                          label: "Arcade Machine",
+                          items: [
                             {
-                              label: "Adding Games",
+                              label: "Arcade Machine Setup",
+                              autogenerate: {
+                                directory: "products/splashkit/Documentation/Arcade-Machine-Setup",
+                              },
+                              items: [
+                                {
+                                  label: "Files",
+                                  autogenerate: {
+                                    directory:
+                                      "products/splashkit/Documentation/Arcade-Machine-Setup/Files",
+                                  },
+                                  items: [
+                                    {
+                                      label: "themes/splashkit",
+                                      autogenerate: {
+                                        directory:
+                                          "products/splashkit/Documentation/Arcade-Machine-Setup/Files/themes/splashkit",
+                                      },
+                                      items: [
+                                        {
+                                          label: "art",
+                                          autogenerate: {
+                                            directory:
+                                              "products/splashkit/Documentation/Arcade-Machine-Setup/Files/themes/splashkit/art",
+                                          },
+                                          items: [
+                                            {
+                                              label: "sk",
+                                              autogenerate: {
+                                                directory:
+                                                  "products/splashkit/Documentation/Arcade-Machine-Setup/Files/themes/splashkit/art/sk",
+                                              },
+                                              items: [
+                                                {
+                                                  label: "art",
+                                                  autogenerate: {
+                                                    directory:
+                                                      "products/splashkit/Documentation/Arcade-Machine-Setup/Files/themes/splashkit/art/sk/art",
+                                                  },
+                                                },
+                                              ],
+                                            },
+                                          ],
+                                        },
+                                      ],
+                                    },
+                                  ],
+                                },
+                                {
+                                  label: "Adding Games",
+                                  autogenerate: {
+                                    directory:
+                                      "products/splashkit/Documentation/Arcade-Machine-Setup/Adding-Games",
+                                  },
+                                },
+                                {
+                                  label: "Create Pi Image",
+                                  autogenerate: {
+                                    directory:
+                                      "products/splashkit/Documentation/Arcade-Machine-Setup/Create-Pi-Image",
+                                  },
+                                },
+                                {
+                                  label: "Setup Arcade Machine",
+                                  autogenerate: {
+                                    directory:
+                                      "products/splashkit/Documentation/Arcade-Machine-Setup/Setup-Arcade-Machine",
+                                  },
+                                },
+                              ],
+                            },
+                            {
+                              label: "Contribution Guides",
                               autogenerate: {
                                 directory:
-                                  "products/splashkit/Documentation/Arcade-Machine-Setup/Adding-Games",
+                                  "products/splashkit/Documentation/Arcade-Machine/Contribution-Guides",
                               },
                             },
                             {
-                              label: "Create Pi Image",
+                              label: "Pi Emulation",
                               autogenerate: {
                                 directory:
-                                  "products/splashkit/Documentation/Arcade-Machine-Setup/Create-Pi-Image",
+                                  "products/splashkit/Documentation/Arcade-Machine/Pi-Emulation",
                               },
                             },
                             {
-                              label: "Setup Arcade Machine",
+                              label: "Research and Findings",
                               autogenerate: {
                                 directory:
-                                  "products/splashkit/Documentation/Arcade-Machine-Setup/Setup-Arcade-Machine",
+                                  "products/splashkit/Documentation/Arcade-Machine/Research-and-Findings",
+                              },
+                            },
+                            {
+                              label: "Game Design Documents",
+                              autogenerate: {
+                                directory:
+                                  "products/splashkit/Documentation/Arcade-Machine/Game-Design-Documents",
+                              },
+                            },
+                            {
+                              label: "Game Proposal Documents",
+                              autogenerate: {
+                                directory:
+                                  "products/splashkit/Documentation/Arcade-Machine/Game-Proposal-Documents",
+                              },
+                            },
+                            {
+                              label: "Meeting Minutes / T1-2022",
+                              autogenerate: {
+                                directory:
+                                  "products/splashkit/Documentation/Arcade-Machine/Meeting-Minutes-T1-2022",
+                              },
+                            },
+                            {
+                              label: "Templates",
+                              autogenerate: {
+                                directory:
+                                  "products/splashkit/Documentation/Arcade-Machine/Templates",
                               },
                             },
                           ],
                         },
-                        {
-                          label: "Contribution Guides",
-                          autogenerate: {
-                            directory:
-                              "products/splashkit/Documentation/Arcade-Machine/Contribution-Guides",
-                          },
-                        },
-                        {
-                          label: "Pi Emulation",
-                          autogenerate: {
-                            directory:
-                              "products/splashkit/Documentation/Arcade-Machine/Pi-Emulation",
-                          },
-                        },
-                        {
-                          label: "Research and Findings",
-                          autogenerate: {
-                            directory:
-                              "products/splashkit/Documentation/Arcade-Machine/Research-and-Findings",
-                          },
-                        },
-                        {
-                          label: "Game Design Documents",
-                          autogenerate: {
-                            directory:
-                              "products/splashkit/Documentation/Arcade-Machine/Game-Design-Documents",
-                          },
-                        },
-                        {
-                          label: "Game Proposal Documents",
-                          autogenerate: {
-                            directory:
-                              "products/splashkit/Documentation/Arcade-Machine/Game-Proposal-Documents",
-                          },
-                        },
-                        {
-                          label: "Meeting Minutes / T1-2022",
-                          autogenerate: {
-                            directory:
-                              "products/splashkit/Documentation/Arcade-Machine/Meeting-Minutes-T1-2022",
-                          },
-                        },
-                        {
-                          label: "Templates",
-                          autogenerate: {
-                            directory: "products/splashkit/Documentation/Arcade-Machine/Templates",
-                          },
-                        },
                       ],
+                    },
+                    {
+                      label: "Tutorials",
+                      autogenerate: {
+                        directory: "products/splashkit/Documentation/Tutorials",
+                      },
+                    },
+                    {
+                      label: "Starlight Website",
+                      autogenerate: {
+                        directory: "products/splashkit/Documentation/Starlight-Website",
+                      },
+                    },
+                    {
+                      label: "Expansions",
+                      autogenerate: {
+                        directory: "products/splashkit/Documentation/Expansions",
+                      },
+                    },
+                    {
+                      label: "SplashKit Online",
+                      autogenerate: {
+                        directory: "products/splashkit/Documentation/SplashKit-Online",
+                      },
                     },
                   ],
                 },
                 {
-                  label: "Tutorials",
+                  label: "Issues and Resolutions",
                   autogenerate: {
-                    directory: "products/splashkit/Documentation/Tutorials",
+                    directory: "products/courseflow/issues-and-resolutions",
                   },
                 },
-                {
-                  label: "Starlight Website",
-                  autogenerate: {
-                    directory: "products/splashkit/Documentation/Starlight-Website",
-                  },
-                },
-                {
-                  label: "Expansions",
-                  autogenerate: {
-                    directory: "products/splashkit/Documentation/Expansions",
-                  },
-                },
-                {
-                  label: "SplashKit Online",
-                  autogenerate: {
-                    directory: "products/splashkit/Documentation/SplashKit-Online",
               ],
-            },
-            {
-              label: "Issues and Resolutions",
-              autogenerate: {
-                directory: "products/courseflow/issues-and-resolutions",
-              },
             },
           ],
         },
@@ -734,55 +739,6 @@ export default defineConfig({
               label: "Issues and Resolutions",
               autogenerate: {
                 directory: "products/ontrack/issues-and-resolutions",
-              },
-            },
-          ],
-        },
-        {
-          label: "SplashKit",
-          items: [
-            {
-              label: "Get to Know Us",
-              link: "/products/splashkit/example",
-            },
-            {
-              label: "Projects",
-              autogenerate: {
-                directory: "products/splashkit/projects",
-              },
-            },
-            {
-              label: "Documentation",
-              autogenerate: {
-                directory: "products/splashkit/documentation",
-              },
-              // items: [
-              //   {
-              //     label: "Applications",
-              //     autogenerate: {
-              //       directory: "products/splashkit/documentation/applications",
-              //     },
-              //   },
-              // ],
-              items: [
-                {
-                  label: "Tutorials",
-                  autogenerate: {
-                    directory: "products/splashkit/documentation/tutorials",
-                  },
-                },
-                {
-                  label: "Expansions",
-                  autogenerate: {
-                    directory: "products/splashkit/documentation/expansions",
-                  },
-                },
-              ],
-            },
-            {
-              label: "Issues and Resolutions",
-              autogenerate: {
-                directory: "products/splashkit/issues-and-resolutions",
               },
             },
           ],

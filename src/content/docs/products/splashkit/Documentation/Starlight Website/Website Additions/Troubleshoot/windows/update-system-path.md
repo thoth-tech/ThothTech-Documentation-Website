@@ -1,6 +1,5 @@
 ---
 title: FAQs on Splashkit installation
-tags: faq,error,troubleshoot
 ---
 
 ## Update your system “Path” variable

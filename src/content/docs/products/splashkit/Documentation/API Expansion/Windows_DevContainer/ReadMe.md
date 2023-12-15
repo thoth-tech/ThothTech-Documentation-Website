@@ -1,10 +1,9 @@
 ---
 title: "Splashkit Windows Development Contatiner"
-description: Initial Creation of Splashkit Development containt and instructions for Windows
-author: Philip Williams
-date: 13/09/2023
-tags: Splashkit, development enviroment, docker, WSL
 ---
+
+description: Initial Creation of Splashkit Development containt and instructions for Windows author:
+Philip Williams date: 13/09/2023 tags: Splashkit, development enviroment, docker, WSL
 
 ## Splashkit Windows Development Contatiner
 

@@ -16,7 +16,7 @@ Arcade image.
 2. Select image
 3. select target USB or SD Card
 4. Click FLASH
-   ![Image of the program etcher](/docs/Splashkit/Applications/Arcade%20Machines/Arcade%20Machine%20Setup/Images/ScreenShotEtcher.png)
+   ![Image of the program etcher](/ScreenShotEtcher.png)
    <!-- <img src="/ScreenShotEtcher.png" alt="Image of the program etcher" width="200"/> -->
 
 These are the Credentials setup on the image
@@ -95,14 +95,14 @@ These are the Credentials setup on the image
       ```
 
    1. select manage packages
-      ![RetorPie setup Main scree](/docs/Splashkit/Applications/Arcade%20Machines/Arcade%20Machine%20Setup/Images/ManagePackage.png)
+      ![RetorPie setup Main scree](/ManagePackage.png)
    1. Select core
 
-      ![RetorPie setup Manage Packages scree](/docs/Splashkit/Applications/Arcade%20Machines/Arcade%20Machine%20Setup/Images/CorePackage.png)
+      ![RetorPie setup Manage Packages scree](/CorePackage.png)
 
    1. Select emulationstation
 
-      ![RetorPie setup Manage Packages scree](/docs/Splashkit/Applications/Arcade%20Machines/Arcade%20Machine%20Setup/Images/EmulationStation.png)
+      ![RetorPie setup Manage Packages scree](/EmulationStation.png)
 
    1. Exit retroPie setup
    1. Create Emulation Station es_systems.cfg file
@@ -184,7 +184,7 @@ These are the Credentials setup on the image
 1. First time setup you will need to configure the controller
 
    1. Hold Down any key to start
-      ![EmulationStation Configure Input Screen](/docs/Splashkit/Applications/Arcade%20Machines/Arcade%20Machine%20Setup/Images/ConfigureInput.png)
+      ![EmulationStation Configure Input Screen](/ConfigureInput.png)
    1. Press any key to configure input
 
       - Recommend the Following for the Arcade Machine the rest can be skipped
@@ -197,14 +197,14 @@ These are the Credentials setup on the image
         - A = left control
         - B = left alt
 
-      ![Input Selection Screen](/docs/Splashkit/Applications/Arcade%20Machines/Arcade%20Machine%20Setup/Images/SetKeys.png)
+      ![Input Selection Screen](/SetKeys.png)
 
    1. It will note a hotkey was not selected say yes to accept using select
 
 1. Press Escape to bring up the menu
 1. Select UI Settings
 1. Scroll down to start on system and set it to PC
-   ![UI Settings Screen](/docs/Splashkit/Applications/Arcade%20Machines/Arcade%20Machine%20Setup/Images/StartOnSystem.png)
+   ![UI Settings Screen](/StartOnSystem.png)
 1. Go back and Quit Emulation Station
 
 ### Configure Start CLI on Boot and Network Manager
@@ -217,41 +217,41 @@ These are the Credentials setup on the image
 
 1. Select System Options
 
-   ![Rasberry Pi Configuration Screen](/docs/Splashkit/Applications/Arcade%20Machines/Arcade%20Machine%20Setup/Images/SystemOptions.png)
+   ![Rasberry Pi Configuration Screen](/SystemOptions.png)
 
 1. Select Boot / Auto Login
 
-   ![Rasberry Pi system Option Screen](/docs/Splashkit/Applications/Arcade%20Machines/Arcade%20Machine%20Setup/Images/BootAutoLogin.png)
+   ![Rasberry Pi system Option Screen](/BootAutoLogin.png)
 
 1. Select Console Autologin
 
-   ![Rasberry Pi Boot Option Screen](/docs/Splashkit/Applications/Arcade%20Machines/Arcade%20Machine%20Setup/Images/ConsoleAutoLogin.png)
+   ![Rasberry Pi Boot Option Screen](/ConsoleAutoLogin.png)
 
 1. Return to main menu
 1. Select Advanced Options
 
-   ![Rasberry Pi Configuration Screen](/docs/Splashkit/Applications/Arcade%20Machines/Arcade%20Machine%20Setup/Images/AdvancedOptions.png)
+   ![Rasberry Pi Configuration Screen](/AdvancedOptions.png)
 
 1. Select Network Config
 
-   ![Rasberry Pi Configuration Screen](/docs/Splashkit/Applications/Arcade%20Machines/Arcade%20Machine%20Setup/Images/NetworkConfig.png)
+   ![Rasberry Pi Configuration Screen](/NetworkConfig.png)
 
 1. Select Network Manager
 
-   ![Rasberry Pi Configuration Screen](/docs/Splashkit/Applications/Arcade%20Machines/Arcade%20Machine%20Setup/Images/NetworkManager.png)
+   ![Rasberry Pi Configuration Screen](/NetworkManager.png)
 
 1. Select OK
 1. Select Interface Options
 
-   ![Rasberry Pi Configuration Screen with interface options selected](/docs/Splashkit/Applications/Arcade%20Machines/Arcade%20Machine%20Setup/Images/InterfaceOptions.png)
+   ![Rasberry Pi Configuration Screen with interface options selected](/InterfaceOptions.png)
 
 1. Select SSH
 
-   ![Rasberry Pi Configuration Screen with SSH selected](/docs/Splashkit/Applications/Arcade%20Machines/Arcade%20Machine%20Setup/Images/EnableSSH.png)
+   ![Rasberry Pi Configuration Screen with SSH selected](/EnableSSH.png)
 
 1. Select Yes
 
-   ![Rasberry Pi Configuration Screen with Yes selected](/docs/Splashkit/Applications/Arcade%20Machines/Arcade%20Machine%20Setup/Images/SSHEnableScreen.png)
+   ![Rasberry Pi Configuration Screen with Yes selected](/SSHEnableScreen.png)
 
 1. Select Ok and Finshed to exit Rasberry Pi Configuration
 1. You can reboot now or later
@@ -296,14 +296,14 @@ IP Address: 10.42.0.2 Subnet Mask: 255.255.255.0 Gateway: 10.42.0.1
 
 1. Select Configuration / Tools
 
-   ![RetroPi Config Screen with Configuration / Tools selected](/docs/Splashkit/Applications/Arcade%20Machines/Arcade%20Machine%20Setup/Images/RetroPiConfigTools.png)
+   ![RetroPi Config Screen with Configuration / Tools selected](/RetroPiConfigTools.png)
 
 1. Select Autostart
 
-   ![RetroPi Config Screen with Autostart selected](/docs/Splashkit/Applications/Arcade%20Machines/Arcade%20Machine%20Setup/Images/RetroPiConfigAutostart.png)
+   ![RetroPi Config Screen with Autostart selected](/RetroPiConfigAutostart.png)
 
 1. Select Start Emulation Station at boot
-   ![RetroPi Config Screen with Start Emulation Station at boot selected](/docs/Splashkit/Applications/Arcade%20Machines/Arcade%20Machine%20Setup/Images/RetroPiConfigStartEmulationStation.png)
+   ![RetroPi Config Screen with Start Emulation Station at boot selected](/RetroPiConfigStartEmulationStation.png)
 1. Select Ok
 1. Select Finish
 1. Select Perform Reboot
@@ -319,9 +319,9 @@ IP Address: 10.42.0.2 Subnet Mask: 255.255.255.0 Gateway: 10.42.0.1
 3. In the es_systems.cfg file, located in the file paths mentioned in step 2, you will need to
    change the XML code for the theme to be "sk."
 
-   ![es_systems.cfg file open showing where to change the theme](/docs/Splashkit/Applications/Arcade%20Machines/Arcade%20Machine%20Setup/Images/SystemThemeSetup.jpg)
+   ![es_systems.cfg file open showing where to change the theme](/SystemThemeSetup.jpg)
 
 4. Launch EmulationStation, open the start menu, and under UI settings change Theme set to
    "Splashkit."
 
-   ![Theme Set selection in EmulationStation](/docs/Splashkit/Applications/Arcade%20Machines/Arcade%20Machine%20Setup/Images/SettingsThemeSelection.png)
+   ![Theme Set selection in EmulationStation](/SettingsThemeSelection.png)
