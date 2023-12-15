@@ -195,8 +195,8 @@ documentations to Docusaurus. Develop general standards for the company in all a
 | Project Member       | Role         | Responsibilities                           | | \|
 -------------------- | ------------ | | ----------------------- | ------------ | | Onyedikachi
 Okorie   | Product Lead | Organise meeting, create technical documents, assign tasks to team
-members, and so on. | | Quinn Curtis         | Team Member  | Work on assigned cards on Trello      
-              | | Aris Danielle Ilarde | Team Member  | Work on assigned cards on Trello            
+members, and so on. | | Quinn Curtis         | Team Member  | Work on assigned cards on Trello
+              | | Aris Danielle Ilarde | Team Member  | Work on assigned cards on Trello
         |
 
 ### OnTrack
@@ -304,7 +304,7 @@ system against Angular/Rails build. Document the Knowledge base procedures and p
 | Project Member             | Role         | Responsibilities                                       |
 | -------------------------- | ------------ | ------------------------------------------------------ |
 
-| | Chloe Hulme               | Product Lead | Manage the team and projects. | | Daniel Maddern    
+| | Chloe Hulme               | Product Lead | Manage the team and projects. | | Daniel Maddern
        | Team member  | Set up Trello and get the team started on their work. | | Kyle David Adams  
        | Team member  | Work on Trello tasks for various projects | | Dominic Robert Ryzner     |
 Team member  | Work on Trello tasks for various projects | | Ayan Masood               | Team member
