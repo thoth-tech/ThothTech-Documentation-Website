@@ -1,5 +1,5 @@
 ---
-Title: Getting Started With Sprites in Splashkit Outline - C
+title: Getting Started With Sprites in Splashkit Outline - C
 ---
 
 ### Introduction

@@ -1,5 +1,5 @@
 ---
-Title: Getting Started With Sprite Layering In Splashkit - C
+title: Getting Started With Sprite Layering In Splashkit - C
 ---
 
 ### Introduction
