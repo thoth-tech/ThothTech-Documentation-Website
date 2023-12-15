@@ -192,7 +192,7 @@ export default defineConfig({
                       },
                     },
                     {
-                      label:"Onboarding Tool",
+                      label: "Onboarding Tool",
                       autogenerate: {
                         directory: "products/company-operations/projects/onboaring-tool",
                       },
@@ -357,9 +357,21 @@ export default defineConfig({
                   },
                 },
                 {
-                  label: "Expansions",
+                  label: "Tutorials Proposals",
                   autogenerate: {
-                    directory: "products/splashkit/documentation/expansions",
+                    directory: "products/splashkit/documentation/Tutorials-Proposals",
+                  },
+                },
+                {
+                  label: "Instructions and Templates",
+                  autogenerate: {
+                    directory: "products/splashkit/documentation/Instructions-and-Templates",
+                  },
+                },
+                {
+                  label: "Applications",
+                  autogenerate: {
+                    directory: "products/splashkit/documentation/applications",
                   },
                 },
               ],
