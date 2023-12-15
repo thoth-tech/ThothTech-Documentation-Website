@@ -1,5 +1,5 @@
 ---
-title: Project Name:\<\<Project Name Goes Here\>\>
+title: Project Documentation Template
 ---
 
 ## Delivery Lead: \<\<Delivery Lead for your project\>\>

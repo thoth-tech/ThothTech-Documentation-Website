@@ -310,20 +310,6 @@ export default defineConfig({
                       autogenerate: {
                         directory: "products/ontrack/Documentation/Deployment",
                       },
-                      items: [
-                        {
-                          label: "Enhanced Authentication",
-                          autogenerate: {
-                            directory: "products/ontrack/Documentation/Deployment/Enhanced Authentication",
-                          },
-                        },
-                        {
-                          label: "Google Cloud",
-                          autogenerate: {
-                            directory: "products/ontrack/Documentation/Deployment/Google Cloud",
-                          },
-                        },
-                      ]
                     },
                     {
                       label: "Documentation",
@@ -342,38 +328,6 @@ export default defineConfig({
                       autogenerate: {
                         directory: "products/ontrack/Documentation/Front-End-Migration",
                       },
-                      items: [
-                        {
-                          label: "Deploy OnTrack",
-                          autogenerate: {
-                            directory: "products/ontrack/Documentation/Front-End-Migration/Deploy OnTrack",
-                          },
-                        },
-                        {
-                          label: "Framework",
-                          autogenerate: {
-                            directory: "products/ontrack/Documentation/Front-End-Migration/Framework",
-                          },
-                        },
-                        {
-                          label: "Migration",
-                          autogenerate: {
-                            directory: "products/ontrack/Documentation/Front-End-Migration/Migration",
-                          },
-                        },
-                        {
-                          label: "Research & Findings",
-                          autogenerate: {
-                            directory: "products/ontrack/Documentation/Front-End-Migration/Research & Findings",
-                          },
-                        },
-                        {
-                          label: "UI Enhancement",
-                          autogenerate: {
-                            directory: "products/ontrack/Documentation/Front-End-Migration/UI Enhancement",
-                          },
-                        },
-                      ]
                     },
                     {
                       label: "Incorporate Content Ontrack",
@@ -415,62 +369,9 @@ export default defineConfig({
                 },
               ],
             },
-            {
-              label: "Issues and Resolutions",
-              autogenerate: {
-                directory: "products/courseflow/issues-and-resolutions",
-              },
-            },
           ],
         },
-        {
-          label: "OnTrack",
-          items: [
-            {
-              label: "Get to Know Us",
-              link: "/products/ontrack/example",
-            },
-            {
-              label: "Projects",
-              autogenerate: {
-                directory: "products/ontrack/projects",
-              },
-            },
-            {
-              label: "Documentation",
-              autogenerate: {
-                directory: "products/ontrack/documentation",
-              },
-              items: [
-                {
-                  label: "Front End Migration",
-                  autogenerate: {
-                    directory: "products/ontrack/documentation/front-end-migration",
-                  },
-                },
-                {
-                  label: "Numbas",
-                  autogenerate: {
-                    directory: "products/ontrack/documentation/numbas",
-                  },
-                },
-                {
-                  label: "Deployment",
-                  autogenerate: {
-                    directory: "products/ontrack/documentation/deployment",
-                  },
-                },
-              ],
-            },
-            {
-              label: "Issues and Resolutions",
-              autogenerate: {
-                directory: "products/ontrack/issues-and-resolutions",
-              },
-            },
-          ],
-        },
-        {
+          {
           label: "SplashKit",
           items: [
             {
