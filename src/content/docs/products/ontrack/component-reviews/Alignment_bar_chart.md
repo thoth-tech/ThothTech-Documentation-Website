@@ -1,7 +1,3 @@
----
-title: Component Review - Migration
----
-
 # Component Review - Alignment bar chart
 
 ## Student Name: Zhongyu Zhang
@@ -30,6 +26,8 @@ alignment.
 
 ## Existing component
 
+![figure_1](/alig-bar-chart-1)
+
 The existing component uses AngularJS and CoffeeScript to render a bar chart, potentially with
 libraries such as D3.js.
 
@@ -40,21 +38,39 @@ libraries such as D3.js.
 Migrate alignment-bar-chart.coffee from AngularJS to Angular, maintaining all existing
 functionalities and ensuring correct data and style bindings.
 
+- outcome component
+
+![figure_1](/alig-bar-chart-1.png)
+
 - Basic Code
 
-\```typescript import { Component, OnInit, Input } from '@angular/core';
+```typescript
+import { Component, OnInit, Input } from "@angular/core";
 
-@Component({ selector: 'app-alignment-bar-chart', templateUrl:
-'./alignment-bar-chart.component.html', styleUrls: ['./alignment-bar-chart.component.scss'] })
-export class AlignmentBarChartComponent implements OnInit { @Input() data: any[];
+@Component({
+  selector: "app-alignment-bar-chart",
+  templateUrl: "./alignment-bar-chart.component.html",
+  styleUrls: ["./alignment-bar-chart.component.scss"],
+})
+export class AlignmentBarChartComponent implements OnInit {
+  @Input() data: any[];
 
-ngOnInit() { this.renderChart(); }
+  ngOnInit() {
+    this.renderChart();
+  }
 
-private renderChart() { // Implement chart rendering logic here } } \```
+  private renderChart() {
+    // Implement chart rendering logic here
+  }
+}
+```
 
 - Migration Checklist
 
-Data Binding Chart Rendering Responsive Updates User Interactions
+1. Data Binding
+2. Chart Rendering
+3. Responsive Updates
+4. User Interactions
 
 ## Strategy 2: Enhanced Interactivity
 
@@ -63,20 +79,47 @@ Data Binding Chart Rendering Responsive Updates User Interactions
 Build upon the basic migration by adding interactivity, such as detailed information on bar click or
 tooltips on hover.
 
+- outcome component
+
+1. Displaying detailed information directly.
+
+![figure_1](/alig-bar-chart-2.png)
+
+2. When the user clicks on a bar chart, provide more detailed data or perform certain actions.
+
+![figure_1](/alig-bar-chart-3.png)
+
+3. Enhance user interface feedback, such as through animation or color changes, to make the user
+   interface more active and eye-catching.
+
+![figure_1](/alig-bar-chart-4.png)
+
 - Basic Code
 
-\```typescript import { Component, OnInit, Input } from '@angular/core';
+```typescript
+import { Component, OnInit, Input } from "@angular/core";
 
-@Component({ // ...same decorators as Strategy 1 }) export class AlignmentBarChartComponent
-implements OnInit { // ...same properties and ngOnInit as Strategy 1
+@Component({
+  // ...same decorators as Strategy 1
+})
+export class AlignmentBarChartComponent implements OnInit {
+  // ...same properties and ngOnInit as Strategy 1
 
-onBarClick(item: any) { // Handle bar click event here }
+  onBarClick(item: any) {
+    // Handle bar click event here
+  }
 
-onBarHover(item: any) { // Show tooltips here } } \```
+  onBarHover(item: any) {
+    // Show tooltips here
+  }
+}
+```
 
 - Migration Checklist
 
-Enhanced Interactivity Event Handling Dynamic Tooltips
+1. Enhanced Interactivity
+2. Event Handling
+3. Dynamic Tooltips
 
 ## Strategy 3: Responsive Design and Accessibility
 
@@ -87,17 +130,25 @@ meets accessibility standards.
 
 - Basic code
 
-\```typescript import { Component, OnInit, Input } from '@angular/core';
+```typescript
+import { Component, OnInit, Input } from "@angular/core";
 
-@Component({ // ...same decorators as Strategy 1 }) export class AlignmentBarChartComponent
-implements OnInit { // ...same properties and ngOnInit as Strategy 1
-
-// Additional methods for responsive and accessibility features // Implement methods for responsive
-design and accessibility here } \```
+@Component({
+  // ...same decorators as Strategy 1
+})
+export class AlignmentBarChartComponent implements OnInit {
+  // ...same properties and ngOnInit as Strategy 1
+  // Additional methods for responsive and accessibility features
+  // Implement methods for responsive design and accessibility here
+}
+```
 
 - Migration Checklist
 
-Responsive Design Accessibility Support Screen Reader Compatibility Keyboard Navigation
+1. Responsive Design
+2. Accessibility Support
+3. Screen Reader Compatibility
+4. Keyboard Navigation
 
 ## Conclusion
 
