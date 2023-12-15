@@ -10,7 +10,7 @@ title: Component Review - Component task-ilo-alignment-rater.coffee
 
 -222356873
 
-**Link to Trello card:** https://trello.com/c/yL0JT4rB
+**Link to Trello card:** https://trello.com/c/MRbKbUmJ
 
 ### Component Name
 
@@ -34,11 +34,6 @@ learning outcomes of the unit.
 2. Currently students can rate their alignment using progress buttons and system saves the user
    input and display it as a range of numbers as a outcome. Currently student can rate each and
    every learning outcome using a method that as above.
-
-So, in the proposed modal the user provides the following changes:
-
-New design sketch: Existing UI components are to be used for the input fields and button etc. ``
-![new modal sketch](public/ilo_allignment_modal.png)
 
 So, in the proposed modal the user provides the following to enhance the exisiting modal: In the
 proposed model , these are the suggested changes;
