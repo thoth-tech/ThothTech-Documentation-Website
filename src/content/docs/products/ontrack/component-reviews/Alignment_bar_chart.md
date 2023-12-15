@@ -1,3 +1,7 @@
+---
+title: Component Review - Migration
+---
+
 # Component Review - Alignment bar chart
 
 ## Student Name: Zhongyu Zhang
