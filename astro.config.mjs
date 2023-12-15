@@ -353,13 +353,25 @@ export default defineConfig({
                 {
                   label: "Tutorials",
                   autogenerate: {
-                    directory: "products/splashkit/documentation/tutorials",
+                    directory: "products/splashkit/documentation/Tutorials",
                   },
                 },
                 {
-                  label: "Expansions",
+                  label: "Tutorial Proposals",
                   autogenerate: {
-                    directory: "products/splashkit/documentation/expansions",
+                    directory: "products/splashkit/documentation/Tutorial-Proposals",
+                  },
+                },
+                {
+                  label: "Applications",
+                  autogenerate: {
+                    directory: "products/splashkit/documentation/applications",
+                  },
+                },
+                {
+                  label: "Instructions and Templates",
+                  autogenerate: {
+                    directory: "products/splashkit/documentation/Instructions-and-Templates",
                   },
                 },
               ],
