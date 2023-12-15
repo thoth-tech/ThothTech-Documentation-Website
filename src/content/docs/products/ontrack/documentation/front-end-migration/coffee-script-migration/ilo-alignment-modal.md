@@ -1,5 +1,5 @@
 ---
-title: Component Review - Component task-ilo-alignment-modal.coffee
+title: Component Review:Component task-ilo-alignment-modal.coffee
 ---
 
 **Student Name:**
