@@ -1,5 +1,5 @@
 ---
-Title: Game Concept Ideas
+title: Game Concept Ideas
 ---
 
 ## Introduction

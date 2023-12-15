@@ -242,6 +242,24 @@ export default defineConfig({
                         directory: "products/splashkit/documentation/applications",
                       },
                     },
+                    {
+                      label: "Instructions and Templates",
+                      autogenerate: {
+                        directory: "products/splashkit/documentation/Instructions-and-Templates",
+                      },
+                    },
+                    {
+                      label: "Tutorial Proposals",
+                      autogenerate: {
+                        directory: "products/splashkit/documentation/Tutorial-Proposals",
+                      },
+                    },
+                    {
+                      label: "Tutorials",
+                      autogenerate: {
+                        directory: "products/splashkit/documentation/Tutorials",
+                      },
+                    },
                   ],
                 },
                 {

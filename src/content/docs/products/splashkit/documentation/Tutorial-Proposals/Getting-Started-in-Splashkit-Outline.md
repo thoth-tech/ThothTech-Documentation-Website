@@ -1,5 +1,5 @@
 ---
-title: Getting Started: C++, C#, Python, and Pascal - Windows
+title: Getting Started C++, C#, Python, and Pascal - Windows
 ---
 
 ### Introduction

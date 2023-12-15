@@ -1,5 +1,5 @@
 ---
-Title: Understanding SplashKit Manager (SKM) Shell Commands
+title: Understanding SplashKit Manager (SKM) Shell Commands
 ---
 
 ## Introduction

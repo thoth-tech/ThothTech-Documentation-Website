@@ -1,5 +1,5 @@
 ---
-title: Tutorial Proposal: Working with Sound Effects in Splashkit
+title: Tutorial Proposal Working with Sound Effects in Splashkit
 ---
 
 ## Introduction

@@ -1,5 +1,5 @@
 ---
-Title: Design Tutorial for 2D racer
+title: Design Tutorial for 2D racer
 ---
 
 ## Introduction

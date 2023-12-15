@@ -1,5 +1,5 @@
 ---
-title: Title: [Tutorial Title]
+title: Tutorial Title
 ---
 
 ## Introduction

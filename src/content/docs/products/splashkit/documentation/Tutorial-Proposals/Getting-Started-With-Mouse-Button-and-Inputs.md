@@ -1,5 +1,5 @@
 ---
-Title: Getting Started With Mouse Button and Inputs
+title: Getting Started With Mouse Button and Inputs
 ---
 
 ### Introduction

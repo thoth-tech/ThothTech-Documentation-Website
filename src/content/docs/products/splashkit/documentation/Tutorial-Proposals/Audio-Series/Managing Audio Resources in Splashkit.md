@@ -1,5 +1,5 @@
 ---
-title: Tutorial Proposal: Managing Audio Resources in Splashkit
+title: Tutorial Proposal Managing Audio Resources in Splashkit
 ---
 
 ## Introduction

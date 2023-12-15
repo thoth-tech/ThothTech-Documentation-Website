@@ -1,5 +1,5 @@
 ---
-Title: Upskilling Documentation on CSS
+title: Upskilling Documentation on CSS
 ---
 
 ## Introduction

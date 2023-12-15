@@ -1,5 +1,5 @@
 ---
-Title: Sprite Layering tutorial
+title: Sprite Layering tutorial
 ---
 
 ## Introduction
