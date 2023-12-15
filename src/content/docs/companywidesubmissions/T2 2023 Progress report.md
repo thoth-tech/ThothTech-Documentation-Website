@@ -998,4 +998,4 @@ Coskun Kilinc 2. Creating a 2D "Metroidvania" Game - Basic Drawing and Graphics 
   to CourseFlow’s website backend and data integration layer. The code in this directory is
   responsible for storing and retrieving data, facilitating communication between the database and
   frontend, gathering unit information, and storing them in the database. "MD033": {
-  "allowed_elements": [ "ul", "li", "img" ] }, "MD013": { "tables": false } }
+  "allowed_elements": [ "ul", "li", "img" ] }, "MD013": { "tables": false } 
