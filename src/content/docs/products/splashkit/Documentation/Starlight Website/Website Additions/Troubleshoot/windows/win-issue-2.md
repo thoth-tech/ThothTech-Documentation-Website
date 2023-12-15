@@ -11,21 +11,21 @@ tags: faq,error,troubleshoot
 
 ## Solutions
 
-1. **Solution 1:**
+1.  **Solution 1:**
 
     Disable any antivirus software on your computer.
 
-1. **Solution 2:**
+2.  **Solution 2:**
 
     Make sure your project isn't called "SplashKit".
 
-1. **Solution 3:**
+3.  **Solution 3:**
 
         Make sure you are creating your project using the MINGW64 terminal (rather than the MSYS
 
     terminal) and create the project files in its own directory/folder.
 
-1. **Solution 4:** Add the folder containing splashkit.dll file to your path environment variable
+4.  **Solution 4:** Add the folder containing splashkit.dll file to your path environment variable
     manually. Firstly, go through Steps 1 – 3 shown in the “Update your system “Path” variable”
     section [here](update-system-path.md).
 
@@ -43,7 +43,7 @@ tags: faq,error,troubleshoot
     Once it is added, click “OK” on all the windows, open a **new** MINGW64 terminal and try running
     the program again.
 
-1. **Solution 5 (if all else fails):** Get it working by copying the SplashKit binaries to the
+5.  **Solution 5 (if all else fails):** Get it working by copying the SplashKit binaries to the
     build output: The SplashKit binaries are in
 
         `C:\msys64\home\(your username)\.splashkit\lib\win64`

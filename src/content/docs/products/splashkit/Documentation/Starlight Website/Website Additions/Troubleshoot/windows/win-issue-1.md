@@ -12,15 +12,15 @@ title: FAQs on Splashkit installation tags: faq,error,troubleshoot
 
 ## Solutions
 
-1. Solution 1:
+1.  Solution 1:
 
     Make sure you are connected to the internet.
 
-1. Solution 2:
+2.  Solution 2:
 
     Disable your computer’s firewall.
 
-1. Solution 3: Go to this URL:
+3.  Solution 3: Go to this URL:
     [here](https://github.com/splashkit/skm/blob/master/install-scripts/skm-install.sh)
 
         Then click the “Download raw file” button shown below (where the red arrow is pointing
