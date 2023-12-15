@@ -101,7 +101,7 @@ SplashKit.Delay(5000);
 
 You will see our little `Sprite` sitting there in the window.
 
-![image](image.png)
+![image](/image.png)
 
 At this point, our Main() method should look something like this:
 
@@ -168,7 +168,7 @@ itself -3 (3 pixels to the left) and the same Y postion (so it doesn't move vert
 just call `DrawSprite` on `happySunSprite` again, refresh our window, and give a small delay until
 it repeats this. This ends up looking like:
 
-![unbuffered sun](image2.png)
+![unbuffered sun](/image2.png)
 
 Not exactly what we wanted, have a small think about why this might be happening yourself before
 reading on ahead. What specific process are we missing that would cause _every_ drawn
@@ -199,7 +199,7 @@ for (int i = 0; i < 150; i++)
 
 we get:
 
-![Alt text](movingsun.gif)
+![Alt text](/movingsun.gif)
 
 And there we go. A basic and simple tutorial outling creation and modification of Sprite objects in
 SplashKit. Remember it's important to do practical self-taught projects and lessons to incentivize
