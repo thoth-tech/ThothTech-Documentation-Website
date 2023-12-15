@@ -2,97 +2,9 @@
 Title: thoth tech company progress report tri 2 2023
 ---
 
-Table of Contents
-
-1. Leadership
-   Team................................................................................................................4
-   1.1. Company Directors
-   ....................................................................................................4
-   1.2. Student Leadership
-   ....................................................................................................4
-   1.3. Updated Company Organization
-   Chart......................................................................4 1.4. Company
-   Showcase
-   Video.........................................................................................5
-2. Products - Company
-   Operations........................................................................................5
-   2.1. Team Members and Their Key
-   Achievements...........................................................6 2.2. Completed
-   Deliverables.............................................................................................9
-   2.3.
-   Roadmap....................................................................................................................9
-   2.4. Open
-   Issues..............................................................................................................10
-   2.5. Source Code
-   .............................................................................................................10
-   2.6. Login
-   Credentials......................................................................................................10
-   2.7. Other Relevant
-   Information.....................................................................................10
-   2.8. Showcase Video
-   .......................................................................................................11
-3. Product – OnTrack
-   ..........................................................................................................11
-   3.1. Team Members and Their Key
-   Achievements.........................................................13 3.2. Completed
-   Deliverables...........................................................................................20
-   3.3.
-   Roadmap..................................................................................................................21
-   3.4. Open
-   Issues..............................................................................................................22
-   3.5. Source Code
-   .............................................................................................................22
-   3.6. Login
-   Credentials......................................................................................................22
-   3.7. Other Relevant
-   Information.....................................................................................22
-   3.8. Showcase Video
-   .......................................................................................................22
-4. Product – Art Gallery
-   .......................................................................................................22
-   4.1. Team Members and Their Key
-   Contributions..........................................................23 4.2. Completed
-   Deliverables...........................................................................................24
-   4.3.
-   Roadmap..................................................................................................................26
-   4.4. Open
-   Issues..............................................................................................................26
-   4.5. Source Code
-   .............................................................................................................26
-   4.6. Login
-   Credentials......................................................................................................27
-   4.7. Other Relevant
-   Information.....................................................................................27
-   3 4.8. Showcase Video
-   .......................................................................................................27
-5. Product -
-   Splashkit...........................................................................................................28
-   5.1. Team Members and Their Key
-   Achievements.........................................................28 5.2. Completed
-   Deliverables...........................................................................................31
-   5.3.
-   Roadmap..................................................................................................................34
-   5.4. Open
-   Issues..............................................................................................................37
-   5.5. Source Code
-   .............................................................................................................37
-6. Product -
-   CourseFlow.......................................................................................................39
-   6.1. Team Members and Their Key
-   Achievements.........................................................39 6.2. Completed
-   Deliverables...........................................................................................41
-   6.3.
-   Roadmap..................................................................................................................44
-   6.4. Open
-   Issues..............................................................................................................46
-   6.5. Source Code
-   .............................................................................................................47
-   6.6. Login
-   Credentials......................................................................................................48
-   6.7. Other Relevant
-   Information.....................................................................................48
-   4
-7. Leadership Team 1.1. Company Directors • Andrew Cain, Managing Director • Glory Lee, Managing
+  
+## Leadership Team
+ 1.1. Company Directors • Andrew Cain, Managing Director • Glory Lee, Managing
    Director 1.2. Student Leadership • Daniel Maddern – Product Lead for OnTrack • Daniel Maddern &
    Chloe Hulme – Product Lead for Art Gallery • Mel David Bugay & Kieron Anthony Boyle – Product
    Leads for Courseflow • Phil Williams – Product Lead for Splash Kit • Onyedikachi Okorie - Product
@@ -681,7 +593,7 @@ Coskun Kilinc 2. Creating a 2D "Metroidvania" Game - Basic Drawing and Graphics 
    ./include/text.h ▪ ./include/text_input.h ▪ ./include/timers.h ▪ ./include/triangle_drawing.h
    ▪ ./include/triangle_geometry.h ▪ ./include/types.h ▪ ./include/vector_2d.h ▪
    ./include/window_manager.h ▪ • New Game Engine Functionality o Logger o ConsoleLogger o Renderer
-   o SplashkitRenderer o GameStateManager o GameStates o GameObjects o Components* o Transforms*
+   o SplashkitRenderer o GameStateManager o GameStates o GameObjects o Components*o Transforms*
    Note: \* indicates partially complete feature SplashKit Tutorials • 2D "Metroidvania" Game
    Creation o Getting Started and Basics o 1. Overview, Introduction and setup 34 o 2. Basic Drawing
    and Graphics o 3. Player Character Basics o 4. Environment Design Basics o Advanced Features o 6.
@@ -998,4 +910,4 @@ Coskun Kilinc 2. Creating a 2D "Metroidvania" Game - Basic Drawing and Graphics 
   to CourseFlow’s website backend and data integration layer. The code in this directory is
   responsible for storing and retrieving data, facilitating communication between the database and
   frontend, gathering unit information, and storing them in the database. "MD033": {
-  "allowed_elements": [ "ul", "li", "img" ] }, "MD013": { "tables": false } 
+  "allowed_elements": [ "ul", "li", "img" ] }, "MD013": { "tables": false }
