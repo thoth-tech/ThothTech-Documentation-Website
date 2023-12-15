@@ -257,7 +257,9 @@ export default defineConfig({
                   items: [
                     {
                       label: "Group_Task_Submission",
-                      link: "/products/ontrack/Projects/Group_Task_Submission",
+                      autogenerate: {
+                        directory: "products/ontrack/Projects/Group_Task_Submission",
+                      },
                     },
                     {
                       label: "Numbas",
@@ -310,6 +312,20 @@ export default defineConfig({
                       autogenerate: {
                         directory: "products/ontrack/Documentation/Deployment",
                       },
+                      items: [
+                        {
+                          label: "Enhanced Authentication",
+                          autogenerate: {
+                            directory: "products/ontrack/Documentation/Deployment/Enhanced Authentication",
+                          }
+                        },
+                        {
+                          label: "Google Cloud",
+                          autogenerate: {
+                            directory: "products/ontrack/Documentation/Deployment/Google Cloud",
+                          }
+                        },
+                      ]
                     },
                     {
                       label: "Documentation",
