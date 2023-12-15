@@ -29,5 +29,6 @@ Steps to add to the "Path" environment variable:
    **_(Step 4 on next page – This is just a step showing the 3 required paths for SplashKit)_**
 
 1. In the “Edit environment variable” window, you should have the following paths shown in the Green
-   box (using your own username): ![image](https://i.imgur.com/AvNrlNV.png) Once you have these paths,
-   click “OK” on all the windows, open a new MINGW64 terminal and try running the program again.
+   box (using your own username): ![image](https://i.imgur.com/AvNrlNV.png) Once you have these
+   paths, click “OK” on all the windows, open a new MINGW64 terminal and try running the program
+   again.

@@ -70,7 +70,7 @@ this requires: -  a thumbnail for game selection of 600x540pixels - a welcome
 title and student name/creator) - a no toggle function to remove border around game with x - an esc
 quit option (while !quit requested) - a max window size of 1600 x 900 for game
 
-## Include a forecast of the likely state for each project at the end of the trimester_
+## Include a forecast of the likely state for each project at the end of the trimester\_
 
 Below the Surface: (group game: main focus)
 

@@ -30,7 +30,7 @@ The game API can be bypassed to directly access this library for other purposes.
 
 ## Evaluation
 
-![Evaluation of QLearning and Minimax shows QLearning with 94% (9492) games won and Minimax with 90% (90) of games won](https://i.imgur.com/8caHmdY.png)  
+![Evaluation of QLearning and Minimax shows QLearning with 94% (9492) games won and Minimax with 90% (90) of games won](https://i.imgur.com/8caHmdY.png)
 
 Here is an example of Evaluation of agent performance we can see that QLearning performs optimally.
 Since we know Minimax is optimal we can compare it's performance with QLearning and determine if
@@ -85,7 +85,7 @@ be bad when training is taking a long time (hours).
 
 ## feat: Create a parent Agent class or method that allows the user to browse and select the
 
- correct Agent for their use
+correct Agent for their use
 
 Subclass QTrainer and Minimax into the format
 

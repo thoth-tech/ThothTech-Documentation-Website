@@ -21,38 +21,38 @@ directory, including the SKM executable._
 
 1. **Solution 1:**
 
-    If the skm executable is present, you can add it to your system's PATH by running the following
-    command:
+   If the skm executable is present, you can add it to your system's PATH by running the following
+   command:
 
-    ```shell
-    echo 'export PATH="$HOME/.splashkit:$PATH"' >> ~/.bashrc
-    ```
+   ```shell
+   echo 'export PATH="$HOME/.splashkit:$PATH"' >> ~/.bashrc
+   ```
 
-    Refresh the environment variables:
+   Refresh the environment variables:
 
-    ```shell
-    source ~/.bashrc
-    ```
+   ```shell
+   source ~/.bashrc
+   ```
 
 1. **Solution 2:**
 
-    Open the .bashrc file:
+   Open the .bashrc file:
 
-    ```shell
-    nano ~/.bashrc
-    ```
+   ```shell
+   nano ~/.bashrc
+   ```
 
-    Add the following lines at the end of the file:
+   Add the following lines at the end of the file:
 
-    ```shell
-    export LD_LIBRARY_PATH=/usr/local/lib
-    export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
-    ```
+   ```shell
+   export LD_LIBRARY_PATH=/usr/local/lib
+   export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
+   ```
 
-    Save the file and exit the editor (`Ctrl+X`, then `Y`, then `Enter`).
+   Save the file and exit the editor (`Ctrl+X`, then `Y`, then `Enter`).
 
-    Refresh the environment variables:
+   Refresh the environment variables:
 
-    ```shell
-    source ~/.bashrc
-    ```
+   ```shell
+   source ~/.bashrc
+   ```

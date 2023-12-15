@@ -42,7 +42,7 @@ FILE="YOUR-FILEPATH-HERE"
 
 ## Useful Links
 
-<https://unix.stackexchange.com/questions/94322/is-it-possible-for-a-daemon-i-e-background-process-to-look-for-key-presses-fr>  
+<https://unix.stackexchange.com/questions/94322/is-it-possible-for-a-daemon-i-e-background-process-to-look-for-key-presses-fr>
 
 This is a stack exchange question looking into detecting inputs on a linux/unix device. The answers
 talk about the file paths for devices and gives a sample code using C.

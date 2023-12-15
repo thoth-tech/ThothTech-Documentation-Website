@@ -24,14 +24,14 @@ Minutes by: Morgaine Barter
 5. ask if anyone has comfortability creating a character or visual assets for the game
 
 6. (as I would like to at least get a list of the visual assets we require for our game of choice,
-    choose a colour story/theme) and add this information to the design doc for planning
+   choose a colour story/theme) and add this information to the design doc for planning
 
 7. set another meeting for thursday to continue brainstorming
 
 8. make sure 5pm Monday is the best time for B.A.E.G team for stand-up meet
 
 9. There have been edits made to our repo inside meeting minutes, these requests for fixes must be
-    dealt with before we start uploading this terms meeting minutes.
+   dealt with before we start uploading this terms meeting minutes.
 
 **Announcements:**
 

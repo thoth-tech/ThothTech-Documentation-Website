@@ -54,7 +54,6 @@ In the task 4.4HD, the slides for a presentation of three minutes must be submit
 - Logo has been uploaded by Jiahao
 - Game music is being worked on by Robert and demo was added to channel
 
-**Action Items: General/Everyone:**
-Complete 4.x Ontrack tasks by this Sunday update worklog hours!
+**Action Items: General/Everyone:** Complete 4.x Ontrack tasks by this Sunday update worklog hours!
 
 Upload contributions to GitHub (such as completed image assets for enemies, logo, etc.)

@@ -42,7 +42,7 @@ other methods, no refactoring was required with the deletion.
 
 ### 2. Determine if the existing Data Frame code works and meets user expectations, otherwise
 
- redesign the Data Frame
+redesign the Data Frame
 
 #### /Solution
 

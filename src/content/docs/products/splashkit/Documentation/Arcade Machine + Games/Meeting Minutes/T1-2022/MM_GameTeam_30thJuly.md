@@ -47,8 +47,7 @@ Morgan - is working on his own game as well so does not need to contribute visua
 Agbay - yes Roy Chen yes Jiahao Zheng making the game logo Robert Osborne no (is making our sound
 assets)
 
-**Action Items: General/Everyone:**
-Collect information on people's experience and skills
+**Action Items: General/Everyone:** Collect information on people's experience and skills
 
 Fix T1 GitHub recommended processes (there was a lint error in sound effect uploads and a
 txt/prettier error in minutes)

@@ -54,7 +54,7 @@ and versions, and test data
 
 What types of tests exist for this project?
 
-### Examples**
+### Examples\*\*\
 
 - There are unit tests, 80% coverage, written in Jasmine
 - Written during development—by developers
