@@ -312,20 +312,6 @@ export default defineConfig({
                       autogenerate: {
                         directory: "products/ontrack/Documentation/Deployment",
                       },
-                      items: [
-                        {
-                          label: "Enhanced Authentication",
-                          autogenerate: {
-                            directory: "products/ontrack/Documentation/Deployment/Enhanced Authentication",
-                          }
-                        },
-                        {
-                          label: "Google Cloud",
-                          autogenerate: {
-                            directory: "products/ontrack/Documentation/Deployment/Google Cloud",
-                          }
-                        },
-                      ]
                     },
                     {
                       label: "Documentation",
