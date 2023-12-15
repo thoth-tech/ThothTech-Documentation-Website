@@ -365,7 +365,7 @@ for (int i=0; i < platforms.size(); i++)
 
 The game should now display the platforms, although they cannot be jumped on.
 
-![Game with platforms.](game_with_platforms.png)
+![Game with platforms.](/game_with_platforms.png)
 
 ## Collision Detection
 
