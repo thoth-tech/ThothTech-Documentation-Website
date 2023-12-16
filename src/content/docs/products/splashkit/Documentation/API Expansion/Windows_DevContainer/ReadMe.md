@@ -96,8 +96,6 @@ At this stage you will have to manaully add the dev container to your project.
 1. This will start building the container not this will take a while (2-5 Mins on a good PC) You can
    watch the progress by clicking Starting Dev Container (showlog)
    ![Image Starting Dev Container (showlog)](/VSCodeStartingDevContainer.png)
-1. ![Image Remote Window Splashkit C++,C#](/image.png) Your Dev Contatiner should now be ready for
-   use.
 
 ## Testing your Dev Container
 
