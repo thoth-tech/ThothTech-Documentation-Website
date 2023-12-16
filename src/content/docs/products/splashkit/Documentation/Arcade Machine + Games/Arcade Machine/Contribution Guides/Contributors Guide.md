@@ -90,12 +90,12 @@ Each game must have a configuration file containing information about the game. 
 directory of your game file and fill it with your game information. It must match the example
 configuration file shown below, but with your game information.
 
-![image](images/config-data.png)
+![image](/config-data.png)
 
 The configuration file **must** be in text (`.txt`) format, and it must be named `config.txt`. This
 must be located in your games root directory, alongside your `program.cpp` (example below).
 
-![image](images/dir-breakdown.png)
+![image](/dir-breakdown.png)
 
 ## Content
 
@@ -111,11 +111,11 @@ To contribute your game, go to the
 [Thoth Tech arcade-games repository](https://github.com/thoth-tech/arcade-games). Click the **Fork**
 button at the top right of the screen and create a fork of this repository.
 
-![image](images/fork-repo.png)
+![image](/fork-repo.png)
 
 You will now have the arcade-games repository in your personal Git.
 
-![image](images/forked.png)
+![image](/forked.png)
 
 On your local, navigate to a desired file path and clone this repository using the bash command:
 
@@ -138,20 +138,20 @@ git push
 
 You will now see your game in the remote fork.
 
-![image](images/commit.png)
+![image](/commit.png)
 
 Now create a Pull request to have your game added to the arcade-machine.
 
 Click the **Pull requests** tab, then click **New pull request** button, then click **Create pull
 request**
 
-![image](images/pull-request.png)
+![image](/pull-request.png)
 
 Write a message for the Arcade Machine and hit **Create pull request**
 
-![image](images/pull-request-2.png)
+![image](/pull-request-2.png)
 
 You will see that merging is blocked until a member of the Arcade-Machine team has reviewed your
 game. We will be sure to get in contact with you once it has been approved!
 
-![image](images/review.png)
+![image](/review.png)
