@@ -643,11 +643,16 @@ export default defineConfig({
                               },
                             },
                             {
-                              label: "Meeting Minutes / T1-2022",
-                              autogenerate: {
-                                directory:
-                                  "products/splashkit/Documentation/Arcade-Machine/Meeting-Minutes-T1-2022",
-                              },
+                              label: "Meeting Minutes",
+                              items: [
+                                {
+                                  label: "T1-2022",
+                                  autogenerate: {
+                                    directory:
+                                      "products/splashkit/Documentation/Arcade-Machine/Meeting-Minutes-T1-2022",
+                                  },
+                                },
+                              ],
                             },
                             {
                               label: "Templates",
