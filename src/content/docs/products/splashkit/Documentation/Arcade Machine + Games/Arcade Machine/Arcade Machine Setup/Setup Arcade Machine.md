@@ -15,8 +15,7 @@ Arcade image.
 1. Open etcher
 2. Select image
 3. select target USB or SD Card
-4. Click FLASH
-   ![Image of the program etcher](/ScreenShotEtcher.png)
+4. Click FLASH ![Image of the program etcher](/ScreenShotEtcher.png)
    <!-- <img src="/ScreenShotEtcher.png" alt="Image of the program etcher" width="200"/> -->
 
 These are the Credentials setup on the image
@@ -94,8 +93,7 @@ These are the Credentials setup on the image
       sudo ./retropie_setup.sh
       ```
 
-   1. select manage packages
-      ![RetorPie setup Main scree](/ManagePackage.png)
+   1. select manage packages ![RetorPie setup Main scree](/ManagePackage.png)
    1. Select core
 
       ![RetorPie setup Manage Packages scree](/CorePackage.png)
@@ -183,8 +181,7 @@ These are the Credentials setup on the image
 
 1. First time setup you will need to configure the controller
 
-   1. Hold Down any key to start
-      ![EmulationStation Configure Input Screen](/ConfigureInput.png)
+   1. Hold Down any key to start ![EmulationStation Configure Input Screen](/ConfigureInput.png)
    1. Press any key to configure input
 
       - Recommend the Following for the Arcade Machine the rest can be skipped
@@ -203,8 +200,7 @@ These are the Credentials setup on the image
 
 1. Press Escape to bring up the menu
 1. Select UI Settings
-1. Scroll down to start on system and set it to PC
-   ![UI Settings Screen](/StartOnSystem.png)
+1. Scroll down to start on system and set it to PC ![UI Settings Screen](/StartOnSystem.png)
 1. Go back and Quit Emulation Station
 
 ### Configure Start CLI on Boot and Network Manager

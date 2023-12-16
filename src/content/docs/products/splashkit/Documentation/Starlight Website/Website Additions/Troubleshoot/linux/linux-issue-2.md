@@ -79,7 +79,7 @@ Save the file and run the following command to apply the changes:
 
 or
 
-```.bash
+```shell
    source ~/.zshrc
 ```
 
