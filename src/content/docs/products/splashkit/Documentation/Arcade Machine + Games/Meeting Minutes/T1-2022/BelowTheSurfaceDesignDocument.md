@@ -214,19 +214,19 @@ mission.
 
 ## Sewer Reference Art
 
-![image](images/SewerReferenceArt.png)
+![image](/SewerReferenceArt.png)
 
 ## Water Reference Art
 
-![Image](images/WaterReferenceArt.png)
+![Image](/WaterReferenceArt.png)
 
 ## Pipes Early Sketch
 
-![images](images/EarlyPipes.png)
+![images](/EarlyPipes.png)
 
 ## Created Assets
 
-![image](images/CreatedAssets.png)
+![image](/CreatedAssets.png)
 
 ## Appendices
 
