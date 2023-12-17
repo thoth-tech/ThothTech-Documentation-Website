@@ -438,15 +438,6 @@ export default defineConfig({
                             directory:
                               "products/splashkit/Documentation/API-Expansion/Windows-DevContainer",
                           },
-                          items: [
-                            {
-                              label: ".devcontainer",
-                              autogenerate: {
-                                directory:
-                                  "products/splashkit/Documentation/API-Expansion/Windows-DevContainer/.devcontainer",
-                              },
-                            },
-                          ],
                         },
                       ],
                     },
