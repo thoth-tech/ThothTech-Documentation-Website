@@ -192,7 +192,7 @@ export default defineConfig({
                       },
                     },
                     {
-                      label:"Onboarding Tool",
+                      label: "Onboarding Tool",
                       autogenerate: {
                         directory: "products/company-operations/projects/onboaring-tool",
                       },
@@ -241,134 +241,385 @@ export default defineConfig({
                   ],
                 },
                 {
+                  label: "Issues and Resolutions",
+                  autogenerate: {
+                    directory: "products/courseflow/issues-and-resolutions",
+                  },
+                },
+              ],
+            },
+            {
+              label: "OnTrack",
+              items: [
+                {
+                  label: "Get to Know Us",
+                  link: "/products/ontrack/example",
+                },
+                {
+                  label: "Projects",
+                  autogenerate: {
+                    directory: "products/ontrack/projects",
+                  },
+                },
+                {
                   label: "Documentation",
                   autogenerate: {
-                    directory: "products/courseflow/Documentation",
+                    directory: "products/ontrack/documentation",
                   },
                   items: [
                     {
-                      label: "Design",
+                      label: "Front End Migration",
                       autogenerate: {
-                        directory: "products/courseflow/Documentation/design",
+                        directory: "products/ontrack/documentation/front-end-migration",
                       },
                     },
                     {
-                      label: "Research",
+                      label: "Numbas",
                       autogenerate: {
-                        directory: "products/courseflow/Documentation/research",
+                        directory: "products/ontrack/documentation/numbas",
                       },
                     },
                     {
-                      label: "Meeting Minutes",
+                      label: "Deployment",
                       autogenerate: {
-                        directory: "products/courseflow/Documentation/Meeting-Minutes",
+                        directory: "products/ontrack/documentation/deployment",
                       },
                     },
                   ],
                 },
+                {
+                  label: "Issues and Resolutions",
+                  autogenerate: {
+                    directory: "products/ontrack/issues-and-resolutions",
+                  },
+                },
               ],
             },
             {
-              label: "Issues and Resolutions",
-              autogenerate: {
-                directory: "products/courseflow/issues-and-resolutions",
-              },
-            },
-          ],
-        },
-        {
-          label: "OnTrack",
-          items: [
-            {
-              label: "Get to Know Us",
-              link: "/products/ontrack/example",
-            },
-            {
-              label: "Projects",
-              autogenerate: {
-                directory: "products/ontrack/projects",
-              },
-            },
-            {
-              label: "Documentation",
-              autogenerate: {
-                directory: "products/ontrack/documentation",
-              },
+              label: "SplashKit",
               items: [
                 {
-                  label: "Front End Migration",
+                  label: "Get to Know Us",
+                  link: "/products/splashkit/example",
+                },
+                {
+                  label: "Projects",
                   autogenerate: {
-                    directory: "products/ontrack/documentation/front-end-migration",
+                    directory: "products/splashkit/Projects",
                   },
                 },
                 {
-                  label: "Numbas",
+                  label: "Documentation",
                   autogenerate: {
-                    directory: "products/ontrack/documentation/numbas",
+                    directory: "products/splashkit/Documentation",
                   },
+                  items: [
+                    {
+                      label: "API Expansion",
+                      autogenerate: {
+                        directory: "products/splashkit/Documentation/API-Expansion",
+                      },
+                      items: [
+                        {
+                          label: "Modules",
+                          autogenerate: {
+                            directory: "products/splashkit/Documentation/API-Expansion/Modules",
+                          },
+                          items: [
+                            {
+                              label: "Data Analytics",
+                              autogenerate: {
+                                directory:
+                                  "products/splashkit/Documentation/API-Expansion/Modules/Data-Analytics",
+                              },
+                              items: [
+                                {
+                                  label: "Background",
+                                  autogenerate: {
+                                    directory:
+                                      "products/splashkit/Documentation/API-Expansion/Modules/Data-Analytics/Background",
+                                  },
+                                },
+                                {
+                                  label: "Research & Findings",
+                                  autogenerate: {
+                                    directory:
+                                      "products/splashkit/Documentation/API-Expansion/Modules/Data-Analytics/Research-Findings",
+                                  },
+                                },
+                                {
+                                  label: "Testing",
+                                  autogenerate: {
+                                    directory:
+                                      "products/splashkit/Documentation/API-Expansion/Modules/Data-Analytics/Testing",
+                                  },
+                                },
+                              ],
+                            },
+                            {
+                              label: "Machine Learning",
+                              autogenerate: {
+                                directory:
+                                  "products/splashkit/Documentation/API-Expansion/Modules/Machine-Learning",
+                              },
+                              items: [
+                                {
+                                  label: "Background",
+                                  autogenerate: {
+                                    directory:
+                                      "products/splashkit/Documentation/API-Expansion/Modules/Machine-Learning/Background",
+                                  },
+                                },
+                                {
+                                  label: "Research & Findings",
+                                  autogenerate: {
+                                    directory:
+                                      "products/splashkit/Documentation/API-Expansion/Modules/Machine-Learning/Research-Findings",
+                                  },
+                                },
+                                {
+                                  label: "Testing",
+                                  autogenerate: {
+                                    directory:
+                                      "products/splashkit/Documentation/API-Expansion/Modules/Machine-Learning/Testing",
+                                  },
+                                },
+                              ],
+                            },
+                            {
+                              label: "Physics",
+                              autogenerate: {
+                                directory:
+                                  "products/splashkit/Documentation/API-Expansion/Modules/Physics",
+                              },
+                              items: [
+                                {
+                                  label: "Background",
+                                  autogenerate: {
+                                    directory:
+                                      "products/splashkit/Documentation/API-Expansion/Modules/Physics/Background",
+                                  },
+                                },
+                                {
+                                  label: "Research & Findings",
+                                  autogenerate: {
+                                    directory:
+                                      "products/splashkit/Documentation/API-Expansion/Modules/Physics/Research-Findings",
+                                  },
+                                },
+                                {
+                                  label: "Testing",
+                                  autogenerate: {
+                                    directory:
+                                      "products/splashkit/Documentation/API-Expansion/Modules/Physics/Testing",
+                                  },
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                        {
+                          label: "Research and Findings",
+                          autogenerate: {
+                            directory:
+                              "products/splashkit/Documentation/API-Expansion/Research-and-Findings",
+                          },
+                        },
+                        {
+                          label: "Spike Reports",
+                          autogenerate: {
+                            directory:
+                              "products/splashkit/Documentation/API-Expansion/Spike-Reports",
+                          },
+                        },
+                        {
+                          label: "Windows DevContainer",
+                          autogenerate: {
+                            directory:
+                              "products/splashkit/Documentation/API-Expansion/Windows-DevContainer",
+                          },
+                        },
+                      ],
+                    },
+
+                    {
+                      label: "Arcade Machine and Games",
+                      autogenerate: {
+                        directory: "products/splashkit/Documentation/Arcade-Machine-and-Games",
+                      },
+                      items: [
+                        {
+                          label: "Arcade Machine",
+                          autogenerate: {
+                            directory:
+                              "products/splashkit/Documentation/Arcade-Machine-and-Games/Arcade-Machine",
+                          },
+                          items: [
+                            {
+                              label: "Arcade Machine Setup",
+                              autogenerate: {
+                                directory:
+                                  "products/splashkit/Documentation/Arcade-Machine-and-Games/Arcade-Machine/Arcade-Machine-Setup",
+                              },
+                            },
+                            {
+                              label: "Contribution Guides",
+                              autogenerate: {
+                                directory:
+                                  "products/splashkit/Documentation/Arcade-Machine-and-Games/Arcade-Machine/Contribution-Guides",
+                              },
+                            },
+                            {
+                              label: "Pi Emulation",
+                              autogenerate: {
+                                directory:
+                                  "products/splashkit/Documentation/Arcade-Machine-and-Games/Arcade-Machine/Pi-Emulation",
+                              },
+                            },
+                            {
+                              label: "Research and Findings",
+                              autogenerate: {
+                                directory:
+                                  "products/splashkit/Documentation/Arcade-Machine-and-Games/Arcade-Machine/Research-and-Findings",
+                              },
+                            },
+                          ],
+                        },
+                        {
+                          label: "Game Design Documents",
+                          autogenerate: {
+                            directory:
+                              "products/splashkit/Documentation/Arcade-Machine-and-Games/Game-Design-Documents",
+                          },
+                        },
+                        {
+                          label: "Game Proposal Documents",
+                          autogenerate: {
+                            directory:
+                              "products/splashkit/Documentation/Arcade-Machine-and-Games/Game-Proposal-Documents",
+                          },
+                        },
+                        {
+                          label: "Meeting Minutes",
+                          autogenerate: {
+                            directory:
+                              "products/splashkit/Documentation/Arcade-Machine-and-Games/Meeting-Minutes",
+                          },
+                          items: [
+                            {
+                              label: "T1-2022",
+                              autogenerate: {
+                                directory:
+                                  "products/splashkit/Documentation/Arcade-Machine-and-Games/Meeting-Minutes/T1-2022",
+                              },
+                            },
+                          ],
+                        },
+                        {
+                          label: "Research and Findings",
+                          autogenerate: {
+                            directory:
+                              "products/splashkit/Documentation/Arcade-Machine-and-Games/Research-and-Findings",
+                          },
+                        },
+                        {
+                          label: "Templates",
+                          autogenerate: {
+                            directory:
+                              "products/splashkit/Documentation/Arcade-Machine-and-Games/Templates",
+                          },
+                        },
+                      ],
+                    },
+
+                    {
+                      label: "Tutorials",
+                      autogenerate: {
+                        directory: "products/splashkit/Documentation/Tutorials",
+                      },
+                    },
+                    {
+                      label: "Starlight Website",
+                      autogenerate: {
+                        directory: "products/splashkit/Documentation/Starlight-Website",
+                      },
+                      items: [
+                        {
+                          label: "Contribution Guides",
+                          autogenerate: {
+                            directory:
+                              "products/splashkit/Documentation/Starlight-Website/Contribution-Guides",
+                          },
+                        },
+                        {
+                          label: "Website Additions",
+                          autogenerate: {
+                            directory:
+                              "products/splashkit/Documentation/Starlight-Website/Website-Additions",
+                          },
+                          items: [
+                            {
+                              label: "Troubleshoot",
+                              autogenerate: {
+                                directory:
+                                  "products/splashkit/Documentation/Starlight-Website/Website-Additions/Troubleshoot",
+                              },
+                              items: [
+                                {
+                                  label: "linux",
+                                  autogenerate: {
+                                    directory:
+                                      "products/splashkit/Documentation/Starlight-Website/Website-Additions/Troubleshoot/linux",
+                                  },
+                                },
+                                {
+                                  label: "macOS",
+                                  autogenerate: {
+                                    directory:
+                                      "products/splashkit/Documentation/Starlight-Website/Website-Additions/Troubleshoot/macOS",
+                                  },
+                                },
+                                {
+                                  label: "windows",
+                                  autogenerate: {
+                                    directory:
+                                      "products/splashkit/Documentation/Starlight-Website/Website-Additions/Troubleshoot/windows",
+                                  },
+                                },
+                              ],
+                            },
+                            {
+                              label: "WSL Installation",
+                              autogenerate: {
+                                directory:
+                                  "products/splashkit/Documentation/Starlight-Website/Website-Additions/WSL-Installation",
+                              },
+                            },
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      label: "Expansions",
+                      autogenerate: {
+                        directory: "products/splashkit/Documentation/Expansions",
+                      },
+                    },
+                    {
+                      label: "SplashKit Online",
+                      autogenerate: {
+                        directory: "products/splashkit/Documentation/SplashKit-Online",
+                      },
+                    },
+                  ],
                 },
                 {
-                  label: "Deployment",
+                  label: "Issues and Resolutions",
                   autogenerate: {
-                    directory: "products/ontrack/documentation/deployment",
+                    directory: "products/courseflow/Issues-and-Resolutions",
                   },
                 },
               ],
-            },
-            {
-              label: "Issues and Resolutions",
-              autogenerate: {
-                directory: "products/ontrack/issues-and-resolutions",
-              },
-            },
-          ],
-        },
-        {
-          label: "SplashKit",
-          items: [
-            {
-              label: "Get to Know Us",
-              link: "/products/splashkit/example",
-            },
-            {
-              label: "Projects",
-              autogenerate: {
-                directory: "products/splashkit/projects",
-              },
-            },
-            {
-              label: "Documentation",
-              autogenerate: {
-                directory: "products/splashkit/documentation",
-              },
-              // items: [
-              //   {
-              //     label: "Applications",
-              //     autogenerate: {
-              //       directory: "products/splashkit/documentation/applications",
-              //     },
-              //   },
-              // ],
-              items: [
-                {
-                  label: "Tutorials",
-                  autogenerate: {
-                    directory: "products/splashkit/documentation/tutorials",
-                  },
-                },
-                {
-                  label: "Expansions",
-                  autogenerate: {
-                    directory: "products/splashkit/documentation/expansions",
-                  },
-                },
-              ],
-            },
-            {
-              label: "Issues and Resolutions",
-              autogenerate: {
-                directory: "products/splashkit/issues-and-resolutions",
-              },
             },
           ],
         },

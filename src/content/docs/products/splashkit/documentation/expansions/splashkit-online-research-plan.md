@@ -14,7 +14,7 @@ hold.
 The purpose of this spike is to investigate technologies that may make running it online more
 viable, and explore which ways seem most promising. The main technology to be investigated here is
 WebAssembly (or WASM), which was mentioned in the readme for the SplashKit-Online repository
-(https://github.com/thoth-tech/SplashkitOnline). The technology itself doesn't appear to have been
+(<https://github.com/thoth-tech/SplashkitOnline>). The technology itself doesn't appear to have been
 used in the project; instead it seems that that project relied on both compiling _and_ executing the
 code on a back-end server. This could be considered an extension of that initial research.
 
