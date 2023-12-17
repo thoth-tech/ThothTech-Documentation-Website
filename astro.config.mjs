@@ -386,6 +386,12 @@ export default defineConfig({
                             directory: "products/splashkit/documentation/splashkit-online/code-documentation/processes",
                           },
                         },
+                        {
+                          label: "Other",
+                          autogenerate: {
+                            directory: "products/splashkit/documentation/splashkit-online/code-documentation/other",
+                          },
+                        },
                       ]
                     },
                   ]

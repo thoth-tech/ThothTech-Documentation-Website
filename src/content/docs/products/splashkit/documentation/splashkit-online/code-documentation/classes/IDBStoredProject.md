@@ -3,7 +3,7 @@ title: IDBStoredProject - Code Documentation
 description: An explanation of what IDBStoredProject is, its methods, members, and events.
 ---
 
-[*IDBStoredProject.js*](TODO)
+[*IDBStoredProject.js*](https://github.com/thoth-tech/SplashkitOnline/blob/main/Browser_IDE/IDBStoredProject.js)
 
 IDBStoredProject is a class that handles saving/loading the user's project within the browser itself. It uses [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB) storage, which allows it to store large amounts of data in a simplified database structure.
 

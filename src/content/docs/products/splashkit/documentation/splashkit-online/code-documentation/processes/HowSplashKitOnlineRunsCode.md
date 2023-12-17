@@ -57,17 +57,19 @@ Only after this is done, can we then call `main()`, and start the program itself
 :::
 
 ## Before the user does anything...
-Looking inside `script.js`
+Looking inside `editorMain.js`
 ```javascript
 // ------ Setup Project and Execution Environment ------
 let executionEnviroment = new ExecutionEnvironment(document.getElementById("ExecutionEnvironment"));
 ```
+*from [editorMain.js](https://github.com/thoth-tech/SplashkitOnline/blob/main/Browser_IDE/editorMain.js)*
+
 First, an `ExecutionEnvironment` is created.
 
 From the [Source Code Documentation](../../classes/executionenvironment/)
 > ExecutionEnvironment is a class designed to abstract out running the user's code, and also handle the environment itself (such as resetting variables, preloading files, etc). It contains functions to 'compile' user code, run the main program, reset itself, and create directories/files inside the environment.
 
-When created, an important thing it does is create an iFrame (sort of a page inside the page), which is where all code execution will take place. This is done for security, see [here](TODO) for a more detailed explanation.
+When created, an important thing it does is create an iFrame (sort of a page inside the page), which is where all code execution will take place. This is done for security, see [here](../../classes/executionenvironment/#why-create-an-iframe) for a more detailed explanation.
 
 Inside the iFrame, the page `executionEnvironment.html` is loaded, which loads in things like the SplashKit library itself, and also the executionEnvironment internal scripts, like `executionEnvironment_Internal.js` and `executionEnvironment_CodeProcessor.js`
 
@@ -87,7 +89,7 @@ executionEnviroment.runCodeBlocks([
 
 executionEnviroment.runProgram();
 ```
-*from [script.js - runProgram()](TODO)*
+*from [editorMain.js - runProgram()](https://github.com/thoth-tech/SplashkitOnline/blob/ddb06cec6296d6de905ee0a90084a4c1a71c7a58/Browser_IDE/editorMain.js#L194C6-L194C6)*
 1. First it clears the error lines from the code editors.
 2. Next, it calls `executionEnviroment.runCodeBlocks`, and gives it the two code blocks and the source code inside the code editors; this runs the user's code, which really means runs all the function/variable/class initialization.
 3. Finally it runs the program - this runs the user's `main` function.
@@ -103,7 +105,7 @@ runCodeBlocks(blocks){
     }
 }
 ```
-*from [executionEnvironment.js](TODO)*
+*from [executionEnvironment.js](https://github.com/thoth-tech/SplashkitOnline/blob/main/Browser_IDE/executionEnvironment.js)*
 
 So let's have a look at `runCodeBlock`
 ```javascript
@@ -118,7 +120,7 @@ runCodeBlock(block, source){
     }, "*");
 }
 ```
-*from [executionEnvironment.js](TODO)*
+*from [executionEnvironment.js](https://github.com/thoth-tech/SplashkitOnline/blob/main/Browser_IDE/executionEnvironment.js)*
 
 First thing it does is call the internal function `_syntaxCheckCode(block, source)`, which as the name says, will syntax check the code. The way this syntax checking works is somewhat complicated, but let's step through it.
 
@@ -180,6 +182,8 @@ if (m.data.type == "RunCodeBlock"){
     }
 }
 ```
+
+*from [executionEnvironment_Internal.js](https://github.com/thoth-tech/SplashkitOnline/blob/ddb06cec6296d6de905ee0a90084a4c1a71c7a58/Browser_IDE/executionEnvironment_Internal.js#L248C10-L248C10)*
 
 Let's break this down. First, it tries to run `processCodeForExecutionEnvironment`, passing in the user's code and some other parameters. We'll see what that does in a moment, but for now know that it takes the user's code, and _changes it_, to allow us to pause it, resume it, reset it, etc. Assuming it's successful, then we move to `tryEvalSource`, which makes a new `AsyncFunction` from this modified source code, and then runs it! Remember, these stages all take place securely inside the iFrame.
 
@@ -332,6 +336,8 @@ function processCodeForExecutionEnvironment(userCode, asyncStopName, asyncPauseN
 }
 ```
 
+*from [executionEnvironment_CodeProcessor.js](https://github.com/thoth-tech/SplashkitOnline/blob/ddb06cec6296d6de905ee0a90084a4c1a71c7a58/Browser_IDE/executionEnvironment_CodeProcessor.js#L275)*
+
 We can see it takes the user's code, and also some _names_ for the variables that will handle making the code stop/pause/continue - these are the _flags_ mentioned earlier. It also takes the name of a callback to call, when the user's code actually pauses.
 
 We can see the first thing it does is assign these to some variables - you can ignore that part for now, it's just an implementation detail (it doesn't seem possible to pass parameters into Babel transforms, so I just used global variables...). But after that, it calls Babel with the `"findGlobalDeclarationsTransform"`, this handles updating the list of global variables that we clear when restarting the program. Then we run it again with two more passes - `"makeFunctionsAsyncAwaitTransform"`, and `"asyncify"`, which handle making functions/calls async/await along with the scope changes, and inserting the yielding back to the browser during loops, respectively.
@@ -358,6 +364,9 @@ async function tryEvalSource(block, source){
     );
 }
 ```
+
+*from [executionEnvironment_Internal.js](https://github.com/thoth-tech/SplashkitOnline/blob/ddb06cec6296d6de905ee0a90084a4c1a71c7a58/Browser_IDE/executionEnvironment_Internal.js#L191)*
+
 As can be seen, the first thing that happens is that we call `createEvalFunctionAndSyntaxCheck`, which does exactly what it says. You'll notice we're syntax checking here as well - this isn't exactly deliberate, it just happens automatically when the `Function` object is created. Still, it's helpful if the Babel output had a syntax error, for instance.
 The important part is inside `createEvalFunctionAndSyntaxCheck`, here:
 ```javascript
@@ -365,6 +374,9 @@ return Object.getPrototypeOf(async function() {}).constructor(
     "\"use strict\";"+source+"\n//# sourceURL="+userCodeBlockIdentifier+block
 );
 ```
+
+*from [executionEnvironment_Internal.js](https://github.com/thoth-tech/SplashkitOnline/blob/ddb06cec6296d6de905ee0a90084a4c1a71c7a58/Browser_IDE/executionEnvironment_Internal.js#L179C44-L179C44)*
+
 Here's where the user's code _finally_ becomes a real function, that will actually be called! Notice it looks a little different to the `new Function("...")` example earlier. This is because, it's creating an `AsyncFunction`, which doesn't have a nice constructor, so we access it directly. The `AsyncFunction` is important, because all of that work we did before modifying the user's code to give control back to the browser when it loops, won't work without it being an `AsyncFunction`!
 
 You'll also notice that we modify the user's code slightly; we don't just pass `source` directly, we add `"use strict";` at the start, and `//# sourceURL=...` at the end. What do these do?
@@ -389,7 +401,8 @@ executionEnviroment.runCodeBlocks([
 
 executionEnviroment.runProgram();
 ```
-*from [script.js - runProgram()](TODO)*
+*from [editorMain.js - runProgram()](https://github.com/thoth-tech/SplashkitOnline/blob/ddb06cec6296d6de905ee0a90084a4c1a71c7a58/Browser_IDE/editorMain.js#L194C6-L194C6)*
+
 We now know what `runAllCodeBlocks` does quite well - it syntax checks the code, sends it to the iFrame, the code gets transformed, stuffed into a function, and then run! So what does `executionEnviroment.runProgram()` do? It's comparatively _much_ simpler!
 
 First thing it does is send a message to the iFrame, telling it to run the program - we definitely don't want to run the program in the main page, so this is all secured inside the iFrame, like the execution earlier. Upon receiving this message, it then calls its own internal `runProgram()`
@@ -411,6 +424,8 @@ async function runProgram(){
     }
 }
 ```
+
+*from [executionEnvironment_Internal.js](https://github.com/thoth-tech/SplashkitOnline/blob/ddb06cec6296d6de905ee0a90084a4c1a71c7a58/Browser_IDE/executionEnvironment_Internal.js#L223)*
 
 Let's break this down.
 
@@ -466,6 +481,9 @@ async function tryRunFunction_Internal(func) {
     }
 }
 ```
+
+*from [executionEnvironment_Internal.js](https://github.com/thoth-tech/SplashkitOnline/blob/ddb06cec6296d6de905ee0a90084a4c1a71c7a58/Browser_IDE/executionEnvironment_Internal.js#L138)*
+
 We can see it takes the user's function (for instance, the user's `main()`, or the `AsyncFunctions` we made from their code blocks), and tries to run it. It waits for it to finish with `await`, and if it finishes without issues, it returns "success!".
 
 However, if an error was thrown, we catch it. If it was a `ForceBreakLoop` error, then we know it threw it because the user pressed the Stop button, not because it crashed, and so we just report back that it "Stopped". However, if that didn't happen, we figure out information about the error (such as its line number and what code block it happened in) with `parseErrorStack(err)`, and then return information about the error.
@@ -473,7 +491,7 @@ However, if an error was thrown, we catch it. If it was a `ForceBreakLoop` error
 This information is received by the original `tryRunFunction`, and if an error occurred it reports it to the user via `ReportError`.
 
 Let's take a closer look at `parseErrorStack`, as the last stop on our journey.
-### parseErrorStack
+### parseErrorStack - what does _it_ do?
 Once we catch an error, the problem becomes "how do we report it to the user?" We need to give them the error message, and at least a line number and code block to look at. If the error message had members like `err.lineNumber` or `err.fileName` it'd be great, but they don't (unless you're using Firefox...). However, all modern browsers support `err.stack`, which gives us a piece of text describing the error and where it happened. It looks a bit like this:
 ```javascript
 gameInnerLoop@Init.js;:25:25
@@ -493,6 +511,9 @@ One thing to note, is there are two lines inside `parseErrorStack` that might be
     if (file.startsWith(userCodeBlockIdentifier))
         lineNumber -= userCodeStartLineOffset;
 ```
+
+*from [executionEnvironment_Internal.js - parseErrorStack](https://github.com/thoth-tech/SplashkitOnline/blob/ddb06cec6296d6de905ee0a90084a4c1a71c7a58/Browser_IDE/executionEnvironment_Internal.js#L123)*
+
 Once we have extracted the line number, we check to see if the file name starts with the `userCodeBlockIdentifier` (remember this from earlier, when we added the `//# sourceURL=` to the user's code to help identify it?). If it starts with this, we know it's user code. And then we subtract `userCodeStartLineOffset` from it. Why do we do that? The answer is that when we create the `AsyncFunction` object, Firefox actually adds some lines to the start. For example, let's say we create a simple function from text:
 ```javascript
 let myFunc = new Function("console.log('Hi!');");

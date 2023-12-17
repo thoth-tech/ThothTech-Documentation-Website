@@ -3,7 +3,7 @@ title: TreeView - Code Documentation
 description: An explanation of what TreeView is, its methods, members, and events.
 ---
 
-[*treeview.js*](TODO)
+[*treeview.js*](https://github.com/thoth-tech/SplashkitOnline/blob/main/Browser_IDE/treeview.js)
 
 TreeView is a class used for displaying and updating a tree view, designed specifically around file/directory manipulation. It allows viewing multiple filesystems at once in an overlapping fashion (important since we have the files in the user's project that will be saved/loaded, and also the live files inside the ExecutionEnvironment, which may be different). It allows files/folders to be dragged around and organized, and folders to have a button on the side for uploading new files.
 
@@ -17,7 +17,7 @@ The way it is intended to be used, is to make it listen to events from the targe
 
 See how the TreeView never updates itself - it relies on an event coming _back_ from the target filesystem. This means that if the target filesystem fails to do the operation for whatever reason, the TreeView also remains in the same state, meaning the two remain synchronized effectively.
 
-See example usage of it inside `fileview.js`, where it is attached to both the `IndexedStorageDB` filesystem, and also the filesystem inside the `ExecutionEnvironment`.
+See example usage of it inside `fileview.js` ([here](https://github.com/thoth-tech/SplashkitOnline/blob/main/Browser_IDE/fileview.js)), where it is attached to both the `IDBStoredProject` filesystem, and also the filesystem inside the `ExecutionEnvironment`.
 
 ### Limitations
 Currently there is no way to delete files/folders, or rename files/folders in the interface itself. This shouldn't be hard to add, however.
