@@ -445,68 +445,6 @@ export default defineConfig({
                                 directory:
                                   "products/splashkit/Documentation/API-Expansion/Windows-DevContainer/.devcontainer",
                               },
-                              items: [
-                                {
-                                  label: "DXball",
-                                  autogenerate: {
-                                    directory:
-                                      "products/splashkit/Documentation/API-Expansion/Windows-DevContainer/.devcontainer/DXball",
-                                  },
-                                  items: [
-                                    {
-                                      label: "logs",
-                                      autogenerate: {
-                                        directory:
-                                          "products/splashkit/Documentation/API-Expansion/Windows-DevContainer/.devcontainer/DXball/logs",
-                                      },
-                                    },
-                                    {
-                                      label: "Resources",
-                                      autogenerate: {
-                                        directory:
-                                          "products/splashkit/Documentation/API-Expansion/Windows-DevContainer/.devcontainer/DXball/Resources",
-                                      },
-                                      items: [
-                                        {
-                                          label: "bundles",
-                                          autogenerate: {
-                                            directory:
-                                              "products/splashkit/Documentation/API-Expansion/Windows-DevContainer/.devcontainer/DXball/Resources/bundles",
-                                          },
-                                        },
-                                        {
-                                          label: "fonts",
-                                          autogenerate: {
-                                            directory:
-                                              "products/splashkit/Documentation/API-Expansion/Windows-DevContainer/.devcontainer/DXball/Resources/fonts",
-                                          },
-                                        },
-                                        {
-                                          label: "images",
-                                          autogenerate: {
-                                            directory:
-                                              "products/splashkit/Documentation/API-Expansion/Windows-DevContainer/.devcontainer/DXball/Resources/images",
-                                          },
-                                        },
-                                        {
-                                          label: "json",
-                                          autogenerate: {
-                                            directory:
-                                              "products/splashkit/Documentation/API-Expansion/Windows-DevContainer/.devcontainer/DXball/Resources/json",
-                                          },
-                                        },
-                                        {
-                                          label: "sounds",
-                                          autogenerate: {
-                                            directory:
-                                              "products/splashkit/Documentation/API-Expansion/Windows-DevContainer/.devcontainer/DXball/Resources/sounds",
-                                          },
-                                        },
-                                      ],
-                                    },
-                                  ],
-                                },
-                              ],
                             },
                           ],
                         },
@@ -628,6 +566,45 @@ export default defineConfig({
                             directory:
                               "products/splashkit/Documentation/Starlight-Website/Website-Additions",
                           },
+                          items: [
+                            {
+                              label: "Troubleshoot",
+                              autogenerate: {
+                                directory:
+                                  "products/splashkit/Documentation/Starlight-Website/Website-Additions/Troubleshoot",
+                              },
+                              items: [
+                                {
+                                  label: "linux",
+                                  autogenerate: {
+                                    directory:
+                                      "products/splashkit/Documentation/Starlight-Website/Website-Additions/Troubleshoot/linux",
+                                  },
+                                },
+                                {
+                                  label: "macOS",
+                                  autogenerate: {
+                                    directory:
+                                      "products/splashkit/Documentation/Starlight-Website/Website-Additions/Troubleshoot/macOS",
+                                  },
+                                },
+                                {
+                                  label: "windows",
+                                  autogenerate: {
+                                    directory:
+                                      "products/splashkit/Documentation/Starlight-Website/Website-Additions/Troubleshoot/windows",
+                                  },
+                                },
+                              ],
+                            },
+                            {
+                              label: "WSL Installation",
+                              autogenerate: {
+                                directory:
+                                  "products/splashkit/Documentation/Starlight-Website/Website-Additions/WSL-Installation",
+                              },
+                            },
+                          ],
                         },
                       ],
                     },
