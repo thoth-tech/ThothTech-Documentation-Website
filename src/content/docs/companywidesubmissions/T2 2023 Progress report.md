@@ -1,8 +1,8 @@
-\---
+---
 
 Title: thoth tech company progress report tri 2 2023
 
-\---
+---
 
 ## Leadership Team
 
@@ -73,7 +73,7 @@ thoth-tech/CompanyOperations (github.com) Created Spike documentations for using
 documentation website. Docusaurus research by QuinnCurtis02 · Pull Request #3 ·
 thoth-tech/CompanyOperations (github.com) Quinn Created High-level prototypes for the
 documentation website interfaces. Curtis Add UI desing samples by QuinnCurtis02 · Pull Request
-#12 · thoth-tech/CompanyOperations (github.com) 8 Researched on various documentation platforms
+# 12 · thoth-tech/CompanyOperations (github.com) 8 Researched on various documentation platforms
 to determine the one that meets Thoth Techs requirement. Add documentation platform research by
 QuinnCurtis02 · Pull Request #13 · thothtech/Company-Operations (github.com) Created Starlight
 landing page and product page. added home page and products to starlight by QuinnCurtis02 · Pull
@@ -86,7 +86,9 @@ Researched the proper platform for hosting the documentation website. https:
 //github.com/thoth-tech/Company-Operations/pull/24 Documented learnings from investigating
 various documentation platforms. Docs: knowledge base prior learning and test documentation by
 Kyle-Dav · Pull Request
+
 # 9 · thoth-tech/Company-Operations (github.com)
+
 Kyle Adams Improved the side navigation bars on Starlight. updated starlight config for sidebar -KA
 by Kyle-Dav · Pull Request #16 · thothtech/Company-Operations (github.com) Produced basic landing
 pages for all products. Docs/md to mdx landing by Kyle-Dav · Pull Request #4 ·
@@ -98,6 +100,7 @@ fill knowledge base. docs: created ExampleDocMD and ExampleDocRJS · Kyle-Dav/th
 (github.com) Docs: knowledge base prior learning and test documentation by Kyle-Dav · Pull Request
 
 # 9 · thoth-tech/Company-Operations (github.com)
+
 Started the testing for changing product repository. Move updated Starlight to the documentation
 repo root on Company Operations | Trello Created Onboarding document and conducted research on
 Docusaurus https: //github.com/thoth-tech/Company-Operations/pull/17 Harshita Shroff Drafted
@@ -321,6 +324,7 @@ Numbas - Complete Update contributing documentation to show usage of devcontaine
 Shadow(DM Sprint 4 Review Refactor and improve authentication service code
 
 # 738
+
 https: //github.com/doubtfi re-lms/doubtfireweb/pull/738 5 8 Sonam chewang DORJI – Shadow(DM Sprint
 4 Review adding unit testing for tutorialService 3 3.2. Completed Deliverables • Incorporate content
 in OnTrack – Requirements document created • Numbas PoC system completed • Numbas Backend
@@ -337,8 +341,9 @@ server • Requirements documentation for front-end and back-end along with desi
 created for feature Tutor Times • Python script created to export Trello JSON into a CSV 3.3.
 Roadmap The current road map for Ontrack is quite broad, however there are a few key projects that
 we want to focus on next trimester, first you can view all the backlogs on the Trello board with
-their associated tasks: https://trello.com/invite/b/IKabVmzt/ATTIdf935d63730a48bee701a76b199f48fc61BF23A8/ ontrack The Key
+their associated tasks: <https://trello.com/invite/b/IKabVmzt/ATTIdf935d63730a48bee701a76b199f48fc61BF23A8/> ontrack The Key
 projects we would like to see movement on next trimester would be:
+
 1. Improvements Backlog – This backlog has core improvements to the system we want to see.
 2. Ontrack Bugs Backlog – These are bugs that are found and added to this backlog.
 3. New Feature – Incorporate Content – Ideally, we have an additional 2 designs of how this would
@@ -693,7 +698,7 @@ Achievements Key Achievements (Pull Request links) Team member Unit dialog popup
 Pull Request #27 · thothtech/CourseFlow (github.com) Header and unitcard component by keyruhn ·
 Pull Request #20 · thoth-tech/CourseFlow (github.com) Kieron Boyle Custom clustering-based
 network layout algorithm for determining initial unit node positions by Vortrox · Pull Request
-#31 · thothtech/CourseFlow (github.com) Network layout algorithm by Vortrox · Pull Request #26 ·
+# 31 · thothtech/CourseFlow (github.com) Network layout algorithm by Vortrox · Pull Request #26 ·
 thothtech/CourseFlow (github.com) Add backend API endpoints by Vortrox · Pull Request #23 ·
 thothtech/CourseFlow (github.com) Mel David Bugay Discovery page pre calculated nodes
 implementation by cmarktopher · Pull Request #33 · thoth-tech/CourseFlow (github.com) Discovery
@@ -703,8 +708,8 @@ integration by cmarktopher · Pull Request #25 · thothtech/CourseFlow (github.c
 thothtech/documentation (github.com) Mark Enriquez Login form and registration form (Frontend)
 by OmarHassanzada · Pull Request #28 · thoth-tech/CourseFlow (github.com) Hazratomar Hassanzada
 40 CourseFlow Login and Registration Page Development Report by OmarHassanzada · Pull Request
-#431 · thoth-tech/documentation (github.com) 2FA-Documentation by OmarHassanzada · Pull Request
-#374 · thothtech/documentation (github.com) Documentation Images Markdown by codeJdawg · Pull
+# 431 · thoth-tech/documentation (github.com) 2FA-Documentation by OmarHassanzada · Pull Request
+# 374 · thothtech/documentation (github.com) Documentation Images Markdown by codeJdawg · Pull
 Request #38 · thoth-tech/CourseFlow (github.com) Create Discovery Page Function.md by codeJdawg ·
 Pull Request #37 · thoth-tech/CourseFlow (github.com) Create Docker Research.md by codeJdawg ·
 Pull Request #35 · thothtech/CourseFlow (github.com) Create Analytics Page Design.md by codeJdawg
@@ -718,7 +723,7 @@ SoVinhou · Pull Request #22 · thothtech/CourseFlow (github.com) Sovinhou Ung S
 and added features by CynthiaChee · Pull Request #36 · thoth-tech/CourseFlow (github.com) Create
 CourseFlow\_SideBar.png by CynthiaChee · Pull Request #403 · thoth-tech/documentation (github.com)
 Add Figma prototype screenshots (Timetable View and Analytics View) by CynthiaChee · Pull Request
-#372 · thothtech/documentation (github.com) Cynthia Yi Min Chee 41 6.2. Completed Deliverables
+# 372 · thothtech/documentation (github.com) Cynthia Yi Min Chee 41 6.2. Completed Deliverables
 Course Map Contributing Team Members Design work by: Kieron Boyle, Cynthia Yi Min Chee, Wei Min
 Voon Technical work by: Kieron Boyle, Cynthia Yi Min Chee, Wei Min Voon Summary of Deliverables •
 Finalised UI design on Figma o The Figma project has pages divided into finalised designs as well
