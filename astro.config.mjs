@@ -558,8 +558,8 @@ https://github.com/thothtech/doubtfireweb/pull/102
 Jayant Sprint 4 
 Review
 Migrate 
-"ConfirmationM
-odal"
+Confirmation
+Modal
 https://github.com/thothtech/doubtfireweb/pull/100
 3
 Jayant Sprint 4 
