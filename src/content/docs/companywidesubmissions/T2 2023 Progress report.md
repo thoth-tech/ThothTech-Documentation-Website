@@ -1,11 +1,7 @@
 ---
-
-Title: thoth tech company progress report tri 2 2023
-
+title: thoth tech company progress report tri 2 2023
 ---
-
 ## Leadership Team
-
 1.1. Company Directors • Andrew Cain, Managing Director • Glory Lee, Managing
 Director 1.2. Student Leadership • Daniel Maddern – Product Lead for OnTrack • Daniel Maddern &
 Chloe Hulme – Product Lead for Art Gallery • Mel David Bugay & Kieron Anthony Boyle – Product
