@@ -1,7 +1,6 @@
 ---
 title: Thoth tech Company Structure and Objectives for 2023 TRIMESTER 2
 ---
-
 ## Executive Summary
 
 Thoth Tech is a software development company currently building from the ground up in Melbourne,
