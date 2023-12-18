@@ -362,6 +362,40 @@ export default defineConfig({
                     directory: "products/splashkit/documentation/expansions",
                   },
                 },
+                {
+                  label: "SplashKit Online",
+                  autogenerate: {
+                    directory: "products/splashkit/documentation/splashkit-online",
+                  },
+                  items: [
+                    {
+                      label: "Code Documentation",
+                      autogenerate: {
+                        directory: "products/splashkit/documentation/splashkit-online/code-documentation",
+                      },
+                      items: [
+                        {
+                          label: "Classes",
+                          autogenerate: {
+                            directory: "products/splashkit/documentation/splashkit-online/code-documentation/classes",
+                          },
+                        },
+                        {
+                          label: "Processes",
+                          autogenerate: {
+                            directory: "products/splashkit/documentation/splashkit-online/code-documentation/processes",
+                          },
+                        },
+                        {
+                          label: "Other",
+                          autogenerate: {
+                            directory: "products/splashkit/documentation/splashkit-online/code-documentation/other",
+                          },
+                        },
+                      ]
+                    },
+                  ]
+                },
               ],
             },
             {
