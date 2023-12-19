@@ -232,98 +232,162 @@ export default defineConfig({
                         directory: "products/courseflow/Projects/2FA - Documentation",
                       },
                     },
+                  ]
+                },
+                {
+                  label: "Issues and Resolutions",
+                  autogenerate: {
+                    directory: "products/courseflow/issues-and-resolutions",
+                  },
+                },
+              ],
+            },
+            {
+              label: "OnTrack",
+              items: [
+                {
+                  label: "Get to Know Us",
+                  link: "/products/ontrack/example",
+                },
+                {
+                  label: "Projects",
+                  autogenerate: {
+                    directory: "products/ontrack/Projects",
+                  },
+                  items: [
                     {
-                      label: "ngx-graph",
+                      label: "Group_Task_Submission",
                       autogenerate: {
-                        directory: "products/courseflow/Projects/ngx-graph",
+                        directory: "products/ontrack/Projects/Group_Task_Submission",
                       },
                     },
-                  ],
+                    {
+                      label: "Numbas",
+                      autogenerate: {
+                        directory: "products/ontrack/Projects/Numbas",
+                      },
+                    },
+                    {
+                      label: "Staff Grant Extension",
+                      autogenerate: {
+                        directory: "products/ontrack/Projects/Staff Grant Extension",
+                      },
+                    },
+                    {
+                      label: "Task Submission & Redesign",
+                      autogenerate: {
+                        directory: "products/ontrack/Projects/Task Submission & Redesign",
+                      },
+                    },
+                    {
+                      label: "Tutor Times",
+                      autogenerate: {
+                        directory: "products/ontrack/Projects/Tutor Times",
+                      },
+                      items: [
+                        {
+                          label: "Documentation",
+                          autogenerate: {
+                            directory: "products/ontrack/Projects/Tutor Times/Documentation",
+                          },
+                        },
+                        {
+                          label: "UML Diagrams",
+                          autogenerate: {
+                            directory: "products/ontrack/Projects/Tutor Times/UML Diagrams",
+                          },
+                        },
+                      ]
+                    },
+                  ]
                 },
                 {
                   label: "Documentation",
                   autogenerate: {
-                    directory: "products/courseflow/Documentation",
+                    directory: "products/ontrack/Documentation",
                   },
                   items: [
                     {
-                      label: "Design",
+                      label: "Deployment",
                       autogenerate: {
-                        directory: "products/courseflow/Documentation/design",
+                        directory: "products/ontrack/Documentation/Deployment",
+                      },
+                      items: [
+                        {
+                          label: "Enhanced_Authentication",
+                          autogenerate: {
+                            directory: "products/ontrack/Documentation/Deployment/Enhanced_Authentication",
+                          }
+                        },
+                        {
+                          label: "Google_Cloud",
+                          autogenerate: {
+                            directory: "products/ontrack/Documentation/Deployment/Google_Cloud",
+                          }
+                        },
+                      ]
+                    },
+                    {
+                      label: "Documentation",
+                      autogenerate: {
+                        directory: "products/ontrack/Documentation/Documentation",
                       },
                     },
                     {
-                      label: "Research",
+                      label: "File Submission Enhancements",
                       autogenerate: {
-                        directory: "products/courseflow/Documentation/research",
+                        directory: "products/ontrack/Documentation/File Submission Enhancements",
                       },
                     },
                     {
-                      label: "Meeting Minutes",
+                      label: "Front-End-Migration",
                       autogenerate: {
-                        directory: "products/courseflow/Documentation/Meeting-Minutes",
+                        directory: "products/ontrack/Documentation/Front-End-Migration",
+                      },
+                    },
+                    {
+                      label: "Incorporate Content Ontrack",
+                      autogenerate: {
+                        directory: "products/ontrack/Documentation/Incorporate Content Ontrack",
+                      },
+                    },
+                    {
+                      label: "Jupyter Notebook",
+                      autogenerate: {
+                        directory: "products/ontrack/Documentation/Jupyter Notebook",
+                      },
+                    },
+                    {
+                      label: "Multiple Organisations",
+                      autogenerate: {
+                        directory: "products/ontrack/Documentation/Multiple Organisations",
+                      },
+                    },
+                    {
+                      label: "Voice Verification",
+                      autogenerate: {
+                        directory: "products/ontrack/Documentation/Voice Verification",
                       },
                     },
                   ],
                 },
-              ],
-            },
-            {
-              label: "Issues and Resolutions",
-              autogenerate: {
-                directory: "products/courseflow/issues-and-resolutions",
-              },
-            },
-          ],
-        },
-        {
-          label: "OnTrack",
-          items: [
-            {
-              label: "Get to Know Us",
-              link: "/products/ontrack/example",
-            },
-            {
-              label: "Projects",
-              autogenerate: {
-                directory: "products/ontrack/projects",
-              },
-            },
-            {
-              label: "Documentation",
-              autogenerate: {
-                directory: "products/ontrack/documentation",
-              },
-              items: [
                 {
-                  label: "Front End Migration",
+                  label: "Issues-and-resolutions",
                   autogenerate: {
-                    directory: "products/ontrack/documentation/front-end-migration",
+                    directory: "products/ontrack/Issues-and-resolutions",
                   },
                 },
                 {
-                  label: "Numbas",
+                  label: "Ontrack-setup",
                   autogenerate: {
-                    directory: "products/ontrack/documentation/numbas",
-                  },
-                },
-                {
-                  label: "Deployment",
-                  autogenerate: {
-                    directory: "products/ontrack/documentation/deployment",
+                    directory: "products/ontrack/Ontrack-setup",
                   },
                 },
               ],
             },
-            {
-              label: "Issues and Resolutions",
-              autogenerate: {
-                directory: "products/ontrack/issues-and-resolutions",
-              },
-            },
           ],
         },
-        {
+          {
           label: "SplashKit",
           items: [
             {
