@@ -1,0 +1,250 @@
+---
+title: University of Melbourne Course Planner Research
+description:
+  Research spike covering analysis of the course planner provided by the University of Melbourne.
+---
+
+- [1 - Introduction](#1---introduction)
+- [2 - Features of the Course Planner](#2---features-of-the-course-planner)
+  - [2.1 - Entry Point](#21---entry-point)
+  - [2.2 - On Creation of Course Planner](#22---on-creation-of-course-planner)
+  - [2.3 - Main Page](#23---main-page)
+  - [2.4 - Subject Cards](#24---subject-cards)
+  - [2.5 - Detailed Subject Panels](#25---detailed-subject-panels)
+  - [2.6 - Subject Panel](#26---subject-panel)
+- [3 - Data analysis](#3---data-analysis)
+  - [3.1 - Subjects Data](#31---subjects-data)
+  - [3.2 - Requirements/Rules Data](#32---requirementsrules-data)
+- [4 - Key Takeaways in Context of CourseFlow](#4---key-takeaways-in-context-of-courseflow)
+  - [4.1 - Unit Modelling](#41---unit-modelling)
+  - [4.2 - Requirements Modelling](#42---requirements-modelling)
+- [5 - Final Remarks](#5---final-remarks)
+
+## 1 - Introduction
+
+---
+
+This document will provide an analysis of the University of Melbourne's course planner system.
+
+For reference, the URL to the course planner is:
+
+[University of Melbourne Course Planner](https://course-planner.unimelb.edu.au/)
+
+To avoid any potential issues in terms of including images from a University of Melbourne owned
+website, please use the above link to explore the course planner tool while following this document.
+
+## 2 - Features of the Course Planner
+
+---
+
+This section will describe the key features of the course planner.
+
+### 2.1 - Entry Point
+
+The entry point of the course planner allows you to create a new plan. Here, you have the ability to
+select your course level (Undergraduate or Graduate), the course itself, commenced year and which
+portion of the year you started (start or mid-way).
+
+Since CourseFlow will be included as a feature of OnTrack, and students will therefore already have
+an assigned course, these features present in the UoM course planner will likely be redundant for
+CourseFlow in the near future.
+
+### 2.2 - On Creation of Course Planner
+
+This initial transition is important to capture as it will be relevant to CourseFlow and the
+discussions around course templates.
+
+On creation of a new course planner, an overlay window will appear and present a number of samples
+that can be used to populate the course planner. For this run, Bachelor of Science was selected and
+the samples covered numerous majors in different specializations such as Bioengineering and Data
+Science etc.
+
+Upon selection of Computing and Software Systems, the course planner was auto populated with units
+associated with that major.
+
+A similar feature was discussed for CourseFlow to auto-populate a new course map with core units for
+a particular course.
+
+### 2.3 - Main Page
+
+The main page is similar to CourseFlow in terms of intended functionality. Here, users can see
+course requirements, add/update/remove/move units and have them clearly grouped by the study period
+and year.
+
+Key things to note:
+
+- User has ability to select a slot and choose a unit.
+- Slots are grouped by semester and semesters are grouped by year.
+  - You can overload and add an additional slot.
+- No indication of ability to add extra years. However, you can add additional semesters (for UoM,
+  they are known as summer and winter term).
+- Course requirements has a panel with subsections (accordions) and visuals to indicate if you meet
+  that requirement or not.
+
+### 2.4 - Subject Cards
+
+These are the cards representing a subject.
+
+Key observations:
+
+- Heading to indicate if subject is compulsory, discipline specific or a breadth subject for the
+  course.
+- Other information also include subject code, level, credit points, name of unit and the semesters
+  they are available in.
+- Clicking the 3 dotted button will show more options such as details, change and remove.
+- Visual indicator (in the form of an x) will tell users if rules of the subject has not been met.
+
+Unit cards are a planned feature for CourseFlow with likely less information populating the cards.
+
+### 2.5 - Detailed Subject Panels
+
+This essentially provides a full description of the subject, along with assessment information and
+subject rules (basically subject requirements).
+
+Similar to the main page, there are visuals to indicate if you meet the subject requirements.
+
+The key things to note:
+
+- In cases where users have a choice of different prerequisite pathways to take, the system simply
+  displays this in the rules panel and rules being met will update independently.
+- Some subjects have VCE related prerequisite which is tracked manually by the user via a slide
+  toggle.
+
+Given the focus of CourseFlow will be on course planning and seeing if requirements are met for
+course/units, it will not follow the same system here in displaying other information such as the
+full description, coordinate information (equivalent to unit chairs) and assessment etc. Instead,
+CourseFlow will utilize the unit information website and simply provide the link or embed the page
+via an IFrame.
+
+Requirements/rules of the unit for CourseFlow will still need to be displayed with progression
+tracking.
+
+### 2.6 - Subject Panel
+
+Upon clicking the add a subject button, a window/panel will pop out and provide the user to select a
+subject. The main thing to note regarding this is that you can filter subjects by level, study
+period and area of study, with the toggles to only show breadth and/or discipline subjects.
+
+Courseflow will be implementing a similar feature where users can filter units based on interest
+areas. Additional filters can be considered.
+
+## 3 - Data analysis
+
+---
+
+To help rationalize how this course planner works and relate it to CourseFlow to draw in inspiration
+for CourseFlow's data modelling, an analysis of the data needs to be done.
+
+Upon adding a subject in the course planner, json data is returned which can be used for this
+analysis.
+
+### 3.1 - Subjects Data
+
+The key and relevant data include:
+
+- Course planner itself with subject assignment with reference to a subject record id.
+- Full subject information for the subjects that have been placed on the course planner:
+- There is a published year and version field which might be a good way to keep track of different
+  versions of a subject (2023.3).
+- In terms of the subject data itself, one key thing to note that is going to be important for
+  CourseFlow is the availability field that contains an array of JSON objects which detail
+  information such as:
+  - Campus
+  - Mode of delivery (on campus etc.)
+  - Study period (semester 1 etc.)
+  - Period start and end date.
+  - Year
+
+### 3.2 - Requirements/Rules Data
+
+In terms of subject requirements, it seems that this system keeps track of individual requirements
+for a subject via the recordId. This also applies to the course requirements where it is tracked as
+an individual entry via the recordId of the course.
+
+Other key factors to note include:
+
+- Each rule has a rule type such as progression, points constraint or count-constraint etc.
+- Each rule has a section that the rule falls under such as pre-requisites.
+- Some rules have a progress field that keeps track of information relevant to the rule.
+  - For example, a count constraint for adding of two subjects into the course map will have a
+    minimum, maximum and current count field where current count keeps track of those subjects being
+    present or not.
+  - In addition to this, there is a field for an array referencing each of those required units.
+
+## 4 - Key Takeaways in Context of CourseFlow
+
+---
+
+There are two major takeaways from this analysis that can be beneficial to the data modelling in
+CourseFlow.
+
+### 4.1 - Unit Modelling
+
+One of the challenges with CourseFlow was the handling of unit data with the following
+considerations:
+
+- OnTrack already has a unit table for unit definitions.
+- Keeping track of multiple versions of the same unit.
+  - Unit information and requirements could change in future trimesters.
+  - Not sure if this has happened before but this could have an impact on students depending on when
+    they started their course and the units taken leading up to the changed unit in question where
+    changes could impact their eligibility.
+  - Also, completed/placed units from previous trimesters or years would still need to be available
+    despite the change purely for the course map.
+  - This means the system needs to keep track of unit "history".
+- Unit offerings in different teaching periods also need to be tracked.
+
+Based on the analysis of the course planner data, possible solutions to explore include:
+
+- Maintaining the OnTrack unit table as the ground truth of the current unit.
+- Maintaining a separate course flow unit table with instances of the OnTrack unit:
+  - This can also keep track of the version of the unit. Depending on the rules set (previously
+    taken units, course commencement), this version field can allow for units with the relevant
+    versions to be sent to the client side for setting in the course map.
+  - More likely than not though, we will only be tracking each unit instance on a per study period
+    and year basis. Different version numbers will exist just in case.
+- We can either have the same version of the unit appear multiple times for different teaching
+  periods or have a separate table that instantiates different unit versions for the available
+  teaching periods.
+
+### 4.2 - Requirements Modelling
+
+Basically, we can follow a similar procedure to UoM's course planner where:
+
+- Have a generic requirements table that can cover multiple requirement types (or we can split into
+  separate tables if it clutters too much).
+- For example, if we have something similar to the count constraint for a unit's pre-requisite:
+  - We keep track of a progress json object inside a field which contains the minimum, maximum and
+    current count (exactly like the data from UoM course planner) or have them as separate fields in
+    the table.
+  - We keep track of the required units.
+  - If we have two unit requirements, then the minimum will be set to 2, meaning both need to be
+    completed.
+  - The requirement visuals for the unit on the client side will track each unit individually based
+    on their presence in the course map and update a progression visual.
+- If we have a situation where we can choose between two units for a unit's pre-requisite:
+  - Then we do exactly as above but set the minimum to 1.
+- Handling of requirement options where the user can choose between requirements (for example,
+  picking a major sequence out of multiple options):
+  - Similar to the UoM system, each requirement will have an entry.
+  - The progression to completing the major sequence based on units placed in the course map will be
+    tracked on an individual basis.
+  - Users won't need to "choose/commit" to an option.
+  - This means that you could have a situation where progression to multiple major sequences will be
+    seen.
+  - Much like how pre-requisites can be referenced in a count constraint, we could introduce the
+    same for a group of choice based requirements and utilize the progress field in a similar
+    fashion.
+  - It would be good if a solution can be obtained for users to choose an option for a choice based
+    requirement (such as picking a major sequence out of the given options) and have those
+    requirements solely displayed. This will make the requirements less cluttered and more concise.
+
+## 5 - Final Remarks
+
+---
+
+Overall, the analysis of UoM's course planner was incredibly insightful and has provided inspiration
+for possible approaches to modelling of data for CourseFlow, especially with units and requirements.
+
+More details with concrete descriptions and entity relationship diagrams will be provided in a new
+document.
