@@ -3,6 +3,7 @@
     "allowed_elements": ["ul", "li", "img", "details", "summary"]
   },
   "MD013": {
+    "line_length": 100,
     "tables": false
   }
 }
