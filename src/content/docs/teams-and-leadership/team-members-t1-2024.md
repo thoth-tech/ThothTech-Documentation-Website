@@ -4,8 +4,8 @@ title: Team Members T1 2024
 
 ## Company Operations
 
-| Project Member       | Role         | Responsibilities                                                                       |
-| -------------------- | ------------ | -------------------------------------------------------------------------------------- |
+| Project Member                | Role         | Responsibilities                                                                       |
+| ----------------------------- | ------------ | -------------------------------------------------------------------------------------- |
 | Eisen Lai                     | Product Lead | Organise meeting, create technical documents, assign tasks to team members, and so on. |
 | Shiyu Chen                    | Team Member  | Work on assigned cards on Trello                                                       |
 | Shyama Chandrashekaran Pillai | Team Member  | Work on assigned cards on Trello                                                       |
@@ -14,10 +14,10 @@ title: Team Members T1 2024
 
 ## OnTrack
 
-| Project Member            | Role         | Responsibilities                            |
-| ------------------------- | ------------ | ------------------------------------------- |
+| Project Member                           | Role               | Responsibilities                            |
+| ---------------------------------------- | ------------------ | ------------------------------------------- |
 | Satika Jayawardena                       | Communication Lead | Distribute Tasks, Implement Numbas project. |
-| Josh Kilinc                              | Code Lead          | Distribute Tasks, Implement Numbas project.   |
+| Josh Kilinc                              | Code Lead          | Distribute Tasks, Implement Numbas project. |
 | Minh Tho Duong                           | Team Member        | Work on Trello tasks for various projects   |
 | Jayani Vimukthika Vithanage              | Team Member        | Work on Trello tasks for various projects   |
 | Withanage Samadhi Dhananjana Weerasingha | Team Member        | Work on Trello tasks for various projects   |
@@ -37,8 +37,8 @@ title: Team Members T1 2024
 
 ## SplashKit
 
-| Project Member  | Role         | Responsibilities                     |
-| --------------- | ------------ | ------------------------------------ |
+| Project Member           | Role         | Responsibilities                     |
+| ------------------------ | ------------ | ------------------------------------ |
 | Aditya Parmar            | Product Lead | Team management, Code, Documentation |
 | Sean Boettger            | Product Lead | Team management, Code, Documentation |
 | Satyam Raina             | Team member  | Code, Documentation                  |
