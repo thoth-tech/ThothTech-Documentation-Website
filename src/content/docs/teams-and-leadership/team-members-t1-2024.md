@@ -42,7 +42,7 @@ title: Team Members T1 2024
 | Aditya Parmar            | Product Lead | Team management, Code, Documentation |
 | Sean Boettger            | Product Lead | Team management, Code, Documentation |
 | Satyam Raina             | Team member  | Code, Documentation                  |
-| Hayden Hughes            | Team member  | Code, Documentation                  |
+| Hayley Hughes            | Team member  | Code, Documentation                  |
 | Ashley Thompson          | Team member  | Code, Documentation                  |
 | Wenzong Xuan             | Team member  | Code, Documentation                  |
 | Avenue Joju              | Team member  | Code, Documentation                  |
@@ -61,4 +61,4 @@ title: Team Members T1 2024
 | Kartik Kaushik           | Team member  | Code, Documentation                  |
 | Thomas James Shanahan    | Team member  | Code, Documentation                  |
 | Ka Chun Lam              | Team member  | Code, Documentation                  |
-| James Stuart Balsillie   | Team member  | Code, Documentation                  |
+| Jess Balsillie           | Team member  | Code, Documentation                  |
