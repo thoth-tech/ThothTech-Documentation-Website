@@ -20,7 +20,8 @@ few minutes!
 ##### Option 2: Contact your team leader or senior students
 
 If you have specific feedback or concerns that require direct communication, please reach out to
-your team leader or seniro students. This ensures that your feedback is addressed promptly and personally.
+your team leader or seniro students. This ensures that your feedback is addressed promptly and
+personally.
 
 ---
 
@@ -30,8 +31,8 @@ After you submit your feedback:
 
 - **We Review It:** All feedback is reviewed by our team to understand your needs and requirements.
 - **We Plan:** We plan improvements based on the feedback we receive from you and other users.
-- **We Implement:** We try out best to implement changes and improvements continuously to enhance your
-  experience.
+- **We Implement:** We try out best to implement changes and improvements continuously to enhance
+  your experience.
 
 Your input is incredibly valuable to us, and we appreciate the time you take to help us improve. If
 you have any immediate concerns, please don't hesitate to contact our company operation team.
