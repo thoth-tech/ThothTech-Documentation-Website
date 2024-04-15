@@ -96,7 +96,7 @@ team culture:
 Below is the up to date structure of Thoth Tech Company. This is led by the following Managing
 Director - Andrew Cain and Glory Lee.
 
-![Org chart](/team2024T1.png)
+![Org chart](/team2024T1correct.png)
 
 ## Your Impact
 
