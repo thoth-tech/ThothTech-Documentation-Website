@@ -51,9 +51,8 @@ Use the following standard format:
 ```markdown
 Subject: Request for Assistance - Issue with [Task Name]
 
-Backlog: [Backlog Name and Task Name] 
-Component: [Component/Module Name] 
-Repository: [Link to Repository with Problematic Changes]
+Backlog: [Backlog Name and Task Name] Component: [Component/Module Name] Repository: [Link to
+Repository with Problematic Changes]
 
 Related Files:
 
