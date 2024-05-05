@@ -1,0 +1,542 @@
+---
+title: Backend Functional Requirements
+description:
+  Details of what will be required of the backend for CourseFlow within the OnTrack system.
+---
+
+- [Introduction](#introduction)
+- [Course Map](#course-map)
+  - [Routes](#routes)
+  - [Model](#model)
+- [Course Map Unit](#course-map-unit)
+  - [Routes](#routes-1)
+  - [Model](#model-1)
+- [Course](#course)
+  - [Routes](#routes-2)
+  - [Model](#model-2)
+- [Unit](#unit)
+  - [Routes](#routes-3)
+  - [Model](#model-3)
+- [Specialization](#specialization)
+  - [Routes](#routes-4)
+  - [Model](#model-4)
+- [Teaching Period](#teaching-period)
+  - [Routes](#routes-5)
+  - [Model](#model-5)
+- [Requirements](#requirements)
+  - [Routes](#routes-6)
+  - [Model](#model-6)
+- [RequirementsSet](#requirementsset)
+  - [Routes](#routes-7)
+  - [Model](#model-7)
+
+## Introduction
+
+---
+
+This document will provide an overview of the backend requirements of CourseFlow within OnTrack.
+There will be some cross-over of information with other documentation such as the
+enhanced-erd-and-data-modelling document and the software design document.
+
+## Course Map
+
+---
+
+### Routes
+
+Upon entry to the CourseFlow system within OnTrack, the course map associated with the authenticated
+user will need to be fetched or created.
+
+As such, the backend needs to have the following routes to cater for this:
+
+| Endpoint                      | Description                                | Request Body | Response Body |
+| ----------------------------- | ------------------------------------------ | ------------ | ------------- |
+| GET /coursemap/userId         | Get a user's course map via their userId.  | None         | CourseMap     |
+| GET /coursemap/courseId       | Get all course maps via the course id.     | None         | CourseMap[]   |
+| POST /coursemap               | Add a new course map for a user.           | CourseMap    | CourseMap     |
+| PUT /coursemap/coursemapId    | Updates an existing course map via its id. | CourseMap    | CourseMap     |
+| DELETE /coursemap/coursemapId | Deletes an existing course map via its id. | None         | None          |
+
+To further elaborate on each route:
+
+**GET /coursemap/userId**
+
+We need a route to get a course map associated with a user - we can do this via the user id.
+
+**GET /coursemap/courseId**
+
+This specific route is mostly going to be for templates of a course map. Essentially, if we cannot
+find a course map for a user, we will need to trigger a response to add a new course map. Once we
+have the associated course for the student (obtained via mechanisms described below), we can use the
+course id to fetch all course maps with that id that do not have a user id which will be implied to
+be templates (with pre-set course map units at the proper positions).
+
+As mentioned but worth repeating, for this to work properly, this has to only include course map
+data without a user id (we do not want to fetch course maps belonging to other students). When a
+template is chosen, we will create a duplicate of the associated data to be added as new entries for
+both the course map (with the associated user id this time) and the course map units.
+
+**POST /coursemap**
+
+We need to have a way to create a new course map for the user (or a template course map). The client
+side interface presenting a list of courses or mechanism connecting with a student's enrollment will
+be required to associate the course map with a specific course.
+
+**PUT /coursemap/coursemapId**
+
+Technically speaking, there shouldn't be a need to update the course map entry itself since we can
+make direct updates to the course map unit entries. However, the route will be included in case it
+is ever needed.
+
+**DELETE /coursemap/coursemapId**
+
+We need a way to delete a course map. This will also require all course map units associated with
+this course map to be deleted as well.
+
+### Model
+
+The model for the course map will be as follows:
+
+| Field       | Type    | Description                               |
+| ----------- | ------- | ----------------------------------------- |
+| courseMapId | Integer | Auto generated id.                        |
+| userId      | Integer | OnTrack user id.                          |
+| courseId    | Integer | Course id associated with this course map |
+| dateAdded   | Date    | Date this entry was added.                |
+| dateUpdated | Date    | Date this entry was updated.              |
+
+The main thing to note regarding this model is the course id which will need to be obtained before
+creating a new course map entry. This will be utilized to fetch information about the course such as
+requirements etc. For the purposes of this model and the associated POST route, the mechanism in
+getting the associated course itself is not important (as this will be handled separately). The
+options at present involves:
+
+- Getting student enrolment information via an API to Deakin University's systems.
+- Importing student enrolment information.
+- Manually setting the course via a client side user interface (will be an input box resulting in
+  best matching courses based on search query).
+- Associating a course upon creation of the user and have the course map created at this point in
+  time.
+
+This aspect of CourseFlow will require further discussions before more details can be documented
+here.
+
+## Course Map Unit
+
+---
+
+### Routes
+
+This has a strong association with the course map and upon entry into the CourseFlow system, once we
+have the course map associated with the user fetched, we can use the course map id to fetch all
+course map units that belongs to the specific course map.
+
+| Endpoint                              | Description                                                    | Request Body  | Response Body   |
+| ------------------------------------- | -------------------------------------------------------------- | ------------- | --------------- |
+| GET /coursemapunit/courseMapId        | Get a all course map units associated with the course map id.  | None          | CourseMapUnit[] |
+| POST /coursemapunit                   | Add a new course map unit for a user.                          | CourseMapUnit | CourseMapUnit   |
+| PUT /coursemapunit/courseMapUnitId    | Updates an existing course map unit via its id.                | CourseMapUnit | CourseMapUnit   |
+| DELETE /coursemapunit/courseMapUnitId | Deletes an existing course map unit via its id.                | None          | None            |
+| DELETE /coursemapunit/courseMapId     | Deletes all course map units via the associated course map id. | None          | None            |
+
+To further elaborate on each route:
+
+**GET /coursemapunit/courseMapId**
+
+Here, we use the course map id to fetch all course map units associated with that id. This will
+essentially retrieve user/student specific set course map units.
+
+An alternative to having this handled as a separate route is potentially a join operation when
+fetching the course map. In this situation, we combine the course map units together with the course
+map data in the request body.
+
+**POST /coursemapunit**
+
+This is needed to add new course map units for a specific course map.
+
+Please note that for this to be correct, we will not only need to associate this with a course map,
+but also to specific instance of a unit (a unit version that belongs to a specific year and teaching
+period etc.). This is achievable through the client side processes when dragging and dropping (or
+selecting) a unit into the respective slot where the unit Id will be available at that point in
+time.
+
+**PUT /coursemapunit/courseMapUnitId**
+
+This allows for updating a course map unit. The main use case for this is when a user is moving a
+unit around within the course map or performing a swap with another unit. Here, we can make direct
+calls to this route and update the data with new positional information (slot positions for year
+etc.).
+
+**DELETE /coursemapunit/courseMapUnitId**
+
+A simple delete route where we can delete a course map unit via its id. There will be an option
+available on the client side to delete course map units from the course map.
+
+**DELETE /coursemapunit/courseMapId**
+
+This extra delete route will allow for deleting of all course map units based on the course map id.
+This will be useful when deleting the course map which will also require a delete of all course map
+units.
+
+It is worth mentioning that there might be functionality with regards to Ruby on Rails that can
+delete all course map units once the course map has been deleted. If this is the case, this route
+will be redundant and we only need the delete route for the course map.
+
+### Model
+
+The model for the course map unit will be as follows:
+
+| Field              | Type    | Description                  |
+| ------------------ | ------- | ---------------------------- |
+| courseMapUnitId    | Integer | Auto generated id.           |
+| courseMapId        | Integer | Associated course map id.    |
+| unitId             | Integer | Associated unit id.          |
+| yearSlot           | Integer | Year slot.                   |
+| teachingPeriodSlot | Integer | Teaching period slot.        |
+| unitSlot           | Integer | Unit slot.                   |
+| createdAt          | Date    | Date this entry was added.   |
+| updatedAt          | Date    | Date this entry was updated. |
+
+So, the key factors here are:
+
+- Course map id which will associate a specific course map to the respective course map units.
+- Unit id which will associate the course map unit with a unit. This in itself will allow obtaining
+  of unit information such as name, unit code, handbook url and requirements etc.
+- All three slot fields and their respective values will allow for matching to the correct spot on
+  the client side visuals. For example:
+  - If we have 2021 as a year slot value, the unit will go to the 2021 container.
+  - If teaching period slot is 1, the unit will go to the teaching period container inside the
+    respective year container associated with that value (in the case of Deakin, this will be
+    associated to the Trimester 1 slot).
+  - If the unit slot is 4, this will go to the 4th unit slot within the respective teaching period
+    container.
+
+## Course
+
+---
+
+### Routes
+
+The routes involved with this will be relatively straightforward.
+
+| Endpoint                | Description                                         | Request Body | Response Body |
+| ----------------------- | --------------------------------------------------- | ------------ | ------------- |
+| GET /course             | Get all course data.                                | None         | Course[]      |
+| GET /course/courseId    | Get a course by id.                                 | None         | Course        |
+| GET /course/search      | Get courses that partially match the search params. | None         | Course[]      |
+| POST /course            | Add a new course.                                   | Course       | Course        |
+| PUT /course/courseId    | Updates an existing course via its id.              | Course       | Course        |
+| DELETE /course/courseId | Deletes an existing course via its id.              | None         | None          |
+
+The table above covers the function of each route quite well and thus, further explanation for each
+will be excluded here.
+
+### Model
+
+The Course model will be as follows:
+
+| Field     | Type    | Description                  |
+| --------- | ------- | ---------------------------- |
+| courseId  | Integer | Auto generated id.           |
+| name      | String  | Name of course.              |
+| code      | String  | Course code.                 |
+| year      | Integer | Respective year of course.   |
+| version   | String  | Course version number.       |
+| url       | String  | Link to the course webpage.  |
+| createdAt | Date    | Date this entry was added.   |
+| updatedAt | Date    | Date this entry was updated. |
+
+Here, the main thing worth mentioning is the year, version and url.
+
+In terms of the year and version, this is the way the system keeps track of different versions of
+courses. Technically speaking, a course would likely only have different versions on a per year
+basis. However, to cater for the possibility that a course of a particular year gets updated, it
+would be a good idea to keep a history of this. The course map will keep track of a specific entry
+of a Course which will allow students to load up the correct version of the course (which by
+extension, will allow loading of the correct course requirements which will also be tied to specific
+course versions).
+
+The url will link to the course page which will provide more information about the course (that
+don't need to be present in CourseFlow such as contacts and entry requirements etc.). This can
+either be presented on the client side as a simple link or used to embed the course page within an
+IFrame element.
+
+## Unit
+
+---
+
+### Routes
+
+| Endpoint            | Description                          | Request Body | Response Body |
+| ------------------- | ------------------------------------ | ------------ | ------------- |
+| GET /unit           | Get all units                        | None         | Unit[]        |
+| GET /unit/unitId    | Get a unit by id.                    | None         | Unit          |
+| GET /unit/search    | Get all units by search params       | None         | Unit[]        |
+| POST /unit          | Add a new unit.                      | Unit         | Unit          |
+| PUT /unit/uniteId   | Updates an existing unit via its id. | Unit         | Unit          |
+| DELETE /unit/unitId | Deletes an existing unit via its id. | None         | None          |
+
+With the exception of this route: "GET /unit/specializationId", all other routes can be explained by
+the table above.
+
+**GET /unit/specializationId**
+
+The aim of this route is to cater for the functionality of returning a list of units based on search
+criteria. The search criteria will at this point in time, consist of:
+
+- specializations
+- year
+- level
+- teaching period
+
+In terms of year and level, these fields will be present within the Unit model and we can perform a
+query to include data within the table that conforms to these criteria.
+
+Searching for specializations will require additional considerations. The data modelling for this
+consists of:
+
+- Specializations
+- UnitSpecializations
+- Units
+
+Firstly, we will have a specializations table (more details on routes and model later) which will
+consist of a list of different specializations. The ids for these specializations are used in
+conjunction with the unit id to create a unit specialization entry. In other words, within the
+UnitSpecializations, we can have a single unit marked by the same unit id, appear multiple times,
+each with different specialization ids. This will essentially create the list of specializations
+associated with a specific version of a unit.
+
+On the client side, we would have performed a fetch for all specializations to populate a drop down
+menu or some kind of list where we can select the specializations we want to search for. The data
+here will contain the specialization ids. As such, an approach for this searching functionality is
+to include the list of specialization ids which can be used to query the UnitSpecializations table
+to return back all unit ids which match the specialization ids.
+
+The teaching period search will follow a similar process where teaching periods will be loaded on
+the client side with their ids. Upon selection, we can use the ids and search the Units table for
+all units that match the teaching period ids.
+
+Ultimately, the end result will be a list of units that need to take into consideration all of the
+search parameters and include/exclude units accordingly.
+
+### Model
+
+The model will be as follows:
+
+| Field            | Type    | Description                                                    |
+| ---------------- | ------- | -------------------------------------------------------------- |
+| unitId           | Integer | Auto generated id.                                             |
+| unitOfferingId   | Integer | Unit offering id.                                              |
+| year             | Integer | Respective year of unit.                                       |
+| version          | String  | Unit version number.                                           |
+| level            | Integer | Unit level.                                                    |
+| teachingPeriodId | Integer | Id of the teaching period for this specific entry of the unit. |
+| url              | String  | Link to the unit webpage.                                      |
+| createdAt        | Date    | Date this entry was added.                                     |
+| updatedAt        | Date    | Date this entry was updated.                                   |
+
+The main thing to note here is that each entry of the unit needs to keep track of the Unit Offering
+that it will be based off. Other fields are explained within the description of the table above.
+
+This unit will form the basis of the course map unit which will contain specific course map related
+properties.
+
+## Specialization
+
+---
+
+### Routes
+
+This will be relatively straightforward. We simply need routes that can get/add/update/delete
+specializations.
+
+| Endpoint                                | Description                                    | Request Body   | Response Body    |
+| --------------------------------------- | ---------------------------------------------- | -------------- | ---------------- |
+| GET /specialization                     | Get all specializations.                       | None           | Specialization[] |
+| GET /specialization/specializationId    | Get specialization by id.                      | None           | Specialization   |
+| POST /specialization                    | Add a new specialization.                      | Specialization | Specialization   |
+| PUT /specialization/specializationId    | Updates an existing specialization via its id. | Specialization | Specialization   |
+| DELETE /specialization/specializationId | Deletes an existing specialization via its id. | None           | None             |
+
+### Model
+
+The model will be as follows:
+
+| Field            | Type    | Description                  |
+| ---------------- | ------- | ---------------------------- |
+| specializationId | Integer | Auto generated id.           |
+| specialization   | String  | Specialization name.         |
+| createdAt        | Date    | Date this entry was added.   |
+| updatedAt        | Date    | Date this entry was updated. |
+
+## Teaching Period
+
+---
+
+### Routes
+
+This will also be relatively straightforward. We simply need routes that can get/add/update/delete
+teaching periods.
+
+| Endpoint                                | Description                                     | Request Body   | Response Body    |
+| --------------------------------------- | ----------------------------------------------- | -------------- | ---------------- |
+| GET /teachingperiod                     | Get all teaching periods.                       | None           | TeachingPeriod[] |
+| GET /teachingperiod/teachingperiodId    | Get teaching period via its id.                 | None           | TeachingPeriod   |
+| POST /teachingperiod                    | Add a new teaching period.                      | TeachingPeriod | TeachingPeriod   |
+| PUT /teachingperiod/teachingperiodId    | Updates an existing teaching period via its id. | TeachingPeriod | TeachingPeriod   |
+| DELETE /teachingperiod/teachingperiodId | Deletes an existing teaching period via its id. | None           | None             |
+
+### Model
+
+The model will be as follows:
+
+| Field               | Type    | Description                  |
+| ------------------- | ------- | ---------------------------- |
+| teachingPeriodId    | Integer | Auto generated id.           |
+| teachingPeriodLabel | String  | Name of the teaching period. |
+| year                | Integer | Year of the teaching period. |
+| teachingStart       | Date    | Teaching start date.         |
+| teachingEnd         | Date    | Teaching end date.           |
+| createdAt           | Date    | Date this entry was added.   |
+| updatedAt           | Date    | Date this entry was updated. |
+
+The main thing to note here is that having this model lets us associate units to a specific teaching
+period of a particular year.
+
+## Requirements
+
+---
+
+### Routes
+
+The core factor with the Requirement routes is the ability to fetch requirements based on the unitId
+or courseId.
+
+| Endpoint                          | Description                                 | Request Body | Response Body |
+| --------------------------------- | ------------------------------------------- | ------------ | ------------- |
+| GET /requirement/                 | Get all requirements.                       | None         | Requirement[] |
+| GET /requirement/unitId           | Get all requirements for a given unit id.   | None         | Requirement[] |
+| GET /requirement/courseId         | Get all requirements for a given course id  | None         | Requirement[] |
+| POST /requirement                 | Add a new requirement.                      | Requirement  | Requirement   |
+| PUT /requirement/requirementId    | Updates an existing requirement via its id. | Requirement  | Requirement   |
+| DELETE /requirement/requirementId | Deletes an existing requirement via its id. | None         | None          |
+
+**GET /requirement/unitId and GET /requirement/courseId**
+
+Basically, when we obtain the course data when loading up CourseFlow upon user entry or when loading
+up a specific unit's data, we need to obtain their respective requirements.
+
+This is achievable by using the unitId or courseId and fetching all the requirements in this manner.
+Each requirement will then chain into the respective requirement set through separate requests (or
+through a join operation to retrieve the requirement set together with the requirement itself) which
+will contain more information such as the required list of units to complete.
+
+**POST /requirement**
+
+Adding requirements can be done in the respective sections where we can add new courses or new
+units.
+
+Since some courses (and perhaps some units) can share similar requirements such as the same major
+and minor sequences, it would be worthwhile to include within the interface, a drop down list of
+pre-set requirements. In a similar fashion to the course map templates mentioned earlier, we can
+make use of empty unit and course id entries as a mechanism to indicate that it is a template
+requirement. We can then create an entry based on the template and have the course or unit id added
+on to the data.
+
+### Model
+
+The model of this will be as follows:
+
+| Field                 | Type    | Description                                          |
+| --------------------- | ------- | ---------------------------------------------------- |
+| requirementsId        | Integer | Auto generated id.                                   |
+| unitId                | Integer | Associated unit id.                                  |
+| courseId              | Integer | Associated course id.                                |
+| type                  | String  | The requirement type (count, minimum constrain etc.) |
+| category              | String  | Category of the requirement (pre-requisite etc.)     |
+| description           | String  | A description of what this requirement is.           |
+| minimum               | Integer | The minimum number of units to complete.             |
+| maximum               | Integer | The maximum number of units to complete.             |
+| requirementSetGroupId | Integer | Id of the associated requirement group set.          |
+| createdAt             | Date    | Date this entry was added.                           |
+| updatedAt             | Date    | Date this entry was updated.                         |
+
+This model has a few key factors to consider.
+
+As mentioned, the unit and course id will be how we associate each requirement to the respective
+instance/entry of a unit or course.
+
+The type is an indicator of what type of requirement we are dealing with. We can use the type within
+the client side code to influence the type of checking that needs to be done to update the visuals.
+For example, if we have a Count type where the requirement is completion of Introduction to
+Programming:
+
+- We can set the minimum to 1 and have the requirement set contain the specific unit which the
+  client side will check against with the course map to see if the unit has been set before the unit
+  that requires it.
+- We can also break down the count type to MinimumCount and do the same thing if more specificity is
+  required in the logic handling in the front-end.
+
+Category and description will be utilized by the client side to provide headings and information
+respectively.
+
+Minimum and maximum will be used in conjunction with the type where logic on the client side will
+utilize to see if requirements have been met.
+
+The requirement set group id will be used to fetch all of the entries in the respective table. The
+purpose of this is to get back either a list of units or requirement ids which will be used to chain
+requirements (further information for this provided in the Enhanced erd and data modelling
+document).
+
+It is worth pointing out that at this point in time, the current progress of a student in achieving
+the requirement (complete 5 out of 21 units for example) will not be recorded in the database. The
+primary aim is to have the client side utilize the requirement data in conjunction with the units
+set on the course map (and potentially units marked as complete) to provide visual indicators on the
+client side to show requirement progression.
+
+## RequirementsSet
+
+---
+
+### Routes
+
+This particular entity works in conjunction with Requirements where this provides a mechanism to
+list out required units that belong to a requirement. Additionally, this also provides a way to
+chain requirements to handle requirement choices. The routes will be as follow:
+
+| Endpoint                                  | Description                                     | Request Body | Response Body    |
+| ----------------------------------------- | ----------------------------------------------- | ------------ | ---------------- |
+| GET /requirementset/                      | Get all requirement sets.                       | None         | RequirementSet[] |
+| GET /requirementset/requirementSetGroupId | Get all requirements set for a given group id.  | None         | RequirementSet[] |
+| POST /requirementset                      | Add a new requirement set.                      | Requirement  | RequirementSet   |
+| PUT /requirementset/requirementSetId      | Updates an existing requirement set via its id. | Requirement  | RequirementSet   |
+| DELETE /requirementset/requirementSetId   | Deletes an existing requirement set via its id. | None         | None             |
+
+**GET /requirementset/requirementSetGroupId **
+
+The only route worth elaborating on is this route where we obtain requirement set entries based on
+the group id. Here, we use the group id recorded with a requirement to find all entries associated
+with this id.
+
+For example, if a unit has 2 pre-requisites as a minimum count requirement, the entries of this
+table associated with this requirement will have 2 entries with the same group id. Each entry will
+reference the respective unit id.
+
+### Model
+
+The model will be as follows:
+
+| Field                 | Type    | Description                                                       |
+| --------------------- | ------- | ----------------------------------------------------------------- |
+| requirementSetId      | Integer | Auto generated id.                                                |
+| requirementSetGroupId | Integer | Associated requirement set group id.                              |
+| description           | String  | Description/message of the requirement set if needed.             |
+| unitId                | Integer | Id of the associated unit.                                        |
+| requirementId         | Integer | Id of a chained requirement associated with this requirement set. |
+| createdAt             | Date    | Date this entry was added.                                        |
+| updatedAt             | Date    | Date this entry was updated.                                      |
+
+Most of the explanations regarding how this model will work has already been mentioned. Just to
+further emphasize the point, each instance of this entity will be associated to a requirement and it
+will be our way of tracking a list of units associated with a requirement or chaining to another
+requirement to essentially create a group of selectable requirements.
