@@ -1,19 +1,31 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import starlightBlog from "starlight-blog";
 
 // https://astro.build/config
 export default defineConfig({
-    integrations: [
+  integrations: [
+    starlightBlog(),
     starlight({
       title: "Thoth Tech",
       customCss: ["./src/styles/custom.css"],
       social: {
         github: "https://github.com/thoth-tech",
       },
+      components: {
+        MarkdownContent: "starlight-blog/overrides/MarkdownContent.astro",
+        Sidebar: "starlight-blog/overrides/Sidebar.astro",
+        ThemeSelect: "starlight-blog/overrides/ThemeSelect.astro",
+      },
       sidebar: [
         {
           label: "Processes",
           items: [
+            {
+              label: "Thoth Tech Technology Stack Document",
+              link: "processes/thoth-tech-technology-stack",
+            },
+
             { label: "Introduction", link: "/processes/introduction" },
             {
               label: "Cyber Security Guidelines",
@@ -57,6 +69,12 @@ export default defineConfig({
           },
         },
         {
+          label: "Company Wide Submissions",
+          autogenerate: {
+            directory: "companywidesubmissions",
+          },
+        },
+        {
           label: "Reference",
           autogenerate: {
             directory: "reference",
@@ -85,19 +103,65 @@ export default defineConfig({
                 {
                   label: "Projects",
                   autogenerate: {
-                    directory: "products/art-gallery/projects",
+                    directory: "products/art-gallery/Projects",
                   },
+                  items: [
+                    {
+                      label: "Lighthouse",
+                      autogenerate: {
+                        directory: "products/art-gallery/Projects/Lighthouse",
+                      },
+                    },
+                    {
+                      label: "Testing Project",
+                      autogenerate: {
+                        directory: "products/art-gallery/Projects/Testing Project",
+                      },
+                    },
+                  ],
                 },
                 {
                   label: "Documentation",
                   autogenerate: {
-                    directory: "products/art-gallery/documentation",
+                    directory: "products/art-gallery/Documentation",
                   },
+                  items: [
+                    {
+                      label: "BackendUpgrades",
+                      autogenerate: {
+                        directory: "products/art-gallery/Documentation/BackendUpgrades",
+                      },
+                    },
+                    {
+                      label: "Deployment",
+                      autogenerate: {
+                        directory: "products/art-gallery/Documentation/Deployment",
+                      },
+                    },
+                    {
+                      label: "Dockerization",
+                      autogenerate: {
+                        directory: "products/art-gallery/Documentation/Dockerization",
+                      },
+                    },
+                    {
+                      label: "Documentation Project",
+                      autogenerate: {
+                        directory: "products/art-gallery/Documentation/Documentation Project",
+                      },
+                    },
+                    {
+                      label: "Guidance",
+                      autogenerate: {
+                        directory: "products/art-gallery/Documentation/Guidance",
+                      },
+                    },
+                  ],
                 },
                 {
                   label: "Issues and Resolutions",
                   autogenerate: {
-                    directory: "products/art-gallery/issues-and-resolution",
+                    directory: "products/art-gallery/Issues-and-Resolutions",
                   },
                 },
               ],
@@ -124,7 +188,13 @@ export default defineConfig({
                     {
                       label: "Thoth Tech Website",
                       autogenerate: {
-                        directory: "products/company-operations/projects/thoth-tech-website",
+                        directory: "products/company-operations/projects/Thoth-Tech-Website",
+                      },
+                    },
+                    {
+                      label:"Onboarding Tool",
+                      autogenerate: {
+                        directory: "products/company-operations/projects/onboaring-tool",
                       },
                     },
                   ],
@@ -155,17 +225,19 @@ export default defineConfig({
                   autogenerate: {
                     directory: "products/courseflow/projects",
                   },
-                },
-                {
-                  label: "Documentation",
-                  autogenerate: {
-                    directory: "products/courseflow/documentation",
-                  },
+                  items: [
+                    {
+                      label: "2FA - Documentation",
+                      autogenerate: {
+                        directory: "products/courseflow/Projects/2FA - Documentation",
+                      },
+                    },
+                  ]
                 },
                 {
                   label: "Issues and Resolutions",
                   autogenerate: {
-                    directory: "products/courseflow/issues-and-resolution",
+                    directory: "products/courseflow/issues-and-resolutions",
                   },
                 },
               ],
@@ -180,71 +252,221 @@ export default defineConfig({
                 {
                   label: "Projects",
                   autogenerate: {
-                    directory: "products/ontrack/projects",
-                  },
-                },
-                {
-                  label: "Documentation",
-                  autogenerate: {
-                    directory: "products/ontrack/documentation",
+                    directory: "products/ontrack/Projects",
                   },
                   items: [
                     {
-                      label: "Front End Migration",
+                      label: "Group_Task_Submission",
                       autogenerate: {
-                        directory: "products/ontrack/documentation/front-end-migration",
+                        directory: "products/ontrack/Projects/Group_Task_Submission",
                       },
                     },
                     {
                       label: "Numbas",
                       autogenerate: {
-                        directory: "products/ontrack/documentation/numbas",
+                        directory: "products/ontrack/Projects/Numbas",
                       },
                     },
-                  ],
-                },
-                {
-                  label: "Issues and Resolutions",
-                  autogenerate: {
-                    directory: "products/ontrack/issues-and-resolution",
-                  },
-                },
-              ],
-            },
-            {
-              label: "SplashKit",
-              items: [
-                {
-                  label: "Get to Know Us",
-                  link: "/products/splashkit/example",
-                },
-                {
-                  label: "Projects",
-                  autogenerate: {
-                    directory: "products/splashkit/projects",
-                  },
+                    {
+                      label: "Staff Grant Extension",
+                      autogenerate: {
+                        directory: "products/ontrack/Projects/Staff Grant Extension",
+                      },
+                    },
+                    {
+                      label: "Task Submission & Redesign",
+                      autogenerate: {
+                        directory: "products/ontrack/Projects/Task Submission & Redesign",
+                      },
+                    },
+                    {
+                      label: "Tutor Times",
+                      autogenerate: {
+                        directory: "products/ontrack/Projects/Tutor Times",
+                      },
+                      items: [
+                        {
+                          label: "Documentation",
+                          autogenerate: {
+                            directory: "products/ontrack/Projects/Tutor Times/Documentation",
+                          },
+                        },
+                        {
+                          label: "UML Diagrams",
+                          autogenerate: {
+                            directory: "products/ontrack/Projects/Tutor Times/UML Diagrams",
+                          },
+                        },
+                      ]
+                    },
+                  ]
                 },
                 {
                   label: "Documentation",
                   autogenerate: {
-                    directory: "products/splashkit/documentation",
+                    directory: "products/ontrack/Documentation",
                   },
                   items: [
                     {
-                      label: "Applications",
+                      label: "Deployment",
                       autogenerate: {
-                        directory: "products/splashkit/documentation/applications",
+                        directory: "products/ontrack/Documentation/Deployment",
+                      },
+                      items: [
+                        {
+                          label: "Enhanced_Authentication",
+                          autogenerate: {
+                            directory: "products/ontrack/Documentation/Deployment/Enhanced_Authentication",
+                          }
+                        },
+                        {
+                          label: "Google_Cloud",
+                          autogenerate: {
+                            directory: "products/ontrack/Documentation/Deployment/Google_Cloud",
+                          }
+                        },
+                      ]
+                    },
+                    {
+                      label: "Documentation",
+                      autogenerate: {
+                        directory: "products/ontrack/Documentation/Documentation",
+                      },
+                    },
+                    {
+                      label: "File Submission Enhancements",
+                      autogenerate: {
+                        directory: "products/ontrack/Documentation/File Submission Enhancements",
+                      },
+                    },
+                    {
+                      label: "Front-End-Migration",
+                      autogenerate: {
+                        directory: "products/ontrack/Documentation/Front-End-Migration",
+                      },
+                    },
+                    {
+                      label: "Incorporate Content Ontrack",
+                      autogenerate: {
+                        directory: "products/ontrack/Documentation/Incorporate Content Ontrack",
+                      },
+                    },
+                    {
+                      label: "Jupyter Notebook",
+                      autogenerate: {
+                        directory: "products/ontrack/Documentation/Jupyter Notebook",
+                      },
+                    },
+                    {
+                      label: "Multiple Organisations",
+                      autogenerate: {
+                        directory: "products/ontrack/Documentation/Multiple Organisations",
+                      },
+                    },
+                    {
+                      label: "Voice Verification",
+                      autogenerate: {
+                        directory: "products/ontrack/Documentation/Voice Verification",
                       },
                     },
                   ],
                 },
                 {
-                  label: "Issues and Resolutions",
+                  label: "Issues-and-resolutions",
                   autogenerate: {
-                    directory: "products/splashkit/issues-and-resolution",
+                    directory: "products/ontrack/Issues-and-resolutions",
+                  },
+                },
+                {
+                  label: "Ontrack-setup",
+                  autogenerate: {
+                    directory: "products/ontrack/Ontrack-setup",
                   },
                 },
               ],
+            },
+          ],
+        },
+          {
+          label: "SplashKit",
+          items: [
+            {
+              label: "Get to Know Us",
+              link: "/products/splashkit/example",
+            },
+            {
+              label: "Projects",
+              autogenerate: {
+                directory: "products/splashkit/projects",
+              },
+            },
+            {
+              label: "Documentation",
+              autogenerate: {
+                directory: "products/splashkit/documentation",
+              },
+              // items: [
+              //   {
+              //     label: "Applications",
+              //     autogenerate: {
+              //       directory: "products/splashkit/documentation/applications",
+              //     },
+              //   },
+              // ],
+              items: [
+                {
+                  label: "Tutorials",
+                  autogenerate: {
+                    directory: "products/splashkit/documentation/tutorials",
+                  },
+                },
+                {
+                  label: "Expansions",
+                  autogenerate: {
+                    directory: "products/splashkit/documentation/expansions",
+                  },
+                },
+                {
+                  label: "SplashKit Online",
+                  autogenerate: {
+                    directory: "products/splashkit/documentation/splashkit-online",
+                  },
+                  items: [
+                    {
+                      label: "Code Documentation",
+                      autogenerate: {
+                        directory: "products/splashkit/documentation/splashkit-online/code-documentation",
+                      },
+                      items: [
+                        {
+                          label: "Classes",
+                          autogenerate: {
+                            directory: "products/splashkit/documentation/splashkit-online/code-documentation/classes",
+                          },
+                        },
+                        {
+                          label: "Processes",
+                          autogenerate: {
+                            directory: "products/splashkit/documentation/splashkit-online/code-documentation/processes",
+                          },
+                        },
+                        {
+                          label: "Other",
+                          autogenerate: {
+                            directory: "products/splashkit/documentation/splashkit-online/code-documentation/other",
+                          },
+                        },
+                      ]
+                    },
+                  ]
+                },
+              ],
+            },
+            {
+              label: "Issues and Resolutions",
+              autogenerate: {
+                directory: "products/splashkit/issues-and-resolutions",
+              },
             },
           ],
         },
