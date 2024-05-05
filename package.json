@@ -17,7 +17,10 @@
     "@astrojs/netlify": "^3.0.0",
     "@astrojs/starlight": "^0.13.0",
     "astro": "^3.6.0",
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
     "sharp": "^0.32.3",
+    "simple-git": "^3.24.0",
     "starlight": "^0.3.9",
     "starlight-blog": "^0.4.0"
   },
