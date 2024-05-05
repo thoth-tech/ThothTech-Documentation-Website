@@ -248,6 +248,12 @@ export default defineConfig({
             },
           ],
         },
+        {
+          label: "Request for help",
+          autogenerate: {
+            directory: "Request-for-help",
+          },
+        },
       ],
     }),
   ],
