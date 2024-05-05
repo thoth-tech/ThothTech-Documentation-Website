@@ -2,11 +2,10 @@
 title: How to Request Help When Encountering an Issue
 ---
 
-# How to Request Help When Encountering an Issue
-
 When you encounter an error during a task, it's essential to seek assistance promptly to minimize
-delays and ensure smooth project progress. Follow these steps to submit a request for help on your
-team channel:
+delays and ensure smooth project progress. If you submit a request for help, it will be better to
+provide clear and detailed information to streamline the troubleshooting process. Follow these steps
+to submit a request for help on your team channel:
 
 ## 1. Identify Your Team Channel
 
@@ -21,7 +20,7 @@ Use the following standard format:
 **Content you need to provide:**
 
 - **Backlog:**  
-  Provide the task name from the backlog.
+  Provide the Backlog name and task name.
 
 - **Component:**  
   Specify the component or module you are working on.
@@ -50,10 +49,11 @@ Use the following standard format:
 ## 3. Example Message
 
 ```markdown
-Subject: Urgent: Request for Assistance - Issue with [Task Name]
+Subject: Request for Assistance - Issue with [Task Name]
 
-Backlog: [Task Name from Backlog] Component: [Component/Module Name] Repository: [Link to Repository
-with Problematic Changes]
+Backlog: [Backlog Name and Task Name] 
+Component: [Component/Module Name] 
+Repository: [Link to Repository with Problematic Changes]
 
 Related Files:
 
