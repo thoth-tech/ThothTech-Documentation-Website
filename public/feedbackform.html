@@ -78,7 +78,7 @@
         <input type="radio" id="star1" name="rating" value="1" /><label for="star1">★</label>
       </div>
 
-    <form class="feedback-form" action="/submitsuccess.html" method="post">
+    <form class="feedback-form" action="https://api.web3forms.com/submit" method="post">
         <input type="text" name="name" placeholder="Name" required>
         <input type="email" name="email" placeholder="Email" required>
         <div>
@@ -87,6 +87,7 @@
           <input type="radio" id="improvement" name="feedback_type" value="improvement" />
           <label for="improvement">Improvement Idea</label>
         </div>
+        <input type="hidden" name="access_key" value="2f6518a2-a330-4048-b003-4584019c7344">
         <textarea name="comment" placeholder="Add your feedback" rows="4" required></textarea>
         <input type="submit" value="SUBMIT" />
       </form>
