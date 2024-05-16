@@ -1,17 +1,23 @@
 ---
-Title: Documentation Backlog - Rails Backend
+title: Documentation Backlog - Rails Backend
 ---
 
 # Doubtfire API
 
+## Student Name: Zhongyu Zhang
+
+## Student ID: 222076406
+
 ## User Authentication and Management (Devise)
 
 ### Sign In
+
 - **Request Method**: GET
 - **URL**: `/users/sign_in`
 - **Parameters**: None
 - **Response Format**: HTML
 - **Example**:
+
   ```html
   <form action="/users/sign_in" method="post">
     <!-- form fields -->
@@ -31,6 +37,7 @@ Title: Documentation Backlog - Rails Backend
   ```
 - **Response Format**: JSON
 - **Example**:
+
   ```json
   {
     "message": "Signed in successfully."
@@ -49,11 +56,13 @@ Title: Documentation Backlog - Rails Backend
   ```
 
 ### Password Management
+
 - **Request Method**: GET
 - **URL**: `/users/password/new`
 - **Parameters**: None
 - **Response Format**: HTML
 - **Example**:
+
   ```html
   <form action="/users/password" method="post">
     <!-- form fields -->
@@ -65,6 +74,7 @@ Title: Documentation Backlog - Rails Backend
 - **Parameters**: None
 - **Response Format**: HTML
 - **Example**:
+
   ```html
   <form action="/users/password" method="post">
     <!-- form fields -->
@@ -92,11 +102,13 @@ Title: Documentation Backlog - Rails Backend
   ```
 
 ### User Registration
+
 - **Request Method**: GET
 - **URL**: `/users/sign_up`
 - **Parameters**: None
 - **Response Format**: HTML
 - **Example**:
+
   ```html
   <form action="/users" method="post">
     <!-- form fields -->
@@ -108,6 +120,7 @@ Title: Documentation Backlog - Rails Backend
 - **Parameters**: None
 - **Response Format**: HTML
 - **Example**:
+
   ```html
   <form action="/users" method="post">
     <!-- form fields -->
@@ -137,6 +150,7 @@ Title: Documentation Backlog - Rails Backend
 ## File Downloads
 
 ### Download Course Resources
+
 - **Request Method**: GET
 - **URL**: `/api/submission/unit/:id/portfolio`
 - **Parameters**:
@@ -147,6 +161,7 @@ Title: Documentation Backlog - Rails Backend
   ```
 - **Response Format**: File
 - **Example**:
+
   ```json
   {
     "file": "portfolio.pdf"
@@ -164,6 +179,7 @@ Title: Documentation Backlog - Rails Backend
   ```
 - **Response Format**: File
 - **Example**:
+
   ```json
   {
     "file": "submissions.zip"
@@ -181,6 +197,7 @@ Title: Documentation Backlog - Rails Backend
   ```
 - **Response Format**: File
 - **Example**:
+
   ```json
   {
     "file": "student_pdfs.zip"
@@ -206,6 +223,7 @@ Title: Documentation Backlog - Rails Backend
 ## API Root and Documentation
 
 ### API Root
+
 - **URL**: `/`
 - **Parameters**: None
 - **Response Format**: JSON
@@ -217,6 +235,7 @@ Title: Documentation Backlog - Rails Backend
   ```
 
 ### Swagger API Documentation
+
 - **URL**: `/api/docs`
 - **Parameters**: None
 - **Response Format**: HTML
@@ -232,6 +251,7 @@ Title: Documentation Backlog - Rails Backend
 ## Sidekiq
 
 ### Sidekiq Management Interface
+
 - **URL**: `/sidekiq`
 - **Parameters**: None
 - **Response Format**: HTML
@@ -247,6 +267,7 @@ Title: Documentation Backlog - Rails Backend
 ## Action Mailbox
 
 ### Email Handling
+
 - **Request Method**: POST
 - **URL**: `/rails/action_mailbox/postmark/inbound_emails`
 - **Parameters**:
@@ -262,6 +283,7 @@ Title: Documentation Backlog - Rails Backend
   ```
 - **Response Format**: JSON
 - **Example**:
+
   ```json
   {
     "message": "Email received via Postmark"
@@ -283,6 +305,7 @@ Title: Documentation Backlog - Rails Backend
   ```
 - **Response Format**: JSON
 - **Example**:
+
   ```json
   {
     "message": "Email received via Relay"
@@ -304,6 +327,7 @@ Title: Documentation Backlog - Rails Backend
   ```
 - **Response Format**: JSON
 - **Example**:
+
   ```json
   {
     "message": "Email received via Sendgrid"
@@ -315,6 +339,7 @@ Title: Documentation Backlog - Rails Backend
 - **Parameters**: None
 - **Response Format**: JSON
 - **Example**:
+
   ```json
   {
     "message": "Mandrill health check passed"
@@ -336,6 +361,7 @@ Title: Documentation Backlog - Rails Backend
   ```
 - **Response Format**: JSON
 - **Example**:
+
   ```json
   {
     "message": "Email received via Mandrill"
@@ -366,6 +392,7 @@ Title: Documentation Backlog - Rails Backend
 ## Action Mailbox Conductor
 
 ### Conductor Management Interface
+
 - **Request Method**: GET
 - **URL**: `/rails/conductor/action_mailbox/inbound_emails`
 - **Parameters**: None
@@ -373,30 +400,36 @@ Title: Documentation Backlog - Rails Backend
 - **Example**:
   ```json
   {
-  "inbound_emails": [
-    {
-      "id": "1",
-      "to": "example@domain.com",
-      "from": "sender@domain.com",
-      "subject": "Hello",
-      "body": "Email body"
-    }
-   ]
+    "inbound_emails": [
+      {
+        "id": "1",
+        "to": "example@domain.com",
+        "from": "sender@domain.com",
+        "subject": "Hello",
+        "body": "Email body"
+      }
+    ]
   }
   ```
 
 # Environment Configurations
 
-This section documents the configurations found in the `config/environments` directory of the Rails backend for Ontrack. Each file configures the application behavior for different environments such as development, production, staging, and testing.
+This section documents the configurations found in the `config/environments` directory of the Rails
+backend for Ontrack. Each file configures the application behavior for different environments such
+as development, production, staging, and testing.
 
 ## 1. Development Environment (`development.rb`)
 
 ### Purpose
-The `development.rb` file contains settings specific to the development environment. It prioritizes ease of development and debugging.
+
+The `development.rb` file contains settings specific to the development environment. It prioritizes
+ease of development and debugging.
 
 ### Key Configurations
+
 - **Code Reloading:**
-  - `config.cache_classes = false`: Disables class caching, allowing code changes to be reflected without restarting the server.
+  - `config.cache_classes = false`: Disables class caching, allowing code changes to be reflected
+    without restarting the server.
 - **Eager Loading:**
   - `config.eager_load = false`: Disables eager loading of code on boot.
 - **Error Reporting:**
@@ -404,7 +437,8 @@ The `development.rb` file contains settings specific to the development environm
 - **Caching:**
   - Conditional caching based on environment variables or presence of a file.
   - `config.action_controller.perform_caching = true/false`: Enables or disables caching.
-  - `config.cache_store = :memory_store / :redis_cache_store / :null_store`: Configures the cache store based on environment variables.
+  - `config.cache_store = :memory_store / :redis_cache_store / :null_store`: Configures the cache
+    store based on environment variables.
 - **File Storage:**
   - `config.active_storage.service = :local`: Stores uploaded files on the local file system.
 - **Action Mailer:**
@@ -413,27 +447,37 @@ The `development.rb` file contains settings specific to the development environm
   - `config.action_mailer.delivery_method = :file`: Writes emails to file instead of sending them.
 - **Deprecation Notices:**
   - `config.active_support.deprecation = :log`: Logs deprecation warnings.
-  - `config.active_support.disallowed_deprecation = :raise`: Raises exceptions for disallowed deprecations.
-  - `config.active_support.disallowed_deprecation_warnings = []`: Specifies which deprecation warnings are disallowed.
+  - `config.active_support.disallowed_deprecation = :raise`: Raises exceptions for disallowed
+    deprecations.
+  - `config.active_support.disallowed_deprecation_warnings = []`: Specifies which deprecation
+    warnings are disallowed.
 - **Database:**
-  - `config.active_record.migration_error = :page_load`: Raises an error on page load if there are pending migrations.
-  - `config.active_record.verbose_query_logs = true`: Highlights code that triggered database queries in logs.
+  - `config.active_record.migration_error = :page_load`: Raises an error on page load if there are
+    pending migrations.
+  - `config.active_record.verbose_query_logs = true`: Highlights code that triggered database
+    queries in logs.
 - **File Watcher:**
-  - `config.file_watcher = ActiveSupport::EventedFileUpdateChecker`: Uses an evented file watcher to asynchronously detect changes.
+  - `config.file_watcher = ActiveSupport::EventedFileUpdateChecker`: Uses an evented file watcher to
+    asynchronously detect changes.
 - **Logging:**
   - `config.log_level = :debug`: Sets the logging level to debug.
 - **Miscellaneous:**
-  - `config.action_dispatch.best_standards_support = :builtin`: Uses best-standards-support built into browsers.
+  - `config.action_dispatch.best_standards_support = :builtin`: Uses best-standards-support built
+    into browsers.
   - `Faker::Config.random = Random.new(77)`: Sets deterministic randomness for Faker.
   - `config.pdfgen_quiet = false`: Sets the verbosity of pdfgen logs.
-  - `config.active_record.encryption.key_derivation_salt = ENV['DF_ENCRYPTION_KEY_DERIVATION_SALT'] || 'default_salt'`: Configures ActiveRecord encryption keys.
+  - `config.active_record.encryption.key_derivation_salt = ENV['DF_ENCRYPTION_KEY_DERIVATION_SALT'] || 'default_salt'`:
+    Configures ActiveRecord encryption keys.
 
 ## 2. Production Environment (`production.rb`)
 
 ### Purpose
-The `production.rb` file contains settings specific to the production environment, optimized for performance and security.
+
+The `production.rb` file contains settings specific to the production environment, optimized for
+performance and security.
 
 ### Key Configurations
+
 - **Code Caching:**
   - `config.cache_classes = true`: Enables class caching for better performance.
 - **Caching:**
@@ -448,13 +492,16 @@ The `production.rb` file contains settings specific to the production environmen
 - **I18n:**
   - `config.i18n.fallbacks = true`: Enables locale fallbacks for I18n.
 - **Deprecation Notices:**
-  - `config.active_support.deprecation = :notify`: Sends deprecation notices to registered listeners.
+  - `config.active_support.deprecation = :notify`: Sends deprecation notices to registered
+    listeners.
 - **Middleware:**
-  - `config.middleware.delete Rack::Runtime`: Removes runtime middleware to harden against timing attacks.
+  - `config.middleware.delete Rack::Runtime`: Removes runtime middleware to harden against timing
+    attacks.
 - **Logging:**
   - `config.log_level = :info`: Sets the logging level to info.
 - **Action Mailer:**
-  - `config.action_mailer.perform_deliveries = (ENV['DF_MAIL_PERFORM_DELIVERIES'] || 'yes') == 'yes'`: Configures whether to perform email deliveries.
+  - `config.action_mailer.perform_deliveries = (ENV['DF_MAIL_PERFORM_DELIVERIES'] || 'yes') == 'yes'`:
+    Configures whether to perform email deliveries.
   - `config.action_mailer.delivery_method = :smtp`: Uses SMTP for email delivery.
   - Configures SMTP settings based on environment variables.
 - **ActiveRecord Encryption:**
@@ -463,9 +510,12 @@ The `production.rb` file contains settings specific to the production environmen
 ## 3. Staging Environment (`staging.rb`)
 
 ### Purpose
-The `staging.rb` file configures settings for the staging environment, which mirrors the production environment with minor changes.
+
+The `staging.rb` file configures settings for the staging environment, which mirrors the production
+environment with minor changes.
 
 ### Key Configurations
+
 - **SSL:**
   - `config.force_ssl = false`: Disables forcing SSL.
 - **Logging:**
@@ -476,9 +526,12 @@ The `staging.rb` file configures settings for the staging environment, which mir
 ## 4. Test Environment (`test.rb`)
 
 ### Purpose
-The `test.rb` file contains settings specific to the test environment, optimized for running the application's test suite.
+
+The `test.rb` file contains settings specific to the test environment, optimized for running the
+application's test suite.
 
 ### Key Configurations
+
 - **Code Caching:**
   - `config.cache_classes = true`: Enables class caching for tests.
 - **Static Files:**
@@ -491,9 +544,11 @@ The `test.rb` file contains settings specific to the test environment, optimized
 - **Caching:**
   - `config.action_controller.perform_caching = false`: Disables caching.
 - **Exception Handling:**
-  - `config.action_dispatch.show_exceptions = false`: Raises exceptions instead of rendering templates.
+  - `config.action_dispatch.show_exceptions = false`: Raises exceptions instead of rendering
+    templates.
 - **Request Forgery Protection:**
-  - `config.action_controller.allow_forgery_protection = false`: Disables request forgery protection.
+  - `config.action_controller.allow_forgery_protection = false`: Disables request forgery
+    protection.
 - **Action Mailer:**
   - `config.action_mailer.delivery_method = :test`: Uses the test delivery method for emails.
 - **Deprecation Notices:**
@@ -507,14 +562,18 @@ The `test.rb` file contains settings specific to the test environment, optimized
 
 # Initializer Configurations
 
-This section documents the configurations found in the `config/initializers` directory of the Rails backend for Ontrack. Each file configures the application behavior during the initialization phase.
+This section documents the configurations found in the `config/initializers` directory of the Rails
+backend for Ontrack. Each file configures the application behavior during the initialization phase.
 
 ## 1. Backtrace Silencer (`backtrace_silencers.rb`)
 
 ### Purpose
-This file allows you to add or remove backtrace silencers for libraries you don't wish to see in your backtraces.
+
+This file allows you to add or remove backtrace silencers for libraries you don't wish to see in
+your backtraces.
 
 ### Key Configurations
+
 - **Add Silencer**:
   ```ruby
   # Rails.backtrace_cleaner.add_silencer { |line| line =~ /my_noisy_library/ }
@@ -527,65 +586,79 @@ This file allows you to add or remove backtrace silencers for libraries you don'
 ## 2. Devise Configuration (`devise.rb`)
 
 ### Purpose
+
 This file is used to configure Devise, a flexible authentication solution for Rails.
 
 ### Key Configurations
+
 - **Mailer Configuration**:
+
   ```ruby
   config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
   ```
 
 - **ORM Configuration**:
+
   ```ruby
   require 'devise/orm/active_record'
   ```
 
 - **Authentication Keys**:
+
   ```ruby
   config.authentication_keys = [:username]
   ```
 
 - **Case-Insensitive Keys**:
+
   ```ruby
   config.case_insensitive_keys = [:email, :username]
   ```
 
 - **Whitespace Stripped Keys**:
+
   ```ruby
   config.strip_whitespace_keys = [:email, :username]
   ```
 
 - **Session Storage**:
+
   ```ruby
   config.skip_session_storage = [:http_auth]
   ```
 
 - **Password Length**:
+
   ```ruby
   config.password_length = 8..128
   ```
 
 - **Token Expiry**:
+
   ```ruby
   config.reset_password_within = 6.hours
   ```
 
 - **Sign Out Method**:
+
   ```ruby
   config.sign_out_via = :delete
   ```
 
 - **Navigational Formats**:
+
   ```ruby
   config.navigational_formats = ['*/*', :json]
   ```
 
 - **Secret Key**:
+
   ```ruby
   config.secret_key = Doubtfire::Application.secrets.secret_key_devise if Rails.env.production?
   ```
 
 - **LDAP Configuration**:
+
   ```ruby
   config.ldap_use_admin_to_bind = ENV.fetch('DF_LDAP_USE_ADMIN_TO_BIND', 'false').to_s.downcase != 'false'
   ```
@@ -599,9 +672,11 @@ This file is used to configure Devise, a flexible authentication solution for Ra
 ## 3. Inflections (`inflections.rb`)
 
 ### Purpose
+
 This file is used to add new inflection rules for pluralization and singularization of words.
 
 ### Key Configurations
+
 - **Irregular Inflections**:
   ```ruby
   ActiveSupport::Inflector.inflections do |inflect|
@@ -612,10 +687,13 @@ This file is used to add new inflection rules for pluralization and singularizat
 ## 4. Log Initializer (`log_initializer.rb`)
 
 ### Purpose
+
 This file configures the logging output and format.
 
 ### Key Configurations
+
 - **Log Output to STDOUT**:
+
   ```ruby
   unless Rails.env.test?
     Rails.logger.broadcast_to(ActiveSupport::Logger.new($stdout))
@@ -623,6 +701,7 @@ This file configures the logging output and format.
   ```
 
 - **Custom Log Formatter**:
+
   ```ruby
   class FormatifFormatter < Logger::Formatter
     include ActiveSupport::TaggedLogging::Formatter
@@ -639,9 +718,11 @@ This file configures the logging output and format.
 ## 5. MIME Types (`mime_types.rb`)
 
 ### Purpose
+
 This file allows you to add new MIME types for use in respond_to blocks.
 
 ### Key Configurations
+
 - **Add New MIME Types**:
   ```ruby
   # Mime::Type.register "text/richtext", :rtf
@@ -651,10 +732,13 @@ This file allows you to add new MIME types for use in respond_to blocks.
 ## 6. Session Store (`session_store.rb`)
 
 ### Purpose
+
 This file configures how session data is stored.
 
 ### Key Configurations
+
 - **Cookie Store**:
+
   ```ruby
   Doubtfire::Application.config.session_store :cookie_store, key: '_doubtfire_session'
   ```
@@ -667,10 +751,13 @@ This file configures how session data is stored.
 ## 7. Sidekiq Configuration (`sidekiq.rb`)
 
 ### Purpose
+
 This file configures Sidekiq, a background job processing library.
 
 ### Key Configurations
+
 - **Server Configuration**:
+
   ```ruby
   Sidekiq.configure_server do |config|
     config.redis = { url: ENV.fetch('DF_REDIS_SIDEKIQ_URL', 'redis://localhost:6379/1') }
@@ -689,10 +776,13 @@ This file configures Sidekiq, a background job processing library.
 ## 8. Swagger Configuration (`swagger.rb`)
 
 ### Purpose
+
 This file configures Swagger, a tool for documenting APIs.
 
 ### Key Configurations
+
 - **Swagger URL and App URL**:
+
   ```ruby
   GrapeSwaggerRails.options.url = '/api/swagger_doc'
   GrapeSwaggerRails.options.before_action do
@@ -707,10 +797,13 @@ This file configures Swagger, a tool for documenting APIs.
 ## 9. TurnItIn Initializer (`turn_it_in_initializer.rb`)
 
 ### Purpose
+
 This file initializes the TurnItIn API configuration.
 
 ### Key Configurations
+
 - **Load Configuration**:
+
   ```ruby
   require_relative '../../app/helpers/turn_it_in'
   config = Doubtfire::Application.config
@@ -719,6 +812,7 @@ This file initializes the TurnItIn API configuration.
   ```
 
 - **Background Jobs**:
+
   ```ruby
   if config.tii_enabled
     require 'tca_client'
@@ -741,10 +835,13 @@ This file initializes the TurnItIn API configuration.
 ## 10. Wrap Parameters (`wrap_parameters.rb`)
 
 ### Purpose
+
 This file configures parameter wrapping for JSON requests.
 
 ### Key Configurations
+
 - **Enable Parameter Wrapping for JSON**:
+
   ```ruby
   ActiveSupport.on_load(:action_controller) do
     wrap_parameters format: [:json]
@@ -760,16 +857,20 @@ This file configures parameter wrapping for JSON requests.
 
 # Locale Configurations
 
-This section documents the configurations found in the `config/locales` directory of the Rails backend for Ontrack. Each file contains translations and localization settings for the application.
+This section documents the configurations found in the `config/locales` directory of the Rails
+backend for Ontrack. Each file contains translations and localization settings for the application.
 
 ## 1. Devise Locale (`devise.en.yml`)
 
 ### Purpose
-This file contains the English translations for error messages and notifications used by the Devise authentication library.
+
+This file contains the English translations for error messages and notifications used by the Devise
+authentication library.
 
 ### Key Configurations
 
 - **Error Messages**:
+
   ```yaml
   en:
     errors:
@@ -788,55 +889,71 @@ This file contains the English translations for error messages and notifications
   en:
     devise:
       failure:
-        already_authenticated: 'You are already signed in.'
-        unauthenticated: 'You need to sign in before continuing.'
-        unconfirmed: 'You have to confirm your account before continuing.'
-        locked: 'Your account is locked.'
-        invalid: 'Invalid username or password.'
-        invalid_token: 'Invalid authentication token.'
-        timeout: 'Your session expired, please sign in again to continue.'
-        inactive: 'Your account was not activated yet.'
+        already_authenticated: "You are already signed in."
+        unauthenticated: "You need to sign in before continuing."
+        unconfirmed: "You have to confirm your account before continuing."
+        locked: "Your account is locked."
+        invalid: "Invalid username or password."
+        invalid_token: "Invalid authentication token."
+        timeout: "Your session expired, please sign in again to continue."
+        inactive: "Your account was not activated yet."
       sessions:
-        signed_in: 'Signed in successfully.'
-        signed_out: 'Signed out successfully.'
+        signed_in: "Signed in successfully."
+        signed_out: "Signed out successfully."
       passwords:
-        send_instructions: 'You will receive an email with instructions about how to reset your password in a few minutes.'
-        updated: 'Your password was changed successfully. You are now signed in.'
-        updated_not_active: 'Your password was changed successfully.'
-        send_paranoid_instructions: "If your e-mail exists on our database, you will receive a password recovery link on your e-mail"
+        send_instructions:
+          "You will receive an email with instructions about how to reset your password in a few
+          minutes."
+        updated: "Your password was changed successfully. You are now signed in."
+        updated_not_active: "Your password was changed successfully."
+        send_paranoid_instructions:
+          "If your e-mail exists on our database, you will receive a password recovery link on your
+          e-mail"
       confirmations:
-        send_instructions: 'You will receive an email with instructions about how to confirm your account in a few minutes.'
-        send_paranoid_instructions: 'If your e-mail exists on our database, you will receive an email with instructions about how to confirm your account in a few minutes.'
-        confirmed: 'Your account was successfully confirmed. You are now signed in.'
+        send_instructions:
+          "You will receive an email with instructions about how to confirm your account in a few
+          minutes."
+        send_paranoid_instructions:
+          "If your e-mail exists on our database, you will receive an email with instructions about
+          how to confirm your account in a few minutes."
+        confirmed: "Your account was successfully confirmed. You are now signed in."
       registrations:
-        signed_up: 'Welcome! You have signed up successfully.'
-        inactive_signed_up: 'You have signed up successfully. However, we could not sign you in because your account is %{reason}.'
-        updated: 'You updated your account successfully.'
-        destroyed: 'Bye! Your account was successfully cancelled. We hope to see you again soon.'
+        signed_up: "Welcome! You have signed up successfully."
+        inactive_signed_up:
+          "You have signed up successfully. However, we could not sign you in because your account
+          is %{reason}."
+        updated: "You updated your account successfully."
+        destroyed: "Bye! Your account was successfully cancelled. We hope to see you again soon."
         reasons:
-          inactive: 'inactive'
-          unconfirmed: 'unconfirmed'
-          locked: 'locked'
+          inactive: "inactive"
+          unconfirmed: "unconfirmed"
+          locked: "locked"
       unlocks:
-        send_instructions: 'You will receive an email with instructions about how to unlock your account in a few minutes.'
-        unlocked: 'Your account was successfully unlocked. You are now signed in.'
-        send_paranoid_instructions: 'If your account exists, you will receive an email with instructions about how to unlock it in a few minutes.'
+        send_instructions:
+          "You will receive an email with instructions about how to unlock your account in a few
+          minutes."
+        unlocked: "Your account was successfully unlocked. You are now signed in."
+        send_paranoid_instructions:
+          "If your account exists, you will receive an email with instructions about how to unlock
+          it in a few minutes."
       omniauth_callbacks:
-        success: 'Successfully authorized from %{kind} account.'
+        success: "Successfully authorized from %{kind} account."
         failure: 'Could not authorize you from %{kind} because "%{reason}".'
       mailer:
         confirmation_instructions:
-          subject: 'Confirmation instructions'
+          subject: "Confirmation instructions"
         reset_password_instructions:
-          subject: 'Reset password instructions'
+          subject: "Reset password instructions"
         unlock_instructions:
-          subject: 'Unlock Instructions'
+          subject: "Unlock Instructions"
   ```
 
 ## 2. Bootstrap Locale (`en.bootstrap.yml`)
 
 ### Purpose
-This file contains English translations for common actions and labels used in the Bootstrap framework.
+
+This file contains English translations for common actions and labels used in the Bootstrap
+framework.
 
 ### Key Configurations
 
@@ -862,6 +979,7 @@ This file contains English translations for common actions and labels used in th
 ## 3. General Locale (`en.yml`)
 
 ### Purpose
+
 This file contains general English translations used in the application.
 
 ### Key Configurations
@@ -875,7 +993,9 @@ This file contains general English translations used in the application.
 ## 4. Simple Form Locale (`simple_form.en.yml`)
 
 ### Purpose
-This file contains English translations for the Simple Form gem, which is used to create forms in Rails applications.
+
+This file contains English translations for the Simple Form gem, which is used to create forms in
+Rails applications.
 
 ### Key Configurations
 
@@ -883,11 +1003,11 @@ This file contains English translations for the Simple Form gem, which is used t
   ```yaml
   en:
     simple_form:
-      "yes": 'Yes'
-      "no": 'No'
+      "yes": "Yes"
+      "no": "No"
       required:
-        text: 'required'
-        mark: '*'
+        text: "required"
+        mark: "*"
       error_notification:
         default_message: "Please review the problems below:"
       # Labels and hints examples
@@ -907,36 +1027,44 @@ This file contains English translations for the Simple Form gem, which is used t
 
 # Additional Configurations
 
-This section documents various configuration files found in the `config` directory of the Rails backend for Ontrack. These files include core application settings, database configurations, institution-specific settings, and more.
+This section documents various configuration files found in the `config` directory of the Rails
+backend for Ontrack. These files include core application settings, database configurations,
+institution-specific settings, and more.
 
 ## 1. Application Configuration (`application.rb`)
 
 ### Purpose
+
 This file contains the core configuration settings for the Rails application.
 
 ### Key Configurations
 
 - **Load Defaults**:
+
   ```ruby
   config.load_defaults 7.0
   ```
 
 - **Environment Variables**:
+
   ```ruby
   Dotenv::Railtie.load
   ```
 
 - **Authentication Method**:
+
   ```ruby
   config.auth_method = (ENV['DF_AUTH_METHOD'] || :database).to_sym
   ```
 
 - **Student Work Directory**:
+
   ```ruby
   config.student_work_dir = ENV['DF_STUDENT_WORK_DIR'] || "#{Rails.root}/student_work"
   ```
 
 - **Credentials**:
+
   ```ruby
   credentials.secret_key_base = ENV.fetch('DF_SECRET_KEY_BASE', Rails.env.production? ? nil : 'default_secret_key_base')
   credentials.secret_key_attr = ENV.fetch('DF_SECRET_KEY_ATTR', Rails.env.production? ? nil : 'default_secret_key_attr')
@@ -946,11 +1074,13 @@ This file contains the core configuration settings for the Rails application.
   ```
 
 - **Institution Settings**:
+
   ```ruby
   config.institution = YAML.load_file("#{Rails.root}/config/institution.yml").with_indifferent_access
   ```
 
 - **SAML Authentication**:
+
   ```ruby
   if config.auth_method == :saml
     config.saml = HashWithIndifferentAccess.new
@@ -965,6 +1095,7 @@ This file contains the core configuration settings for the Rails application.
   ```
 
 - **AAF Authentication**:
+
   ```ruby
   if config.auth_method == :aaf
     config.aaf = HashWithIndifferentAccess.new
@@ -978,16 +1109,19 @@ This file contains the core configuration settings for the Rails application.
   ```
 
 - **Localization**:
+
   ```ruby
   config.i18n.enforce_available_locales = true
   ```
 
 - **Parameter Filtering**:
+
   ```ruby
   config.filter_parameters += %i(auth_token password password_confirmation)
   ```
 
 - **Autoload Paths**:
+
   ```ruby
   config.autoload_paths += Dir[Rails.root.join('app')]
   config.eager_load_paths += Dir[Rails.root.join('app')]
@@ -1006,11 +1140,14 @@ This file contains the core configuration settings for the Rails application.
 ## 2. Boot Configuration (`boot.rb`)
 
 ### Purpose
-This file sets up the gems listed in the Gemfile and speeds up boot time by caching expensive operations.
+
+This file sets up the gems listed in the Gemfile and speeds up boot time by caching expensive
+operations.
 
 ### Key Configurations
 
 - **Bundler Setup**:
+
   ```ruby
   ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../Gemfile', __dir__)
   require 'bundler/setup' if File.exist?(ENV['BUNDLE_GEMFILE'])
@@ -1024,37 +1161,41 @@ This file sets up the gems listed in the Gemfile and speeds up boot time by cach
 ## 3. Database Configuration (`database.yml`)
 
 ### Purpose
+
 This file contains the database connection settings for different environments.
 
 ### Key Configurations
 
 - **Development Environment**:
+
   ```yaml
   development:
-    adapter:      <%= ENV['DF_DEV_DB_ADAPTER'] %>
-    database:     <%= ENV['DF_DEV_DB_DATABASE'] %>
-    username:     <%= ENV['DF_DEV_DB_USERNAME'] %>
-    password:     <%= ENV['DF_DEV_DB_PASSWORD'] %>
-    host:         <%= ENV['DF_DEV_DB_HOST'] %>
+    adapter: <%= ENV['DF_DEV_DB_ADAPTER'] %>
+    database: <%= ENV['DF_DEV_DB_DATABASE'] %>
+    username: <%= ENV['DF_DEV_DB_USERNAME'] %>
+    password: <%= ENV['DF_DEV_DB_PASSWORD'] %>
+    host: <%= ENV['DF_DEV_DB_HOST'] %>
     min_messages: warning
   ```
 
 - **Test Environment**:
+
   ```yaml
   test:
-    adapter:      <%= ENV['DF_TEST_DB_ADAPTER'] %>
-    database:     <%= ENV['DF_TEST_DB_DATABASE'] %>
-    username:     <%= ENV['DF_TEST_DB_USERNAME'] %>
-    password:     <%= ENV['DF_TEST_DB_PASSWORD'] %>
-    host:         <%= ENV['DF_TEST_DB_HOST'] %>
+    adapter: <%= ENV['DF_TEST_DB_ADAPTER'] %>
+    database: <%= ENV['DF_TEST_DB_DATABASE'] %>
+    username: <%= ENV['DF_TEST_DB_USERNAME'] %>
+    password: <%= ENV['DF_TEST_DB_PASSWORD'] %>
+    host: <%= ENV['DF_TEST_DB_HOST'] %>
     min_messages: warning
   ```
 
 - **Staging Environment**:
+
   ```yaml
   staging:
-    adapter:  <%= ENV['DF_STAGING_DB_ADAPTER']  %>
-    host:     <%= ENV['DF_STAGING_DB_HOST']     %>
+    adapter: <%= ENV['DF_STAGING_DB_ADAPTER']  %>
+    host: <%= ENV['DF_STAGING_DB_HOST']     %>
     database: <%= ENV['DF_STAGING_DB_DATABASE'] %>
     username: <%= ENV['DF_STAGING_DB_USERNAME'] %>
     password: <%= ENV['DF_STAGING_DB_PASSWORD'] %>
@@ -1063,8 +1204,8 @@ This file contains the database connection settings for different environments.
 - **Production Environment**:
   ```yaml
   production:
-    adapter:  <%= ENV['DF_PRODUCTION_DB_ADAPTER']  %>
-    host:     <%= ENV['DF_PRODUCTION_DB_HOST']     %>
+    adapter: <%= ENV['DF_PRODUCTION_DB_ADAPTER']  %>
+    host: <%= ENV['DF_PRODUCTION_DB_HOST']     %>
     database: <%= ENV['DF_PRODUCTION_DB_DATABASE'] %>
     username: <%= ENV['DF_PRODUCTION_DB_USERNAME'] %>
     password: <%= ENV['DF_PRODUCTION_DB_PASSWORD'] %>
@@ -1073,11 +1214,13 @@ This file contains the database connection settings for different environments.
 ## 4. Deakin Institution Settings (`deakin.rb`)
 
 ### Purpose
+
 This file contains custom settings and methods for importing users into units for Deakin University.
 
 ### Key Configurations
 
 - **Initialization**:
+
   ```ruby
   def initialize()
     @base_url = ENV.fetch('DF_INSTITUTION_SETTINGS_SYNC_BASE_URL', nil)
@@ -1090,6 +1233,7 @@ This file contains custom settings and methods for importing users into units fo
   ```
 
 - **Methods for User Import**:
+
   ```ruby
   def user_import_settings_for(headers)
     if are_callista_headers?(headers)
@@ -1109,6 +1253,7 @@ This file contains custom settings and methods for importing users into units fo
   ```
 
 - **Synchronization Methods**:
+
   ```ruby
   def sync_enrolments(unit)
     # Implementation for synchronizing enrolments
@@ -1122,6 +1267,7 @@ This file contains custom settings and methods for importing users into units fo
 ## 5. Environment Initialization (`environment.rb`)
 
 ### Purpose
+
 This file loads and initializes the Rails application.
 
 ### Key Configurations
@@ -1135,31 +1281,35 @@ This file loads and initializes the Rails application.
 ## 6. Institution Configuration (`institution.yml`)
 
 ### Purpose
+
 This file contains institution-specific settings and information.
 
 ### Key Configurations
 
-- **
+- \*\*
 
-Institution Details**:
-  ```yaml
-  name:         Doubtfire University
-  email_domain: doubtfire.com
-  host:         localhost:3000
-  product_name: Doubtfire
-  settings:     no_institution_setting.rb
-  privacy:      Privacy statement text...
-  plagiarism:   Plagiarism policy text...
-  ```
+Institution Details\*\*:
+
+```yaml
+name: Doubtfire University
+email_domain: doubtfire.com
+host: localhost:3000
+product_name: Doubtfire
+settings: no_institution_setting.rb
+privacy: Privacy statement text...
+plagiarism: Plagiarism policy text...
+```
 
 ## 7. LDAP Configuration (`ldap.yml`)
 
 ### Purpose
+
 This file contains LDAP server settings for different environments.
 
 ### Key Configurations
 
 - **Development Environment**:
+
   ```yaml
   development:
     host: <%= ENV['DF_LDAP_HOST'] %>
@@ -1172,6 +1322,7 @@ This file contains LDAP server settings for different environments.
   ```
 
 - **Test Environment**:
+
   ```yaml
   test:
     host: <%= ENV['DF_LDAP_HOST'] %>
@@ -1198,11 +1349,13 @@ This file contains LDAP server settings for different environments.
 ## 8. No Institution Setting (`no_institution_setting.rb`)
 
 ### Purpose
+
 This file contains default institution settings when no specific institution settings are provided.
 
 ### Key Configurations
 
 - **Default Methods**:
+
   ```ruby
   def are_headers_institution_users?(headers)
     false
@@ -1230,11 +1383,13 @@ This file contains default institution settings when no specific institution set
 ## 9. Puma Configuration (`puma.rb`)
 
 ### Purpose
+
 This file contains configuration settings for the Puma web server.
 
 ### Key Configurations
 
 - **Thread Configuration**:
+
   ```ruby
   max_threads_count = ENV.fetch("RAILS_MAX_THREADS") { 5 }
   min_threads_count = ENV.fetch("RAILS_MIN_THREADS") { max_threads_count }
@@ -1242,16 +1397,19 @@ This file contains configuration settings for the Puma web server.
   ```
 
 - **Port Configuration**:
+
   ```ruby
   port ENV.fetch("PORT") { 3000 }
   ```
 
 - **Environment Configuration**:
+
   ```ruby
   environment ENV.fetch("RAILS_ENV") { "development" }
   ```
 
 - **PID File**:
+
   ```ruby
   pidfile ENV.fetch("PIDFILE") { "tmp/pids/server.pid" }
   ```
@@ -1264,16 +1422,19 @@ This file contains configuration settings for the Puma web server.
 ## 10. Routes Configuration (`routes.rb`)
 
 ### Purpose
+
 This file defines the routes for the Rails application.
 
 ### Key Configurations
 
 - **Devise Routes**:
+
   ```ruby
   devise_for :users
   ```
 
 - **API Routes**:
+
   ```ruby
   get 'api/submission/unit/:id/portfolio', to: 'portfolio_downloads#index'
   get 'api/submission/unit/:id/task_definitions/:task_def_id/download_submissions', to: 'task_downloads#index'
@@ -1291,6 +1452,7 @@ This file defines the routes for the Rails application.
 ## 11. Schedule Configuration (`schedule.rb`)
 
 ### Purpose
+
 This file contains cron job schedules for the application.
 
 ### Key Configurations
@@ -1306,11 +1468,13 @@ This file contains cron job schedules for the application.
 ## 12. Schedule Configuration (`schedule.yml`)
 
 ### Purpose
+
 This file contains job schedules for background tasks.
 
 ### Key Configurations
 
 - **Register Webhooks**:
+
   ```yaml
   register_webhooks:
     cron: "every day at 5"
@@ -1327,11 +1491,14 @@ This file contains job schedules for background tasks.
 ## 13. Storage Configuration (`storage.yml`)
 
 ### Purpose
-This file contains configurations for storage services. Note that ActiveStorage is not used in this application.
+
+This file contains configurations for storage services. Note that ActiveStorage is not used in this
+application.
 
 ### Key Configurations
 
 - **Sample Storage Configuration**:
+
   ```yaml
   # local:
   #   service: Disk
@@ -1339,6 +1506,7 @@ This file contains configurations for storage services. Note that ActiveStorage 
   ```
 
 - **Amazon S3 Configuration**:
+
   ```yaml
   # amazon:
   #   service: S3
@@ -1359,31 +1527,37 @@ This file contains configurations for storage services. Note that ActiveStorage 
 
 # Architecture Diagram of the Doubtfire API
 
-The architecture diagram of the Doubtfire API illustrates the following components and their interactions:
+The architecture diagram of the Doubtfire API illustrates the following components and their
+interactions:
 
 ## Components
 
 1. **Client:**
+
    - Represents the user interface, typically a web browser or a mobile app.
    - Sends HTTP requests to the Web Server.
 
 2. **Web Server:**
+
    - Handles incoming HTTP requests from the client.
    - Serves static content (HTML, CSS, JavaScript).
    - Forwards API requests to the Application Server via REST API.
 
 3. **Application Server:**
+
    - Processes all business logic and data operations.
    - Contains all API endpoints such as user authentication, file downloads, and email handling.
    - Interacts with the Database using SQL.
    - Communicates with Third-party Services via API.
 
 4. **Database:**
+
    - Stores application data, including user information, files, and emails.
    - The Application Server interacts with the Database through SQL queries.
 
 5. **Third-party Services:**
-   - Includes external services used by the application, such as payment gateways and email services (Postmark, SendGrid, Mandrill, Mailgun).
+   - Includes external services used by the application, such as payment gateways and email services
+     (Postmark, SendGrid, Mandrill, Mailgun).
    - The Application Server communicates with these services through APIs.
 
 ![figure_1](/diagram.png)
