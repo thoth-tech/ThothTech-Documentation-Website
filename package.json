@@ -23,6 +23,7 @@
     "starlight-blog": "^0.4.0"
   },
   "devDependencies": {
-    "markdownlint": "^0.31.1"
+    "markdownlint": "^0.31.1",
+    "prettier": "^3.2.5"
   }
 }
