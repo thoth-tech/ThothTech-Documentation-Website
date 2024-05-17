@@ -350,13 +350,13 @@ properties.
 This will be relatively straightforward. We simply need routes that can get/add/update/delete
 specializations.
 
-| Endpoint                                | Description                                    | Request Body   | Response Body    |
-| --------------------------------------- | ---------------------------------------------- | -------------- | ---------------- |
-| GET /specialization                     | Get all specializations.                       | None           | Specialization[] |
-| GET /specialization/specializationId    | Get specialization by id.                      | None           | Specialization   |
-| POST /specialization                    | Add a new specialization.                      | Specialization | Specialization   |
-| PUT /specialization/specializationId    | Updates an existing specialization via its id. | Specialization | Specialization   |
-| DELETE /specialization/specializationId | Deletes an existing specialization via its id. | None           | None             |
+| Endpoint                                    | Description                                    | Request Body   | Response Body    |
+| ------------------------------------------- | ---------------------------------------------- | -------------- | ---------------- |
+| GET /specialization                         | Get all specializations.                       | None           | Specialization[] |
+| GET /specialization/specializationId/{id}   | Get specialization by id.                      | None           | Specialization   |
+| POST /specialization                        | Add a new specialization.                      | Specialization | Specialization   |
+| PUT /specialization/specializationId/{id}   | Updates an existing specialization via its id. | Specialization | Specialization   |
+| DELETE /specialization/specializationId/{id}| Deletes an existing specialization via its id. | None           | None             |
 
 ### Model
 
@@ -504,15 +504,15 @@ This particular entity works in conjunction with Requirements where this provide
 list out required units that belong to a requirement. Additionally, this also provides a way to
 chain requirements to handle requirement choices. The routes will be as follow:
 
-| Endpoint                                  | Description                                     | Request Body | Response Body    |
-| ----------------------------------------- | ----------------------------------------------- | ------------ | ---------------- |
-| GET /requirementset/                      | Get all requirement sets.                       | None         | RequirementSet[] |
-| GET /requirementset/requirementSetGroupId | Get all requirements set for a given group id.  | None         | RequirementSet[] |
-| POST /requirementset                      | Add a new requirement set.                      | Requirement  | RequirementSet   |
-| PUT /requirementset/requirementSetId      | Updates an existing requirement set via its id. | Requirement  | RequirementSet   |
-| DELETE /requirementset/requirementSetId   | Deletes an existing requirement set via its id. | None         | None             |
+| Endpoint                                       | Description                                     | Request Body | Response Body    |
+| ---------------------------------------------- | ----------------------------------------------- | ------------ | ---------------- |
+| GET /requirementset/                           | Get all requirement sets.                       | None         | RequirementSet[] |
+| GET /requirementset/requirementSetGroupId/{id} | Get all requirements set for a given group id.  | None         | RequirementSet[] |
+| POST /requirementset                           | Add a new requirement set.                      | Requirement  | RequirementSet   |
+| PUT /requirementset/requirementSetId/{id}      | Updates an existing requirement set via its id. | Requirement  | RequirementSet   |
+| DELETE /requirementset/requirementSetId/{id}   | Deletes an existing requirement set via its id. | None         | None             |
 
-**GET /requirementset/requirementSetGroupId **
+**GET /requirementset/requirementSetGroupId/{id} **
 
 The only route worth elaborating on is this route where we obtain requirement set entries based on
 the group id. Here, we use the group id recorded with a requirement to find all entries associated
