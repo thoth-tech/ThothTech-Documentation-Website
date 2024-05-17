@@ -24,3 +24,9 @@ Trello board. Access details are as follows:
 
 - **Trello Board**: Company Operation Board
 - **List**: Company Website List
+
+```html
+##Another place to look up the email address and password
+
+There is also a document in conpamy operation channel which includes the email address and password.
+```
