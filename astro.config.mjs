@@ -458,6 +458,12 @@ export default defineConfig({
                         },
                       ]
                     },
+                    {
+                      label: "Research and Findings",
+                      autogenerate: {
+                        directory: "products/splashkit/documentation/splashkit-online/research-and-findings",
+                      },
+                    },
                   ]
                 },
               ],
