@@ -464,9 +464,9 @@ export default defineConfig({
                                 directory: "products/splashkit/documentation/splashkit-online/code-documentation/other",
                               },
                             },
-                          ]
+                          ],
                         },
-                      ]
+                      ],
                     },
                     {
                       label: "Research and Findings",
@@ -474,7 +474,7 @@ export default defineConfig({
                         directory: "products/splashkit/documentation/splashkit-online/research-and-findings",
                       },
                     },
-                  ]
+                  ],
                 },
                 {
                   label: "Issues and Resolutions",
