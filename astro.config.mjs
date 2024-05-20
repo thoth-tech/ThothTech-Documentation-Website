@@ -20,25 +20,34 @@ export default defineConfig({
       sidebar: [
         {
           label: "Processes",
+          collapsed: true, // Collapsed by default
           items: [
             {
               label: "Thoth Tech Technology Stack Document",
               link: "processes/thoth-tech-technology-stack",
+              
             },
 
-            { label: "Introduction", link: "/processes/introduction" },
+            { label: "Introduction", 
+              link: "/processes/introduction",
+             },
+              
             {
               label: "Cyber Security Guidelines",
+              collapsed: true, // Collapsed by default
               autogenerate: {
                 directory: "processes/cyber-security-guidelines",
+                
               },
             },
             {
               label: "Documentation",
+              collapsed: true, // Collapsed by default
               autogenerate: { directory: "processes/Documentation" },
             },
             {
               label: "Quality Assurance",
+              collapsed: true, // Collapsed by default
               items: [
                 {
                   label: "Git Contributions Guide",
@@ -64,24 +73,28 @@ export default defineConfig({
         },
         {
           label: "Teams and Leadership",
+          collapsed: true, // Collapsed by default
           autogenerate: {
             directory: "teams-and-leadership",
           },
         },
         {
           label: "Company Wide Submissions",
+          collapsed: true, // Collapsed by default
           autogenerate: {
             directory: "companywidesubmissions",
           },
         },
         {
           label: "Reference",
+          collapsed: true, // Collapsed by default
           autogenerate: {
             directory: "reference",
           },
         },
         {
           label: "Policies",
+          collapsed: true, // Collapsed by default
           autogenerate: {
             directory: "policies",
           },
@@ -95,6 +108,7 @@ export default defineConfig({
             },
             {
               label: "Art Gallery",
+              collapsed: true, // Collapsed by default
               items: [
                 {
                   label: "Get to Know Us",
@@ -168,6 +182,7 @@ export default defineConfig({
             },
             {
               label: "Company Operations",
+              collapsed: true, // Collapsed by default
               items: [
                 {
                   label: "Get to Know Us",
@@ -215,6 +230,7 @@ export default defineConfig({
             },
             {
               label: "CourseFlow",
+              collapsed: true, // Collapsed by default
               items: [
                 {
                   label: "Get to Know Us",
@@ -244,6 +260,7 @@ export default defineConfig({
             },
             {
               label: "OnTrack",
+              collapsed: true, // Collapsed by default
               items: [
                 {
                   label: "Get to Know Us",
@@ -385,76 +402,69 @@ export default defineConfig({
                 },
               ],
             },
-          ],
-        },
-          {
-          label: "SplashKit",
-          items: [
             {
-              label: "Get to Know Us",
-              link: "/products/splashkit/example",
-            },
-            {
-              label: "Projects",
-              autogenerate: {
-                directory: "products/splashkit/projects",
-              },
-            },
-            {
-              label: "Documentation",
-              autogenerate: {
-                directory: "products/splashkit/documentation",
-              },
-              // items: [
-              //   {
-              //     label: "Applications",
-              //     autogenerate: {
-              //       directory: "products/splashkit/documentation/applications",
-              //     },
-              //   },
-              // ],
+              label: "SplashKit",
+              collapsed: true, // Collapsed by default
               items: [
                 {
-                  label: "Tutorials",
+                  label: "Get to Know Us",
+                  link: "/products/splashkit/example",
+                },
+                {
+                  label: "Projects",
                   autogenerate: {
-                    directory: "products/splashkit/documentation/tutorials",
+                    directory: "products/splashkit/projects",
                   },
                 },
                 {
-                  label: "Expansions",
+                  label: "Documentation",
                   autogenerate: {
-                    directory: "products/splashkit/documentation/expansions",
-                  },
-                },
-                {
-                  label: "SplashKit Online",
-                  autogenerate: {
-                    directory: "products/splashkit/documentation/splashkit-online",
+                    directory: "products/splashkit/documentation",
                   },
                   items: [
                     {
-                      label: "Code Documentation",
+                      label: "Tutorials",
                       autogenerate: {
-                        directory: "products/splashkit/documentation/splashkit-online/code-documentation",
+                        directory: "products/splashkit/documentation/tutorials",
+                      },
+                    },
+                    {
+                      label: "Expansions",
+                      autogenerate: {
+                        directory: "products/splashkit/documentation/expansions",
+                      },
+                    },
+                    {
+                      label: "SplashKit Online",
+                      autogenerate: {
+                        directory: "products/splashkit/documentation/splashkit-online",
                       },
                       items: [
                         {
-                          label: "Classes",
+                          label: "Code Documentation",
                           autogenerate: {
-                            directory: "products/splashkit/documentation/splashkit-online/code-documentation/classes",
+                            directory: "products/splashkit/documentation/splashkit-online/code-documentation",
                           },
-                        },
-                        {
-                          label: "Processes",
-                          autogenerate: {
-                            directory: "products/splashkit/documentation/splashkit-online/code-documentation/processes",
-                          },
-                        },
-                        {
-                          label: "Other",
-                          autogenerate: {
-                            directory: "products/splashkit/documentation/splashkit-online/code-documentation/other",
-                          },
+                          items: [
+                            {
+                              label: "Classes",
+                              autogenerate: {
+                                directory: "products/splashkit/documentation/splashkit-online/code-documentation/classes",
+                              },
+                            },
+                            {
+                              label: "Processes",
+                              autogenerate: {
+                                directory: "products/splashkit/documentation/splashkit-online/code-documentation/processes",
+                              },
+                            },
+                            {
+                              label: "Other",
+                              autogenerate: {
+                                directory: "products/splashkit/documentation/splashkit-online/code-documentation/other",
+                              },
+                            },
+                          ]
                         },
                       ]
                     },
@@ -466,13 +476,13 @@ export default defineConfig({
                     },
                   ]
                 },
+                {
+                  label: "Issues and Resolutions",
+                  autogenerate: {
+                    directory: "products/splashkit/issues-and-resolutions",
+                  },
+                },
               ],
-            },
-            {
-              label: "Issues and Resolutions",
-              autogenerate: {
-                directory: "products/splashkit/issues-and-resolutions",
-              },
             },
           ],
         },
