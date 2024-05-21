@@ -50,3 +50,28 @@ projects with limited server-side interaction:
   <!-- Additional form fields -->
 </form>
 ```
+
+## Cybersecurity Review and Licensing are required for the Web3Forms!!
+
+### Cybersecurity Review
+
+It is essential to conduct a cybersecurity review when using Web3Forms with a free account. This 
+review should assess the following aspects:
+
+- **Data Security**: Ensure that the data submitted through the form is securely transmitted
+  and stored.
+- **Vulnerabilities**: Identify any potential vulnerabilities that could be exploited.
+- **Compliance**: Verify compliance with relevant data protection regulations and standards.
+
+### Licensing Information
+
+Using the free account of Web3Forms comes with certain limitations and licensing terms that must
+be considered:
+
+- **Usage Limits**: There may be limits on the number of submissions or features available in
+  the free tier.
+- **Terms of Service**: Review the Web3Forms terms of service to ensure that the usage complies
+  with their guidelines.
+- **Upgrade Options**: Consider the options for upgrading to a paid plan if additional features or
+  higher usage limits are needed.
+
