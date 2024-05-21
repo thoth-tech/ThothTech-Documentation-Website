@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background: #fff;
+        padding: 20px;
+    }
+    h1, p {
+        text-align: center;
+    }
+    .star-rating {
+        text-align: center;
+        font-size: 0;
+        display: flex;
+        flex-direction: row-reverse; /* Reverse the order of children */
+        justify-content: center;
+    }
+    .star-rating input {
+        display: none;
+    }
+    .star-rating label {
+        font-size: 40px;
+        padding: 10px;
+        color: #d3d3d3;
+    }
+    .star-rating input:checked ~ label {
+        color: #ffd700;
+    }
+    .feedback-form {
+        text-align: center;
+    }
+    .feedback-form input[type="text"],
+    .feedback-form input[type="email"],
+    .feedback-form textarea {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    .feedback-form input[type="submit"] {
+        background-color: #5f27cd;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .feedback-form input[type="submit"]:hover {
+        background-color: #341f97;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Feedback Page</h1>
+    <p>We would love your feedback</p>
+    <p>Our goal is to make a platform that simplifies your workday. You’ve been using Thoth Tech Documentation Website for a while now, and we’d love to know what you think about it. We really appreciate your feedback!</p>
+    
+    <div class="star-rating">
+        <input type="radio" id="star5" name="rating" value="5" /><label for="star5">★</label>
+        <input type="radio" id="star4" name="rating" value="4" /><label for="star4">★</label>
+        <input type="radio" id="star3" name="rating" value="3" /><label for="star3">★</label>
+        <input type="radio" id="star2" name="rating" value="2" /><label for="star2">★</label>
+        <input type="radio" id="star1" name="rating" value="1" /><label for="star1">★</label>
+      </div>
+
+    <form class="feedback-form" action="/submitsuccess.html" method="post">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <div>
+          <input type="radio" id="suggestion" name="feedback_type" value="suggestion" checked />
+          <label for="suggestion">Suggestion</label>
+          <input type="radio" id="improvement" name="feedback_type" value="improvement" />
+          <label for="improvement">Improvement Idea</label>
+        </div>
+        <textarea name="comment" placeholder="Add your feedback" rows="4" required></textarea>
+        <input type="submit" value="SUBMIT" />
+      </form>
+    </div>
+</div>
+</body>
+</html>

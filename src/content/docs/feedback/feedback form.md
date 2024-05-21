@@ -14,8 +14,8 @@ You have several options for sending us your feedback. Please choose the one tha
 
 ##### Option 1: Fill Out Our Online Form
 
-Please fill out our detailed feedback form available at [Our Feedback Form](link). It only takes a
-few minutes!
+Please fill out our detailed feedback form available at [Our Feedback Form](/feedbackform.html). It
+only take a few minutes!
 
 ##### Option 2: Contact your team leader or senior students
 
