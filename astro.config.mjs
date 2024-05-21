@@ -493,6 +493,10 @@ export default defineConfig({
               label: "Feedback",
               link: "feedback/feedback-form",
             },
+            {
+              label: "Feedback form documentation",
+              link: "feedback/feedback-form-documentation",
+            },
           ],
         },
       ],
