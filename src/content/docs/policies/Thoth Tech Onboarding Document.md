@@ -16,7 +16,7 @@ Thoth Tech’s mission is to build, operate, and deploy education technologies, 
 enhance education outcomes by empowering students, connecting them with tutors, and facilitating
 personalised learning experiences
 
-Thoth Tech currently runs with below products/ projects for T2 2023. These projects have respective
+Thoth Tech currently runs with below products/ projects for T1 2024. These projects have respective
 Teams channel (links embedded) for the communications. To get familiar with Thoth Tech, watch this
 short welcome video - <https://video.deakin.edu.au/media/t/1_kbi75vmk>
 
@@ -96,7 +96,7 @@ team culture:
 Below is the up to date structure of Thoth Tech Company. This is led by the following Managing
 Director - Andrew Cain and Glory Lee.
 
-![Org chart](/image1.png)
+![Org chart](/team2024T1correct.png)
 
 ## Your Impact
 
