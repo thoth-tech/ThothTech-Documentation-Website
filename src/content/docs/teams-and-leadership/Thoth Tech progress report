@@ -2318,34 +2318,20 @@ derived from the development branch. Feature branches isolate individual work, a
       sidebar: [
         {
           label: "Processes",
-          collapsed: true, // Collapsed by default
           items: [
-            {
-              label: "Thoth Tech Technology Stack Document",
-              link: "processes/thoth-tech-technology-stack",
-              
-            },
-
-            { label: "Introduction", 
-              link: "/processes/introduction",
-             },
-              
+            { label: "Introduction", link: "/processes/introduction" },
             {
               label: "Cyber Security Guidelines",
-              collapsed: true, // Collapsed by default
               autogenerate: {
                 directory: "processes/cyber-security-guidelines",
-                
               },
             },
             {
               label: "Documentation",
-              collapsed: true, // Collapsed by default
               autogenerate: { directory: "processes/Documentation" },
             },
             {
               label: "Quality Assurance",
-              collapsed: true, // Collapsed by default
               items: [
                 {
                   label: "Git Contributions Guide",
@@ -2371,28 +2357,18 @@ derived from the development branch. Feature branches isolate individual work, a
         },
         {
           label: "Teams and Leadership",
-          collapsed: true, // Collapsed by default
           autogenerate: {
             directory: "teams-and-leadership",
           },
         },
         {
-          label: "Company Wide Submissions",
-          collapsed: true, // Collapsed by default
-          autogenerate: {
-            directory: "companywidesubmissions",
-          },
-        },
-        {
           label: "Reference",
-          collapsed: true, // Collapsed by default
           autogenerate: {
             directory: "reference",
           },
         },
         {
           label: "Policies",
-          collapsed: true, // Collapsed by default
           autogenerate: {
             directory: "policies",
           },
@@ -2406,7 +2382,6 @@ derived from the development branch. Feature branches isolate individual work, a
             },
             {
               label: "Art Gallery",
-              collapsed: true, // Collapsed by default
               items: [
                 {
                   label: "Get to Know Us",
@@ -2415,7 +2390,7 @@ derived from the development branch. Feature branches isolate individual work, a
                 {
                   label: "Projects",
                   autogenerate: {
-                    directory: "products/art-gallery/Projects",
+                    directory: "products/art-gallery/projects",
                   },
                   items: [
                     {
@@ -2425,9 +2400,9 @@ derived from the development branch. Feature branches isolate individual work, a
                       },
                     },
                     {
-                      label: "Testing Project",
+                      label: "Dockerization",
                       autogenerate: {
-                        directory: "products/art-gallery/Projects/Testing Project",
+                        directory: "products/art-gallery/Projects/dockerization",
                       },
                     },
                   ],
@@ -2437,50 +2412,17 @@ derived from the development branch. Feature branches isolate individual work, a
                   autogenerate: {
                     directory: "products/art-gallery/Documentation",
                   },
-                  items: [
-                    {
-                      label: "BackendUpgrades",
-                      autogenerate: {
-                        directory: "products/art-gallery/Documentation/BackendUpgrades",
-                      },
-                    },
-                    {
-                      label: "Deployment",
-                      autogenerate: {
-                        directory: "products/art-gallery/Documentation/Deployment",
-                      },
-                    },
-                    {
-                      label: "Dockerization",
-                      autogenerate: {
-                        directory: "products/art-gallery/Documentation/Dockerization",
-                      },
-                    },
-                    {
-                      label: "Documentation Project",
-                      autogenerate: {
-                        directory: "products/art-gallery/Documentation/Documentation Project",
-                      },
-                    },
-                    {
-                      label: "Guidance",
-                      autogenerate: {
-                        directory: "products/art-gallery/Documentation/Guidance",
-                      },
-                    },
-                  ],
                 },
                 {
                   label: "Issues and Resolutions",
                   autogenerate: {
-                    directory: "products/art-gallery/Issues-and-Resolutions",
+                    directory: "products/art-gallery/issues-and-resolutions",
                   },
                 },
               ],
             },
             {
               label: "Company Operations",
-              collapsed: true, // Collapsed by default
               items: [
                 {
                   label: "Get to Know Us",
@@ -2504,12 +2446,6 @@ derived from the development branch. Feature branches isolate individual work, a
                         directory: "products/company-operations/projects/Thoth-Tech-Website",
                       },
                     },
-                    {
-                      label:"Onboarding Tool",
-                      autogenerate: {
-                        directory: "products/company-operations/projects/onboaring-tool",
-                      },
-                    },
                   ],
                 },
                 {
@@ -2528,7 +2464,6 @@ derived from the development branch. Feature branches isolate individual work, a
             },
             {
               label: "CourseFlow",
-              collapsed: true, // Collapsed by default
               items: [
                 {
                   label: "Get to Know Us",
@@ -2537,16 +2472,14 @@ derived from the development branch. Feature branches isolate individual work, a
                 {
                   label: "Projects",
                   autogenerate: {
-                    directory: "products/courseflow/projects",
+                    directory: "products/courseflow/Projects",
                   },
-                  items: [
-                    {
-                      label: "2FA - Documentation",
-                      autogenerate: {
-                        directory: "products/courseflow/Projects/2FA - Documentation",
-                      },
-                    },
-                  ]
+                },
+                {
+                  label: "Documentation",
+                  autogenerate: {
+                    directory: "products/courseflow/Documentation",
+                  },
                 },
                 {
                   label: "Issues and Resolutions",
@@ -2558,7 +2491,6 @@ derived from the development branch. Feature branches isolate individual work, a
             },
             {
               label: "OnTrack",
-              collapsed: true, // Collapsed by default
               items: [
                 {
                   label: "Get to Know Us",
@@ -2567,142 +2499,45 @@ derived from the development branch. Feature branches isolate individual work, a
                 {
                   label: "Projects",
                   autogenerate: {
-                    directory: "products/ontrack/Projects",
+                    directory: "products/ontrack/projects",
+                  },
+                },
+                {
+                  label: "Documentation",
+                  autogenerate: {
+                    directory: "products/ontrack/documentation",
                   },
                   items: [
                     {
-                      label: "Group_Task_Submission",
+                      label: "Front End Migration",
                       autogenerate: {
-                        directory: "products/ontrack/Projects/Group_Task_Submission",
+                        directory: "products/ontrack/documentation/front-end-migration",
                       },
                     },
                     {
                       label: "Numbas",
                       autogenerate: {
-                        directory: "products/ontrack/Projects/Numbas",
+                        directory: "products/ontrack/documentation/numbas",
                       },
                     },
-                    {
-                      label: "Staff Grant Extension",
-                      autogenerate: {
-                        directory: "products/ontrack/Projects/Staff Grant Extension",
-                      },
-                    },
-                    {
-                      label: "Task Submission & Redesign",
-                      autogenerate: {
-                        directory: "products/ontrack/Projects/Task Submission & Redesign",
-                      },
-                    },
-                    {
-                      label: "Tutor Times",
-                      autogenerate: {
-                        directory: "products/ontrack/Projects/Tutor Times",
-                      },
-                      items: [
-                        {
-                          label: "Documentation",
-                          autogenerate: {
-                            directory: "products/ontrack/Projects/Tutor Times/Documentation",
-                          },
-                        },
-                        {
-                          label: "UML Diagrams",
-                          autogenerate: {
-                            directory: "products/ontrack/Projects/Tutor Times/UML Diagrams",
-                          },
-                        },
-                      ]
-                    },
-                  ]
-                },
-                {
-                  label: "Documentation",
-                  autogenerate: {
-                    directory: "products/ontrack/Documentation",
-                  },
-                  items: [
                     {
                       label: "Deployment",
                       autogenerate: {
-                        directory: "products/ontrack/Documentation/Deployment",
-                      },
-                      items: [
-                        {
-                          label: "Enhanced_Authentication",
-                          autogenerate: {
-                            directory: "products/ontrack/Documentation/Deployment/Enhanced_Authentication",
-                          }
-                        },
-                        {
-                          label: "Google_Cloud",
-                          autogenerate: {
-                            directory: "products/ontrack/Documentation/Deployment/Google_Cloud",
-                          }
-                        },
-                      ]
-                    },
-                    {
-                      label: "Documentation",
-                      autogenerate: {
-                        directory: "products/ontrack/Documentation/Documentation",
-                      },
-                    },
-                    {
-                      label: "File Submission Enhancements",
-                      autogenerate: {
-                        directory: "products/ontrack/Documentation/File Submission Enhancements",
-                      },
-                    },
-                    {
-                      label: "Front-End-Migration",
-                      autogenerate: {
-                        directory: "products/ontrack/Documentation/Front-End-Migration",
-                      },
-                    },
-                    {
-                      label: "Incorporate Content Ontrack",
-                      autogenerate: {
-                        directory: "products/ontrack/Documentation/Incorporate Content Ontrack",
-                      },
-                    },
-                    {
-                      label: "Jupyter Notebook",
-                      autogenerate: {
-                        directory: "products/ontrack/Documentation/Jupyter Notebook",
-                      },
-                    },
-                    {
-                      label: "Multiple Organisations",
-                      autogenerate: {
-                        directory: "products/ontrack/Documentation/Multiple Organisations",
-                      },
-                    },
-                    {
-                      label: "Voice Verification",
-                      autogenerate: {
-                        directory: "products/ontrack/Documentation/Voice Verification",
+                        directory: "products/ontrack/documentation/deployment",
                       },
                     },
                   ],
                 },
                 {
-                  label: "Issues-and-resolutions",
+                  label: "Issues and Resolutions",
                   autogenerate: {
-                    directory: "products/ontrack/Issues-and-resolutions",
-                  },
-                },
-                {
-                  label: "Ontrack-setup",
-                  autogenerate: {
-                    directory: "products/ontrack/Ontrack-setup",
+                    directory: "products/ontrack/issues-and-resolutions",
                   },
                 },
               ],
             },
             {
               label: "SplashKit",
-              collapsed: true, // Collapsed by default
               items: [
                 {
                   label: "Get to Know Us",
@@ -2719,60 +2554,14 @@ derived from the development branch. Feature branches isolate individual work, a
                   autogenerate: {
                     directory: "products/splashkit/documentation",
                   },
-                  items: [
-                    {
-                      label: "Tutorials",
-                      autogenerate: {
-                        directory: "products/splashkit/documentation/tutorials",
-                      },
-                    },
-                    {
-                      label: "Expansions",
-                      autogenerate: {
-                        directory: "products/splashkit/documentation/expansions",
-                      },
-                    },
-                    {
-                      label: "SplashKit Online",
-                      autogenerate: {
-                        directory: "products/splashkit/documentation/splashkit-online",
-                      },
-                      items: [
-                        {
-                          label: "Code Documentation",
-                          autogenerate: {
-                            directory: "products/splashkit/documentation/splashkit-online/code-documentation",
-                          },
-                          items: [
-                            {
-                              label: "Classes",
-                              autogenerate: {
-                                directory: "products/splashkit/documentation/splashkit-online/code-documentation/classes",
-                              },
-                            },
-                            {
-                              label: "Processes",
-                              autogenerate: {
-                                directory: "products/splashkit/documentation/splashkit-online/code-documentation/processes",
-                              },
-                            },
-                            {
-                              label: "Other",
-                              autogenerate: {
-                                directory: "products/splashkit/documentation/splashkit-online/code-documentation/other",
-                              },
-                            },
-                          ],
-                        },
-                      ],
-                    },
-                    {
-                      label: "Research and Findings",
-                      autogenerate: {
-                        directory: "products/splashkit/documentation/splashkit-online/research-and-findings",
-                      },
-                    },
-                  ],
+                  // items: [
+                  //   {
+                  //     label: "Applications",
+                  //     autogenerate: {
+                  //       directory: "products/splashkit/documentation/applications",
+                  //     },
+                  //   },
+                  // ],
                 },
                 {
                   label: "Issues and Resolutions",
@@ -2781,15 +2570,6 @@ derived from the development branch. Feature branches isolate individual work, a
                   },
                 },
               ],
-            },
-          ],
-        },
-        {
-          label: "Feedback",
-          items: [
-            {
-              label: "Feedback",
-              link: "feedback/feedback-form",
             },
           ],
         },
