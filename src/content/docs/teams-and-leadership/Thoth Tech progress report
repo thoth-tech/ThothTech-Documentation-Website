@@ -1,4 +1,15 @@
-Deakin University
+import { defineConfig } from "astro/config";
+import starlight from "@astrojs/starlight";
+import starlightBlog from "starlight-blog";
+
+// https://astro.build/config
+export default defineConfig({
+  integrations: [
+    starlightBlog(),
+    starlight({
+      title: "Thoth Tech progress report",
+
+      Deakin University
 Capstone Team Project (B)
 OnTrack Submission
 Company Handover and Showcase
@@ -37,15 +48,14 @@ s221519423 Thando Loliwe ��
 hhalls Harney Halls ���
 aghilesharasu Aghilesh Arasu �
 s221071216 Sherap Thakur �
-September 27,
-2023
+September 27, 2023
 Produced by Doubtfire
 2
 Thoth Tech Showcase Video Links
-Company (Thoth tech) Showcase Video: https: //video.deakin.edu.au/media/t/1_kd7o8aft
-Company Operations Showcase Video: https: //video.deakin.edu.au/media/t/1_yrgrebdj
-OnTrack Showcase Video: https: //video.deakin.edu.au/media/t/1_qtqbi271
-Art Gallery Showcase Video: https: //video.deakin.edu.au/media/t/1_1gei2x0y
+Company (Thoth tech) Showcase Video: https://video.deakin.edu.au/media/t/1_kd7o8aft
+Company Operations Showcase Video: https://video.deakin.edu.au/media/t/1_yrgrebdj
+OnTrack Showcase Video: https://video.deakin.edu.au/media/t/1_qtqbi271
+Art Gallery Showcase Video: https://video.deakin.edu.au/media/t/1_1gei2x0y
 1
  
  
@@ -55,8 +65,7 @@ Art Gallery Showcase Video: https: //video.deakin.edu.au/media/t/1_1gei2x0y
 Product Handover and 
 Showcase Document 
 Thoth Tech
-Trimester 2,
-2023
+Trimester 2, 2023
 2
 Table of Contents
 1. Leadership Team................................................................................................................4
@@ -120,7 +129,7 @@ Table of Contents
 1.3. Updated Company Organization Chart
 5
 1.4. Company Showcase Video
-https: //video.deakin.edu.au/media/t/1_kd7o8aft
+https://video.deakin.edu.au/media/t/1_kd7o8aft
 2. Products - Company Operations
 This team oversees the entire operations of Thoth Tech and strives to make things easier. We 
 aim to make the onboarding process as smooth and clear as possible, as well as increase the 
@@ -190,24 +199,24 @@ Added the Process, Teams, and leadership pages on Starlight.
 Adding teams n leadership page to Starlight - KO by Kachi-Okorie · Pull Request #14 · 
 thoth-tech/Company-Operations (github.com)
 Code and Built Policy Page on Starlight
-https: //github.com/thoth-tech/Company-Operations/pull/18
-https: //github.com/thoth-tech/Company-Operations/pull/19
+https://github.com/thoth-tech/Company-Operations/pull/18
+https://github.com/thoth-tech/Company-Operations/pull/19
 Fix Netlify Check Issue on GitHub
-https: //github.com/thoth-tech/documentation/pull/390
+https://github.com/thoth-tech/documentation/pull/390
 Added Starlight project to Documentation repo
-https: //github.com/thoth-tech/documentation/pull/406
+https://github.com/thoth-tech/documentation/pull/406
 Migrate Products documentations to Starlight.
-https: //github.com/thoth-tech/ThothTech-Documentation-Website/pull/2
-https: //github.com/thothtech/documentation/commit/9b4a65ad4aec4df11e15a809213fcc03f5c2273a
-https: //github.com/thothtech/documentation/commit/c3d019b064428896070719de3bbeee6da097f505
+https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/2
+https://github.com/thothtech/documentation/commit/9b4a65ad4aec4df11e15a809213fcc03f5c2273a
+https://github.com/thothtech/documentation/commit/c3d019b064428896070719de3bbeee6da097f505
 Create and Populate News Page on Starlight
-https: //github.com/thoth-tech/ThothTech-Documentation-Website/pull/5
+https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/5
 Update Onboarding Document to Contain Welcome Package Info
-https: //github.com/thoth-tech/ThothTech-Documentation-Website/pull/6
+https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/6
 Create a Google form for Assigning New Students to Products
-https: //forms.gle/c9HPFvDRAUon9uEk9
+https://forms.gle/c9HPFvDRAUon9uEk9
 Create an Instructional Video on How to Upload Documents to Starlight
-https: //deakin365.sharepoint.com/:v:/r/sites/ThothTech2/Shared%20Documents/Gen
+https://deakin365.sharepoint.com/:v:/r/sites/ThothTech2/Shared%20Documents/Gen
 eral/Instructional%20Video%20-
 %20How%20To%20Upload%20Documents%20to%20Starlight.mp4?csf=1&web=1&e=
 6JHZnd
@@ -224,13 +233,13 @@ Add documentation platform research by QuinnCurtis02 · Pull Request #13 · thot
 Created Starlight landing page and product page.
 added home page and products to starlight by QuinnCurtis02 · Pull Request #15 · thothtech/Company-Operations (github.com)
 Created a basic landing and products page for the documentation project.
-https: //github.com/thoth-tech/Company-Operations/pull/15
+https://github.com/thoth-tech/Company-Operations/pull/15
 Themed the documentation site with a focus on the products page.
-https: //github.com/thoth-tech/documentation/pull/384
+https://github.com/thoth-tech/documentation/pull/384
 Moved the starlight project to a new repo and updated Astro version.
-https: //github.com/thoth-tech/ThothTech-Documentation-Website/pull/1
+https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/1
 Researched the proper platform for hosting the documentation website.
-https: //github.com/thoth-tech/Company-Operations/pull/24 
+https://github.com/thoth-tech/Company-Operations/pull/24 
 Documented learnings from investigating various documentation platforms.
 Docs: knowledge base prior learning and test documentation by Kyle-Dav · Pull Request 
 #9 · thoth-tech/Company-Operations (github.com)
@@ -251,22 +260,22 @@ Started the testing for changing product repository.
 Move updated Starlight to the documentation repo root on Company Operations | 
 Trello
 Created Onboarding document and conducted research on Docusaurus
-https: //github.com/thoth-tech/Company-Operations/pull/17
+https://github.com/thoth-tech/Company-Operations/pull/17
 Harshita 
 Shroff
 Drafted documentation policy for Company – Thoth Tech
 9
-https: //github.com/thoth-tech/Company-Operations/pull/22
+https://github.com/thoth-tech/Company-Operations/pull/22
 Created guide on how to use Starlight (Company’s Documentation website)
-https: //github.com/thoth-tech/Company-Operations/pull/23
+https://github.com/thoth-tech/Company-Operations/pull/23
 Created project progress policy 
-https: //github.com/thoth-tech/Company-Operations/pull/23
+https://github.com/thoth-tech/Company-Operations/pull/23
 Created upskilling document for Javascript, Angular, Typewrite, Material library for CSS
-https: //github.com/thoth-tech/Company-Operations/pull/23
+https://github.com/thoth-tech/Company-Operations/pull/23
 Documented requirements for documentation website
-https: //github.com/thoth-tech/Company-Operations/pull/23
+https://github.com/thoth-tech/Company-Operations/pull/23
 Converted the 6.1P task into markdown for retaining information for further reference.
-https: //github.com/thoth-tech/Company-Operations/pull/25
+https://github.com/thoth-tech/Company-Operations/pull/25
 2.2. Completed Deliverables
 • Created Spike plan and Outcomes for documentation Platforms.
 • Designed and built the documentation website on Starlight.
@@ -279,10 +288,9 @@ https: //github.com/thoth-tech/Company-Operations/pull/25
 • Creation of an Upskilling Document
 • Created Spike Outcome for Render as a Hosting platform.
 • Documented a step-by-step procedure on how to upload documents to Starlight.
-• Successfully compiled and submitted 2.1P,
-6.1P, and 11.1P tasks.
+• Successfully compiled and submitted 2.1P, 6.1P, and 11.1P tasks.
 • Researched Netlify as a free hosting platform and created Spike document.
-• Successfully hosted documentation website on Netlify - https: //main--strong-fairyc1bde1.netlify.app/
+• Successfully hosted documentation website on Netlify - https://main--strong-fairyc1bde1.netlify.app/
 2.3. Roadmap
 • Containerize the documentation website project.
 • Launch the Documentation website.
@@ -301,7 +309,7 @@ GitHub keeps failing.
 Projects, documentations, and other artifacts produced by the Company Operations team 
 can be found using the following links.
 • Company Operations Repo: thoth-tech/Company-Operations (github.com)
-• Thoth Tech Documentation Website Repo: https: //github.com/thothtech/ThothTech-Documentation-Website
+• Thoth Tech Documentation Website Repo: https://github.com/thothtech/ThothTech-Documentation-Website
 • Company Operations folder in the Documentation Repo:
 documentation/docs/Company Operations at main · thoth-tech/documentation 
 (github.com)
@@ -316,19 +324,19 @@ directors’ credentials – Andrew Cain.
 • GitHub Policy: GitHub Management Policy (main--strong-fairy-c1bde1.netlify.app)
 • Trello Management Policy: Trello Management Policy (main--strong-fairyc1bde1.netlify.app)
 • Onboarding/Welcome Documentation: Thoth Tech Welcome Package (main--strongfairy-c1bde1.netlify.app)
-• Onboarding Form: https: //forms.gle/c9HPFvDRAUon9uEk9
+• Onboarding Form: https://forms.gle/c9HPFvDRAUon9uEk9
 • Upskilling Documentation: Company-Operations/Company Policy/Upskilling 
 document.md at main · thoth-tech/Company-Operations (github.com)
 • Documentation Policy: Company-Operations/Company Policy/Documentation 
 Policy.md at main · thoth-tech/Company-Operations (github.com)
 • Instructional Video on Using Starlight:
-https: //deakin365.sharepoint.com/:v:/r/sites/ThothTech2/Shared%20Documents/G
+https://deakin365.sharepoint.com/:v:/r/sites/ThothTech2/Shared%20Documents/G
 eneral/Instructional%20Video%20-
 11
 %20How%20To%20Upload%20Documents%20to%20Starlight.mp4?csf=1&web=1&e
 =s26lMo
 2.8. Showcase Video
-Long video: https: //video.deakin.edu.au/media/t/1_yrgrebdj
+Long video: https://video.deakin.edu.au/media/t/1_yrgrebdj
 3. Product – OnTrack
 This trimester Ontrack will be working dynamically across a variety of projects. We will be 
 working based on a priority system to get as many useful changes implemented as possible 
@@ -379,7 +387,8 @@ Short Term Deliverables (This trimester):
 • New features mapped out ready for next trimester. 
 • Review of Data Analytics and Plan to move it forward. 
 • Scope for Authentication Module 
-Long Term Deliverables (Ongoing): 13
+Long Term Deliverables (Ongoing): 
+13
 • All Angular migrations completed. 
 • Enhance features mapped out in Trimester. 
 • Develop new features. 
@@ -401,7 +410,7 @@ Replace fxlayout with
 tailwind 
 equivalent -
 hero-sidebar
-https: //github.com/syedfai
+https://github.com/syedfai
 q/doubtfireweb/tree/enhance/replacefx-layout-with-tailwindequivalent-hero-sidebar
 2
 19
@@ -414,7 +423,7 @@ Replace fxlayout with
 tailwind 
 equivalent -
 footer
-https: //github.com/syedfai
+https://github.com/syedfai
 q/doubtfireweb/commit/cb900e2cbdfe
 7ee9fcdffada63ceb6c62081
 f30f
@@ -428,7 +437,7 @@ Replace fxlayout with
 tailwind 
 equivalent -
 user-badge
-https: //github.com/syedfai
+https://github.com/syedfai
 q/doubtfireweb/tree/enhance/replacefx-layout-with-tailwindequivalent-user-badge
 2
 Syed Faiq ur 
@@ -439,7 +448,7 @@ Review
 Replace fxlayout with 
 tailwind 
 equivalent - signin
-https: //github.com/syedfai
+https://github.com/syedfai
 q/doubtfireweb/tree/enhance/replacefx-layout-with-tailwindequivalent-sign-in
 2
 Syed Faiq ur 
@@ -451,7 +460,7 @@ Replace fxlayout with
 tailwind 
 equivalent -
 audio-player
-https: //github.com/syedfai
+https://github.com/syedfai
 q/doubtfireweb/tree/enhance/replacefx-layout-with-tailwindaudio-player
 2
 Syed Faiq ur 
@@ -474,7 +483,7 @@ Review
 Replace fxlayout with 
 tailwind 
 equivalent -
-https: //github.com/syedfai
+https://github.com/syedfai
 q/doubtfireweb/tree/enhance/replace2
 14
 intelligentdiscussionplayer
@@ -488,7 +497,7 @@ Replace fxlayout with
 tailwind 
 equivalent -
 intelligentdiscussion-dialog
-https: //github.com/syedfai
+https://github.com/syedfai
 q/doubtfireweb/tree/enhance/replacefx-layout-with-tailwindintelligent-discussion-dialog
 2
 Syed Faiq ur 
@@ -500,7 +509,7 @@ Replace fxlayout with
 tailwind 
 equivalent -
 discussionpromptcomposer
-https: //github.com/syedfai
+https://github.com/syedfai
 q/doubtfireweb/tree/enhance/replacefx-layout-with-tailwinddiscussion-promptcomposer
 2
 Jayant Sprint 1 -
@@ -510,7 +519,7 @@ Replace fxlayout with
 tailwind 
 equivalent -
 task-commentcomposer
-https: //github.com/thothtech/doubtfire-web/pull/69
+https://github.com/thothtech/doubtfire-web/pull/69
 2
 22
 Jayant Sprint 1 -
@@ -520,7 +529,7 @@ Replace fxlayout with
 tailwind 
 equivalent -
 extensioncomment
-https: //github.com/thothtech/doubtfire-web/pull/70
+https://github.com/thothtech/doubtfire-web/pull/70
 2
 Jayant Sprint 2 
 Code 
@@ -528,7 +537,7 @@ Review
 Replace fxlayout with 
 tailwind 
 equivalent - editprofile-form
-https: //github.com/jayant3
+https://github.com/jayant3
 1j/doubtfireweb/tree/refactor-editprofile-tailwind
 2
 Jayant Sprint 3 
@@ -536,7 +545,7 @@ Review
 Replace fxlayout with 
 tailwind 
 equivalent - unitdropdown
-https: //github.com/thothtech/doubtfireweb/pull/85/
+https://github.com/thothtech/doubtfireweb/pull/85/
 2
 Jayant Sprint 4 
 Review
@@ -544,20 +553,20 @@ Replace fxlayout with
 tailwind 
 equivalent -
 task-assessmentcomment
-https: //github.com/thothtech/doubtfireweb/pull/102
+https://github.com/thothtech/doubtfireweb/pull/102
 2
 Jayant Sprint 4 
 Review
 Migrate 
 "ConfirmationM
 odal"
-https: //github.com/thothtech/doubtfireweb/pull/100
+https://github.com/thothtech/doubtfireweb/pull/100
 3
 Jayant Sprint 4 
 Review
 Add testing -
 Angular Service -
-learninghttps: //github.com/thothtech/doubtfire-web/pull/95
+learninghttps://github.com/thothtech/doubtfire-web/pull/95
 3
 15
 outcome.service.
@@ -567,14 +576,14 @@ Review
 Add testing -
 Angular Service -
 tutorialstream.service.ts
-https: //github.com/thothtech/doubtfireweb/pull/97/files
+https://github.com/thothtech/doubtfireweb/pull/97/files
 3
 Jayant Sprint 4 
 Review
 Add testing -
 Angular Service -
 unitrole.service.ts
-https: //github.com/thothtech/doubtfireweb/pull/96/files
+https://github.com/thothtech/doubtfireweb/pull/96/files
 3
 Devanshi 
 Patel
@@ -583,7 +592,7 @@ Complete
 Incorporate 
 content in 
 OnTrack
-https: //github.com/thothtech/documentation/pull/3
+https://github.com/thothtech/documentation/pull/3
 38
 5
 23
@@ -595,7 +604,7 @@ Review
 Create UML -
 Incorporate 
 Content
-https: //github.com/ptldev0
+https://github.com/ptldev0
 2/documentation/commit/f
 7dcb01a1f3367ed443564f9
 c7f87bcc0b9b6b3d
@@ -610,7 +619,7 @@ requirements -
 Incorporate 
 Content in 
 Ontrack
-https: //github.com/ptldev0
+https://github.com/ptldev0
 2/documentation/commit/
 0c6dbd9c1711e5c88a18f39
 774123dc2e4c4df5e
@@ -623,7 +632,7 @@ Design
 Documentation -
 Incorporate 
 Content
-https: //github.com/ptldev0
+https://github.com/ptldev0
 2/documentation/commit/
 afbe585267e66df97ac06eff
 b944e86c5562b360
@@ -635,7 +644,7 @@ Review
 Design Feature -
 Incorporate 
 Content
-https: //github.com/ptldev0
+https://github.com/ptldev0
 2/documentation/commit/
 39356e3b9a7649778cf1543
 86c1cdc8d1d5e191e
@@ -647,7 +656,7 @@ Review
 UML Diagrams 
 and UI designs -
 Tutor Times
-https: //github.com/thothtech/documentation/pull/4
+https://github.com/thothtech/documentation/pull/4
 26
 3
 Devanshi 
@@ -657,7 +666,7 @@ Review
 Spike - Frontend 
 Documentation 
 Investigation
-https: //github.com/ptldev0
+https://github.com/ptldev0
 2/documentation/commit/
 3e74dcc732c96308bbe83d
 0794b2651e4649a363
@@ -688,7 +697,7 @@ Complete
 Integrate Trello 
 Board with 
 GitHub
-https: //github.com/thothtech/CompanyOperations/commit/5373d
+https://github.com/thothtech/CompanyOperations/commit/5373d
 652ab705c75cd0c3f584f0c
 46686c3be9f6
 1
@@ -709,7 +718,7 @@ wireframes for
 the new feature 
 - Staff Grant 
 Extension
-https: //github.com/thothtech/documentation/pull/3
+https://github.com/thothtech/documentation/pull/3
 68
 3
 Brian Caldera Sprint 2 
@@ -718,7 +727,7 @@ Documentation
 (Design and 
 UML) - Staff 
 Grant Extensions
-https: //github.com/thothtech/documentation/pull/3
+https://github.com/thothtech/documentation/pull/3
 57
 3
 Brian Caldera Sprint 2 
@@ -728,7 +737,7 @@ Documentation
 and Testing) -
 Staff Grant 
 Extension
-https: //github.com/thothtech/documentation/pull/3
+https://github.com/thothtech/documentation/pull/3
 35
 3
 Brian Caldera Sprint 2 
@@ -742,7 +751,7 @@ Design
 Document 
 Backend - Tutor 
 Times
-https: //github.com/thothtech/documentation/pull/4
+https://github.com/thothtech/documentation/pull/4
 24
 3
 Brian Caldera Sprint 3 
@@ -751,7 +760,7 @@ Requirements
 Document Front 
 End - Tutor 
 Times
-https: //github.com/thothtech/documentation/pull/3
+https://github.com/thothtech/documentation/pull/3
 89
 3
 Brian Caldera Sprint 3 
@@ -760,7 +769,7 @@ Design
 Document Front 
 End - Tutor 
 Times
-https: //github.com/thothtech/documentation/pull/4
+https://github.com/thothtech/documentation/pull/4
 13
 3
 Brian Caldera Sprint 3 
@@ -769,7 +778,7 @@ Requirements
 Document Back 
 End - Tutor 
 Times
-https: //github.com/thothtech/documentation/pull/3
+https://github.com/thothtech/documentation/pull/3
 92
 3
 Cao Quoc Vi Sprint 2 
@@ -779,7 +788,7 @@ Spike - Test
 Production 
 Environment 
 From windows
-https: //github.com/thothtech/documentation/pull/4
+https://github.com/thothtech/documentation/pull/4
 11
 3
 19
@@ -789,7 +798,7 @@ Review
 Spike - Explore 
 video integration 
 using Panopto
-https: //github.com/thothtech/documentation/pull/4
+https://github.com/thothtech/documentation/pull/4
 12
 3
 Cao Quoc Vi Sprint 2 
@@ -799,7 +808,7 @@ Replace fxlayout with
 tailwind 
 equivalent -
 staff-task-list
-https: //github.com/thothtech/doubtfire-web/pull/79
+https://github.com/thothtech/doubtfire-web/pull/79
 2
 Cao Quoc Vi Sprint 2 
 Code 
@@ -807,7 +816,7 @@ Review
 Replace fxlayout with 
 tailwind 
 equivalent -taskdashboard
-https: //github.com/thothtech/doubtfire-web/pull/81
+https://github.com/thothtech/doubtfire-web/pull/81
 2
 17
 Cao Quoc Vi Sprint 2 
@@ -817,7 +826,7 @@ Replace fxlayout with
 tailwind 
 equivalent -
 microphonetester
-https: //github.com/thothtech/doubtfire-web/pull/78
+https://github.com/thothtech/doubtfire-web/pull/78
 2
 Cao Quoc Vi Sprint 2 
 Code 
@@ -826,14 +835,14 @@ Replace fxlayout with
 tailwind 
 equivalent -
 calendar-modal
-https: //github.com/thothtech/doubtfire-web/pull/80
+https://github.com/thothtech/doubtfire-web/pull/80
 2
 Cao Quoc Vi Sprint 2 
 Complete
 Update Angular 
 UI-Router hybrid 
 Angular support
-https: //github.com/caoquo
+https://github.com/caoquo
 cvinq/angular-hybrid.git
 5
 Inder Sprint 2 
@@ -843,7 +852,7 @@ Replace fxlayout with
 tailwind 
 equivalent -
 home
-https: //github.com/SinghAI/doubtfireweb/commit/dc68dccab83
+https://github.com/SinghAI/doubtfireweb/commit/dc68dccab83
 9124ef69b76a2543bd9861
 09899f2
 2
@@ -853,14 +862,14 @@ Code
 Review
 Convert PDF for 
 long lines.
-https: //github.com/thothtech/doubtfire-api/pull/8
+https://github.com/thothtech/doubtfire-api/pull/8
 5
 Inder Sprint 2 
 Complete
 Research Spike -
 Report on data 
 analytics tools
-https: //github.com/thothtech/documentation/pull/3
+https://github.com/thothtech/documentation/pull/3
 52
 3
 Inder Sprint 3 
@@ -869,7 +878,7 @@ Replace fxlayout with
 tailwind 
 equivalent -
 welcome
-https: //github.com/SinghAI/doubtfireweb/commit/6bb98916dab
+https://github.com/SinghAI/doubtfireweb/commit/6bb98916dab
 519fe8bd0b6ac3dc6007c43
 c80e84
 2
@@ -879,7 +888,7 @@ switch all alert
 service use to 
 new angular 
 alert service
-https: //github.com/SinghAI/doubtfireweb/commit/a97b4dd008e
+https://github.com/SinghAI/doubtfireweb/commit/a97b4dd008e
 9a519c69aeebbdc797dc04f
 b06f78
 3
@@ -888,7 +897,7 @@ Review
 Add testing -
 Angular Service -
 group.service.ts
-https: //github.com/SinghAI/doubtfireweb/commit/4d743a32c59f
+https://github.com/SinghAI/doubtfireweb/commit/4d743a32c59f
 103c6449f6572c296468fab
 c94f6
 3
@@ -898,7 +907,7 @@ Alert on
 extension 
 request for 
 group tasks
-https: //github.com/SinghAI/doubtfireweb/commit/b83dfb7ca60
+https://github.com/SinghAI/doubtfireweb/commit/b83dfb7ca60
 299f72c809fbaadda8240ad
 4c282f
 5
@@ -908,7 +917,7 @@ New Featureadjust the
 automatic 
 extension on 
 "resubmit"
-https: //github.com/SinghAI/doubtfireapi/commit/5b53a6eb6839
+https://github.com/SinghAI/doubtfireapi/commit/5b53a6eb6839
 ffafbe03445715a6b6488dd
 34dac
 5
@@ -918,7 +927,7 @@ Review
 Add testing -
 Angular Service -
 Activity Type
-https: //github.com/SinghAI/doubtfireweb/commit/4b927734678
+https://github.com/SinghAI/doubtfireweb/commit/4b927734678
 f4b1cfc30d08854be56271f
 ecf1f2
 3
@@ -927,7 +936,7 @@ Review
 Add testing -
 Angular Service -
 groupset.service.ts
-https: //github.com/thothtech/doubtfire-web/pull/99
+https://github.com/thothtech/doubtfire-web/pull/99
 3
 SANAH 
 QUAZI
@@ -937,7 +946,7 @@ Design a way to
 improve the 
 group Task 
 submission.
-https: //github.com/thothtech/documentation/pull/3
+https://github.com/thothtech/documentation/pull/3
 56
 3
 19
@@ -949,7 +958,7 @@ Replace fxlayout with
 tailwind 
 equivalent -
 inbox-comment
-https: //github.com/thothtech/doubtfire-web/pull/83
+https://github.com/thothtech/doubtfire-web/pull/83
 2
 SANAH 
 QUAZI
@@ -961,7 +970,7 @@ multiple
 organisations on 
 a single OnTrack 
 server
-https: //github.com/thothtech/documentation/pull/3
+https://github.com/thothtech/documentation/pull/3
 87
 5
 SANAH 
@@ -972,7 +981,7 @@ Test Scenario
 Documentation 
 and 
 Requirements
-https: //github.com/thothtech/documentation/pull/3
+https://github.com/thothtech/documentation/pull/3
 96
 3
 SANAH 
@@ -984,7 +993,7 @@ Documentation -
 Incorporate 
 Multiple 
 Organizations
-https: //github.com/thothtech/documentation/pull/4
+https://github.com/thothtech/documentation/pull/4
 01
 3
 SANAH 
@@ -997,7 +1006,7 @@ Incorporate
 Multiple 
 Organizations 
 feature
-https: //github.com/thothtech/documentation/pull/4
+https://github.com/thothtech/documentation/pull/4
 02
 3
 BRYAN 
@@ -1007,7 +1016,7 @@ Review
 Identify and 
 reject encrypted 
 PDFs on upload
-https: //github.com/Mango
+https://github.com/Mango
 S9/doubtfireapi/commit/2b412057f431f
 f7bf48008a81724e5131c57
 7684
@@ -1033,7 +1042,7 @@ Design
 Document 
 Backend - Tutor 
 Times
-https: //github.com/thothtech/documentation/pull/4
+https://github.com/thothtech/documentation/pull/4
 24
 3
 77
@@ -1044,7 +1053,7 @@ Complete
 Create Python 
 Script to export 
 Trello JSON
-https: //github.com/thothtech/documentation/pull/4
+https://github.com/thothtech/documentation/pull/4
 36
 3
 Daniel 
@@ -1055,7 +1064,7 @@ Build Angular
 Service to work 
 with Numbas API 
 - Stream tests
-https: //github.com/thothtech/doubtfireweb/tree/add-numbasintegration
+https://github.com/thothtech/doubtfireweb/tree/add-numbasintegration
 3
 Daniel 
 Maddern
@@ -1064,7 +1073,7 @@ CodeReview
 Ontrack - Build 
 Spec test for 
 LMS service.
-https: //github.com/thothtech/doubtfireweb/commit/45ee07c132b
+https://github.com/thothtech/doubtfireweb/commit/45ee07c132b
 22decc21e4130a46934f7bb
 1ec2a7
 3
@@ -1074,7 +1083,7 @@ Numbas -
 Complete
 PoC - Review 
 Completed test
-https: //github.com/thothtech/NumbasPoC/pull/10
+https://github.com/thothtech/NumbasPoC/pull/10
 5
 Daniel 
 Maddern
@@ -1083,7 +1092,7 @@ Complete
 PoC- Save 
 answers on new 
 test issue
-https: //github.com/thothtech/NumbasPoC/tree/enh
+https://github.com/thothtech/NumbasPoC/tree/enh
 ance/first-resume-issue
 5
 Daniel 
@@ -1093,7 +1102,7 @@ Complete
 Abstract LMS 
 function to 
 service in PoC
-https: //github.com/thothtech/NumbasPoC/tree/feat
+https://github.com/thothtech/NumbasPoC/tree/feat
 /AbstractLMSFunctions
 3
 Daniel 
@@ -1105,7 +1114,7 @@ front end to use
 xhr to fix 
 synchronicity 
 issues.
-https: //github.com/thothtech/NumbasPoC/pull/9
+https://github.com/thothtech/NumbasPoC/pull/9
 5
 Daniel 
 Maddern
@@ -1115,7 +1124,7 @@ PoC- Adjust
 Backend to 
 offset some get 
 test logic
-https: //github.com/thothtech/NumbasPoC/commit/
+https://github.com/thothtech/NumbasPoC/commit/
 eeafca513a3d46216332d0a
 3909671af5b2887ce
 3
@@ -1123,7 +1132,7 @@ Daniel
 Maddern
 Numbas -
 Complete
-PoC - Save Test https: //github.com/thothtech/NumbasPoC/tree/feat
+PoC - Save Test https://github.com/thothtech/NumbasPoC/tree/feat
 /downloadnumbastest
 5
 Daniel 
@@ -1132,14 +1141,14 @@ Numbas -
 Complete
 Save Suspend 
 Data in Commit
-https: //github.com/thothtech/NumbasPoC/tree/conf
+https://github.com/thothtech/NumbasPoC/tree/conf
 igure-save-test-fe
 5
 Daniel 
 Maddern
 Numbas -
 Complete
-PoC - Save Score https: //github.com/thothtech/NumbasPoC/pull/4
+PoC - Save Score https://github.com/thothtech/NumbasPoC/pull/4
 5
 Daniel 
 Maddern
@@ -1148,7 +1157,7 @@ Complete
 Ontrack Back 
 End Changes 
 UML
-https: //trello.com/c/0YU
+https://trello.com/c/0YU
 wD7aO/50-ontrack-backend-changes-uml
 3
 Daniel 
@@ -1157,7 +1166,7 @@ Numbas -
 Complete
 New Endpoint -
 Save test -POC
-https: //github.com/thothtech/NumbasPoC/tree/addsave-test-api
+https://github.com/thothtech/NumbasPoC/tree/addsave-test-api
 5
 Daniel 
 Maddern
@@ -1167,7 +1176,7 @@ Setup maria DB
 in PoC for save 
 test API 
 endpoint
-https: //github.com/thothtech/NumbasPoC/pull/4
+https://github.com/thothtech/NumbasPoC/pull/4
 3
 20
 Daniel 
@@ -1179,7 +1188,7 @@ convert code
 from using 
 SCORM1.1 to 
 SCORM 2004.
-https: //github.com/thothtech/NumbasPoC/tree/upd
+https://github.com/thothtech/NumbasPoC/tree/upd
 ate/convert-scorm2004
 5
 Daniel 
@@ -1201,7 +1210,7 @@ Understand how
 the Numbas 
 Code interact 
 with our code.
-https: //github.com/thothtech/documentation/pull/3
+https://github.com/thothtech/documentation/pull/3
 16
 3
 Daniel 
@@ -1220,7 +1229,7 @@ Complete
 Video guide on 
 setting up 
 Ontrack
-https: //video.deakin.edu.
+https://video.deakin.edu.
 au/media/t/1_6degiyrj
 1
 Daniel 
@@ -1240,7 +1249,7 @@ contributing
 documentation 
 to show usage of 
 devcontainer
-https: //github.com/thoth
+https://github.com/thoth
 -tech/doubtfiredeploy/blob/developmen
 t/CONTRIBUTING.md
 2
@@ -1255,7 +1264,7 @@ improve
 authentication 
 service code 
 #738
-https: //github.com/doubtfi
+https://github.com/doubtfi
 re-lms/doubtfireweb/pull/738
 5
 8
@@ -1295,7 +1304,7 @@ documentation created for feature Tutor Times
 The current road map for Ontrack is quite broad, however there are a few key projects that 
 we want to focus on next trimester, first you can view all the backlogs on the Trello board 
 with their associated tasks:
-https: //trello.com/invite/b/IKabVmzt/ATTIdf935d63730a48bee701a76b199f48fc61BF23A8/
+https://trello.com/invite/b/IKabVmzt/ATTIdf935d63730a48bee701a76b199f48fc61BF23A8/
 ontrack
 The Key projects we would like to see movement on next trimester would be:
 1. Improvements Backlog – This backlog has core improvements to the system we want 
@@ -1326,17 +1335,17 @@ and understand the requirements when making a PR.
 • Using GitHub, GitHub is new to some students and can be quite tricky to get working 
 how you want. There were several videos and training sessions to help this.
 3.5. Source Code
-• Doubtfire Web - https: //github.com/thoth-tech/doubtfire-web
-• Doubtfire Api - https: //github.com/thoth-tech/doubtfire-api
-• Doubtfire Deploy - https: //github.com/thoth-tech/doubtfire-deploy
-• Thoth Tech Documentation - https: //github.com/thoth-tech/documentation
+• Doubtfire Web - https://github.com/thoth-tech/doubtfire-web
+• Doubtfire Api - https://github.com/thoth-tech/doubtfire-api
+• Doubtfire Deploy - https://github.com/thoth-tech/doubtfire-deploy
+• Thoth Tech Documentation - https://github.com/thoth-tech/documentation
 3.6. Login Credentials
-https: //github.com/thoth-tech/doubtfire-deploy/blob/development/CONTRIBUTING.md
+https://github.com/thoth-tech/doubtfire-deploy/blob/development/CONTRIBUTING.md
 3.7. Other Relevant Information
 Branching & Pull request formating
-https: //github.com/thoth-tech/doubtfire-deploy/blob/development/CONTRIBUTING.md
+https://github.com/thoth-tech/doubtfire-deploy/blob/development/CONTRIBUTING.md
 3.8. Showcase Video
-Video showcase: https: //video.deakin.edu.au/media/t/1_qtqbi271
+Video showcase: https://video.deakin.edu.au/media/t/1_qtqbi271
 4. Product – Art Gallery
 Indigenous and rural artists often face barriers in accessing the broader market, limiting 
 their opportunities for income and recognition. Our platform seeks to eliminate these 
@@ -1392,42 +1401,42 @@ he has produced several spike reports, a finalized deployment strategy for us to
 next trimester, and a mock CI/CD pipeline for us to use as a guide. He has also helped to 
 select our deployment platform (GCP) and has created a cybersecurity policy for our team 
 to advise us on use of GCP. All completed deliverables can be found on GitHub.
-• CI/CD Pipeline: https: //github.com/thothtech/documentation/blob/main/docs/ArtGallery/Deployment/CICDPipeline.md
-• CI/CD Pipeline Integration Overview: https: //github.com/thothtech/documentation/blob/main/docs/ArtGallery/Deployment/CICDPipelineOvervie
+• CI/CD Pipeline: https://github.com/thothtech/documentation/blob/main/docs/ArtGallery/Deployment/CICDPipeline.md
+• CI/CD Pipeline Integration Overview: https://github.com/thothtech/documentation/blob/main/docs/ArtGallery/Deployment/CICDPipelineOvervie
 w.md
-• Cybersecurity Policy: https: //github.com/thothtech/documentation/blob/main/docs/ArtGallery/Deployment/CybersecurityPolicy.m
+• Cybersecurity Policy: https://github.com/thothtech/documentation/blob/main/docs/ArtGallery/Deployment/CybersecurityPolicy.m
 d
-• Deployment Strategies: https: //github.com/thothtech/documentation/blob/main/docs/ArtGallery/Deployment/DeploymentStrategie
+• Deployment Strategies: https://github.com/thothtech/documentation/blob/main/docs/ArtGallery/Deployment/DeploymentStrategie
 s.md
-• Preliminary Proposal: https: //github.com/thothtech/documentation/blob/main/docs/ArtGallery/Deployment/PreliminaryProposal.
+• Preliminary Proposal: https://github.com/thothtech/documentation/blob/main/docs/ArtGallery/Deployment/PreliminaryProposal.
 md
 Ben, Avenue, Edwin and Amos have been working on developing our front end this 
 trimester. Edwin provided a redesigned logo for us, and he and the rest of the team set up a 
 Sigma board for us to use in our redesign process. Avenue has also done some research into 
 UCD for us to use as a guide. Completed deliverables can be found on GitHub and in Figma.
-• Figma Board: https: //www.figma.com/file/ohaBXjzqNTWRMFtmulTr01/Artgallery?type=design&node-id=0%3A1&mode=design&t=J0qbicuMWi3lZn5C-1
+• Figma Board: https://www.figma.com/file/ohaBXjzqNTWRMFtmulTr01/Artgallery?type=design&node-id=0%3A1&mode=design&t=J0qbicuMWi3lZn5C-1
 • Redesigned Logo: 
-https: //github.com/ajoju/documentation/commit/29888067b662da062e22c9f0ba8c
+https://github.com/ajoju/documentation/commit/29888067b662da062e22c9f0ba8c
 ba458cef1a27
 • Research into UCD: 
-https: //github.com/ajoju/documentation/commit/bf49dff5b91586aa4baff29b31ce3
+https://github.com/ajoju/documentation/commit/bf49dff5b91586aa4baff29b31ce3
 a123c11cee0
 25
 Sivasamyuktha has been working on our Lighthouse reporting scores. This has involved 
 reviewing the changes advised by our previous Lighthouse report, then upskilling JavaScript, 
 HTML and CSS to improve our Lighthouse scores. Our performance score has improved by 
 over 20%. All completed deliverables can be found on GitHub.
-• Minify CSS and JS code: https: //github.com/thoth-tech/artgallery/pull/40/commits/7fb35b39812902949203b5da7aa2588793213cca
-• Lazy Routing: https: //github.com/thoth-tech/artgallery/pull/40/commits/dc91b126e2dfc3e6e9174d44a8d547a24c1808ad
-• Implementing Tree shaking with Ant Design: https: //github.com/thoth-tech/artgallery/pull/40/commits/35d5df4e068ddfdfbed9506f830c388b0f08632f
-• Updated Lighthouse Scores: https: //github.com/thothtech/documentation/blob/main/docs/ArtGallery/Lighthouse%20Project/T22023-
+• Minify CSS and JS code: https://github.com/thoth-tech/artgallery/pull/40/commits/7fb35b39812902949203b5da7aa2588793213cca
+• Lazy Routing: https://github.com/thoth-tech/artgallery/pull/40/commits/dc91b126e2dfc3e6e9174d44a8d547a24c1808ad
+• Implementing Tree shaking with Ant Design: https://github.com/thoth-tech/artgallery/pull/40/commits/35d5df4e068ddfdfbed9506f830c388b0f08632f
+• Updated Lighthouse Scores: https://github.com/thothtech/documentation/blob/main/docs/ArtGallery/Lighthouse%20Project/T22023-
 updated-lighthouse-report.pdf
 Dominic has been working on integrating IIIF into our API. He has done in depth research 
 into making this possible and provided us with several review documents. In addition to 
 this, he has also provided us with cybersecurity strategies for our deployment, this includes 
 research into the payment system we will need to integrate, and safe storage of user data 
 and login credentials. All completed deliverables can be found on GitHub.
-• All documents can be found here: https: //github.com/thothtech/documentation/pull/429/files
+• All documents can be found here: https://github.com/thothtech/documentation/pull/429/files
 Chloe has been responsible for upgrading the backend this trimester. She has migrated the 
 API to .NET 8, and updated the requisite Docker containers to account for this change. She 
 has also integrated asynchrony into the Repository Pattern of the API, and created some 
@@ -1475,8 +1484,8 @@ happening again.
 All of our source code is stored in GitHub in our art-gallery repository.
 27
 Our redesigns are done in our Figma 
-board: https: //www.figma.com/file/ohaBXjzqNTWRMFtmulTr01/Artgallery?type=design&node-id=0%3A1&mode=design&t=J0qbicuMWi3lZn5C-1
-Our Postman collection can be found here: https: //www.postman.com/thoth-tech
+board: https://www.figma.com/file/ohaBXjzqNTWRMFtmulTr01/Artgallery?type=design&node-id=0%3A1&mode=design&t=J0qbicuMWi3lZn5C-1
+Our Postman collection can be found here: https://www.postman.com/thoth-tech
 If there is trouble locating or accessing or Postman space, Andrew has been added as Admin 
 and will be able to help.
 4.6. Login Credentials
@@ -1499,7 +1508,7 @@ Please disregard the other versions as they are now legacy. The client would sti
 these implementations in our repo, however they are to be ignored!
 4.8. Showcase Video
  
-The Art Gallery in 4 minutes: https: //video.deakin.edu.au/media/t/1_1gei2x0y
+The Art Gallery in 4 minutes: https://video.deakin.edu.au/media/t/1_1gei2x0y
 28
 5. Product - Splashkit
  
@@ -1610,8 +1619,7 @@ Getting Started With SplashKit - C++/C# Ashley Thompson
 Creating a Metroidvania game Tutorial - Player Character Basics, 
 Environment, Audio and Sound affects and Power ups and Items
 Harney Halls.
-Game Concept,
-2D Racer features to keep and add, and 2D racer design 
+Game Concept, 2D Racer features to keep and add, and 2D racer design 
 tutorial
 Harney Halls.
 Create tutorials for Cmake and Sprite Layering Tutorial #6 Bryan Taing
@@ -1648,7 +1656,7 @@ Final version of web editor Anshuman Bishnoi
 Research documentation Sherap Thakur
 5.2. Completed Deliverables
 Please review the Team's Trello Board for a List of Completed Activities and details within 
-the cards. https: //trello.com/b/3EpqqJ2R
+the cards. https://trello.com/b/3EpqqJ2R
 SplashKit Arcade:
 • Arcade Machine Base Image Built and Created – Instructions here
 • Gold Image used for Deakin Open Day - Image Here, How to Create Here
@@ -1804,7 +1812,7 @@ o Have a secondary game menu for test games/non-published.
 35
 • Updates to Arcade Menu 
 o Presently the Arcade machine uses Emulation Station forked from the 
-RetorPI project version. https: //github.com/thoth-tech/ArcadeMenu
+RetorPI project version. https://github.com/thoth-tech/ArcadeMenu
 o Create a new system for test games
 o See if we can modify the EM menu for the following
 ▪ Trigger Game download scripts
@@ -1864,7 +1872,7 @@ o Python can no longer be used to code games with SplashKit. Previous
 research indicates a change with v3.8; see here.
 • Look at Adding AI function to SplashKit
 o Can look at LLMs like ChatGPT
-o Similar Functions to https: //scikit-learn.org/
+o Similar Functions to https://scikit-learn.org/
 • Dev Container Mac
 o As most SplashKit Programs have a visual component and not browser-based 
 based, we need a way to view the program's window output. This is normally 
@@ -1929,46 +1937,46 @@ Acracde-Game Repo)
 5.5. Source Code
 Documentation
 • Core Documentation Repository: 
-o https: //github.com/thoth-tech/documentation/tree/main/docs/Splashkit
+o https://github.com/thoth-tech/documentation/tree/main/docs/Splashkit
 38
 Arcade
 • Arcade-games, Keeps Compiled Games: 
-o https: //github.com/thoth-tech/arcade-games
+o https://github.com/thoth-tech/arcade-games
 • Arcade Menu – Fork of Retropies Emulation Station 
-o https: //github.com/thoth-tech/ArcadeMenu
+o https://github.com/thoth-tech/ArcadeMenu
 • Games
-o DXBallGame: https: //github.com/thoth-tech/DXBallGame
-o Asteroids: https: //github.com/thoth-tech/Asteroids
+o DXBallGame: https://github.com/thoth-tech/DXBallGame
+o Asteroids: https://github.com/thoth-tech/Asteroids
 SplashKit Expansion
 • SplashKit Core
-o https: //github.com/thoth-tech/splashkit-core
+o https://github.com/thoth-tech/splashkit-core
 • SKM 
-o https: //github.com/thoth-tech/skm
+o https://github.com/thoth-tech/skm
 • SplashKit Starlight (new Splashkit.io)
-o https: //github.com/thoth-tech/splashkit-starlight
+o https://github.com/thoth-tech/splashkit-starlight
 • SplashKit-Game-Engine
-o https: //github.com/thoth-tech/SplashKit-Game-Engine
+o https://github.com/thoth-tech/SplashKit-Game-Engine
 • SplashKit Dev Container
-o https: //github.com/thothtech/documentation/tree/main/docs/Splashkit/DevEnviroment/Windows_D
+o https://github.com/thothtech/documentation/tree/main/docs/Splashkit/DevEnviroment/Windows_D
 evContainer
 • SplashKit Translator (Translates the SplashKit C++ source into another language.)
-o https: //github.com/thoth-tech/splashkit-translator
+o https://github.com/thoth-tech/splashkit-translator
 Tutorials
 • SplashKit Tutorial
-o https: //github.com/thoth-tech/SplashKit-Tutorial
+o https://github.com/thoth-tech/SplashKit-Tutorial
 • VoidBound (Tutorial Game)
-o https: //github.com/thoth-tech/Voidbound
+o https://github.com/thoth-tech/Voidbound
 Online
 • Splashkit Online
-o https: //github.com/thoth-tech/SplashkitOnline
+o https://github.com/thoth-tech/SplashkitOnline
 Older Repos That may be useful
 • Build a game Team (Below the Surface Source Repo) 
-o https: //github.com/thoth-tech/build-a-game-team
+o https://github.com/thoth-tech/build-a-game-team
 • SplashKit Games and Tutorials
-o https: //github.com/thoth-tech/SplashKit-Games-and-Tutorials
+o https://github.com/thoth-tech/SplashKit-Games-and-Tutorials
 • arcade-machine (Orginal Menu system for Arcade, Would be nice to get it running 
 was reported as having perforamce issues but might work ok form CLI only mode) 
-o https: //github.com/thoth-tech/arcade-machine
+o https://github.com/thoth-tech/arcade-machine
 39
 6. Product - CourseFlow
 CourseFlow aims to assist students in planning and comprehending the requirements and 
@@ -1996,7 +2004,7 @@ cmarktopher · Pull Request #33 · thoth-tech/CourseFlow
 (github.com)
 Discovery page ngx graph by cmarktopher · Pull Request #32 · thothtech/CourseFlow (github.com)
 Docker integration by cmarktopher · Pull Request #25 · thothtech/CourseFlow (github.com)
-https: //github.com/thoth-tech/CourseFlow/pull/17
+https://github.com/thoth-tech/CourseFlow/pull/17
 Ngx graph vs d3.js by cmarktopher · Pull Request #410 · thothtech/documentation (github.com)
 Mark Enriquez
 Login form and registration form (Frontend) by OmarHassanzada · 
@@ -2057,11 +2065,11 @@ more.
 Deliverable Location
 At this stage, this current main implementation of the CourseMap Page is present in this 
 branch of the CourseFlow repository: 
-https: //github.com/thoth-tech/CourseFlow/tree/dev/webpage-merging/Frontend
+https://github.com/thoth-tech/CourseFlow/tree/dev/webpage-merging/Frontend
 This will later be merged into the development branch: 
-https: //github.com/thoth-tech/CourseFlow/tree/development
+https://github.com/thoth-tech/CourseFlow/tree/development
 The current Figma designs can be located here:
-https: //www.figma.com/file/AxWuk1PxhXB9KjjvnEVl4z/Pending---
+https://www.figma.com/file/AxWuk1PxhXB9KjjvnEVl4z/Pending---
 CourseFlow?type=design&node-id=1%3A8641&mode=design&t=8ob2ZUT1wbxwJnk4-1
 Discovery
 Contributing Team Members
@@ -2091,13 +2099,13 @@ Deliverable Location
 Main Pre-Calculated Position based Implementation using d3.js
 At this stage, this current main implementation of the Discovery Page is present in this 
 branch of the CourseFlow repository: 
-https: //github.com/thoth-tech/CourseFlow/tree/dev/webpage-merging
+https://github.com/thoth-tech/CourseFlow/tree/dev/webpage-merging
 This will later be merged into the development branch: 
-https: //github.com/thoth-tech/CourseFlow/tree/development
+https://github.com/thoth-tech/CourseFlow/tree/development
 Other Implementations - Force-directed, hierarchical based graph using d3.js
-https: //github.com/thoth-tech/CourseFlow/tree/prototype/discovery-page-force-sim-graph
+https://github.com/thoth-tech/CourseFlow/tree/prototype/discovery-page-force-sim-graph
 Other Implementations – Ngx-graph
-https: //github.com/thoth-tech/CourseFlow/tree/research/discovery-page
+https://github.com/thoth-tech/CourseFlow/tree/research/discovery-page
 43
 User authentication 
 Contributing Team Members 
@@ -2109,7 +2117,7 @@ o This has been implemented via firebase
 ▪ The log in information can be accessed via the firebase account log in 
 which has been provided under the login credentials.
 Deliverable Location 
-https: //github.com/thoth-tech/CourseFlow/tree/dev/authentication
+https://github.com/thoth-tech/CourseFlow/tree/dev/authentication
 Backend
 API endpoints
 Contributing Team Members
@@ -2154,7 +2162,7 @@ Summary of Deliverables
 • Created a Docker image containing a complete development environment for the 
 frontend.
 Deliverable Location
-https: //github.com/thoth-tech/CourseFlow/tree/development
+https://github.com/thoth-tech/CourseFlow/tree/development
 6.3.Roadmap 
 Course Map
 45
@@ -2258,7 +2266,7 @@ collaborate on code, most members shared the code by directly sending files to e
 other for most of the trimester.
 6.5. Source Code
 GitHub repository
-CourseFlow’s GitHub repository: https: //github.com/thoth-tech/CourseFlow/
+CourseFlow’s GitHub repository: https://github.com/thoth-tech/CourseFlow/
 All CourseFlow’s source code can be found in the GitHub repository.
 Research and documentation
 Most of CourseFlow’s research and documentation can be found at Thoth Tech’s 
@@ -2268,10 +2276,10 @@ CourseFlow/Documentation at development · thoth-tech/CourseFlow (github.com).
 48
 Webpage prototypes
 Prototypes of CourseFlow’s webpages are kept on Figma at 
-https: //www.figma.com/file/AxWuk1PxhXB9KjjvnEVl4z/Pending---
+https://www.figma.com/file/AxWuk1PxhXB9KjjvnEVl4z/Pending---
 CourseFlow?type=design&node-id=1%3A8641&mode=design&t=8ob2ZUT1wbxwJnk4-1
 6.6. Login Credentials
-CourseFlow’s GitHub repository: https: //github.com/thoth-tech/CourseFlow
+CourseFlow’s GitHub repository: https://github.com/thoth-tech/CourseFlow
 You will need a GitHub account to contribute to the code. To contribute code, contact 
 CourseFlow’s product lead to gain write access or open a pull request to this repository. If 
 you are the product lead, contact Thoth Tech’s director to gain admin permissions for the 
@@ -2279,7 +2287,7 @@ repository.
 Firebase Login:
 Email: courseflowfirebase@gmail.com
 Password: _Courseflow@8756
-Figma: https: //www.figma.com/file/AxWuk1PxhXB9KjjvnEVl4z/Pending---
+Figma: https://www.figma.com/file/AxWuk1PxhXB9KjjvnEVl4z/Pending---
 CourseFlow?type=design&node-id=1%3A8641&mode=design&t=8ob2ZUT1wbxwJnk4-1
 Sign in with a Figma account to get edit access.
 6.7. Other Relevant Information
@@ -2297,35 +2305,281 @@ permissions have the option to push minor commits directly to the development br
 swift updates.
 Feature Branches: For specific tasks or features, contributors create feature branches 
 derived from the development branch. Feature branches isolate individual work, allowing 
-49
-parallel development. Once a feature is complete, a PR is submitted to merge it back into 
-the development branch. This workflow keeps the development process organized and 
-ensures that changes are thoroughly reviewed before integration.
-Users with write permissions can push commits directly to feature branches, but this 
-practice is discouraged. It should only be employed for rapid collaboration with other team 
-members. Instead, we recommend contributors first push their changes to a fork of 
-CourseFlow and then create a PR to merge those changes into one of CourseFlow's 
-branches.
-File structure
-Files in the CourseFlow repository are separated into the Frontend, Backend, or 
-Documentation folders depending on their purpose.
-/Frontend: Contains code belonging to CourseFlow’s website frontend, which are 
-responsible for generating and displaying webpages which the user directly interacts with.
-The main Angular application is contained within the /Frontend/course-flow-app folder. 
-Other Angular applications or webpages created in parallel are contained within their 
-respective folders in the /Frontend folder.
-/Backend: Contains code related to CourseFlow’s website backend and data integration
-layer. The code in this directory is responsible for storing and retrieving data, facilitating 
-communication between the database and frontend, gathering unit information, and storing 
-them in the database. 
-  "MD033": {
-  "allowed_elements": [
-    "ul",
-    "li",
-    "img"
-  ]
-},
-"MD013": {
-  "tables": false
-}
-}
+
+      customCss: ["./src/styles/custom.css"],
+      social: {
+        github: "https://github.com/thoth-tech",
+      },
+      components: {
+        MarkdownContent: "starlight-blog/overrides/MarkdownContent.astro",
+        Sidebar: "starlight-blog/overrides/Sidebar.astro",
+        ThemeSelect: "starlight-blog/overrides/ThemeSelect.astro",
+      },
+      sidebar: [
+        {
+          label: "Processes",
+          items: [
+            { label: "Introduction", link: "/processes/introduction" },
+            {
+              label: "Cyber Security Guidelines",
+              autogenerate: {
+                directory: "processes/cyber-security-guidelines",
+              },
+            },
+            {
+              label: "Documentation",
+              autogenerate: { directory: "processes/Documentation" },
+            },
+            {
+              label: "Quality Assurance",
+              items: [
+                {
+                  label: "Git Contributions Guide",
+                  link: "/processes/quality-assurance/git-contributions-guide",
+                },
+                {
+                  label: "Quality Assurance Overview",
+                  link: "/processes/quality-assurance/quality-assurance-overview",
+                },
+                {
+                  label: "Testing and Development",
+                  link: "/processes/quality-assurance/testing-and-dev",
+                },
+                {
+                  label: "Templates",
+                  autogenernpate: {
+                    directory: "processes/quality-assurance/templates",
+                  },
+                },
+              ],
+            },
+          ],
+        },
+        {
+          label: "Teams and Leadership",
+          autogenerate: {
+            directory: "teams-and-leadership",
+          },
+        },
+        {
+          label: "Reference",
+          autogenerate: {
+            directory: "reference",
+          },
+        },
+        {
+          label: "Policies",
+          autogenerate: {
+            directory: "policies",
+          },
+        },
+        {
+          label: "Products",
+          items: [
+            {
+              label: "Products",
+              link: "/products/products",
+            },
+            {
+              label: "Art Gallery",
+              items: [
+                {
+                  label: "Get to Know Us",
+                  link: "/products/art-gallery/example",
+                },
+                {
+                  label: "Projects",
+                  autogenerate: {
+                    directory: "products/art-gallery/projects",
+                  },
+                  items: [
+                    {
+                      label: "Lighthouse",
+                      autogenerate: {
+                        directory: "products/art-gallery/Projects/Lighthouse",
+                      },
+                    },
+                    {
+                      label: "Dockerization",
+                      autogenerate: {
+                        directory: "products/art-gallery/Projects/dockerization",
+                      },
+                    },
+                  ],
+                },
+                {
+                  label: "Documentation",
+                  autogenerate: {
+                    directory: "products/art-gallery/Documentation",
+                  },
+                },
+                {
+                  label: "Issues and Resolutions",
+                  autogenerate: {
+                    directory: "products/art-gallery/issues-and-resolutions",
+                  },
+                },
+              ],
+            },
+            {
+              label: "Company Operations",
+              items: [
+                {
+                  label: "Get to Know Us",
+                  link: "/products/company-operations/example",
+                },
+                {
+                  label: "Projects",
+                  autogenerate: {
+                    directory: "products/company-operations/projects",
+                  },
+                  items: [
+                    {
+                      label: "Docusaurus Documentation",
+                      autogenerate: {
+                        directory: "products/company-operations/projects/docusaurus-documentation",
+                      },
+                    },
+                    {
+                      label: "Thoth Tech Website",
+                      autogenerate: {
+                        directory: "products/company-operations/projects/Thoth-Tech-Website",
+                      },
+                    },
+                  ],
+                },
+                {
+                  label: "Documentation",
+                  autogenerate: {
+                    directory: "products/company-operations/documentation",
+                  },
+                },
+                {
+                  label: "Issues and Resolutions",
+                  autogenerate: {
+                    directory: "products/company-operations/issues-and-resolution",
+                  },
+                },
+              ],
+            },
+            {
+              label: "CourseFlow",
+              items: [
+                {
+                  label: "Get to Know Us",
+                  link: "/products/courseflow/example",
+                },
+                {
+                  label: "Projects",
+                  autogenerate: {
+                    directory: "products/courseflow/Projects",
+                  },
+                },
+                {
+                  label: "Documentation",
+                  autogenerate: {
+                    directory: "products/courseflow/Documentation",
+                  },
+                },
+                {
+                  label: "Issues and Resolutions",
+                  autogenerate: {
+                    directory: "products/courseflow/issues-and-resolutions",
+                  },
+                },
+              ],
+            },
+            {
+              label: "OnTrack",
+              items: [
+                {
+                  label: "Get to Know Us",
+                  link: "/products/ontrack/example",
+                },
+                {
+                  label: "Projects",
+                  autogenerate: {
+                    directory: "products/ontrack/projects",
+                  },
+                },
+                {
+                  label: "Documentation",
+                  autogenerate: {
+                    directory: "products/ontrack/documentation",
+                  },
+                  items: [
+                    {
+                      label: "Front End Migration",
+                      autogenerate: {
+                        directory: "products/ontrack/documentation/front-end-migration",
+                      },
+                    },
+                    {
+                      label: "Numbas",
+                      autogenerate: {
+                        directory: "products/ontrack/documentation/numbas",
+                      },
+                    },
+                    {
+                      label: "Deployment",
+                      autogenerate: {
+                        directory: "products/ontrack/documentation/deployment",
+                      },
+                    },
+                  ],
+                },
+                {
+                  label: "Issues and Resolutions",
+                  autogenerate: {
+                    directory: "products/ontrack/issues-and-resolutions",
+                  },
+                },
+              ],
+            },
+            {
+              label: "SplashKit",
+              items: [
+                {
+                  label: "Get to Know Us",
+                  link: "/products/splashkit/example",
+                },
+                {
+                  label: "Projects",
+                  autogenerate: {
+                    directory: "products/splashkit/projects",
+                  },
+                },
+                {
+                  label: "Documentation",
+                  autogenerate: {
+                    directory: "products/splashkit/documentation",
+                  },
+                  // items: [
+                  //   {
+                  //     label: "Applications",
+                  //     autogenerate: {
+                  //       directory: "products/splashkit/documentation/applications",
+                  //     },
+                  //   },
+                  // ],
+                },
+                {
+                  label: "Issues and Resolutions",
+                  autogenerate: {
+                    directory: "products/splashkit/issues-and-resolutions",
+                  },
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    }),
+  ],
+  // Process images with sharp: https://docs.astro.build/en/guides/assets/#using-sharp
+  image: {
+    service: {
+      entrypoint: "astro/assets/services/sharp",
+    },
+  },
+});
