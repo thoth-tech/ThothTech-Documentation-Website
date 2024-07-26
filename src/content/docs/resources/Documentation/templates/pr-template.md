@@ -1,7 +1,7 @@
 ---
-title: PR Template
+title: Pull Request Template
 sidebar:
-  label: PR Template
+  label: Pull Request Template
 ---
 
 ## Any italic text should be deleted from the final Pull Request text, including this line
