@@ -8,8 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "format": "prettier --write \"**/*.md*\"",
-    "format:check": "prettier --check \"**/*.md*\"",
+    "format": "prettier --write \"**/*.md\"",
+    "format:check": "prettier --check \"**/*.md\"",
     "prose:check": "vale --minAlertLevel error --output=.vale/vale.tmpl docs",
     "lint": "npm run format:check && npm run prose:check"
   },
