@@ -267,6 +267,10 @@ export default defineConfig({
                   link: "/products/ontrack/example",
                 },
                 {
+                  label: "Start Contributing",
+                  link: "/products/ontrack/start-contributing",
+                },
+                {
                   label: "Projects",
                   autogenerate: {
                     directory: "products/ontrack/Projects",
