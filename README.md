@@ -1,6 +1,6 @@
 # Starlight Starter Kit: Basics
 
-```
+```shell
 npm create astro@latest -- --template starlight
 ```
 
@@ -13,14 +13,14 @@ npm create astro@latest -- --template starlight
 
 Inside of your Astro + Starlight project, you'll see the following folders and files:
 
-```
+```plaintext
 .
 ├── public/
 ├── src/
-│   ├── assets/
 │   ├── content/
 │   │   ├── docs/
 │   │   └── config.ts
+│   ├── styles/
 │   └── env.d.ts
 ├── astro.config.mjs
 ├── package.json

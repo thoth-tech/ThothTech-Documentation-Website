@@ -103,6 +103,7 @@ syllables per word. For more information, see
    confirmed by running `nvm which`.
 
 1. Install all dependencies
+
    ```sh
    npm install
    ```
@@ -140,6 +141,7 @@ syllables per word. For more information, see
    confirmed by running `nvm which`.
 
 1. Install all dependencies
+
    ```sh
    npm install
    ```

@@ -1,6 +1,8 @@
 ---
-title: SplashKit Tutorials
+title: Tutorials List
 description: A compilation of SplashKit tutorials with recommendations for improvement.
+sidebar:
+  order: 3
 ---
 
 On this page is a compilation of SplashKit tutorials and tutorial proposals. Areas of potential
@@ -304,9 +306,10 @@ While these tutorials are quite decent, they suffer from what seems to be a big 
 actually a completed project that the tutorials are leading up to, and since some of the parts are
 written by different people, there is a lack of continuity. Something introduced by one tutorial (as
 an example: creating a floor using sprites), is then forgotten about in a future tutorial (which
-then opts to quickly add a ground by drawing rectangles). <br/> It would be good if there was a
-'source-of-truth' codebase for the finished game, that can then be used as a base to keep the
-tutorials cohesive even when written by different people.
+then opts to quickly add a ground by drawing rectangles).
+
+It would be good if there was a 'source-of-truth' codebase for the finished game, that can then be
+used as a base to keep the tutorials cohesive even when written by different people.
 
 :::
 

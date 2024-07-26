@@ -1,6 +1,17 @@
 {
   "MD033": {
-    "allowed_elements": ["ul", "li", "img", "details", "summary"]
+    "allowed_elements": [
+      "ul",
+      "li",
+      "img",
+      "details",
+      "summary",
+      "Tabs",
+      "TabItem",
+      "Card",
+      "LinkCard",
+      "CardGrid"
+    ]
   },
   "MD013": {
     "line_length": 100,

@@ -405,84 +405,87 @@ export default defineConfig({
             {
               label: "SplashKit",
               collapsed: true, // Collapsed by default
-              items: [
-                {
-                  label: "Get to Know Us",
-                  link: "/products/splashkit/example",
-                },
-                {
-                  label: "Projects",
-                  autogenerate: {
-                    directory: "products/splashkit/projects",
-                  },
-                },
-                {
-                  label: "Documentation",
-                  autogenerate: {
-                    directory: "products/splashkit/documentation",
-                  },
-                  items: [
-                    {
-                      label: "Tutorials",
-                      autogenerate: {
-                        directory: "products/splashkit/documentation/tutorials",
-                      },
-                    },
-                    {
-                      label: "Expansions",
-                      autogenerate: {
-                        directory: "products/splashkit/documentation/expansions",
-                      },
-                    },
-                    {
-                      label: "SplashKit Online",
-                      autogenerate: {
-                        directory: "products/splashkit/documentation/splashkit-online",
-                      },
-                      items: [
-                        {
-                          label: "Code Documentation",
-                          autogenerate: {
-                            directory: "products/splashkit/documentation/splashkit-online/code-documentation",
-                          },
-                          items: [
-                            {
-                              label: "Classes",
-                              autogenerate: {
-                                directory: "products/splashkit/documentation/splashkit-online/code-documentation/classes",
-                              },
-                            },
-                            {
-                              label: "Processes",
-                              autogenerate: {
-                                directory: "products/splashkit/documentation/splashkit-online/code-documentation/processes",
-                              },
-                            },
-                            {
-                              label: "Other",
-                              autogenerate: {
-                                directory: "products/splashkit/documentation/splashkit-online/code-documentation/other",
-                              },
-                            },
-                          ],
-                        },
-                      ],
-                    },
-                    {
-                      label: "Research and Findings",
-                      autogenerate: {
-                        directory: "products/splashkit/documentation/splashkit-online/research-and-findings",
-                      },
-                    },
-                  ],
-                },
-                {
-                  label: "Issues and Resolutions",
-                  autogenerate: {
-                    directory: "products/splashkit/issues-and-resolutions",
-                  },
-                },
-              ],
+              autogenerate: {
+                directory: "products/splashkit",
+              },
+              // items: [
+              //   {
+              //     label: "Get to Know Us",
+              //     link: "/products/splashkit/example",
+              //   },
+              //   {
+              //     label: "Projects",
+              //     autogenerate: {
+              //       directory: "products/splashkit/projects",
+              //     },
+              //   },
+              //   {
+              //     label: "Documentation",
+              //     autogenerate: {
+              //       directory: "products/splashkit/documentation",
+              //     },
+              //     items: [
+              //       {
+              //         label: "Tutorials",
+              //         autogenerate: {
+              //           directory: "products/splashkit/documentation/tutorials",
+              //         },
+              //       },
+              //       {
+              //         label: "Expansions",
+              //         autogenerate: {
+              //           directory: "products/splashkit/documentation/expansions",
+              //         },
+              //       },
+              //       {
+              //         label: "SplashKit Online",
+              //         autogenerate: {
+              //           directory: "products/splashkit/documentation/splashkit-online",
+              //         },
+              //         items: [
+              //           {
+              //             label: "Code Documentation",
+              //             autogenerate: {
+              //               directory: "products/splashkit/documentation/splashkit-online/code-documentation",
+              //             },
+              //             items: [
+              //               {
+              //                 label: "Classes",
+              //                 autogenerate: {
+              //                   directory: "products/splashkit/documentation/splashkit-online/code-documentation/classes",
+              //                 },
+              //               },
+              //               {
+              //                 label: "Processes",
+              //                 autogenerate: {
+              //                   directory: "products/splashkit/documentation/splashkit-online/code-documentation/processes",
+              //                 },
+              //               },
+              //               {
+              //                 label: "Other",
+              //                 autogenerate: {
+              //                   directory: "products/splashkit/documentation/splashkit-online/code-documentation/other",
+              //                 },
+              //               },
+              //             ],
+              //           },
+              //         ],
+              //       },
+              //       {
+              //         label: "Research and Findings",
+              //         autogenerate: {
+              //           directory: "products/splashkit/documentation/splashkit-online/research-and-findings",
+              //         },
+              //       },
+              //     ],
+              //   },
+              //   {
+              //     label: "Issues and Resolutions",
+              //     autogenerate: {
+              //       directory: "products/splashkit/issues-and-resolutions",
+              //     },
+              //   },
+              // ],
             },
           ],
         },
