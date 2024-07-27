@@ -25,11 +25,10 @@ This tutorial is intermediate-level, designed for readers with basic programming
 - [draw_bitmap](https://splashkit.io/api/graphics/#draw-bitmap)
 - [process_events](https://splashkit.io/api/input/#process-events)
 - [key_down](https://splashkit.io/api/input/#key-down)
-- [create_vector](https://splashkit.io/documentation/create_vector)
 - [vector_add](https://splashkit.io/api/physics/#vector-add)
 - [vector_subtract](https://splashkit.io/api/physics/#vector-subtract)
 - [vector_magnitude](https://splashkit.io/api/physics/#vector-magnitude)
-- [normalize_vector](https://splashkit.io/api/physics/#vector-normal)
+- [vector_normal](https://splashkit.io/api/physics/#vector-normal)
 - [dot_product](https://splashkit.io/api/physics/#dot-product)
 
 ## Conclusion
