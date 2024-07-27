@@ -20,17 +20,17 @@ This tutorial is intermediate-level, designed for readers with basic programming
 
 ### Functions Covered
 
-- [open_window](https://splashkit.io/documentation/open_window)
-- [load_bitmap](https://splashkit.io/documentation/load_bitmap)
-- [draw_bitmap](https://splashkit.io/documentation/draw_bitmap)
-- [process_events](https://splashkit.io/documentation/process_events)
-- [key_down](https://splashkit.io/documentation/key_down)
+- [open_window](https://splashkit.io/api/windows/#open-window)
+- [load_bitmap](https://splashkit.io/api/graphics/#load-bitmap)
+- [draw_bitmap](https://splashkit.io/api/graphics/#draw-bitmap)
+- [process_events](https://splashkit.io/api/input/#process-events)
+- [key_down](https://splashkit.io/api/input/#key-down)
 - [create_vector](https://splashkit.io/documentation/create_vector)
-- [vector_add](https://splashkit.io/documentation/vector_add)
-- [vector_subtract](https://splashkit.io/documentation/vector_subtract)
-- [vector_magnitude](https://splashkit.io/documentation/vector_magnitude)
-- [normalize_vector](https://splashkit.io/documentation/normalize_vector)
-- [dot_product](https://splashkit.io/documentation/dot_product)
+- [vector_add](https://splashkit.io/api/physics/#vector-add)
+- [vector_subtract](https://splashkit.io/api/physics/#vector-subtract)
+- [vector_magnitude](https://splashkit.io/api/physics/#vector-magnitude)
+- [normalize_vector](https://splashkit.io/api/physics/#vector-normal)
+- [dot_product](https://splashkit.io/api/physics/#dot-product)
 
 ## Conclusion
 
