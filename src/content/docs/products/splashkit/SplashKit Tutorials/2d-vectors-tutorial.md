@@ -1,5 +1,5 @@
 ---
-title: Tutorial Proposal Template
+title: Basic Vectors, Reflections and Collisions
 sidebar:
   order: 2
 ---
