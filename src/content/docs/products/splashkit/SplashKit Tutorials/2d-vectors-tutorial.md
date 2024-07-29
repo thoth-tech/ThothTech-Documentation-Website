@@ -1,3 +1,9 @@
+---
+title: Tutorial Proposal Template
+sidebar:
+  order: 2
+---
+
 ## Basic Vectors, Reflections and Collisions
 
 **Vectors are a fundamental tool in game development, enabling precise control over movement, collision, and physics. Understanding vectors unlocks the ability to create dynamic and realistic game experiences. SplashKit excels in handling vector operations, offering intuitive functions and robust support for 2D game mechanics.**
