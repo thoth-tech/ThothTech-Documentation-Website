@@ -1,7 +1,8 @@
 ---
 title: Tutorial Proposal Template
+description: Use this template to create a proposal for a new SplashKit tutorial.
 sidebar:
-  order: 2
+  order: 1
 ---
 
 ## Introduction
