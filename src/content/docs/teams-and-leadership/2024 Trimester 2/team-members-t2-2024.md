@@ -8,13 +8,13 @@ title: Team Members T2 2024
 |--------------------|-------------------------------------------------|---------------|
 | Jack Carroll       | Senior Lead - JPLag Implementation              | Senior        |
 | Jake Mansfield     | Senior Lead - Courseflow Development            | Senior        |
-| Isabelle Holt      | Senior Lead - Frontend Migration                | Senior        |
 | Samuel Rolfe       | Team Member - Courseflow Development & Frontend | Senior        |
 | Joshua Bourquin    | Team Member - Courseflow Development & Frontend | Senior        |
 | Su Myat Thiri      | Team Member - Frontend Migration                | Senior        |
 | Yuheng Wang        | Team Member - Frontend Migration                | Senior        |
 | Minu Sunil         | Team Member - Documentation Website             | Senior        |
 | Shyama Pillai      | Team Member - Documentation Website             | Senior        |
+| Isabelle Holt      | Team Member - Frontend Migration                | Senior        |
 | Anirudh Joshi      | Team Member - Frontend Migration                | Senior        |
 | Amos Saji          | Team Member - Frontend Migration                | Senior        |
 | Atharv Bhandare    | Junior Lead - JPLag Implementation              | Junior        |
