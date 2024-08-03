@@ -2,8 +2,8 @@
 title: Linux Installation Guide
 description: Use this template to create a proposal for a new SplashKit tutorial.
 sidebar:
-  order: 1
-  label: Linux Installation
+  order: 2
+  label: 2. Linux Installation
   attrs:
     class: linux
 ---

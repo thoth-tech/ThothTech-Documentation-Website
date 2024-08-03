@@ -1,10 +1,11 @@
 ---
 title: Tutorial Reviews
 sidebar:
+  label: 3. Tutorial Reviews
   order: 3
 ---
 
-## Guide to Filling out the Tutorial Review
+## Filling out the Tutorial Review
 
 After completing a tutorial review card. Please fill out the information under the designated spot on this page for the tutorial, using the following template:
 

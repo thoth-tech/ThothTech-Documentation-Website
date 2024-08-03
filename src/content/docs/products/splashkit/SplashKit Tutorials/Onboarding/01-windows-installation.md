@@ -2,8 +2,8 @@
 title: Windows Installation Guide
 description: Use this template to create a proposal for a new SplashKit tutorial.
 sidebar:
-  order: 2
-  label: Windows Installation
+  order: 1
+  label: 1. Windows Installation
   attrs:
     class: windows
 ---
