@@ -4,6 +4,30 @@ sidebar:
   order: 3
 ---
 
+## Guide to Filling out the Tutorial Review
+
+After completing a tutorial review card. Please fill out the information under the designated spot on this page for the tutorial, using the following template:
+
+### Review Template
+
+#### Description:
+
+This tutorial covers how to do this...
+
+Website Link:
+
+Repo Link:
+
+#### Confirmation of Passing Quality Checks:
+
+- [ ] The tutorial is free of spelling and grammatical errors.
+- [ ] The tutorial is easy to follow.
+- [ ] The tutorial uses top level statements in C# and C++.
+- [ ] The code passes all the Quality Checks.
+
+#### Result of the code:
+
+Add the results here...
 
 ## Animations
 
