@@ -16,7 +16,6 @@ title: Leadership T2 2024
 - Jake Mansfield - Student Lead  | OnTrack CourseFlow Development
 - Jack Carroll - Student Lead  | OnTrack JPLag Implementation
 - Atharv Bhandare - Junior Leader  | OnTrack JPLag Implementation
-- Isabelle Holt - Senior Leader  | OnTrack FrontEnd Migration
 - Ivan Justin - Junior Leader  | OnTrack FrontEnd Migration
 - Jonathan Tynan - Student Lead  | SplashKit Expansion & Tutorials
 - Oscar Harris - Student Lead  | SplashKit Games Development & Design
