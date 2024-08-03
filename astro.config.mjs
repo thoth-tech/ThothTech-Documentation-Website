@@ -19,55 +19,82 @@ export default defineConfig({
       },
       sidebar: [
         {
-          label: "Processes",
+          label: "Resources",
           collapsed: true, // Collapsed by default
           items: [
+            { label: "Introduction", 
+              link: "/resources/introduction",
+            },
+  
             {
-              label: "Thoth Tech Technology Stack Document",
-              link: "processes/thoth-tech-technology-stack",
-              
+              label: "Thoth Tech Technology Stack",
+              link: "/resources/thoth-tech-technology-stack",
             },
 
-            { label: "Introduction", 
-              link: "/processes/introduction",
-             },
-              
             {
-              label: "Cyber Security Guidelines",
-              collapsed: true, // Collapsed by default
-              autogenerate: {
-                directory: "processes/cyber-security-guidelines",
-                
-              },
+              label: "Remote Working Guide",
+              link: "/resources/remote-working-guide",
             },
             {
-              label: "Documentation",
+              label: "Onboarding Hub",
               collapsed: true, // Collapsed by default
-              autogenerate: { directory: "processes/Documentation" },
+              items: [
+                {
+                  label: "Thoth Tech Welcome Package",
+                  link: "resources/onboarding-hub/thothtech-onboarding-doc",
+                },
+                {
+                  label: "OnTrack Onboarding Package",
+                  link: "resources/onboarding-hub/ontrack-onboarding-doc",
+                },
+                {
+                  label: "SplashKit Onboarding Package",
+                  link: "resources/onboarding-hub/splashkit-onboarding-doc",
+                },
+              ],
             },
             {
               label: "Quality Assurance",
               collapsed: true, // Collapsed by default
               items: [
                 {
-                  label: "Git Contributions Guide",
-                  link: "/processes/quality-assurance/git-contributions-guide",
+                  label: "Quality Assurance Overview",
+                  link: "/resources/quality-assurance/quality-assurance-overview",
                 },
                 {
-                  label: "Quality Assurance Overview",
-                  link: "/processes/quality-assurance/quality-assurance-overview",
+                  label: "Git Contributions Guide",
+                  link: "/resources/quality-assurance/git-contributions-guide",
                 },
                 {
                   label: "Testing and Development",
-                  link: "/processes/quality-assurance/testing-and-dev",
+                  link: "/resources/quality-assurance/testing-and-dev",
+                },
+              ],
+            },
+            {
+              label: "Documentation",
+              collapsed: true, // Collapsed by default
+              items: [
+                {
+                  label: "Documenting for Thoth Tech",
+                  link: "/resources/documentation/documenting-for-thoth-tech",
+                },
+                {
+                  label: "Writing Style Guide",
+                  link: "/resources/documentation/writing-style-guide",
                 },
                 {
                   label: "Templates",
+                  collapsed: true, // Collapsed by default
                   autogenerate: {
-                    directory: "processes/quality-assurance/templates",
+                    directory: "resources/Documentation/templates",
                   },
                 },
-              ],
+              ]
+            },
+            {
+              label: "Frequently Asked Questions (FAQ)",
+              link: "/resources/faq",
             },
           ],
         },
@@ -79,28 +106,15 @@ export default defineConfig({
           },
         },
         {
-          label: "Company Wide Submissions",
+          label: "Company Submissions",
           collapsed: true, // Collapsed by default
           autogenerate: {
             directory: "companywidesubmissions",
           },
         },
         {
-          label: "Reference",
-          collapsed: true, // Collapsed by default
-          autogenerate: {
-            directory: "reference",
-          },
-        },
-        {
-          label: "Policies",
-          collapsed: true, // Collapsed by default
-          autogenerate: {
-            directory: "policies",
-          },
-        },
-        {
           label: "Products",
+          collapsed: true, // Collapsed by default
           items: [
             {
               label: "Products",
@@ -493,7 +507,7 @@ export default defineConfig({
           label: "Feedback",
           items: [
             {
-              label: "Feedback",
+              label: "Feedback Form",
               link: "feedback/feedback-form",
             },
           ],
