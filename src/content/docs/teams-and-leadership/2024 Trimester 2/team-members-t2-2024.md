@@ -51,7 +51,7 @@ title: Team Members T2 2024
 | Simon Zhu            | Team Member – Games Development                  | Senior        |
 | Brianna Laird        | Junior Lead – SplashKit Tutorials & Expansion    | Junior        |
 | Shaun Ratcliff       | Junior Lead – SplashKit Website & Tutorials      | Junior        |
- Jordan Brown         | Team Member – SplashKit Website                  | Junior        |
+| Jordan Brown         | Team Member – SplashKit Website                  | Junior        |
 | Matthew Harding      | Team Member – SplashKit Expansion                | Junior        |
 | Ethan Holley         | Team Member – SplashKit Online                   | Junior        |
 | Hangyu Li            | Team Member – SplashKit Website                  | Junior        |
