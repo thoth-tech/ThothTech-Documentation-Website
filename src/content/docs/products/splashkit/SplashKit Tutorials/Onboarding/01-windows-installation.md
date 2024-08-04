@@ -31,6 +31,8 @@ The following shows the steps of each part of the install for msys2:
 
 ![msys2](/splashkit/windows-installation-fig4.png)
 
+It is strongly recommended that you use the default install path, but you can customise the other installation options as needed.
+
 ![msys2](/splashkit/windows-installation-fig5.png)
 
 ![msys2](/splashkit/windows-installation-fig6.png)
@@ -48,6 +50,8 @@ pacman -S git mingw-w64-x86_64-clang mingw-w64-x86_64-gcc mingw-w64-x86_64-gdb -
 You will need to right click in the terminal and select paste as the terminal does not support `ctrl + v`.
 
 ![msys2](/splashkit/windows-installation-fig8.png)
+
+This process may take a few minutes to run.
 
 ![msys2](/splashkit/windows-installation-fig9.png)
 
@@ -71,10 +75,25 @@ bash <(curl -s https://raw.githubusercontent.com/splashkit/skm/master/install-sc
 skm
 ```
 
+If this is successful the output should look like:
+
+```bash
+SplashKit is installed successfully!
+Missing skm command. For help use 'skm help'
+```
+
 Then the command:
 
 ```bash
 skm global install
+```
+
+If this command is successful, the output should look like:
+
+```bash
+Splashkit is installed correctly!
+Done
+Global command run successfully
 ```
 
 ![msys2](/splashkit/windows-installation-fig11.png)
