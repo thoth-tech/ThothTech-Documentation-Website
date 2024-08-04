@@ -20,11 +20,13 @@ To start, head to the official [msys2 website](https://www.msys2.org/) and downl
 
 ### Install msys2
 
-When the installer is downloaded, run it, you will get a pop up that looks like the following:
+When the installer is downloaded, run it, you might get a pop up like the following:
 
 ![msys2](/splashkit/windows-installation-fig2.png)
 
-You will need to click `more info` then click run. The following shows the screenshots of each step and the options selected:
+If you do, you will need to click `more info` then click run. 
+
+The following shows the steps of each part of the install for msys2:
 
 
 ![msys2](/splashkit/windows-installation-fig4.png)
