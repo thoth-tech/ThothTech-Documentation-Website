@@ -102,51 +102,16 @@ Global command run successfully
 
 ### Download Visual Studio Code
 
+Next you will need to install visual studio code, if you have this already installed, then move to installing the necessary extensions for Visual Studio Code.
+
 To install Visual Studio Code, go to the [Visual Studio Code website](https://code.visualstudio.com/) and download the `.exe` file.
 
 ![msys2](/splashkit/windows-installation-fig12.png)
 
-### Installing Necessary Extensions
+![msys2](/splashkit/windows-installation-fig13.png)
 
-To install the necessary extensions, keep the terminal open and run the following commands:
+![msys2](/splashkit/windows-installation-fig14.png)
 
-#### C# Extension
-
-[C# for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp):
-
-```bash
-code --install-extension ms-dotnettools.csharp
-```
-
-![Terminal](/splashkit/linux-installation-fig12.png)
-
-#### C# Dev Kit
-
-[C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit):
-
-```bash
-code --install-extension ms-dotnettools.csdevkit
-```
-
-![Terminal](/splashkit/linux-installation-fig13.png)
-
-#### Intellicode for C# Dev Kit
-
-[Intellicode for C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.vscodeintellicode-csharp):
-
-```bash
-code --install-extension ms-dotnettools.vscodeintellicode-csharp
-```
-
-![Terminal](/splashkit/linux-installation-fig14.png)
-
-#### C++ Extension Pack
-
-[C++ Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack):
-
-```bash
-code --install-extension ms-vscode.cpptools-extension-pack
-```
 
 ## Installing Necessary Extensions for Visual Studio Code
 

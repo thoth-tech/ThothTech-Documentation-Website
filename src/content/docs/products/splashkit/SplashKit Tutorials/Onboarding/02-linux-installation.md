@@ -14,7 +14,7 @@ This is a guide on how to install Splashkit on Ubuntu, along with all the necess
 
 ### Update your system
 
-To start, open up a terminal with the keys `ctrl + Alt + T`, then type in the following commands:
+To start, open up a terminal with the keys `Ctrl + Alt + T`, then type or use `Ctrl + Shift + p` to copy following commands:
 
 ```bash
 sudo apt update && sudo apt upgrade -y
@@ -44,7 +44,7 @@ bash <(curl -s https://raw.githubusercontent.com/splashkit/skm/master/install-sc
 
 ![Terminal](/splashkit/linux-installation-fig4.png)
 
-Then you must **RESTART** you terminal.
+Then you must **RESTART** your terminal.
 
 ### skm Command
 
@@ -54,19 +54,35 @@ To install SplashKit, you can use the `skm` command. Run the following command t
 skm
 ```
 
+If this is successful the output should look like:
+
+```bash
+SplashKit is installed successfully!
+Missing skm command. For help use 'skm help'
+```
+
 ![Terminal](/splashkit/linux-installation-fig5.png)
 
 ### skm Linux Install
 
-Then to install skm on SplashKit you will run the following command:
+To install SplashKit on Linux, run the following command:
+
 
 ```bash
 skm linux install
 ```
 
+This may require additional dependencies to be installed, if this is the case you will be prompted to enter your password to install the dependencies.
+
+If this command is successful, the output should look like:
+
+```bash
+Splashkit Installed
+Linux Command run successfully
+```
+
 ![Terminal](/splashkit/linux-installation-fig6.png)
 
-This command may or may not require you to enter your password to install additional dependencies for SplashKit.
 
 ![Terminal](/splashkit/linux-installation-fig7.png)
 
@@ -78,15 +94,21 @@ To install SplashKit globally, run the following command:
 skm global install
 ```
 
+If this command is successful, the output should look like:
+
+```bash
+Splashkit is installed correctly!
+Done
+Global command run successfully
+```
+
 ![Terminal](/splashkit/linux-installation-fig8.png)
 
 ## Installing Visual Studio Code
 
-Next you will need to install visual studio code, if you have this already installed, then move to installing the necessary extensions step.
+Next you will need to install visual studio code, if you have this already installed, then move to installing the necessary extensions for Visual Studio Code.
 
-### Download Visual Studio Code
-
- To install Visual Studio Code, go to the [Visual Studio Code website](https://code.visualstudio.com/) and download the `.deb` file.
+To install Visual Studio Code, go to the [Visual Studio Code website](https://code.visualstudio.com/) and download the `.deb` file.
 
 ![Terminal](/splashkit/linux-installation-fig9.png)
 
@@ -94,17 +116,19 @@ Next you will need to install visual studio code, if you have this already insta
 
 ### Install Visual Studio Code
 
-To install Visual Studio Code, move to the directory where the downloaded `.deb` file by doing:
+To install Visual Studio Code, move to the directory where the downloaded `.deb` file is (this is typically your downloads folder), by doing:
 
 ```bash
 cd ~/Downloads
 ```
 
-Then run the following command:
+Then run the following command to install the `.deb` file:
 
 ```bash
 sudo dpkg -i code_1.*.deb
 ```
+
+If this command is successfully you will see all processed triggers completed.
 
 ![Terminal](/splashkit/linux-installation-fig11.png)
 

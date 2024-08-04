@@ -69,4 +69,7 @@ Use the pull request template to provide detailed information about your request
 
 ### 8. Submit Your Pull Request
 
-Once you have filled out the template and completed all required checks, submit your pull request for review.
+Once you have filled out the template and completed all required checks, submit your pull request for review. After submitted, move the associated planner card task into the first peer review and share the pull request and card into the group chat. Well done and keep an eye out for the feedback from your peer reviewer!
+
+- [Pull Request Template](/products/splashkit/splashkit-tutorials/onboarding/04-pull-request-template): The template for creating a pull request for SplashKit tutorials.
+- [Peer Review Guide](/products/splashkit/splashkit-tutorials/onboarding/05-peer-review): The guide on how to do a peer review within the SplashKit tutorials team.
