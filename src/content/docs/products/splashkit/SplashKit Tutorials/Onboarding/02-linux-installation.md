@@ -128,7 +128,7 @@ Then run the following command to install the `.deb` file:
 sudo dpkg -i code_1.*.deb
 ```
 
-If this command is successfully you will see all processed triggers completed.
+If this command is successful, you will see all processed triggers have been completed.
 
 ![Terminal](/splashkit/linux-installation-fig11.png)
 
