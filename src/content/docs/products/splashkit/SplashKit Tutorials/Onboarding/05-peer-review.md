@@ -47,13 +47,13 @@ git remote -v
 To review a pull request, you need to fetch it into a new branch. Check the ID/number of the PR you want to review. Use the following command to fetch the PR, replacing `ID` with the PR number and `PR-branch-name` with a name you want to use for this review.
 
 ```shell
-git fetch origin pull/ID/head:PR-branch-name
+git fetch upstream pull/ID/head:PR-branch-name
 ```
 
 #### Example: If Testing PR#7 that Adds "xyz" Feature
 
 ```shell
-git fetch origin pull/7/head:test-feature-xyz
+git fetch upstream pull/7/head:test-feature-xyz
 ```
 
 ### 5. Checkout the New Branch
