@@ -22,7 +22,8 @@ git remote -v
 
 ### 2. Add Upstream Branches (if not present)
 
-If the upstream branches are not added, you can add them using the following command. Replace `<repo-name>` with the actual repository name.
+If the upstream branches are not added, you can add them using the following command. Replace
+`<repo-name>` with the actual repository name.
 
 ```shell
 git remote add upstream https://github.com/thoth-tech/<repo-name>.git
@@ -44,7 +45,9 @@ git remote -v
 
 ### 4. Pull the PR into a New Branch
 
-To review a pull request, you need to fetch it into a new branch. Check the ID/number of the PR you want to review. Use the following command to fetch the PR, replacing `ID` with the PR number and `PR-branch-name` with a name you want to use for this review.
+To review a pull request, you need to fetch it into a new branch. Check the ID/number of the PR you
+want to review. Use the following command to fetch the PR, replacing `ID` with the PR number and
+`PR-branch-name` with a name you want to use for this review.
 
 ```shell
 git fetch upstream pull/ID/head:PR-branch-name
@@ -66,7 +69,8 @@ git checkout PR-branch-name
 
 ### 6. Review the Code
 
-Now that you have the PR branch checked out, you can review the code. Look for the following aspects:
+Now that you have the PR branch checked out, you can review the code. Look for the following
+aspects:
 
 - **Code Quality**: Ensure the code follows the project's coding standards and guidelines.
 - **Functionality**: Verify that the new feature or bug fix works as intended.
@@ -80,12 +84,14 @@ Now that you have the PR branch checked out, you can review the code. Look for t
 
 - [ ] Bug fix (non-breaking change which fixes an issue)
 - [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
+- [ ] Breaking change (fix or feature that would cause existing functionality to not work as
+      expected)
 - [ ] Documentation (update or new)
 
 ## How Has This Been Tested?
 
-Please describe the tests that you ran to verify your changes. Provide instructions so we can reproduce. Please also list any relevant details for your test configuration.
+Please describe the tests that you ran to verify your changes. Provide instructions so we can
+reproduce. Please also list any relevant details for your test configuration.
 
 - [ ] Tested in latest Chrome
 - [ ] Tested in latest Firefox
@@ -125,12 +131,16 @@ Please list the folders and files added/modified with this pull request.
 
 ### 7. Test the Changes
 
-Run the project locally to test the changes introduced by the PR. Make sure everything works as expected and there are no new bugs introduced.
+Run the project locally to test the changes introduced by the PR. Make sure everything works as
+expected and there are no new bugs introduced.
 
 ### 8. Provide Feedback
 
-After reviewing and testing, provide constructive feedback on the PR. You can add comments directly on the PR in GitHub. Mention any required changes or improvements.
+After reviewing and testing, provide constructive feedback on the PR. You can add comments directly
+on the PR in GitHub. Mention any required changes or improvements.
 
 ### 9. Approve or Request Changes
 
-Based on your review, either approve the PR or request changes. If everything looks good and works as expected, you can approve the PR. If there are issues, request changes and provide detailed feedback.
+Based on your review, either approve the PR or request changes. If everything looks good and works
+as expected, you can approve the PR. If there are issues, request changes and provide detailed
+feedback.

@@ -1,4 +1,22 @@
-# Starlight Starter Kit: Basics
+# Thoth Tech's Documentation Website Repo
+
+## Format Checks To Run
+
+Make sure to run the following commands to format the files before you make a Pull Request.
+
+1. To format the files:
+
+    ```shell
+    npm run format
+    ```
+
+2. To run the lint checker:
+
+    ```shell
+    npm run lint
+    ```
+
+## Starlight Starter Kit: Basics
 
 ```shell
 npm create astro@latest -- --template starlight
