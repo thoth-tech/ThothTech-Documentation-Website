@@ -250,79 +250,45 @@ export default defineConfig({
               },
               // items: [
               //   {
-              //     label: "Get to Know Us",
-              //     link: "/products/splashkit/example",
-              //   },
-              //   {
-              //     label: "Projects",
+              //     label: "Arcade Machine",
+              //     collapsed: true, // Collapsed by default
               //     autogenerate: {
-              //       directory: "products/splashkit/projects",
+              //       directory: "products/splashkit/Arcade Machine",
               //     },
               //   },
               //   {
-              //     label: "Documentation",
+              //     label: "Games Development",
+              //     collapsed: true, // Collapsed by default
               //     autogenerate: {
-              //       directory: "products/splashkit/documentation",
+              //       directory: "products/splashkit/Games Development",
               //     },
-              //     items: [
-              //       {
-              //         label: "Tutorials",
-              //         autogenerate: {
-              //           directory: "products/splashkit/documentation/tutorials",
-              //         },
-              //       },
-              //       {
-              //         label: "Expansions",
-              //         autogenerate: {
-              //           directory: "products/splashkit/documentation/expansions",
-              //         },
-              //       },
-              //       {
-              //         label: "SplashKit Online",
-              //         autogenerate: {
-              //           directory: "products/splashkit/documentation/splashkit-online",
-              //         },
-              //         items: [
-              //           {
-              //             label: "Code Documentation",
-              //             autogenerate: {
-              //               directory: "products/splashkit/documentation/splashkit-online/code-documentation",
-              //             },
-              //             items: [
-              //               {
-              //                 label: "Classes",
-              //                 autogenerate: {
-              //                   directory: "products/splashkit/documentation/splashkit-online/code-documentation/classes",
-              //                 },
-              //               },
-              //               {
-              //                 label: "Processes",
-              //                 autogenerate: {
-              //                   directory: "products/splashkit/documentation/splashkit-online/code-documentation/processes",
-              //                 },
-              //               },
-              //               {
-              //                 label: "Other",
-              //                 autogenerate: {
-              //                   directory: "products/splashkit/documentation/splashkit-online/code-documentation/other",
-              //                 },
-              //               },
-              //             ],
-              //           },
-              //         ],
-              //       },
-              //       {
-              //         label: "Research and Findings",
-              //         autogenerate: {
-              //           directory: "products/splashkit/documentation/splashkit-online/research-and-findings",
-              //         },
-              //       },
-              //     ],
               //   },
               //   {
-              //     label: "Issues and Resolutions",
+              //     label: "SplashKit Expansion",
+              //     collapsed: true, // Collapsed by default
               //     autogenerate: {
-              //       directory: "products/splashkit/issues-and-resolutions",
+              //       directory: "products/splashkit/SplashKit Expansion",
+              //     },
+              //   },
+              //   {
+              //     label: "SplashKit Online",
+              //     collapsed: true, // Collapsed by default
+              //     autogenerate: {
+              //       directory: "products/splashkit/SplashKit Online",
+              //     },
+              //   },
+              //   {
+              //     label: "SplashKit Tutorials",
+              //     collapsed: true, // Collapsed by default
+              //     autogenerate: {
+              //       directory: "products/splashkit/SplashKit Tutorials",
+              //     },
+              //   },
+              //   {
+              //     label: "SplashKit Website",
+              //     collapsed: true, // Collapsed by default
+              //     autogenerate: {
+              //       directory: "products/splashkit/SplashKit Website",
               //     },
               //   },
               // ],
