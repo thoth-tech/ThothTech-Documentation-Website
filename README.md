@@ -6,15 +6,15 @@ Make sure to run the following commands to format the files before you make a Pu
 
 1. To format the files:
 
-    ```shell
-    npm run format
-    ```
+   ```shell
+   npm run format
+   ```
 
 2. To run the lint checker:
 
-    ```shell
-    npm run lint
-    ```
+   ```shell
+   npm run lint
+   ```
 
 ## Starlight Starter Kit: Basics
 
