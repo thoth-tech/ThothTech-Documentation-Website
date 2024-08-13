@@ -21,18 +21,14 @@ To resolve this issue, add a _markdownlint.json_ file in your working folder tha
 following code.
 
     {
-    "MD033": {
-    "allowed_elements": ["ul", "li"]
-     },
+    "MD033": false,
     }
 
 As a result of this change, you might experience some errors on your markdown document about your
 line exceeding expected value. To resolve this, update the above code with the one below.
 
     {
-    "MD033": {
-    "allowed_elements": ["ul", "li"]
-    },
+    "MD033": false,
     "MD013": {
     "tables": false
      }
