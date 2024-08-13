@@ -8,56 +8,51 @@ sidebar:
 
 import { Card, LinkCard, CardGrid, Icon } from "@astrojs/starlight/components";
 
+import { FileTree } from "@astrojs/starlight/components";
+
 The SplashKit tutorials team is dedicated to creating high-quality tutorials that showcase the
 versatile functionality of the SplashKit library. Covering a broad range of topics such as Graphics,
 Interfaces, Networking, and Raspberry Pis, these tutorials are designed to equip users with the
-skills needed to develop their own projects. Each tutorial includes detailed explanations,
-step-by-step instructions, and code snippets in C#, C++, Python, and Pascal to cater to a diverse
-audience.
+skills needed to develop their own projects.
 
-The SplashKit website will feature these tutorials, with a focus on helping students learn and
-explore SplashKit’s capabilities. Emphasizing smaller, high-quality tutorials across C++, C#, and
-Python, the aim is to provide concise, yet comprehensive learning resources rather than extensive
-series, ensuring that users can quickly grasp and apply the concepts in their own projects.
+Each tutorial includes detailed explanations, step-by-step instructions, and code snippets in C#,
+C++, and Python (Pascal coming soon) to cater to a diverse audience. The tutorials focus on helping
+students learn and explore SplashKit’s capabilities. Emphasizing smaller, high-quality tutorials
+across C++, C#, and Python, the aim is to provide concise, yet comprehensive learning resources
+rather than extensive series, ensuring that users can quickly grasp and apply the concepts in their
+own projects.
 
-## Tutorial Topics
+:::note
 
-The current list of tutorial topics found on
+The current list of tutorials can be found on [splashkit.io/guides/](https://splashkit.io/guides/)
+
+:::
+
+## Folder Structure
+
+The Tutorial-related folders in the
 [splashkit.io-starlight](https://github.com/splashkit/splashkit.io-starlight) repository are as
 follows:
 
-```plaintext
-.
-├── src/
-│   ├── content/
-│   │   ├── docs/
-│   |   │   └── guides
-│   |   |   |   ├── Animations
-│   |   |   |   ├── Audio
-│   |   |   |   ├── Camera
-│   |   |   |   ├── Graphics
-│   |   |   |   ├── Input
-│   |   |   |   ├── Interface
-│   |   |   |   ├── JSON
-│   |   |   |   ├── Networking
-│   |   |   |   ├── Raspberry GPIO
-│   |   |   |   ├── Resource Bundles
-│   |   |   |   ├── Sprites
-│   |   |   |   └── Utilities
-```
-
-import { FileTree } from "@astrojs/starlight/components";
-
 <FileTree>
 
-- astro.config.mjs an **important** file
-- package.json
-- README.md
 - src
-  - components
-    - **Header.astro**
-  - …
-- pages/
+  - content
+    - docs
+      - guides
+        - 0-using-splashkit/
+        - animations/
+        - audio/
+        - camera/
+        - graphics/
+        - input/
+        - interface/
+        - json/
+        - networking/
+        - raspberry/
+        - resource_bundles/
+        - sprites/
+        - utilities/
 
 </FileTree>
 
