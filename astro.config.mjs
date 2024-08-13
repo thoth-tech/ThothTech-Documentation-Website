@@ -1,11 +1,11 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
-import starlightBlog from "starlight-blog";
+// import starlightBlog from "starlight-blog";
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [
-    starlightBlog(),
+    // starlightBlog(),
     starlight({
       title: "Thoth Tech",
       customCss: ["./src/styles/custom.css"],
@@ -13,9 +13,9 @@ export default defineConfig({
         github: "https://github.com/thoth-tech",
       },
       components: {
-        MarkdownContent: "starlight-blog/overrides/MarkdownContent.astro",
-        Sidebar: "starlight-blog/overrides/Sidebar.astro",
-        ThemeSelect: "starlight-blog/overrides/ThemeSelect.astro",
+        // MarkdownContent: "starlight-blog/overrides/MarkdownContent.astro",
+        // Sidebar: "starlight-blog/overrides/Sidebar.astro",
+        // ThemeSelect: "starlight-blog/overrides/ThemeSelect.astro",
       },
       sidebar: [
         {
