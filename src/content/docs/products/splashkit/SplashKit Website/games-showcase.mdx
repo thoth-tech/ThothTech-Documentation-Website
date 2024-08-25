@@ -7,14 +7,16 @@ sidebar:
 
 ## Games Showcase Template
 
-The [Games Showcase Template](./games-showcase-template) is to be used when adding a game to the Games Showcase on the SplashKit.io website. This will be included in the /src/content/docs/games folder of the SplashKit.io folder. 
+The [Games Showcase Template](./games-showcase-template) is to be used when adding a game to the
+Games Showcase on the SplashKit.io website. This will be included in the /src/content/docs/games
+folder of the SplashKit.io folder.
 
 #### Frontmatter
 
 ```frontmatter
 ---
-title: 
-description: 
+title:
+description:
 download-link: ""
 featured: true
 sidebar:
@@ -23,14 +25,21 @@ sidebar:
 ```
 
 - **title**: Game Title
-- **description**: Short description of game here. Keep this short as it will generate the thumbnail in the index page.
-- **download-link**: The link to the download-directory.github.io tool to download the github repository that holds the game. Simply copy the link to the game parent game folder and add it to the end of `https://download-directory.github.io?url=`. The download-link needs to be encapsulated in double quotes`""`.
-- **featured**: This flag is to determine if the game is shown on the Games Index page. The Games Index page will automatically populate based on the frontmatter.
+- **description**: Short description of game here. Keep this short as it will generate the thumbnail
+  in the index page.
+- **download-link**: The link to the download-directory.github.io tool to download the github
+  repository that holds the game. Simply copy the link to the game parent game folder and add it to
+  the end of `https://download-directory.github.io?url=`. The download-link needs to be encapsulated
+  in double quotes`""`.
+- **featured**: This flag is to determine if the game is shown on the Games Index page. The Games
+  Index page will automatically populate based on the frontmatter.
 - **sidebar**: Set the hidden flag to determine if the game will show up on the sidebar.
 
 #### Game Gif
 
-This will be automatically generated when the gif file is placed into the /public/gifs/games-showcase folder with the naming convention game-title-showcase.gif. Do not adjust this.
+This will be automatically generated when the gif file is placed into the
+/public/gifs/games-showcase folder with the naming convention game-title-showcase.gif. Do not adjust
+this.
 
 #### Description
 
@@ -40,17 +49,18 @@ Add a description of the game.
 
 Include installation instructions that are language specific.
 
-:::tip
-An example may look like this:
+:::tip An example may look like this:
 
 ```markdown
 1. Download the game files.
 2. Navigate to the folder.
 3. Execute `dotnet run` through the MSYS2 terminal.
 ```
+
 :::
 
-The Download button is automatically derived from the frontmatter - do not alter this 
+The Download button is automatically derived from the frontmatter - do not alter this
+
 ```html
 <div class="centered-button-container">
   <button
@@ -65,19 +75,18 @@ The Download button is automatically derived from the frontmatter - do not alter
 
 Briefly describe the gameplay of the game. Include any controls.
 
-{/* Delete this tip from the final games showcase file */}
-:::tip
-An example may look like this:
+{/* Delete this tip from the final games showcase file */} :::tip An example may look like this:
 
 ```markdown
-| Action       | Player 1 |
-|--------------|----------|
-| Move Up      | W        |
-| Move Down    | S        |
-| Move Left    | A        |
-| Move Right   | D        |
-| Shoot        | Space    |
+| Action     | Player 1 |
+| ---------- | -------- |
+| Move Up    | W        |
+| Move Down  | S        |
+| Move Left  | A        |
+| Move Right | D        |
+| Shoot      | Space    |
 ```
+
 :::
 
 #### Developers
@@ -85,7 +94,7 @@ An example may look like this:
 Include the link to the github(s) of the developer(s).
 
 ```markdown
-[thoth-tech](https://github.com/thoth-tech) 
+[thoth-tech](https://github.com/thoth-tech)
 ```
 
 Include the date that the game was last updated.
@@ -98,17 +107,14 @@ A Back to Games Index button will be automatically generated - do not alter this
 
 ```html
 <div class="centered-button-container">
-  <button
-    class="custom-button"
-    onclick="location.href='/games'">
-    Back to Games Index
-  </button>
+  <button class="custom-button" onclick="location.href='/games'">Back to Games Index</button>
 </div>
 ```
 
 ## Adding Games to the Home Page Swiper
 
-To add a game to the front page swiper, you will need to edit the games-config.json folder found in the src/components/react/GameCardSwiper folder. 
+To add a game to the front page swiper, you will need to edit the games-config.json folder found in
+the src/components/react/GameCardSwiper folder.
 
 To add a game card to the swiper, include another entry into the json file in the following format:
 
@@ -122,6 +128,9 @@ To add a game card to the swiper, include another entry into the json file in th
 ```
 
 - **title**: Game Title - this is what the Game Swiper will call your game.
-- **description**: Short description of game here. Keep this short as it will generate the thumbnail in the index page.
-- **link**: This will be the lower case version of the game name, with all spaces replaced with `-`. This will allow all of the relevant files within the repo to link the game to the different features.
+- **description**: Short description of game here. Keep this short as it will generate the thumbnail
+  in the index page.
+- **link**: This will be the lower case version of the game name, with all spaces replaced with `-`.
+  This will allow all of the relevant files within the repo to link the game to the different
+  features.
 - **featured**: This flag is to determine if the game is shown on the Swiper or not.
