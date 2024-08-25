@@ -2,8 +2,8 @@
 title: How to Create a Pull Request
 description: This is a step-by-step guide on how to create a pull request for SplashKit tutorials.
 sidebar:
-  label: 3. Pull Request Guide
-  order: 3
+  label: Pull Request Guide
+  order: 1
 ---
 
 ## How to Create a Pull Request

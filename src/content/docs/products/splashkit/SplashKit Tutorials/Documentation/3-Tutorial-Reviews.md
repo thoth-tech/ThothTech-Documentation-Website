@@ -1,7 +1,7 @@
 ---
 title: Tutorial Reviews
 sidebar:
-  label: 3. Tutorial Reviews
+  label: Tutorial Reviews
   order: 3
 ---
 
@@ -9,7 +9,7 @@ sidebar:
 
 When doing a tutorial review ensure to do the following:
 
-- Proof read the tutorial to make sure there are no grammatial errors.
+- Proof read the tutorial to make sure there are no grammatical errors.
 - Ensure the tutorial has the following languages:
   - C# using top level statements only
   - C++
