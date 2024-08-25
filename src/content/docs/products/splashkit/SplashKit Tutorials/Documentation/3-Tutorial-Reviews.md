@@ -31,7 +31,7 @@ Documentation Repo file tree:
 
 1. [Documentation Repo](https://github.com/thoth-tech/documentation) The repository for the
    SplashKit Tutorial review files.
-2. [How to Create a Pull Reuest](/products/splashkit/splashkit-tutorials/onboarding/03-pull-request)
+2. [How to Create a Pull Request](/products/splashkit/splashkit-tutorials/onboarding/03-pull-request)
    The guide on how to create a pull request for SplashKit tutorials.
 3. [Pull Request Template](/products/splashkit/splashkit-tutorials/onboarding/04-pull-request-template)
    The template for creating a pull request for SplashKit tutorials.
