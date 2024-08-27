@@ -1,6 +1,6 @@
 ---
 title: Thoth Tech – Company Progress Report 2024 TRIMESTER 2
-description: 6.1P Task, T2 2024
+description: 2.1P Task, T2 2024
 ---
 
 ## Executive Summary
@@ -53,7 +53,7 @@ This trimester, Thoth Tech will be running the two main products: OnTrack and Sp
 
 This trimester, Thoth Tech aims to achieve the following:
 
-**Goal 1: Foster Employee Growth and Development in a Supportive Environment**
+**Goal 1: Foster Employee Growth and Development in a Supportive Environment**:
 
 - **Cultivate a Culture of Continuous Learning**: Provide a safe and supportive environment where
   employees can develop the technical and soft skills necessary for successful careers
@@ -69,7 +69,7 @@ This trimester, Thoth Tech aims to achieve the following:
   other differences, have a supportive environment that allows them to thrive and reach their full
   potential.
 
-**Goal 2: Enhance and Extend Thoth Tech Products**
+**Goal 2: Enhance and Extend Thoth Tech Products**:
 
 - **Refine and Expand Product Features**: Continuously improve existing features and extend the
   capabilities of Thoth Tech products in alignment with the company’s mission.
@@ -82,11 +82,11 @@ This trimester, Thoth Tech aims to achieve the following:
 
 ## Company Structure and Projects Overview
 
-![org chart](/public/2024-t2-thoth-tech-structure.png)
+![org chart](/company-structure/2024-t2-thoth-tech-structure.png)
 
-### Project 1 OnTrack
+## Project 1: OnTrack
 
-#### Overview, Goals, and Objectives
+### Overview, Goals, and Objectives
 
 OnTrack, also known as Doubtfire, is an innovative Learning Management System (LMS) designed
 specifically for skill-based course delivery. This platform enhances the connection between tutors
@@ -96,64 +96,54 @@ interactive learning environment. The system is crafted to improve student engag
 learning outcomes, and streamline the teaching and learning process, benefiting both students and
 educators.
 
-#### Aims for Trimester
+### Aims for Trimester
 
 Trimester Aims for OnTrack Development:
 
-**Bug Fixes and Implement Urgent Enhancements**
+- **Bug Fixes and Implement Urgent Enhancements**: This trimester will focus on addressing and
+  documenting bugs reported by students, particularly those affecting the student calendar and
+  notifications system. Urgent enhancements will also be implemented, such as adding support for ZIP
+  file uploads, enabling students to view the history of target grade changes, saving unsent draft
+  comments locally for each task, adjusting the automatic extension "resubmit" feature to provide a
+  one-week extension from the feedback date, and extending the group lock feature to allow students
+  to unlock and lock groups as needed.
 
-This trimester will focus on addressing and documenting bugs reported by students, particularly
-those affecting the student calendar and notifications system. Urgent enhancements will also be
-implemented, such as adding support for ZIP file uploads, enabling students to view the history of
-target grade changes, saving unsent draft comments locally for each task, adjusting the automatic
-extension "resubmit" feature to provide a one-week extension from the feedback date, and extending
-the group lock feature to allow students to unlock and lock groups as needed.
+- **Initiate Frontend Migration**: A significant effort will be dedicated to completing the
+  migration of the frontend module from Angular.js and Coffeescript to Angular 17 and Typescript.
+  Once the current migration backlogs are resolved, the team will assess and determine which
+  additional modules will be prioritised for migration, ensuring that the transition to modern
+  technologies is smoothly executed.
 
-**Initiate Frontend Migration**
+- **Revamp Feature Implementations**: The trimester will also involve a thorough examination and
+  update of existing features to align with OnTrack’s evolving software. This includes abstracting
+  the current authentication system into its own dedicated module and integrating the JPLag software
+  plagiarism detection system with Docker Compose, replacing the existing MOSS system to enhance
+  plagiarism detection capabilities.
 
-A significant effort will be dedicated to completing the migration of the frontend module from
-Angular.js and Coffeescript to Angular 17 and Typescript. Once the current migration backlogs are
-resolved, the team will assess and determine which additional modules will be prioritised for
-migration, ensuring that the transition to modern technologies is smoothly executed.
+- **Complete the Documentation Website**: Comprehensive documentation of OnTrack’s evolving features
+  will be completed to assist new developers. This effort includes documenting all missing API
+  endpoints, improving the documentation for existing endpoints where necessary, and creating a
+  detailed map of areas requiring documentation. This documentation will ensure that new developers
+  can quickly understand and contribute to the project.
 
-**Revamp Feature Implementations**
+- **Continue CourseFlow development**: Development will progress on the CourseFlow API entities by
+  updating them with appropriate authentication and creating a functional frontend for student
+  interaction. Testing will be conducted on both backend and frontend components to showcase
+  progress and support ongoing development, with the goal of delivering a usable slice of the
+  component.
 
-The trimester will also involve a thorough examination and update of existing features to align with
-OnTrack’s evolving software. This includes abstracting the current authentication system into its
-own dedicated module and integrating the JPLag software plagiarism detection system with Docker
-Compose, replacing the existing MOSS system to enhance plagiarism detection capabilities.
+- **Add New Features**: Several new features will be implemented to enhance OnTrack’s functionality.
+  These include tools for staff to manage student extensions, the capability to create, edit, and
+  disable multiple organisations on a single server, integration with Panopto for video uploads and
+  embeds, and the implementation of CourseFlow. Additionally, a dedicated page will be developed to
+  allow tutors to track the time spent providing feedback for each student.
 
-**Complete the Documentation Website**
+- **Quality of Life Improvements**: Critically examine and implement quality of life improvements to
+  enhance the user experience. This includes adding functionalities such as allowing unit chairs to
+  set target dates that affect task due dates and creating visualisations to help students track
+  their selected target grades, estimated progress, and feedback status.
 
-Comprehensive documentation of OnTrack’s evolving features will be completed to assist new
-developers. This effort includes documenting all missing API endpoints, improving the documentation
-for existing endpoints where necessary, and creating a detailed map of areas requiring
-documentation. This documentation will ensure that new developers can quickly understand and
-contribute to the project.
-
-**Continue CourseFlow development**
-
-Development will progress on the CourseFlow API entities by updating them with appropriate
-authentication and creating a functional frontend for student interaction. Testing will be conducted
-on both backend and frontend components to showcase progress and support ongoing development, with
-the goal of delivering a usable slice of the component.
-
-**Add New Features**
-
-Several new features will be implemented to enhance OnTrack’s functionality. These include tools for
-staff to manage student extensions, the capability to create, edit, and disable multiple
-organisations on a single server, integration with Panopto for video uploads and embeds, and the
-implementation of CourseFlow. Additionally, a dedicated page will be developed to allow tutors to
-track the time spent providing feedback for each student.
-
-**Quality of Life Improvements**
-
-Critically examine and implement quality of life improvements to enhance the user experience. This
-includes adding functionalities such as allowing unit chairs to set target dates that affect task
-due dates and creating visualisations to help students track their selected target grades, estimated
-progress, and feedback status.
-
-#### Deliverables
+### Deliverables
 
 Trimester Deliverables:
 
@@ -221,7 +211,7 @@ Long Term Deliverables:
     without formal extension requests in the system.
   - Create unit tests for both frontend and backend to confirm implementation and functionality.
 
-#### Project Members
+### Project Members
 
 | **Member Name** | **Role/Responsibilities**                                                                | **Junior/Senior** |
 | --------------- | ---------------------------------------------------------------------------------------- | ----------------- |
@@ -246,9 +236,9 @@ Long Term Deliverables:
 | Muhammad Danial | Team Member - Frontend Migration                                                         | Junior            |
 | Eliya Geerlings | Junior Lead – JPlag Implementation & Frontend Migration & Dev Container Image Downsizing | Junior            |
 
-### Project 2 SplashKit
+## Project 2: SplashKit
 
-#### Overview, Goals, and Objectives
+### Overview, Goals, and Objectives
 
 SplashKit is a versatile and user-friendly programming framework designed to introduce students to
 programming through the engaging process of 2D game development. Primarily coded in C++, SplashKit
@@ -267,97 +257,89 @@ designed to help students get started quickly and maximise their use of the SDK.
 resources empowers learners to progress at their own pace and fully explore the capabilities of
 SplashKit, making it an invaluable tool for both beginners and more advanced users.
 
-#### Projects
+### Projects
 
-**Arcade Machines**
+**Arcade Machines**:
 
 The university has acquired four arcade machines equipped with Raspberry Pi 3B+ units, designed to
 showcase games developed with SplashKit. The short-term goal is to prepare these platforms for
 students to display their SplashKit creations. The medium-term goal is to streamline the process for
 first-year students to easily upload and test their games.
 
-**Game Development**
+**Game Development**:
 
 The Game Development team is dedicated to creating and enhancing games that run on the arcade
 machines. Their mission is to demonstrate SplashKit’s capabilities and inspire students by
 showcasing what can be achieved with the framework.
 
-**SplashKit Website**
+**SplashKit Website**:
 
 Powered by the Starlight framework, the revamped SplashKit website aims to offer an enriched and
 user-friendly experience for developers and learners. It will host existing tutorials and guides,
 providing a central hub for exploring and learning about SplashKit.
 
-**SplashKit Tutorials**
+**SplashKit Tutorials**:
 
 The SplashKit Website will feature tutorials aimed at helping students learn and explore SplashKit’s
 functionality. The focus is on developing smaller, high-quality tutorials across C++, C#, and
 Python, rather than extensive series.
 
-**SplashKit Expansion**
+**SplashKit Expansion**:
 
 The Expansion team is responsible for maintaining and enhancing the SplashKit core. This includes
 bug fixes, feature improvements, and refining installation and usage workflows through package
 creation and addressing installation issues.
 
-**SplashKit Online**
+**SplashKit Online**:
 
 SplashKit Online is developing a web-based IDE that allows students to write and run code directly
 in their browsers. Initially launched as a prototype in 2023, the 2024 goal is to mature this tool
 into a comprehensive product, including C# support and an embeddable version for the SplashKit
 website.
 
-#### Aims for Trimester
+### Aims for Trimester
 
 Trimester Aims for SplashKit Development:
 
-**Refine and Complete SplashKit Online**:
+- **Refine and Complete SplashKit Online**: Finalise the development and polish of SplashKit Online
+  to enhance its functionality and user experience. This includes embedding a "lite" version into
+  the SplashKit website, focusing on seamless integration, improving interface design, and
+  optimising performance for code snippets and interactive features. Migrate the current version to
+  the Thoth Tech repository for centralised management.
 
-Finalise the development and polish of SplashKit Online to enhance its functionality and user
-experience. This includes embedding a "lite" version into the SplashKit website, focusing on
-seamless integration, improving interface design, and optimising performance for code snippets and
-interactive features. Migrate the current version to the Thoth Tech repository for centralised
-management.
+- **Establish and Manage Software Packages**: Initiate the development of a comprehensive package
+  management system for SplashKit libraries. This includes organising and automating the creation of
+  software packages, ensuring their proper integration and usage across different platforms. Provide
+  thorough documentation and sample projects to support users in integrating and utilising the
+  packages effectively.
 
-**Establish and Manage Software Packages**
+- **Enhance and Expand Tutorials and Guides**: Review and update existing tutorials to align with
+  the latest features of SplashKit. Complete pending tutorials, including advanced topics like
+  creating a 2D Metroidvania game and networking basics. Develop new tutorials for Raspberry Pi GPIO
+  functionalities and networking principles. Ensure all tutorials are clear, interactive, and
+  supported by updated guides.
 
-Initiate the development of a comprehensive package management system for SplashKit libraries. This
-includes organising and automating the creation of software packages, ensuring their proper
-integration and usage across different platforms. Provide thorough documentation and sample projects
-to support users in integrating and utilising the packages effectively.
+- **Advance Arcade Game Automation**: Develop a foundational structure for arcade game automation.
+  Enhance the EmulationStation menu to support new modes (Kiosk and Normal) and game download
+  scripts. Create a local test mode for new game builds and implement a voting system to improve the
+  star ranking process. Address C# compatibility issues and formalise the game upload process for
+  student contributions.
 
-**Enhance and Expand Tutorials and Guides**
+- **Revamp SplashKit Website**: Establish a core onboarding hub on the SplashKit website, including
+  onboarding guides, tutorial templates, and links to essential resources. Improve the API reference
+  with additional usage examples, live demos, and a global language switcher. Fix broken parts of
+  ported tutorials and import completed ones. Design and launch a showcase page to feature games
+  developed with SplashKit, enhancing the website's visual appeal and user engagement.
 
-Review and update existing tutorials to align with the latest features of SplashKit. Complete
-pending tutorials, including advanced topics like creating a 2D Metroidvania game and networking
-basics. Develop new tutorials for Raspberry Pi GPIO functionalities and networking principles.
-Ensure all tutorials are clear, interactive, and supported by updated guides.
+- **Standardise Game Development Approach**: Introduce standardised implementation patterns for game
+  development, focusing on decoupling data and functionality. Develop a "10-minute game" to
+  implement core mechanics early in the trimester, allowing time for visual enhancements and
+  additional features. Create documentation on discrete game systems and refine the implementation
+  patterns based on feedback.
 
-**Advance Arcade Game Automation**
+### Deliverables
 
-Develop a foundational structure for arcade game automation. Enhance the EmulationStation menu to
-support new modes (Kiosk and Normal) and game download scripts. Create a local test mode for new
-game builds and implement a voting system to improve the star ranking process. Address C#
-compatibility issues and formalise the game upload process for student contributions.
-
-**Revamp SplashKit Website**
-
-Establish a core onboarding hub on the SplashKit website, including onboarding guides, tutorial
-templates, and links to essential resources. Improve the API reference with additional usage
-examples, live demos, and a global language switcher. Fix broken parts of ported tutorials and
-import completed ones. Design and launch a showcase page to feature games developed with SplashKit,
-enhancing the website's visual appeal and user engagement.
-
-**Standardise Game Development Approach**
-
-Introduce standardised implementation patterns for game development, focusing on decoupling data and
-functionality. Develop a "10-minute game" to implement core mechanics early in the trimester,
-allowing time for visual enhancements and additional features. Create documentation on discrete game
-systems and refine the implementation patterns based on feedback.
-
-#### Deliverables
-
-##### **Arcade**
+#### Arcade
 
 Trimester Deliverables:
 
@@ -387,7 +369,7 @@ Long Term Deliverables:
   - Establish a formal process for students from SIT102 or SIT771 to upload their games to the
     arcade machines, ensuring a consistent and reliable workflow.
 
-**Game Development**
+#### Game Development
 
 Trimester Deliverables:
 
@@ -426,7 +408,7 @@ Long Term Deliverables:
   - Enhance and expand the gameplay and features of games that are already completed, ensuring they
     continue to engage and challenge players.
 
-##### **SplashKit.io Website**
+#### SplashKit.io Website
 
 Trimester Deliverables:
 
@@ -483,7 +465,7 @@ Long Term Deliverables:
   - Contributor Resources: Develop additional resources to support community contributions,
     including detailed guides, best practices, and an interactive forum.
 
-##### **SplashKit Tutorials**
+#### SplashKit Tutorials
 
 Trimester Deliverables:
 
@@ -537,7 +519,7 @@ Long Term Deliverables:
   - Re-write the "Create a 2D Metroidvania Game" tutorial series to improve organisation and
     consistency, using the existing material as a foundational resource.
 
-##### **SplashKit Expansion**
+#### SplashKit Expansion
 
 Trimester Deliverables:
 
@@ -585,7 +567,7 @@ Long Term Deliverables:
     update and expand support for newer Raspberry Pi models. This ensures that SplashKit remains a
     versatile tool for a wide range of hardware platforms, enhancing its appeal and functionality.
 
-##### **SplashKit Online**
+#### SplashKit Online
 
 Trimester Deliverables:
 
@@ -622,7 +604,7 @@ Long Term Deliverables:
   - Collaborative Features: Consider implementing collaborative features for simultaneous project
     work among multiple users.
 
-#### Project Members
+### Project Members
 
 | **Member Name**    | **Role/Responsibilities**                          | **Junior/Senior** |
 | ------------------ | -------------------------------------------------- | ----------------- |
