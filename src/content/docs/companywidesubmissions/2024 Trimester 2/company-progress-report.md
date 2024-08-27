@@ -15,58 +15,6 @@ This report will provide an update the previous report that outlined the company
 
 This trimester, Thoth Tech will be running the two main products: OnTrack and SplashKit.
 
-## Table of Contents
-
-[Executive Summary 1](#_Toc175397791)
-
-[Table of Contents 2](#_Toc175397792)
-
-[Leadership Team 3](#_Toc175397793)
-
-[Company Board 3](#_Toc175397794)
-
-[Product Mentors 3](#_Toc175397795)
-
-[Student Leads 3](#_Toc175397796)
-
-[Trimester Goals and Objectives 3](#_Toc175397797)
-
-[Company Structure and Projects Overview 5](#_Toc175397798)
-
-[Project 1 OnTrack 6](#_Toc175397799)
-
-[Overview, Goals, and Objectives 6](#_Toc175397800)
-
-[Aims for Trimester 6](#_Toc175397801)
-
-[Deliverables 7](#_Toc175397802)
-
-[Project Members 10](#_Toc175397803)
-
-[Progress Update 10](#_Toc175397804)
-
-[Ongoing and Pending Tasks 11](#_Toc175397805)
-
-[Team Members and Contributions 12](#_Toc175397806)
-
-[Project 2 SplashKit 15](#_Toc175397807)
-
-[Overview, Goals, and Objectives 15](#_Toc175397808)
-
-[Projects 15](#_Toc175397809)
-
-[Aims for Trimester 16](#_Toc175397810)
-
-[Deliverables 17](#_Toc175397811)
-
-[Project Members 24](#_Toc175397812)
-
-[Progress Update 25](#_Toc175397813)
-
-[Ongoing and Pending Tasks 27](#_Toc175397814)
-
-[Team Members and Contributions 28](#_Toc175397815)
-
 ## Leadership Team
 
 ### Company Board
@@ -116,7 +64,7 @@ This trimester, Thoth Tech aims to achieve the following:
 
 ## Company Structure and Projects Overview
 
-!![org chart](/2024-t2-thoth-tech-structure.png)
+!![org chart](../public/2024-t2-thoth-tech-structure.png)
 
 ### Project 1 OnTrack
 
