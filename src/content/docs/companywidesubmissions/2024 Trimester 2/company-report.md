@@ -973,4 +973,4 @@ as bug fixes and documentation updates, while laying the groundwork for long-ter
 focus on refining tutorials, expanding website content, and integrating new features is driving us
 towards achieving our deliverables. As we move forward, our efforts will continue to enhance
 SplashKit’s functionality, support a broader user base, and ensure a seamless and robust development
-environment for all users.                    
+environment for all users.
