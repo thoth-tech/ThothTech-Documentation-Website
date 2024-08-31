@@ -87,36 +87,6 @@ to copy.
 
 Always include a language with the fenced code blocks.
 
-### C# Code
-
-For example, if using C#, you would use the following format:
-
-````md
-```csharp
-using static SplashKitSDK.SplashKit;
-
-OpenWindow("SplashKit!", 800, 600);
-ClearScreen();
-RefreshScreen();
-Delay(5000);
-
-CloseAllWindows();
-```
-````
-
-Which would produce:
-
-```csharp
-using static SplashKitSDK.SplashKit;
-
-OpenWindow("SplashKit!", 800, 600);
-ClearScreen();
-RefreshScreen();
-Delay(5000);
-
-CloseAllWindows();
-```
-
 ### C++ Code
 
 For C++, you would use the following format:
@@ -127,13 +97,9 @@ For C++, you would use the following format:
 
 int main()
 {
-    open_window("SplashKit!", 800, 600);
-    clear_screen();
-    refresh_screen();
+    open_window("Window Title... to change", 800, 600);
     delay(5000);
-
     close_all_windows();
-
     return 0;
 }
 ```
@@ -146,16 +112,61 @@ Which would produce:
 
 int main()
 {
-    open_window("SplashKit!", 800, 600);
-    clear_screen();
-    refresh_screen();
+    open_window("Window Title... to change", 800, 600);
     delay(5000);
-
     close_all_windows();
-
     return 0;
 }
 ```
+
+### C# Code
+
+For example, if using C#, you would use the following format:
+
+````md
+```csharp
+using static SplashKitSDK.SplashKit;
+
+OpenWindow("Window Title... to change", 800, 600);
+Delay(5000);
+CloseAllWindows();
+```
+````
+
+Which would produce:
+
+```csharp
+using static SplashKitSDK.SplashKit;
+
+OpenWindow("Window Title... to change", 800, 600);
+Delay(5000);
+CloseAllWindows();
+```
+
+### Python Code
+
+For Python, you would use the following format:
+
+````md
+```python
+from splashkit import *
+
+open_window("Window Title... to change", 800, 600)
+delay(5000)
+close_all_windows()
+```
+````
+
+Which would produce:
+
+```python
+from splashkit import *
+
+open_window("Window Title... to change", 800, 600)
+delay(5000)
+close_all_windows()
+```
+
 
 For any blocks that are not code, you can use `plaintext` for the language. For terminal commands,
 use `shell` for the language.
@@ -179,79 +190,199 @@ import { Tabs, TabItem } from "@astrojs/starlight/components";
 And then using the examples from above, you would have:
 
 ````md
-<Tabs>
-  <TabItem label="C#">
-
-```csharp
-using static SplashKitSDK.SplashKit;
-
-OpenWindow("SplashKit!", 800, 600);
-ClearScreen();
-RefreshScreen();
-Delay(5000);
-
-CloseAllWindows();
-```
-
-  </TabItem>
-  <TabItem label="C++">
+<Tabs syncKey="code-language">
+<TabItem label="C++">
 
 ```cpp
 #include "splashkit.h"
 
 int main()
 {
-    open_window("SplashKit!", 800, 600);
-    clear_screen();
-    refresh_screen();
-    delay(5000);
+    string name;  // declare a variable to store the name
+    string quest; // and another to store a quest
 
-    close_all_windows();
+    write("What is your name: "); // prompt the user for input
+    name = read_line();           // read user input
+
+    // read in another value
+    write("And what is your quest? ");
+    quest = read_line();
+
+    write_line(name + "'s quest is: " + quest); // output quest to the terminal
 
     return 0;
 }
 ```
 
-  </TabItem>
+</TabItem>
+<TabItem label="C#">
+
+<Tabs syncKey="csharp-style">
+<TabItem label="Top-level Statements">
+
+```csharp
+using static SplashKitSDK.SplashKit;
+
+string name;    // declare a variable to store the name
+string quest;   // and another to store a quest
+
+Write("What is your name: ");  // prompt the user for input
+name = ReadLine();             // read user input
+
+// Read in another value
+Write("And what is your quest? ");
+quest = ReadLine();
+
+WriteLine(name + "'s quest is: " + quest); // output quest to the terminal
+```
+
+</TabItem>
+<TabItem label="Object-Oriented">
+
+```csharp
+using SplashKitSDK;
+
+namespace ReadingText
+{
+    public class Program
+    {
+        public static void Main()
+        {
+            string name;    // declare a variable to store the name
+            string quest;   // and another to store a quest
+
+            SplashKit.Write("What is your name: ");  // prompt the user for input
+            name = SplashKit.ReadLine();             // read user input
+
+            // Read in another value
+            SplashKit.Write("And what is your quest? ");
+            quest = SplashKit.ReadLine();
+
+            SplashKit.WriteLine(name + "'s quest is: " + quest); // output quest to the terminal
+        }
+    }
+}
+```
+
+</TabItem>
+</Tabs>
+
+</TabItem>
+<TabItem label="Python">
+
+```python
+from splashkit import *
+    
+write("What is your name: ") # prompt the user for input
+name = read_line() # read user input and store in a variable
+
+# Read in another value
+write("And what is your quest? ")
+quest = read_line()
+
+write_line(name + "'s quest is: " + quest)
+```
+
+</TabItem>
 </Tabs>
 ````
 
 Which would produce the following:
 
-<Tabs>
-  <TabItem label="C#">
-
-```csharp
-using static SplashKitSDK.SplashKit;
-
-OpenWindow("SplashKit!", 800, 600);
-ClearScreen();
-RefreshScreen();
-Delay(5000);
-
-CloseAllWindows();
-```
-
-  </TabItem>
-  <TabItem label="C++">
+<Tabs syncKey="code-language">
+<TabItem label="C++">
 
 ```cpp
 #include "splashkit.h"
 
 int main()
 {
-    open_window("SplashKit!", 800, 600);
-    clear_screen();
-    refresh_screen();
-    delay(5000);
+    string name;  // declare a variable to store the name
+    string quest; // and another to store a quest
 
-    close_all_windows();
+    write("What is your name: "); // prompt the user for input
+    name = read_line();           // read user input
+
+    // read in another value
+    write("And what is your quest? ");
+    quest = read_line();
+
+    write_line(name + "'s quest is: " + quest); // output quest to the terminal
 
     return 0;
 }
 ```
 
-  </TabItem>
+</TabItem>
+<TabItem label="C#">
+
+<Tabs syncKey="csharp-style">
+<TabItem label="Top-level Statements">
+
+```csharp
+using static SplashKitSDK.SplashKit;
+
+string name;    // declare a variable to store the name
+string quest;   // and another to store a quest
+
+Write("What is your name: ");  // prompt the user for input
+name = ReadLine();             // read user input
+
+// Read in another value
+Write("And what is your quest? ");
+quest = ReadLine();
+
+WriteLine(name + "'s quest is: " + quest); // output quest to the terminal
+```
+
+</TabItem>
+<TabItem label="Object-Oriented">
+
+```csharp
+using SplashKitSDK;
+
+namespace ReadingText
+{
+    public class Program
+    {
+        public static void Main()
+        {
+            string name;    // declare a variable to store the name
+            string quest;   // and another to store a quest
+
+            SplashKit.Write("What is your name: ");  // prompt the user for input
+            name = SplashKit.ReadLine();             // read user input
+
+            // Read in another value
+            SplashKit.Write("And what is your quest? ");
+            quest = SplashKit.ReadLine();
+
+            SplashKit.WriteLine(name + "'s quest is: " + quest); // output quest to the terminal
+        }
+    }
+}
+```
+
+</TabItem>
+</Tabs>
+
+</TabItem>
+<TabItem label="Python">
+
+```python
+from splashkit import *
+    
+write("What is your name: ") # prompt the user for input
+name = read_line() # read user input and store in a variable
+
+# Read in another value
+write("And what is your quest? ")
+quest = read_line()
+
+write_line(name + "'s quest is: " + quest)
+```
+
+</TabItem>
 </Tabs>
 
 ## Callouts (Asides)
