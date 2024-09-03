@@ -9,7 +9,10 @@ import { Tabs, TabItem } from "@astrojs/starlight/components";
 
 ## Adding OOP and Top Level C# to Splashkit Tutorials
 
-One of the current goals of the SplashKit team is to enhance the tutorials by including both top-level statement and object-oriented (OOP) versions of C# programs. This guide outlines how to effectively integrate OOP into the existing tutorials, providing both options for users to choose from.
+One of the current goals of the SplashKit team is to enhance the tutorials by including both
+top-level statement and object-oriented (OOP) versions of C# programs. This guide outlines how to
+effectively integrate OOP into the existing tutorials, providing both options for users to choose
+from.
 
 ### The Full Code Block Structure
 
@@ -59,11 +62,16 @@ Add Python code here
 </Tabs>
 ````
 
-This is the new standard structure for all Splashkit tutorials. The C# code block has been replaced with a tabs component that contains two tabs, one for top-level statements and one for object-oriented programming. The C# code block has been replaced with a tabs component that contains two tabs, one for top-level statements and one for object-oriented programming.
+This is the new standard structure for all Splashkit tutorials. The C# code block has been replaced
+with a tabs component that contains two tabs, one for top-level statements and one for
+object-oriented programming. The C# code block has been replaced with a tabs component that contains
+two tabs, one for top-level statements and one for object-oriented programming.
 
 ### Adding OOP to the Splashkit tutorials
 
-If you are adding OOP to the Splashkit tutorials, you will need to replace the C# section with the following code block in order to have both top-level statements and object-oriented programming options:
+If you are adding OOP to the Splashkit tutorials, you will need to replace the C# section with the
+following code block in order to have both top-level statements and object-oriented programming
+options:
 
 ````md
 <Tabs syncKey="csharp-style">
@@ -81,7 +89,7 @@ Add top-level statement version of C# code here
 ```csharp
 
 Add OOP version of C# code here
-  
+
 ```
 
 </TabItem>
@@ -90,7 +98,9 @@ Add OOP version of C# code here
 
 ## Example
 
-Once done, the view of the code blocks will remain the same on the Splashkit site. However, once clicking on the C# tab, the user will be able to see both the top-level statements and object-oriented programming versions of the code.
+Once done, the view of the code blocks will remain the same on the Splashkit site. However, once
+clicking on the C# tab, the user will be able to see both the top-level statements and
+object-oriented programming versions of the code.
 
 <Tabs syncKey="code-language">
 <TabItem label="C++">
@@ -174,7 +184,7 @@ namespace ReadingText
 
 ```python
 from splashkit import *
-    
+
 write("What is your name: ") # prompt the user for input
 name = read_line() # read user input and store in a variable
 
