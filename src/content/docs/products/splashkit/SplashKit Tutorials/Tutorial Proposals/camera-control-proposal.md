@@ -22,9 +22,7 @@ The tutorial will cover the following main SplashKit functions:
 
 1. [ScreenRectangle](https://splashkit.io/api/camera/#screen-rectangle)
 2. [SetCameraPosition](https://splashkit.io/api/camera/#set-camera-position)
-3. [FillRectangle](https://splashkit.io/api/graphics/#fill-rectangle)
-4. [DrawBitmap](https://splashkit.io/api/graphics/#draw-bitmap)
-5. [DrawRectangle](https://splashkit.io/api/graphics/#draw-rectangle)
+3. [CameraPosition](https://splashkit.io/api/camera/#camera-position)
 
 ## Conclusion
 
