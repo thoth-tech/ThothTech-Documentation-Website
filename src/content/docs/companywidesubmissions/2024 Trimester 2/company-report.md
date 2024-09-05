@@ -1,6 +1,6 @@
 ---
-title: Thoth Tech – Company Progress Report 2024 TRIMESTER 2
-description: 2.1P Task, T2 2024
+title: Thoth Tech – Company Report 2024 TRIMESTER 2
+description: 6.1P Task, T2 2024
 ---
 
 ## Executive Summary
@@ -235,6 +235,132 @@ Long Term Deliverables:
 | Xin Huang       | Team Member - Frontend Migration                                                         | Junior            |
 | Muhammad Danial | Team Member - Frontend Migration                                                         | Junior            |
 | Eliya Geerlings | Junior Lead – JPlag Implementation & Frontend Migration & Dev Container Image Downsizing | Junior            |
+
+### Progress Update
+
+Over the course of the trimester, the OnTrack team has made significant strides in aligning efforts
+with the established goals and deliverables. Below is a detailed summary of the progress made
+against each key objective:
+
+**Bug Fixes and Urgent Enhancements**:
+
+- **Chat Markdown Rendering Bug**: Successfully fixed an issue where markdown was not rendering
+  properly in chat, enhancing the user experience for students and staff.
+- **Documentation Enhancements**: Completed and merged documentation updates for both general and
+  specific API pages. This includes contributions from team members on various entities such as
+  requirement sets and course entities, directly supporting the goal of comprehensive documentation
+  for OnTrack's evolving features.
+
+**Backend and Frontend Development**:
+
+- **Backend Requirements Implementation**: Completed backend requirements for several critical
+  entities, including the requirement set, course, and course map unit entities. These efforts are
+  part of the overarching aim to enhance CourseFlow functionality and ensure robust backend support
+  for new and existing features.
+- **Frontend Enhancements and Component Migrations**: Several components have been successfully
+  migrated to Angular 17 and TypeScript, including the comments-modal, group set manager, and
+  unit-ilo-edit-modal. Additionally, enhancements were made to PDF handling and user interface
+  elements like the grade-task-modal and grade-icon components, contributing to the ongoing frontend
+  migration and user interface improvement objectives.
+
+**CourseFlow and New Feature Implementation**:
+
+- **CourseMap Base Page Development**: Developed the base page for CourseMap, laying the groundwork
+  for further enhancements and integrations planned for the CourseFlow component.
+- **Ongoing Frontend Migration**: The migration of legacy CoffeeScript components to
+  TypeScript/Angular continues, with files such as timeout.coffee and grade-task-modal.coffee
+  currently under peer review. This aligns with our aim to complete at least 10% of the existing
+  frontend migration backlog this trimester.
+
+**New Feature Development and Quality of Life Improvements**:
+
+- **Overlay Component Creation**: Developed a new overlay component to provide additional
+  information about units to users, enhancing the user interface and experience. This feature is
+  currently under review.
+- **CourseFlow Enhancements**: Several enhancements are under review, including adding
+  authentication to endpoints and integrating new UI elements. These efforts are part of the
+  continued development of the CourseFlow API and its related functionalities.
+
+**JPlag Integration and Dev Container Improvements**:
+
+- **JPlag Container Workflow**: A functional setup for JPlag report generation using Docker Compose
+  has been established, progressing toward the full integration of JPlag as a replacement for the
+  existing MOSS plagiarism detection system.
+- **Docker Dev Container Downsizing**: Feasibility studies and downsizing efforts, including the
+  removal and containerisation of LaTeX from the Dev Container image, are currently being reviewed,
+  aiming to streamline the development environment for future tasks.
+
+### Ongoing and Pending Tasks
+
+- **Group Set Manager Migration**: The migration of the group set manager component to the latest
+  framework is in progress.
+- **Unit Group Set Editor Migration**: The migration of the unit-group-set-editor.coffee file
+  continues to move forward, aligning with our frontend migration goals.
+- **Tasks in Peer Review**: Detailed documentation and API operations for units and task
+  definitions, along with the migration of several legacy components, are currently under peer
+  review. This work supports the ongoing documentation efforts and frontend migration initiatives.
+
+### Team Members and Contributions
+
+| **Full Name**                 | **Planner Card Name**                                                                                             | **Evidence**                                                                                                                                                                                                 |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Anirudh Nellippilli Joshi     | migrate file-uploader.coffee                                                                                      | <https://github.com/thoth-tech/documentation/pull/530/commits/724603f9709ca4744d3014a64b8002facf149de7https://github.com/thoth-tech/documentation/pull/530/commits/724603f9709ca4744d3014a64b8002facf149de7> |
+| Atharv Sandip Bhandare        | Migration: comments-modal                                                                                         | <https://github.com/doubtfire-lms/doubtfire-web/pull/869> <br><https://github.com/thoth-tech/documentation/pull/519> <br><https://github.com/thoth-tech/doubtfire-web/pull/218>                              |
+| Atharv Sandip Bhandare        | Write documentation                                                                                               | <https://github.com/thoth-tech/documentation/pull/528> <br><https://www.github.com/JackSCarroll/documentation/blob/JplagDocs/docs/OnTrack/JPlag/Jplag-Feasibility-Document.md>                               |
+| Bruce Wang                    | Documentation: grade-task-modal component review                                                                  | <https://github.com/thoth-tech/documentation/pull/525>                                                                                                                                                       |
+| Bruce Wang                    | Migration: grade-icon.coffee                                                                                      | <https://github.com/thoth-tech/doubtfire-web/pull/231>                                                                                                                                                       |
+| Bruce Wang                    | Migration: grade-task-modal.coffee                                                                                | <https://github.com/thoth-tech/documentation/pull/525> <br><https://github.com/thoth-tech/doubtfire-web/pull/224>                                                                                            |
+| Bruce Wang                    | Migration: timeout.coffee                                                                                         | <https://github.com/doubtfire-lms/doubtfire-web/pull/868/commits/6a965ef9927837bd3e9e77d27b035473cd974215>                                                                                                   |
+| Eliya Geerlings               | Migration: comments-modal                                                                                         | <https://github.com/doubtfire-lms/doubtfire-web/pull/869> <br><https://github.com/thoth-tech/documentation/pull/519> <br><https://github.com/thoth-tech/doubtfire-web/pull/218>                              |
+| Eliya Geerlings               | Autoload PDFs on page 2 when viewing student submissions                                                          | <https://github.com/thoth-tech/doubtfire-web/pull/232>                                                                                                                                                       |
+| Eliya Geerlings               | Fix up existing confirmation-modal migration                                                                      | <https://github.com/doubtfire-lms/doubtfire-web/pull/870>                                                                                                                                                    |
+| Eliya Geerlings               | Latex docker downsizing: Creation of feasibility document                                                         | <https://github.com/thoth-tech/documentation/pull/534>                                                                                                                                                       |
+| Eliya Geerlings               | Latex docker downsizing: Implementation                                                                           | <https://github.com/thoth-tech/doubtfire-api/pull/38> <br><https://github.com/thoth-tech/doubtfire-deploy/pull/13>                                                                                           |
+| Eliya Geerlings               | Persistent PDF zoom levels when selecting between different task submissions                                      | <https://github.com/thoth-tech/doubtfire-web/pull/228>                                                                                                                                                       |
+| Eliya Geerlings               | Fix jupyter notebook latex rake test                                                                              | <https://github.com/doubtfire-lms/doubtfire-api/pull/444>                                                                                                                                                    |
+| Ivan Justin                   | Latex docker downsizing: Creation of feasibility document                                                         | <https://github.com/thoth-tech/documentation/pull/534>                                                                                                                                                       |
+| Ivan Justin                   | Migration: Unit-ilo-edit-modal.coffee                                                                             | <https://github.com/thoth-tech/documentation/pull/526> <br><https://github.com/thoth-tech/doubtfire-web/pull/226>                                                                                            |
+| Jack Shinners Carroll         | Write documentation                                                                                               | <https://github.com/thoth-tech/documentation/pull/528> <br><https://www.github.com/JackSCarroll/documentation/blob/JplagDocs/docs/OnTrack/JPlag/Jplag-Feasibility-Document.md>                               |
+| Jack Shinners Carroll         | Set up JPLAG container                                                                                            | <https://github.com/doubtfire-lms/doubtfire-deploy/pull/28>                                                                                                                                                  |
+| Jake Mansfield                | Document the below API pages in detail within the website - set 5                                                 | <https://github.com/thoth-tech/doubtfire-astro/pull/9>                                                                                                                                                       |
+| Jake Mansfield                | Implement the backend requirements for the course entity.                                                         | <https://github.com/thoth-tech/doubtfire-api/pull/34>                                                                                                                                                        |
+| Jake Mansfield                | Implement the backend requirements for the course map entity.                                                     | <https://github.com/thoth-tech/doubtfire-api/pull/35>                                                                                                                                                        |
+| Jake Mansfield                | Implement the backend requirements for the course map unit entity.                                                | <https://github.com/thoth-tech/doubtfire-api/pull/35>                                                                                                                                                        |
+| Jake Mansfield                | Implement the backend requirements for the requirement set entity.                                                | <https://github.com/thoth-tech/doubtfire-api/pull/37>                                                                                                                                                        |
+| Jake Mansfield                | Implement the backend requirements for the specialization entity.                                                 |                                                                                                                                                                                                              |
+| Jake Mansfield                | Add Authentication to the Courseflow endpoints                                                                    |                                                                                                                                                                                                              |
+| Jake Mansfield                | Add detailed operations for units API (group set - group ID) on Ontrack documentation website                     | <https://github.com/thoth-tech/doubtfire-astro/pull/10>                                                                                                                                                      |
+| Jake Mansfield                | Add detailed operations for units API (task_definitions -tii_group_attachments ) on Ontrack documentation website | <https://github.com/thoth-tech/doubtfire-astro/pull/12>                                                                                                                                                      |
+| Jake Mansfield                | Document the operations units API - Tutorial Streams                                                              | <https://github.com/thoth-tech/doubtfire-astro/pull/10>                                                                                                                                                      |
+| Minu Nediyapalackal Sunil     | Document the below API pages in detail within the website - set 5                                                 | <https://github.com/thoth-tech/doubtfire-astro/pull/9>                                                                                                                                                       |
+| Minu Nediyapalackal Sunil     | Add detailed operations for units API (group set - group ID) on Ontrack documentation website                     | <https://github.com/thoth-tech/doubtfire-astro/pull/10>                                                                                                                                                      |
+| Minu Nediyapalackal Sunil     | Add detailed operations for units API (task_definitions -tii_group_attachments ) on Ontrack documentation website | <https://github.com/thoth-tech/doubtfire-astro/pull/12>                                                                                                                                                      |
+| Minu Nediyapalackal Sunil     | Document the operations units API - Tutorial Streams                                                              | <https://github.com/thoth-tech/doubtfire-astro/pull/10>                                                                                                                                                      |
+| Sam Rolfe                     | Implement the backend requirements for the course entity.                                                         | <https://github.com/thoth-tech/doubtfire-api/pull/34>                                                                                                                                                        |
+| Sam Rolfe                     | Implement the backend requirements for the course map entity.                                                     | <https://github.com/thoth-tech/doubtfire-api/pull/35>                                                                                                                                                        |
+| Sam Rolfe                     | Implement the backend requirements for the course map unit entity.                                                | <https://github.com/thoth-tech/doubtfire-api/pull/35>                                                                                                                                                        |
+| Sam Rolfe                     | Implement the backend requirements for the requirement set entity.                                                | <https://github.com/thoth-tech/doubtfire-api/pull/37>                                                                                                                                                        |
+| Sam Rolfe                     | Implement the backend requirements for the specialization entity.                                                 |                                                                                                                                                                                                              |
+| Sam Rolfe                     | Add Authentication to the Courseflow endpoints                                                                    |                                                                                                                                                                                                              |
+| Sam Rolfe                     | Add button to Courseflow main component                                                                           | <https://github.com/thoth-tech/doubtfire-web/pull/227>                                                                                                                                                       |
+| Sam Rolfe                     | Create diagram of coursemap page                                                                                  | <https://github.com/thoth-tech/doubtfire-astro/pull/11>                                                                                                                                                      |
+| Sam Rolfe                     | Created coursemap base page                                                                                       | <https://github.com/thoth-tech/doubtfire-web/pull/233>                                                                                                                                                       |
+| Sam Rolfe                     | Migration: grade-icon.coffee                                                                                      | <https://github.com/thoth-tech/doubtfire-web/pull/231>                                                                                                                                                       |
+| Shen Tian                     | Add button to Courseflow main component                                                                           | <https://github.com/thoth-tech/doubtfire-web/pull/227>                                                                                                                                                       |
+| Shen Tian                     | Created coursemap base page                                                                                       | <https://github.com/thoth-tech/doubtfire-web/pull/233>                                                                                                                                                       |
+| Shen Tian                     | Migration: timeout.coffee                                                                                         | <https://github.com/doubtfire-lms/doubtfire-web/pull/868/commits/6a965ef9927837bd3e9e77d27b035473cd974215>                                                                                                   |
+| Shyama Chandrashekaran Pillai | Document the below API pages in detail within the website - set 5                                                 | <https://github.com/thoth-tech/doubtfire-astro/pull/9>                                                                                                                                                       |
+| Shyama Chandrashekaran Pillai | Add detailed operations for units API (group set - group ID) on Ontrack documentation website                     | <https://github.com/thoth-tech/doubtfire-astro/pull/10>                                                                                                                                                      |
+| Shyama Chandrashekaran Pillai | Add detailed operations for units API (task_definitions -tii_group_attachments ) on Ontrack documentation website | <https://github.com/thoth-tech/doubtfire-astro/pull/12>                                                                                                                                                      |
+| Shyama Chandrashekaran Pillai | Document the operations units API - Tutorial Streams                                                              | <https://github.com/thoth-tech/doubtfire-astro/pull/10>                                                                                                                                                      |
+| Thuy Tien Hoa                 | Migration: grade-icon.coffee                                                                                      | <https://github.com/thoth-tech/doubtfire-web/pull/231>                                                                                                                                                       |
+| Thuy Tien Hoa                 | Migration: timeout.coffee                                                                                         | <https://github.com/doubtfire-lms/doubtfire-web/pull/868/commits/6a965ef9927837bd3e9e77d27b035473cd974215>                                                                                                   |
+
+The OnTrack team has made considerable progress toward achieving the trimester’s goals, focusing on
+both immediate bug fixes and long-term enhancements. We are on track to complete the planned
+deliverables, including significant backend and frontend updates, new feature implementations, and
+documentation improvements. Our continued efforts will ensure a smooth transition to modern
+technologies and an enhanced user experience for all stakeholders.
 
 ## Project 2: SplashKit
 
@@ -635,3 +761,216 @@ Long Term Deliverables:
 | Shaun Ratcliff     | Junior Lead – SplashKit Website & Tutorials        | Junior            |
 | Anish Sampson      | Team Member – Games Development                    | Junior            |
 | Amith Tiwari       | Team Member – SplashKit Website                    | Junior            |
+
+### Progress Update
+
+Significant progress has been made this trimester across multiple projects and deliverables aimed at
+enhancing the functionality, usability, and educational impact of SplashKit.
+
+**Arcade Machine**
+
+- The process for copying games to the arcade machines has been clearly defined, resulting in a
+  streamlined approach for uploading and testing student games. This new process simplifies the
+  workflow, reduces setup time, and ensures that games can be quickly and efficiently tested on the
+  arcade machines.
+- Several improvements have been made to the arcade build documentation. Broken links have been
+  fixed, and the content has been updated to reflect the latest processes. These updates enhance the
+  clarity and accuracy of the documentation, providing better support for users and ensuring that
+  the setup and maintenance procedures are up to date.
+
+**Game Development**
+
+- A high-level implementation pattern guide has been developed to streamline the onboarding process
+  for new team members. By standardising game development patterns, this guide ensures a cohesive
+  approach to project development and facilitates a smoother transition for new developers joining
+  the team.
+- Critical bugs in games such as _Below the Surface_ and _Venture Adventure_ have been resolved,
+  significantly improving their gameplay experience and overall stability. Addressing these issues
+  has led to a more polished and reliable gaming experience for players.
+- A comprehensive development plan for the 'Bee Game' has been created, outlining core mechanics and
+  class structures. This plan serves as a roadmap for guiding the project from initial conception
+  through to completion, providing a clear framework for development and ensuring that key aspects
+  of the game are thoroughly planned and executed.
+
+**SplashKit.io Website**
+
+- The troubleshooting section of the SplashKit.io website has been updated and reorganised to
+  enhance the clarity and accessibility of troubleshooting resources. These improvements make it
+  easier for users to find solutions to common issues, ensuring a more efficient and user-friendly
+  experience when seeking help.
+- A comprehensive review and update of processes, policies, and FAQs have been conducted to ensure
+  that the information on the SplashKit.io website is current and aligns with the latest SplashKit
+  practices. This ensures that users have access to accurate and relevant information, reflecting
+  the most recent updates and best practices.
+- Significant work has also gone into integrating a “games showcase” on the website. This includes
+  the development of a featured games slider on the main SplashKit page, an index page listing all
+  SplashKit games, and individual pages providing detailed information about each game. These
+  additions enhance the visibility and accessibility of games created with SplashKit, offering users
+  a comprehensive view of the creative projects developed using SplashKit.
+
+**SplashKit Tutorials**
+
+- A formal process for reviewing tutorials has been established and implemented, featuring detailed
+  checklists to verify code accuracy, ensure content clarity, and align tutorials with best
+  practices and the latest SplashKit features. This includes coverage in C++, C#, and Python, as
+  well as incorporating top-level statements in C#. This structured approach aims to enhance the
+  quality and reliability of all SplashKit tutorials.
+- Several tutorials, including “Getting Started with Servers,” “Routing with Servers,” and “How to
+  Make a RESTful API Call,” have been thoroughly reviewed according to the new process. These
+  reviews ensure that the content is accurate, up-to-date, and compliant with the latest standards
+  in SplashKit development.
+- Networking tutorials for connecting programs, along with a guide on network functions, have been
+  created. These resources provide a foundation for developing various programs and games that can
+  connect over a local network.
+- Python support has been expanded by adding Python code blocks to various guides, such as the JSON
+  tutorial series and the “Using Mouse Inputs” guide. This addition increases the accessibility of
+  our tutorials for Python developers and aligns with our goal to support multiple programming
+  languages.
+- New Code Usage examples have been developed for the clear_screen and fill_triangle functions,
+  providing users with practical and clear demonstrations of how to use these functions effectively
+  in their projects.
+- A suite of physics tutorials has been created to provide users with a foundational understanding
+  of 2D vectors, including topics such as vector definition, arithmetic, gravity, and collisions.
+  These tutorials are designed to equip users with essential knowledge for incorporating
+  physics-based mechanics into their games, enhancing their overall development experience.
+
+**SplashKit Expansion**
+
+- Several bug fixes have been successfully implemented, addressing issues such as those in the
+  move_sprite_to function and correcting typos across various functions. These fixes have improved
+  the reliability and functionality of SplashKit, ensuring a smoother experience for users.
+- The investigation into porting SwinGame functions has progressed, with several functions
+  identified for implementation. This effort aims to integrate useful features from SwinGame into
+  SplashKit, enhancing the toolkit's capabilities and providing additional functionality.
+- The initial implementation of remote GPIO control has been completed, featuring cross-platform
+  capabilities and the ability to manage multiple Raspberry Pi devices. This development expands
+  SplashKit's functionality by enabling remote hardware control, broadening its applications in
+  various projects.
+- New unit tests have been created to cover essential SplashKit functionality, including working
+  with Bitmaps, Sound Effects, and Music. These tests are designed to ensure the accuracy and
+  stability of these features, contributing to a more robust and reliable development environment.
+
+### Ongoing and Pending Tasks
+
+**Arcade Machine**
+
+- **Expansion of Documentation**: Further updates and refinements to the arcade build documentation
+  are needed to cover additional user scenarios and configurations. Ensuring comprehensive guidance
+  will support users in various setup and maintenance situations.
+
+**Game Development**
+
+- **Development of New Games**: Continued focus is required on developing and executing plans for
+  new game projects beyond the 'Bee Game.' This includes advancing other game concepts and ensuring
+  they are fully realized and integrated into the development pipeline.
+- **User Feedback Integration**: Collecting and integrating feedback from users on existing games to
+  address any remaining issues and enhance gameplay. This ongoing process will help refine and
+  improve the overall player experience.
+
+**SplashKit.io Website**
+
+- **Long-term Content Development**: There is a need to continue developing and expanding content on
+  the SplashKit.io website, including additional tutorials, guides, and updates. This ongoing effort
+  will ensure the website remains a comprehensive and up-to-date resource for users.
+- **User Experience Enhancements**: Further enhancements to the website’s usability and design are
+  required. This includes addressing user feedback and evolving best practices to maintain a
+  user-friendly and efficient site.
+
+**SplashKit Tutorials**
+
+- **Completion of Tutorial Series**: Work on developing and reviewing additional tutorials,
+  particularly for advanced topics and the planned vector tutorial series. This includes ensuring
+  that new and existing tutorials meet quality standards and effectively teach users.
+- **Interactive Elements**: Explore and implement interactive elements or exercises within tutorials
+  to enhance user engagement and learning outcomes. This will provide a more dynamic and effective
+  educational experience.
+
+**SplashKit Expansion**
+
+- **Full Implementation of Ported Functions**: Complete the integration and implementation of
+  SwinGame functions identified during the investigation. This involves thorough testing and
+  ensuring these functions are fully operational within SplashKit.
+- **Expansion of Remote GPIO Features**: Continue the development of remote GPIO control features,
+  including additional hardware integrations and platform support. Ongoing testing and refinement
+  are essential to fully realise the potential of these features.
+
+### Team Members and Contributions
+
+| **Full Name**             | **Planner Card Name**                                                                   | **Evidence**                                                                                                                                                                                                                                                      |
+| ------------------------- | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Brianna Laird             | Fix Broken Dev Container                                                                | <https://github.com/splashkit/splashkit.io-starlight/pull/7>                                                                                                                                                                                                      |
+| Brianna Laird             | SIT102 Channel Suggestion Post                                                          |                                                                                                                                                                                                                                                                   |
+| Brianna Laird             | Update and Re-organise Trouble Shooting Section                                         | <https://github.com/splashkit/splashkit.io-starlight/pull/10>                                                                                                                                                                                                     |
+| Brianna Laird             | Add Python code blocks to "Using Mouse Inputs" guide                                    | <https://github.com/thoth-tech/splashkit.io-starlight/pull/139>                                                                                                                                                                                                   |
+| Brianna Laird             | Add Tutorial Review Documentation                                                       | <https://github.com/thoth-tech/documentation/pull/529>                                                                                                                                                                                                            |
+| Brianna Laird             | Splashkit tutorial - Documentation Update                                               | <https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/89>                                                                                                                                                                                           |
+| Brianna Laird             | Update Usage Examples to add Python code                                                | <https://github.com/thoth-tech/splashkit.io-starlight/pull/144>                                                                                                                                                                                                   |
+| Brianna Laird             | Validate/Update Processes, Policies and FAQs                                            | <https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/85>                                                                                                                                                                                           |
+| Brianna Laird             | Create Code Usage example for:"clear_screen" function                                   | <https://github.com/thoth-tech/splashkit.io-starlight/pull/148>                                                                                                                                                                                                   |
+| Brianna Laird             | Review "Getting Started with Servers" guide                                             | <https://github.com/thoth-tech/documentation/pull/531https://github.com/thoth-tech/splashkit.io-starlight/pull/145>                                                                                                                                               |
+| Brianna Laird             | Review "How to make a RESTful API call" guide                                           | <https://github.com/thoth-tech/documentation/pull/533https://github.com/thoth-tech/splashkit.io-starlight/pull/147>                                                                                                                                               |
+| Brianna Laird             | Review “Routing with Servers”                                                           | <https://github.com/thoth-tech/documentation/pull/532> <br><https://github.com/thoth-tech/splashkit.io-starlight/pull/146>                                                                                                                                        |
+| Darren Marchiano Sunandar | Fix typo in vector magnitude squared documentation                                      | <https://github.com/thoth-tech/splashkit-core/pull/62>                                                                                                                                                                                                            |
+| Hangyu Li                 | Create Code Usage example for:"clear_screen" function                                   | <https://github.com/thoth-tech/splashkit.io-starlight/pull/148>                                                                                                                                                                                                   |
+| Hayley Rose Hughes        | Define process for copying games to Arcade Machine                                      | <https://github.com/thoth-tech/documentation/pull/522>                                                                                                                                                                                                            |
+| Hayley Rose Hughes        | Fix typo in vector magnitude squared documentation                                      | <https://github.com/thoth-tech/splashkit-core/pull/62>                                                                                                                                                                                                            |
+| Hayley Rose Hughes        | Initial implementation of remote GPIO control                                           | <https://github.com/thoth-tech/splashkit-core/pull/58>                                                                                                                                                                                                            |
+| Hayley Rose Hughes        | Investigate bug in move_sprite_to                                                       | <https://github.com/thoth-tech/splashkit-core/pull/59>                                                                                                                                                                                                            |
+| Hayley Rose Hughes        | Circle-Triangle Collision Detection Methods                                             | <https://github.com/thoth-tech/splashkit-core/pull/60>                                                                                                                                                                                                            |
+| Hayley Rose Hughes        | Fix broken links in Arcade Build Doco                                                   | <https://github.com/thoth-tech/documentation/pull/523>                                                                                                                                                                                                            |
+| Hayley Rose Hughes        | Updated Arcade Build Doco                                                               | <https://github.com/thoth-tech/documentation/pull/523>                                                                                                                                                                                                            |
+| Jake Andrew Oxley         | Identify missing functionality from SwinGame                                            | <https://github.com/thoth-tech/documentation/pull/536>                                                                                                                                                                                                            |
+| Jonathan James Tynan      | Define process for copying games to Arcade Machine                                      | <https://github.com/thoth-tech/documentation/pull/522>                                                                                                                                                                                                            |
+| Jonathan James Tynan      | Initial implementation of remote GPIO control                                           | <https://github.com/thoth-tech/splashkit-core/pull/58>                                                                                                                                                                                                            |
+| Jonathan James Tynan      | Tutorial Proposal - 2D Vectors                                                          | <https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/87>                                                                                                                                                                                           |
+| Jonathan James Tynan      | Validate/Update Processes, Policies and FAQs                                            | <https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/85>                                                                                                                                                                                           |
+| Jonathan James Tynan      | Circle-Triangle Collision Detection Methods                                             | <https://github.com/thoth-tech/splashkit-core/pull/60>                                                                                                                                                                                                            |
+| Jonathan James Tynan      | Fix broken links in Arcade Build Doco                                                   | <https://github.com/thoth-tech/documentation/pull/523>                                                                                                                                                                                                            |
+| Jonathan James Tynan      | Updated Arcade Build Doco                                                               | <https://github.com/thoth-tech/documentation/pull/523>                                                                                                                                                                                                            |
+| Ka Chun Lam               | Project Bee - create player class                                                       | <https://github.com/zhusim222/Bee-game/pull/1>                                                                                                                                                                                                                    |
+| Ka Chun Lam               | Project Bee - programming plan                                                          | <https://github.com/zhusim222/Bee-game/pull/4>                                                                                                                                                                                                                    |
+| Ka Chun Lam               | project Bee - Obstacle class                                                            | <https://github.com/zhusim222/Bee-game/pull/2https://github.com/zhusim222/Bee-game/pull/3>                                                                                                                                                                        |
+| Mark Heath                | Below The Surface - level 9 (FIGHT) has a collision issue next to the exit              | <https://github.com/thoth-tech/arcade-games/pull/225>                                                                                                                                                                                                             |
+| Mark Heath                | Venture Adventure - fix bundle files                                                    | <https://github.com/thoth-tech/arcade-games/pull/219>                                                                                                                                                                                                             |
+| Mark Heath                | Venture Adventure - fix level music                                                     | <https://github.com/thoth-tech/arcade-games/pull/222>                                                                                                                                                                                                             |
+| Mark Heath                | Venture Adventure - fix level numbering scheme                                          |                                                                                                                                                                                                                                                                   |
+| Mark Heath                | Venture Adventure - remove outdated credit                                              | <https://github.com/thoth-tech/arcade-games/pull/218>                                                                                                                                                                                                             |
+| Mark Heath                | Venture Adventure - small refactor                                                      | <https://github.com/thoth-tech/arcade-games/pull/220https://github.com/thoth-tech/arcade-games/pull/221https://github.com/thoth-tech/arcade-games/pull/222https://github.com/thoth-tech/arcade-games/pull/223https://github.com/thoth-tech/arcade-games/pull/224> |
+| Mark Heath                | All games - locally-compiled exe(s) are platform-specific                               | <https://github.com/thoth-tech/arcade-games/pull/226>                                                                                                                                                                                                             |
+| Matthew James Harding     | Fix typo in vector magnitude squared documentation                                      | <https://github.com/thoth-tech/splashkit-core/pull/62>                                                                                                                                                                                                            |
+| Matthew James Harding     | Investigate bug in move_sprite_to                                                       | <https://github.com/thoth-tech/splashkit-core/pull/59>                                                                                                                                                                                                            |
+| Matthew James Harding     | Add bitmap, sound effect and music unit tests                                           | <https://github.com/splashkit/splashkit-core/pull/179>                                                                                                                                                                                                            |
+| Matthew James Harding     | Circle-Triangle Collision Detection Methods                                             | <https://github.com/thoth-tech/splashkit-core/pull/60>                                                                                                                                                                                                            |
+| Mounika Angadipeta        | Add C# code blocks to the 3 JSON guides                                                 | <https://github.com/thoth-tech/splashkit.io-starlight/pull/133>                                                                                                                                                                                                   |
+| Mounika Angadipeta        | Add Python code blocks to "Using Mouse Inputs" guide                                    | <https://github.com/thoth-tech/splashkit.io-starlight/pull/139>                                                                                                                                                                                                   |
+| Mounika Angadipeta        | Tutorial Proposal - 2D Vectors                                                          | <https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/87>                                                                                                                                                                                           |
+| Oliver Exell-Bruce        | Fix guides index page                                                                   | <https://github.com/thoth-tech/splashkit.io-starlight/pull/149/>                                                                                                                                                                                                  |
+| Oscar Harris              | Create 1-2 page condensed, high level implementation pattern guide for rapid onboarding | <https://github.com/thoth-tech/arcade-games/pull/227>                                                                                                                                                                                                             |
+| Sharvani Kandala          | Create Code Usage Examples for: "fill_triangle" function                                | <https://github.com/thoth-tech/splashkit.io-starlight/pull/143>                                                                                                                                                                                                   |
+| Sharvani Kandala          | Review "How to make a RESTful API call" guide                                           | <https://github.com/thoth-tech/documentation/pull/533https://github.com/thoth-tech/splashkit.io-starlight/pull/147>                                                                                                                                               |
+| Shaun Ratcliff            | Add C# code blocks to the 3 JSON guides                                                 | <https://github.com/thoth-tech/splashkit.io-starlight/pull/133>                                                                                                                                                                                                   |
+| Shaun Ratcliff            | Splashkit tutorial - Documentation Update                                               | <https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/89>                                                                                                                                                                                           |
+| Shaun Ratcliff            | Tutorial Proposal - 2D Vectors                                                          | <https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/87>                                                                                                                                                                                           |
+| Shaun Ratcliff            | Validate/Update Processes, Policies and FAQs                                            | <https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/85>                                                                                                                                                                                           |
+| Shaun Ratcliff            | SplashKit Tutorial - 2D Vectors                                                         | <https://github.com/thoth-tech/splashkit.io-starlight/pull/134>                                                                                                                                                                                                   |
+| Shaun Ratcliff            | Update Broken Splashkit.io Links                                                        | <https://github.com/thoth-tech/splashkit.io-starlight/pull/136>                                                                                                                                                                                                   |
+| Shaun Ratcliff            | Games Showcase Page                                                                     | <https://github.com/thoth-tech/splashkit.io-starlight/pull/155>                                                                                                                                                                                                   |
+| Thomas James Shanahan     | All games - locally-compiled exe(s) are platform-specific                               | <https://github.com/thoth-tech/arcade-games/pull/226>                                                                                                                                                                                                             |
+| Thomas James Shanahan     | project Bee - create programming plan                                                   | <https://github.com/zhusim222/Bee-game/pull/4>                                                                                                                                                                                                                    |
+| Will Saunders             | Define process for copying games to Arcade Machine                                      | <https://github.com/thoth-tech/documentation/pull/522>                                                                                                                                                                                                            |
+| Will Saunders             | Initial implementation of remote GPIO control                                           | <https://github.com/thoth-tech/splashkit-core/pull/58>                                                                                                                                                                                                            |
+| Will Saunders             | Investigate bug in move_sprite_to                                                       | <https://github.com/thoth-tech/splashkit-core/pull/59>                                                                                                                                                                                                            |
+| Will Saunders             | Add bitmap, sound effect and music unit tests                                           | <https://github.com/splashkit/splashkit-core/pull/179>                                                                                                                                                                                                            |
+| Will Saunders             | Update Splashkit Sprite tutorial                                                        | <https://github.com/thoth-tech/splashkit.io-starlight/pull/142>                                                                                                                                                                                                   |
+| Will Saunders             | Fix broken links in Arcade Build Doco                                                   | <https://github.com/thoth-tech/documentation/pull/523>                                                                                                                                                                                                            |
+| Will Saunders             | Updated Arcade Build Doco                                                               | <https://github.com/thoth-tech/documentation/pull/523>                                                                                                                                                                                                            |
+| Yuyang Yang               | Add C# code blocks to the 3 JSON guides                                                 | <https://github.com/thoth-tech/splashkit.io-starlight/pull/133>                                                                                                                                                                                                   |
+| Yuyang Yang               | Add Python code blocks to "Using Mouse Inputs" guide                                    | <https://github.com/thoth-tech/splashkit.io-starlight/pull/139>                                                                                                                                                                                                   |
+
+The SplashKit team has made considerable progress this trimester, advancing our objectives with
+notable improvements and ongoing enhancements. We have effectively addressed immediate issues, such
+as bug fixes and documentation updates, while laying the groundwork for long-term development. Our
+focus on refining tutorials, expanding website content, and integrating new features is driving us
+towards achieving our deliverables. As we move forward, our efforts will continue to enhance
+SplashKit’s functionality, support a broader user base, and ensure a seamless and robust development
+environment for all users.
