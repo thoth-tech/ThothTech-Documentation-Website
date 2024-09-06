@@ -20,7 +20,7 @@ This tutorial is targeted at intermediate learners who have experience in progra
 
 The tutorial will cover the following main SplashKit functions:
 
-- [MoveCameraTo](https://splashkit.io/api/camera/#move-camera-to-2)
+- [MoveCameraBy](https://splashkit.io/api/camera/#move-camera-by-2)
 - [SetCameraPosition](https://splashkit.io/api/camera/#set-camera-position)
 - [CameraPosition](https://splashkit.io/api/camera/#camera-position)
 - [OptionDefaults](https://splashkit.io/api/graphics/#option-defaults)
