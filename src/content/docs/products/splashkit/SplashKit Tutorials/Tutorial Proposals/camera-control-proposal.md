@@ -4,7 +4,7 @@ title: Dynamic Camera Control Tutorial Proposal
 
 ## Introduction
 
-This tutorial will cover how to use the SetCameraPosition and ScreenRectangle functions in SplashKit to implement dynamic camera movements in graphical applications. By following this tutorial, readers will learn to create zoom effects, responsive camera controls, and object tracking, enhancing the interactivity and immersion of their games or other projects.
+This tutorial will cover how to use the various camera functions in SplashKit to implement dynamic camera movements in graphical applications. By following this tutorial, readers will learn to create zoom effects, responsive camera controls, and movements enhancing the interactivity and immersion of their games or other projects.
 
 ## Tutorial Details
 
@@ -20,10 +20,13 @@ This tutorial is targeted at intermediate learners who have experience in progra
 
 The tutorial will cover the following main SplashKit functions:
 
-1. [ScreenRectangle](https://splashkit.io/api/camera/#screen-rectangle)
-2. [SetCameraPosition](https://splashkit.io/api/camera/#set-camera-position)
-3. [CameraPosition](https://splashkit.io/api/camera/#camera-position)
+- [MoveCameraTo](https://splashkit.io/api/camera/#move-camera-to-2)
+- [SetCameraPosition](https://splashkit.io/api/camera/#set-camera-position)
+- [CameraPosition](https://splashkit.io/api/camera/#camera-position)
+- [OptionDefaults](https://splashkit.io/api/graphics/#option-defaults)
+- [OptionScaleBmp](https://splashkit.io/api/graphics/#option-scale-bmp)
+- [DrawBitmap](https://splashkit.io/api/graphics/#draw-bitmap-4)
 
 ## Conclusion
 
-This tutorial will help readers understand how to manipulate the camera in their SplashKit applications. By mastering the SetCameraPosition and ScreenRectangle functions, developers can create more engaging and interactive experiences, such as zoom effects and object tracking. This knowledge will be valuable for anyone looking to improve the visual dynamics and responsiveness of their game projects.
+This tutorial will help readers understand how to manipulate the camera in their SplashKit applications. By mastering these camera functions, developers can create more engaging and interactive experiences, such as zoom effects and camera movements. This knowledge will be valuable for anyone looking to improve the visual dynamics and responsiveness of their game projects.
