@@ -1,139 +1,119 @@
-/*global theme*/
-/* Dark mode colors. */
+/* Dark mode colors */
 :root {
-  --sl-color-accent-low: #242424;
-  --sl-color-accent: #6a6a6a;
-  --sl-color-accent-high: #c8c8c8;
+  --sl-color-accent-low: #000000; /* Black */
+  --sl-color-accent: #4670A1; /* Navy Blue */
+  --sl-color-accent-high: #4872A4; /* Lighter Navy */
   --sl-color-white: #ffffff;
-  --sl-color-gray-1: #eeeeee;
-  --sl-color-gray-2: #c2c2c2;
-  --sl-color-gray-3: #8b8b8b;
-  --sl-color-gray-4: #585858;
-  --sl-color-gray-5: #383838;
+  --sl-color-gray-1: #4670A1; /* Navy Blue */
+  --sl-color-gray-2: #4771A2; /* Slightly Lighter Navy */
+  --sl-color-gray-3: #4872A4; /* Even Lighter Navy */
+  --sl-color-gray-4: #000000; /* Black */
+  --sl-color-gray-5: #000001; /* Almost Black */
   --sl-color-gray-6: #272727;
-  --sl-color-black: #181818;
+  --sl-color-black: #000000; /* Black */
+  --sl-color-darkest-blue: #4670A1; /* Darkest Navy Blue */
+  --sl-color-dark-blue: #4872A4; /* Slightly lighter Navy */
+  --sl-color-light-blue: #eeeeee; /* Light Blue */
+  --sl-color-gold: #d4af37; /* Gold for the logo */
+  --sl-color-black: #000000; /* Black */
+  --sl-color-subtle-blue: #3b4d63; /* Subtle blue from the logo */
 }
-/* Light mode colors!!! */
+
+/* Light mode colors */
 :root[data-theme="light"] {
-  --sl-color-accent-low: #d7d7d7;
-  --sl-color-accent: #6b6b6b;
-  --sl-color-accent-high: #323232;
-  --sl-color-white: #181818;
-  --sl-color-gray-1: #272727;
-  --sl-color-gray-2: #383838;
-  --sl-color-gray-3: #585858;
-  --sl-color-gray-4: #8b8b8b;
-  --sl-color-gray-5: #c2c2c2;
+  --sl-color-accent-low: #4872A4; /* Lighter Navy */
+  --sl-color-accent: #4670A1; /* Navy Blue */
+  --sl-color-accent-high: #000000; /* Black */
+  --sl-color-white: #ffffff;
+  --sl-color-gray-1: #4872A4; /* Lighter Navy */
+  --sl-color-gray-2: #4771A2; /* Slightly Lighter Navy */
+  --sl-color-gray-3: #4670A1; /* Navy Blue */
+  --sl-color-gray-4: #000000; /* Black */
+  --sl-color-gray-5: #272727;
   --sl-color-gray-6: #eeeeee;
   --sl-color-gray-7: #f6f6f6;
-  --sl-color-black: #ffffff;
+  --sl-color-black: #000000; /* Black */
+  --sl-color-darkest-blue: #133357; /* Darkest Navy Blue */
+  --sl-color-dark-blue: #4872A4; /* Slightly lighter Navy */
+  --sl-color-light-blue: #f6f6f6; /* Light Blue */
+  --sl-color-gold: #d4af37; /* Gold for the logo */
+  --sl-color-black: #000000; /* Black */
+  --sl-color-subtle-blue: #3b4d63; /* Subtle blue from the logo */
 }
 
-/*landing page*/
-.aboutContainer {
+/* Apply the subtle gradient background without animation */
+body {
   width: 100%;
-  float: left;
+  height: 100vh;
+  background-size: cover;
 }
 
-.aboutAbout {
-  width: 20%;
-}
-.aboutButtons {
-  width: 60%;
+/* Dark mode background gradient with subtle transitions*/
+:root:not([data-theme="light"]) body {
+  background: linear-gradient(90deg, var(--sl-color-black) 25%, var(--sl-color-darkest-blue) 99.99%, var(--sl-color-subtle-blue) 100%);
 }
 
-/*products page*/
-.ontrack {
-  --sl-color-gray-1: #3691ff; /*??*/
-  --sl-color-gray-2: #3691ff; /*hover outline*/
-  --sl-color-gray-3: #3691ff; /*Text Colour*/
-  --sl-color-gray-4: #3691ff; /*??*/
-  --sl-color-gray-5: #00459a; /*non-hover outline*/
-  --sl-color-gray-6: #131313; /*hover background*/
-  --sl-color-black: #3691ff; /*Text colour light mode*/
-  --sl-color-white: #3691ff; /*Text colour dark mode*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Light mode background gradient with subtle transitions */
+:root[data-theme="light"] body {
+  background: linear-gradient(90deg, #4e74a0 0%, #79a7e0 99%, #4a9ad7 100%);
 }
 
-img.ontrack {
-  float: right;
+/* General Card Styles for both <Card> and <LinkCard> */
+.card, .linkcard, .cardgrid {
+  transition: all 0.3s ease-in-out;
+  background-color: transparent; /* Transparent when not hovered */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  color: inherit; /* Ensure text color inherits correctly */
 }
 
-.splashkit {
-  --sl-color-gray-1: #f5a623; /*??*/
-  --sl-color-gray-2: #f5a623; /*hover outline*/
-  --sl-color-gray-3: #f5a623; /*Text Colour*/
-  --sl-color-gray-4: #f5a623; /*??*/
-  --sl-color-gray-5: #855506; /*non-hover outline*/
-  --sl-color-gray-6: #131313; /*hover background*/
-  --sl-color-black: #f5a623; /*Text colour light mode*/
-  --sl-color-white: #f5a623; /*Text colour dark mode*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Light Mode Card Styles */
+:root[data-theme="light"] .card, 
+:root[data-theme="light"] .linkcard, 
+:root[data-theme="light"] .cardgrid {
+  background-color: transparent; /* Cards remain transparent */
+  color: var(--sl-color-black); /* Dark text in light mode */
 }
 
-.starlight {
-  --sl-color-gray-1: #545454; /*??*/
-  --sl-color-gray-2: #545454; /*hover outline*/
-  --sl-color-gray-3: #545454; /*Text Colour*/
-  --sl-color-gray-4: #545454; /*??*/
-  --sl-color-gray-5: #2a2a2a; /*non-hover outline*/
-  --sl-color-gray-6: #131313; /*hover background*/
-  --sl-color-black: #545454; /*Text colour light mode*/
-  --sl-color-white: #545454; /*Text colour dark mode*/
-  display: flex;
-  justify-content: center;
+/* Dark Mode Card Styles */
+:root:not([data-theme="light"]) .card, 
+:root:not([data-theme="light"]) .linkcard, 
+:root:not([data-theme="light"]) .cardgrid {
+  background-color: transparent; /* Cards remain transparent */
+  color: var(--sl-color-white); /* Light text in dark mode */
 }
 
+/* Hover Effects for <Card>, <LinkCard>, and similar components */
+/* Light Mode Hover: Dark background and bright text */
+:root[data-theme="light"] .card:hover, 
+:root[data-theme="light"] .linkcard:hover, 
+:root[data-theme="light"] .cardgrid:hover {
+    background-color: var(--sl-color-dark-blue) !important; /* Dark blue background */
+    color: var(--sl-color-white) !important; /* White text */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Ensure shadow */
 
-.artGallery {
-  --sl-color-gray-1: #545454; /*??*/
-  --sl-color-gray-2: #545454; /*hover outline*/
-  --sl-color-gray-3: #545454; /*Text Colour*/
-  --sl-color-gray-4: #545454; /*??*/
-  --sl-color-gray-5: #2a2a2a; /*non-hover outline*/
-  --sl-color-gray-6: #131313; /*hover background*/
-  --sl-color-black: #545454; /*Text colour light mode*/
-  --sl-color-white: #545454; /*Text colour dark mode*/
-  display: flex;
-  justify-content: center;
 }
 
-.courseFlow {
-  --sl-color-gray-1: #7089fd; /*??*/
-  --sl-color-gray-2: #7089fd; /*hover outline*/
-  --sl-color-gray-3: #7089fd; /*Text Colour*/
-  --sl-color-gray-4: #7089fd; /*??*/
-  --sl-color-gray-5: #0221b3; /*non-hover outline*/
-  --sl-color-gray-6: #131313; /*hover background*/
-  --sl-color-black: #7089fd; /*Text colour light mode*/
-  --sl-color-white: #7089fd; /*Text colour dark mode*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Dark Mode Hover: Darkest blue background and bright text */
+:root:not([data-theme="light"]) .card:hover, 
+:root:not([data-theme="light"]) .linkcard:hover, 
+:root:not([data-theme="light"]) .cardgrid:hover {
+  background-color: var(--sl-color-darkest-blue); /* Darkest blue on hover */
+  color: var(--sl-color-white); /* Bright text on hover */
+  box-shadow: 0 6px 8px rgba(255, 255, 255, 0.1); /* Enhance shadow on hover */
+  transform: translateY(-4px); /* Subtle lift on hover */
 }
 
-.operations {
-  --sl-color-gray-1: #fc486b; /*??*/
-  --sl-color-gray-2: #fc486b; /*hover outline*/
-  --sl-color-gray-3: #fc486b; /*Text Colour*/
-  --sl-color-gray-4: #fc486b; /*??*/
-  --sl-color-gray-5: #9f0221; /*non-hover outline*/
-  --sl-color-gray-6: #131313; /*hover background*/
-  --sl-color-black: #fc486b; /*Text colour light mode*/
-  --sl-color-white: #fc486b; /*Text colour dark mode*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Text Colors When Not Hovered */
+:root[data-theme="light"] .card, 
+:root:not([data-theme="light"]) .linkcard, 
+:root[data-theme="light"] .cardgrid {
+  color: var(--sl-color-black); /* Dark text in light mode */
 }
 
-/*product images*/
-.pi {
-  width: 50px;
-  height: 50px;
-  object-fit: scale-down;
-  margin: 30px;
+:root:not([data-theme="light"]) .card, 
+:root:not([data-theme="light"]) .linkcard, 
+:root:not([data-theme="light"]) .cardgrid {
+  color: var(--sl-color-white); /* Light text in dark mode */
 }
