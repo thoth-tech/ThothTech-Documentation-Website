@@ -1,67 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=YourFontChoice&display=swap');
+
 /* Dark mode colors */
 :root {
-  --sl-color-accent-low: #000000; /* Black */
-  --sl-color-accent: #4670A1; /* Navy Blue */
-  --sl-color-accent-high: #4872A4; /* Lighter Navy */
+  --sl-color-accent-low: #003366; /* Dark Blue from headpiece */
+  --sl-color-accent: #33773d; /* Green from the ibis head */
   --sl-color-white: #ffffff;
-  --sl-color-gray-1: #4670A1; /* Navy Blue */
-  --sl-color-gray-2: #4771A2; /* Slightly Lighter Navy */
-  --sl-color-gray-3: #4872A4; /* Even Lighter Navy */
+  --sl-color-gray-1: #003366; /* Dark Blue */
+  --sl-color-gray-2: #234a73; /* Slightly Lighter Blue */
+  --sl-color-gray-3: #335577; /* Another mid-tone blue */
   --sl-color-gray-4: #000000; /* Black */
-  --sl-color-gray-5: #000001; /* Almost Black */
   --sl-color-gray-6: #272727;
-  --sl-color-black: #000000; /* Black */
-  --sl-color-darkest-blue: #4670A1; /* Darkest Navy Blue */
-  --sl-color-dark-blue: #4872A4; /* Slightly lighter Navy */
-  --sl-color-light-blue: #eeeeee; /* Light Blue */
-  --sl-color-gold: #d4af37; /* Gold for the logo */
-  --sl-color-black: #000000; /* Black */
+  --sl-color-darkest-blue: #697e93; /* Darkest Blue from the headpiece */
   --sl-color-subtle-blue: #3b4d63; /* Subtle blue from the logo */
+  --sl-color-gold: #d4af37; /* Gold from the kilt */
 }
 
 /* Light mode colors */
 :root[data-theme="light"] {
-  --sl-color-accent-low: #4872A4; /* Lighter Navy */
-  --sl-color-accent: #4670A1; /* Navy Blue */
-  --sl-color-accent-high: #000000; /* Black */
-  --sl-color-white: #ffffff;
-  --sl-color-gray-1: #4872A4; /* Lighter Navy */
-  --sl-color-gray-2: #4771A2; /* Slightly Lighter Navy */
-  --sl-color-gray-3: #4670A1; /* Navy Blue */
+  --sl-color-accent-low: #234a73; /* Slightly lighter navy */
+  --sl-color-accent: #003366; /* Darkest navy */
+  --sl-color-accent-high: #33773d; /* Green from ibis head */
+  --sl-color-gray-1: #003366; /* Darkest Blue */
+  --sl-color-gray-2: #234a73; /* Slightly Lighter Blue */
   --sl-color-gray-4: #000000; /* Black */
   --sl-color-gray-5: #272727;
   --sl-color-gray-6: #eeeeee;
   --sl-color-gray-7: #f6f6f6;
-  --sl-color-black: #000000; /* Black */
-  --sl-color-darkest-blue: #133357; /* Darkest Navy Blue */
-  --sl-color-dark-blue: #4872A4; /* Slightly lighter Navy */
-  --sl-color-light-blue: #f6f6f6; /* Light Blue */
-  --sl-color-gold: #d4af37; /* Gold for the logo */
-  --sl-color-black: #000000; /* Black */
-  --sl-color-subtle-blue: #3b4d63; /* Subtle blue from the logo */
+  --sl-color-darkest-blue: #00204F; /* Darkest Navy Blue */
+  --sl-color-subtle-blue: #021d3d; /* Subtle blue from the logo */
+  --sl-color-gold: #d4af37; /* Gold from the kilt */
 }
 
-/* Apply the subtle gradient background without animation */
+/* Apply the subtle gradient background */
 body {
   width: 100%;
   height: 100vh;
   background-size: cover;
+  color: var(--sl-color-white); /* Default text color for dark mode */
 }
 
-/* Dark mode background gradient with subtle transitions*/
+/* Dark mode background gradient */
 :root:not([data-theme="light"]) body {
-  background: linear-gradient(90deg, var(--sl-color-black) 25%, var(--sl-color-darkest-blue) 99.99%, var(--sl-color-subtle-blue) 100%);
+  background: linear-gradient(90deg, var(--sl-color-subtle-blue) 50%, var(--sl-color-darkest-blue) 99%, var(--sl-color-black) 100%);
+  color: var(--sl-color-white); /* White text for better contrast */
 }
 
-/* Light mode background gradient with subtle transitions */
+/* Light mode background gradient */
 :root[data-theme="light"] body {
-  background: linear-gradient(90deg, #4e74a0 0%, #79a7e0 99%, #4a9ad7 100%);
+  background: linear-gradient(90deg, #c4cfdd 0%, #c6cfdc 99%, #7bb0d9 100%);
+  color: var(--sl-color-black); /* Dark text for better contrast */
 }
 
-/* General Card Styles for both <Card> and <LinkCard> */
-.card, .linkcard, .cardgrid {
+/* General Card Styles */
+.card {
   transition: all 0.3s ease-in-out;
-  background-color: transparent; /* Transparent when not hovered */
+  background-color: transparent;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -69,51 +62,72 @@ body {
 }
 
 /* Light Mode Card Styles */
-:root[data-theme="light"] .card, 
-:root[data-theme="light"] .linkcard, 
-:root[data-theme="light"] .cardgrid {
-  background-color: transparent; /* Cards remain transparent */
+:root[data-theme="light"] .card {
   color: var(--sl-color-black); /* Dark text in light mode */
 }
 
 /* Dark Mode Card Styles */
-:root:not([data-theme="light"]) .card, 
-:root:not([data-theme="light"]) .linkcard, 
-:root:not([data-theme="light"]) .cardgrid {
-  background-color: transparent; /* Cards remain transparent */
+:root:not([data-theme="light"]) .card {
   color: var(--sl-color-white); /* Light text in dark mode */
 }
 
-/* Hover Effects for <Card>, <LinkCard>, and similar components */
-/* Light Mode Hover: Dark background and bright text */
-:root[data-theme="light"] .card:hover, 
-:root[data-theme="light"] .linkcard:hover, 
-:root[data-theme="light"] .cardgrid:hover {
-    background-color: var(--sl-color-dark-blue) !important; /* Dark blue background */
-    color: var(--sl-color-white) !important; /* White text */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Ensure shadow */
-
+/* Hover Effects for Cards */
+/* Light Mode Hover */
+:root[data-theme="light"] .card:hover {
+  background-color: var(--sl-color-gray-7); /* Light gray background */
+  color: var(--sl-color-white); /* White text */
 }
 
-/* Dark Mode Hover: Darkest blue background and bright text */
-:root:not([data-theme="light"]) .card:hover, 
-:root:not([data-theme="light"]) .linkcard:hover, 
-:root:not([data-theme="light"]) .cardgrid:hover {
-  background-color: var(--sl-color-darkest-blue); /* Darkest blue on hover */
+/* Dark Mode Hover */
+:root:not([data-theme="light"]) .card:hover {
+  background-color: var(--sl-color-gray-6); /* Dark background on hover */
   color: var(--sl-color-white); /* Bright text on hover */
-  box-shadow: 0 6px 8px rgba(255, 255, 255, 0.1); /* Enhance shadow on hover */
-  transform: translateY(-4px); /* Subtle lift on hover */
 }
 
-/* Text Colors When Not Hovered */
-:root[data-theme="light"] .card, 
-:root:not([data-theme="light"]) .linkcard, 
-:root[data-theme="light"] .cardgrid {
-  color: var(--sl-color-black); /* Dark text in light mode */
+/* Hero Section Button Styles */
+.hero .primary {
+  background-color: #33773d ; /* Green background */
+  color: #ffffff ; /* White text */
+  border-radius: 50px ;
+  padding: 12px 24px ;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
-:root:not([data-theme="light"]) .card, 
-:root:not([data-theme="light"]) .linkcard, 
-:root:not([data-theme="light"]) .cardgrid {
-  color: var(--sl-color-white); /* Light text in dark mode */
+/* Hover state for buttons */
+.hero .primary:hover {
+  background-color: #285e30 ; /* Darker green on hover */
+  color: #f1c40f ; /* Optional: Gold text on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Color Variables */
+:root {
+  --heading-color-dark: #79a7e0; /* Light Blue for headings in dark mode */
+  --heading-color-light: #003366; /* Dark Blue for headings in light mode */
+  --content-color-dark: #ffffff; /* White content text for dark mode */
+  --content-color-light: #000000; /* Black content text for light mode */
+}
+
+/* Light Mode Colors */
+:root[data-theme='light'] {
+  --sl-color-heading: var(--heading-color-light); /* Blue headings in light mode */
+  --sl-color-content: var(--content-color-light); /* Black content in light mode */
+}
+
+/* Dark Mode Colors */
+:root:not([data-theme='light']) {
+  --sl-color-heading: var(--heading-color-dark); /* Light Blue headings in dark mode */
+  --sl-color-content: var(--content-color-dark); /* White content in dark mode */
+}
+
+/* Apply Font and Color Consistency Globally */
+body, h1, h2, h3, h4, h5, h6, p, li, div, span, a {
+  color: var(--sl-color-content) ; /* Ensure content text color */
 }
