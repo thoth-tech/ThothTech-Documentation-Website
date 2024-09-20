@@ -8,6 +8,7 @@ export default defineConfig({
     // starlightBlog(),
     starlight({
       title: "Thoth Tech",
+      favicon: "/public/favicon.svg",
       customCss: ["./src/styles/custom.css"],
       social: {
         github: "https://github.com/thoth-tech",
