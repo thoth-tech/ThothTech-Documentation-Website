@@ -5,29 +5,20 @@
   --sl-color-accent-low: #003366; /* Dark Blue from headpiece */
   --sl-color-accent: #33773d; /* Green from the ibis head */
   --sl-color-white: #ffffff;
-  --sl-color-gray-1: #003366; /* Dark Blue */
-  --sl-color-gray-2: #234a73; /* Slightly Lighter Blue */
-  --sl-color-gray-3: #335577; /* Another mid-tone blue */
-  --sl-color-gray-4: #000000; /* Black */
   --sl-color-gray-6: #272727;
   --sl-color-darkest-blue: #697e93; /* Darkest Blue from the headpiece */
   --sl-color-subtle-blue: #3b4d63; /* Subtle blue from the logo */
   --sl-color-gold: #d4af37; /* Gold from the kilt */
 }
 
+
 /* Light mode colors */
 :root[data-theme="light"] {
   --sl-color-accent-low: #234a73; /* Slightly lighter navy */
   --sl-color-accent: #003366; /* Darkest navy */
   --sl-color-accent-high: #33773d; /* Green from ibis head */
-  --sl-color-gray-1: #003366; /* Darkest Blue */
-  --sl-color-gray-2: #234a73; /* Slightly Lighter Blue */
-  --sl-color-gray-4: #000000; /* Black */
-  --sl-color-gray-5: #272727;
-  --sl-color-gray-6: #eeeeee;
-  --sl-color-gray-7: #f6f6f6;
   --sl-color-darkest-blue: #00204F; /* Darkest Navy Blue */
-  --sl-color-subtle-blue: #021d3d; /* Subtle blue from the logo */
+  --sl-color-subtle-blue: #308D57; /* Subtle green from the logo */
   --sl-color-gold: #d4af37; /* Gold from the kilt */
 }
 
@@ -47,7 +38,7 @@ body {
 
 /* Light mode background gradient */
 :root[data-theme="light"] body {
-  background: linear-gradient(90deg, #c4cfdd 0%, #c6cfdc 99%, #7bb0d9 100%);
+  background: linear-gradient(90deg, #c4cfdd 0%, #c6cfdc 99%, #b5d6ef 100%);
   color: var(--sl-color-black); /* Dark text for better contrast */
 }
 
@@ -74,7 +65,7 @@ body {
 /* Hover Effects for Cards */
 /* Light Mode Hover */
 :root[data-theme="light"] .card:hover {
-  background-color: var(--sl-color-gray-7); /* Light gray background */
+  background-color: var(--sl-color-gray-6); /* Light gray background */
   color: var(--sl-color-white); /* White text */
 }
 
@@ -117,15 +108,16 @@ body {
 
 /* Light Mode Colors */
 :root[data-theme='light'] {
-  --sl-color-heading: var(--heading-color-light); /* Blue headings in light mode */
+  --sl-color-heading: v #ffffff; /* Blue headings in light mode */
   --sl-color-content: var(--content-color-light); /* Black content in light mode */
 }
 
 /* Dark Mode Colors */
 :root:not([data-theme='light']) {
-  --sl-color-heading: var(--heading-color-dark); /* Light Blue headings in dark mode */
-  --sl-color-content: var(--content-color-dark); /* White content in dark mode */
+  --sl-color-heading: #ffffff; /* White headings in dark mode */
+  --sl-color-content: #ffffff;/* White content in dark mode */
 }
+
 
 /* Apply Font and Color Consistency Globally */
 body, h1, h2, h3, h4, h5, h6, p, li, div, span, a {
