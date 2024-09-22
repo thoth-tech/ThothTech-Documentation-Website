@@ -1,83 +1,113 @@
+---
+title: splashkit.io GitHub Guide
+description:
+  Here's a step-by-step guide on how to set up a working environment for SplashKit with GitHub, VS
+  Code and NodeJS
+sidebar:
+  label: 2. splashkit.io GitHub Guide
+  order: 2
+---
 
-# Here's a step-by-step guide on how to set up a working environment for SplashKit with GitHub, VS Code and NodeJS.
+import { Steps } from "@astrojs/starlight/components";
 
-Step 1: Install Git
-Before you start, ensure you have Git installed on your system.
--Windows: Download Git from (link) and install it.
-- macOS: Git should already be installed, but you can install it with Homebrew:  
-With command brew install git in terminal.
-- Linux: Use the package manager:  
- With command sudo apt-get install git in terminal.
+Getting started: _{frontmatter.description}_
 
-Step 2: Download and Install VS Code
--Download VS Code:
-Visit the official VS Code download page and select the appropriate installer for your operating system (Windows, macOS, or Linux).
--Install VS Code:
-o	Windows: Run the downloaded .exe file and follow the installation wizard.
-o	macOS: Open the .dmg file and drag the Visual Studio Code icon to the Applications folder.
-o	Linux: Install using the appropriate package manager or by downloading the .deb or .rpm package from the website.
--Launch VS Code: Once installed, launch Visual Studio Code.
+<Steps>
 
-Step 3: Download and Install Node.js
--Download Node.js:
-Go to the official Node.js website(link) and download the LTS version for your operating system.
--Install Node.js:
-o	Windows: Run the downloaded .msi file and follow the installation wizard.
-o	macOS: Open the .pkg file and follow the instructions.
-o	Linux: You can use a package manager or install it from NodeSource.
+1. Install Git
 
--Verify Installation:
-Open a terminal (or command prompt) and check if Node.js is installed correctly by running:
-node -v
-This should return the version number of Node.js.
-Also, verify the installation of npm (Node Package Manager) by running:
-npm -v
-This should return the version of npm installed.
+   Before you start, ensure you have Git installed on your system.
 
-Step 4: Fork a GitHub Repository
--Log in to GitHub: Go to [GitHub] and log in.
--Find the Repository: Navigate to the splashKit repository (link).
--Fork the Repo: Click the "Fork" button at the top right of the repository page. This will create a copy of the repository under your GitHub account.
+   - Windows: Download Git from [here](https://git-scm.com/download/win) and run the installer.
+   - macOS: Git should already be installed, but you can install it with
+     [homebrew](https://brew.sh/) using the following command in your terminal:
 
-Step 5: Clone the Forked Repository
--Copy the URL: Go to your forked repository, click on the green "Code" button, and copy the repository URL (HTTPS).
--Launch VS Code.
--Clone the Repository: In the terminal, run:
-   git clone <repository-url>
-   Replace `<repository-url>` with the URL you copied earlier. This will clone the repository to your local machine.
+     ```shell
+     brew install git
+     ```
 
-Step 6: Install Extensions for VS Code
--Node.js Extension: Install the Node.js extension in VS Code for better integration:
-   - Open VS Code and go to the Extensions sidebar (`Ctrl+Shift+X`).
-   - Search for "Node.js Extension Pack" and install it.
-   - GitHub Extension: To integrate GitHub with VS Code: In the Extensions sidebar, search for "GitHub Pull Requests and Issues" and install it.
+   - Linux: Install using the package manager in the terminal with the following command:
 
-Step 7: Install Dependencies 
--Navigate to the Project Directory: In the terminal, change into the cloned project directory:
- cd <project-directory>
--Install Node Dependencies: 
-  npm install
+     ```shell
+     sudo apt-get install git
+     ```
 
-Step 8: Create a Branch for Your Work
--Check Current Branch:
-   git branch
- -Create a New Branch:
-   git checkout -b branch name
+2. Download and Install VS Code
 
-Step 9: Make Changes and Test
--Edit Files: Open the files in VS Code and make your changes.
+   - Download VS Code: Visit the official VS Code download page and select the appropriate installer
+     for your operating system (Windows, macOS, or Linux).
+   - Install VS Code:
+     - Windows: Run the downloaded .exe file and follow the installation wizard.
+     - macOS: Open the .dmg file and drag the Visual Studio Code icon to the Applications folder.
+     - Linux: Install using the appropriate package manager or by downloading the .deb or .rpm
+       package from the website.
+   - Launch VS Code: Once installed, launch Visual Studio Code.
 
-Step 10: Commit and Push Changes to GitHub
-Add Changes:
-   git add
-Commit Changes:
-   git commit -m "Added my new feature"
- Push Changes:
-  git push origin branch name
+3. Download and Install Node.js
 
-Step 11: Create a Pull Request (PR)
- -Navigate to your forked repository on GitHub.
- -Create a Pull Request: There should be an option to "Compare & pull request." Click it, review your changes, and submit the pull request.
+   - Download Node.js: Go to the official Node.js website(link) and download the LTS version for
+     your operating system.
+   - Install Node.js:
 
+     - Windows: Run the downloaded .msi file and follow the installation wizard.
+     - macOS: Open the .pkg file and follow the instructions.
+     - Linux: You can use a package manager or install it from NodeSource.
 
+   - Verify Installation: Open a terminal (or command prompt) and check if Node.js is installed
+     correctly by running: `node -v` This should return the version number of Node.js. Also, verify
+     the installation of npm (Node Package Manager) by running: `npm -v` This should return the
+     version of npm installed.
 
+4. Fork a GitHub Repository
+
+   - Log in to GitHub: Go to [GitHub] and log in.
+   - Find the Repository: Navigate to the splashKit repository (link).
+   - Fork the Repo: Click the "Fork" button at the top right of the repository page. This will
+     create a copy of the repository under your GitHub account.
+
+5. Clone the Forked Repository
+
+   - Copy the URL: Go to your forked repository, click on the green "Code" button, and copy the
+     repository URL (HTTPS).
+   - Launch VS Code.
+   - Clone the Repository: In the terminal, run: `git clone <repository-url>`. Replace
+     `<repository-url>` with the URL you copied earlier. This will clone the repository to your
+     local machine.
+
+6. Install Extensions for VS Code
+
+   - Node.js Extension: Install the Node.js extension in VS Code for better integration:
+
+     - Open VS Code and go to the Extensions sidebar (`Ctrl+Shift+X`).
+     - Search for "Node.js Extension Pack" and install it.
+     - GitHub Extension: To integrate GitHub with VS Code: In the Extensions sidebar, search for
+       "GitHub Pull Requests and Issues" and install it.
+
+7. Install Dependencies
+
+   - Navigate to the Project Directory: In the terminal, change into the cloned project directory:
+     `cd <project-directory>`
+   - Install Node Dependencies: `npm install`
+
+8. Create a Branch for Your Work
+
+   - Check Current Branch: `git branch`
+   - Create a New Branch: `git checkout -b branch name`
+
+9. Make Changes and Test
+
+   - Edit Files: Open the files in VS Code and make your changes.
+
+10. Commit and Push Changes to GitHub
+
+    - Add Changes: `git add`
+    - Commit Changes: `git commit -m "Added my new feature"`
+    - Push Changes: `git push origin branch name`
+
+11. Create a Pull Request (PR)
+
+    - Navigate to your forked repository on GitHub.
+    - Create a Pull Request: There should be an option to "Compare & pull request." Click it, review
+      your changes, and submit the pull request.
+
+</Steps>
