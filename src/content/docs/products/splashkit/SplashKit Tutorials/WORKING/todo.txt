@@ -1,0 +1,17 @@
+Documentation Task List - 
+- tutorial Proposal documentation
+- How to do PRs and branches in VS code.
+- How to make branches in CLI, how to rebase
+- Planner board ettiquite
+- Usage example documentation
+- Redo the peer review page, make a copy and paste as ticking, also explain the process.
+- exemplars - here is an excellent example of a peer review, or a pull request description
+
+
+Splashkit io - 
+- Update contributing documentation
+- do contributing doc for usage examples
+
+
+
+error checking in network splashkit usage examples i made could be a T3 idea.
