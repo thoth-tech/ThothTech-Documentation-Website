@@ -1,7 +1,7 @@
 ---
 title: Tutorial Reviews
 sidebar:
-  label: 3. Tutorial Reviews
+  label: Tutorial Reviews
   order: 3
 ---
 
