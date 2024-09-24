@@ -14,7 +14,7 @@ export default defineConfig({
       },
       favicon: "./favicon-small.svg",
       logo: {
-        src: "./public/favicon.png",
+        src: "./public/favicon.svg",
       },
       components: {
         // MarkdownContent: "starlight-blog/overrides/MarkdownContent.astro",
