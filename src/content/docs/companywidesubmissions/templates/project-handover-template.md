@@ -1,6 +1,6 @@
 ---
-title: Thoth Tech – Company Report 2024 TRIMESTER 2
-description: 11.2P Task, T2 2024
+title: Thoth Tech – Company Report 20xx TRIMESTER x
+description: 11.2P Task, Tx 20xx
 ---
 
 # Table of Contents
