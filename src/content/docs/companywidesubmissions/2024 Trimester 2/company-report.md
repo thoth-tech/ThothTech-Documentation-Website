@@ -179,263 +179,264 @@ All past company reports, showcase videos, and relevant assets can be found here
 
 ## Project Overview
 
-Give an overview or ‘executive summary’ of the project, including any necessary high-level
+**_Give an overview or ‘executive summary’ of the project, including any necessary high-level
 information for someone reading about your work for the first time. The following questions should
-help guide your thinking.
+help guide your thinking._**
 
-What is the project about?
+**_What is the project about?_**
 
-What problem is the project solve?
+**_What problem is the project solve?_**
 
-What are the aims of the project?
+**_What are the aims of the project?_**
 
-What are the deliverables?
+**_What are the deliverables?_**
 
 ## User Manual
 
-Give instructions for how someone should use your product or navigate around your development
+**_Give instructions for how someone should use your product or navigate around your development
 environment. Include images, diagrams, or anything that would help a first-time user to use your
-product correctly.
+product correctly._**
 
-Better yet, you could create short instructional videos using software like
+**_Better yet, you could create short instructional videos using software like
 [Loom](https://www.loom.com/) and include the video links in this section. You may find this option
 is considerably easier than trying to communicate your instructions through text! (Note: this is
-just a suggestion, it’s not mandatory.) Here are some ideas of what to cover:
+just a suggestion, it’s not mandatory.) Here are some ideas of what to cover:_**
 
-If your product currently requires a complex set of steps to activate, include that.
+**_If your product currently requires a complex set of steps to activate, include that._**
 
-If your product has a hardware component, explain how to activate and sync the hardware with the
-software.
+**_If your product has a hardware component, explain how to activate and sync the hardware with the
+software._**
 
-If your team has a user experience journey that they’ve mapped out for when a user navigates your
-product, run through a demo of that.
+**_If your team has a user experience journey that they’ve mapped out for when a user navigates your
+product, run through a demo of that._**
 
 ## Completed Deliverables
 
-Provide a list of product features and/or deliverables, including a brief description, that have
+**_Provide a list of product features and/or deliverables, including a brief description, that have
 been completed this trimester. Please relate these deliverables to their corresponding Trello cards
-if this is possible.
+if this is possible._**
 
-Only include features and/or deliverables that are fully complete – incomplete work is to be listed
-in section 4. Roadmap.
+**_Only include features and/or deliverables that are fully complete – incomplete work is to be
+listed in section 4. Roadmap._**
 
-Make sure to explicitly highlight which features and/or deliverables where completed this Trimester
-and which team member(s) were primarily responsible for their completion.
+**_Make sure to explicitly highlight which features and/or deliverables where completed this
+Trimester and which team member(s) were primarily responsible for their completion._**
 
-Also, please indicate where each of the completed deliverables can be found (E.g., MS Teams, GitHub
-repository) and make sure to include a URL link to the resource.
+**_Also, please indicate where each of the completed deliverables can be found (E.g., MS Teams,
+GitHub repository) and make sure to include a URL link to the resource._**
 
 ## Roadmap
 
-Provide a list of features and/or deliverables that are planned to be completed in the project’s
-future (E.g., next trimester or two trimesters in the future).
+**_Provide a list of features and/or deliverables that are planned to be completed in the project’s
+future (E.g., next trimester or two trimesters in the future)._**
 
-Please also include features and/or deliverables that are in progress but not yet complete. The
-state of each incomplete work item should be briefly described.
+**_Please also include features and/or deliverables that are in progress but not yet complete. The
+state of each incomplete work item should be briefly described._**
 
-This section should pair up perfectly with your Roadmap on Trello. Make sure both this section and
-your Trello Roadmap are updated upon handing over the project.
+**_This section should pair up perfectly with your Roadmap on Trello. Make sure both this section
+and your Trello Roadmap are updated upon handing over the project._**
 
 ## Open Issues
 
-List all of the issues and challenges that the team is still facing, and any progress that has been
-made so far to address them.
+**_List all of the issues and challenges that the team is still facing, and any progress that has
+been made so far to address them._**
 
-The purpose of this section is to flag things that may interfere with the future teams’s ability to
-work on the project, and to give advice as to how these issues could be fixed in future.
+**_The purpose of this section is to flag things that may interfere with the future teams’s ability
+to work on the project, and to give advice as to how these issues could be fixed in future._**
 
-Here are some examples of Open Issues:
+**_Here are some examples of Open Issues:_**
 
-- Software compatibility issues that arise when members of the team use different version of
-  software.
+- **_Software compatibility issues that arise when members of the team use different version of
+  software._**
 
-- An unclear process for reviewing completed tasks on Trello, leading to a backlog of work that is
-  sitting somewhere between unfinished and finished.
+- **_An unclear process for reviewing completed tasks on Trello, leading to a backlog of work that
+  is sitting somewhere between unfinished and finished._**
 
-- An essential team member had to leave the team with no notice, and there is currently a skill void
-  in their place.
+- **_An essential team member had to leave the team with no notice, and there is currently a skill
+  void in their place._**
 
 ## Lessons Learned
 
-List key lessons learned from the project this Trimester and what you recommend future teams should
-do differently. You must also explain why you believe this to be the case.
+**_List key lessons learned from the project this Trimester and what you recommend future teams
+should do differently. You must also explain why you believe this to be the case._**
 
-In particular, try to think about processes or technology that you would recommend be changed in the
-future; things that an uniformed team may mistake for a good idea at first, but later learn to be
-ineffective.
+**_In particular, try to think about processes or technology that you would recommend be changed in
+the future; things that an uniformed team may mistake for a good idea at first, but later learn to
+be ineffective._**
 
-For example, maybe your team had challenges communicating their progress during panel presentations,
-but towards the end of the Trimester, you developed an effective method for conveying progress
-accurately. This would be a great thing to talk about.
+**_For example, maybe your team had challenges communicating their progress during panel
+presentations, but towards the end of the Trimester, you developed an effective method for conveying
+progress accurately. This would be a great thing to talk about._**
 
 ## Product Development Life Cycle
 
-This section should explain how your team undertakes work. It is an attempt to codify your processes
-so that they can be understood and followed by new members.
+**_This section should explain how your team undertakes work. It is an attempt to codify your
+processes so that they can be understood and followed by new members._**
 
-As a team, you may not have clearly defined your Product Development Life Cycle, and that’s okay!
+**_As a team, you may not have clearly defined your Product Development Life Cycle, and that’s okay!
 This is an excellent opportunity to explain the work methods, processes and habits that your team
-has been developing intuitively over the course of the Trimester.
+has been developing intuitively over the course of the Trimester._**
 
 ### New Tasks
 
-How are new tasks created?
+**_How are new tasks created?_**
 
-How does your team form new ideas about work that needs to be done and turn those ideas into
-distinct, actionable tasks?
+**_How does your team form new ideas about work that needs to be done and turn those ideas into
+distinct, actionable tasks?_**
 
-For example, maybe your team meets at the start of each week, reviews your progress in your current
-sprint, makes a big long list of everything to be done, and then converts that list into a series of
-cards on Trello. This process would be something you talk about in this section.
+**_For example, maybe your team meets at the start of each week, reviews your progress in your
+current sprint, makes a big long list of everything to be done, and then converts that list into a
+series of cards on Trello. This process would be something you talk about in this section._**
 
 ### Definition of Done
 
-How does the team know when a task is done?
+**_How does the team know when a task is done?_**
 
-What are criteria for a successfully completed task?
+**_What are criteria for a successfully completed task?_**
 
-This may seem obvious, but it in a software development project having a definition of done can
+**_This may seem obvious, but it in a software development project having a definition of done can
 ensure a certain standard of work that holds all team members accountable. For example, messy,
 clunky code that “just works” is very different to clean, well-commented code that works AND is easy
-to understand. Which would you prefer to be your team’s definition of done?
+to understand. Which would you prefer to be your team’s definition of done?_**
 
 ### Task Review
 
-Who reviews a task once it’s been marked as done?
+**_Who reviews a task once it’s been marked as done?_**
 
-How does the team ensure that all work is looked over before it’s contributed to the main repository
-or working prototype?
+**_How does the team ensure that all work is looked over before it’s contributed to the main
+repository or working prototype?_**
 
-If you don’t currently have a system for reviewing tasks, make sure to flag this for next
-trimester’s team to work on as soon as they begin.
+**_If you don’t currently have a system for reviewing tasks, make sure to flag this for next
+trimester’s team to work on as soon as they begin._**
 
 ### Testing
 
-How do you test your product to see if it does what it was originally planned to do?
+**_How do you test your product to see if it does what it was originally planned to do?_**
 
-If your product isn’t heavily comprised of software, how can you build in testing to your team’s
-product development life cycle to ensure that “stuff works as it should”?
+**_If your product isn’t heavily comprised of software, how can you build in testing to your team’s
+product development life cycle to ensure that “stuff works as it should”?_**
 
 ### Branching Strategy
 
-How does your team currently use GitHub repository?
+**_How does your team currently use GitHub repository?_**
 
-What rules for commits and pull-requests have been put in place so far?
+**_What rules for commits and pull-requests have been put in place so far?_**
 
-How should new members use GitHub repository in a way that doesn’t result in all commits being
-dumped in a messy Master branch?
+**_How should new members use GitHub repository in a way that doesn’t result in all commits being
+dumped in a messy Master branch?_**
 
-Again, if your team hasn’t formally discussed a branching strategy, this a great opportunity to
-describe what your current system is and how it could be improved going forward.
+**_Again, if your team hasn’t formally discussed a branching strategy, this a great opportunity to
+describe what your current system is and how it could be improved going forward._**
 
-For example, if you currently have all members of the team commit directly to the Master branch, can
-you recommend any tutorials for the future team to review that might lead to a cleaner, more
-organised and more efficient repository?
+**_For example, if you currently have all members of the team commit directly to the Master branch,
+can you recommend any tutorials for the future team to review that might lead to a cleaner, more
+organised and more efficient repository?_**
 
 ## Product Architecture
 
 ### UML Diagram
 
-Provide a high-level map of the project showing all of its components and how they relate to each
-other.
+**_Provide a high-level map of the project showing all of its components and how they relate to each
+other._**
 
-An example of this is a UML diagram. Don’t feel that you need to follow any particular UML paradigm,
-so long as your diagram is informative and easy to read.
+**_An example of this is a UML diagram. Don’t feel that you need to follow any particular UML
+paradigm, so long as your diagram is informative and easy to read._**
 
-Resources like [Lucidchart](https://www.lucidchart.com/) and [Draw.io](https://app.diagrams.net/)
-are incredibly useful for this.
+**_Resources like [Lucidchart](https://www.lucidchart.com/) and [Draw.io](https://app.diagrams.net/)
+are incredibly useful for this._**
 
 ### Tech Stack
 
-List all of the software and hardware utilised in this project. For each tool, give a short
-description and explain why it was chosen.
+**_List all of the software and hardware utilised in this project. For each tool, give a short
+description and explain why it was chosen._**
 
 ## Source Code
 
-All source code should be found on your team’s GitHub repository, unless your project has unique
+**_All source code should be found on your team’s GitHub repository, unless your project has unique
 constraints that require you to store your code elsewhere. This includes any resources (e.g.,
-wireframes, designs) that need to be transferred over to the new team as well.
+wireframes, designs) that need to be transferred over to the new team as well._**
 
-Please provide all of the necessary instructions to accessing your source code. This includes URLs
-of online hosted repositories, links to any software dependencies, database components, or external
-libraries.
+**_Please provide all of the necessary instructions to accessing your source code. This includes
+URLs of online hosted repositories, links to any software dependencies, database components, or
+external libraries._**
 
-If your code is hosted on a server external to Deakin, make sure to also transfer digital copies of
-your code over to your client and the next team as a backup.
+**_If your code is hosted on a server external to Deakin, make sure to also transfer digital copies
+of your code over to your client and the next team as a backup._**
 
 ## Login Credentials
 
-Please provide all credentials (usernames and passwords) for any of the resources, websites, or
+**_Please provide all credentials (usernames and passwords) for any of the resources, websites, or
 platforms being utilised for this project. Please make sure that none of these credentials share
-passwords or usernames with any of your team’s private credentials.
+passwords or usernames with any of your team’s private credentials._**
 
 ## Other Relevant Information
 
-This section is an invitation to add any additional information that you think will help to onboard
-new members. If you choose not to add any extra sections to this document, this section should be
-deleted.
+**_This section is an invitation to add any additional information that you think will help to
+onboard new members. If you choose not to add any extra sections to this document, this section
+should be deleted._**
 
-Please edit this entire document as you see fit. If you think adding 5 extra sections that aren’t
+**_Please edit this entire document as you see fit. If you think adding 5 extra sections that aren’t
 listed here will help to communicate the nuances of your project to future members, go ahead! We
-want you to take full ownership of your handover and this document.
+want you to take full ownership of your handover and this document._**
 
 ## Appendices
 
-Include all relevant artefacts delivered during the course of the project. Anything that will paint
-a clearer picture of your team’s progress this trimester, the things that informed decisions, and
-the evolution of your product.
+**_Include all relevant artefacts delivered during the course of the project. Anything that will
+paint a clearer picture of your team’s progress this trimester, the things that informed decisions,
+and the evolution of your product._**
 
-Please also include a link to your team’s showcase video.
+**_Please also include a link to your team’s showcase video._**
 
 # Project 3: SplashKit
 
 ## Project Overview
 
-Give an overview or ‘executive summary’ of the project, including any necessary high-level
-information for someone reading about your work for the first time. The following questions should
-help guide your thinking.
+SplashKit is a user-friendly programming framework designed for creating 2D games, primarily to help
+students learn introductory programming through game development. The framework is mainly written in
+C++, but it supports multiple languages, including C#, Python, Pascal, and JavaScript.
 
-What is the project about?
+## Projects
 
-What problem is the project solve?
-
-What are the aims of the project?
-
-What are the deliverables?
+- Arcade Machines:
+- SplashKit Expansion:
+- SplashKit Website:
+- SplashKit Tutorials:
+- Game Development:
+- SplashKit Online:
 
 ## User Manual
 
-Give instructions for how someone should use your product or navigate around your development
+**_Give instructions for how someone should use your product or navigate around your development
 environment. Include images, diagrams, or anything that would help a first-time user to use your
-product correctly.
+product correctly._**
 
-Better yet, you could create short instructional videos using software like
+**_Better yet, you could create short instructional videos using software like
 [Loom](https://www.loom.com/) and include the video links in this section. You may find this option
 is considerably easier than trying to communicate your instructions through text! (Note: this is
-just a suggestion, it’s not mandatory.) Here are some ideas of what to cover:
+just a suggestion, it’s not mandatory.) Here are some ideas of what to cover:_**
 
-If your product currently requires a complex set of steps to activate, include that.
+**_If your product currently requires a complex set of steps to activate, include that._**
 
-If your product has a hardware component, explain how to activate and sync the hardware with the
-software.
+**_If your product has a hardware component, explain how to activate and sync the hardware with the
+software._**
 
-If your team has a user experience journey that they’ve mapped out for when a user navigates your
-product, run through a demo of that.
+**_If your team has a user experience journey that they’ve mapped out for when a user navigates your
+product, run through a demo of that._**
 
 ## Completed Deliverables
 
-Provide a list of product features and/or deliverables, including a brief description, that have
+**_Provide a list of product features and/or deliverables, including a brief description, that have
 been completed this trimester. Please relate these deliverables to their corresponding Trello cards
-if this is possible.
+if this is possible._**
 
-Only include features and/or deliverables that are fully complete – incomplete work is to be listed
-in section 4. Roadmap.
+**_Only include features and/or deliverables that are fully complete – incomplete work is to be
+listed in section 4. Roadmap._**
 
-Make sure to explicitly highlight which features and/or deliverables where completed this Trimester
-and which team member(s) were primarily responsible for their completion.
+**_Make sure to explicitly highlight which features and/or deliverables where completed this
+Trimester and which team member(s) were primarily responsible for their completion._**
 
-Also, please indicate where each of the completed deliverables can be found (E.g., MS Teams, GitHub
-repository) and make sure to include a URL link to the resource.
+**_Also, please indicate where each of the completed deliverables can be found (E.g., MS Teams,
+GitHub repository) and make sure to include a URL link to the resource._**
 
 | Full Name | Description | Evidence |
 | :-------- | :---------- | -------: |
@@ -443,46 +444,46 @@ repository) and make sure to include a URL link to the resource.
 
 ## Roadmap
 
-Provide a list of features and/or deliverables that are planned to be completed in the project’s
-future (E.g., next trimester or two trimesters in the future).
+**_Provide a list of features and/or deliverables that are planned to be completed in the project’s
+future (E.g., next trimester or two trimesters in the future)._**
 
-Please also include features and/or deliverables that are in progress but not yet complete. The
-state of each incomplete work item should be briefly described.
+**_Please also include features and/or deliverables that are in progress but not yet complete. The
+state of each incomplete work item should be briefly described._**
 
-This section should pair up perfectly with your Roadmap on Trello. Make sure both this section and
-your Trello Roadmap are updated upon handing over the project.
+**_This section should pair up perfectly with your Roadmap on Trello. Make sure both this section
+and your Trello Roadmap are updated upon handing over the project._**
 
 ## Open Issues
 
-List all of the issues and challenges that the team is still facing, and any progress that has been
-made so far to address them.
+**_List all of the issues and challenges that the team is still facing, and any progress that has
+been made so far to address them._**
 
-The purpose of this section is to flag things that may interfere with the future teams’s ability to
-work on the project, and to give advice as to how these issues could be fixed in future.
+**_The purpose of this section is to flag things that may interfere with the future teams’s ability
+to work on the project, and to give advice as to how these issues could be fixed in future._**
 
-Here are some examples of Open Issues:
+**_Here are some examples of Open Issues:_**
 
-- Software compatibility issues that arise when members of the team use different version of
-  software.
+- **_Software compatibility issues that arise when members of the team use different version of
+  software._**
 
-- An unclear process for reviewing completed tasks on Trello, leading to a backlog of work that is
-  sitting somewhere between unfinished and finished.
+- **_An unclear process for reviewing completed tasks on Trello, leading to a backlog of work that
+  is sitting somewhere between unfinished and finished._**
 
-- An essential team member had to leave the team with no notice, and there is currently a skill void
-  in their place.
+- **_An essential team member had to leave the team with no notice, and there is currently a skill
+  void in their place._**
 
 ## Lessons Learned
 
-List key lessons learned from the project this Trimester and what you recommend future teams should
-do differently. You must also explain why you believe this to be the case.
+**_List key lessons learned from the project this Trimester and what you recommend future teams
+should do differently. You must also explain why you believe this to be the case._**
 
-In particular, try to think about processes or technology that you would recommend be changed in the
-future; things that an uniformed team may mistake for a good idea at first, but later learn to be
-ineffective.
+**_In particular, try to think about processes or technology that you would recommend be changed in
+the future; things that an uniformed team may mistake for a good idea at first, but later learn to
+be ineffective._**
 
-For example, maybe your team had challenges communicating their progress during panel presentations,
-but towards the end of the Trimester, you developed an effective method for conveying progress
-accurately. This would be a great thing to talk about.
+**_For example, maybe your team had challenges communicating their progress during panel
+presentations, but towards the end of the Trimester, you developed an effective method for conveying
+progress accurately. This would be a great thing to talk about._**
 
 ## Product Development Life Cycle
 
@@ -586,8 +587,8 @@ SDK, including graphics, input handling, and audio management.
 
 ## Appendices
 
-Include all relevant artefacts delivered during the course of the project. Anything that will paint
-a clearer picture of your team’s progress this trimester, the things that informed decisions, and
-the evolution of your product.
+**_Include all relevant artefacts delivered during the course of the project. Anything that will
+paint a clearer picture of your team’s progress this trimester, the things that informed decisions,
+and the evolution of your product._**
 
-Please also include a link to your team’s showcase video.
+**_Please also include a link to your team’s showcase video._**
