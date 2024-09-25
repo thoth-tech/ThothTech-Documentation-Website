@@ -118,7 +118,7 @@ outline the company structure, projects, and accomplishments for this trimester.
 # Showcase Video
 
 This video summarises the accomplishments made at Thoth Tech for Trimester 2, 2024:
-
+**_ TODO _**
 [Thoth Tech Company Showcase Video](//todo)
 
 # Leadership Team
@@ -168,12 +168,12 @@ trimester:
    must be made on Teams
 
 All past company reports, showcase videos, and relevant assets can be found here:
-[Company Documents & Videos](//todo) &
+[Company Documents & Videos]() (//to do) &
 [Thoth Tech Documentation Website](https://thoth-tech.netlify.app)
 
 # Company Structure
 
-![Org chart](/company-structure/2024-t2-thoth-tech-structure.png)
+![Org chart](https://raw.githubusercontent.com/thoth-tech/ThothTech-Documentation-Website/refs/heads/main/public/company-structure/2024-t2-thoth-tech-structure.png)
 
 # Project 1: OnTrack
 
