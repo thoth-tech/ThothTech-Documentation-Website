@@ -12,6 +12,10 @@ export default defineConfig({
       social: {
         github: "https://github.com/thoth-tech",
       },
+      favicon: "./favicon-small.svg",
+      logo: {
+        src: "./public/favicon.svg",
+      },
       components: {
         // MarkdownContent: "starlight-blog/overrides/MarkdownContent.astro",
         // Sidebar: "starlight-blog/overrides/Sidebar.astro",
