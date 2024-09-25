@@ -1,6 +1,8 @@
 ---
 title: Thoth Tech – Company Report 2024 TRIMESTER 2
 description: 11.2P Task, T2 2024
+tableOfContents:
+    minHeadingLevel: 1
 ---
 
 # Table of Contents
@@ -109,21 +111,35 @@ description: 11.2P Task, T2 2024
 
 ## Company Board 
 
-**Name**
-
-*Title*
-
-Email
-
-List multiple if applicable.
+- Andrew Cain - Director, Product Owner (OnTrack & SplashKit)
 
 ## Product Mentors
 
+- Satika Jayawardena (OnTrack)
+- Nebula Alam (OnTrack)
+- Tien Pham (SplashKit)
+- Olivia McKeon (SplashKit)
+- Sea Boettger (SplashKit)
+
 ## Student Leads
+
+- Jake Mansfield – Student Lead (OnTrack)
+- Jack Carroll – Student Lead (OnTrack)
+- Atharv Bhandare – Junior Leader (OnTrack)
+- Bruce Wang – Senior Leader (OnTrack)
+- Ivan Justin – Junior Leader (OnTrack)
+- Eliya Geerlings – Junior Leader (OnTrack)
+- Jonathan Tynan – Student Lead (SplashKit)
+- Oscar Harris – Student Lead (SplashKit)
+- Hayley Hughes – Student Lead (SplashKit)
+- Shaun Ratcliff – Junior Leader (SplashKit)
+- Brianna Laird – Junior Leader (SplashKit)
 
 ## Leadership Responsibilities
 
 # Company Structure
+
+![Org chart](/company-structure/2024-t2-thoth-tech-structure.png)
 
 # Project 1: OnTrack
 
