@@ -5,95 +5,109 @@ description: 11.2P Task, T2 2024
 
 # Table of Contents
 
-[1. Project Information](#project-information)
+[1. Executive Summary](#executive-summary)
 
->[1.1. Company Acting Director](#company-acting-director)
+[2. Showcase Video](#showcase-video)
 
->[1.2. Project Team](#project-team)
+[3. Leadership Team](#leadership-team)
 
-[2. Project 1: OnTrack](#project-1-ontrack)
+>[3.1 Company Board](#company-board)
 
->[2.1 Project Overview](#project-overview)
+>[3.2 Product Mentors](#product-mentors)
 
->[2.2 User Manual](#user-manual)
+>[3.3 Student Leaders](#student-leads)
 
->[2.3 Completed Deliverables](#completed-deliverables)
+>[3.4 Leadership Responsibilties](#leadership-responsibilities)
 
->[2.4 Roadmap](#roadmap)
+[4. Company Structure](#company-structure)
 
->[2.5 Open Issues](#open-issues)
+[5. Project 1: OnTrack](#project-1-ontrack)
 
->[2.6 Lessons Learned](#lessons-learned)
+>[5.1 Project Overview](#project-overview)
 
->[2.7 Product Development Life Cycle](#product-development-life-cycle)
+>[5.2 User Manual](#user-manual)
 
->>[2.7.1 New Tasks](#new-tasks)
+>[5.3 Completed Deliverables](#completed-deliverables)
 
->>[2.7.2 Definition of Done](#definition-of-done)
+>[5.4 Roadmap](#roadmap)
 
->>[2.7.3 Task Review](#task-review)
+>[5.5 Open Issues](#open-issues)
 
->>[2.7.4 Testing](#testing)
+>[5.6 Lessons Learned](#lessons-learned)
 
->>[2.7.5 Branching Strategy](#branching-strategy)
+>[5.7 Product Development Life Cycle](#product-development-life-cycle)
 
->[2.8 Product Architecture](#product-architecture)
+>>[5.7.1 New Tasks](#new-tasks)
 
->>[2.8.1 UML Diagram](#uml-diagram)
+>>[5.7.2 Definition of Done](#definition-of-done)
 
->>[2.8.2 Tech Stack](#tech-stack)
+>>[5.7.3 Task Review](#task-review)
 
->[2.9 Source Code](#source-code)
+>>[5.7.4 Testing](#testing)
 
->[2.10 Login Credentials](#login-credentials)
+>>[5.7.5 Branching Strategy](#branching-strategy)
 
->[2.11 Other Relevant Information](#other-relevant-information)
+>[5.8 Product Architecture](#product-architecture)
 
->[2.12 Appendices](#appendices)
+>>[5.8.1 UML Diagram](#uml-diagram)
 
-[3. Project 2: SplashKit](#project-2-splashkit)
+>>[5.8.2 Tech Stack](#tech-stack)
 
->[3.1 Project Overview](#project-overview-1)
+>[5.9 Source Code](#source-code)
 
->[3.2 User Manual](#user-manual-1)
+>[5.10 Login Credentials](#login-credentials)
 
->[3.3 Completed Deliverables](#completed-deliverables-1)
+>[5.11 Other Relevant Information](#other-relevant-information)
 
->[3.4 Roadmap](#roadmap-1)
+>[5.12 Appendices](#appendices)
 
->[3.5 Open Issues](#open-issues-1)
+[6. Project 2: SplashKit](#project-2-splashkit)
 
->[3.6 Lessons Learned](#lessons-learned-1)
+>[6.1 Project Overview](#project-overview-1)
 
->[3.7 Product Development Life Cycle](#product-development-life-cycle-1)
+>[6.2 User Manual](#user-manual-1)
 
->>[3.7.1 New Tasks](#new-tasks-1)
+>[6.3 Completed Deliverables](#completed-deliverables-1)
 
->>[3.7.2 Definition of Done](#definition-of-done-1)
+>[6.4 Roadmap](#roadmap-1)
 
->>[3.7.3 Task Review](#task-review-1)
+>[6.5 Open Issues](#open-issues-1)
 
->>[3.7.4 Testing](#testing-1)
+>[6.6 Lessons Learned](#lessons-learned-1)
 
->>[3.7.5 Branching Strategy](#branching-strategy-1)
+>[6.7 Product Development Life Cycle](#product-development-life-cycle-1)
 
->[3.8 Product Architecture](#product-architecture-1)
+>>[6.7.1 New Tasks](#new-tasks-1)
 
->>[3.8.1 UML Diagram](#uml-diagram-1)
+>>[6.7.2 Definition of Done](#definition-of-done-1)
 
->>[3.8.2 Tech Stack](#tech-stack-1)
+>>[6.7.3 Task Review](#task-review-1)
 
->[3.9 Source Code](#source-code-1)
+>>[6.7.4 Testing](#testing-1)
 
->[3.10 Login Credentials](#login-credentials-1)
+>>[6.7.5 Branching Strategy](#branching-strategy-1)
 
->[3.11 Other Relevant Information](#other-relevant-information-1)
+>[6.8 Product Architecture](#product-architecture-1)
 
->[3.12 Appendices](#appendices-1)
+>>[6.8.1 UML Diagram](#uml-diagram-1)
 
-# Project Information
+>>[6.8.2 Tech Stack](#tech-stack-1)
 
-## Company Acting Director
+>[6.9 Source Code](#source-code-1)
+
+>[6.10 Login Credentials](#login-credentials-1)
+
+>[6.11 Other Relevant Information](#other-relevant-information-1)
+
+>[6.12 Appendices](#appendices-1)
+
+# Executive Summary 
+
+# Showcase Video
+
+# Leadership Team
+
+## Company Board 
 
 **Name**
 
@@ -103,11 +117,13 @@ Email
 
 List multiple if applicable.
 
-## Project Team
+## Product Mentors
 
-**Project Name**
+## Student Leads
 
-Company
+## Leadership Responsibilities
+
+# Company Structure
 
 # Project 1: OnTrack
 
