@@ -1,14 +1,14 @@
 ---
-title: splashkit.io GitHub Guide
-description:
-Here's a step-by-step guide on how to set up a working environment for SplashKit with GitHub, VS
-Code and NodeJS
+title: "splashkit.io GitHub Guide"
 sidebar:
-label: 2. splashkit.io GitHub Guide
-order: 2
+  label: "2. splashkit.io GitHub Guide"
+  order: 2
 ---
 
 ## Set up a Working Environment for SplashKit
+
+Here's a step-by-step guide on how to set up a working environment for SplashKit with GitHub, VS
+Code and NodeJS.
 
 ### 1. Install GIT
 
@@ -84,8 +84,10 @@ After installation, verify the installation with:
 
 - Log in to GitHub: Go to [GitHub](https://github.com/) and log in with your details.
 
-- Find the Repository: Navigate to the
-  [SplashKit repository](https://github.com/thoth-tech/splashkit.io-starlight).
+- Find the Repository:
+
+  Navigate to the
+  [splashkit.io-starlight repository](https://github.com/thoth-tech/splashkit.io-starlight).
 
 - Fork the Repo: Click the "Fork" button at the top right of the repository page and create a new
   fork of the repository.
@@ -95,7 +97,7 @@ This will create a copy of the repository under your GitHub account.
 ### 5. Clone the Forked Repository
 
 - Copy the URL: Go to your forked repository, click on the green "Code" button, and copy the
-  repository URL (https://github.com/thoth-tech/splashkit.io-starlight.git).
+  repository URL (<https://github.com/thoth-tech/splashkit.io-starlight.git>).
 
 - Launch VS Code.
 
@@ -114,10 +116,10 @@ clone the repository to your local machine.
 - Node.js Extension: Install the Node.js extension in VS Code for better integration:
 
   - Open VS Code and go to the Extensions sidebar.
-
   - Search for "Node.js Extension Pack" and install it.
 
 - GitHub Extension: This allows you to interact with GitHub directly from VS Code.:
+
   - In the Extensions sidebar, search for "GitHub Pull Requests and Issues" and install it.
 
 ### 7. Install Dependencies
@@ -132,6 +134,7 @@ clone the repository to your local machine.
   Replace `<project-directory>` with your actual folder name.
 
 - Install Node Dependencies:
+
   ```shell
   npm install
   ```
@@ -180,30 +183,28 @@ After you've made changes, save the files and commit them to your local reposito
 - Stage your changes for commit:
 
   ```shell
-   git add .
+  git add .
   ```
 
-- Commit Changes:
-
-  Once your changes are staged, commit them with a meaningful message:
+- Commit Changes: Once your changes are staged, commit them with a meaningful message:
 
   ```shell
-   git commit -m "Added my new feature"
+  git commit -m "Added my new feature"
   ```
 
-- Pull Any Remote Changes:
-
-  Before pushing, ensure your local repository is up-to-date with the latest changes from the main
-  branch:
+- Pull Any Remote Changes: Before pushing, ensure your local repository is up-to-date with the
+  latest changes from the main branch:
 
   ```shell
-   git pull origin main
+  git pull origin main
   ```
 
 - Push the changes to your forked repository:
+
   ```shell
-    git push origin `<branch-name>`
+    git push origin <branch-name>
   ```
+
   Replace `<branch-name>` with the name of your branch.
 
 ### 11. Create a Pull Request (PR)
@@ -215,5 +216,6 @@ repository.
 - Create a Pull Request: There should be an option to "Compare & pull request." Click it, review
   your changes, and submit the pull request.
 
-Please refer to Pull Request Guide for more information on creating a pull request :
-https://main--strong-fairy-c1bde1.netlify.app/products/splashkit/splashkit-tutorials/onboarding/03-pull-request/
+Please refer to the
+[Pull Request Guide](https://thoth-tech.netlify.app/products/splashkit/splashkit-tutorials/onboarding/03-pull-request/)
+for more information on creating a pull request.
