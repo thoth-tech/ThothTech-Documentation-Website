@@ -117,8 +117,7 @@ outline the company structure, projects, and accomplishments for this trimester.
 
 # Showcase Video
 
-This video summarises the accomplishments made at Thoth Tech for Trimester 2, 2024:
-**_ TODO _**
+This video summarises the accomplishments made at Thoth Tech for Trimester 2, 2024: **_ TODO _**
 [Thoth Tech Company Showcase Video](//todo)
 
 # Leadership Team
@@ -154,18 +153,23 @@ This video summarises the accomplishments made at Thoth Tech for Trimester 2, 20
 The following are the key responsibilities of the company student leadership team throughout the
 trimester:
 
+
 1. Company presentation in the first junior lecture – Introduce the company, its projects, and
-   required skill sets for potential junior students a. Student leads must prepare and organise a
-   PowerPoint presentation representing each of their projects during Week 0
+   required skill sets for potential junior students 
+   - Student leads must prepare and organise a PowerPoint presentation representing each of their 
+     projects during Week 0
+
 2. Host first company-wide meeting and onboard students – Provide a more specific overview of
-   company and project goals, meeting schedules, and expectations for the trimester a. Team building
-   sessions may also be organised to build rapport across teams
+   company and project goals, meeting schedules, and expectations for the trimester 
+   - Team building sessions may also be organised to build rapport across teams
+
 3. Weekly company leadership team meeting – Report on project progress and concerns to company
-   stakeholders a. Date and time to be decided by members in the first week according to
-   availability
-4. Complete company tasks: progress, handover, and showcase reports and videos a. These reports must
-   be submitted by 1 senior and 1 junior on behalf of the company and appropriate communications
-   must be made on Teams
+   stakeholders 
+   - Date and time to be decided by members in the first week according to availability
+
+4. Complete company tasks: progress, handover, and showcase reports and videos 
+   - These reports must be submitted by 1 senior and 1 junior on behalf of the company and 
+     appropriate communications must be made on Teams 
 
 All past company reports, showcase videos, and relevant assets can be found here:
 [Company Documents & Videos]() (//to do) &
@@ -425,22 +429,243 @@ product, run through a demo of that._**
 
 ## Completed Deliverables
 
-**_Provide a list of product features and/or deliverables, including a brief description, that have
-been completed this trimester. Please relate these deliverables to their corresponding Trello cards
-if this is possible._**
+This trimester, the following key deliverables were completed:
 
-**_Only include features and/or deliverables that are fully complete – incomplete work is to be
-listed in section 4. Roadmap._**
+### Arcade Machine
 
-**_Make sure to explicitly highlight which features and/or deliverables where completed this
-Trimester and which team member(s) were primarily responsible for their completion._**
+- Arcade Machine Improvements
+    - Developed a test menu for the arcade machine
+    - Added additional controls to the arcade menu
+    - Defined the process for uploading games to the arcade machine
 
-**_Also, please indicate where each of the completed deliverables can be found (E.g., MS Teams,
-GitHub repository) and make sure to include a URL link to the resource._**
+### SplashKit Expansion
+
+- General Improvements
+    - Fixed bugs related to vectors, moving sprites and replacing text
+    - Added unit tests for function such as bitmaps, sound effects, and music.
+- New Features
+    - Implemented initial version of Remote GPIO Control
+    - Developed Circle-Triangle Collision Detection methods
+    - Create base64 image decoding function
+    - Created SplashKit Splashscreen function
+
+### SplashKit Website
+
+- Improved Content and Documentation
+    - Fixed the guides index page and updated broken links
+    - Added showcase pages and improved website styling
+    - Reviewed, updated and validated key policies and FAQs
+
+
+
+### SplashKit Tutorials
+
+
+
+### SplashKit Online
+
+
+
+### Game Development
+
+
 
 | Full Name | Description | Evidence |
 | :-------- | :---------- | -------: |
-| Test      | test1       |    test2 |
+| Brianna Laird | Fix Broken Dev Container | https://github.com/splashkit/splashkit.io-starlight/pull/7 | 
+| Brianna Laird | SIT102 Channel Suggestion Post |  | 
+| Brianna Laird | Update and Re-organise Trouble Shooting Section | https://github.com/splashkit/splashkit.io-starlight/pull/10 | 
+| Brianna Laird | Add Python code blocks to "Using Mouse Inputs" guide | https://github.com/thoth-tech/splashkit.io-starlight/pull/139 | 
+| Brianna Laird | Add Tutorial Review Documentation | https://github.com/thoth-tech/documentation/pull/529 | 
+| Brianna Laird | Splashkit tutorial - Documentation Update | https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/89 | 
+| Brianna Laird | Validate/Update Processes, Policies and FAQs | https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/85 | 
+| Brianna Laird | Adding OOP To Splashkit Tutorials | https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/95 | 
+| Brianna Laird | Fixing Tutorial Side Guide | https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/96 | 
+| Brianna Laird | Update Usage Examples to add Python code | https://github.com/thoth-tech/splashkit.io-starlight/pull/144 | 
+| Brianna Laird | Create Code Usage Examples for: "fill_triangle_on_bitmap" function | https://github.com/thoth-tech/splashkit.io-starlight/pull/151 | 
+| Brianna Laird | Create Code Usage Examples for CreateSprite | https://github.com/thoth-tech/splashkit.io-starlight/pull/152 | 
+| Brianna Laird | Create Code Usage Examples for Draw sprite | https://github.com/thoth-tech/splashkit.io-starlight/pull/153 | 
+| Brianna Laird | Create Code Usage Examples for Free sprite | https://github.com/thoth-tech/splashkit.io-starlight/pull/154 | 
+| Brianna Laird | Create Code Usage example for:"clear_screen" function | https://github.com/thoth-tech/splashkit.io-starlight/pull/148 | 
+| Brianna Laird | Dec to Hex Usage Example | https://github.com/thoth-tech/splashkit.io-starlight/pull/171 | 
+| Brianna Laird | Hex to Dec Usage Example | https://github.com/thoth-tech/splashkit.io-starlight/pull/172 | 
+| Brianna Laird | IPv4 to Decimal Usage Example | https://github.com/thoth-tech/splashkit.io-starlight/pull/169 | 
+| Brianna Laird | IPv4 to Hex Usage Example | https://github.com/thoth-tech/splashkit.io-starlight/pull/170 | 
+| Brianna Laird | Introduction to JSON Tutorial - C# Language Update | https://github.com/thoth-tech/splashkit.io-starlight/pull/175 | 
+| Brianna Laird | Review "Getting Started with Servers" guide | https://github.com/thoth-tech/documentation/pull/531 https://github.com/thoth-tech/splashkit.io-starlight/pull/145 | 
+| Brianna Laird | Review "How to make a RESTful API call" guide | https://github.com/thoth-tech/documentation/pull/533 https://github.com/thoth-tech/splashkit.io-starlight/pull/147 | 
+| Brianna Laird | Review "Splashkit Camera" Guide | https://github.com/thoth-tech/documentation/pull/545 https://github.com/thoth-tech/splashkit.io-starlight/pull/164 | 
+| Brianna Laird | Review "Useful Utilities" guide | https://github.com/thoth-tech/documentation/pull/547 https://github.com/thoth-tech/splashkit.io-starlight/pull/176 | 
+| Brianna Laird | Review: "Using Mouse Inputs" guide | https://github.com/thoth-tech/documentation/pull/541 https://github.com/thoth-tech/splashkit.io-starlight/pull/161 | 
+| Darren Marchiano Sunandar | Fix typo in vector magnitude squared documentation | https://github.com/thoth-tech/splashkit-core/pull/62 | 
+| Darren Marchiano Sunandar | Identify missing functionality from SwinGame | https://github.com/thoth-tech/documentation/pull/536 | 
+| Darren Marchiano Sunandar | Fix bug in replace_all | https://github.com/thoth-tech/splashkit-core/pull/69 | 
+| Darren Marchiano Sunandar | Test python version | https://github.com/thoth-tech/documentation/pull/542 | 
+| Ethan Mark Holley | Fix scrollbar jumping to top when switching code files | https://github.com/thoth-tech/SplashkitOnline/pull/87 | 
+| Ethan Mark Holley | Interface Minification Option | https://github.com/thoth-tech/SplashkitOnline/pull/89 | 
+| Ethan Mark Holley | Show message to user requesting them to click into the Execution Environment iFrame to get audio working | https://github.com/thoth-tech/SplashkitOnline/pull/90 | 
+| Ethan Mark Holley | Add Network Unit Tests | https://github.com/thoth-tech/splashkit-core/pull/73 | 
+| Ethan Mark Holley | Arcade Menu - Add additional controls | https://github.com/thoth-tech/documentation/pull/546 | 
+| Ethan Mark Holley | Develop Test Menu for Arcade Machine | https://github.com/thoth-tech/arcade-machine/pull/80 | 
+| Hangyu Li | Create Code Usage Examples for:  "fill_circle" function | https://github.com/thoth-tech/splashkit.io-starlight/pull/163 | 
+| Hangyu Li | Create Code Usage Examples for:  "fill_ellipse" function | https://github.com/thoth-tech/splashkit.io-starlight/pull/162 | 
+| Hangyu Li | Create Code Usage Examples for:  "fill_rectangle" function | https://github.com/thoth-tech/splashkit.io-starlight/pull/158 | 
+| Hangyu Li | Create Code Usage example for:"clear_screen" function | https://github.com/thoth-tech/splashkit.io-starlight/pull/148 | 
+| Hangyu Li | Dec to Hex Usage Example | https://github.com/thoth-tech/splashkit.io-starlight/pull/171 | 
+| Hangyu Li | Hex to Dec Usage Example | https://github.com/thoth-tech/splashkit.io-starlight/pull/172 | 
+| Hangyu Li | Review "Splashkit Camera" Guide | https://github.com/thoth-tech/documentation/pull/545 https://github.com/thoth-tech/splashkit.io-starlight/pull/164 | 
+| Hangyu Li | Write Line INTEGER - Usage Example for Terminal | https://github.com/thoth-tech/splashkit.io-starlight/pull/185 | 
+| Hangyu Li | Writing JSON data Tutorial - C# Language Update | https://github.com/thoth-tech/splashkit.io-starlight/pull/190 | 
+| Hayley Rose Hughes | Define process for copying games to Arcade Machine | https://github.com/thoth-tech/documentation/pull/522 | 
+| Hayley Rose Hughes | Fix typo in vector magnitude squared documentation | https://github.com/thoth-tech/splashkit-core/pull/62 | 
+| Hayley Rose Hughes | Initial implementation of remote GPIO control | https://github.com/thoth-tech/splashkit-core/pull/58 | 
+| Hayley Rose Hughes | Investigate bug in move_sprite_to | https://github.com/thoth-tech/splashkit-core/pull/59 | 
+| Hayley Rose Hughes | Fix bug in closest_point_on_lines | https://github.com/thoth-tech/splashkit-core/pull/63 | 
+| Hayley Rose Hughes | Add unit tests for utility functions | https://github.com/thoth-tech/splashkit-core/pull/68 | 
+| Hayley Rose Hughes | Circle-Triangle Collision Detection Methods | https://github.com/thoth-tech/splashkit-core/pull/60 | 
+| Hayley Rose Hughes | Fix broken links in Arcade Build Doco | https://github.com/thoth-tech/documentation/pull/523 | 
+| Hayley Rose Hughes | Fix bugs in rnd | https://github.com/thoth-tech/splashkit-core/pull/70 | 
+| Hayley Rose Hughes | Rename 'label' Parameter | https://github.com/thoth-tech/splashkit-core/pull/66 | 
+| Jake Andrew Oxley | Identify missing functionality from SwinGame | https://github.com/thoth-tech/documentation/pull/536 | 
+| Jake Andrew Oxley | SplashKit Tutorial - 2D Vectors | https://github.com/thoth-tech/splashkit.io-starlight/pull/134 | 
+| Jessica Balsillie | Automate installation of pre-built files | https://github.com/thoth-tech/SplashkitOnline/pull/85 | 
+| Jessica Balsillie | Fix scrollbar jumping to top when switching code files | https://github.com/thoth-tech/SplashkitOnline/pull/87 | 
+| Jonathan James Tynan | Define process for copying games to Arcade Machine | https://github.com/thoth-tech/documentation/pull/522 | 
+| Jonathan James Tynan | Initial implementation of remote GPIO control | https://github.com/thoth-tech/splashkit-core/pull/58 | 
+| Jonathan James Tynan | Tutorial Proposal - 2D Vectors | https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/87 | 
+| Jonathan James Tynan | Validate/Update Processes, Policies and FAQs | https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/85 | 
+| Jonathan James Tynan | Add bitmap, sound effect and music unit tests | https://github.com/thoth-tech/splashkit-core/pull/64 | 
+| Jonathan James Tynan | Automate installation of pre-built files | https://github.com/thoth-tech/SplashkitOnline/pull/85 | 
+| Jonathan James Tynan | Fix bug in closest_point_on_lines | https://github.com/thoth-tech/splashkit-core/pull/63 | 
+| Jonathan James Tynan | Identify missing functionality from SwinGame | https://github.com/thoth-tech/documentation/pull/536 | 
+| Jonathan James Tynan | Fix guides index page | https://github.com/thoth-tech/splashkit.io-starlight/pull/149/ | 
+| Jonathan James Tynan | Add showcase page | https://github.com/thoth-tech/splashkit.io-starlight/pull/155 | 
+| Jonathan James Tynan | Update Broken Splashkit.io Links | https://github.com/thoth-tech/splashkit.io-starlight/pull/136 | 
+| Jonathan James Tynan | Add unit tests for utility functions | https://github.com/thoth-tech/splashkit-core/pull/68 | 
+| Jonathan James Tynan | Base64 Splashkit image decoding function | https://github.com/thoth-tech/splashkit-core/pull/72/ | 
+| Jonathan James Tynan | Circle-Triangle Collision Detection Methods | https://github.com/thoth-tech/splashkit-core/pull/60 | 
+| Jonathan James Tynan | Fix broken links in Arcade Build Doco | https://github.com/thoth-tech/documentation/pull/523 | 
+| Jonathan James Tynan | Fix bug in replace_all | https://github.com/thoth-tech/splashkit-core/pull/69 | 
+| Jonathan James Tynan | Fix bugs in rnd | https://github.com/thoth-tech/splashkit-core/pull/70 | 
+| Jonathan James Tynan | Rename 'label' Parameter | https://github.com/thoth-tech/splashkit-core/pull/66 | 
+| Jonathan James Tynan | Test python version | https://github.com/thoth-tech/documentation/pull/542 | 
+| Ka Chun Lam | Create 1-2 page condensed, high level implementation pattern guide for rapid onboarding | https://github.com/thoth-tech/arcade-games/pull/227 | 
+| Ka Chun Lam | project Bee - create  programming plan | https://github.com/zhusim222/Bee-game/pull/4 | 
+| Kartik Kaushik | Create Code Usage Examples for CreateSprite | https://github.com/thoth-tech/splashkit.io-starlight/pull/152 | 
+| Kartik Kaushik | Create Code Usage Examples for Draw sprite | https://github.com/thoth-tech/splashkit.io-starlight/pull/153 | 
+| Kartik Kaushik | Create Code Usage Examples for Free sprite | https://github.com/thoth-tech/splashkit.io-starlight/pull/154 | 
+| Kartik Kaushik | Create Code Usage Examples for sprite set position | https://github.com/thoth-tech/splashkit.io-starlight/pull/168 | 
+| Kartik Kaushik | Create Code Usage Examples for sprite set velocity | https://github.com/thoth-tech/splashkit.io-starlight/pull/165 | 
+| Kartik Kaushik | Create Code Usage Examples for sprite set x | https://github.com/thoth-tech/splashkit.io-starlight/pull/166 | 
+| Kartik Kaushik | Create Code Usage Examples for sprite set y | https://github.com/thoth-tech/splashkit.io-starlight/pull/167 | 
+| Kartik Kaushik | Github Guide | https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/101 | 
+| Kartik Kaushik | Styling Using Interfaces Tutorial - C# Language Update | https://github.com/thoth-tech/splashkit.io-starlight/pull/200 | 
+| Kartik Kaushik | Understanding Double Buffering Tutorial - C# Language Update | https://github.com/thoth-tech/splashkit.io-starlight/pull/197 | 
+| Kartik Kaushik | Writing JSON data Tutorial - C# Language Update | https://github.com/thoth-tech/splashkit.io-starlight/pull/190 | 
+| Mark Heath | All games - locally-compiled exe(s) are platform-specific | https://github.com/thoth-tech/arcade-games/pull/226 | 
+| Mark Heath | Below The Surface - level 9 (FIGHT) has a collision issue next to the exit | https://github.com/thoth-tech/arcade-games/pull/225 | 
+| Mark Heath | Create 1-2 page condensed, high level implementation pattern guide for rapid onboarding | https://github.com/thoth-tech/arcade-games/pull/227 | 
+| Mark Heath | Misc games - fix merge conflicts from T1 PRs | https://github.com/thoth-tech/arcade-games/pull/228 | 
+| Mark Heath | Venture Adventure - fix bundle files | https://github.com/thoth-tech/arcade-games/pull/219 | 
+| Mark Heath | Venture Adventure - fix level music | https://github.com/thoth-tech/arcade-games/pull/222 | 
+| Mark Heath | Venture Adventure - remove outdated credit | https://github.com/thoth-tech/arcade-games/pull/218 | 
+| Mark Heath | Venture Adventure - small refactor | https://github.com/thoth-tech/arcade-games/pull/220 https://github.com/thoth-tech/arcade-games/pull/221 https://github.com/thoth-tech/arcade-games/pull/222 https://github.com/thoth-tech/arcade-games/pull/223 https://github.com/thoth-tech/arcade-games/pull/224 | 
+| Mark Heath | project Bee - create  programming plan | https://github.com/zhusim222/Bee-game/pull/4 | 
+| Matthew James Harding | Fix typo in vector magnitude squared documentation | https://github.com/thoth-tech/splashkit-core/pull/62 | 
+| Matthew James Harding | Investigate bug in move_sprite_to | https://github.com/thoth-tech/splashkit-core/pull/59 | 
+| Matthew James Harding | Add bitmap, sound effect and music unit tests | https://github.com/thoth-tech/splashkit-core/pull/64 | 
+| Matthew James Harding | Fix bug in closest_point_on_lines | https://github.com/thoth-tech/splashkit-core/pull/63 | 
+| Matthew James Harding | Interface Minification Option | https://github.com/thoth-tech/SplashkitOnline/pull/89 | 
+| Matthew James Harding | Show message to user requesting them to click into the Execution Environment iFrame to get audio working | https://github.com/thoth-tech/SplashkitOnline/pull/90 | 
+| Matthew James Harding | Add Network Unit Tests | https://github.com/thoth-tech/splashkit-core/pull/73 | 
+| Matthew James Harding | Add unit tests for utility functions | https://github.com/thoth-tech/splashkit-core/pull/68 | 
+| Matthew James Harding | Arcade Menu - Add additional controls | https://github.com/thoth-tech/documentation/pull/546 | 
+| Matthew James Harding | Base64 Splashkit image decoding function | https://github.com/thoth-tech/splashkit-core/pull/72/ | 
+| Matthew James Harding | Circle-Triangle Collision Detection Methods | https://github.com/thoth-tech/splashkit-core/pull/60 | 
+| Matthew James Harding | Develop Test Menu for Arcade Machine | https://github.com/thoth-tech/arcade-machine/pull/80 | 
+| Matthew James Harding | Fix bug in replace_all | https://github.com/thoth-tech/splashkit-core/pull/69 | 
+| Matthew James Harding | Fix bugs in rnd | https://github.com/thoth-tech/splashkit-core/pull/70 | 
+| Mounika Angadipeta | Add C# code blocks to the 3 JSON guides | https://github.com/thoth-tech/splashkit.io-starlight/pull/133 | 
+| Mounika Angadipeta | Add Python code blocks to "Using Mouse Inputs" guide | https://github.com/thoth-tech/splashkit.io-starlight/pull/139 | 
+| Mounika Angadipeta | Tutorial Proposal - 2D Vectors | https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/87 | 
+| Mounika Angadipeta | Create Code Usage Examples for: "fill_triangle_on_bitmap" function | https://github.com/thoth-tech/splashkit.io-starlight/pull/151 | 
+| Mounika Angadipeta | Introduction to JSON Tutorial - C# Language Update | https://github.com/thoth-tech/splashkit.io-starlight/pull/175 | 
+| Mounika Angadipeta | Reading JSON data Tutorial - C# Language Update | https://github.com/thoth-tech/splashkit.io-starlight/pull/186 | 
+| Mounika Angadipeta | Review "Introduction to JSON" guide | https://github.com/thoth-tech/documentation/pull/540 https://github.com/thoth-tech/splashkit.io-starlight/pull/156 | 
+| Mounika Angadipeta | Review: "Using Mouse Inputs" guide | https://github.com/thoth-tech/documentation/pull/541 https://github.com/thoth-tech/splashkit.io-starlight/pull/161 | 
+| Nidhisha Pahade | Create Code Usage Examples for CreateSprite | https://github.com/thoth-tech/splashkit.io-starlight/pull/152 | 
+| Nidhisha Pahade | Github Guide | https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/101 | 
+| Nidhisha Pahade | Review "Getting Started with Servers" guide | https://github.com/thoth-tech/documentation/pull/531 https://github.com/thoth-tech/splashkit.io-starlight/pull/145 | 
+| Nidhisha Pahade | Review "Useful Utilities" guide | https://github.com/thoth-tech/documentation/pull/547 https://github.com/thoth-tech/splashkit.io-starlight/pull/176 | 
+| Nidhisha Pahade | Styling Using Interfaces Tutorial - C# Language Update | https://github.com/thoth-tech/splashkit.io-starlight/pull/200 | 
+| Nidhisha Pahade | Understanding Double Buffering Tutorial - C# Language Update | https://github.com/thoth-tech/splashkit.io-starlight/pull/197 | 
+| Oliver Exell-Bruce | Fix API Page Parameter Table Formatting | https://github.com/thoth-tech/splashkit.io-starlight/pull/187 | 
+| Oliver Exell-Bruce | Fix guides index page | https://github.com/thoth-tech/splashkit.io-starlight/pull/149/ | 
+| Oliver Exell-Bruce | Website Styling | https://github.com/thoth-tech/splashkit.io-starlight/pull/159 | 
+| Oliver Exell-Bruce | Add showcase page | https://github.com/thoth-tech/splashkit.io-starlight/pull/155 | 
+| Oliver Exell-Bruce | Review "Getting Started with Servers" guide | https://github.com/thoth-tech/documentation/pull/531 https://github.com/thoth-tech/splashkit.io-starlight/pull/145 | 
+| Oliver Exell-Bruce | Review "Useful Utilities" guide | https://github.com/thoth-tech/documentation/pull/547 https://github.com/thoth-tech/splashkit.io-starlight/pull/176 | 
+| Oliver Exell-Bruce | SplashKit Tutorial - 2D Vectors | https://github.com/thoth-tech/splashkit.io-starlight/pull/134 | 
+| Oliver Exell-Bruce | Styling Using Interfaces Tutorial - C# Language Update | https://github.com/thoth-tech/splashkit.io-starlight/pull/200 | 
+| Oliver Exell-Bruce | Understanding Double Buffering Tutorial - C# Language Update | https://github.com/thoth-tech/splashkit.io-starlight/pull/197 | 
+| Oscar Harris | Create 1-2 page condensed, high level implementation pattern guide for rapid onboarding | https://github.com/thoth-tech/arcade-games/pull/227 | 
+| Sana Noureen | Update Tab Logo | https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/98 | 
+| Sana Noureen | Website Styling | https://github.com/thoth-tech/splashkit.io-starlight/pull/159 | 
+| Sana Noureen | Dec to Hex Usage Example | https://github.com/thoth-tech/splashkit.io-starlight/pull/171 | 
+| Sana Noureen | Documentation Site Styling | https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/102 | 
+| Sana Noureen | Write Line INTEGER - Usage Example for Terminal | https://github.com/thoth-tech/splashkit.io-starlight/pull/185 | 
+| Sharvani Kandala | Create Code Usage Examples for: "fill_triangle" function | https://github.com/thoth-tech/splashkit.io-starlight/pull/143 | 
+| Sharvani Kandala | Tutorial Proposal- Camera control functions | https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/97 | 
+| Sharvani Kandala | Create Code Usage Examples for:  "fill_ellipse" function | https://github.com/thoth-tech/splashkit.io-starlight/pull/162 | 
+| Sharvani Kandala | Create Code Usage Examples for:  "fill_rectangle" function | https://github.com/thoth-tech/splashkit.io-starlight/pull/158 | 
+| Sharvani Kandala | Create Code Usage Examples for: "fill_triangle_on_bitmap" function | https://github.com/thoth-tech/splashkit.io-starlight/pull/151 | 
+| Sharvani Kandala | Create Code Usage Examples for Draw sprite | https://github.com/thoth-tech/splashkit.io-starlight/pull/153 | 
+| Sharvani Kandala | Create Code Usage example for:"clear_screen" function | https://github.com/thoth-tech/splashkit.io-starlight/pull/148 | 
+| Sharvani Kandala | IPv4 to Decimal Usage Example | https://github.com/thoth-tech/splashkit.io-starlight/pull/169 | 
+| Sharvani Kandala | IPv4 to Hex Usage Example | https://github.com/thoth-tech/splashkit.io-starlight/pull/170 | 
+| Sharvani Kandala | Review "How to make a RESTful API call" guide | https://github.com/thoth-tech/documentation/pull/533 https://github.com/thoth-tech/splashkit.io-starlight/pull/147 | 
+| Shaun Ratcliff | Add C# code blocks to the 3 JSON guides | https://github.com/thoth-tech/splashkit.io-starlight/pull/133 | 
+| Shaun Ratcliff | Splashkit tutorial - Documentation Update | https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/89 | 
+| Shaun Ratcliff | Tutorial Proposal - 2D Vectors | https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/87 | 
+| Shaun Ratcliff | Validate/Update Processes, Policies and FAQs | https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/85 | 
+| Shaun Ratcliff | Fix API Page Parameter Table Formatting | https://github.com/thoth-tech/splashkit.io-starlight/pull/187 | 
+| Shaun Ratcliff | Fix guides index page | https://github.com/thoth-tech/splashkit.io-starlight/pull/149/ | 
+| Shaun Ratcliff | Website Styling | https://github.com/thoth-tech/splashkit.io-starlight/pull/159 | 
+| Shaun Ratcliff | Add showcase page | https://github.com/thoth-tech/splashkit.io-starlight/pull/155 | 
+| Shaun Ratcliff | Create Code Usage example for:"clear_screen" function | https://github.com/thoth-tech/splashkit.io-starlight/pull/148 | 
+| Shaun Ratcliff | Documentation Site Styling | https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/102 | 
+| Shaun Ratcliff | Reading JSON data Tutorial - C# Language Update | https://github.com/thoth-tech/splashkit.io-starlight/pull/186 | 
+| Shaun Ratcliff | Review "Introduction to JSON" guide | https://github.com/thoth-tech/documentation/pull/540 https://github.com/thoth-tech/splashkit.io-starlight/pull/156 | 
+| Shaun Ratcliff | SplashKit Tutorial - 2D Vectors | https://github.com/thoth-tech/splashkit.io-starlight/pull/134 | 
+| Shaun Ratcliff | Update Broken Splashkit.io Links | https://github.com/thoth-tech/splashkit.io-starlight/pull/136 | 
+| Shaun Ratcliff | Write Line INTEGER - Usage Example for Terminal | https://github.com/thoth-tech/splashkit.io-starlight/pull/185 | 
+| Simon Zhu | Below The Surface - level 9 (FIGHT) has a collision issue next to the exit | https://github.com/thoth-tech/arcade-games/pull/225 | 
+| Sean Boettger | Develop Test Menu for Arcade Machine | https://github.com/thoth-tech/arcade-machine/pull/80 | 
+| Thomas James Shanahan | All games - locally-compiled exe(s) are platform-specific | https://github.com/thoth-tech/arcade-games/pull/226 | 
+| Thomas James Shanahan | Below The Surface - level 9 (FIGHT) has a collision issue next to the exit | https://github.com/thoth-tech/arcade-games/pull/225 | 
+| Thomas James Shanahan | project Bee - create  programming plan | https://github.com/zhusim222/Bee-game/pull/4 | 
+| Will Saunders | Define process for copying games to Arcade Machine | https://github.com/thoth-tech/documentation/pull/522 | 
+| Will Saunders | Initial implementation of remote GPIO control | https://github.com/thoth-tech/splashkit-core/pull/58 | 
+| Will Saunders | Investigate bug in move_sprite_to | https://github.com/thoth-tech/splashkit-core/pull/59 | 
+| Will Saunders | Add bitmap, sound effect and music unit tests | https://github.com/thoth-tech/splashkit-core/pull/64 | 
+| Will Saunders | Interface Minification Option | https://github.com/thoth-tech/SplashkitOnline/pull/89 | 
+| Will Saunders | Show message to user requesting them to click into the Execution Environment iFrame to get audio working | https://github.com/thoth-tech/SplashkitOnline/pull/90 | 
+| Will Saunders | Add Network Unit Tests | https://github.com/thoth-tech/splashkit-core/pull/73 | 
+| Will Saunders | Arcade Menu - Add additional controls | https://github.com/thoth-tech/documentation/pull/546 | 
+| Will Saunders | Base64 Splashkit image decoding function | https://github.com/thoth-tech/splashkit-core/pull/72/ | 
+| Will Saunders | Develop Test Menu for Arcade Machine | https://github.com/thoth-tech/arcade-machine/pull/80 | 
+| Will Saunders | Fix broken links in Arcade Build Doco | https://github.com/thoth-tech/documentation/pull/523 | 
+| Will Saunders | Rename 'label' Parameter | https://github.com/thoth-tech/splashkit-core/pull/66 | 
+| Will Saunders | Test python version | https://github.com/thoth-tech/documentation/pull/542 | 
+| Yuyang Yang | Add C# code blocks to the 3 JSON guides | https://github.com/thoth-tech/splashkit.io-starlight/pull/133 | 
+| Yuyang Yang | Add Python code blocks to "Using Mouse Inputs" guide | https://github.com/thoth-tech/splashkit.io-starlight/pull/139 | 
+| Yuyang Yang | Introduction to JSON Tutorial - C# Language Update | https://github.com/thoth-tech/splashkit.io-starlight/pull/175 | 
+| Yuyang Yang | Reading JSON data Tutorial - C# Language Update | https://github.com/thoth-tech/splashkit.io-starlight/pull/186 | 
+| Yuyang Yang | Review "How to make a RESTful API call" guide | https://github.com/thoth-tech/documentation/pull/533 https://github.com/thoth-tech/splashkit.io-starlight/pull/147 | 
+| Yuyang Yang | Review "Introduction to JSON" guide | https://github.com/thoth-tech/documentation/pull/540 https://github.com/thoth-tech/splashkit.io-starlight/pull/156 | 
+| Yuyang Yang | Review "Splashkit Camera" Guide | https://github.com/thoth-tech/documentation/pull/545 https://github.com/thoth-tech/splashkit.io-starlight/pull/164 | 
+| Yuyang Yang | Review: "Using Mouse Inputs" guide | https://github.com/thoth-tech/documentation/pull/541 https://github.com/thoth-tech/splashkit.io-starlight/pull/161 | 
+| Yuyang Yang | Writing JSON data Tutorial - C# Language Update | https://github.com/thoth-tech/splashkit.io-starlight/pull/190 | 
 
 ## Roadmap
 
