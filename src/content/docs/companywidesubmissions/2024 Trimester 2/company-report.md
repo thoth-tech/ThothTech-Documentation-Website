@@ -132,7 +132,7 @@ This video summarises the accomplishments made at Thoth Tech for Trimester 2, 20
 - Nebula Alam (OnTrack)
 - Tien Pham (SplashKit)
 - Olivia McKeon (SplashKit)
-- Sea Boettger (SplashKit)
+- Sean Boettger (SplashKit)
 
 ## Student Leads
 
@@ -393,7 +393,7 @@ and the evolution of your product._**
 
 **_Please also include a link to your team’s showcase video._**
 
-# Project 3: SplashKit
+# Project 2: SplashKit
 
 ## Project Overview
 
@@ -461,7 +461,7 @@ C++, but it supports multiple languages, including C#, Python, Pascal, and JavaS
 
 ## Completed Deliverables
 
-This trimester, the following key deliverables were completed:
+This trimester, the following deliverables were completed:
 
 ### Arcade Machine
 
@@ -476,42 +476,65 @@ This trimester, the following key deliverables were completed:
 - General Improvements
   - Fixed bugs relating to vectors, random number generation, moving sprites and replacing text.
   - Renamed 'label' parameter to fix Pascal support
-  - Identified missing functionality from SwinGame
+  - Investigate and identified missing functionality from SwinGame
   - Tested Python version
 - New Features
-  - Initial implementation of Remote GPIO Control
-  - Developed Circle-Triangle Collision detection methods
+  - Completed development of Remote GPIO Control methods
+  - Created Circle-Triangle Collision detection methods
   - Created base64 image decoding function
   - Created SplashKit Splashscreen function
   - Added unit tests for networking, utility functions, bitmaps, sound effects, and music.
 
 ### SplashKit Website
 
-- Improved Content and Documentation
+- Websit Improvements
+  - Resolved issues with Dev Container
   - Fixed the guides index page and updated broken links
-  - Added showcase pages and improved website styling
+  - Improved Troubleshooting section
+  - Added game showcase page and improved website styling
   - Reviewed, updated and validated key policies and FAQs
   - Fixed API table formatting
   - Updated tab logo
   - Improved site styling
-  -
 
 ### SplashKit Tutorials
 
+- New Tutorials
+  - Developed 2D Vectors tutorial series covering topics such as vector magnitude, collisions and
+    gravity
 - Tutorial Updates
+  - Created documentation detailing tutorial review process
+  - Developed Onboarding process for the tutorial team
   - Added Object-Oriented Programming concepts to SplashKit tutorials
+  - Added C# Code Blocks to Tutorials
+    - "Introduction to JSON", "Writing JSON Data", "Reading JSON Data", guides
+    - "Styling User Interfaces" guide
+    - "Understanding Double Buffering" guide
+  - Add Python Code Blocks to Tutorials
+    - "Using Mouse Inputs" guide
+- Created various usage examples
+  - `fill_triangle`, `fill_circle`, `create_sprite`, `draw_sprite`,`clear_screen` and more
+- Completed various tutorial reviews
+  - "Getting started with servers" guide
+  - "How to make a RESTful API call" guide
+  - "SplashKit Camera" guide
+  - "Using Mouse Inputs" guide
 
 ### SplashKit Online
 
 - Interface Improvements
-    - Fixed scrollbar jumping to top when switching code files
-    - Implemented message to prompt user for action to enable audio
-    - Added Interface Minification option
+  - Fixed scrollbar jumping to top when switching code files
+  - Implemented message to prompt user for action to enable audio
+  - Added Interface Minification option
+  - Automated installation of pre-built files
 
 ### Game Development
 
-- Bug Fixes and Improvements
-    - Fixed issue with 
+- Game Development Improvements
+  - Developed Onboarding guide for the Game Development team
+  - Addressed issue that compiled .exe files are platform-specific.
+  - Fixed gameplay issues in Below the Surface and Venture Adventure
+  - Created programming plan for the Bee Game project, outlining core mechanics and class structures
 
 | Full Name                 | Description                                                                                              |                                                                                                                                                                                                                                                            Evidence |
 | :------------------------ | :------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
