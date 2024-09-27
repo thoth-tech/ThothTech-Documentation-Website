@@ -407,7 +407,7 @@ C++, but it supports multiple languages, including C#, Python, Pascal, and JavaS
   games built-in SplashKit. The units run on a Raspberry Pi 3B+, giving constraints and a target
   platform development. Our goal is to have this platform ready for students to show games developed
   using SplashKit by the Thoth Tech SplashKit team. In the long term, the aim is to have this
-  platform available for first-year students with an easy-to-use process to upload their and test
+  platform available for first-year students with an easy-to-use process to upload, and test,
   their games.
 - SplashKit Expansion: The SplashKit Expansion team works to continue developing SplashKit itself,
   by fixing bugs, improving existing features, and integrating new ones. We also aim to improve
@@ -431,22 +431,34 @@ C++, but it supports multiple languages, including C#, Python, Pascal, and JavaS
 
 ## User Manual
 
-**_Give instructions for how someone should use your product or navigate around your development
-environment. Include images, diagrams, or anything that would help a first-time user to use your
-product correctly._**
+### Arcade Machines
 
-**_Better yet, you could create short instructional videos using software like
-[Loom](https://www.loom.com/) and include the video links in this section. You may find this option
-is considerably easier than trying to communicate your instructions through text! (Note: this is
-just a suggestion, it’s not mandatory.) Here are some ideas of what to cover:_**
+- [Brief development environment setup instructions](https://github.com/thoth-tech/arcade-machine)
+- [Machine Operations Guide](https://deakin365.sharepoint.com/:b:/r/sites/ThothTech2/Shared%20Documents/SplashKit/Arcade%20Machine%20(Burwood%20Building%20M)%20Operation%20Guide/Thoth%20Tech%20Arcade%20Machine%20Operation.pdf?csf=1&web=1&e=Mx3iBS)
 
-**_If your product currently requires a complex set of steps to activate, include that._**
+### SplashKit Website
 
-**_If your product has a hardware component, explain how to activate and sync the hardware with the
-software._**
+- [Development environment setup instructions](https://github.com/thoth-tech/splashkit.io-starlight/blob/main/CONTRIBUTE.md)
 
-**_If your team has a user experience journey that they’ve mapped out for when a user navigates your
-product, run through a demo of that._**
+### SplashKit Tutorials
+
+- [Tutorial Information Hub](https://thoth-tech.netlify.app/products/splashkit/splashkit-tutorials/0-overview/)
+- [Development environment setup instructions](https://github.com/thoth-tech/splashkit.io-starlight/blob/main/CONTRIBUTE.md)
+
+### SplashKit Expansion
+
+- [Repository setup instructions](https://github.com/thoth-tech/splashkit-core/blob/develop/CONTRIBUTING.md)
+
+### Game Development
+
+- [Game Development Student Onboarding Guide](https://github.com/thoth-tech/arcade-games/blob/main/advanced-game-design-team/Student%20Onboarding%20Guide.md)
+- [Guide to Contribute a Game to the Arcade Machine](https://github.com/thoth-tech/arcade-games/blob/main/README.md)
+
+
+### SplashKit Online
+
+- [Development environement setup instructions](https://github.com/thoth-tech/SplashkitOnline?tab=readme-ov-file#installation)
+- [General developer documentation](https://thoth-tech.netlify.app/products/splashkit/splashkit-online/code-documentation/other/folderstructureoverview/)
 
 ## Completed Deliverables
 
@@ -811,15 +823,15 @@ SDK, including graphics, input handling, and audio management.
 
 - [Github Account](https://github.com/thoth-tech)
 - Arcade Machine
-  - [arcade-machine](https://github.com/thoth-tech)
-  - [arcade-machine-startup](https://github.com/thoth-tech)
-  - [ArcadeMenu](https://github.com/thoth-tech)
-  - [flipper](https://github.com/thoth-tech)
+  - [arcade-machine](https://github.com/thoth-tech/arcade-machine)
+  - [arcade-machine-startup](https://github.com/thoth-tech/arcade-machine-startup)
+  - [ArcadeMenu](https://github.com/thoth-tech/ArcadeMenu)
+  - [flipper](https://github.com/thoth-tech/flipper)
 - SplashKit Expansion
   - [splashkit-core](https://github.com/thoth-tech/splashkit-core),
     [skm](https://github.com/thoth-tech/skm)
 - [SplashKit Website](https://github.com/thoth-tech/splashkit.io-starlight)
-- [Games Development](https://github.com/thoth-tech)
+- [Games Development](https://github.com/thoth-tech/arcade-games)
 - [SplashKit Online](https://github.com/thoth-tech/splashkitonline)
 
 ## Appendices
