@@ -407,8 +407,8 @@ C++, but it supports multiple languages, including C#, Python, Pascal, and JavaS
   games built-in SplashKit. The units run on a Raspberry Pi 3B+, giving constraints and a target
   platform development. Our goal is to have this platform ready for students to show games developed
   using SplashKit by the Thoth Tech SplashKit team. In the long term, the aim is to have this
-  platform available for first-year students with an easy-to-use process to upload, and test,
-  their games.
+  platform available for first-year students with an easy-to-use process to upload, and test, their
+  games.
 - SplashKit Expansion: The SplashKit Expansion team works to continue developing SplashKit itself,
   by fixing bugs, improving existing features, and integrating new ones. We also aim to improve
   SplashKit’s installation and usage workflows, for instance by creating packages and solving
@@ -434,7 +434,7 @@ C++, but it supports multiple languages, including C#, Python, Pascal, and JavaS
 ### Arcade Machines
 
 - [Brief development environment setup instructions](https://github.com/thoth-tech/arcade-machine)
-- [Machine Operations Guide](https://deakin365.sharepoint.com/:b:/r/sites/ThothTech2/Shared%20Documents/SplashKit/Arcade%20Machine%20(Burwood%20Building%20M)%20Operation%20Guide/Thoth%20Tech%20Arcade%20Machine%20Operation.pdf?csf=1&web=1&e=Mx3iBS)
+- [Machine Operations Guide](<https://deakin365.sharepoint.com/:b:/r/sites/ThothTech2/Shared%20Documents/SplashKit/Arcade%20Machine%20(Burwood%20Building%20M)%20Operation%20Guide/Thoth%20Tech%20Arcade%20Machine%20Operation.pdf?csf=1&web=1&e=Mx3iBS>)
 
 ### SplashKit Website
 
@@ -454,7 +454,6 @@ C++, but it supports multiple languages, including C#, Python, Pascal, and JavaS
 - [Game Development Student Onboarding Guide](https://github.com/thoth-tech/arcade-games/blob/main/advanced-game-design-team/Student%20Onboarding%20Guide.md)
 - [Guide to Contribute a Game to the Arcade Machine](https://github.com/thoth-tech/arcade-games/blob/main/README.md)
 
-
 ### SplashKit Online
 
 - [Development environement setup instructions](https://github.com/thoth-tech/SplashkitOnline?tab=readme-ov-file#installation)
@@ -470,17 +469,21 @@ This trimester, the following key deliverables were completed:
   - Developed a test menu for the arcade machine
   - Added additional controls to the arcade menu
   - Defined the process for uploading games to the arcade machine
+  - Fixed broken links in Arcade Build documentation
 
 ### SplashKit Expansion
 
 - General Improvements
-  - Fixed bugs related to vectors, moving sprites and replacing text
-  - Added unit tests for function such as bitmaps, sound effects, and music.
+  - Fixed bugs relating to vectors, random number generation, moving sprites and replacing text.
+  - Renamed 'label' parameter to fix Pascal support
+  - Identified missing functionality from SwinGame
+  - Tested Python version
 - New Features
-  - Implemented initial version of Remote GPIO Control
-  - Developed Circle-Triangle Collision Detection methods
-  - Create base64 image decoding function
+  - Initial implementation of Remote GPIO Control
+  - Developed Circle-Triangle Collision detection methods
+  - Created base64 image decoding function
   - Created SplashKit Splashscreen function
+  - Added unit tests for networking, utility functions, bitmaps, sound effects, and music.
 
 ### SplashKit Website
 
@@ -488,12 +491,27 @@ This trimester, the following key deliverables were completed:
   - Fixed the guides index page and updated broken links
   - Added showcase pages and improved website styling
   - Reviewed, updated and validated key policies and FAQs
+  - Fixed API table formatting
+  - Updated tab logo
+  - Improved site styling
+  -
 
 ### SplashKit Tutorials
 
+- Tutorial Updates
+  - Added Object-Oriented Programming concepts to SplashKit tutorials
+
 ### SplashKit Online
 
+- Interface Improvements
+    - Fixed scrollbar jumping to top when switching code files
+    - Implemented message to prompt user for action to enable audio
+    - Added Interface Minification option
+
 ### Game Development
+
+- Bug Fixes and Improvements
+    - Fixed issue with 
 
 | Full Name                 | Description                                                                                              |                                                                                                                                                                                                                                                            Evidence |
 | :------------------------ | :------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
