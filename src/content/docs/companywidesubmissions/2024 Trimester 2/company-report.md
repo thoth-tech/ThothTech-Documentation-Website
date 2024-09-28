@@ -765,6 +765,7 @@ This trimester, the following deliverables were completed:
 
 ### Arcade Machine
 
+- Consolidate documentation in one place or repository
 - Add additional modes to the Arcade Machine software
   - Kiosk Mode: Show only published games, ideal for events
   - Normal Mode: Display both published and test games
