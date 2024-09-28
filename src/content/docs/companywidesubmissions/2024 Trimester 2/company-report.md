@@ -185,213 +185,303 @@ All past company reports, showcase videos, and relevant assets can be found here
 
 ## Project Overview
 
-**_Give an overview or ‘executive summary’ of the project, including any necessary high-level
-information for someone reading about your work for the first time. The following questions should
-help guide your thinking._**
-
-**_What is the project about?_**
-
-**_What problem is the project solve?_**
-
-**_What are the aims of the project?_**
-
-**_What are the deliverables?_**
+OnTrack, also known as Doubtfire, is an innovative Learning Management System (LMS) tailored for skill-based course delivery. This platform facilitates the connection between tutors and students, primarily at Deakin University and other global institutions. The overarching goal of OnTrack is to enhance the educational experience by providing a structured, efficient, and interactive learning environment. This system aims to improve student engagement, learning outcomes, and the overall teaching and learning process, benefiting both students and educational staff. 
 
 ## User Manual
 
-**_Give instructions for how someone should use your product or navigate around your development
-environment. Include images, diagrams, or anything that would help a first-time user to use your
-product correctly._**
+Tutorial videos on setting up your local development environment: 
 
-**_Better yet, you could create short instructional videos using software like
-[Loom](https://www.loom.com/) and include the video links in this section. You may find this option
-is considerably easier than trying to communicate your instructions through text! (Note: this is
-just a suggestion, it’s not mandatory.) Here are some ideas of what to cover:_**
+- [T3 2023 Setup demo](https://deakin365.sharepoint.com/:v:/s/ThothTech2/ESrgw0W_21pLn7kqS86WoJgBG71EPo7VPSp8AXt151JC2g?e=AZyu7I)  by Satika Jayawardena
 
-**_If your product currently requires a complex set of steps to activate, include that._**
+- [T2 2023 Setup demo](https://video.deakin.edu.au/media/t/1_6degiyrj)  by Daniel Maddern
 
-**_If your product has a hardware component, explain how to activate and sync the hardware with the
-software._**
+- [T1 2024 Common setup error solutions](https://teams.microsoft.com/l/message/19:bd20175d09414f079490a2403f7fca74@thread.tacv2/1711021331051) by Satika Jayawardena 
 
-**_If your team has a user experience journey that they’ve mapped out for when a user navigates your
-product, run through a demo of that._**
+Contributing Guides: 
+
+- [Doubtfire-deploy repository](https://github.com/thoth-tech/doubtfire-deploy/blob/development/CONTRIBUTING.md)
+
+- [OnTrack documentation](https://github.com/thoth-tech/documentation/tree/main/docs/OnTrack)
+
+- [Thoth Tech Documentation Website](https://main--strong-fairy-c1bde1.netlify.app/products/ontrack/example/)
 
 ## Completed Deliverables
 
-**_Provide a list of product features and/or deliverables, including a brief description, that have
-been completed this trimester. Please relate these deliverables to their corresponding Trello cards
-if this is possible._**
+This trimester, the following key deliverables were completed:
+- Bug Fixes and Urgent Enhancements
 
-**_Only include features and/or deliverables that are fully complete – incomplete work is to be
-listed in section 4. Roadmap._**
+  - Chat Markdown Rendering Bug: Successfully fixed an issue where markdown was not rendering properly in chat, enhancing the user experience for students and staff.
+  - Documentation Enhancements: Completed and merged documentation updates for both general and specific API pages. This includes contributions from team members on various entities such as requirement sets and course entities, directly supporting the goal of comprehensive documentation for OnTrack's evolving features.
 
-**_Make sure to explicitly highlight which features and/or deliverables where completed this
-Trimester and which team member(s) were primarily responsible for their completion._**
+- Frontend Enhancements and Component Migrations: Several components have been successfully migrated to Angular 17 and TypeScript, including the comments-modal, group set manager, and unit-ilo-edit-modal. Additionally, enhancements were made to PDF handling and user interface elements like the grade-task-modal and grade-icon components, contributing to the ongoing frontend migration and user interface improvement objectives.
+  - Ongoing Frontend Migration: The migration of legacy CoffeeScript components to TypeScript/Angular continues, with files such as timeout.coffee and grade-task-modal.coffee currently under peer review. This aligns with our aim to complete at least 10% of the existing frontend migration backlog this trimester.
+  - Overlay Component Creation: Developed a new overlay component to provide additional information about units to users, enhancing the user interface and experience. This feature is currently under review.
 
-**_Also, please indicate where each of the completed deliverables can be found (E.g., MS Teams,
-GitHub repository) and make sure to include a URL link to the resource._**
+- CourseFlow:
+
+  - CourseMap Base Page Development: Developed the base page for CourseMap, laying the groundwork for further enhancements and integrations planned for the CourseFlow component.
+  - Backend Requirements Implementation: Completed backend requirements for several critical entities, including the requirement set, course, and course map unit entities. These efforts are part of the overarching aim to enhance CourseFlow functionality and ensure robust backend support for new and existing features.
+  - CourseFlow Enhancements: Several enhancements are under review, including adding authentication to endpoints and integrating new UI elements. These efforts are part of the continued development of the CourseFlow API and its related functionalities.
+
+- JPLAG - jplag software plagiarism has been implemented as a containerised batch process. Frontend and backend additions have been made to allow plagiarism report downloads.
+- Dev Container Image Downsizing - LaTex and MariaDB have been moved into their own containers; reducing rebuild time of the main container significantly
+- Nginx - an nginx container has been created to utilise reverse proxying, allowing localhost:4200 and localhost:3000 to be accessed at localhost/ and localhost/api
+
+- Ongoing and Pending Tasks:
+
+  - Group Set Manager Migration: The migration of the group set manager component to the latest framework is in progress.
+  - Unit Group Set Editor Migration: The migration of the unit-group-set-editor.coffee file continues to move forward, aligning with our frontend migration goals.
+  - Tasks in Peer Review: Detailed documentation and API operations for units and task definitions, along with the migration of several legacy components, are currently under peer review. This work supports the ongoing documentation efforts and frontend migration initiatives.
+
+| Name | Task Name | Task Attachment |
+|---|---|---|
+| Amos Saji | Migration: group set manager | https://github.com/thoth-tech/documentation/pull/549<br>https://github.com/thoth-tech/doubtfire-web/pull/244 |
+| Amrith Jayadeep | Migration: group set selector | https://github.com/thoth-tech/documentation/pull/544/commits/6789b275af1deb663877b8953f229c5277582e59<br>https://github.com/thoth-tech/doubtfire-web/pull/239 |
+| Anirudh Nellippilli Joshi | Documentation: grade-task-modal component review | https://github.com/thoth-tech/documentation/pull/525 |
+| Anirudh Nellippilli Joshi | migrate file-uploader.coffee | https://github.com/thoth-tech/documentation/pull/535/files<br>https://github.com/thoth-tech/doubtfire-web/pull/246/commits/28a77cd0821ce9b66a43c47741cda35c39132fd2 |
+| Anirudh Nellippilli Joshi | Migration: group set selector | https://github.com/thoth-tech/documentation/pull/544/commits/6789b275af1deb663877b8953f229c5277582e59<br>https://github.com/thoth-tech/doubtfire-web/pull/239 |
+| Anirudh Nellippilli Joshi | Migration: group set manager | https://github.com/thoth-tech/documentation/pull/549<br>https://github.com/thoth-tech/doubtfire-web/pull/244 |
+| Anirudh Nellippilli Joshi | Migration: csv-result-modal.coffee | https://github.com/thoth-tech/documentation/pull/524#issue-2441710229<br>https://github.com/thoth-tech/doubtfire-web/pull/248/commits/b0c23fa084e074feec9cfd4618d2e2ff9412f2c7 |
+| Anirudh Nellippilli Joshi | Onboarding Juniors Guidence | https://github.com/thoth-tech/documentation/pull/551 |
+| Atharv Sandip Bhandare | Migration: comments-modal | https://github.com/doubtfire-lms/doubtfire-web/pull/869<br>https://github.com/thoth-tech/documentation/pull/519<br>https://github.com/thoth-tech/doubtfire-web/pull/218 |
+| Atharv Sandip Bhandare | Write documentation for JPLAG | https://github.com/thoth-tech/documentation/pull/528<br>https://www.github.com/JackSCarroll/documentation/blob/JplagDocs/docs/OnTrack/JPlag/Jplag-Feasibility-Document.md |
+| Atharv Sandip Bhandare | Migration: Component task-ilo-alignment-modal.coffee |  |
+| Atharv Sandip Bhandare | Add user UI does not allow user creation | https://github.com/thoth-tech/documentation/pull/556<br>https://github.com/thoth-tech/doubtfire-web/pull/254 |
+| Atharv Sandip Bhandare | Migration: unit-staff-editor.coffee | https://github.com/thoth-tech/documentation/pull/543<br>https://github.com/thoth-tech/doubtfire-web/pull/235 |
+| Atharv Sandip Bhandare | JPLAG UI documentation | https://github.com/thoth-tech/documentation/pull/555 |
+| Bruce Wang | Migration: comments-modal | https://github.com/doubtfire-lms/doubtfire-web/pull/869<br>https://github.com/thoth-tech/documentation/pull/519<br>https://github.com/thoth-tech/doubtfire-web/pull/218 |
+| Bruce Wang | Documentation: grade-task-modal component review | https://github.com/thoth-tech/documentation/pull/525 |
+| Bruce Wang | migrate file-uploader.coffee | https://github.com/thoth-tech/documentation/pull/535/files<br>https://github.com/thoth-tech/doubtfire-web/pull/246/commits/28a77cd0821ce9b66a43c47741cda35c39132fd2 |
+| Bruce Wang | Migration: grade-icon.coffee | https://github.com/thoth-tech/doubtfire-web/pull/231 |
+| Bruce Wang | Migrate analytics.coffee | https://github.com/thoth-tech/doubtfire-web/pull/256 |
+| Bruce Wang | Migrate viewer.coffee | https://github.com/thoth-tech/doubtfire-web/pull/251 |
+| Bruce Wang | Migration: timeout.coffee | https://github.com/doubtfire-lms/doubtfire-web/pull/868/commits/6a965ef9927837bd3e9e77d27b035473cd974215<br>https://github.com/thoth-tech/doubtfire-web/pull/230 |
+| Bruce Wang | Migration: unauthorised.coffee | https://github.com/thoth-tech/doubtfire-web/pull/257 |
+| Bruce Wang | Migration: unit-staff-editor.coffee | https://github.com/thoth-tech/documentation/pull/543<br>https://github.com/thoth-tech/doubtfire-web/pull/235 |
+| Bruce Wang | Migration: csv-result-modal.coffee | https://github.com/thoth-tech/documentation/pull/524#issue-2441710229<br>https://github.com/thoth-tech/doubtfire-web/pull/248/commits/b0c23fa084e074feec9cfd4618d2e2ff9412f2c7 |
+| Bruce Wang | Onboarding Juniors Guidence | https://github.com/thoth-tech/documentation/pull/551 |
+| Eliya Geerlings | Migration: comments-modal | https://github.com/doubtfire-lms/doubtfire-web/pull/869<br>https://github.com/thoth-tech/documentation/pull/519<br>https://github.com/thoth-tech/doubtfire-web/pull/218 |
+| Eliya Geerlings | Autoload PDFs on page 2 when viewing student submissions | https://github.com/thoth-tech/doubtfire-web/pull/232 |
+| Eliya Geerlings | Fix jupyter notebook latex rake test | https://github.com/doubtfire-lms/doubtfire-api/pull/444 |
+| Eliya Geerlings | Fix up existing confirmation-modal migration | https://github.com/doubtfire-lms/doubtfire-web/pull/870 |
+| Eliya Geerlings | Latex docker downsizing: Creation of feasibility document | https://github.com/thoth-tech/documentation/pull/534 |
+| Eliya Geerlings | Latex docker downsizing: Implementation | https://github.com/thoth-tech/doubtfire-api/pull/38<br>https://github.com/thoth-tech/doubtfire-deploy/pull/13 |
+| Eliya Geerlings | Persistent PDF zoom levels when selecting between different task submissions | https://github.com/thoth-tech/doubtfire-web/pull/228 |
+| Eliya Geerlings | Migration: unit-staff-editor.coffee | https://github.com/thoth-tech/documentation/pull/543<br>https://github.com/thoth-tech/doubtfire-web/pull/235 |
+| Ivan Justin | Latex docker downsizing: Creation of feasibility document | https://github.com/thoth-tech/documentation/pull/534 |
+| Ivan Justin | Chat markdown not rendering properly bug | https://github.com/thoth-tech/doubtfire-web/pull/250 |
+| Ivan Justin | Migration: Unit-ilo-edit-modal.coffee | https://github.com/thoth-tech/documentation/pull/526<br>https://github.com/thoth-tech/doubtfire-web/pull/226 |
+| Jack Shinners Carroll | Write documentation for JPLAG | https://github.com/thoth-tech/documentation/pull/528<br>https://www.github.com/JackSCarroll/documentation/blob/JplagDocs/docs/OnTrack/JPlag/Jplag-Feasibility-Document.md |
+| Jack Shinners Carroll | Documentation: grade-task-modal component review | https://github.com/thoth-tech/documentation/pull/525 |
+| Jack Shinners Carroll | Latex docker downsizing: Creation of feasibility document | https://github.com/thoth-tech/documentation/pull/534 |
+| Jack Shinners Carroll | Latex docker downsizing: Implementation | https://github.com/thoth-tech/doubtfire-api/pull/38<br>https://github.com/thoth-tech/doubtfire-deploy/pull/13 |
+| Jack Shinners Carroll | Migrate analytics.coffee | https://github.com/thoth-tech/doubtfire-web/pull/256 |
+| Jack Shinners Carroll | Migration: unit-staff-editor.coffee | https://github.com/thoth-tech/documentation/pull/543<br>https://github.com/thoth-tech/doubtfire-web/pull/235 |
+| Jack Shinners Carroll | Add JPLAG frontend | https://github.com/doubtfire-lms/doubtfire-web/pull/873 |
+| Jack Shinners Carroll | Alter JPLAG api code | https://github.com/doubtfire-lms/doubtfire-api/pull/447 |
+| Jack Shinners Carroll | Create JPLAG Container | https://github.com/doubtfire-lms/doubtfire-deploy/pull/28 |
+| Jack Shinners Carroll | JPLAG UI documentation | https://github.com/thoth-tech/documentation/pull/555 |
+| Jake Mansfield | Document the below API pages in detail within the website - set 5 | https://github.com/thoth-tech/doubtfire-astro/pull/9 |
+| Jake Mansfield | Implement the backend requirements for the course entity. | https://github.com/thoth-tech/doubtfire-api/pull/34 |
+| Jake Mansfield | Implement the backend requirements for the course map entity. | https://github.com/thoth-tech/doubtfire-api/pull/35 |
+| Jake Mansfield | Implement the backend requirements for the course map unit entity. | https://github.com/thoth-tech/doubtfire-api/pull/35 |
+| Jake Mansfield | Implement the backend requirements for the requirement set entity. | https://github.com/thoth-tech/doubtfire-api/pull/37 |
+| Jake Mansfield | Implement the backend requirements for the specialization entity. |  |
+| Jake Mansfield | Add detailed operations for units API (task_definitions -tii_group_attachments ) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/12 |
+| Jake Mansfield | Add Authentication to the Courseflow endpoints |  |
+| Jake Mansfield | Add button to Courseflow main component | https://github.com/thoth-tech/doubtfire-web/pull/227 |
+| Jake Mansfield | Created coursemap base page | https://github.com/thoth-tech/doubtfire-web/pull/233 |
+| Jake Mansfield | Add detailed operations for units API (task_definitions) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/12 |
+| Jake Mansfield | Add detailed operations for units API (group set - group ID) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/10 |
+| Jake Mansfield | Add detailed operations for units API (group set - group csv) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/10 |
+| Jake Mansfield | Add detailed operations for units API (task_definitions - task_assessment_resources ) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/13 |
+| Jake Mansfield | Document the operations units API - Tutorial Streams | https://github.com/thoth-tech/doubtfire-astro/pull/10 |
+| Jake Mansfield | Ensure Unit Definition model satisfies all requirements (Phase 2) |  |
+| Jake Mansfield | Create appropriate testing files for the Unit Definition entity (Phase 1) | https://github.com/thoth-tech/doubtfire-api/pull/42 |
+| Jake Mansfield | Create dummy data for a specific course for the front end to use (Phase 3) | https://github.com/thoth-tech/doubtfire-api/pull/43 |
+| Jake Mansfield | Implement the backend requirements for the Unit Definition entity (phase 1) | https://github.com/thoth-tech/doubtfire-api/pull/42 |
+| Jake Mansfield | Make a Plan for Courseflow for T2 |  |
+| Jake Mansfield | Migrate analytics.coffee | https://github.com/thoth-tech/doubtfire-web/pull/256 |
+| Jake Mansfield | Migrate the existing Unit table to be compatible with Unit Definition (Phase 4) | https://github.com/thoth-tech/doubtfire-api/pull/41 |
+| Jake Mansfield | Migration: timeout.coffee | https://github.com/doubtfire-lms/doubtfire-web/pull/868/commits/6a965ef9927837bd3e9e77d27b035473cd974215<br>https://github.com/thoth-tech/doubtfire-web/pull/230 |
+| Jake Mansfield | Courseflow Documentation Requirement Analysis | https://github.com/thoth-tech/doubtfire-astro/pull/14 |
+| Jake Mansfield | Onboarding Juniors Guidence | https://github.com/thoth-tech/documentation/pull/551 |
+| Minu Nediyapalackal Sunil | Document the below API pages in detail within the website - set 5 | https://github.com/thoth-tech/doubtfire-astro/pull/9 |
+| Minu Nediyapalackal Sunil | Add detailed operations for units API (task_definitions -tii_group_attachments ) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/12 |
+| Minu Nediyapalackal Sunil | Add detailed operations for units API (task_definitions) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/12 |
+| Minu Nediyapalackal Sunil | Create diagram of coursemap page | https://github.com/thoth-tech/doubtfire-astro/pull/11 |
+| Minu Nediyapalackal Sunil | Add detailed operations for units API (group set - group ID) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/10 |
+| Minu Nediyapalackal Sunil | Add detailed operations for units API (group set - group csv) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/10 |
+| Minu Nediyapalackal Sunil | Add detailed operations for units API (task_definitions - task_assessment_resources ) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/13 |
+| Minu Nediyapalackal Sunil | Document the operations units API - Tutorial Streams | https://github.com/thoth-tech/doubtfire-astro/pull/10 |
+| Minu Nediyapalackal Sunil | Pull the API docs from last trimester into the new folder structure | https://github.com/thoth-tech/doubtfire-astro/pull/15 |
+| Minu Nediyapalackal Sunil | Courseflow Documentation Requirement Analysis | https://github.com/thoth-tech/doubtfire-astro/pull/14 |
+| Muhammad Danial | Migration: Component task-ilo-alignment-modal.coffee |  |
+| Sam Rolfe | Implement the backend requirements for the course entity. | https://github.com/thoth-tech/doubtfire-api/pull/34 |
+| Sam Rolfe | Implement the backend requirements for the course map entity. | https://github.com/thoth-tech/doubtfire-api/pull/35 |
+| Sam Rolfe | Implement the backend requirements for the course map unit entity. | https://github.com/thoth-tech/doubtfire-api/pull/35 |
+| Sam Rolfe | Implement the backend requirements for the requirement set entity. | https://github.com/thoth-tech/doubtfire-api/pull/37 |
+| Sam Rolfe | Implement the backend requirements for the specialization entity. |  |
+| Sam Rolfe | Add Authentication to the Courseflow endpoints |  |
+| Sam Rolfe | Add button to Courseflow main component | https://github.com/thoth-tech/doubtfire-web/pull/227 |
+| Sam Rolfe | Created coursemap base page | https://github.com/thoth-tech/doubtfire-web/pull/233 |
+| Sam Rolfe | Create a list of tasks for CourseMap FE |  |
+| Sam Rolfe | Create diagram of coursemap page | https://github.com/thoth-tech/doubtfire-astro/pull/11 |
+| Sam Rolfe | Ensure Unit Definition model satisfies all requirements (Phase 2) |  |
+| Sam Rolfe | Migration: grade-icon.coffee | https://github.com/thoth-tech/doubtfire-web/pull/231 |
+| Sam Rolfe | Add ability to add elective units to the unit pool (phase 2) | https://github.com/thoth-tech/doubtfire-web/pull/236 |
+| Sam Rolfe | Create appropriate testing files for the Unit Definition entity (Phase 1) | https://github.com/thoth-tech/doubtfire-api/pull/42 |
+| Sam Rolfe | Create dummy data for a specific course for the front end to use (Phase 3) | https://github.com/thoth-tech/doubtfire-api/pull/43 |
+| Sam Rolfe | Create services and models for courseflow back end components. | https://github.com/thoth-tech/doubtfire-web/pull/252 |
+| Sam Rolfe | Implement the backend requirements for the Unit Definition entity (phase 1) | https://github.com/thoth-tech/doubtfire-api/pull/42 |
+| Sam Rolfe | Migrate the existing Unit table to be compatible with Unit Definition (Phase 4) | https://github.com/thoth-tech/doubtfire-api/pull/41 |
+| Sam Rolfe | Populate remaining units container with relevant units from course (phase 2) | https://github.com/thoth-tech/doubtfire-web/pull/253 |
+| Sam Rolfe | Courseflow Documentation Requirement Analysis | https://github.com/thoth-tech/doubtfire-astro/pull/14 |
+| Shen Tian | Add button to Courseflow main component | https://github.com/thoth-tech/doubtfire-web/pull/227 |
+| Shen Tian | Created coursemap base page | https://github.com/thoth-tech/doubtfire-web/pull/233 |
+| Shen Tian | Create services and models for courseflow back end components. | https://github.com/thoth-tech/doubtfire-web/pull/252 |
+| Shen Tian | Migrate analytics.coffee | https://github.com/thoth-tech/doubtfire-web/pull/256 |
+| Shen Tian | Migration: timeout.coffee | https://github.com/doubtfire-lms/doubtfire-web/pull/868/commits/6a965ef9927837bd3e9e77d27b035473cd974215<br>https://github.com/thoth-tech/doubtfire-web/pull/230 |
+| Shen Tian | Populate remaining units container with relevant units from course (phase 2) | https://github.com/thoth-tech/doubtfire-web/pull/253 |
+| Shyama Chandrashekaran Pillai | Document the below API pages in detail within the website - set 5 | https://github.com/thoth-tech/doubtfire-astro/pull/9 |
+| Shyama Chandrashekaran Pillai | Add detailed operations for units API (task_definitions -tii_group_attachments ) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/12 |
+| Shyama Chandrashekaran Pillai | Add detailed operations for units API (task_definitions) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/12 |
+| Shyama Chandrashekaran Pillai | Add detailed operations for units API (group set - group ID) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/10 |
+| Shyama Chandrashekaran Pillai | Add detailed operations for units API (group set - group csv) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/10 |
+| Shyama Chandrashekaran Pillai | Add detailed operations for units API (task_definitions - task_assessment_resources ) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/13 |
+| Shyama Chandrashekaran Pillai | Document the operations units API - Tutorial Streams | https://github.com/thoth-tech/doubtfire-astro/pull/10 |
+| Shyama Chandrashekaran Pillai | Pull the API docs from last trimester into the new folder structure | https://github.com/thoth-tech/doubtfire-astro/pull/15 |
+| Thuy Tien Hoa | migrate file-uploader.coffee | https://github.com/thoth-tech/documentation/pull/535/files<br>https://github.com/thoth-tech/doubtfire-web/pull/246/commits/28a77cd0821ce9b66a43c47741cda35c39132fd2 |
+| Thuy Tien Hoa | Migration: Component task-ilo-alignment-modal.coffee |  |
+| Thuy Tien Hoa | Migration: grade-icon.coffee | https://github.com/thoth-tech/doubtfire-web/pull/231 |
+| Thuy Tien Hoa | Add ability to add elective units to the unit pool (phase 2) | https://github.com/thoth-tech/doubtfire-web/pull/236 |
+| Thuy Tien Hoa | Migrate viewer.coffee | https://github.com/thoth-tech/doubtfire-web/pull/251 |
+
 
 ## Roadmap
 
-**_Provide a list of features and/or deliverables that are planned to be completed in the project’s
-future (E.g., next trimester or two trimesters in the future)._**
+The following are areas of OnTrack students may choose to work on in Trimester 3, 2024: 
+- Frontend Migrations – Angular.js and CoffeeScript to Angular and TypeScript 
+- Urgent Enhancements, Improvements, and Bugs 
+- Documentation Website – Enhance and add missing endpoint documentation 
+- Peer reviews for previous pull requests and contributions 
+- Features in development: 
+  - Tutor Feedback Enhancement – feedback_api will require further development to support "criterion" or options 
+  - CourseFlow – remaining backend entities and frontend 
+  - Incorporate Multiple Organizations on Single OnTrack Server 
+  - Authentication Module 
+  - Tutor Times 
+  - Incorporate Content in OnTrack 
+  - Staff Grant Extensions 
+  - Panopto Video Integration
 
-**_Please also include features and/or deliverables that are in progress but not yet complete. The
-state of each incomplete work item should be briefly described._**
-
-**_This section should pair up perfectly with your Roadmap on Trello. Make sure both this section
-and your Trello Roadmap are updated upon handing over the project._**
 
 ## Open Issues
 
-**_List all of the issues and challenges that the team is still facing, and any progress that has
-been made so far to address them._**
+These are some of the common challenges we have faced in Trimester 2, 2024 and may 
+continue to face in the future: 
+1. Knowledge gap in using Git and GitHub – Team members are required to upskill in 
+Git before starting on their assigned tasks as this is the primary tool used within the 
+team to manage code and contributions. The Git and GitHub training website and 
+demo videos attached in this document are some of the great resources available in 
+capstone for this purpose. 
 
-**_The purpose of this section is to flag things that may interfere with the future teams’s ability
-to work on the project, and to give advice as to how these issues could be fixed in future._**
+2. Unsatisfactory pull request reviews – Reviews must not be made through 
+generational AI tools or just indicate how many commits have been made and what 
+has changed. Instead, it must evaluate the syntax, logic, and output of the code. 
+Please refer to section Task Review for more details and this past review for an 
+example of a correct pull request review.
 
-**_Here are some examples of Open Issues:_**
-
-- **_Software compatibility issues that arise when members of the team use different version of
-  software._**
-
-- **_An unclear process for reviewing completed tasks on Trello, leading to a backlog of work that
-  is sitting somewhere between unfinished and finished._**
-
-- **_An essential team member had to leave the team with no notice, and there is currently a skill
-  void in their place._**
 
 ## Lessons Learned
 
-**_List key lessons learned from the project this Trimester and what you recommend future teams
-should do differently. You must also explain why you believe this to be the case._**
+This trimester, the traditional weekly Help Hub sessions, typically held on Thursdays and led by senior team members, experienced a noticeable decrease in attendance. 
 
-**_In particular, try to think about processes or technology that you would recommend be changed in
-the future; things that an uniformed team may mistake for a good idea at first, but later learn to
-be ineffective._**
+To adapt, student leads focused on driving engagement and addressing queries through the OnTrack public Teams channel, encouraging team members to share their experiences and solutions. 
 
-**_For example, maybe your team had challenges communicating their progress during panel
-presentations, but towards the end of the Trimester, you developed an effective method for conveying
-progress accurately. This would be a great thing to talk about._**
+While this approach has been effective for accommodating team members' diverse schedules, we recommend exploring new ways to host Help Hub sessions alongside asynchronous Teams posts. Offering multiple formats for assistance could provide additional opportunities for leadership development.
+
+Future student leads may consider using polls or forms to determine the most suitable time for sessions based on team availability. Additionally, offering a variety of session formats could help not only resolve existing problems but also guide team members in making contributions to specific areas.
+
 
 ## Product Development Life Cycle
 
-**_This section should explain how your team undertakes work. It is an attempt to codify your
-processes so that they can be understood and followed by new members._**
+We continue to use Agile methodologies to deliver updates and new features for OnTrack. 
 
-**_As a team, you may not have clearly defined your Product Development Life Cycle, and that’s okay!
-This is an excellent opportunity to explain the work methods, processes and habits that your team
-has been developing intuitively over the course of the Trimester._**
+Our approach includes 2-week sprints focused on completing tasks, and weekly stand-up meetings to assess progress, share updates, discuss roadblocks, and assign new tasks via Teams Planner cards.	
 
 ### New Tasks
 
-**_How are new tasks created?_**
+New tasks are assigned by the project mentor during the weekly stand-up meetings. Once you are assigned a task, be sure to assign yourself to the corresponding Teams Planner card and attach your draft or completed pull request when you begin work.
 
-**_How does your team form new ideas about work that needs to be done and turn those ideas into
-distinct, actionable tasks?_**
+If you have an idea for a new feature or enhancement, schedule a meeting with the project mentor to discuss it. Upon approval, create a new card or backlog column in Teams Planner to track the task. If the feature is large, start researching the benefits and challenges, and create a Spike document, which can be committed to the documentation repository. Spike templates are available in the documentation repository.
 
-**_For example, maybe your team meets at the start of each week, reviews your progress in your
-current sprint, makes a big long list of everything to be done, and then converts that list into a
-series of cards on Trello. This process would be something you talk about in this section._**
 
 ### Definition of Done
 
-**_How does the team know when a task is done?_**
+A task is considered complete once it has been fully tested, functions as expected, and is documented in a well-organized pull request. 
 
-**_What are criteria for a successfully completed task?_**
-
-**_This may seem obvious, but it in a software development project having a definition of done can
-ensure a certain standard of work that holds all team members accountable. For example, messy,
-clunky code that “just works” is very different to clean, well-commented code that works AND is easy
-to understand. Which would you prefer to be your team’s definition of done?_**
+The task must also undergo peer review and be approved by your mentor. Ensure that the corresponding Teams Planner card is updated, and keep in communication with your reviewer and mentor until your contribution is merged into the upstream doubtfire-lms repository.
 
 ### Task Review
 
-**_Who reviews a task once it’s been marked as done?_**
+Each pull request requires a mandatory peer review before a mentor review. After creating the pull request, contact a teammate to review it. 
 
-**_How does the team ensure that all work is looked over before it’s contributed to the main
-repository or working prototype?_**
+Tag them as the reviewer in both the Teams Planner card and the GitHub pull request. As a reviewer, ensure that you test the code by pulling the changes locally and reviewing the syntax, logic, and output. 
 
-**_If you don’t currently have a system for reviewing tasks, make sure to flag this for next
-trimester’s team to work on as soon as they begin._**
+If any changes are needed, update the contribution and notify the reviewer. Once the updates are made, the pull request will be automatically updated.
+
+After the peer review is complete, notify the mentor for their review. Once approved, you can submit the pull request to the upstream repository for the final review.
 
 ### Testing
 
-**_How do you test your product to see if it does what it was originally planned to do?_**
+For frontend changes, test the functionality in the browser or run specification tests as needed. For backend changes, use browser interactions or tools like Postman to test functionality. Additionally, GitHub CI Actions will run tests automatically when changes are pushed.
 
-**_If your product isn’t heavily comprised of software, how can you build in testing to your team’s
-product development life cycle to ensure that “stuff works as it should”?_**
+In the pull request template, include detailed instructions on how others can test your changes. Always provide before-and-after screenshots to show the outcome of your modifications.
 
 ### Branching Strategy
 
-**_How does your team currently use GitHub repository?_**
+When starting a new contribution, fork all three thoth-tech repositories (deploy, web, and API) to your GitHub profile. 
 
-**_What rules for commits and pull-requests have been put in place so far?_**
+Create a new branch from the development branch of the relevant repository. For example, for frontend migrations, you would create a branch from the doubtfire-web development branch. 
 
-**_How should new members use GitHub repository in a way that doesn’t result in all commits being
-dumped in a messy Master branch?_**
-
-**_Again, if your team hasn’t formally discussed a branching strategy, this a great opportunity to
-describe what your current system is and how it could be improved going forward._**
-
-**_For example, if you currently have all members of the team commit directly to the Master branch,
-can you recommend any tutorials for the future team to review that might lead to a cleaner, more
-organised and more efficient repository?_**
+Follow the Branch Prefixes and Commit Message Format in the Contributing Guide when naming branches and creating commits.
 
 ## Product Architecture
 
-### UML Diagram
-
-**_Provide a high-level map of the project showing all of its components and how they relate to each
-other._**
-
-**_An example of this is a UML diagram. Don’t feel that you need to follow any particular UML
-paradigm, so long as your diagram is informative and easy to read._**
-
-**_Resources like [Lucidchart](https://www.lucidchart.com/) and [Draw.io](https://app.diagrams.net/)
-are incredibly useful for this._**
+OnTrack is built using four main components:
+1.	Frontend Client: Responsible for user interactions.
+2.	Backend API: Handles requests and serves data.
+3.	Database: Stores application data.
+4.	Deployment Infrastructure: Ensures that OnTrack is properly deployed and maintained
 
 ### Tech Stack
 
-**_List all of the software and hardware utilised in this project. For each tool, give a short
-description and explain why it was chosen._**
+- Frontend: Currently being migrated from AngularJS and CoffeeScript to Angular 17 and TypeScript. The stack also includes HTML, SCSS, and Tailwind CSS.
+- Backend: Built on Ruby on Rails with the Grape Framework. It uses MariaDB as the database engine. Docker is used for deployment and local development.
 
 ## Source Code
 
-**_All source code should be found on your team’s GitHub repository, unless your project has unique
-constraints that require you to store your code elsewhere. This includes any resources (e.g.,
-wireframes, designs) that need to be transferred over to the new team as well._**
-
-**_Please provide all of the necessary instructions to accessing your source code. This includes
-URLs of online hosted repositories, links to any software dependencies, database components, or
-external libraries._**
-
-**_If your code is hosted on a server external to Deakin, make sure to also transfer digital copies
-of your code over to your client and the next team as a backup._**
+The following are the relevant GitHub repositories to this project: 
+1. Deployment - https://github.com/thoth-tech/doubtfire-deploy 
+2. Frontend - https://github.com/thoth-tech/doubtfire-web 
+3. Backend - https://github.com/thoth-tech/doubtfire-api 
+4. OnTrack Documentation Website - https://github.com/thoth-tech/doubtfire-astro 
+5. Documentation (OnTrack feature documentation, frontend migration component 
+reviews, etc.) - https://github.com/thoth-tech/documentation/tree/main/docs/OnTrack 
+6. Templates (Spikes, component reviews) - https://github.com/thoth-tech/documentation/tree/main/docs/Templates 
+7. CourseFlow documentation - https://github.com/thoth-tech/ThothTech-Documentation-Website/tree/main/src/content/docs/products/courseflow 
+Note: Any pull requests must first be made to the thoth-tech forks of the repositories, not 
+the upstream doubtfire-lms ones. 
 
 ## Login Credentials
 
-**_Please provide all credentials (usernames and passwords) for any of the resources, websites, or
-platforms being utilised for this project. Please make sure that none of these credentials share
-passwords or usernames with any of your team’s private credentials._**
+Refer to the Working with Dev Containers section of the [Contributing Guide](https://github.com/thoth-tech/doubtfire-deploy/blob/main/CONTRIBUTING.md) for 
+authentication credentials for locally deployed OnTrack. 
 
-## Other Relevant Information
+## Show Case Video
 
-**_This section is an invitation to add any additional information that you think will help to
-onboard new members. If you choose not to add any extra sections to this document, this section
-should be deleted._**
-
-**_Please edit this entire document as you see fit. If you think adding 5 extra sections that aren’t
-listed here will help to communicate the nuances of your project to future members, go ahead! We
-want you to take full ownership of your handover and this document._**
-
-## Appendices
-
-**_Include all relevant artefacts delivered during the course of the project. Anything that will
-paint a clearer picture of your team’s progress this trimester, the things that informed decisions,
-and the evolution of your product._**
-
-**_Please also include a link to your team’s showcase video._**
+TODO : Add showcase video link
 
 # Project 2: SplashKit
 
@@ -418,7 +508,7 @@ showcasing what can be achieved with the framework.
 
 ### SplashKit Website
 
-` Powered by the Starlight framework, the revamped SplashKit website aims to offer an enriched and
+Powered by the Starlight framework, the revamped SplashKit website aims to offer an enriched and
 user-friendly experience for developers and learners. It will host existing tutorials and guides,
 providing a central hub for exploring and learning about SplashKit.
 
