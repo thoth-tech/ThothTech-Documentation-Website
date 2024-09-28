@@ -487,7 +487,8 @@ This trimester, the following deliverables were completed:
 
 ### SplashKit Website
 
-- Websit Improvements
+- Website Improvements
+  - Begun development of an 'Onboarding Hub'
   - Resolved issues with Dev Container
   - Fixed the guides index page and updated broken links
   - Improved Troubleshooting section
@@ -522,11 +523,11 @@ This trimester, the following deliverables were completed:
 
 ### SplashKit Online
 
+- Automated installation of pre-built files
 - Interface Improvements
   - Fixed scrollbar jumping to top when switching code files
   - Implemented message to prompt user for action to enable audio
   - Added Interface Minification option
-  - Automated installation of pre-built files
 
 ### Game Development
 
@@ -734,46 +735,193 @@ This trimester, the following deliverables were completed:
 
 ## Roadmap
 
-**_Provide a list of features and/or deliverables that are planned to be completed in the project’s
-future (E.g., next trimester or two trimesters in the future)._**
+### Arcade Machine
 
-**_Please also include features and/or deliverables that are in progress but not yet complete. The
-state of each incomplete work item should be briefly described._**
+- Modify the Emulation Station menu to trigger game download scripts and add additional modes:
+  - Kiosk Mode: Show only published games, ideal for events.
+  - Normal Mode: Display both published and test games.
+- Implement Voting System: Integrate a voting system to give significance to the star ranking
+  currently available on the machines.
+- Correct the C# compatibility for ARM, as .NET currently does not run correctly in the emulated PI
+  environment used for C++ games.
+- Implement versioning for compiled games to manage updates effectively.
 
-**_This section should pair up perfectly with your Roadmap on Trello. Make sure both this section
-and your Trello Roadmap are updated upon handing over the project._**
+### Thoth-Tech Documentation Website
+
+### SplashKit.io Website
+
+- SplashKit.io Improvements
+
+  - Improve API Reference
+    - Continue to add usage examples for SplashKit API
+    - Integrate live demos to provide interactive examples
+    - Add mechanism for the user to globally switch between programming languages in the API
+      reference
+    - Produce concise videos to support the documentation
+    - Enhance documentation with more interactive and user-friendly documentation elements
+  - Contributor Resources
+    - Develop resources to support community contributions
+    - Including detailed guides, best practices and an interactive forum
+
+- Thoth Tech Documentation Website
+  - Improve Onboarding Hub
+    - Continue to expand and refine the Onbording hub
+    - Create relevant guides, checklists and tutorials for all stages of the project documentation
+      and development lifecycle
+    - Develop detailing Onboarding paths to guide new students
+    - Implement a comprehensive upskilling section, containing curated learning materials
+
+### SplashKit Tutorials
+
+- Continue Reviewing Current Tutorials:
+  - Compile and Run Tutorial Code: Ensure all example code works correctly, fixing any issues (e.g.,
+    SplashKit Camera). Ensure they all use top level statements for C#, and include C++ and python
+    code.
+  - Proof-read Content: Verify that the wording is clear and comprehensible.
+  - Add Python Code Tabs: Include Python code examples in any tutorials currently missing them.
+- Expand and Update Tutorials:
+  - Plan and develop new tutorials to cover the full range of SplashKit functionality.
+  - Develop a wide range of tutorials that cover all aspects of game development using SplashKit,
+    including advanced game mechanics, AI, physics, and more
+  - Continuously update existing tutorials to reflect changes in SplashKit.
+  - Develop advanced tutorials to cover more complex topics and advanced functionalities of
+    SplashKit.
+- Interactive Tutorial Platform
+  - Develop an interactive platform where users can follow tutorials and write code directly within
+    their browser, with real-time feedback and code execution
+- Create Introductory Level Games:
+  - Write short, introductory-level games using procedural C++/C#, with accompanying tutorials aimed
+    at SIT102 level beginner skills.
+  - Link to content on Programmers Guide to promote the use of pre-existing material.
+- Create SplashKit Online IDE Tutorial:
+  - Develop a tutorial series on creating a game using the SplashKit Online IDE.
+- Community Engagement and Feedback:
+  - Establish a system for receiving and incorporating feedback from the community to continuously
+    improve tutorials.
+  - Encourage contributions from the community and maintain a high standard for tutorial
+    submissions.
+
+### SplashKit Expansion
+
+- Deployment Packages:
+  - Brew Package: Finalise and fix existing Brew packages to ensure smooth installation and usage.
+- Test and Fix SplashKit Functionality:
+  - Identify and resolve bugs in SplashKit functionality
+  - Investigate bug regarding drawing text to second window. See
+    [Issue #177](https://github.com/splashkit/splashkit-core/issues/177) for more information.
+  - Investigate and implement Pascal compilation fix. See
+    [Issue #151](https://github.com/splashkit/splashkit-core/issues/151) and relevant Planner card
+    for more information.
+- Port SwinGame Functions to SplashKit:
+  - Review and port missing functions from SwinGames into SplashKit.
+- Investigate MinGW Compatibility
+  - There have been issues with using SplashKit in MinGW, this needs to be investigated.
+- Improve Raspberry Pi Functionality:
+  - Implement support for the Raspberry Pi 5, as current support only extends to Raspberry Pi 4B+.
+- Further Integration Testing
+  - Conduct detailed testing and bug fixing of SplashKit functionality.
+  - Ensure both procedural and OOP versions of each function are thoroughly tested and reliable.
+- Comprehensive Testing and Bug Fixing:
+  - Develop a comprehensive automated test suite to regularly test SplashKit functionality and
+    quickly identify and resolve new bugs. This ensures the framework remains stable and reliable as
+    new features are added and updates are made.
+    - Implement unit tests for functions without them
+    - Add tests for translator targets C#, Python and Pascal.
+      - Alternatively, investigate the difficulty of creating a translator module to automatically
+        translate the existing C++ tests into the translator target languages
+
+### SplashKit Online
+
+- Embed Lite Version into SplashKit Website:
+  - Develop and implement a "lite" version of SplashKit Online for embedding in the SplashKit
+    website to demonstrate code snippets and showcase functionalities.
+  - Focus on interface changes to integrate seamlessly with the website.
+  - Improve loading times and caching to ensure smooth performance.
+- Improve Project Management
+  - Project Handling: Add functionality for users to create, load, save, and delete projects within
+    the browser, managing multiple projects with unique names.
+  - Version Control: Integrate version control to track changes and revert to previous states as
+    needed.
+  - Export Project Builds: Enable exporting project builds as executables for C++ projects or single
+    HTML files for JavaScript projects for better portability and sharing.
+- Improve SplashKit Online Interface:
+  - Code Editing and REPL Functionality: Implement auto-complete for variable parameters, add
+    breakpoints, and create variable watch windows to improve coding and debugging.
+- Extended Language Support:
+  - C# Support: Continue to explore and add support for C# to broaden language options.
+  - Python Support: Investigate and add support for Python to accommodate additional user needs.
+- Advanced Project Features:
+  - Integrated Code Snippets: Develop functionality for users to save and reuse code snippets within
+    their projects.
+  - Collaborative Features: Consider implementing collaborative features for simultaneous project
+    work among multiple users.
+
+### Game Development
+
+- Establish Standardised Implementation Patterns:
+  - Enforce decoupling of data/functionality and decoupling of state/render patterns.
+  - Develop a prescribed implementation pattern to ensure consistency and quality across projects.
+- Develop a "10 Minute Game":
+  - Collaboratively plan and execute the development of a simple game (e.g., idle game, tower
+    defence, survivor.io-like).
+  - Ensure core game mechanics are implemented in the first sprint.
+  - Focus the latter half of the trimester on improving visual representation, adding "juice," and
+    implementing variations of core game elements (e.g., enemies, powerups, weapons).
+  - This approach ensures that core functionality is completed within a single trimester, with
+    additional features developed against a standardised interface that integrates with the core
+    game types.
+- Iterate on Prescribed Patterns:
+  - Adjust and refine the implementation pattern based on student feedback and experiences.
+- Generate Development Artifacts:
+  - Create documentation covering the implementation of discrete game systems (e.g., terrain
+    generation systems using IDW/random walk/noise, 2D light marching, threaded state update and
+    render patterns).
+- Improve Documentation:
+  - Existing games often lack adequate documentation. Good documentation can significantly increase
+    onboarding speed for new contributors.
+  - For completed games, create UML diagrams, overviews of gameplay mechanics, and guides for
+    creating levels in each game’s format.
+  - Address the discoverability of existing documentation and resources. Update README files to
+    reflect the current focus of work and ensure existing documentation is easy to find.
+- Complete Core Functionality of Incomplete Games:
+  - Focus on finishing significant core functionalities in games that are currently incomplete
+    (e.g., Sky Surge, Single Combat).
+- Extend Gameplay and Functionality of Completed Games:
+  - Enhance and expand the gameplay and features of games that are already completed, ensuring they
+    continue to engage and challenge players.
 
 ## Open Issues
 
-**_List all of the issues and challenges that the team is still facing, and any progress that has
-been made so far to address them._**
+The SplashKit team has faced several challenges over Trimester 2, 2024. These are detailed below:
 
-**_The purpose of this section is to flag things that may interfere with the future teams’s ability
-to work on the project, and to give advice as to how these issues could be fixed in future._**
+- Lack of Communication Between Project Groups
 
-**_Here are some examples of Open Issues:_**
+  - While individual communication channels, threads, and chats exist for each project, there is a
+    notable absence of overarching organization. The lack of regular meetings between teams or with
+    the entire company has led to confusion, poor coordination, and duplicated efforts. In some
+    cases, tasks were reassigned or duplicated by different team members without clear
+    communication, causing disruptions in workflow. This decentralized communication structure has
+    hindered collaboration across projects and created barriers to progress.
 
-- **_Software compatibility issues that arise when members of the team use different version of
-  software._**
+- Insufficient Onboarding Information and Lack of Codebase Exploration
 
-- **_An unclear process for reviewing completed tasks on Trello, leading to a backlog of work that
-  is sitting somewhere between unfinished and finished._**
+  - A recurring issue was the lack of exploration of the existing codebase by team members, both in
+    terms of finished and unfinished work. As a result, students often replicated previous efforts
+    instead of building on them, such as recreating Git contribution guides or developer environment
+    setup guides unnecessarily. This issue stems from insufficient documentation practices and a
+    lack of familiarity with existing resources, causing inefficiencies and wasted effort.
 
-- **_An essential team member had to leave the team with no notice, and there is currently a skill
-  void in their place._**
+- Team Members Performing Duplicate Work
+  - The combination of communication gaps and poor documentation has directly led to duplicated
+    work. Without a clear mechanism to track or share ongoing progress across teams, individuals
+    have inadvertently recreated work completed by others. This redundancy has slowed down
+    development and caused unnecessary strain on resources.
 
-## Lessons Learned
-
-**_List key lessons learned from the project this Trimester and what you recommend future teams
-should do differently. You must also explain why you believe this to be the case._**
-
-**_In particular, try to think about processes or technology that you would recommend be changed in
-the future; things that an uniformed team may mistake for a good idea at first, but later learn to
-be ineffective._**
-
-**_For example, maybe your team had challenges communicating their progress during panel
-presentations, but towards the end of the Trimester, you developed an effective method for conveying
-progress accurately. This would be a great thing to talk about._**
+A possible solution to these issues would be the implementation of regular cross-team meetings and
+company-wide updates. These would provide a clearer understanding of each team’s progress,
+facilitate better collaboration, and reduce duplicated efforts. Additionally, enhancing overall
+documentation and establishing more robust processes for tracking work across projects would help
+ensure that past work is utilized effectively moving forward.
 
 ## Product Development Life Cycle
 
