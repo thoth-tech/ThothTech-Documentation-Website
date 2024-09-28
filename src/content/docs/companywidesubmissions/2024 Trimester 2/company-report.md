@@ -129,17 +129,7 @@ List multiple if applicable.
 
 ## Project Overview
 
-Give an overview or ‘executive summary’ of the project, including any
-necessary high-level information for someone reading about your work for
-the first time. The following questions should help guide your thinking.
-
-What is the project about?
-
-What problem is the project solve?
-
-What are the aims of the project?
-
-What are the deliverables?
+OnTrack, also known as Doubtfire, is an innovative Learning Management System (LMS) tailored for skill-based course delivery. This platform facilitates the connection between tutors and students, primarily at Deakin University and other global institutions. The overarching goal of OnTrack is to enhance the educational experience by providing a structured, efficient, and interactive learning environment. This system aims to improve student engagement, learning outcomes, and the overall teaching and learning process, benefiting both students and educational staff. 
 
 ## User Manual
 
@@ -165,21 +155,12 @@ when a user navigates your product, run through a demo of that.
 
 ## Completed Deliverables
 
-Provide a list of product features and/or deliverables, including a
-brief description, that have been completed this trimester. Please
-relate these deliverables to their corresponding Trello cards if this is
-possible.
+This trimester, the following key deliverables were completed:
 
-Only include features and/or deliverables that are fully complete –
-incomplete work is to be listed in section 4. Roadmap.
-
-Make sure to explicitly highlight which features and/or deliverables
-where completed this Trimester and which team member(s) were primarily
-responsible for their completion.
-
-Also, please indicate where each of the completed deliverables can be
-found (E.g., MS Teams, GitHub repository) and make sure to include a URL
-link to the resource.
+- Frontend Migrations - several components have been migrated to Angular 17 and TypeScipt
+- JPLAG - jplag software plagiarism has been implemented as a containerised batch process. Frontend and backend additions have been made to allow plagiarism report downloads.
+- Dev Container Image Downsizing - LaTex and MariaDB have been moved into their own containers; reducing rebuild time of the main container significantly
+- Nginx - an nginx container has been created to utilise reverse proxying, allowing localhost:4200 and localhost:3000 to be accessed at localhost/ and localhost/api
 
 ## Roadmap
 
