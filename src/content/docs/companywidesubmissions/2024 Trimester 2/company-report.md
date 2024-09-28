@@ -403,31 +403,43 @@ C++, but it supports multiple languages, including C#, Python, Pascal, and JavaS
 
 ## Projects
 
-- Arcade Machines: The university has purchased four Arcade machines that can be used to showcase
-  games built-in SplashKit. The units run on a Raspberry Pi 3B+, giving constraints and a target
-  platform development. Our goal is to have this platform ready for students to show games developed
-  using SplashKit by the Thoth Tech SplashKit team. In the long term, the aim is to have this
-  platform available for first-year students with an easy-to-use process to upload, and test, their
-  games.
-- SplashKit Expansion: The SplashKit Expansion team works to continue developing SplashKit itself,
-  by fixing bugs, improving existing features, and integrating new ones. We also aim to improve
-  SplashKit’s installation and usage workflows, for instance by creating packages and solving
-  installation issues.
-- SplashKit Website: The new SplashKit website, powered by the Starlight framework, represents a
-  significant leap forward in providing an enriched and user-friendly experience for developers and
-  learners alike. This gives us a platform to include the existing tutorials and guides linked to
-  SplashKit.
-- SplashKit Tutorials: Development of tutorials relating to SplashKit’s usage, that can then be
-  placed on the SplashKit website to help students learn about and explore different functionality.
-  There’s currently a big push towards writing small tutorials and code-examples.
-- Game Development: Development on both new and existing games that run on the arcade machines (see
-  Arcade Machines project). The goal of working on these games is for them to be a showcase of
-  SplashKit’s functionality and to inspire students by showing them what’s possible to create with
-  it.
-- SplashKit Online: A newer project in which we’re developing an IDE that runs inside web browsers,
-  giving students the ability to write and run code without installing any software. Kickstarted in
-  Trimester 3 2023 as prototype and developed further since then, we hope to turn it into a
-  fully-fledged product used at Deakin when teaching
+### Arcade Machines
+
+The university has acquired four arcade machines equipped with Raspberry Pi 3B+ units, designed to
+showcase games developed with SplashKit. The short-term goal is to prepare these platforms for
+students to display their SplashKit creations. The medium-term goal is to streamline the process for
+first-year students to easily upload and test their games.
+
+### Game Development
+
+The Game Development team is dedicated to creating and enhancing games that run on the arcade
+machines. Their mission is to demonstrate SplashKit’s capabilities and inspire students by
+showcasing what can be achieved with the framework.
+
+### SplashKit Website
+
+Powered by the Starlight framework, the revamped SplashKit website aims to offer an enriched and
+user-friendly experience for developers and learners. It will host existing tutorials and guides,
+providing a central hub for exploring and learning about SplashKit.
+
+### SplashKit Tutorials
+
+The SplashKit Website will feature tutorials aimed at helping students learn and explore SplashKit’s
+functionality. The focus is on developing smaller, high-quality tutorials across C++, C#, and
+Python, rather than extensive series.
+
+### SplashKit Expansion
+
+The Expansion team is responsible for maintaining and enhancing the SplashKit core. This includes
+bug fixes, feature improvements, and refining installation and usage workflows through package
+creation and addressing installation issues.
+
+### SplashKit Online
+
+SplashKit Online is developing a web-based IDE that allows students to write and run code directly
+in their browsers. Initially launched as a prototype in 2023, the 2024 goal is to mature this tool
+into a comprehensive product, including C# support and an embeddable version for the SplashKit
+website.
 
 ## User Manual
 
@@ -477,7 +489,7 @@ This trimester, the following deliverables were completed:
   - Fixed bugs relating to vectors, random number generation, moving sprites and replacing text.
   - Renamed 'label' parameter to fix Pascal support
   - Investigate and identified missing functionality from SwinGame
-  - Tested Python version
+  - Tested Python compatability
 - New Features
   - Completed development of Remote GPIO Control methods
   - Created Circle-Triangle Collision detection methods
@@ -763,7 +775,6 @@ This trimester, the following deliverables were completed:
 ### SplashKit.io Website
 
 - SplashKit.io Improvements
-
   - Improve API Reference
     - Continue to add usage examples for SplashKit API
     - Integrate live demos to provide interactive examples
@@ -815,6 +826,9 @@ This trimester, the following deliverables were completed:
 
 ### SplashKit Expansion
 
+- Finish development of dev containers for SplashKit Core.
+  [See here](https://github.com/thoth-tech/documentation/tree/main/docs/Splashkit/DevEnviroment/Windows_DevContainer)
+  for more details.
 - Deployment Packages:
   - Brew Package: Finalise and fix existing Brew packages to ensure smooth installation and usage.
 - Test and Fix SplashKit Functionality:
@@ -824,11 +838,14 @@ This trimester, the following deliverables were completed:
   - Investigate and implement Pascal compilation fix. See
     [Issue #151](https://github.com/splashkit/splashkit-core/issues/151) and relevant Planner card
     for more information.
+    - Fix handling of negative enums in SplashKit Translator (this should be done; see Planner card
+      for status)
 - Port SwinGame Functions to SplashKit:
   - Review and port missing functions from SwinGames into SplashKit.
 - Investigate MinGW Compatibility
   - There have been issues with using SplashKit in MinGW, this needs to be investigated.
 - Improve Raspberry Pi Functionality:
+  - Improve GPIO Error Handling (this should be done; see Planner card for status)
   - Implement support for the Raspberry Pi 5, as current support only extends to Raspberry Pi 4B+.
 - Further Integration Testing
   - Conduct detailed testing and bug fixing of SplashKit functionality.
@@ -907,22 +924,18 @@ This trimester, the following deliverables were completed:
 The SplashKit team has faced several challenges over Trimester 2, 2024. These are detailed below:
 
 - Lack of Communication Between Project Groups
-
   - While individual communication channels, threads, and chats exist for each project, there is a
     notable absence of overarching organization. The lack of regular meetings between teams or with
     the entire company has led to confusion, poor coordination, and duplicated efforts. In some
     cases, tasks were reassigned or duplicated by different team members without clear
     communication, causing disruptions in workflow. This decentralized communication structure has
     hindered collaboration across projects and created barriers to progress.
-
 - Insufficient Onboarding Information and Lack of Codebase Exploration
-
   - A recurring issue was the lack of exploration of the existing codebase by team members, both in
     terms of finished and unfinished work. As a result, students often replicated previous efforts
     instead of building on them, such as recreating Git contribution guides or developer environment
     setup guides unnecessarily. This issue stems from insufficient documentation practices and a
     lack of familiarity with existing resources, causing inefficiencies and wasted effort.
-
 - Team Members Performing Duplicate Work
   - The combination of communication gaps and poor documentation has directly led to duplicated
     work. Without a clear mechanism to track or share ongoing progress across teams, individuals
