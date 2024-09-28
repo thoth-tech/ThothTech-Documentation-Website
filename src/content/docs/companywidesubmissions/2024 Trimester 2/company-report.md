@@ -133,25 +133,25 @@ OnTrack, also known as Doubtfire, is an innovative Learning Management System (L
 
 ## User Manual
 
-Give instructions for how someone should use your product or navigate
-around your development environment. Include images, diagrams, or
-anything that would help a first-time user to use your product
-correctly.
+Tutorial videos on setting up your local development environment: 
 
-Better yet, you could create short instructional videos using software
-like [Loom](https://www.loom.com/) and include the video links in this
-section. You may find this option is considerably easier than trying to
-communicate your instructions through text! (Note: this is just a
-suggestion, it’s not mandatory.) Here are some ideas of what to cover:
+ 
 
-If your product currently requires a complex set of steps to activate,
-include that.
+- [T3 2023 Setup demo](https://deakin365.sharepoint.com/:v:/s/ThothTech2/ESrgw0W_21pLn7kqS86WoJgBG71EPo7VPSp8AXt151JC2g?e=AZyu7I)  by Satika Jayawardena
 
-If your product has a hardware component, explain how to activate and
-sync the hardware with the software.
+- [T2 2023 Setup demo](https://video.deakin.edu.au/media/t/1_6degiyrj)  by Daniel Maddern
 
-If your team has a user experience journey that they’ve mapped out for
-when a user navigates your product, run through a demo of that.
+- [T1 2024 Common setup error solutions](https://teams.microsoft.com/l/message/19:bd20175d09414f079490a2403f7fca74@thread.tacv2/1711021331051) by Satika Jayawardena 
+
+ 
+
+Contributing Guides: 
+
+- [Doubtfire-deploy repository](https://github.com/thoth-tech/doubtfire-deploy/blob/development/CONTRIBUTING.md)
+
+- [OnTrack documentation](https://github.com/thoth-tech/documentation/tree/main/docs/OnTrack)
+
+- [Thoth Tech Documentation Website](https://main--strong-fairy-c1bde1.netlify.app/products/ontrack/example/)
 
 ## Completed Deliverables
 
@@ -308,188 +308,135 @@ This trimester, the following key deliverables were completed:
 
 ## Roadmap
 
-Provide a list of features and/or deliverables that are planned to be
-completed in the project’s future (E.g., next trimester or two
-trimesters in the future).
+The following are areas of OnTrack students may choose to work on in Trimester 3, 2024: 
+- Frontend Migrations – Angular.js and CoffeeScript to Angular and TypeScript 
+- Urgent Enhancements, Improvements, and Bugs 
+- Documentation Website – Enhance and add missing endpoint documentation 
+- Peer reviews for previous pull requests and contributions 
+- Features in development: 
 
-Please also include features and/or deliverables that are in progress
-but not yet complete. The state of each incomplete work item should be
-briefly described.
+  - Tutor Feedback Enhancement – feedback_api will require further 
+development to support "criterion" or options 
+  - CourseFlow – remaining backend entities and frontend 
+  - Incorporate Multiple Organizations on Single OnTrack Server 
+  - Authentication Module 
+  - Tutor Times 
+  - Incorporate Content in OnTrack 
+  - Staff Grant Extensions 
+  - Panopto Video Integration
 
-This section should pair up perfectly with your Roadmap on Trello. Make
-sure both this section and your Trello Roadmap are updated upon handing
-over the project.
 
 ## Open Issues
 
-List all of the issues and challenges that the team is still facing, and
-any progress that has been made so far to address them.
+These are some of the common challenges we have faced in Trimester 2, 2024 and may 
+continue to face in the future: 
+1. Knowledge gap in using Git and GitHub – Team members are required to upskill in 
+Git before starting on their assigned tasks as this is the primary tool used within the 
+team to manage code and contributions. The Git and GitHub training website and 
+demo videos attached in this document are some of the great resources available in 
+capstone for this purpose. 
 
-The purpose of this section is to flag things that may interfere with
-the future teams’s ability to work on the project, and to give advice as
-to how these issues could be fixed in future.
+2. Unsatisfactory pull request reviews – Reviews must not be made through 
+generational AI tools or just indicate how many commits have been made and what 
+has changed. Instead, it must evaluate the syntax, logic, and output of the code. 
+Please refer to section Task Review for more details and this past review for an 
+example of a correct pull request review.
 
-Here are some examples of Open Issues:
-
-- Software compatibility issues that arise when members of the team use
-  different version of software.
-
-- An unclear process for reviewing completed tasks on Trello, leading to
-  a backlog of work that is sitting somewhere between unfinished and
-  finished.
-
-- An essential team member had to leave the team with no notice, and
-  there is currently a skill void in their place.
 
 ## Lessons Learned
 
-List key lessons learned from the project this Trimester and what you
-recommend future teams should do differently. You must also explain why
-you believe this to be the case.
+This trimester, the traditional weekly Help Hub sessions, typically held on Thursdays and led by senior team members, experienced a noticeable decrease in attendance. 
 
-In particular, try to think about processes or technology that you would
-recommend be changed in the future; things that an uniformed team may
-mistake for a good idea at first, but later learn to be ineffective.
+To adapt, student leads focused on driving engagement and addressing queries through the OnTrack public Teams channel, encouraging team members to share their experiences and solutions. 
 
-For example, maybe your team had challenges communicating their progress
-during panel presentations, but towards the end of the Trimester, you
-developed an effective method for conveying progress accurately. This
-would be a great thing to talk about.
+While this approach has been effective for accommodating team members' diverse schedules, we recommend exploring new ways to host Help Hub sessions alongside asynchronous Teams posts. Offering multiple formats for assistance could provide additional opportunities for leadership development.
+
+Future student leads may consider using polls or forms to determine the most suitable time for sessions based on team availability. Additionally, offering a variety of session formats could help not only resolve existing problems but also guide team members in making contributions to specific areas.
+
 
 ## Product Development Life Cycle
 
-This section should explain how your team undertakes work. It is an
-attempt to codify your processes so that they can be understood and
-followed by new members.
+We continue to use Agile methodologies to deliver updates and new features for OnTrack. 
 
-As a team, you may not have clearly defined your Product Development
-Life Cycle, and that’s okay! This is an excellent opportunity to explain
-the work methods, processes and habits that your team has been
-developing intuitively over the course of the Trimester.
+Our approach includes 2-week sprints focused on completing tasks, and weekly stand-up meetings to assess progress, share updates, discuss roadblocks, and assign new tasks via Teams Planner cards.	
 
 ### New Tasks
 
-How are new tasks created?
+New tasks are assigned by the project mentor during the weekly stand-up meetings. Once you are assigned a task, be sure to assign yourself to the corresponding Teams Planner card and attach your draft or completed pull request when you begin work.
 
-How does your team form new ideas about work that needs to be done and
-turn those ideas into distinct, actionable tasks?
+If you have an idea for a new feature or enhancement, schedule a meeting with the project mentor to discuss it. Upon approval, create a new card or backlog column in Teams Planner to track the task. If the feature is large, start researching the benefits and challenges, and create a Spike document, which can be committed to the documentation repository. Spike templates are available in the documentation repository.
 
-For example, maybe your team meets at the start of each week, reviews
-your progress in your current sprint, makes a big long list of
-everything to be done, and then converts that list into a series of
-cards on Trello. This process would be something you talk about in this
-section.
 
 ### Definition of Done
 
-How does the team know when a task is done?
+A task is considered complete once it has been fully tested, functions as expected, and is documented in a well-organized pull request. 
 
-What are criteria for a successfully completed task?
-
-This may seem obvious, but it in a software development project having a
-definition of done can ensure a certain standard of work that holds all
-team members accountable. For example, messy, clunky code that “just
-works” is very different to clean, well-commented code that works AND is
-easy to understand. Which would you prefer to be your team’s definition
-of done?
+The task must also undergo peer review and be approved by your mentor. Ensure that the corresponding Teams Planner card is updated, and keep in communication with your reviewer and mentor until your contribution is merged into the upstream doubtfire-lms repository.
 
 ### Task Review
 
-Who reviews a task once it’s been marked as done?
+Each pull request requires a mandatory peer review before a mentor review. After creating the pull request, contact a teammate to review it. 
 
-How does the team ensure that all work is looked over before it’s
-contributed to the main repository or working prototype?
+Tag them as the reviewer in both the Teams Planner card and the GitHub pull request. As a reviewer, ensure that you test the code by pulling the changes locally and reviewing the syntax, logic, and output. 
 
-If you don’t currently have a system for reviewing tasks, make sure to
-flag this for next trimester’s team to work on as soon as they begin.
+If any changes are needed, update the contribution and notify the reviewer. Once the updates are made, the pull request will be automatically updated.
+
+After the peer review is complete, notify the mentor for their review. Once approved, you can submit the pull request to the upstream repository for the final review.
+
 
 ### Testing
 
-How do you test your product to see if it does what it was originally
-planned to do?
+For frontend changes, test the functionality in the browser or run specification tests as needed. For backend changes, use browser interactions or tools like Postman to test functionality. Additionally, GitHub CI Actions will run tests automatically when changes are pushed.
 
-If your product isn’t heavily comprised of software, how can you build
-in testing to your team’s product development life cycle to ensure that
-“stuff works as it should”?
+In the pull request template, include detailed instructions on how others can test your changes. Always provide before-and-after screenshots to show the outcome of your modifications.
+
 
 ### Branching Strategy
 
-How does your team currently use GitHub repository?
+When starting a new contribution, fork all three thoth-tech repositories (deploy, web, and API) to your GitHub profile. 
 
-What rules for commits and pull-requests have been put in place so far?
+Create a new branch from the development branch of the relevant repository. For example, for frontend migrations, you would create a branch from the doubtfire-web development branch. 
 
-How should new members use GitHub repository in a way that doesn’t
-result in all commits being dumped in a messy Master branch?
-
-Again, if your team hasn’t formally discussed a branching strategy, this
-a great opportunity to describe what your current system is and how it
-could be improved going forward.
-
-For example, if you currently have all members of the team commit
-directly to the Master branch, can you recommend any tutorials for the
-future team to review that might lead to a cleaner, more organised and
-more efficient repository?
+Follow the Branch Prefixes and Commit Message Format in the Contributing Guide when naming branches and creating commits.
 
 ## Product Architecture
 
-### UML Diagram
+OnTrack is built using four main components:
+1.	Frontend Client: Responsible for user interactions.
+2.	Backend API: Handles requests and serves data.
+3.	Database: Stores application data.
+4.	Deployment Infrastructure: Ensures that OnTrack is properly deployed and maintained
 
-Provide a high-level map of the project showing all of its components
-and how they relate to each other.
-
-An example of this is a UML diagram. Don’t feel that you need to follow
-any particular UML paradigm, so long as your diagram is informative and
-easy to read.
-
-Resources like [Lucidchart](https://www.lucidchart.com/) and
-[Draw.io](https://app.diagrams.net/) are incredibly useful for this.
 
 ### Tech Stack
 
-List all of the software and hardware utilised in this project. For each
-tool, give a short description and explain why it was chosen.
+- Frontend: Currently being migrated from AngularJS and CoffeeScript to Angular 17 and TypeScript. The stack also includes HTML, SCSS, and Tailwind CSS.
+- Backend: Built on Ruby on Rails with the Grape Framework. It uses MariaDB as the database engine. Docker is used for deployment and local development.
+
 
 ## Source Code
 
-All source code should be found on your team’s GitHub repository, unless
-your project has unique constraints that require you to store your code
-elsewhere. This includes any resources (e.g., wireframes, designs) that
-need to be transferred over to the new team as well.
+The following are the relevant GitHub repositories to this project: 
+1. Deployment - https://github.com/thoth-tech/doubtfire-deploy 
+2. Frontend - https://github.com/thoth-tech/doubtfire-web 
+3. Backend - https://github.com/thoth-tech/doubtfire-api 
+4. OnTrack Documentation Website - https://github.com/thoth-tech/doubtfire-astro 
+5. Documentation (OnTrack feature documentation, frontend migration component 
+reviews, etc.) - https://github.com/thoth-tech/documentation/tree/main/docs/OnTrack 
+6. Templates (Spikes, component reviews) - https://github.com/thoth-tech/documentation/tree/main/docs/Templates 
+7. CourseFlow documentation - https://github.com/thoth-tech/ThothTech-Documentation-Website/tree/main/src/content/docs/products/courseflow 
+Note: Any pull requests must first be made to the thoth-tech forks of the repositories, not 
+the upstream doubtfire-lms ones. 
 
-Please provide all of the necessary instructions to accessing your
-source code. This includes URLs of online hosted repositories, links to
-any software dependencies, database components, or external libraries.
-
-If your code is hosted on a server external to Deakin, make sure to also
-transfer digital copies of your code over to your client and the next
-team as a backup.
 
 ## Login Credentials
 
-Please provide all credentials (usernames and passwords) for any of the
-resources, websites, or platforms being utilised for this project.
-Please make sure that none of these credentials share passwords or
-usernames with any of your team’s private credentials.
+Refer to the Working with Dev Containers section of the [Contributing Guide](https://github.com/thoth-tech/doubtfire-deploy/blob/main/CONTRIBUTING.md) for 
+authentication credentials for locally deployed OnTrack. 
 
-## Other Relevant Information
+## Show Case Video
 
-This section is an invitation to add any additional information that you
-think will help to onboard new members. If you choose not to add any
-extra sections to this document, this section should be deleted.
-
-Please edit this entire document as you see fit. If you think adding 5
-extra sections that aren’t listed here will help to communicate the
-nuances of your project to future members, go ahead! We want you to take
-full ownership of your handover and this document.
-
-## Appendices
-
-Include all relevant artefacts delivered during the course of the
-project. Anything that will paint a clearer picture of your team’s
-progress this trimester, the things that informed decisions, and the
-evolution of your product.
-
-Please also include a link to your team’s showcase video.
+TODO : Add showcase video link
 
 # Project 2: SplashKit
 
