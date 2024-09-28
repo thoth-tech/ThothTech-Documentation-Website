@@ -2,7 +2,6 @@
 title: Thoth Tech – Company Report 2024 TRIMESTER 2
 description: 11.2P Task, T2 2024
 tableOfContents: false
-template: splash
 ---
 
 # Table of Contents
@@ -121,15 +120,15 @@ This video summarises the accomplishments made at Thoth Tech for Trimester 2, 20
 
 ## Student Leads
 
-- Jake Mansfield – Student Lead (OnTrack)
-- Jack Carroll – Student Lead (OnTrack)
+- Jake Mansfield – Senior Leader (OnTrack)
+- Jack Carroll – Senior Leader (OnTrack)
 - Atharv Bhandare – Junior Leader (OnTrack)
 - Bruce Wang – Senior Leader (OnTrack)
 - Ivan Justin – Junior Leader (OnTrack)
 - Eliya Geerlings – Junior Leader (OnTrack)
-- Jonathan Tynan – Student Lead (SplashKit)
-- Oscar Harris – Student Lead (SplashKit)
-- Hayley Hughes – Student Lead (SplashKit)
+- Jonathan Tynan – Senior Leader (SplashKit)
+- Oscar Harris – Senior Leader (SplashKit)
+- Hayley Hughes – Senior Leader (SplashKit)
 - Shaun Ratcliff – Junior Leader (SplashKit)
 - Brianna Laird – Junior Leader (SplashKit)
 
