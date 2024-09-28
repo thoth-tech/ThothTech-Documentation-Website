@@ -490,6 +490,7 @@ This trimester, the following deliverables were completed:
   - Renamed 'label' parameter to fix Pascal support
   - Investigate and identified missing functionality from SwinGame
   - Tested Python compatability
+  - Implemented insertion of XML comments into SplashKit.cs during translation process
 - New Features
   - Completed development of Remote GPIO Control methods
   - Created Circle-Triangle Collision detection methods
@@ -770,8 +771,6 @@ This trimester, the following deliverables were completed:
   environment used for C++ games.
 - Implement versioning for compiled games to manage updates effectively.
 
-### Thoth-Tech Documentation Website
-
 ### SplashKit.io Website
 
 - SplashKit.io Improvements
@@ -791,7 +790,7 @@ This trimester, the following deliverables were completed:
     - Continue to expand and refine the Onbording hub
     - Create relevant guides, checklists and tutorials for all stages of the project documentation
       and development lifecycle
-    - Develop detailing Onboarding paths to guide new students
+    - Develop detailed Onboarding paths to guide new students
     - Implement a comprehensive upskilling section, containing curated learning materials
 
 ### SplashKit Tutorials
