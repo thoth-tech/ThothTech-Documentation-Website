@@ -156,11 +156,155 @@ when a user navigates your product, run through a demo of that.
 ## Completed Deliverables
 
 This trimester, the following key deliverables were completed:
+- Bug Fixes and Urgent Enhancements
 
-- Frontend Migrations - several components have been migrated to Angular 17 and TypeScipt
+  - Chat Markdown Rendering Bug: Successfully fixed an issue where markdown was not rendering properly in chat, enhancing the user experience for students and staff.
+  - Documentation Enhancements: Completed and merged documentation updates for both general and specific API pages. This includes contributions from team members on various entities such as requirement sets and course entities, directly supporting the goal of comprehensive documentation for OnTrack's evolving features.
+
+- Frontend Enhancements and Component Migrations: Several components have been successfully migrated to Angular 17 and TypeScript, including the comments-modal, group set manager, and unit-ilo-edit-modal. Additionally, enhancements were made to PDF handling and user interface elements like the grade-task-modal and grade-icon components, contributing to the ongoing frontend migration and user interface improvement objectives.
+  - Ongoing Frontend Migration: The migration of legacy CoffeeScript components to TypeScript/Angular continues, with files such as timeout.coffee and grade-task-modal.coffee currently under peer review. This aligns with our aim to complete at least 10% of the existing frontend migration backlog this trimester.
+  - Overlay Component Creation: Developed a new overlay component to provide additional information about units to users, enhancing the user interface and experience. This feature is currently under review.
+
+- CourseFlow:
+
+  - CourseMap Base Page Development: Developed the base page for CourseMap, laying the groundwork for further enhancements and integrations planned for the CourseFlow component.
+  - Backend Requirements Implementation: Completed backend requirements for several critical entities, including the requirement set, course, and course map unit entities. These efforts are part of the overarching aim to enhance CourseFlow functionality and ensure robust backend support for new and existing features.
+  - CourseFlow Enhancements: Several enhancements are under review, including adding authentication to endpoints and integrating new UI elements. These efforts are part of the continued development of the CourseFlow API and its related functionalities.
+
 - JPLAG - jplag software plagiarism has been implemented as a containerised batch process. Frontend and backend additions have been made to allow plagiarism report downloads.
 - Dev Container Image Downsizing - LaTex and MariaDB have been moved into their own containers; reducing rebuild time of the main container significantly
 - Nginx - an nginx container has been created to utilise reverse proxying, allowing localhost:4200 and localhost:3000 to be accessed at localhost/ and localhost/api
+
+- Ongoing and Pending Tasks:
+
+  - Group Set Manager Migration: The migration of the group set manager component to the latest framework is in progress.
+  - Unit Group Set Editor Migration: The migration of the unit-group-set-editor.coffee file continues to move forward, aligning with our frontend migration goals.
+  - Tasks in Peer Review: Detailed documentation and API operations for units and task definitions, along with the migration of several legacy components, are currently under peer review. This work supports the ongoing documentation efforts and frontend migration initiatives.
+
+| Name | Task Name | Task Attachment |
+|---|---|---|
+| Amos Saji | Migration: group set manager | https://github.com/thoth-tech/documentation/pull/549<br>https://github.com/thoth-tech/doubtfire-web/pull/244 |
+| Amrith Jayadeep | Migration: group set selector | https://github.com/thoth-tech/documentation/pull/544/commits/6789b275af1deb663877b8953f229c5277582e59<br>https://github.com/thoth-tech/doubtfire-web/pull/239 |
+| Anirudh Nellippilli Joshi | Documentation: grade-task-modal component review | https://github.com/thoth-tech/documentation/pull/525 |
+| Anirudh Nellippilli Joshi | migrate file-uploader.coffee | https://github.com/thoth-tech/documentation/pull/535/files<br>https://github.com/thoth-tech/doubtfire-web/pull/246/commits/28a77cd0821ce9b66a43c47741cda35c39132fd2 |
+| Anirudh Nellippilli Joshi | Migration: group set selector | https://github.com/thoth-tech/documentation/pull/544/commits/6789b275af1deb663877b8953f229c5277582e59<br>https://github.com/thoth-tech/doubtfire-web/pull/239 |
+| Anirudh Nellippilli Joshi | Migration: group set manager | https://github.com/thoth-tech/documentation/pull/549<br>https://github.com/thoth-tech/doubtfire-web/pull/244 |
+| Anirudh Nellippilli Joshi | Migration: csv-result-modal.coffee | https://github.com/thoth-tech/documentation/pull/524#issue-2441710229<br>https://github.com/thoth-tech/doubtfire-web/pull/248/commits/b0c23fa084e074feec9cfd4618d2e2ff9412f2c7 |
+| Anirudh Nellippilli Joshi | Onboarding Juniors Guidence | https://github.com/thoth-tech/documentation/pull/551 |
+| Atharv Sandip Bhandare | Migration: comments-modal | https://github.com/doubtfire-lms/doubtfire-web/pull/869<br>https://github.com/thoth-tech/documentation/pull/519<br>https://github.com/thoth-tech/doubtfire-web/pull/218 |
+| Atharv Sandip Bhandare | Write documentation for JPLAG | https://github.com/thoth-tech/documentation/pull/528<br>https://www.github.com/JackSCarroll/documentation/blob/JplagDocs/docs/OnTrack/JPlag/Jplag-Feasibility-Document.md |
+| Atharv Sandip Bhandare | Migration: Component task-ilo-alignment-modal.coffee |  |
+| Atharv Sandip Bhandare | Add user UI does not allow user creation | https://github.com/thoth-tech/documentation/pull/556<br>https://github.com/thoth-tech/doubtfire-web/pull/254 |
+| Atharv Sandip Bhandare | Migration: unit-staff-editor.coffee | https://github.com/thoth-tech/documentation/pull/543<br>https://github.com/thoth-tech/doubtfire-web/pull/235 |
+| Atharv Sandip Bhandare | JPLAG UI documentation | https://github.com/thoth-tech/documentation/pull/555 |
+| Bruce Wang | Migration: comments-modal | https://github.com/doubtfire-lms/doubtfire-web/pull/869<br>https://github.com/thoth-tech/documentation/pull/519<br>https://github.com/thoth-tech/doubtfire-web/pull/218 |
+| Bruce Wang | Documentation: grade-task-modal component review | https://github.com/thoth-tech/documentation/pull/525 |
+| Bruce Wang | migrate file-uploader.coffee | https://github.com/thoth-tech/documentation/pull/535/files<br>https://github.com/thoth-tech/doubtfire-web/pull/246/commits/28a77cd0821ce9b66a43c47741cda35c39132fd2 |
+| Bruce Wang | Migration: grade-icon.coffee | https://github.com/thoth-tech/doubtfire-web/pull/231 |
+| Bruce Wang | Migrate analytics.coffee | https://github.com/thoth-tech/doubtfire-web/pull/256 |
+| Bruce Wang | Migrate viewer.coffee | https://github.com/thoth-tech/doubtfire-web/pull/251 |
+| Bruce Wang | Migration: timeout.coffee | https://github.com/doubtfire-lms/doubtfire-web/pull/868/commits/6a965ef9927837bd3e9e77d27b035473cd974215<br>https://github.com/thoth-tech/doubtfire-web/pull/230 |
+| Bruce Wang | Migration: unauthorised.coffee | https://github.com/thoth-tech/doubtfire-web/pull/257 |
+| Bruce Wang | Migration: unit-staff-editor.coffee | https://github.com/thoth-tech/documentation/pull/543<br>https://github.com/thoth-tech/doubtfire-web/pull/235 |
+| Bruce Wang | Migration: csv-result-modal.coffee | https://github.com/thoth-tech/documentation/pull/524#issue-2441710229<br>https://github.com/thoth-tech/doubtfire-web/pull/248/commits/b0c23fa084e074feec9cfd4618d2e2ff9412f2c7 |
+| Bruce Wang | Onboarding Juniors Guidence | https://github.com/thoth-tech/documentation/pull/551 |
+| Eliya Geerlings | Migration: comments-modal | https://github.com/doubtfire-lms/doubtfire-web/pull/869<br>https://github.com/thoth-tech/documentation/pull/519<br>https://github.com/thoth-tech/doubtfire-web/pull/218 |
+| Eliya Geerlings | Autoload PDFs on page 2 when viewing student submissions | https://github.com/thoth-tech/doubtfire-web/pull/232 |
+| Eliya Geerlings | Fix jupyter notebook latex rake test | https://github.com/doubtfire-lms/doubtfire-api/pull/444 |
+| Eliya Geerlings | Fix up existing confirmation-modal migration | https://github.com/doubtfire-lms/doubtfire-web/pull/870 |
+| Eliya Geerlings | Latex docker downsizing: Creation of feasibility document | https://github.com/thoth-tech/documentation/pull/534 |
+| Eliya Geerlings | Latex docker downsizing: Implementation | https://github.com/thoth-tech/doubtfire-api/pull/38<br>https://github.com/thoth-tech/doubtfire-deploy/pull/13 |
+| Eliya Geerlings | Persistent PDF zoom levels when selecting between different task submissions | https://github.com/thoth-tech/doubtfire-web/pull/228 |
+| Eliya Geerlings | Migration: unit-staff-editor.coffee | https://github.com/thoth-tech/documentation/pull/543<br>https://github.com/thoth-tech/doubtfire-web/pull/235 |
+| Ivan Justin | Latex docker downsizing: Creation of feasibility document | https://github.com/thoth-tech/documentation/pull/534 |
+| Ivan Justin | Chat markdown not rendering properly bug | https://github.com/thoth-tech/doubtfire-web/pull/250 |
+| Ivan Justin | Migration: Unit-ilo-edit-modal.coffee | https://github.com/thoth-tech/documentation/pull/526<br>https://github.com/thoth-tech/doubtfire-web/pull/226 |
+| Jack Shinners Carroll | Write documentation for JPLAG | https://github.com/thoth-tech/documentation/pull/528<br>https://www.github.com/JackSCarroll/documentation/blob/JplagDocs/docs/OnTrack/JPlag/Jplag-Feasibility-Document.md |
+| Jack Shinners Carroll | Documentation: grade-task-modal component review | https://github.com/thoth-tech/documentation/pull/525 |
+| Jack Shinners Carroll | Latex docker downsizing: Creation of feasibility document | https://github.com/thoth-tech/documentation/pull/534 |
+| Jack Shinners Carroll | Latex docker downsizing: Implementation | https://github.com/thoth-tech/doubtfire-api/pull/38<br>https://github.com/thoth-tech/doubtfire-deploy/pull/13 |
+| Jack Shinners Carroll | Migrate analytics.coffee | https://github.com/thoth-tech/doubtfire-web/pull/256 |
+| Jack Shinners Carroll | Migration: unit-staff-editor.coffee | https://github.com/thoth-tech/documentation/pull/543<br>https://github.com/thoth-tech/doubtfire-web/pull/235 |
+| Jack Shinners Carroll | Add JPLAG frontend | https://github.com/doubtfire-lms/doubtfire-web/pull/873 |
+| Jack Shinners Carroll | Alter JPLAG api code | https://github.com/doubtfire-lms/doubtfire-api/pull/447 |
+| Jack Shinners Carroll | Create JPLAG Container | https://github.com/doubtfire-lms/doubtfire-deploy/pull/28 |
+| Jack Shinners Carroll | JPLAG UI documentation | https://github.com/thoth-tech/documentation/pull/555 |
+| Jake Mansfield | Document the below API pages in detail within the website - set 5 | https://github.com/thoth-tech/doubtfire-astro/pull/9 |
+| Jake Mansfield | Implement the backend requirements for the course entity. | https://github.com/thoth-tech/doubtfire-api/pull/34 |
+| Jake Mansfield | Implement the backend requirements for the course map entity. | https://github.com/thoth-tech/doubtfire-api/pull/35 |
+| Jake Mansfield | Implement the backend requirements for the course map unit entity. | https://github.com/thoth-tech/doubtfire-api/pull/35 |
+| Jake Mansfield | Implement the backend requirements for the requirement set entity. | https://github.com/thoth-tech/doubtfire-api/pull/37 |
+| Jake Mansfield | Implement the backend requirements for the specialization entity. |  |
+| Jake Mansfield | Add detailed operations for units API (task_definitions -tii_group_attachments ) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/12 |
+| Jake Mansfield | Add Authentication to the Courseflow endpoints |  |
+| Jake Mansfield | Add button to Courseflow main component | https://github.com/thoth-tech/doubtfire-web/pull/227 |
+| Jake Mansfield | Created coursemap base page | https://github.com/thoth-tech/doubtfire-web/pull/233 |
+| Jake Mansfield | Add detailed operations for units API (task_definitions) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/12 |
+| Jake Mansfield | Add detailed operations for units API (group set - group ID) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/10 |
+| Jake Mansfield | Add detailed operations for units API (group set - group csv) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/10 |
+| Jake Mansfield | Add detailed operations for units API (task_definitions - task_assessment_resources ) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/13 |
+| Jake Mansfield | Document the operations units API - Tutorial Streams | https://github.com/thoth-tech/doubtfire-astro/pull/10 |
+| Jake Mansfield | Ensure Unit Definition model satisfies all requirements (Phase 2) |  |
+| Jake Mansfield | Create appropriate testing files for the Unit Definition entity (Phase 1) | https://github.com/thoth-tech/doubtfire-api/pull/42 |
+| Jake Mansfield | Create dummy data for a specific course for the front end to use (Phase 3) | https://github.com/thoth-tech/doubtfire-api/pull/43 |
+| Jake Mansfield | Implement the backend requirements for the Unit Definition entity (phase 1) | https://github.com/thoth-tech/doubtfire-api/pull/42 |
+| Jake Mansfield | Make a Plan for Courseflow for T2 |  |
+| Jake Mansfield | Migrate analytics.coffee | https://github.com/thoth-tech/doubtfire-web/pull/256 |
+| Jake Mansfield | Migrate the existing Unit table to be compatible with Unit Definition (Phase 4) | https://github.com/thoth-tech/doubtfire-api/pull/41 |
+| Jake Mansfield | Migration: timeout.coffee | https://github.com/doubtfire-lms/doubtfire-web/pull/868/commits/6a965ef9927837bd3e9e77d27b035473cd974215<br>https://github.com/thoth-tech/doubtfire-web/pull/230 |
+| Jake Mansfield | Courseflow Documentation Requirement Analysis | https://github.com/thoth-tech/doubtfire-astro/pull/14 |
+| Jake Mansfield | Onboarding Juniors Guidence | https://github.com/thoth-tech/documentation/pull/551 |
+| Minu Nediyapalackal Sunil | Document the below API pages in detail within the website - set 5 | https://github.com/thoth-tech/doubtfire-astro/pull/9 |
+| Minu Nediyapalackal Sunil | Add detailed operations for units API (task_definitions -tii_group_attachments ) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/12 |
+| Minu Nediyapalackal Sunil | Add detailed operations for units API (task_definitions) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/12 |
+| Minu Nediyapalackal Sunil | Create diagram of coursemap page | https://github.com/thoth-tech/doubtfire-astro/pull/11 |
+| Minu Nediyapalackal Sunil | Add detailed operations for units API (group set - group ID) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/10 |
+| Minu Nediyapalackal Sunil | Add detailed operations for units API (group set - group csv) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/10 |
+| Minu Nediyapalackal Sunil | Add detailed operations for units API (task_definitions - task_assessment_resources ) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/13 |
+| Minu Nediyapalackal Sunil | Document the operations units API - Tutorial Streams | https://github.com/thoth-tech/doubtfire-astro/pull/10 |
+| Minu Nediyapalackal Sunil | Pull the API docs from last trimester into the new folder structure | https://github.com/thoth-tech/doubtfire-astro/pull/15 |
+| Minu Nediyapalackal Sunil | Courseflow Documentation Requirement Analysis | https://github.com/thoth-tech/doubtfire-astro/pull/14 |
+| Muhammad Danial | Migration: Component task-ilo-alignment-modal.coffee |  |
+| Sam Rolfe | Implement the backend requirements for the course entity. | https://github.com/thoth-tech/doubtfire-api/pull/34 |
+| Sam Rolfe | Implement the backend requirements for the course map entity. | https://github.com/thoth-tech/doubtfire-api/pull/35 |
+| Sam Rolfe | Implement the backend requirements for the course map unit entity. | https://github.com/thoth-tech/doubtfire-api/pull/35 |
+| Sam Rolfe | Implement the backend requirements for the requirement set entity. | https://github.com/thoth-tech/doubtfire-api/pull/37 |
+| Sam Rolfe | Implement the backend requirements for the specialization entity. |  |
+| Sam Rolfe | Add Authentication to the Courseflow endpoints |  |
+| Sam Rolfe | Add button to Courseflow main component | https://github.com/thoth-tech/doubtfire-web/pull/227 |
+| Sam Rolfe | Created coursemap base page | https://github.com/thoth-tech/doubtfire-web/pull/233 |
+| Sam Rolfe | Create a list of tasks for CourseMap FE |  |
+| Sam Rolfe | Create diagram of coursemap page | https://github.com/thoth-tech/doubtfire-astro/pull/11 |
+| Sam Rolfe | Ensure Unit Definition model satisfies all requirements (Phase 2) |  |
+| Sam Rolfe | Migration: grade-icon.coffee | https://github.com/thoth-tech/doubtfire-web/pull/231 |
+| Sam Rolfe | Add ability to add elective units to the unit pool (phase 2) | https://github.com/thoth-tech/doubtfire-web/pull/236 |
+| Sam Rolfe | Create appropriate testing files for the Unit Definition entity (Phase 1) | https://github.com/thoth-tech/doubtfire-api/pull/42 |
+| Sam Rolfe | Create dummy data for a specific course for the front end to use (Phase 3) | https://github.com/thoth-tech/doubtfire-api/pull/43 |
+| Sam Rolfe | Create services and models for courseflow back end components. | https://github.com/thoth-tech/doubtfire-web/pull/252 |
+| Sam Rolfe | Implement the backend requirements for the Unit Definition entity (phase 1) | https://github.com/thoth-tech/doubtfire-api/pull/42 |
+| Sam Rolfe | Migrate the existing Unit table to be compatible with Unit Definition (Phase 4) | https://github.com/thoth-tech/doubtfire-api/pull/41 |
+| Sam Rolfe | Populate remaining units container with relevant units from course (phase 2) | https://github.com/thoth-tech/doubtfire-web/pull/253 |
+| Sam Rolfe | Courseflow Documentation Requirement Analysis | https://github.com/thoth-tech/doubtfire-astro/pull/14 |
+| Shen Tian | Add button to Courseflow main component | https://github.com/thoth-tech/doubtfire-web/pull/227 |
+| Shen Tian | Created coursemap base page | https://github.com/thoth-tech/doubtfire-web/pull/233 |
+| Shen Tian | Create services and models for courseflow back end components. | https://github.com/thoth-tech/doubtfire-web/pull/252 |
+| Shen Tian | Migrate analytics.coffee | https://github.com/thoth-tech/doubtfire-web/pull/256 |
+| Shen Tian | Migration: timeout.coffee | https://github.com/doubtfire-lms/doubtfire-web/pull/868/commits/6a965ef9927837bd3e9e77d27b035473cd974215<br>https://github.com/thoth-tech/doubtfire-web/pull/230 |
+| Shen Tian | Populate remaining units container with relevant units from course (phase 2) | https://github.com/thoth-tech/doubtfire-web/pull/253 |
+| Shyama Chandrashekaran Pillai | Document the below API pages in detail within the website - set 5 | https://github.com/thoth-tech/doubtfire-astro/pull/9 |
+| Shyama Chandrashekaran Pillai | Add detailed operations for units API (task_definitions -tii_group_attachments ) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/12 |
+| Shyama Chandrashekaran Pillai | Add detailed operations for units API (task_definitions) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/12 |
+| Shyama Chandrashekaran Pillai | Add detailed operations for units API (group set - group ID) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/10 |
+| Shyama Chandrashekaran Pillai | Add detailed operations for units API (group set - group csv) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/10 |
+| Shyama Chandrashekaran Pillai | Add detailed operations for units API (task_definitions - task_assessment_resources ) on Ontrack documentation website | https://github.com/thoth-tech/doubtfire-astro/pull/13 |
+| Shyama Chandrashekaran Pillai | Document the operations units API - Tutorial Streams | https://github.com/thoth-tech/doubtfire-astro/pull/10 |
+| Shyama Chandrashekaran Pillai | Pull the API docs from last trimester into the new folder structure | https://github.com/thoth-tech/doubtfire-astro/pull/15 |
+| Thuy Tien Hoa | migrate file-uploader.coffee | https://github.com/thoth-tech/documentation/pull/535/files<br>https://github.com/thoth-tech/doubtfire-web/pull/246/commits/28a77cd0821ce9b66a43c47741cda35c39132fd2 |
+| Thuy Tien Hoa | Migration: Component task-ilo-alignment-modal.coffee |  |
+| Thuy Tien Hoa | Migration: grade-icon.coffee | https://github.com/thoth-tech/doubtfire-web/pull/231 |
+| Thuy Tien Hoa | Add ability to add elective units to the unit pool (phase 2) | https://github.com/thoth-tech/doubtfire-web/pull/236 |
+| Thuy Tien Hoa | Migrate viewer.coffee | https://github.com/thoth-tech/doubtfire-web/pull/251 |
+
 
 ## Roadmap
 
