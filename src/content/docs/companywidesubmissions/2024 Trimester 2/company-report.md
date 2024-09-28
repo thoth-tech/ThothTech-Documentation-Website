@@ -418,7 +418,7 @@ showcasing what can be achieved with the framework.
 
 ### SplashKit Website
 
-Powered by the Starlight framework, the revamped SplashKit website aims to offer an enriched and
+` Powered by the Starlight framework, the revamped SplashKit website aims to offer an enriched and
 user-friendly experience for developers and learners. It will host existing tutorials and guides,
 providing a central hub for exploring and learning about SplashKit.
 
@@ -482,6 +482,7 @@ This trimester, the following deliverables were completed:
   - Added additional controls to the arcade menu
   - Defined the process for uploading games to the arcade machine
   - Fixed broken links in Arcade Build documentation
+  - Developed Game Packaging tool, [flipper](https://github.com/thoth-tech/flipper)
 
 ### SplashKit Expansion
 
@@ -489,7 +490,7 @@ This trimester, the following deliverables were completed:
   - Fixed bugs relating to vectors, random number generation, moving sprites and replacing text.
   - Renamed 'label' parameter to fix Pascal support
   - Investigate and identified missing functionality from SwinGame
-  - Tested Python compatability
+  - Tested Python compatibility
   - Implemented insertion of XML comments into SplashKit.cs during translation process
 - New Features
   - Completed development of Remote GPIO Control methods
@@ -502,7 +503,7 @@ This trimester, the following deliverables were completed:
 
 - Website Improvements
   - Begun development of an 'Onboarding Hub'
-  - Resolved issues with Dev Container
+  - Resolved issues with SplashKit.io dev Container
   - Fixed the guides index page and updated broken links
   - Improved Troubleshooting section
   - Added game showcase page and improved website styling
@@ -549,6 +550,8 @@ This trimester, the following deliverables were completed:
   - Addressed issue that compiled .exe files are platform-specific.
   - Fixed gameplay issues in Below the Surface and Venture Adventure
   - Created programming plan for the Bee Game project, outlining core mechanics and class structures
+
+### List Of All Complete Deliverables
 
 | Full Name                 | Description                                                                                              |                                                                                                                                                                                                                                                            Evidence |
 | :------------------------ | :------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -763,20 +766,21 @@ This trimester, the following deliverables were completed:
 ### Arcade Machine
 
 - Add additional modes to the Arcade Machine software
-  - Kiosk Mode: Show only published games, ideal for events.
-  - Normal Mode: Display both published and test games.
+  - Kiosk Mode: Show only published games, ideal for events
+  - Normal Mode: Display both published and test games
 - Implement Voting System: Integrate a voting system to give significance to the star ranking
-  currently available on the machines.
+  currently available on the machines
 - Correct the C# compatibility for ARM, as .NET currently does not run correctly in the emulated PI
-  environment used for C++ games.
-- Implement versioning for compiled games to manage updates effectively.
+  environment used for C++ games
+- Implement versioning for compiled games to manage updates effectively
+- Continue development of [flipper](https://github.com/thoth-tech/flipper) Game Packaging Tool
 
 ### SplashKit.io Website
 
 - SplashKit.io Improvements
   - Improve API Reference
     - Continue to add usage examples for SplashKit API
-    - Integrate live demos to provide interactive examples
+    - Integrate live demo's to provide interactive examples
     - Add mechanism for the user to globally switch between programming languages in the API
       reference
     - Produce concise videos to support the documentation
@@ -784,10 +788,9 @@ This trimester, the following deliverables were completed:
   - Contributor Resources
     - Develop resources to support community contributions
     - Including detailed guides, best practices and an interactive forum
-
 - Thoth Tech Documentation Website
   - Improve Onboarding Hub
-    - Continue to expand and refine the Onbording hub
+    - Continue to expand and refine the Onboarding hub
     - Create relevant guides, checklists and tutorials for all stages of the project documentation
       and development lifecycle
     - Develop detailed Onboarding paths to guide new students
@@ -1013,7 +1016,7 @@ codebase. Additionally, the SDK includes automated translation into C#, Python, 
 
 SplashKit Online is a web-based Integrated Development Environment (IDE) that enables users to
 write, compile, and run SplashKit projects directly in their browsers. It supports JavaScript and
-experimental C++ through WebAssembly (Wasm) via Emscripten. The platform uses Node/NPM for
+experimental C++ through WebAssembly (WASM) via Emscripten. The platform uses Node/NPM for
 dependency management and test server operation. SplashKit Online aims to make it easy for
 developers, particularly beginners, to get started with SplashKit without needing to install any
 software.
