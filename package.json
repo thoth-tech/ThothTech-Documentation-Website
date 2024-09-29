@@ -19,8 +19,7 @@
     "astro": "^4.13.3",
     "sharp": "^0.32.3",
     "starlight": "^0.3.9",
-    "starlight-blog": "^0.4.0",
-    "starlight-documentation-website": "file:"
+    "starlight-blog": "^0.4.0"
   },
   "devDependencies": {
     "markdownlint": "^0.31.1",
