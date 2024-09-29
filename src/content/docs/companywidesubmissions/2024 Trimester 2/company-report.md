@@ -1,5 +1,5 @@
 ---
-title: Thoth Tech – Company Report 2024 TRIMESTER 2
+title: Thoth Tech – Company Handover Report 2024 TRIMESTER 2
 description: 11.2P Task, T2 2024
 tableOfContents: false
 ---
