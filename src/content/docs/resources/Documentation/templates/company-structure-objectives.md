@@ -1,6 +1,7 @@
 ---
-title: Thoth Tech - Company Report 20xx TRIMESTER x
-description: 2.1P Task, Tx 20xx
+title: Company Report Template 
+sidebar:
+  label: Company Report Template
 ---
 
 # Executive Summary

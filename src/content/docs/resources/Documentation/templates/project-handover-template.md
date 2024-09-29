@@ -1,6 +1,7 @@
 ---
-title: Thoth Tech – Company Report 20xx TRIMESTER x
-description: 11.2P Task, Tx 20xx
+title: Company Handover Report Template
+sidebar:
+    label: Company Handover Report Template
 ---
 
 # Table of Contents
