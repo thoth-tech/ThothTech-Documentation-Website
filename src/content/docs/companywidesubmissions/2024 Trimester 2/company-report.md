@@ -101,8 +101,8 @@ outline the company structure, projects, and accomplishments for this trimester.
 
 # Showcase Video
 
-This video summarises the accomplishments made at Thoth Tech for Trimester 2, 2024: **_ TODO _**
-[Thoth Tech Company Showcase Video](//todo)
+This video summarises the accomplishments made at Thoth Tech for Trimester 2, 2024:
+[Thoth Tech Company Showcase Video](https://deakin.au.panopto.com/Panopto/Pages/Viewer.aspx?id=b69ee4c8-1567-41bc-95be-b1fa001266ad)
 
 # Leadership Team
 
@@ -530,9 +530,11 @@ Refer to the Working with Dev Containers section of the
 [Contributing Guide](https://github.com/thoth-tech/doubtfire-deploy/blob/main/CONTRIBUTING.md) for
 authentication credentials for locally deployed OnTrack.
 
-## Show Case Video
+## Showcase Video
 
-TODO : Add showcase video link
+The videos in this folder summarise our accomplishments this trimester in OnTrack:
+
+- [Showcase Videos](https://deakin365.sharepoint.com/:f:/r/sites/ThothTech2/Shared%20Documents/General/Company%20Documents%20%26%20Videos/2024%20T2/Showcase%20Video?csf=1&web=1&e=ezMp06)
 
 # Project 2: SplashKit
 
@@ -1190,3 +1192,9 @@ SDK, including graphics, input handling, and audio management.
 - [SplashKit Website](https://github.com/thoth-tech/splashkit.io-starlight)
 - [Games Development](https://github.com/thoth-tech/arcade-games)
 - [SplashKit Online](https://github.com/thoth-tech/splashkitonline)
+
+## Showcase Video
+
+The videos in the following folder summarise our efforts this trimester in SplashKit:
+
+- [Showcase Videos](https://deakin365.sharepoint.com/:f:/r/sites/ThothTech2/Shared%20Documents/General/Company%20Documents%20%26%20Videos/2024%20T2/Showcase%20Video?csf=1&web=1&e=ezMp06)
