@@ -15,7 +15,8 @@ sidebar:
 > [3.1 Company Board](#company-board)  
 > [3.2 Product Mentors](#product-mentors)  
 > [3.3 Student Leaders](#student-leads)  
-> [3.4 Leadership Responsibilties](#leadership-responsibilities)
+> [3.4 Leadership Responsibilities](#leadership-responsibilities)
+
 [4. Company Structure](#company-structure)
 
 [5. Project 1: OnTrack](#project-1-ontrack)
@@ -32,11 +33,16 @@ sidebar:
 > > [5.7.2 Definition of Done](#definition-of-done)  
 > > [5.7.3 Task Review](#task-review)  
 > > [5.7.4 Testing](#testing)  
-> > [5.7.5 Branching Strategy](#branching-strategy)  
-> > [5.8 Product Architecture](#product-architecture)  
-> > [5.8.1 Tech Stack](#tech-stack)  
-> > [5.9 Source Code](#source-code)  
-> > [5.10 Login Credentials](#login-credentials)
+> > [5.7.5 Branching Strategy](#branching-strategy)
+
+> [5.8 Product Architecture](#product-architecture)
+>
+> > [5.8.1 Tech Stack](#tech-stack)
+
+> [5.9 Source Code](#source-code)
+
+> [5.10 Login Credentials](#login-credentials)
+
 [6. Project 2: SplashKit](#project-2-splashkit)
 
 > [6.1 Project Overview](#project-overview-1)  
@@ -50,9 +56,10 @@ sidebar:
 > > [6.6.2 Definition of Done](#definition-of-done-1)  
 > > [6.6.3 Task Review](#task-review-1)  
 > > [6.6.4 Testing](#testing-1)  
-> > [6.6.5 Branching Strategy](#branching-strategy-1)  
-> > [6.7 Product Architecture](#product-architecture-1)  
-> > [6.8 Source Code](#source-code-1)
+> > [6.6.5 Branching Strategy](#branching-strategy-1)
+
+> [6.7 Product Architecture](#product-architecture-1)  
+> [6.8 Source Code](#source-code-1)
 
 ## Executive Summary
 
@@ -69,6 +76,8 @@ What are the aims of the company?
 What are the deliverables?
 
 ## Showcase Video
+
+A link to a video showcasing Thoth-Techs work over the preceding trimester should be placed here
 
 ## Leadership Team
 
@@ -88,8 +97,7 @@ List multiple if applicable.
 
 _Title_
 
-Email
-
+Project
 
 ### Student Leads
 
@@ -98,6 +106,14 @@ Email
 _Title_
 
 Project
+
+### Leadership Responsibilities
+
+Give an overview of the responsibilities of the leadership team over the trimester.
+
+## Company Structure
+
+Here you should provide on overview of the company structure.
 
 ## Project 1: OnTrack
 
