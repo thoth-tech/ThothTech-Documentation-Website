@@ -4,97 +4,75 @@ sidebar:
   label: Company Handover Report Template
 ---
 
-# Table of Contents
+## Table of Contents
 
-[1. Project Information](#project-information)
+[1. Executive Summary](#executive-summary)
 
-> [1.1. Company Acting Director](#company-acting-director)
+[2. Showcase Video](#showcase-video)
 
-> [1.2. Project Team](#project-team)
+[3. Leadership Team](#leadership-team)
 
-[2. Project 1: OnTrack](#project-1-ontrack)
+> [3.1 Company Board](#company-board)  
+> [3.2 Product Mentors](#product-mentors)  
+> [3.3 Student Leaders](#student-leads)  
+> [3.4 Leadership Responsibilties](#leadership-responsibilities)
+[4. Company Structure](#company-structure)
 
-> [2.1 Project Overview](#project-overview)
+[5. Project 1: OnTrack](#project-1-ontrack)
 
-> [2.2 User Manual](#user-manual)
+> [5.1 Project Overview](#project-overview)  
+> [5.2 User Manual](#user-manual)  
+> [5.3 Completed Deliverables](#completed-deliverables)  
+> [5.4 Roadmap](#roadmap)  
+> [5.5 Open Issues](#open-issues)  
+> [5.6 Lessons Learned](#lessons-learned)  
+> [5.7 Product Development Life Cycle](#product-development-life-cycle)
+>
+> > [5.7.1 New Tasks](#new-tasks)  
+> > [5.7.2 Definition of Done](#definition-of-done)  
+> > [5.7.3 Task Review](#task-review)  
+> > [5.7.4 Testing](#testing)  
+> > [5.7.5 Branching Strategy](#branching-strategy)  
+> > [5.8 Product Architecture](#product-architecture)  
+> > [5.8.1 Tech Stack](#tech-stack)  
+> > [5.9 Source Code](#source-code)  
+> > [5.10 Login Credentials](#login-credentials)
+[6. Project 2: SplashKit](#project-2-splashkit)
 
-> [2.3 Completed Deliverables](#completed-deliverables)
+> [6.1 Project Overview](#project-overview-1)  
+> [6.2 User Manual](#user-manual-1)  
+> [6.3 Completed Deliverables](#completed-deliverables-1)  
+> [6.4 Roadmap](#roadmap-1)  
+> [6.5 Open Issues](#open-issues-1)  
+> [6.6 Product Development Life Cycle](#product-development-life-cycle-1)
+>
+> > [6.6.1 New Tasks](#new-tasks-1)  
+> > [6.6.2 Definition of Done](#definition-of-done-1)  
+> > [6.6.3 Task Review](#task-review-1)  
+> > [6.6.4 Testing](#testing-1)  
+> > [6.6.5 Branching Strategy](#branching-strategy-1)  
+> > [6.7 Product Architecture](#product-architecture-1)  
+> > [6.8 Source Code](#source-code-1)
 
-> [2.4 Roadmap](#roadmap)
+## Executive Summary
 
-> [2.5 Open Issues](#open-issues)
+Give an overview or ‘executive summary’ of the company, including any necessary high-level
+information for someone reading about your work for the first time. The following questions should
+help guide your thinking.
 
-> [2.6 Lessons Learned](#lessons-learned)
+What is the company about?
 
-> [2.7 Product Development Life Cycle](#product-development-life-cycle)
+What problem is the company solve?
 
-> > [2.7.1 New Tasks](#new-tasks)
+What are the aims of the company?
 
-> > [2.7.2 Definition of Done](#definition-of-done)
+What are the deliverables?
 
-> > [2.7.3 Task Review](#task-review)
+## Showcase Video
 
-> > [2.7.4 Testing](#testing)
+## Leadership Team
 
-> > [2.7.5 Branching Strategy](#branching-strategy)
-
-> [2.8 Product Architecture](#product-architecture)
-
-> > [2.8.1 UML Diagram](#uml-diagram)
-
-> > [2.8.2 Tech Stack](#tech-stack)
-
-> [2.9 Source Code](#source-code)
-
-> [2.10 Login Credentials](#login-credentials)
-
-> [2.11 Other Relevant Information](#other-relevant-information)
-
-> [2.12 Appendices](#appendices)
-
-[3. Project 2: SplashKit](#project-2-splashkit)
-
-> [3.1 Project Overview](#project-overview-1)
-
-> [3.2 User Manual](#user-manual-1)
-
-> [3.3 Completed Deliverables](#completed-deliverables-1)
-
-> [3.4 Roadmap](#roadmap-1)
-
-> [3.5 Open Issues](#open-issues-1)
-
-> [3.6 Lessons Learned](#lessons-learned-1)
-
-> [3.7 Product Development Life Cycle](#product-development-life-cycle-1)
-
-> > [3.7.1 New Tasks](#new-tasks-1)
-
-> > [3.7.2 Definition of Done](#definition-of-done-1)
-
-> > [3.7.3 Task Review](#task-review-1)
-
-> > [3.7.4 Testing](#testing-1)
-
-> > [3.7.5 Branching Strategy](#branching-strategy-1)
-
-> [3.8 Product Architecture](#product-architecture-1)
-
-> > [3.8.1 UML Diagram](#uml-diagram-1)
-
-> > [3.8.2 Tech Stack](#tech-stack-1)
-
-> [3.9 Source Code](#source-code-1)
-
-> [3.10 Login Credentials](#login-credentials-1)
-
-> [3.11 Other Relevant Information](#other-relevant-information-1)
-
-> [3.12 Appendices](#appendices-1)
-
-# Project Information
-
-## Company Acting Director
+### Company Board
 
 **Name**
 
@@ -104,15 +82,26 @@ Email
 
 List multiple if applicable.
 
-## Project Team
+### Project Mentors
 
-**Project Name**
+**Name**
 
-Company
+_Title_
 
-# Project 1: OnTrack
+Email
 
-## Project Overview
+
+### Student Leads
+
+**Name**
+
+_Title_
+
+Project
+
+## Project 1: OnTrack
+
+### Project Overview
 
 Give an overview or ‘executive summary’ of the project, including any necessary high-level
 information for someone reading about your work for the first time. The following questions should
@@ -126,7 +115,7 @@ What are the aims of the project?
 
 What are the deliverables?
 
-## User Manual
+### User Manual
 
 Give instructions for how someone should use your product or navigate around your development
 environment. Include images, diagrams, or anything that would help a first-time user to use your
@@ -145,7 +134,7 @@ software.
 If your team has a user experience journey that they’ve mapped out for when a user navigates your
 product, run through a demo of that.
 
-## Completed Deliverables
+### Completed Deliverables
 
 Provide a list of product features and/or deliverables, including a brief description, that have
 been completed this trimester. Please relate these deliverables to their corresponding Trello cards
@@ -160,7 +149,7 @@ and which team member(s) were primarily responsible for their completion.
 Also, please indicate where each of the completed deliverables can be found (E.g., MS Teams, GitHub
 repository) and make sure to include a URL link to the resource.
 
-## Roadmap
+### Roadmap
 
 Provide a list of features and/or deliverables that are planned to be completed in the project’s
 future (E.g., next trimester or two trimesters in the future).
@@ -171,7 +160,7 @@ state of each incomplete work item should be briefly described.
 This section should pair up perfectly with your Roadmap on Trello. Make sure both this section and
 your Trello Roadmap are updated upon handing over the project.
 
-## Open Issues
+### Open Issues
 
 List all of the issues and challenges that the team is still facing, and any progress that has been
 made so far to address them.
@@ -190,7 +179,7 @@ Here are some examples of Open Issues:
 - An essential team member had to leave the team with no notice, and there is currently a skill void
   in their place.
 
-## Lessons Learned
+### Lessons Learned
 
 List key lessons learned from the project this Trimester and what you recommend future teams should
 do differently. You must also explain why you believe this to be the case.
@@ -203,7 +192,7 @@ For example, maybe your team had challenges communicating their progress during 
 but towards the end of the Trimester, you developed an effective method for conveying progress
 accurately. This would be a great thing to talk about.
 
-## Product Development Life Cycle
+### Product Development Life Cycle
 
 This section should explain how your team undertakes work. It is an attempt to codify your processes
 so that they can be understood and followed by new members.
@@ -212,7 +201,7 @@ As a team, you may not have clearly defined your Product Development Life Cycle,
 This is an excellent opportunity to explain the work methods, processes and habits that your team
 has been developing intuitively over the course of the Trimester.
 
-### New Tasks
+#### New Tasks
 
 How are new tasks created?
 
@@ -223,7 +212,7 @@ For example, maybe your team meets at the start of each week, reviews your progr
 sprint, makes a big long list of everything to be done, and then converts that list into a series of
 cards on Trello. This process would be something you talk about in this section.
 
-### Definition of Done
+#### Definition of Done
 
 How does the team know when a task is done?
 
@@ -234,7 +223,7 @@ ensure a certain standard of work that holds all team members accountable. For e
 clunky code that “just works” is very different to clean, well-commented code that works AND is easy
 to understand. Which would you prefer to be your team’s definition of done?
 
-### Task Review
+#### Task Review
 
 Who reviews a task once it’s been marked as done?
 
@@ -244,14 +233,14 @@ or working prototype?
 If you don’t currently have a system for reviewing tasks, make sure to flag this for next
 trimester’s team to work on as soon as they begin.
 
-### Testing
+#### Testing
 
 How do you test your product to see if it does what it was originally planned to do?
 
 If your product isn’t heavily comprised of software, how can you build in testing to your team’s
 product development life cycle to ensure that “stuff works as it should”?
 
-### Branching Strategy
+#### Branching Strategy
 
 How does your team currently use GitHub repository?
 
@@ -267,9 +256,9 @@ For example, if you currently have all members of the team commit directly to th
 you recommend any tutorials for the future team to review that might lead to a cleaner, more
 organised and more efficient repository?
 
-## Product Architecture
+### Product Architecture
 
-### UML Diagram
+#### UML Diagram
 
 Provide a high-level map of the project showing all of its components and how they relate to each
 other.
@@ -280,12 +269,12 @@ so long as your diagram is informative and easy to read.
 Resources like [Lucidchart](https://www.lucidchart.com/) and [Draw.io](https://app.diagrams.net/)
 are incredibly useful for this.
 
-### Tech Stack
+#### Tech Stack
 
 List all of the software and hardware utilised in this project. For each tool, give a short
 description and explain why it was chosen.
 
-## Source Code
+### Source Code
 
 All source code should be found on your team’s GitHub repository, unless your project has unique
 constraints that require you to store your code elsewhere. This includes any resources (e.g.,
@@ -298,13 +287,13 @@ libraries.
 If your code is hosted on a server external to Deakin, make sure to also transfer digital copies of
 your code over to your client and the next team as a backup.
 
-## Login Credentials
+### Login Credentials
 
 Please provide all credentials (usernames and passwords) for any of the resources, websites, or
 platforms being utilised for this project. Please make sure that none of these credentials share
 passwords or usernames with any of your team’s private credentials.
 
-## Other Relevant Information
+### Other Relevant Information
 
 This section is an invitation to add any additional information that you think will help to onboard
 new members. If you choose not to add any extra sections to this document, this section should be
@@ -314,7 +303,7 @@ Please edit this entire document as you see fit. If you think adding 5 extra sec
 listed here will help to communicate the nuances of your project to future members, go ahead! We
 want you to take full ownership of your handover and this document.
 
-## Appendices
+### Appendices
 
 Include all relevant artefacts delivered during the course of the project. Anything that will paint
 a clearer picture of your team’s progress this trimester, the things that informed decisions, and
@@ -322,9 +311,9 @@ the evolution of your product.
 
 Please also include a link to your team’s showcase video.
 
-# Project 2: SplashKit
+## Project 2: SplashKit
 
-## Project Overview
+### Project Overview
 
 Give an overview or ‘executive summary’ of the project, including any necessary high-level
 information for someone reading about your work for the first time. The following questions should
@@ -338,7 +327,7 @@ What are the aims of the project?
 
 What are the deliverables?
 
-## User Manual
+### User Manual
 
 Give instructions for how someone should use your product or navigate around your development
 environment. Include images, diagrams, or anything that would help a first-time user to use your
@@ -357,7 +346,7 @@ software.
 If your team has a user experience journey that they’ve mapped out for when a user navigates your
 product, run through a demo of that.
 
-## Completed Deliverables
+### Completed Deliverables
 
 Provide a list of product features and/or deliverables, including a brief description, that have
 been completed this trimester. Please relate these deliverables to their corresponding Trello cards
@@ -372,7 +361,7 @@ and which team member(s) were primarily responsible for their completion.
 Also, please indicate where each of the completed deliverables can be found (E.g., MS Teams, GitHub
 repository) and make sure to include a URL link to the resource.
 
-## Roadmap
+### Roadmap
 
 Provide a list of features and/or deliverables that are planned to be completed in the project’s
 future (E.g., next trimester or two trimesters in the future).
@@ -383,7 +372,7 @@ state of each incomplete work item should be briefly described.
 This section should pair up perfectly with your Roadmap on Trello. Make sure both this section and
 your Trello Roadmap are updated upon handing over the project.
 
-## Open Issues
+### Open Issues
 
 List all of the issues and challenges that the team is still facing, and any progress that has been
 made so far to address them.
@@ -402,7 +391,7 @@ Here are some examples of Open Issues:
 - An essential team member had to leave the team with no notice, and there is currently a skill void
   in their place.
 
-## Lessons Learned
+### Lessons Learned
 
 List key lessons learned from the project this Trimester and what you recommend future teams should
 do differently. You must also explain why you believe this to be the case.
@@ -415,7 +404,7 @@ For example, maybe your team had challenges communicating their progress during 
 but towards the end of the Trimester, you developed an effective method for conveying progress
 accurately. This would be a great thing to talk about.
 
-## Product Development Life Cycle
+### Product Development Life Cycle
 
 This section should explain how your team undertakes work. It is an attempt to codify your processes
 so that they can be understood and followed by new members.
@@ -424,7 +413,7 @@ As a team, you may not have clearly defined your Product Development Life Cycle,
 This is an excellent opportunity to explain the work methods, processes and habits that your team
 has been developing intuitively over the course of the Trimester.
 
-### New Tasks
+#### New Tasks
 
 How are new tasks created?
 
@@ -435,7 +424,7 @@ For example, maybe your team meets at the start of each week, reviews your progr
 sprint, makes a big long list of everything to be done, and then converts that list into a series of
 cards on Trello. This process would be something you talk about in this section.
 
-### Definition of Done
+#### Definition of Done
 
 How does the team know when a task is done?
 
@@ -446,7 +435,7 @@ ensure a certain standard of work that holds all team members accountable. For e
 clunky code that “just works” is very different to clean, well-commented code that works AND is easy
 to understand. Which would you prefer to be your team’s definition of done?
 
-### Task Review
+#### Task Review
 
 Who reviews a task once it’s been marked as done?
 
@@ -456,14 +445,14 @@ or working prototype?
 If you don’t currently have a system for reviewing tasks, make sure to flag this for next
 trimester’s team to work on as soon as they begin.
 
-### Testing
+#### Testing
 
 How do you test your product to see if it does what it was originally planned to do?
 
 If your product isn’t heavily comprised of software, how can you build in testing to your team’s
 product development life cycle to ensure that “stuff works as it should”?
 
-### Branching Strategy
+#### Branching Strategy
 
 How does your team currently use GitHub repository?
 
@@ -479,9 +468,9 @@ For example, if you currently have all members of the team commit directly to th
 you recommend any tutorials for the future team to review that might lead to a cleaner, more
 organised and more efficient repository?
 
-## Product Architecture
+### Product Architecture
 
-### UML Diagram
+#### UML Diagram
 
 Provide a high-level map of the project showing all of its components and how they relate to each
 other.
@@ -492,12 +481,12 @@ so long as your diagram is informative and easy to read.
 Resources like [Lucidchart](https://www.lucidchart.com/) and [Draw.io](https://app.diagrams.net/)
 are incredibly useful for this.
 
-### Tech Stack
+#### Tech Stack
 
 List all of the software and hardware utilised in this project. For each tool, give a short
 description and explain why it was chosen.
 
-## Source Code
+### Source Code
 
 All source code should be found on your team’s GitHub repository, unless your project has unique
 constraints that require you to store your code elsewhere. This includes any resources (e.g.,
@@ -510,13 +499,13 @@ libraries.
 If your code is hosted on a server external to Deakin, make sure to also transfer digital copies of
 your code over to your client and the next team as a backup.
 
-## Login Credentials
+### Login Credentials
 
 Please provide all credentials (usernames and passwords) for any of the resources, websites, or
 platforms being utilised for this project. Please make sure that none of these credentials share
 passwords or usernames with any of your team’s private credentials.
 
-## Other Relevant Information
+### Other Relevant Information
 
 This section is an invitation to add any additional information that you think will help to onboard
 new members. If you choose not to add any extra sections to this document, this section should be
@@ -526,7 +515,7 @@ Please edit this entire document as you see fit. If you think adding 5 extra sec
 listed here will help to communicate the nuances of your project to future members, go ahead! We
 want you to take full ownership of your handover and this document.
 
-## Appendices
+### Appendices
 
 Include all relevant artefacts delivered during the course of the project. Anything that will paint
 a clearer picture of your team’s progress this trimester, the things that informed decisions, and
