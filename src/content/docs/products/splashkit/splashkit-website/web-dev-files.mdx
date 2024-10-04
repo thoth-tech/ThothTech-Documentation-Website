@@ -1,7 +1,7 @@
 ---
 title: Key Website Development Files
 sidebar:
-  label: Key Website Development Files
+  label: Key Web Development Files
   order: 3
 ---
 
@@ -25,7 +25,7 @@ files and file types when contributing.
 5. [Peer Reviews: What to Look For](#peer-reviews-what-to-look-for)
    - [.mdx Files](#mdx-files-1)
    - [CSS Files](#css-files-1)
-   - [.jsx and .tsx Files](#jsx-and-tsx-files-1)
+   - [.jsx and .tsx Files](#jsxtsx-files)
    - [.astro Files](#astro-files-1)
 
 ---
@@ -45,13 +45,13 @@ files and file types when contributing.
 
   **Example**:
 
-  ```
+  ```shell
   npm install react
   ```
 
   This will add `react` to `package.json` under dependencies:
 
-  ```
+  ```json
   {
     "dependencies": {
       "react": "^17.0.2"
@@ -65,7 +65,7 @@ files and file types when contributing.
 In most cases, you won’t need to manually edit `package.json` or `package-lock.json`. If you want to
 remove a dependency, it’s best to use:
 
-```
+```shell
 npm uninstall <package_name>
 ```
 
@@ -81,89 +81,93 @@ site metadata, and base URLs.
 updating site-wide settings such as title, description, or site configuration. Below are some
 specific examples:
 
-1.  **Site Metadata**
+#### Site Metadata
 
 - **Why Update?**: You may want to change the global title, description, or other metadata for
   search engine optimisation and branding purposes.
 - **Example**:
-  ```
+
+  ```js
   export default {
-    site: 'https://example.com',
-    base: '/',
+    site: "https://example.com",
+    base: "/",
     markdownOptions: {
       rehypePlugins: [],
     },
     build: {
-      format: 'directory'
-    }
+      format: "directory",
+    },
   };
   ```
-  - Update `site` or `base` when the site’s URL changes or if you want to modify markdown handling
-    (affecting headings, tables, etc.).
 
-2.  **Integrations**
+  Update `site` or `base` when the site’s URL changes or if you want to modify markdown handling
+  (affecting headings, tables, etc.).
+
+#### Integrations
 
 - **Why Update?**: If you’re adding design frameworks like TailwindCSS or optimising images through
   Astro.
 - **Example**: Integrating TailwindCSS for utility-first styling.
 
-  ```
-  import tailwind from '@astrojs/tailwind';
+  ```js
+  import tailwind from "@astrojs/tailwind";
 
   export default {
-    integrations: [tailwind()]
+    integrations: [tailwind()],
   };
   ```
 
-  - This allows you to quickly apply Tailwind's design utilities across your project.
+  This allows you to quickly apply Tailwind's design utilities across your project.
 
-3.  **Customising Vite**
+#### Customising Vite
 
 - **Why Update?**: When you need to customise the build pipeline to handle assets (images, fonts)
   more efficiently.
 - **Example**: Adjust Vite settings to optimise or transform images.
-  ```
+
+  ```js
   export default {
     vite: {
       build: {
-        assetsInlineLimit: 4096,  // in bytes
-      }
-    }
+        assetsInlineLimit: 4096, // in bytes
+      },
+    },
   };
   ```
-  - This controls when assets are inlined versus being loaded separately, which impacts performance
-    and design choices.
 
-4.  **Page Transitions and Animations**
+  This controls when assets are inlined versus being loaded separately, which impacts performance
+  and design choices.
+
+#### Page Transitions and Animations
 
 - **Why Update?**: If you're adding smooth page transitions or animations between pages to improve
   UX.
 - **Example**: Adding an integration for animations using Astro Motion.
 
-  ```
-  import motion from 'astro-motion';
+  ```js
+  import motion from "astro-motion";
 
   export default {
     integrations: [motion()],
   };
   ```
 
-  - This adds visual flair and smoother transitions between pages.
+  This adds visual flair and smoother transitions between pages.
 
-5.  **Enabling SCSS or PostCSS**
+#### Enabling SCSS or PostCSS
 
 - **Why Update?**: If you need to support SCSS for custom styling workflows.
 - **Example**: Enabling SCSS in Astro.
 
-  ```
-  import { sass } from '@astrojs/sass';
+  ```js
+  import { sass } from "@astrojs/sass";
 
   export default {
     integrations: [sass()],
   };
   ```
 
-  - This allows you to use SCSS for modular and efficient styling.
+  This allows you to use SCSS for modular and efficient styling.
 
 ---
 
@@ -176,6 +180,7 @@ specific examples:
 
 - **What to update**: Add or modify pages in `src/pages/` or components in `src/components/`.
 
+{/*
 Example: Editing `Sidebar.astro` to update navigation links
 
 - **Scenario**: You need to update the sidebar to include a new section in the website's navigation.
@@ -183,7 +188,7 @@ Example: Editing `Sidebar.astro` to update navigation links
 - **How to update**: Modify the existing `Sidebar.astro` component to add a new navigation link
   pointing to the new section.
 
-  ```
+  ```astro
   <aside>
     <nav>
       <ul>
@@ -199,15 +204,18 @@ Example: Editing `Sidebar.astro` to update navigation links
   the sidebar's navigation, allowing users to navigate to the newly created page.
 - **When to update**: Edit `.astro` files when changing page layouts, adding components, or
   modifying the site’s structure.
+*/}
 
 ---
 
 ### `.jsx` and `.tsx` Files
 
 - **Purpose**: Handles interactivity and dynamic content through React components.
-- **What to update**:
-  - If adding or editing interactive elements like carousels, forms, or sliders, modify these files.
-    They’re typically located in `src/components/react/`.
+
+- **What to update**: If adding or editing interactive elements like carousels, forms, or sliders,
+  modify these files. They’re typically located in `src/components/react/`.
+
+---
 
 ### `.css` Files
 
@@ -218,12 +226,12 @@ Example: Editing `Sidebar.astro` to update navigation links
 - **What to update**: You can modify styles in files like `custom.css` or create new
   component-specific styles depending on the changes being made to the design or layout.
 
-Example: Adjusting the colour palette in `custom.css`
+#### Example 1: Adjusting the colour palette in `custom.css`
 
 - **Scenario**: You need to update the website’s colour scheme to match a new brand identity.
 - **How to update**: Modify CSS variables in `custom.css` to reflect the new colours.
 
-  ```
+  ```css
   :root {
     --primary-colour: #3498db;
     --secondary-colour: #2ecc71;
@@ -232,13 +240,13 @@ Example: Adjusting the colour palette in `custom.css`
   }
   ```
 
-Example: Adding custom styles for a specific component
+#### Example 2: Adding custom styles for a specific component
 
 - **Scenario**: You want to add specific styles for a newly created `Button.astro` component.
 - **How to update**: Add styles to `custom.css` for the `button` class or ID specific to the
   component.
 
-  ```
+  ```css
   .button-primary {
     background-colour: var(--primary-colour);
     colour: white;
@@ -274,11 +282,11 @@ Example: Adding custom styles for a specific component
     stored in the same folder as the corresponding `.mdx` file. This keeps the related assets
     organised with the content they belong to.
 
-Example:
+- **Example**:
 
-- A gif demonstrating a tutorial should be placed in `public/usage-examples-images-gifs/`.
-- An image used in a physics tutorial stored in `src/content/docs/guides/physics/images` should sit
-  alongside the tutorial file in that same folder.
+  - A gif demonstrating a tutorial should be placed in `public/usage-examples-images-gifs/`.
+  - An image used in a physics tutorial stored in `src/content/docs/guides/physics/images` should
+    sit alongside the tutorial file in that same folder.
 
 ---
 
@@ -296,26 +304,26 @@ Example:
 
 When performing peer reviews, here’s what you should check for in various files:
 
-### `.mdx` Files:
+### `.mdx` Files
 
 - **Content Accuracy**: Ensure the information is correct and well-organised.
 - **Frontmatter**: Check that the frontmatter is complete (e.g., `title`, `description`).
 - **Component Usage**: Ensure embedded components are used properly (e.g., `LinkCard` or
   `CardGrid`).
 
-### `.css` Files:
+### `.css` Files
 
 - **Consistency**: Ensure that styles follow the project’s styling conventions (e.g., consistent use
   of variables for colours, fonts, and spacing).
 - **Naming Conventions**: Ensure class names follow a consistent naming pattern.
 
-### `.jsx`/`.tsx` Files:
+### `.jsx`/`.tsx` Files
 
 - **Functionality**: Ensure that the component works as expected.
 - **Performance**: Look for unnecessary re-renders or inefficiencies in React component updates.
 - **Code Style**: Ensure it follows SplashKit's linting rules.
 
-### `.astro` Files:
+### `.astro` Files
 
 - **Structure**: Ensure the page/component is well-structured and follows best practices.
 - **Reusability**: Consider whether code could be refactored into reusable components.

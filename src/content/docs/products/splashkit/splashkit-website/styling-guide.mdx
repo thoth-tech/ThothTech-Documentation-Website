@@ -13,12 +13,14 @@ accessibility, and a cohesive design.
 1. [Colour Palette](#colour-palette)
    - [Tools for Colour Palette Generation](#tools-for-colour-palette-generation)
 2. [Accessibility Considerations](#accessibility-considerations)
-   - [WCAG 2.1 AA Compliance](#wcag-21-aa-compliance)
-   - [Disabling Animations and Smooth Transitions](#disabling-animations-and-smooth-transitions)
-   - [Hover Effects and Visual Cues](#hover-effects-and-visual-cues)
-   - [Colour Blindness Accessibility](#colour-blindness-accessibility)
-3. [Typography](#typography)
-   - [Astro Standards](#astro-standards)
+   - [WCAG 2.1 AA Compliance](#1-wcag-21-aa-compliance)
+   - [Disabling Animations and Smooth Transitions](#2-disabling-animations-and-smooth-transitions)
+   - [Hover Effects and Visual Cues](#3-hover-effects-and-visual-cues)
+   - [Colour Blindness Accessibility](#4-colour-blindness-accessibility)
+3. [Typography](#typography)  
+    {/*Commented out:
+    <!-- - [Astro Standards](#astro-standards) -->
+    */}
 4. [Component Styling](#component-styling)
    - [Buttons](#buttons)
 5. [Image and Asset Management](#image-and-asset-management)
@@ -35,7 +37,7 @@ accessibility, and a cohesive design.
   design. You are encouraged to use accessible, high-contrast colours that support both branding and
   readability.
 
-### Tools for Colour Palette Generation:
+### Tools for Colour Palette Generation
 
 - **Coolors.co**: Use [Coolors.co](https://coolors.co/) to generate and experiment with colour
   palettes. This platform supports multiple colour spaces and includes contrast checkers, ensuring
@@ -43,7 +45,7 @@ accessibility, and a cohesive design.
 
   **Example**:
 
-  ```
+  ```css
   :root {
     --primary-colour: ;
     --secondary-colour: ;
@@ -78,7 +80,7 @@ navigate for all users, including those with visual impairments.
 
   **CSS Example**:
 
-  ```
+  ```css
   @media (prefers-reduced-motion: reduce) {
     * {
       animation: none !important;
@@ -98,7 +100,7 @@ navigate for all users, including those with visual impairments.
 
   **Example**:
 
-  ```
+  ```css
   a {
     color: var(--primary-colour);
   }
@@ -122,24 +124,29 @@ navigate for all users, including those with visual impairments.
 
 ## Typography
 
-- **Font**: Use a modern, readable font to maintain consistency across the website. We aim to follow
-  the **Astro standards** for typography unless there is a specific design need to deviate.
+### Font
 
-  - Default fonts like `Arial`, `Roboto`, or `Gaegu` can be used for headers and body text.
-  - Follow the existing import patterns for fonts:
-    ```
-    @import url("https://use.typekit.net/vzr3ole.css");
-    @import url("https://fonts.googleapis.com/css?family=Gaegu&display=swap");
-    ```
+Use a modern, readable font to maintain consistency across the website.
+{/* Commented out:
+<!-- We aim to 
+follow the **Astro standards** for typography unless there is a specific design need to deviate.-->
+*/}
 
-- **Font Sizes**:
+- Default fonts like `Arial`, `Roboto`, or `Gaegu` can be used for headers and body text.
+- Follow the existing import patterns for fonts:
 
-  - Headings: Use larger font sizes for hierarchy and structure.
-  - Body text: Minimum 16px for readability.
-
-  **Example**:
-
+  ```css
+  @import url("https://use.typekit.net/vzr3ole.css");
+  @import url("https://fonts.googleapis.com/css?family=Gaegu&display=swap");
   ```
+
+### Font Sizes
+
+- Headings: Use larger font sizes for hierarchy and structure.
+- Body text: Minimum 16px for readability.
+- Example:
+
+  ```css
   h1 {
     font-size: 2.5rem;
     font-weight: bold;
@@ -150,7 +157,7 @@ navigate for all users, including those with visual impairments.
   }
   ```
 
-  If needed, you can adjust these values in `custom.css` to fit specific design elements.
+If needed, you can adjust these values in `custom.css` to fit specific design elements.
 
 ---
 
@@ -162,7 +169,7 @@ Buttons should use consistent styles across the website to ensure a cohesive loo
 
 - **Primary Button**: **Example**:
 
-  ```
+  ```css
   .button-primary {
     background-colour: var(--primary-colour);
     colour: white;
@@ -201,7 +208,7 @@ is an excellent tool for previewing and adjusting colour values for various desi
 the website. It allows you to tweak background, text, and accent colours in real-time, providing
 instant feedback on how those changes will affect the overall design.
 
-### How to Use:
+### How to Use
 
 - Use the sliders in the editor to adjust different colour variables, which are immediately
   reflected in the preview.
@@ -216,7 +223,7 @@ instant feedback on how those changes will affect the overall design.
 
 Here are the current values being used in the `custom.css` file for the SplashKit website:
 
-```
+```css
 @import url("https://use.typekit.net/vzr3ole.css");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Gaegu&display=swap");
@@ -231,7 +238,7 @@ Here are the current values being used in the `custom.css` file for the SplashKi
 :root[data-theme="light"] {
   --purple-hsl: 255, 85%, 65%;
   --sl-hue-accent: 350;
-  --sl-color-accent: #3D50f5;
+  --sl-color-accent: #3d50f5;
 }
 ```
 
