@@ -11,7 +11,6 @@ export default defineConfig({
       social: {
         github: "https://github.com/thoth-tech",
       },
-      favicon: "./favicon-small.svg",
       logo: {
         src: "./public/favicon.svg",
       },
