@@ -1,139 +1,125 @@
-/*global theme*/
-/* Dark mode colors. */
+@import url('https://fonts.googleapis.com/css?family=YourFontChoice&display=swap');
+
+/* Dark mode colors */
 :root {
-  --sl-color-accent-low: #242424;
-  --sl-color-accent: #6a6a6a;
-  --sl-color-accent-high: #c8c8c8;
+  --sl-color-accent-low: #003366; /* Dark Blue from headpiece */
+  --sl-color-accent: #33773d; /* Green from the ibis head */
   --sl-color-white: #ffffff;
-  --sl-color-gray-1: #eeeeee;
-  --sl-color-gray-2: #c2c2c2;
-  --sl-color-gray-3: #8b8b8b;
-  --sl-color-gray-4: #585858;
-  --sl-color-gray-5: #383838;
   --sl-color-gray-6: #272727;
-  --sl-color-black: #181818;
+  --sl-color-darkest-blue: #697e93; /* Darkest Blue from the headpiece */
+  --sl-color-subtle-blue: #3b4d63; /* Subtle blue from the logo */
+  --sl-color-gold: #d4af37; /* Gold from the kilt */
 }
-/* Light mode colors!!! */
+
+
+/* Light mode colors */
 :root[data-theme="light"] {
-  --sl-color-accent-low: #d7d7d7;
-  --sl-color-accent: #6b6b6b;
-  --sl-color-accent-high: #323232;
-  --sl-color-white: #181818;
-  --sl-color-gray-1: #272727;
-  --sl-color-gray-2: #383838;
-  --sl-color-gray-3: #585858;
-  --sl-color-gray-4: #8b8b8b;
-  --sl-color-gray-5: #c2c2c2;
-  --sl-color-gray-6: #eeeeee;
-  --sl-color-gray-7: #f6f6f6;
-  --sl-color-black: #ffffff;
+  --sl-color-accent-low: #234a73; /* Slightly lighter navy */
+  --sl-color-accent: #003366; /* Darkest navy */
+  --sl-color-accent-high: #33773d; /* Green from ibis head */
+  --sl-color-darkest-blue: #00204F; /* Darkest Navy Blue */
+  --sl-color-subtle-blue: #308D57; /* Subtle green from the logo */
+  --sl-color-gold: #d4af37; /* Gold from the kilt */
 }
 
-/*landing page*/
-.aboutContainer {
+/* Apply the subtle gradient background */
+body {
   width: 100%;
-  float: left;
+  height: 100vh;
+  background-size: cover;
+  color: var(--sl-color-white); /* Default text color for dark mode */
 }
 
-.aboutAbout {
-  width: 20%;
-}
-.aboutButtons {
-  width: 60%;
+/* Dark mode background gradient */
+:root:not([data-theme="light"]) body {
+  background: linear-gradient(90deg, var(--sl-color-subtle-blue) 50%, var(--sl-color-darkest-blue) 99%, var(--sl-color-black) 100%);
+  color: var(--sl-color-white); /* White text for better contrast */
 }
 
-/*products page*/
-.ontrack {
-  --sl-color-gray-1: #3691ff; /*??*/
-  --sl-color-gray-2: #3691ff; /*hover outline*/
-  --sl-color-gray-3: #3691ff; /*Text Colour*/
-  --sl-color-gray-4: #3691ff; /*??*/
-  --sl-color-gray-5: #00459a; /*non-hover outline*/
-  --sl-color-gray-6: #131313; /*hover background*/
-  --sl-color-black: #3691ff; /*Text colour light mode*/
-  --sl-color-white: #3691ff; /*Text colour dark mode*/
-  display: flex;
-  justify-content: center;
+/* Light mode background gradient */
+:root[data-theme="light"] body {
+  background: linear-gradient(90deg, #c4cfdd 0%, #c6cfdc 99%, #b5d6ef 100%);
+  color: var(--sl-color-black); /* Dark text for better contrast */
+}
+
+/* General Card Styles */
+.card {
+  transition: all 0.3s ease-in-out;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  color: inherit; /* Ensure text color inherits correctly */
+}
+
+/* Light Mode Card Styles */
+:root[data-theme="light"] .card {
+  color: var(--sl-color-black); /* Dark text in light mode */
+}
+
+/* Dark Mode Card Styles */
+:root:not([data-theme="light"]) .card {
+  color: var(--sl-color-white); /* Light text in dark mode */
+}
+
+/* Hover Effects for Cards */
+/* Light Mode Hover */
+:root[data-theme="light"] .card:hover {
+  background-color: var(--sl-color-gray-6); /* Light gray background */
+  color: var(--sl-color-white); /* White text */
+}
+
+/* Dark Mode Hover */
+:root:not([data-theme="light"]) .card:hover {
+  background-color: var(--sl-color-gray-6); /* Dark background on hover */
+  color: var(--sl-color-white); /* Bright text on hover */
+}
+
+/* Hero Section Button Styles */
+.hero .primary {
+  background-color: #33773d ; /* Green background */
+  color: #ffffff ; /* White text */
+  border-radius: 50px ;
+  padding: 12px 24px ;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: inline-flex;
   align-items: center;
-}
-
-img.ontrack {
-  float: right;
-}
-
-.splashkit {
-  --sl-color-gray-1: #f5a623; /*??*/
-  --sl-color-gray-2: #f5a623; /*hover outline*/
-  --sl-color-gray-3: #f5a623; /*Text Colour*/
-  --sl-color-gray-4: #f5a623; /*??*/
-  --sl-color-gray-5: #855506; /*non-hover outline*/
-  --sl-color-gray-6: #131313; /*hover background*/
-  --sl-color-black: #f5a623; /*Text colour light mode*/
-  --sl-color-white: #f5a623; /*Text colour dark mode*/
-  display: flex;
   justify-content: center;
-  align-items: center;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
-.starlight {
-  --sl-color-gray-1: #545454; /*??*/
-  --sl-color-gray-2: #545454; /*hover outline*/
-  --sl-color-gray-3: #545454; /*Text Colour*/
-  --sl-color-gray-4: #545454; /*??*/
-  --sl-color-gray-5: #2a2a2a; /*non-hover outline*/
-  --sl-color-gray-6: #131313; /*hover background*/
-  --sl-color-black: #545454; /*Text colour light mode*/
-  --sl-color-white: #545454; /*Text colour dark mode*/
-  display: flex;
-  justify-content: center;
+/* Hover state for buttons */
+.hero .primary:hover {
+  background-color: #285e30 ; /* Darker green on hover */
+  color: #f1c40f ; /* Optional: Gold text on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Color Variables */
+:root {
+  --heading-color-dark: #79a7e0; /* Light Blue for headings in dark mode */
+  --heading-color-light: #003366; /* Dark Blue for headings in light mode */
+  --content-color-dark: #ffffff; /* White content text for dark mode */
+  --content-color-light: #000000; /* Black content text for light mode */
+}
+
+/* Light Mode Colors */
+:root[data-theme='light'] {
+  --sl-color-heading: v #ffffff; /* Blue headings in light mode */
+  --sl-color-content: var(--content-color-light); /* Black content in light mode */
+}
+
+/* Dark Mode Colors */
+:root:not([data-theme='light']) {
+  --sl-color-heading: #ffffff; /* White headings in dark mode */
+  --sl-color-content: #ffffff;/* White content in dark mode */
 }
 
 
-.artGallery {
-  --sl-color-gray-1: #545454; /*??*/
-  --sl-color-gray-2: #545454; /*hover outline*/
-  --sl-color-gray-3: #545454; /*Text Colour*/
-  --sl-color-gray-4: #545454; /*??*/
-  --sl-color-gray-5: #2a2a2a; /*non-hover outline*/
-  --sl-color-gray-6: #131313; /*hover background*/
-  --sl-color-black: #545454; /*Text colour light mode*/
-  --sl-color-white: #545454; /*Text colour dark mode*/
-  display: flex;
-  justify-content: center;
-}
-
-.courseFlow {
-  --sl-color-gray-1: #7089fd; /*??*/
-  --sl-color-gray-2: #7089fd; /*hover outline*/
-  --sl-color-gray-3: #7089fd; /*Text Colour*/
-  --sl-color-gray-4: #7089fd; /*??*/
-  --sl-color-gray-5: #0221b3; /*non-hover outline*/
-  --sl-color-gray-6: #131313; /*hover background*/
-  --sl-color-black: #7089fd; /*Text colour light mode*/
-  --sl-color-white: #7089fd; /*Text colour dark mode*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.operations {
-  --sl-color-gray-1: #fc486b; /*??*/
-  --sl-color-gray-2: #fc486b; /*hover outline*/
-  --sl-color-gray-3: #fc486b; /*Text Colour*/
-  --sl-color-gray-4: #fc486b; /*??*/
-  --sl-color-gray-5: #9f0221; /*non-hover outline*/
-  --sl-color-gray-6: #131313; /*hover background*/
-  --sl-color-black: #fc486b; /*Text colour light mode*/
-  --sl-color-white: #fc486b; /*Text colour dark mode*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/*product images*/
-.pi {
-  width: 50px;
-  height: 50px;
-  object-fit: scale-down;
-  margin: 30px;
+/* Apply Font and Color Consistency Globally */
+body, h1, h2, h3, h4, h5, h6, p, li, div, span, a {
+  color: var(--sl-color-content) ; /* Ensure content text color */
 }
