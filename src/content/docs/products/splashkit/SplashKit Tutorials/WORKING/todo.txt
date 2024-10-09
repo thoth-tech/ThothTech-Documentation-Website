@@ -15,3 +15,10 @@ Splashkit io -
 
 
 error checking in network splashkit usage examples i made could be a T3 idea.
+
+
+
+Done - 
+1. Getting started guide, it includes how to fork and clone the repo. As well as how to make branches. Shown in CLI, vscode and github desktop.
+2. Updated the pull request page, now it also includes how to use the extension in vscode.
+3. Common Troubleshooting Issues, done rebasing, done conflicts.

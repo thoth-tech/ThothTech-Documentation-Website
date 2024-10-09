@@ -1,0 +1,147 @@
+---
+title: Get Started with Splashkit.io
+description: This is a step-by-step guide on how to get started within the SplashKit Starlight Repo.
+sidebar:
+  label: 1. Getting Started with Splashkit.io
+  order: 1
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+
+## Get your Environment Set Up
+
+### Install necessary tools
+
+First things first, you'll need to install the necessary tools to get started working within Splashkit.io.
+Head to the [Splashkit.io](https://splashkit.io/) website and follow the instructions for your specific
+operating system to install splashkit. Then head to [Docker](https://docs.docker.com/engine/install/)
+and install Docker for your specific operating system. Finally, in your code editor of choice, ensure
+you have added the [Astro Extension](https://docs.astro.build/en/editor-setup/) to your editor.
+
+### Fork the Splashkit.io Repo
+
+To get started working within the Starlight.io you need to first head over to GitHub and make your
+own fork of the [Splashkit Repo](https://github.com/thoth-tech/splashkit.io-starlight).
+
+![splashkit repo](/splashkit/onboarding/starlightrepo.png)
+
+Then select the fork button and create the fork:
+
+![splashkit fork](/splashkit/onboarding/splashkitfork.png)
+
+### Steps to Clone the Repo
+
+<Tabs syncKey="github-management">
+<TabItem label="Via CLI">
+Head into the terminal within your machine and run the following commands, make sure to swap USERNAME
+with your own username:
+
+```shell
+git clone https://github.com/USERNAME/splashkit.io-starlight.git
+```
+
+Then navigate into the directory:
+
+```shell
+cd splashkit.io-starlight
+git remote add upstream https://github.com/thoth-tech/splashkit.io-starlight.git
+```
+
+Now you're all set up to start working on the Splashkit.io repo.
+
+</TabItem>
+<TabItem label="Via vscode">
+Open a new vscode window, and then open the command palette by pressing `cmd + shift + p`, then type
+`git clone` and paste the URL of your forked repo.
+
+![splashkit repo](/splashkit/onboarding/gitclone.gif)
+
+When prompted select the folder location you want to clone the repo into.
+
+![splashkit repo](/splashkit/onboarding/cloningrepo.png)
+
+Once the repo is cloned, vscode will prompt you to open the repo folder location.
+
+![splashkit repo](/splashkit/onboarding/openrepo.png)
+
+Now you're all set up to start working on the Splashkit.io repo in vscode.
+
+</TabItem>
+<TabItem label="Via GitHub Desktop">
+
+Open up GitHub Desktop and click on the `File` tab in the top left corner, then select `Clone Repository`.
+
+![splashkit repo](/splashkit/onboarding/clonegitdesk.png)
+
+Here you can either filter via your existing repositories or find the forked repo, or paste the URL
+of the forked repo.
+
+![splashkit repo](/splashkit/onboarding/cloneurlgitdesk.png)
+
+Once the repo is cloned, you can open the repo in your preferred code editor.
+
+</TabItem>
+</Tabs>
+
+## Create Branches for Contributions
+
+To start contributing to the Splashkit.io repo, you'll need to create a new branch for each contribution.
+
+### Steps to Create a New Branch
+
+<Tabs syncKey="github-management">
+<TabItem label="Via CLI">
+Move into the Splashkit.io directory and create a new branch:
+
+```shell
+git checkout -b your-branch-name
+```
+
+Then push the branch to your fork:
+  
+```shell
+git push origin your-branch-name
+```
+
+Now you're all set up to start working on your new branch.
+
+</TabItem>
+<TabItem label="Via vscode">
+
+Open source control by clicking on the icon on the left-hand side of the vscode window. Then select
+on the three dots, go down to branch and select `Create Branch from`.
+
+![splashkit repo](/splashkit/onboarding/newbranch-vscode.png)
+
+Then select to make the new branch from `master` and name your branch.
+
+![splashkit repo](/splashkit/onboarding/addbranch-vscode.png)
+![splashkit repo](/splashkit/onboarding/namebranch-vscode.png)
+
+Next, push the branch to your fork by clicking on the `Publish Branch` button in source control.
+
+![splashkit repo](/splashkit/onboarding/publishbranch-vscode.png)
+
+Now you're all set up to start working on your new branch.
+
+</TabItem>
+<TabItem label="Via GitHub Desktop">
+
+Select the Starlight repo in GitHub Desktop, then click on the `Current Branch` tab and select `New Branch`.
+
+![splashkit repo](/splashkit/onboarding/addbranch-gitdesk.png)
+
+Name your branch and then click `Create Branch`.
+
+![splashkit repo](/splashkit/onboarding/namebranch-gitdesk.png)
+
+Then push the branch to your fork by clicking on the `Publish Branch` button.
+
+![splashkit repo](/splashkit/onboarding/publishbranch-gitdesk.png)
+
+Now you're all set up to start working on your new branch.
+
+</TabItem>
+</Tabs>
+
+By creating a new branch for each contribution, you can keep your changes separate from the main branch.

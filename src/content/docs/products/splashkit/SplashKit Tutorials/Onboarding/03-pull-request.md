@@ -41,19 +41,22 @@ Verify that the upstream branches have been added successfully.
 git remote -v
 ```
 
-### 4. Push Your Branch
+## Creating a Pull Request
 
-When you are ready to push your branch to create a pull request, push it to the
-`thoth-tech/splashkit.io-starlight` repository.
+To create a pull request, there are a few options available. You can use the GitHub website or the
+[GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
+extension in vscode.
 
-### 5. Open GitHub to Review the Pull Request
+### Using GitHub Website
 
-Open GitHub and navigate to the repository to review your pull request. Initially, the page will
-look like this:
+#### 1. Open GitHub to Review the Pull Request
 
-![pull request](/splashkit/pull-request-fig1.png)
+Open GitHub and navigate to the repository where you want to create a pull request. Click on the
+"Pull requests" tab and then click on the "New pull request" button.
 
-### 6. Change to the Correct Repository
+![pull request](/splashkit/onboarding/pull-request-fig1.png)
+
+#### 2. Change to the Correct Repository
 
 To ensure your pull request is directed to the correct repository, change the settings at the top of
 the page.
@@ -61,23 +64,37 @@ the page.
 - **Base Repository**: Set this to `thoth-tech/splashkit.io-starlight`.
 - **Base Branch**: Set this to `main`.
 
-![pull request](/splashkit/pull-request-fig2.png)
+![pull request](/splashkit/onboarding/pull-request-fig2.png)
 
-![pull request](/splashkit/pull-request-fig3.png)
+![pull request](/splashkit/onboarding/pull-request-fig3.png)
 
-### 7. Add Pull Request Template
+#### 3. Add Pull Request Template
 
 Use the pull request template to provide detailed information about your request. Make sure to fill
 out all necessary fields and complete any required checks.
 
-![pull request](/splashkit/pull-request-fig4.png)
+![pull request](/splashkit/onboarding/pull-request-fig4.png)
 
-### 8. Submit Your Pull Request
+#### 4. Submit Your Pull Request
 
 After filling out the template and completing all required checks, submit your pull request for
-review. Once submitted, move the associated Planner card to the "First Peer Review" column and share
-the pull request and card in the group chat. well donw! Now, keep an eye out for feedback from your
-peer reviewer.
+review.
+
+### Using GitHub Pull Requests Extension in vscode
+
+The steps here remain mostly the same as the prior steps, but you can do it all within vscode.
+Head to the extension within the sidebar and click on the `Create Pull Request` button. This will
+give you the option to select the branch you want to create the pull request from and the branch
+you want to merge into. Follow the same steps as above to fill out the template and submit the pull
+request.
+
+![pull request](/splashkit/onboarding/prinvscode.gif)
+
+### Next Steps
+
+Once the pull request is submitted, move the associated Planner card to the "First Peer Review" column
+and share the pull request and card in the group chat. well done! Now, keep an eye out for feedback
+from your peer reviewer.
 
 - [Pull Request Template](/products/splashkit/splashkit-tutorials/onboarding/04-pull-request-template):
   The template for creating a pull request for SplashKit tutorials.
