@@ -49,21 +49,21 @@ user will need to be fetched or created.
 
 As such, the backend needs to have the following routes to cater for this:
 
-| Endpoint                      | Description                                | Request Body | Response Body |
-| ----------------------------- | ------------------------------------------ | ------------ | ------------- |
-| GET /coursemap/userId         | Get a user's course map via their userId.  | None         | CourseMap     |
-| GET /coursemap/courseId       | Get all course maps via the course id.     | None         | CourseMap[]   |
-| POST /coursemap               | Add a new course map for a user.           | CourseMap    | CourseMap     |
-| PUT /coursemap/coursemapId    | Updates an existing course map via its id. | CourseMap    | CourseMap     |
-| DELETE /coursemap/coursemapId | Deletes an existing course map via its id. | None         | None          |
+| Endpoint                         | Description                                | Request Body | Response Body |
+| -------------------------------- | ------------------------------------------ | ------------ | ------------- |
+| GET /coursemap/userId/id         | Get a user's course map via their userId.  | None         | CourseMap     |
+| GET /coursemap/courseId/id       | Get all course maps via the course id.     | None         | CourseMap[]   |
+| POST /coursemap                  | Add a new course map for a user.           | CourseMap    | CourseMap     |
+| PUT /coursemap/coursemapId/id    | Updates an existing course map via its id. | CourseMap    | CourseMap     |
+| DELETE /coursemap/coursemapId/id | Deletes an existing course map via its id. | None         | None          |
 
 To further elaborate on each route:
 
-**GET /coursemap/userId**
+**GET /coursemap/userId/id**
 
 We need a route to get a course map associated with a user - we can do this via the user id.
 
-**GET /coursemap/courseId**
+**GET /coursemap/courseId/id**
 
 This specific route is mostly going to be for templates of a course map. Essentially, if we cannot
 find a course map for a user, we will need to trigger a response to add a new course map. Once we
@@ -82,13 +82,13 @@ We need to have a way to create a new course map for the user (or a template cou
 side interface presenting a list of courses or mechanism connecting with a student's enrollment will
 be required to associate the course map with a specific course.
 
-**PUT /coursemap/coursemapId**
+**PUT /coursemap/coursemapId/id**
 
 Technically speaking, there shouldn't be a need to update the course map entry itself since we can
 make direct updates to the course map unit entries. However, the route will be included in case it
 is ever needed.
 
-**DELETE /coursemap/coursemapId**
+**DELETE /coursemap/coursemapId/id**
 
 We need a way to delete a course map. This will also require all course map units associated with
 this course map to be deleted as well.
@@ -131,17 +131,17 @@ This has a strong association with the course map and upon entry into the Course
 have the course map associated with the user fetched, we can use the course map id to fetch all
 course map units that belongs to the specific course map.
 
-| Endpoint                              | Description                                                    | Request Body  | Response Body   |
-| ------------------------------------- | -------------------------------------------------------------- | ------------- | --------------- |
-| GET /coursemapunit/courseMapId        | Get a all course map units associated with the course map id.  | None          | CourseMapUnit[] |
-| POST /coursemapunit                   | Add a new course map unit for a user.                          | CourseMapUnit | CourseMapUnit   |
-| PUT /coursemapunit/courseMapUnitId    | Updates an existing course map unit via its id.                | CourseMapUnit | CourseMapUnit   |
-| DELETE /coursemapunit/courseMapUnitId | Deletes an existing course map unit via its id.                | None          | None            |
-| DELETE /coursemapunit/courseMapId     | Deletes all course map units via the associated course map id. | None          | None            |
+| Endpoint                                 | Description                                                    | Request Body  | Response Body   |
+| ---------------------------------------- | -------------------------------------------------------------- | ------------- | --------------- |
+| GET /coursemapunit/courseMapId/id        | Get a all course map units associated with the course map id.  | None          | CourseMapUnit[] |
+| POST /coursemapunit                      | Add a new course map unit for a user.                          | CourseMapUnit | CourseMapUnit   |
+| PUT /coursemapunit/courseMapUnitId/id    | Updates an existing course map unit via its id.                | CourseMapUnit | CourseMapUnit   |
+| DELETE /coursemapunit/courseMapUnitId/id | Deletes an existing course map unit via its id.                | None          | None            |
+| DELETE /coursemapunit/courseMapId/id     | Deletes all course map units via the associated course map id. | None          | None            |
 
 To further elaborate on each route:
 
-**GET /coursemapunit/courseMapId**
+**GET /coursemapunit/courseMapId/id**
 
 Here, we use the course map id to fetch all course map units associated with that id. This will
 essentially retrieve user/student specific set course map units.
@@ -160,19 +160,19 @@ period etc.). This is achievable through the client side processes when dragging
 selecting) a unit into the respective slot where the unit Id will be available at that point in
 time.
 
-**PUT /coursemapunit/courseMapUnitId**
+**PUT /coursemapunit/courseMapUnitId/id**
 
 This allows for updating a course map unit. The main use case for this is when a user is moving a
 unit around within the course map or performing a swap with another unit. Here, we can make direct
 calls to this route and update the data with new positional information (slot positions for year
 etc.).
 
-**DELETE /coursemapunit/courseMapUnitId**
+**DELETE /coursemapunit/courseMapUnitId/id**
 
 A simple delete route where we can delete a course map unit via its id. There will be an option
 available on the client side to delete course map units from the course map.
 
-**DELETE /coursemapunit/courseMapId**
+**DELETE /coursemapunit/courseMapId/id**
 
 This extra delete route will allow for deleting of all course map units based on the course map id.
 This will be useful when deleting the course map which will also require a delete of all course map
@@ -219,14 +219,14 @@ So, the key factors here are:
 
 The routes involved with this will be relatively straightforward.
 
-| Endpoint                | Description                                         | Request Body | Response Body |
-| ----------------------- | --------------------------------------------------- | ------------ | ------------- |
-| GET /course             | Get all course data.                                | None         | Course[]      |
-| GET /course/courseId    | Get a course by id.                                 | None         | Course        |
-| GET /course/search      | Get courses that partially match the search params. | None         | Course[]      |
-| POST /course            | Add a new course.                                   | Course       | Course        |
-| PUT /course/courseId    | Updates an existing course via its id.              | Course       | Course        |
-| DELETE /course/courseId | Deletes an existing course via its id.              | None         | None          |
+| Endpoint                   | Description                                         | Request Body | Response Body |
+| -------------------------- | --------------------------------------------------- | ------------ | ------------- |
+| GET /course                | Get all course data.                                | None         | Course[]      |
+| GET /course/courseId/id    | Get a course by id.                                 | None         | Course        |
+| GET /course/search         | Get courses that partially match the search params. | None         | Course[]      |
+| POST /course               | Add a new course.                                   | Course       | Course        |
+| PUT /course/courseId/id    | Updates an existing course via its id.              | Course       | Course        |
+| DELETE /course/courseId/id | Deletes an existing course via its id.              | None         | None          |
 
 The table above covers the function of each route quite well and thus, further explanation for each
 will be excluded here.
@@ -350,13 +350,13 @@ properties.
 This will be relatively straightforward. We simply need routes that can get/add/update/delete
 specializations.
 
-| Endpoint                                | Description                                    | Request Body   | Response Body    |
-| --------------------------------------- | ---------------------------------------------- | -------------- | ---------------- |
-| GET /specialization                     | Get all specializations.                       | None           | Specialization[] |
-| GET /specialization/specializationId    | Get specialization by id.                      | None           | Specialization   |
-| POST /specialization                    | Add a new specialization.                      | Specialization | Specialization   |
-| PUT /specialization/specializationId    | Updates an existing specialization via its id. | Specialization | Specialization   |
-| DELETE /specialization/specializationId | Deletes an existing specialization via its id. | None           | None             |
+| Endpoint                                   | Description                                    | Request Body   | Response Body    |
+| ------------------------------------------ | ---------------------------------------------- | -------------- | ---------------- |
+| GET /specialization                        | Get all specializations.                       | None           | Specialization[] |
+| GET /specialization/specializationId/id    | Get specialization by id.                      | None           | Specialization   |
+| POST /specialization                       | Add a new specialization.                      | Specialization | Specialization   |
+| PUT /specialization/specializationId/id    | Updates an existing specialization via its id. | Specialization | Specialization   |
+| DELETE /specialization/specializationId/id | Deletes an existing specialization via its id. | None           | None             |
 
 ### Model
 
@@ -504,15 +504,15 @@ This particular entity works in conjunction with Requirements where this provide
 list out required units that belong to a requirement. Additionally, this also provides a way to
 chain requirements to handle requirement choices. The routes will be as follow:
 
-| Endpoint                                  | Description                                     | Request Body | Response Body    |
-| ----------------------------------------- | ----------------------------------------------- | ------------ | ---------------- |
-| GET /requirementset/                      | Get all requirement sets.                       | None         | RequirementSet[] |
-| GET /requirementset/requirementSetGroupId | Get all requirements set for a given group id.  | None         | RequirementSet[] |
-| POST /requirementset                      | Add a new requirement set.                      | Requirement  | RequirementSet   |
-| PUT /requirementset/requirementSetId      | Updates an existing requirement set via its id. | Requirement  | RequirementSet   |
-| DELETE /requirementset/requirementSetId   | Deletes an existing requirement set via its id. | None         | None             |
+| Endpoint                                     | Description                                     | Request Body | Response Body    |
+| -------------------------------------------- | ----------------------------------------------- | ------------ | ---------------- |
+| GET /requirementset/                         | Get all requirement sets.                       | None         | RequirementSet[] |
+| GET /requirementset/requirementSetGroupId/id | Get all requirements set for a given group id.  | None         | RequirementSet[] |
+| POST /requirementset                         | Add a new requirement set.                      | Requirement  | RequirementSet   |
+| PUT /requirementset/requirementSetId/id      | Updates an existing requirement set via its id. | Requirement  | RequirementSet   |
+| DELETE /requirementset/requirementSetId/id   | Deletes an existing requirement set via its id. | None         | None             |
 
-**GET /requirementset/requirementSetGroupId **
+**GET /requirementset/requirementSetGroupId/id**
 
 The only route worth elaborating on is this route where we obtain requirement set entries based on
 the group id. Here, we use the group id recorded with a requirement to find all entries associated
