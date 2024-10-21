@@ -1,5 +1,6 @@
 ---
 title: Tutorial Reviews
+description: Use this template to create a review for a SplashKit tutorial.
 sidebar:
   label: Tutorial Reviews
   order: 3

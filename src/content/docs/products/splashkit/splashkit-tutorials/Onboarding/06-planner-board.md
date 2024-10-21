@@ -2,7 +2,7 @@
 title: Planner Board Ettiquite
 description: Tips on planner board ettiquite.
 sidebar:
-  label: 6. Planner Board Ettiquite
+  label: Planner Board Ettiquite
   order: 6
 ---
 

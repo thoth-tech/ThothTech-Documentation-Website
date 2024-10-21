@@ -3,7 +3,7 @@ title: Pull Request Template
 description: This is a template for creating a pull request for SplashKit tutorials.
 sidebar:
   label: Pull Request Template
-  order: 2
+  order: 4
 ---
 
 ## Template for making a pull request

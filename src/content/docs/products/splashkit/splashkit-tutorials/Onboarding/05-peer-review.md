@@ -3,7 +3,7 @@ title: A Guide to Doing Peer Reviews
 description: A guide on how to do a peer review within the SplashKit tutorials team.
 sidebar:
   label: Peer Review Guide
-  order: 3
+  order: 5
 ---
 
 This guide will help you through the process of performing a peer review for SplashKit tutorials.
