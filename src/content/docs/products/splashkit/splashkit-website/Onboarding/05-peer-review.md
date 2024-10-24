@@ -77,7 +77,9 @@ aspects:
 - **Testing**: Check if there are adequate tests and if they pass successfully.
 - **Documentation**: Ensure that any new features or changes are well-documented.
 
-#### Refer back to the checks in the pull request template as also shown below to ensure you have covered all the necessary aspects
+#### Refer back to the checks in the pull request template
+
+This is also shown below to ensure you have covered all the necessary aspects
 
 ```markdown
 ## Type of change
