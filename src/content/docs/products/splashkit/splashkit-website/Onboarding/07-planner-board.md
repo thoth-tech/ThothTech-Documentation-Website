@@ -3,7 +3,7 @@ title: Planner Board Ettiquite
 description: Tips on planner board ettiquite.
 sidebar:
   label: Planner Board Ettiquite
-  order: 6
+  order: 7
 ---
 
 ## Proper Planner Board Etiquette
@@ -41,7 +41,7 @@ guide for detailed instructions.
 
 ### 4. First Peer Review
 
-- **Follow the review process:** Adhere to the steps outlined in the [Peer Review Guide](/products/splashkit/splashkit-tutorials/onboarding/05-peer-review).
+- **Follow the review process:** Adhere to the steps outlined in the [Peer Review Guide](/products/splashkit/splashkit-website/onboarding/05-peer-review).
 - **Request changes if needed:** Provide feedback and request changes if required.
 - **Approval:** Once the task meets the standards, approve it and the PR, then move the task to the
 "Second Peer Review" column.

@@ -3,7 +3,7 @@ title: Guide to creating usage examples
 description: Learn how to create, submit, and review usage examples for the Splashkit website.
 sidebar:
   label: Creating Usage Examples
-  order: 5
+  order: 2
 ---
 
 import { Tabs, TabItem } from "@astrojs/starlight/components";
@@ -170,58 +170,8 @@ For the screenshot, place it in the `public/usage-examples-images-gifs` folder u
 
 </FileTree>
 
-### Submitting a Pull Request
+## Next Steps
 
-To submit your usage example, follow the steps outlined in the [pull request guide](/products/splashkit/splashkit-tutorials/onboarding/03-pull-request),
-but make sure the destination branch is **usage-example-contributions**. Then use this template:
-
-```shell
-# Overview
-Describe the example and what it demonstrates.
-
-Splashkit Function: `function_name`
-
-# Files Included
-- [ ] Title and explanation (.txt)
-- [ ] C++ code
-- [ ] C# code (top-level statements)
-- [ ] Python code
-- [ ] Screenshot
-
-# Usage Example Checks
-- [ ] Simple, clear demonstration of the function
-- [ ] Code uses Splashkit functions
-- [ ] Tested in Chrome and Firefox
-```
-
-Once submitted, move the associated planner card to peer review and link the pull request. Follow the
-[Planner Board Etiquette](/products/splashkit/splashkit-tutorials/onboarding/06-planner-board) for
-more details on the process.
-
-### Peer Reviewing a Usage Example
-
-When reviewing an example, follow these steps:
-
-1. Test each code file on your machine.
-2. Check the structure and functionality of the code in each language.
-3. Review the preview on the website.
-
-```shell
-# Peer Review
-
-I've reviewed the ...
-
-# Checks
-- [ ] All required files (txt, C++, C#, Python, screenshot) are present.
-- [ ] Code correctly uses Splashkit functions.
-- [ ] Code clearly demonstrates the function.
-- [ ] All versions maintain the same structure and comments.
-
-# Tests done
-- [ ] C++ code ran correctly.
-- [ ] C# code ran correctly.
-- [ ] Python code ran correctly.
-```
-
-Ensure while doing peer reviews that you also follow the [Planner Board Etiquette](/products/splashkit/splashkit-tutorials/onboarding/06-planner-board)
-for moving tasks through the process.
+Now follow the steps in [Usage Example Pull Requests](/products/splashkit/splashkit-website/usage-examples/03-usage-pull-request),
+and submit your usage example for review. For doing a peer review, follow the steps in
+[Peer Review Guide for Usage Examples](/products/splashkit/splashkit-website/usage-examples/04-usage-peer-review).

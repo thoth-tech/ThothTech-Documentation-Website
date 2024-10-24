@@ -96,7 +96,7 @@ Once the pull request is submitted, move the associated Planner card to the "Fir
 and share the pull request and card in the group chat. well done! Now, keep an eye out for feedback
 from your peer reviewer.
 
-- [Pull Request Template](/products/splashkit/splashkit-tutorials/onboarding/04-pull-request-template):
+- [Pull Request Template](/products/splashkit/splashkit-website/onboarding/04-pull-request-template):
   The template for creating a pull request for SplashKit tutorials.
-- [Peer Review Guide](/products/splashkit/splashkit-tutorials/onboarding/05-peer-review): The guide
+- [Peer Review Guide](/products/splashkit/splashkit-website/onboarding/05-peer-review): The guide
   on how to do a peer review within the SplashKit tutorials team.

@@ -3,7 +3,7 @@ title: Tutorials List
 description: A compilation of SplashKit tutorials with recommendations for improvement.
 sidebar:
   hidden: true
-  order: 3
+  order: 6
 ---
 
 On this page is a compilation of SplashKit tutorials and tutorial proposals. Areas of potential
