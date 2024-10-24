@@ -54,7 +54,7 @@ extension in vscode.
 Open GitHub and navigate to the repository where you want to create a pull request. Click on the
 "Pull requests" tab and then click on the "New pull request" button.
 
-![pull request](/splashkit/onboarding/pull-request-fig1.png)
+![pull request](./images/pull-request-fig1.png)
 
 #### 2. Change to the Correct Repository
 
@@ -64,16 +64,16 @@ the page.
 - **Base Repository**: Set this to `thoth-tech/splashkit.io-starlight`.
 - **Base Branch**: Set this to `main`.
 
-![pull request](/splashkit/onboarding/pull-request-fig2.png)
+![pull request](./images/pull-request-fig2.png)
 
-![pull request](/splashkit/onboarding/pull-request-fig3.png)
+![pull request](./images/pull-request-fig3.png)
 
 #### 3. Add Pull Request Template
 
 Use the pull request template to provide detailed information about your request. Make sure to fill
 out all necessary fields and complete any required checks.
 
-![pull request](/splashkit/onboarding/pull-request-fig4.png)
+![pull request](./images/pull-request-fig4.png)
 
 #### 4. Submit Your Pull Request
 
@@ -88,7 +88,7 @@ give you the option to select the branch you want to create the pull request fro
 you want to merge into. Follow the same steps as above to fill out the template and submit the pull
 request.
 
-![pull request](/splashkit/onboarding/prinvscode.gif)
+![pull request](./images/prinvscode.gif)
 
 ### Next Steps
 

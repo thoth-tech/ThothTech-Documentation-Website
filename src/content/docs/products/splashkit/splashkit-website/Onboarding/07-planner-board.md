@@ -53,3 +53,11 @@ guide for detailed instructions.
 - **Mentor Review:** After approving the PR, move it to the appropriate "Mentor Review" column.
 - **Comment on approval:** As before, leave a comment with the date and a note indicating you've
 approved the task for mentor review.
+
+### 6. Mentor Review
+
+- **Final review:** The mentor will review the task and provide feedback.
+- **Request changes:** If changes are needed, the mentor will request them and move the task back to
+  the "doing" column.
+- **Approval:** Once the mentor approves the task, they will merge the PR and move the task to the
+  "completed" column.
