@@ -1,35 +1,44 @@
 ---
 title: A Guide to Doing Peer Reviews
-description: A guide on how to do a peer review within the SplashKit tutorials team.
+description: A guide on how to do a peer review within the SplashKit team.
 sidebar:
   label: Peer Review Guide
   order: 5
 ---
 
-This guide will help you through the process of performing a peer review for SplashKit tutorials.
+This guide will walk you through the process of performing a peer review for the SplashKit Starlight
+project, detailing each step to help you provide thorough and constructive feedback on a pull request
+(PR).
 
 ## How to Perform a Peer Review
 
-Follow these steps to review a pull request (PR) in the SplashKit tutorials repository.
+To maintain code quality and ensure smooth integration of new features, it’s essential to follow
+these steps when reviewing a PR in the SplashKit Starlight repository.
 
 ### 1. Check for Upstream Branches
 
-First, verify if the upstream branches are already added to your local repository.
+Start by verifying whether the upstream branches are already added to your local repository. This is
+necessary to ensure that you can fetch PRs from the original repository for review.
 
 ```shell
 git remote -v
 ```
 
+If the output does not show `upstream` linked to the main repository, you’ll need to add it in the
+next step.
+
 ### 2. Add Upstream Branches (if not present)
 
-If the upstream branches are not added, you can add them using the following command. Replace
-`<repo-name>` with the actual repository name.
+If the upstream branch is missing, add it manually. Replace `<repo-name>` with the exact name of
+the repository.
 
 ```shell
 git remote add upstream https://github.com/thoth-tech/<repo-name>.git
 ```
 
-#### Example with `splashkit.io-starlight` Repository
+#### Example: Adding the `splashkit.io-starlight` Repository
+
+For the `splashkit.io-starlight` repository, the command will be:
 
 ```shell
 git remote add upstream https://github.com/thoth-tech/splashkit.io-starlight.git
@@ -37,31 +46,33 @@ git remote add upstream https://github.com/thoth-tech/splashkit.io-starlight.git
 
 ### 3. Verify Upstream Branches
 
-Verify that the upstream branches have been added successfully.
+Confirm that the upstream branch has been added correctly by running:
 
 ```shell
 git remote -v
 ```
 
+You should see both `origin` (your fork) and `upstream` (the main project repository) listed.
+
 ### 4. Pull the PR into a New Branch
 
-To review a pull request, you need to fetch it into a new branch. Check the ID/number of the PR you
-want to review. Use the following command to fetch the PR, replacing `ID` with the PR number and
-`PR-branch-name` with a name you want to use for this review.
+To review a PR, you will fetch it into a new local branch. Locate the ID/number of the PR on GitHub,
+and use this number in the following command. Replace `ID` with the PR number and `PR-branch-name`
+with a name that represents the PR purpose.
 
 ```shell
 git fetch upstream pull/ID/head:PR-branch-name
 ```
 
-#### Example: If Testing PR#7 that Adds "xyz" Feature
+#### Example: Fetching PR #7 that Adds a "New Feature"
 
 ```shell
-git fetch upstream pull/7/head:test-feature-xyz
+git fetch upstream pull/7/head:test-new-feature
 ```
 
 ### 5. Checkout the New Branch
 
-Switch to the new PR testing branch.
+Switch to the newly created branch to start reviewing the PR.
 
 ```shell
 git checkout PR-branch-name
@@ -69,19 +80,28 @@ git checkout PR-branch-name
 
 ### 6. Review the Code
 
-Now that you have the PR branch checked out, you can review the code. Look for the following
-aspects:
+Now that you are on the PR branch, start by reviewing the code to check for:
 
-- **Code Quality**: Ensure the code follows the project's coding standards and guidelines.
-- **Functionality**: Verify that the new feature or bug fix works as intended.
-- **Testing**: Check if there are adequate tests and if they pass successfully.
-- **Documentation**: Ensure that any new features or changes are well-documented.
+- **Code Quality**: Confirm that the code aligns with the project’s coding standards and guidelines.
+  Look for clean, well-organised, and readable code.
+- **Functionality**: Verify that the changes achieve the intended purpose and work as described.
+- **Testing**: Check for the presence of adequate tests, including unit and integration tests where necessary.
+- **Documentation**: Ensure any new features or updates are documented, with clear comments for
+  any complex sections.
 
-#### Refer back to the checks in the pull request template
+Refer to the pull request template as you go through these checks to confirm that all required
+fields are covered.
 
-This is also shown below to ensure you have covered all the necessary aspects
+#### Reference Checklist from Pull Request Template
+
+Use this checklist as a reference to ensure you’re covering all necessary areas in your review.
 
 ```markdown
+# Description
+
+Please include a summary of the changes and the related issue. Please also include relevant
+motivation and context. List any dependencies that are required for this change.
+
 ## Type of change
 
 - [ ] Bug fix (non-breaking change which fixes an issue)
@@ -129,20 +149,45 @@ Please list the folders and files added/modified with this pull request.
 - Modified:
   - [ ] folder/file
   - [ ] folder/file
+
+## Additional Notes
+
+Please add any additional information that might be useful for the reviewers.
 ```
 
-### 7. Test the Changes
+### 7. Test the Changes Locally
 
-Run the project locally to test the changes introduced by the PR. Make sure everything works as
-expected and there are no new bugs introduced.
+After the code review, run the project locally to verify that the new feature or bug fix works
+as expected. This can include:
 
-### 8. Provide Feedback
+- Running any test suites that come with the project.
+- Manually checking if the new functionality behaves correctly and does not introduce any bugs.
+- Ensuring the changes do not break other parts of the project.
 
-After reviewing and testing, provide constructive feedback on the PR. You can add comments directly
-on the PR in GitHub. Mention any required changes or improvements.
+### 8. Provide Constructive Feedback
+
+After reviewing and testing, leave constructive feedback directly on the PR on GitHub. Highlight
+both positive aspects and areas for improvement.
+
+- Use specific comments on code lines or sections where changes are required.
+- Make sure to explain why a change is needed to help the author learn and understand.
+- Be courteous and professional, focusing on improving the code and maintaining high project standards.
 
 ### 9. Approve or Request Changes
 
-Based on your review, either approve the PR or request changes. If everything looks good and works
-as expected, you can approve the PR. If there are issues, request changes and provide detailed
-feedback.
+Once you’ve completed your review:
+
+- **Approve** if everything meets the project’s standards and the code works as expected.
+- **Request Changes** if the code requires adjustments before it can be merged. Clearly outline
+  the changes required.
+
+In both cases, document your decision and leave detailed notes to assist the author.
+
+### 10. Update Planner Board Status
+
+Following the [Planner Board Etiquette](/products/splashkit/splashkit-website/onboarding/07-planner-board),
+move the associated Planner card to the next column based on the review outcome. If the PR is approved,
+update the card’s status accordingly, and if you requested changes, mark it for revision.
+
+By following this guide, you’ll ensure a thorough and professional review process, helping maintain
+the quality and reliability of the SplashKit Starlight project.
