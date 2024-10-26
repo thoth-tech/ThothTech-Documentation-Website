@@ -1,12 +1,12 @@
 ---
-title: Planner Board Ettiquite
-description: Tips on planner board ettiquite.
+title: Planner Board Ettiquete
+description: Tips on planner board ettiquete.
 sidebar:
-  label: Planner Board Ettiquite
+  label: Planner Board Ettiquete
   order: 7
 ---
 
-## Proper Planner Board Etiquette
+## Proper Planner Board Etiquete
 
 The planner board is where all tasks are tracked. You can find tasks to claim and work on, or add
 your own tasks that you will complete. Here are some guidelines to ensure smooth teamwork and
