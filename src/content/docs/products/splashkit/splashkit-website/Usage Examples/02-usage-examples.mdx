@@ -137,14 +137,16 @@ Now you'll need to rename these before adding them to the Splashkit Starlight.io
 
 #### Example
 
-Say you've created a `dec_to_hex` program. Rename the files as follows:
+Say you've created a `write_line` program. Rename the files as follows:
 
-- `dec_to_hex-1-converter.txt`
-- `dec_to_hex-1-converter.cpp`
-- `dec_to_hex-1-converter.py`
-- `dec_to_hex-1-converter_top.cs`
-- `dec_to_hex-1-converter_oop.cs`
-- `dec_to_hex-1-converter.png`
+```plaintext
+write_line-1-hello-world.cpp
+write_line-1-hello-world.py
+write_line-1-hello-world-top-level.cs
+write_line-1-hello-world-oop.cs
+write_line-1-hello-world.png or .gif
+write_line-1-hello-world.txt
+```
 
 Now you can add these files to the Splashkit Starlight.io repo. If when you add them you find
 there is already some files of a usage example using this same function, then you should increment
@@ -152,52 +154,53 @@ the number in the file name by 1.
 
 ### Step 5 - Adding these files to Splashkit Starlight.io
 
-Now that your files are named, add your files to the `usage-examples-code` folder under the
-appropriate function category (e.g., `terminal/write_line/`). Include the four code files and the
-`.txt` file with the title and explanation. The location in the Statlight.io repo is:
-
-<FileTree>
-
-- src
-  - assets
-    - usage-examples-code
-      - animations/
-      - audio/
-      - camera/
-      - color/
-      - geometry/
-      - graphics/
-      - input/
-      - interface/
-      - json/
-      - logging/
-      - networking/
-      - physics/
-      - rasberry/
-      - resources_bundles/
-      - resources/
-      - sprites/
-      - terminal/
-        - write_line/
-          - write_line-1-hello-world.cpp
-          - write_line-1-hello-world.cs
-          - write_line-1-hello-world.py
-          - write_line-1-hello-world.txt
-      - timers/
-      - utilities/
-      - windows/
-
-</FileTree>
-
-For the screenshot, place it in the `public/usage-examples-images-gifs` folder under the relevant function.
+Now that your files are named, add all of your files to the `usage-examples-files` folder under the
+appropriate function category (e.g., `terminal/write_line/`). The location in the Statlight.io repo is:
 
 <FileTree>
 
 - public
-  - usage-examples-images-gifs
+  - usage-example-files
     - animations/
     - audio/
-    - ...
+    - camera/
+    - color/
+    - geometry/
+    - graphics/
+    - input/
+    - interface/
+    - json/
+    - logging/
+    - networking/
+    - physics/
+    - rasberry/
+    - resources_bundles/
+    - resources/
+    - sprites/
+    - terminal/
+      - write_line/
+        - write_line-1-hello-world.cpp
+        - write_line-1-hello-world-oop.cs
+        - write_line-1-hello-world-top-level.cs
+        - write_line-1-hello-world.py
+        - write_line-1-hello-world.txt
+    - timers/
+    - utilities/
+    - windows/
+
+</FileTree>
+
+The contributing doc on [Splashkit](https://splashkit.io/usage-examples/contributing/) has more
+details on proper file naming and placement. This is also found within the repo in the `CONTRIBUTING.md`.
+Which can be found here:
+
+<FileTree>
+
+- src
+  - content
+    - docs
+      - usage-examples
+        - CONTRIBUTING.mdx
 
 </FileTree>
 
