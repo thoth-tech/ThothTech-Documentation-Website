@@ -2,6 +2,7 @@
 title: Guide to adding OOP to SplashKit tutorials
 description: Learn how to add object-oriented programming (OOP) to the SplashKit tutorials.
 sidebar:
+  hidden: true
   label: Adding OOP to Guides
   order: 4
 ---
@@ -188,13 +189,13 @@ namespace ReadingText
 from splashkit import *
 
 write("What is your name: ") # prompt the user for input
-name = read_line() # read user input and store in a variable
+name = read_line()           # read user input
 
 # Read in another value
 write("And what is your quest? ")
 quest = read_line()
 
-write_line(name + "'s quest is: " + quest)
+write_line(name + "'s quest is: " + quest) # output quest to the terminal
 ```
 
 </TabItem>
