@@ -7,87 +7,96 @@ sidebar:
 ---
 
 import { Tabs, TabItem } from "@astrojs/starlight/components";
+import { Steps } from '@astrojs/starlight/components';
 
 ## Get Your Environment Set Up
 
-### Install Necessary Tools
+---
 
-First things first, you'll need to install the necessary tools to get started working within SplashKit.io.
-Head to the [SplashKit.io](https://splashkit.io/) website and follow the instructions for your specific
-operating system to install SplashKit. Then, head to [Docker](https://docs.docker.com/engine/install/)
-and install Docker for your specific operating system. Finally, in your code editor of choice, ensure
-you have added the [Astro Extension](https://docs.astro.build/en/editor-setup/) to your editor.
+<Steps>
 
-### Fork the SplashKit.io Repo
+1. ### Install Necessary Tools
 
-To get started working within the Starlight repo, you need to first head over to GitHub and make your
-own fork of the [SplashKit Repo](https://github.com/thoth-tech/splashkit.io-starlight).
+    First things first, you'll need to install the necessary tools to get started working within
+    SplashKit.io. Head to the [SplashKit.io](https://splashkit.io/) website and follow the instructions
+    for your specific operating system to install SplashKit. Then, head to [Docker](https://docs.docker.com/engine/install/)
+    and install Docker for your specific operating system. Finally, in your code editor of choice,
+    ensure you have added the [Astro Extension](https://docs.astro.build/en/editor-setup/) to your editor.
 
-![splashkit repo](./images/starlightrepo.png)
+    ---
 
-Then, select the fork button and create the fork:
+2. ### Fork the SplashKit.io Repo
 
-![splashkit fork](./images/splashkitfork.png)
+    To get started working within the Starlight repo, you need to first head over to GitHub and make
+    your own fork of the [SplashKit Repo](https://github.com/thoth-tech/splashkit.io-starlight).
 
-### Steps to Clone the Repo
+    ![splashkit repo](./images/starlightrepo.png)
 
-<Tabs syncKey="github-management">
-<TabItem label="Via CLI">
-Open a terminal on your machine and run the following commands, making sure to replace `USERNAME`
-with your own GitHub username:
+    Then, select the fork button and create the fork:
 
-```shell
-git clone https://github.com/USERNAME/splashkit.io-starlight.git
-```
+    ![splashkit fork](./images/splashkitfork.png)
 
-Then, navigate into the directory:
+    ---
 
-```shell
-cd splashkit.io-starlight
-git remote add upstream https://github.com/thoth-tech/splashkit.io-starlight.git
-```
+3. ### Steps to Clone the Repo
 
-Now you're all set up to start working on the SplashKit.io repo.
+    <Tabs syncKey="github-management">
+    <TabItem label="Via CLI">
+    Open a terminal on your machine and run the following commands, making sure to replace `USERNAME`
+    with your own GitHub username:
 
-</TabItem>
-<TabItem label="Via VSCode">
-Open a new VSCode window, and then open the command palette by pressing `cmd + shift + p` (or `ctrl
-+ shift + p` on Windows/Linux), then type `git clone` and paste the URL of your forked repo.
+    ```shell
+    git clone https://github.com/USERNAME/splashkit.io-starlight.git
+    ```
 
-![splashkit repo](./images/gitclone.gif)
+    Then, navigate into the directory:
 
-When prompted, select the folder location where you want to clone the repo.
+    ```shell
+    cd splashkit.io-starlight
+    git remote add upstream https://github.com/thoth-tech/splashkit.io-starlight.git
+    ```
 
-![splashkit repo](./images/cloningrepo.png)
+    Now you're all set up to start working on the SplashKit.io repo.
 
-Once the repo is cloned, VSCode will prompt you to open the repo folder location.
+    </TabItem>
+    <TabItem label="Via VSCode">
+    Open a new VSCode window, and then open the command palette by pressing `cmd + shift + p` (or `ctrl
+    + shift + p` on Windows/Linux), then type `git clone` and paste the URL of your forked repo.
 
-![splashkit repo](./images/openrepo.png)
+    ![splashkit repo](./images/gitclone.gif)
 
-Now you're all set up to start working on the SplashKit.io repo in VSCode.
+    When prompted, select the folder location where you want to clone the repo.
 
-</TabItem>
-<TabItem label="Via GitHub Desktop">
+    ![splashkit repo](./images/cloningrepo.png)
 
-Open GitHub Desktop and click on the `File` tab in the top-left corner, then select `Clone Repository`.
+    Once the repo is cloned, VSCode will prompt you to open the repo folder location.
 
-![splashkit repo](./images/clonegitdesk.png)
+    ![splashkit repo](./images/openrepo.png)
 
-Here you can either filter via your existing repositories, find the forked repo, or paste the URL
-of the forked repo.
+    Now you're all set up to start working on the SplashKit.io repo in VSCode.
 
-![splashkit repo](./images/cloneurlgitdesk.png)
+    </TabItem>
+    <TabItem label="Via GitHub Desktop">
 
-Once the repo is cloned, you can open the repo in your preferred code editor.
+    Open GitHub Desktop and click on the `File` tab in the top-left corner, then select `Clone Repository`.
 
-</TabItem>
-</Tabs>
+    ![splashkit repo](./images/clonegitdesk.png)
+
+    Here you can either filter via your existing repositories, find the forked repo, or paste the URL
+    of the forked repo.
+
+    ![splashkit repo](./images/cloneurlgitdesk.png)
+
+    Once the repo is cloned, you can open the repo in your preferred code editor.
+
+    </TabItem>
+    </Tabs>
+
+</Steps>
 
 ## Create Branches for Contributions
 
-To start contributing to the SplashKit.io repo, you'll need to create a new branch for each contribution.
-
-### Steps to Create a New Branch
+To start contributing to the SplashKit.io repo, you'll need to create a new branch for each contribution. This will keep your changes separate from the main branch. You can create a new branch in a few different ways:
 
 <Tabs syncKey="github-management">
 <TabItem label="Via CLI">

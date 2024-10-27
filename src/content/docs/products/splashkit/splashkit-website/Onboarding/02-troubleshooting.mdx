@@ -7,205 +7,238 @@ sidebar:
 ---
 
 import { Tabs, TabItem } from "@astrojs/starlight/components";
+import { Steps } from '@astrojs/starlight/components';
 
 ## How to rebase your branch
 
-### 1. Fetch the Latest Changes from Upstream
+---
 
-First, fetch the latest changes from the upstream repository to ensure your local copy is up-to-date.
+<Steps>
 
-```shell
-git fetch upstream
-```
+1. ### Fetch the Latest Changes from Upstream
 
-This command fetches the latest branches and commits from the upstream repository without modifying
-your local working directory.
+    First, fetch the latest changes from the upstream repository to ensure your local copy is up-to-date.
 
-### 2. Check Out the Branch You Want to Rebase
+    ```shell
+    git fetch upstream
+    ```
 
-Make sure you’re on the branch that you want to rebase. Use the following command to switch to your branch:
+    This command fetches the latest branches and commits from the upstream repository without modifying
+    your local working directory.
 
-```shell
-git checkout <your-branch-name>
-```
+    ---
 
-Replace `<your-branch-name>` with the name of your branch.
+2. ### Check Out the Branch You Want to Rebase
 
-### 3. Rebase Your Branch onto the Latest `main` (or another target branch)
+    Make sure you’re on the branch that you want to rebase. Use the following command to switch to your branch:
 
-To rebase your branch onto the latest changes from the upstream `main` branch (or whatever branch you
-want to base your changes on):
+    ```shell
+    git checkout <your-branch-name>
+    ```
 
-```shell
-git rebase upstream/main
-```
+    Replace `<your-branch-name>` with the name of your branch.
 
-This command applies your branch’s commits on top of the latest changes from the upstream `main` branch.
-If you are rebasing onto a different branch (like `development`), replace `main` with the appropriate
-branch name.
+    ---
 
-### 4. Resolve Conflicts (if necessary)
+3. ### Rebase Your Branch onto the Latest `main` (or another target branch)
 
-If there are any conflicts, Git will pause the rebase process and prompt you to resolve them. To see
-which files are in conflict, run:
+    To rebase your branch onto the latest changes from the upstream `main` branch (or whatever branch you
+    want to base your changes on):
 
-```shell
-git status
-```
+    ```shell
+    git rebase upstream/main
+    ```
 
-Manually resolve conflicts in your files, then add them to the staging area:
+    This command applies your branch’s commits on top of the latest changes from the upstream `main` branch.
+    If you are rebasing onto a different branch (like `development`), replace `main` with the appropriate
+    branch name.
 
-```shell
-git add <file-name>
-```
+    ---
 
-Once all conflicts are resolved, continue the rebase process:
+4. ### Resolve Conflicts (if necessary)
 
-```shell
-git rebase --continue
-```
+    If there are any conflicts, Git will pause the rebase process and prompt you to resolve them. To see
+    which files are in conflict, run:
 
-If you want to abort the rebase and return to the state before the rebase began:
+    ```shell
+    git status
+    ```
 
-```shell
-git rebase --abort
-```
+    Manually resolve conflicts in your files, then add them to the staging area:
 
-### 5. Push the Rebasing Changes to Your Fork
+    ```shell
+    git add <file-name>
+    ```
 
-Once the rebase is complete, you need to force push the changes to your fork, as the history has
-been rewritten:
+    Once all conflicts are resolved, continue the rebase process:
 
-```shell
-git push --force-with-lease origin <your-branch-name>
-```
+    ```shell
+    git rebase --continue
+    ```
 
-The `--force-with-lease` option ensures that you don't accidentally overwrite someone else’s changes
-in case they pushed while you were rebasing.
+    If you want to abort the rebase and return to the state before the rebase began:
 
-### 6. Verify the Rebasing
+    ```shell
+    git rebase --abort
+    ```
 
-You can now verify that your branch is rebased and up to date with the upstream changes:
+    ---
 
-```shell
-git log
-```
+5. ### Push the Rebasing Changes to Your Fork
 
-This will show the commit history, allowing you to confirm that your commits are on top of the latest
-upstream changes.
+    Once the rebase is complete, you need to force push the changes to your fork, as the history has
+    been rewritten:
 
-By following these steps, you will have successfully rebased your branch onto the latest `main` branch
-(or whichever branch you're targeting) from the upstream repository.
+    ```shell
+    git push --force-with-lease origin <your-branch-name>
+    ```
+
+    The `--force-with-lease` option ensures that you don't accidentally overwrite someone else’s changes
+    in case they pushed while you were rebasing.
+
+    ---
+
+6. ### Verify the Rebasing
+
+    You can now verify that your branch is rebased and up to date with the upstream changes:
+
+    ```shell
+    git log
+    ```
+
+    This will show the commit history, allowing you to confirm that your commits are on top of the latest
+    upstream changes.
+
+    By following these steps, you will have successfully rebased your branch onto the latest `main` branch
+    (or whichever branch you're targeting) from the upstream repository.
+
+</Steps>
 
 ## How to resolve conflicts during a rebase or merge
 
-### 1. Identify Conflicts
-
-During a rebase or merge, if Git detects conflicts that it cannot resolve automatically, it will pause
-the process and display a message indicating which files have conflicts. You can check the status to
-identify which files are in conflict:
-
-```shell
-git status
-```
-
-Git will show the files that are in conflict and need your attention. Conflicted files will appear
-under the `both modified` section.
-
-### 2. Open the Conflicted Files
-
-Open the conflicted files in your preferred text editor (e.g., vscode). In the file, you will see
-conflict markers that look like this:
-
-```plaintext
-<<<<<<< HEAD
-// Code from your current branch
-=======
-/* Code from the branch you are rebasing or merging */
->>>>>>> branch-name
-```
-
-- **`HEAD`** contains the changes from your current branch.
-- The **`=======`** separates the two conflicting versions.
-- The text below the `=======` represents changes from the branch you are merging or rebasing onto.
-
-### 3. Manually Resolve the Conflicts
-
-To resolve the conflict, decide whether to keep your changes, the incoming changes, or a combination
-of both.
-
-- **Keep your changes**: Delete the lines between `=======` and `>>>>>>>` and remove the conflict markers.
-- **Keep the incoming changes**: Delete the lines between `<<<<<<< HEAD` and `=======` and remove
-the conflict markers.
-- **Combine both changes**: Modify the conflicting section to include both sets of changes, based on
-your needs, and then remove the conflict markers.
-
-After resolving the conflicts, the file should look clean and without any conflict markers.
-
-### 4. Mark the Conflicts as Resolved
-
-Once you have resolved the conflicts in a file, you need to add the file to the staging area to let
-Git know that the conflict has been resolved:
-
-```shell
-git add <file-name>
-```
-
-Repeat this for all the conflicted files.
-
-### 5. Continue the Rebase or Merge Process
-
-Once all conflicts are resolved and staged, you can continue the process.
-
-- If you are in the middle of a **rebase**, continue with:
-
-  ```shell
-  git rebase --continue
-  ```
-
-- If you are in the middle of a **merge**, finalize the merge with:
-
-  ```shell
-  git merge --continue
-  ```
-
-If at any point you want to abort the rebase or merge due to complications, you can use the following
-command:
-
-```shell
-git rebase --abort
-```
-
-or
-
-```shell
-git merge --abort
-```
-
-### 6. Push the Resolved Changes
-
-After resolving the conflicts and completing the rebase or merge, you will need to push the changes
-back to your remote repository. If you performed a rebase, you will need to force-push the branch
-since the commit history has been rewritten:
-
-```shell
-git push --force-with-lease origin <your-branch-name>
-```
-
-If it was a merge, a normal push will suffice:
-
-```shell
-git push origin <your-branch-name>
-```
-
 ---
 
-### 7. Verify Everything
+<Steps>
 
-After pushing, you can verify that everything is resolved and the history is clean:
+1. ### Identify Conflicts
 
-```shell
-git log
-```
+    During a rebase or merge, if Git detects conflicts that it cannot resolve automatically, it will pause
+    the process and display a message indicating which files have conflicts. You can check the status to
+    identify which files are in conflict:
+
+    ```shell
+    git status
+    ```
+
+    Git will show the files that are in conflict and need your attention. Conflicted files will appear
+    under the `both modified` section.
+
+    ---
+
+2. ### Open the Conflicted Files
+
+    Open the conflicted files in your preferred text editor (e.g., vscode). In the file, you will see
+    conflict markers that look like this:
+
+    ```plaintext
+    <<<<<<< HEAD
+    // Code from your current branch
+    =======
+    /* Code from the branch you are rebasing or merging */
+    >>>>>>> branch-name
+    ```
+
+    - **`HEAD`** contains the changes from your current branch.
+    - The **`=======`** separates the two conflicting versions.
+    - The text below the `=======` represents changes from the branch you are merging or rebasing onto.
+
+    ---
+
+3. ### Manually Resolve the Conflicts
+
+    To resolve the conflict, decide whether to keep your changes, the incoming changes, or a combination
+    of both.
+
+    - **Keep your changes**: Delete the lines between `=======` and `>>>>>>>` and remove the conflict markers.
+    - **Keep the incoming changes**: Delete the lines between `<<<<<<< HEAD` and `=======` and remove
+    the conflict markers.
+    - **Combine both changes**: Modify the conflicting section to include both sets of changes, based on
+    your needs, and then remove the conflict markers.
+
+    After resolving the conflicts, the file should look clean and without any conflict markers.
+
+    ---
+
+4. ### Mark the Conflicts as Resolved
+
+    Once you have resolved the conflicts in a file, you need to add the file to the staging area to let
+    Git know that the conflict has been resolved:
+
+    ```shell
+    git add <file-name>
+    ```
+
+    Repeat this for all the conflicted files.
+
+    ---
+
+5. ### Continue the Rebase or Merge Process
+
+    Once all conflicts are resolved and staged, you can continue the process.
+
+    - If you are in the middle of a **rebase**, continue with:
+
+      ```shell
+      git rebase --continue
+      ```
+
+    - If you are in the middle of a **merge**, finalize the merge with:
+
+      ```shell
+      git merge --continue
+      ```
+
+    If at any point you want to abort the rebase or merge due to complications, you can use the following
+    command:
+
+    ```shell
+    git rebase --abort
+    ```
+
+    or
+
+    ```shell
+    git merge --abort
+    ```
+
+    ---
+
+6. ### Push the Resolved Changes
+
+    After resolving the conflicts and completing the rebase or merge, you will need to push the changes
+    back to your remote repository. If you performed a rebase, you will need to force-push the branch
+    since the commit history has been rewritten:
+
+    ```shell
+    git push --force-with-lease origin <your-branch-name>
+    ```
+
+    If it was a merge, a normal push will suffice:
+
+    ```shell
+    git push origin <your-branch-name>
+    ```
+
+    ---
+
+7. ### Verify Everything
+
+    After pushing, you can verify that everything is resolved and the history is clean:
+
+    ```shell
+    git log
+    ```
+
+</Steps>
 
 This will show the commit history, confirming that your conflicts were successfully resolved.

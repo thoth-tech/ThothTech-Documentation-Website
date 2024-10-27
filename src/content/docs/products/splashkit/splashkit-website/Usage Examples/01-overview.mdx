@@ -7,6 +7,7 @@ sidebar:
 ---
 
 import { Steps } from '@astrojs/starlight/components';
+import { LinkCard, CardGrid } from "@astrojs/starlight/components";
 
 ## Overview
 
@@ -26,22 +27,43 @@ Splashkit website.
 
 <Steps>
 
-1. Pick a planner card, or come up with your own creative idea.
-2. Develop a simple program that demonstrates the function.
-3. Write the program in C++, C# (top-level statements and OOP version), and Python.
-4. Collect the screenshots of the output, and write a brief explanation of the program.
-5. Add the files into the correct folder in the Splashkit repository.
-6. Follow the steps to create a [Pull Requests for Usage Examples:](/products/splashkit/splashkit-website/usage-examples/03-usage-pull-request).
+1. **Choose a Planner Card or Idea**:  
+   Pick an existing planner card that matches a SplashKit function, or create a unique example. Make sure the idea clearly demonstrates the function in a practical or visually interesting way.
+
+2. **Develop a Demonstrative Program**:  
+   Write a simple program to illustrate the function’s use. Focus on clarity and simplicity, ensuring that the code is easy to follow and that it showcases the function effectively.
+
+3. **Write the Program in Multiple Languages**:  
+   - **C++**: Implement the example with standard C++ practices.
+   - **C#**: Provide both a version using top-level statements for simplicity and an Object-Oriented (OOP) version for a more structured approach.
+   - **Python**: Write a Python version that is straightforward and reflects the same functionality.
+
+4. **Capture Output Screenshots and Write Explanations**:  
+   Run each program version, take screenshots of the output, and write a brief explanation for each language version. Describe what the program does, which function it demonstrates, and highlight any important details.
+
+5. **Add Files to the Correct Folder in the SplashKit Repository**:  
+   Organize your files in the appropriate folders within the SplashKit repository. Ensure file names and directory paths are consistent with SplashKit’s structure.
+
+6. **Submit a Pull Request for Usage Examples**:  
+   Follow the steps in the [Pull Requests for Usage Examples guide](/products/splashkit/splashkit-website/usage-examples/03-usage-pull-request). Use the provided PR template, describe your example clearly, and attach explanations and screenshots to the pull request.
 
 </Steps>
 
-## Table of Contents
 
-1. [Creating usage examples:](/products/splashkit/splashkit-website/usage-examples/02-usage-examples)
-The guide on how to create usage examples for SplashKit tutorials, including file structure
-content needed for each example.
-1. [Pull Requests for Usage Examples:](/products/splashkit/splashkit-website/usage-examples/03-usage-pull-request)
-The guide on how to do a pull request for usage examples, including the necessary PR template.
-1. [Peer Reviews for Usage Examples:](/products/splashkit/splashkit-website/usage-examples/04-usage-peer-review)
-The guide on how to do a peer review for usage examples, including the steps you
-need to follow, and the template for your peer review comment.
+<CardGrid>
+  <LinkCard
+    title="Creating Usage Examples"
+    description="How to create usage examples for the Splashkit website, including the necessary steps and guidelines."
+    href="/products/splashkit/splashkit-website/usage-examples/02-usage-examples"
+  />
+  <LinkCard
+    title="Pull Requests for Usage Examples"
+    description="How to create a pull request for usage examples, including the necessary steps and guidelines."
+    href="/products/splashkit/splashkit-website/usage-examples/03-usage-pull-request"
+  />
+  <LinkCard
+    title="Peer Reviews for Usage Examples"
+    description="How to do a peer review for usage examples, including the necessary steps and guidelines."
+    href="/products/splashkit/splashkit-website/usage-examples/04-usage-peer-review"
+  />
+</CardGrid>
