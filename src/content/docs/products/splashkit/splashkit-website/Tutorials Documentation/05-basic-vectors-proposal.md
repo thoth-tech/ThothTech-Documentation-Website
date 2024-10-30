@@ -1,6 +1,8 @@
 ---
 title: Tutorial Proposal Guide
-description: Structure of a tutorial proposal on basic vector mathematics and its applications in game development.
+description:
+  Structure of a tutorial proposal on basic vector mathematics and its applications in game
+  development.
 sidebar:
   hidden: true
   label: Tutorial Proposal Guide

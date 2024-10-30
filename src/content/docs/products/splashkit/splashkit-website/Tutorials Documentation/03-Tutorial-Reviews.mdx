@@ -7,8 +7,8 @@ sidebar:
 ---
 
 import { FileTree } from "@astrojs/starlight/components";
-import { LinkCard, CardGrid } from "@astrojs/starlight/components";
-import { Steps } from '@astrojs/starlight/components';
+import { LinkCard } from "@astrojs/starlight/components";
+import { Steps } from "@astrojs/starlight/components";
 
 ## Filling out the Tutorial Review
 
@@ -40,25 +40,23 @@ Documentation Repo file tree:
 
 </FileTree>
 
-<CardGrid>
-  <LinkCard
-    title="Documentation Repo"
-    description="The repository for the SplashKit Tutorial review files."
-    href="https://github.com/thoth-tech/documentation"
-  />
-  <LinkCard
-    title="How to Create a Pull Request"
-    description="The guide on how to create a pull request."
-    href="/products/splashkit/splashkit-website/onboarding/03-pull-request"
-  />
-  <LinkCard
-    title="Pull Request Template"
-    description="The template for creating a pull request."
-    href="/products/splashkit/splashkit-website/onboarding/04-pull-request-template"
-  />
-  <LinkCard
-    title="Peer Review Guide"
-    description="The guide on how to do a peer review within the SplashKit Team."
-    href="/products/splashkit/splashkit-website/onboarding/05-peer-review"
-  />
-</CardGrid>
+<LinkCard
+  title="Documentation Repo"
+  description="The repository for the SplashKit Tutorial review files."
+  href="https://github.com/thoth-tech/documentation"
+/>
+<LinkCard
+  title="How to Create a Pull Request"
+  description="The guide on how to create a pull request."
+  href="/products/splashkit/splashkit-website/onboarding/03-pull-request"
+/>
+<LinkCard
+  title="Pull Request Template"
+  description="The template for creating a pull request."
+  href="/products/splashkit/splashkit-website/onboarding/04-pull-request-template"
+/>
+<LinkCard
+  title="Peer Review Guide"
+  description="The guide on how to do a peer review within the SplashKit Team."
+  href="/products/splashkit/splashkit-website/onboarding/05-peer-review"
+/>

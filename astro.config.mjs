@@ -54,6 +54,7 @@ export default defineConfig({
               label: "SplashKit",
               collapsed: true,
               items: [
+                { label: "Overview", link: "/products/splashkit" },
                 {
                   label: "Arcade Machine",
                   collapsed: true,
@@ -73,11 +74,6 @@ export default defineConfig({
                   label: "SplashKit Online",
                   collapsed: true,
                   autogenerate: { directory: "products/splashkit/splashkit-online" },
-                },
-                {
-                  label: "SplashKit Tutorials",
-                  collapsed: true,
-                  autogenerate: { directory: "products/splashkit/splashkit-tutorials" },
                 },
                 {
                   label: "SplashKit Website",

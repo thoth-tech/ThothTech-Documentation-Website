@@ -7,24 +7,28 @@ sidebar:
 ---
 
 import { Tabs, TabItem } from "@astrojs/starlight/components";
-import { Steps } from '@astrojs/starlight/components';
+import { Steps } from "@astrojs/starlight/components";
 
-This guide explains how to convert between top-level statements and object-oriented programming (OOP)
-styles in C# for SplashKit tutorials. This guide is good to refer to when you need to convert code
-between the two styles.
+This guide explains how to convert between top-level statements and object-oriented programming
+(OOP) styles in C# for SplashKit tutorials. This guide is good to refer to when you need to convert
+code between the two styles.
 
-### Understanding the Differences Between Top-Level and OOP Styles in C#
+## C# Tabs
+
+### Understanding the Differences Between Top-Level and OOP Styles
 
 **Top-Level Statements**:
 
-- Top-level statements allow you to write C# code without explicitly defining a class or `Main` method.
+- Top-level statements allow you to write C# code without explicitly defining a class or `Main`
+  method.
 - Uses the directive: `using static SplashKitSDK.SplashKit;`, so SplashKit functions are called
   directly, such as `WriteLine("Hello!");`.
 
 **Object-Oriented Programming (OOP)**:
 
 - OOP-style C# code requires defining a `Main` method inside a class.
-- Uses `using SplashKitSDK;`, meaning all SplashKit commands are prefixed with `SplashKit.` (e.g., `SplashKit.WriteLine("Hello!");`).
+- Uses `using SplashKitSDK;`, meaning all SplashKit commands are prefixed with `SplashKit.` (e.g.,
+  `SplashKit.WriteLine("Hello!");`).
 
 ### Converting from Top-Level Statements to OOP
 
@@ -89,15 +93,15 @@ To convert from OOP to top-level statements:
 
 1. **Remove Namespace and Class Wrapping**:
 
-    Delete the `namespace` and `class` definitions along with the `Main` method.
+   Delete the `namespace` and `class` definitions along with the `Main` method.
 
 2. **Adjust the `using` Directive**:
 
-    Replace `using SplashKitSDK;` with `using static SplashKitSDK.SplashKit;`.
+   Replace `using SplashKitSDK;` with `using static SplashKitSDK.SplashKit;`.
 
 3. **Remove the `SplashKit.` Prefix**:
 
-    Directly call functions like `WriteLine()` and `ReadLine()`.
+   Directly call functions like `WriteLine()` and `ReadLine()`.
 
 </Steps>
 
@@ -143,18 +147,18 @@ WriteLine("Hello, " + name + "!");
 - Replace `using static SplashKitSDK.SplashKit;` with `using SplashKitSDK;`.
 - Wrap code in:
 
-    ```csharp
-    namespace Program
-    {
-        public class Program
-        {
-            public static void Main()
-            {
-                // Code here
-            }
-        }
-    }
-    ```
+  ```csharp
+  namespace Program
+  {
+      public class Program
+      {
+          public static void Main()
+          {
+              // Code here
+          }
+      }
+  }
+  ```
 
 - Prefix SplashKit functions with `SplashKit.`.
 
