@@ -1,0 +1,264 @@
+---
+title: SplashKit Styling Guide
+sidebar:
+  label: SplashKit Styling Guide
+  order: 3
+---
+
+This document outlines the core styling principles for the SplashKit website to ensure consistency,
+accessibility, and a cohesive design.
+
+## Contents
+
+- [Contents](#contents)
+- [Colour Palette](#colour-palette)
+  - [Tools for Colour Palette Generation](#tools-for-colour-palette-generation)
+- [Accessibility Considerations](#accessibility-considerations)
+  - [1. **WCAG 2.1 AA Compliance**](#1-wcag-21-aa-compliance)
+  - [2. **Disabling Animations and Smooth Transitions**](#2-disabling-animations-and-smooth-transitions)
+  - [3. **Hover Effects and Visual Cues**](#3-hover-effects-and-visual-cues)
+  - [4. **Colour Blindness Accessibility**](#4-colour-blindness-accessibility)
+- [Typography](#typography)
+  - [Font](#font)
+  - [Font Sizes](#font-sizes)
+- [Component Styling](#component-styling)
+  - [Buttons](#buttons)
+- [Image and Asset Management](#image-and-asset-management)
+- [Color Theme Editor](#color-theme-editor)
+  - [How to Use](#how-to-use)
+- [Current Styling Values](#current-styling-values)
+- [Useful Tools](#useful-tools)
+- [Links](#links)
+
+---
+
+## Colour Palette
+
+- **Primary Colours**: SplashKit uses a consistent colour palette to maintain a clean, cohesive
+  design. You are encouraged to use accessible, high-contrast colours that support both branding and
+  readability.
+
+### Tools for Colour Palette Generation
+
+- **Coolors.co**: Use [Coolors.co](https://coolors.co/) to generate and experiment with colour
+  palettes. This platform supports multiple colour spaces and includes contrast checkers, ensuring
+  your colour selections meet accessibility standards.
+
+  **Example**:
+
+  ```css
+  :root {
+    --primary-colour: ;
+    --secondary-colour: ;
+    --accent-colour: ;
+    --background-colour: ;
+  }
+  ```
+
+- Adjust these values according to the design requirements, ensuring they meet accessibility
+  standards like **WCAG 2.1 AA**.
+
+---
+
+## Accessibility Considerations
+
+Accessibility is a key concern, and we need to ensure that our design is inclusive and easy to
+navigate for all users, including those with visual impairments.
+
+### 1. **WCAG 2.1 AA Compliance**
+
+- When designing for accessibility, ensure that colour contrast meets the **Web Content
+  Accessibility Guidelines (WCAG) 2.1 AA** standards. These include:
+  - A contrast ratio of at least **4.5:1** between text and background for normal text.
+  - A contrast ratio of at least **3:1** for larger text (18pt and above).
+- Use tools like the **Color Theme Editor**, **Coolors.co contrast checker**, and the **Pilestone
+  Color Blindness Simulator** to verify your designs are accessible for all users.
+
+### 2. **Disabling Animations and Smooth Transitions**
+
+- Users should have the option to disable animations and transitions to avoid distracting or
+  overwhelming effects.
+
+  **CSS Example**:
+
+  ```css
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+  ```
+
+  To learn more about this feature, visit the
+  [@media (prefers-reduced-motion) documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion).
+
+### 3. **Hover Effects and Visual Cues**
+
+- Ensure that elements that change on hover, such as buttons or links, are clearly identifiable as
+  interactive elements. A subtle colour change on hover is a good way to indicate that the element
+  is clickable.
+
+  **Example**:
+
+  ```css
+  a {
+    color: var(--primary-colour);
+  }
+
+  a:hover {
+    color: var(--accent-colour);
+  }
+  ```
+
+### 4. **Colour Blindness Accessibility**
+
+- Use tools like the
+  [Pilestone Color Blindness Simulator](https://pilestone.com/pages/color-blindness-simulator-1) to
+  test how different users experience colours. This tool is particularly useful for ensuring that
+  users with various forms of colour blindness can comfortably navigate the site.
+
+  Ensure that contrast ratios are sufficient to make text legible for all users, particularly those
+  with colour vision deficiencies.
+
+---
+
+## Typography
+
+### Font
+
+Use a modern, readable font to maintain consistency across the website.
+
+- Default fonts like `Arial`, `Roboto`, or `Gaegu` can be used for headers and body text.
+- Follow the existing import patterns for fonts:
+
+  ```css
+  @import url("https://use.typekit.net/vzr3ole.css");
+  @import url("https://fonts.googleapis.com/css?family=Gaegu&display=swap");
+  ```
+
+### Font Sizes
+
+- Headings: Use larger font sizes for hierarchy and structure.
+- Body text: Minimum 16px for readability.
+- Example:
+
+  ```css
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+  ```
+
+If needed, you can adjust these values in `custom.css` to fit specific design elements.
+
+---
+
+## Component Styling
+
+### Buttons
+
+Buttons should use consistent styles across the website to ensure a cohesive look.
+
+- **Primary Button**: **Example**:
+
+  ```css
+  .button-primary {
+    background-colour: var(--primary-colour);
+    colour: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+  }
+
+  .button-primary:hover {
+    background-colour: var(--accent-colour);
+  }
+  ```
+
+If you're contributing, please review the existing styles in `custom.css` for similar elements and
+ensure your additions follow the same structure.
+
+---
+
+## Image and Asset Management
+
+- **GIFs**: General-purpose gifs should be stored in `public/gifs/`. If a gif is used in a usage
+  example (tutorials, documentation), store it in `public/usage-examples-images-gifs/`.
+- **Static Images**: Images associated with tutorials or content should be stored alongside the
+  `.mdx` files they relate to.
+- **Config Files**: Any configuration files generated from scripts (e.g., `games-config.json`)
+  should be placed in the `public/` folder for easy access.
+
+---
+
+## Color Theme Editor
+
+The
+[Starlight Color Theme Editor](https://starlight.astro.build/guides/css-and-tailwind/#:~:text=items%20in%20navigation.-,Color%20theme%20editor,-Use%20the%20sliders)
+is an excellent tool for previewing and adjusting colour values for various design elements across
+the website. It allows you to tweak background, text, and accent colours in real-time, providing
+instant feedback on how those changes will affect the overall design.
+
+### How to Use
+
+- Use the sliders in the editor to adjust different colour variables, which are immediately
+  reflected in the preview.
+- Once you're satisfied with your selections, you can copy the colour values and apply them to the
+  `custom.css` or directly into your `.astro` components.
+- This tool is particularly helpful when used in conjunction with **Coolors.co** for creating
+  palettes or the **Pilestone Color Blindness Simulator** to ensure accessibility.
+
+---
+
+## Current Styling Values
+
+Here are the current values being used in the `custom.css` file for the SplashKit website:
+
+```css
+@import url("https://use.typekit.net/vzr3ole.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Gaegu&display=swap");
+
+/* Dark mode colours. */
+:root {
+  --purple-hsl: 255, 60%, 60%;
+  --overlay-blurple: hsla(var(--purple-hsl), 0.2);
+}
+
+/* Light mode colours. */
+:root[data-theme="light"] {
+  --purple-hsl: 255, 85%, 65%;
+  --sl-hue-accent: 350;
+  --sl-color-accent: #3d50f5;
+}
+```
+
+Please review these values when making any changes to ensure consistency.
+
+---
+
+## Useful Tools
+
+- **Coolors.co**: Use this platform to experiment with colour palettes and ensure your choices are
+  accessible.
+- **Pilestone Color Blindness Simulator**: Test colour choices for accessibility to users with
+  colour vision deficiencies.
+- **WCAG 2.1 AA Standards**: Use these standards as the baseline to ensure that the site is
+  accessible to all users, particularly with respect to contrast ratios between text and background.
+
+---
+
+## Links
+
+Here are some helpful resources for styling and accessibility:
+
+- [Coolors.co Contrast Checker](https://coolors.co/contrast-checker)
+- [Pilestone Color Blindness Simulator](https://pilestone.com/pages/color-blindness-simulator-1)
+- [@media (prefers-reduced-motion) Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion)
+- [WCAG 2.1 AA Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)

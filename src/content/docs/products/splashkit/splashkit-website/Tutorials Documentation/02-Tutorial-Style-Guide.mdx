@@ -1,0 +1,394 @@
+---
+title: Tutorial Style Guide
+description: Use this guide to ensure your SplashKit tutorial is formatted correctly.
+sidebar:
+  label: Tutorial Style Guide
+  order: 2
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+
+## General
+
+Create tutorial in an `.mdx` file.
+
+Make sure your tutorials follow the **markdownlint** extension's formatting.
+
+Correct any yellow squiggly lines.
+
+## Headings
+
+Make sure to use the following **title** format:
+
+```mdx
+---
+title: Tutorial Heading
+---
+```
+
+Then use `## Heading` for the highest heading level.
+
+Always keep a blank line between headings and other text.
+
+### Subheadings
+
+For subheadings that you want to see in the RHS sidebar/panel on splashkit.io, use `### Subheading`.
+Subheadings lower than this will not be shown.
+
+Do not use bolded lines for headings/subheadings.
+
+## Links
+
+Do not use any "raw" links. Links must always use the following format:
+
+```mdx
+[Text to show for link](URL link)
+```
+
+Make sure to link your headings within the same file if these are mentioned, using the following
+format:
+
+```mdx
+[Heading text](#link-to-heading)
+```
+
+## Images
+
+Always keep a blank line between images and other text.
+
+Use the following format for all images:
+
+```mdx
+![Alt text](link to image)
+```
+
+For the **Alt text** part above: Briefly explain what the image is showing. This is important for
+accessibility.
+
+For the **link to image** part above: If you are linking an image resource that you have downloaded,
+this will need to be put into an **images** folder in the same place as the tutorial.  
+For example, with the **skbox.png** image in the images folder here, you would use:
+
+```mdx
+![Image of SplashKit box logo](./images/skbox.png)
+```
+
+Which would produce:
+
+![Image of SplashKit box logo](./images/skbox.png)
+
+## Lists
+
+Always keep a blank line between lists and other text.
+
+## Code Blocks
+
+Use fenced code blocks for any code snippets or terminal commands, to make it easier for the reader
+to copy.
+
+Always include a language with the fenced code blocks.
+
+### C++ Code
+
+For C++, you would use the following format:
+
+````md
+```cpp
+#include "splashkit.h"
+
+int main()
+{
+    open_window("Window Title... to change", 800, 600);
+    delay(5000);
+    close_all_windows();
+    return 0;
+}
+```
+````
+
+Which would produce:
+
+```cpp
+#include "splashkit.h"
+
+int main()
+{
+    open_window("Window Title... to change", 800, 600);
+    delay(5000);
+    close_all_windows();
+    return 0;
+}
+```
+
+### C# Code
+
+For example, if using C#, you would use the following format:
+
+````md
+```csharp
+using static SplashKitSDK.SplashKit;
+
+OpenWindow("Window Title... to change", 800, 600);
+Delay(5000);
+CloseAllWindows();
+```
+````
+
+Which would produce:
+
+```csharp
+using static SplashKitSDK.SplashKit;
+
+OpenWindow("Window Title... to change", 800, 600);
+Delay(5000);
+CloseAllWindows();
+```
+
+### Python Code
+
+For Python, you would use the following format:
+
+````md
+```python
+from splashkit import *
+
+open_window("Window Title... to change", 800, 600)
+delay(5000)
+close_all_windows()
+```
+````
+
+Which would produce:
+
+```python
+from splashkit import *
+
+open_window("Window Title... to change", 800, 600)
+delay(5000)
+close_all_windows()
+```
+
+For any blocks that are not code, you can use `plaintext` for the language. For terminal commands,
+use `shell` for the language.
+
+If your guide is only using 1 language (and not using at least both C# and C++), make sure to
+include the language used in the title.
+
+### Multiple Code Languages
+
+To show the same code in different languages, you will need to use
+[Tabs](https://starlight.astro.build/guides/components/#tabs).
+
+Make sure to add the following line to your file underneath the title:
+
+```mdx
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+
+;
+```
+
+And then using the examples from above, you would have:
+
+````md
+<Tabs syncKey="code-language">
+<TabItem label="C++">
+
+```cpp
+#include "splashkit.h"
+
+int main()
+{
+    string name;  // declare a variable to store the name
+    string quest; // and another to store a quest
+
+    write("What is your name: "); // prompt the user for input
+    name = read_line();           // read user input
+
+    // read in another value
+    write("And what is your quest? ");
+    quest = read_line();
+
+    write_line(name + "'s quest is: " + quest); // output quest to the terminal
+
+    return 0;
+}
+```
+
+</TabItem>
+<TabItem label="C#">
+
+<Tabs syncKey="csharp-style">
+<TabItem label="Top-level Statements">
+
+```csharp
+using static SplashKitSDK.SplashKit;
+
+string name;    // declare a variable to store the name
+string quest;   // and another to store a quest
+
+Write("What is your name: ");  // prompt the user for input
+name = ReadLine();             // read user input
+
+// Read in another value
+Write("And what is your quest? ");
+quest = ReadLine();
+
+WriteLine(name + "'s quest is: " + quest); // output quest to the terminal
+```
+
+</TabItem>
+<TabItem label="Object-Oriented">
+
+```csharp
+using SplashKitSDK;
+
+namespace ReadingText
+{
+    public class Program
+    {
+        public static void Main()
+        {
+            string name;    // declare a variable to store the name
+            string quest;   // and another to store a quest
+
+            SplashKit.Write("What is your name: ");  // prompt the user for input
+            name = SplashKit.ReadLine();             // read user input
+
+            // Read in another value
+            SplashKit.Write("And what is your quest? ");
+            quest = SplashKit.ReadLine();
+
+            SplashKit.WriteLine(name + "'s quest is: " + quest); // output quest to the terminal
+        }
+    }
+}
+```
+
+</TabItem>
+</Tabs>
+
+</TabItem>
+<TabItem label="Python">
+
+```python
+from splashkit import *
+
+write("What is your name: ") # prompt the user for input
+name = read_line() # read user input and store in a variable
+
+# Read in another value
+write("And what is your quest? ")
+quest = read_line()
+
+write_line(name + "'s quest is: " + quest)
+```
+
+</TabItem>
+</Tabs>
+````
+
+Which would produce the following:
+
+<Tabs syncKey="code-language">
+<TabItem label="C++">
+
+```cpp
+#include "splashkit.h"
+
+int main()
+{
+    string name;  // declare a variable to store the name
+    string quest; // and another to store a quest
+
+    write("What is your name: "); // prompt the user for input
+    name = read_line();           // read user input
+
+    // read in another value
+    write("And what is your quest? ");
+    quest = read_line();
+
+    write_line(name + "'s quest is: " + quest); // output quest to the terminal
+
+    return 0;
+}
+```
+
+</TabItem>
+<TabItem label="C#">
+
+<Tabs syncKey="csharp-style">
+<TabItem label="Top-level Statements">
+
+```csharp
+using static SplashKitSDK.SplashKit;
+
+string name;    // declare a variable to store the name
+string quest;   // and another to store a quest
+
+Write("What is your name: ");  // prompt the user for input
+name = ReadLine();             // read user input
+
+// Read in another value
+Write("And what is your quest? ");
+quest = ReadLine();
+
+WriteLine(name + "'s quest is: " + quest); // output quest to the terminal
+```
+
+</TabItem>
+<TabItem label="Object-Oriented">
+
+```csharp
+using SplashKitSDK;
+
+namespace ReadingText
+{
+    public class Program
+    {
+        public static void Main()
+        {
+            string name;    // declare a variable to store the name
+            string quest;   // and another to store a quest
+
+            SplashKit.Write("What is your name: ");  // prompt the user for input
+            name = SplashKit.ReadLine();             // read user input
+
+            // Read in another value
+            SplashKit.Write("And what is your quest? ");
+            quest = SplashKit.ReadLine();
+
+            SplashKit.WriteLine(name + "'s quest is: " + quest); // output quest to the terminal
+        }
+    }
+}
+```
+
+</TabItem>
+</Tabs>
+
+</TabItem>
+<TabItem label="Python">
+
+```python
+from splashkit import *
+
+write("What is your name: ") # prompt the user for input
+name = read_line() # read user input and store in a variable
+
+# Read in another value
+write("And what is your quest? ")
+quest = read_line()
+
+write_line(name + "'s quest is: " + quest)
+```
+
+</TabItem>
+</Tabs>
+
+## Callouts (Asides)
+
+Use callouts (also known as [Asides](https://starlight.astro.build/guides/components/#asides)) to
+highlight tips or important notes.
+
+:::tip[Make the page interesting] These can help to direct the reader to any extra info, and help to
+add more colour to your tutorial guide. :::

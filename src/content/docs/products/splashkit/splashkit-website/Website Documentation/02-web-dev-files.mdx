@@ -1,0 +1,335 @@
+---
+title: Key Website Development Files
+sidebar:
+  label: Key Web Development Files
+  order: 2
+---
+
+This document will help you understand the core files involved in the SplashKit website development
+process. It provides guidance on which files to update when contributing and how to handle different
+file types in peer reviews. This is not an exhaustive list, however should direct you to the key
+files and file types when contributing.
+
+## Contents
+
+- [Contents](#contents)
+- [Key Files to Update](#key-files-to-update)
+  - [`package.json` and `package-lock.json`](#packagejson-and-package-lockjson)
+  - [`astro.config.mjs`](#astroconfigmjs)
+    - [Site Metadata](#site-metadata)
+    - [Integrations](#integrations)
+    - [Customising Vite](#customising-vite)
+    - [Page Transitions and Animations](#page-transitions-and-animations)
+    - [Enabling SCSS or PostCSS](#enabling-scss-or-postcss)
+- [Core Development Files](#core-development-files)
+  - [`.astro` Files](#astro-files)
+  - [`.jsx` and `.tsx` Files](#jsx-and-tsx-files)
+  - [`.css` Files](#css-files)
+    - [Example 1: Adjusting the colour palette in `custom.css`](#example-1-adjusting-the-colour-palette-in-customcss)
+    - [Example 2: Adding custom styles for a specific component](#example-2-adding-custom-styles-for-a-specific-component)
+- [Image and Asset Management](#image-and-asset-management)
+  - [Asset Directories](#asset-directories)
+- [`.mdx` Files](#mdx-files)
+- [Peer Reviews: What to Look For](#peer-reviews-what-to-look-for)
+  - [`.mdx` Files](#mdx-files-1)
+  - [`.css` Files](#css-files-1)
+  - [`.jsx`/`.tsx` Files](#jsxtsx-files)
+  - [`.astro` Files](#astro-files-1)
+
+---
+
+## Key Files to Update
+
+### `package.json` and `package-lock.json`
+
+- **Purpose**: `package.json` defines the project’s dependencies, metadata, and scripts, while
+  `package-lock.json` locks the versions of the dependencies to ensure consistency across different
+  environments.
+
+- **Installing Dependencies**:  
+  When you run `npm install <xyz>`, the new package is added to the `package.json` under the
+  `dependencies` or `devDependencies` section. It also updates `package-lock.json` to lock the
+  specific versions of the installed dependencies.
+
+  **Example**:
+
+  ```shell
+  npm install react
+  ```
+
+  This will add `react` to `package.json` under dependencies:
+
+  ```json
+  {
+    "dependencies": {
+      "react": "^17.0.2"
+    }
+  }
+  ```
+
+  It will also update `package-lock.json` to include detailed version information for `react` and
+  any transitive dependencies to ensure consistency across environments.
+
+In most cases, you won’t need to manually edit `package.json` or `package-lock.json`. If you want to
+remove a dependency, it’s best to use:
+
+```shell
+npm uninstall <package_name>
+```
+
+This will automatically remove the package from both `package.json` and `package-lock.json`. By
+doing this, the project stays clean and free of unused dependencies.
+
+### `astro.config.mjs`
+
+**Purpose**: This config file defines the core settings for the Astro project, such as integrations,
+site metadata, and base URLs.
+
+**Updates**: You may need to modify this file when adding integrations (e.g., Google Analytics) or
+updating site-wide settings such as title, description, or site configuration. Below are some
+specific examples:
+
+#### Site Metadata
+
+- **Why Update?**: You may want to change the global title, description, or other metadata for
+  search engine optimisation and branding purposes.
+- **Example**:
+
+  ```js
+  export default {
+    site: "https://example.com",
+    base: "/",
+    markdownOptions: {
+      rehypePlugins: [],
+    },
+    build: {
+      format: "directory",
+    },
+  };
+  ```
+
+  Update `site` or `base` when the site’s URL changes or if you want to modify markdown handling
+  (affecting headings, tables, etc.).
+
+#### Integrations
+
+- **Why Update?**: If you’re adding design frameworks like TailwindCSS or optimising images through
+  Astro.
+- **Example**: Integrating TailwindCSS for utility-first styling.
+
+  ```js
+  import tailwind from "@astrojs/tailwind";
+
+  export default {
+    integrations: [tailwind()],
+  };
+  ```
+
+  This allows you to quickly apply Tailwind's design utilities across your project.
+
+#### Customising Vite
+
+- **Why Update?**: When you need to customise the build pipeline to handle assets (images, fonts)
+  more efficiently.
+- **Example**: Adjust Vite settings to optimise or transform images.
+
+  ```js
+  export default {
+    vite: {
+      build: {
+        assetsInlineLimit: 4096, // in bytes
+      },
+    },
+  };
+  ```
+
+  This controls when assets are inlined versus being loaded separately, which impacts performance
+  and design choices.
+
+#### Page Transitions and Animations
+
+- **Why Update?**: If you're adding smooth page transitions or animations between pages to improve
+  UX.
+- **Example**: Adding an integration for animations using Astro Motion.
+
+  ```js
+  import motion from "astro-motion";
+
+  export default {
+    integrations: [motion()],
+  };
+  ```
+
+  This adds visual flair and smoother transitions between pages.
+
+#### Enabling SCSS or PostCSS
+
+- **Why Update?**: If you need to support SCSS for custom styling workflows.
+- **Example**: Enabling SCSS in Astro.
+
+  ```js
+  import { sass } from "@astrojs/sass";
+
+  export default {
+    integrations: [sass()],
+  };
+  ```
+
+  This allows you to use SCSS for modular and efficient styling.
+
+---
+
+## Core Development Files
+
+### `.astro` Files
+
+- **Purpose**: `.astro` files define the structure of pages and components. They are commonly used
+  for building both static and dynamic website content.
+
+- **What to update**: Add or modify pages in `src/pages/` or components in `src/components/`.
+
+- **Scenario**: You need to update the sidebar to include a new section in the website's navigation.
+
+- **How to update**: Modify the existing `Sidebar.astro` component to add a new navigation link
+  pointing to the new section.
+
+  ```astro
+  <aside>
+    <nav>
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/new-section">New Section</a></li>
+      </ul>
+    </nav>
+  </aside>
+  ```
+
+- **Explanation**: In this example, a new `<li>` element with the link to `/new-section` is added to
+  the sidebar's navigation, allowing users to navigate to the newly created page.
+- **When to update**: Edit `.astro` files when changing page layouts, adding components, or
+  modifying the site’s structure. \*/}
+
+---
+
+### `.jsx` and `.tsx` Files
+
+- **Purpose**: Handles interactivity and dynamic content through React components.
+
+- **What to update**: If adding or editing interactive elements like carousels, forms, or sliders,
+  modify these files. They’re typically located in `src/components/react/`.
+
+---
+
+### `.css` Files
+
+- **Purpose**: CSS files manage the website's styles, such as layout, typography, colour palettes,
+  and spacing. Common styles are defined in files like `src/styles/custom.css`, which holds the
+  custom styles for the website.
+
+- **What to update**: You can modify styles in files like `custom.css` or create new
+  component-specific styles depending on the changes being made to the design or layout.
+
+#### Example 1: Adjusting the colour palette in `custom.css`
+
+- **Scenario**: You need to update the website’s colour scheme to match a new brand identity.
+- **How to update**: Modify CSS variables in `custom.css` to reflect the new colours.
+
+  ```css
+  :root {
+    --primary-colour: #3498db;
+    --secondary-colour: #2ecc71;
+    --accent-colour: #e74c3c;
+    --background-colour: #f4f4f4;
+  }
+  ```
+
+#### Example 2: Adding custom styles for a specific component
+
+- **Scenario**: You want to add specific styles for a newly created `Button.astro` component.
+- **How to update**: Add styles to `custom.css` for the `button` class or ID specific to the
+  component.
+
+  ```css
+  .button-primary {
+    background-colour: var(--primary-colour);
+    colour: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  ```
+
+- **When to update**: Modify CSS files when making changes to the overall design (e.g., colour
+  palette, typography) or when specific components need unique styles.
+
+---
+
+## Image and Asset Management
+
+### Asset Directories
+
+- **Purpose**: The asset directories store static files such as images, gifs, and config files.
+  Proper organisation ensures that assets are easy to find and use in the project.
+
+- **Directory Structure**:
+
+  - **GIFs**: Store all general-purpose gifs in `public/gifs/`, regardless of content. However, if
+    the gif is used as part of a usage example (such as in a tutorial or documentation), store it in
+    `public/usage-examples-images-gifs/`.
+  - **Config Files**: Any configuration files that are generated from scripts (e.g.,
+    `games-config.json`) should be placed directly in the `public/` folder. This ensures they are
+    accessible for any part of the project that needs them.
+
+  - **Static Images**: Other static assets, such as images associated with tutorials, should be
+    stored in the same folder as the corresponding `.mdx` file. This keeps the related assets
+    organised with the content they belong to.
+
+- **Example**:
+
+  - A gif demonstrating a tutorial should be placed in `public/usage-examples-images-gifs/`.
+  - An image used in a physics tutorial stored in `src/content/docs/guides/physics/images` should
+    sit alongside the tutorial file in that same folder.
+
+---
+
+## `.mdx` Files
+
+- **Purpose**: Markdown files with embedded components for creating content pages.
+
+- **What to update**:
+  - Add new content in `src/content/docs/`.
+  - Ensure correct frontmatter is used (`title`, `description`, `category`).
+
+---
+
+## Peer Reviews: What to Look For
+
+When performing peer reviews, here’s what you should check for in various files:
+
+### `.mdx` Files
+
+- **Content Accuracy**: Ensure the information is correct and well-organised.
+- **Frontmatter**: Check that the frontmatter is complete (e.g., `title`, `description`).
+- **Component Usage**: Ensure embedded components are used properly (e.g., `LinkCard` or
+  `CardGrid`).
+
+### `.css` Files
+
+- **Consistency**: Ensure that styles follow the project’s styling conventions (e.g., consistent use
+  of variables for colours, fonts, and spacing).
+- **Naming Conventions**: Ensure class names follow a consistent naming pattern.
+
+### `.jsx`/`.tsx` Files
+
+- **Functionality**: Ensure that the component works as expected.
+- **Performance**: Look for unnecessary re-renders or inefficiencies in React component updates.
+- **Code Style**: Ensure it follows SplashKit's linting rules.
+
+### `.astro` Files
+
+- **Structure**: Ensure the page/component is well-structured and follows best practices.
+- **Reusability**: Consider whether code could be refactored into reusable components.
+
+---

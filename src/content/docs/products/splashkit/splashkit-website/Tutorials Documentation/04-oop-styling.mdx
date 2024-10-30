@@ -1,0 +1,172 @@
+---
+title: Converting Between Top-Level Statements and OOP Styling in C#
+description: Learn how to add object-oriented programming (OOP) to the SplashKit tutorials.
+sidebar:
+  label: C# OOP Styling
+  order: 4
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import { Steps } from "@astrojs/starlight/components";
+
+This guide explains how to convert between top-level statements and object-oriented programming
+(OOP) styles in C# for SplashKit tutorials. This guide is good to refer to when you need to convert
+code between the two styles.
+
+## C# Tabs
+
+### Understanding the Differences Between Top-Level and OOP Styles
+
+**Top-Level Statements**:
+
+- Top-level statements allow you to write C# code without explicitly defining a class or `Main`
+  method.
+- Uses the directive: `using static SplashKitSDK.SplashKit;`, so SplashKit functions are called
+  directly, such as `WriteLine("Hello!");`.
+
+**Object-Oriented Programming (OOP)**:
+
+- OOP-style C# code requires defining a `Main` method inside a class.
+- Uses `using SplashKitSDK;`, meaning all SplashKit commands are prefixed with `SplashKit.` (e.g.,
+  `SplashKit.WriteLine("Hello!");`).
+
+### Converting from Top-Level Statements to OOP
+
+To convert from top-level statements to OOP, follow these steps:
+
+<Steps>
+
+1. **Add a Namespace and Class**:
+
+   Wrap your code in a namespace and class with a `Main` method.
+
+2. **Adjust the `using` Directive**:
+
+   Replace `using static SplashKitSDK.SplashKit;` with `using SplashKitSDK;`.
+
+3. **Prefix SplashKit Functions**:
+
+   Add `SplashKit.` before each SplashKit function.
+
+</Steps>
+
+---
+
+#### Example Conversion
+
+**Top-Level Code**:
+
+```csharp
+using static SplashKitSDK.SplashKit;
+
+WriteLine("What is your name?");
+string name = ReadLine();
+
+WriteLine("Hello, " + name + "!");
+```
+
+**Converted to OOP**:
+
+```csharp
+using SplashKitSDK;
+
+namespace Program
+{
+    public class Program
+    {
+        public static void Main()
+        {
+            SplashKit.WriteLine("What is your name?");
+            string name = SplashKit.ReadLine();
+
+            SplashKit.WriteLine("Hello, " + name + "!");
+        }
+    }
+}
+```
+
+### Converting from OOP to Top-Level Statements
+
+To convert from OOP to top-level statements:
+
+<Steps>
+
+1. **Remove Namespace and Class Wrapping**:
+
+   Delete the `namespace` and `class` definitions along with the `Main` method.
+
+2. **Adjust the `using` Directive**:
+
+   Replace `using SplashKitSDK;` with `using static SplashKitSDK.SplashKit;`.
+
+3. **Remove the `SplashKit.` Prefix**:
+
+   Directly call functions like `WriteLine()` and `ReadLine()`.
+
+</Steps>
+
+---
+
+#### Example Conversion
+
+**OOP Code**:
+
+```csharp
+using SplashKitSDK;
+
+namespace Program
+{
+    public class Program
+    {
+        public static void Main()
+        {
+            SplashKit.WriteLine("What is your name?");
+            string name = SplashKit.ReadLine();
+
+            SplashKit.WriteLine("Hello, " + name + "!");
+        }
+    }
+}
+```
+
+**Converted to Top-Level Statements**:
+
+```csharp
+using static SplashKitSDK.SplashKit;
+
+WriteLine("What is your name?");
+string name = ReadLine();
+
+WriteLine("Hello, " + name + "!");
+```
+
+### Quick Reference
+
+**Top-Level to OOP**:
+
+- Replace `using static SplashKitSDK.SplashKit;` with `using SplashKitSDK;`.
+- Wrap code in:
+
+  ```csharp
+  namespace Program
+  {
+      public class Program
+      {
+          public static void Main()
+          {
+              // Code here
+          }
+      }
+  }
+  ```
+
+- Prefix SplashKit functions with `SplashKit.`.
+
+**OOP to Top-Level**:
+
+- Replace `using SplashKitSDK;` with `using static SplashKitSDK.SplashKit;`.
+- Remove `namespace`, `class`, and `Main` method wrappers.
+- Remove `SplashKit.` prefixes.
+
+Using this guide, you can quickly convert between top-level statements and OOP formats in SplashKit
+tutorials, making the code accessible for different programming preferences.

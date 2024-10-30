@@ -1,0 +1,202 @@
+---
+title: Guide to adding OOP to SplashKit tutorials
+description: Learn how to add object-oriented programming (OOP) to the SplashKit tutorials.
+sidebar:
+  hidden: true
+  label: Adding OOP to Guides
+  order: 4
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+
+## Adding OOP and Top Level C# to Splashkit Tutorials
+
+One of the current goals of the SplashKit team is to enhance the tutorials by including both
+top-level statement and object-oriented (OOP) versions of C# programs. This guide outlines how to
+effectively integrate OOP into the existing tutorials, providing both options for users to choose
+from.
+
+### The Full Code Block Structure
+
+The full code block structure for C++, C# in top level and OOP, and Python is as follows:
+
+````md
+<Tabs syncKey="code-language">
+<TabItem label="C++">
+
+```cpp
+
+Add C++ code here
+
+```
+
+</TabItem>
+<TabItem label="C#">
+<Tabs syncKey="csharp-style">
+<TabItem label="Top-level Statements">
+
+```csharp
+
+Add top-level statement version of C# code here
+
+```
+
+</TabItem>
+<TabItem label="Object-Oriented">
+
+```csharp
+
+Add OOP version of C# code here
+
+```
+
+</TabItem>
+</Tabs>
+</TabItem>
+<TabItem label="Python">
+
+```python
+
+Add Python code here
+
+```
+
+</TabItem>
+</Tabs>
+````
+
+This is the new standard structure for all Splashkit tutorials. The C# code block has been replaced
+with a tabs component that contains two tabs, one for top-level statements and one for
+object-oriented programming. The C# code block has been replaced with a tabs component that contains
+two tabs, one for top-level statements and one for object-oriented programming.
+
+### Adding OOP to the Splashkit tutorials
+
+If you are adding OOP to the Splashkit tutorials, you will need to replace the C# section with the
+following code block in order to have both top-level statements and object-oriented programming
+options:
+
+````md
+<Tabs syncKey="csharp-style">
+<TabItem label="Top-level Statements">
+
+```csharp
+
+Add top-level statement version of C# code here
+
+```
+
+</TabItem>
+<TabItem label="Object-Oriented">
+
+```csharp
+
+Add OOP version of C# code here
+
+```
+
+</TabItem>
+</Tabs>
+````
+
+## Example
+
+Once done, the view of the code blocks will remain the same on the Splashkit site. However, once
+clicking on the C# tab, the user will be able to see both the top-level statements and
+object-oriented programming versions of the code.
+
+<Tabs syncKey="code-language">
+<TabItem label="C++">
+
+```cpp
+#include "splashkit.h"
+
+int main()
+{
+    string name;  // declare a variable to store the name
+    string quest; // and another to store a quest
+
+    write("What is your name: "); // prompt the user for input
+    name = read_line();           // read user input
+
+    // read in another value
+    write("And what is your quest? ");
+    quest = read_line();
+
+    write_line(name + "'s quest is: " + quest); // output quest to the terminal
+
+    return 0;
+}
+```
+
+</TabItem>
+<TabItem label="C#">
+
+<Tabs syncKey="csharp-style">
+<TabItem label="Top-level Statements">
+
+```csharp
+using static SplashKitSDK.SplashKit;
+
+string name;    // declare a variable to store the name
+string quest;   // and another to store a quest
+
+Write("What is your name: ");  // prompt the user for input
+name = ReadLine();             // read user input
+
+// Read in another value
+Write("And what is your quest? ");
+quest = ReadLine();
+
+WriteLine(name + "'s quest is: " + quest); // output quest to the terminal
+```
+
+</TabItem>
+<TabItem label="Object-Oriented">
+
+```csharp
+using SplashKitSDK;
+
+namespace ReadingText
+{
+    public class Program
+    {
+        public static void Main()
+        {
+            string name;    // declare a variable to store the name
+            string quest;   // and another to store a quest
+
+            SplashKit.Write("What is your name: ");  // prompt the user for input
+            name = SplashKit.ReadLine();             // read user input
+
+            // Read in another value
+            SplashKit.Write("And what is your quest? ");
+            quest = SplashKit.ReadLine();
+
+            SplashKit.WriteLine(name + "'s quest is: " + quest); // output quest to the terminal
+        }
+    }
+}
+```
+
+</TabItem>
+</Tabs>
+
+</TabItem>
+<TabItem label="Python">
+
+```python
+from splashkit import *
+
+write("What is your name: ") # prompt the user for input
+name = read_line()           # read user input
+
+# Read in another value
+write("And what is your quest? ")
+quest = read_line()
+
+write_line(name + "'s quest is: " + quest) # output quest to the terminal
+```
+
+</TabItem>
+</Tabs>
