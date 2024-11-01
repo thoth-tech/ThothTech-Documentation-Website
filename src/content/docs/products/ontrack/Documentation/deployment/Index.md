@@ -2,11 +2,11 @@
 title: Google Cloud - Documentation Index
 ---
 
-## [Overview](Overview.md)
+## [Overview](/products/ontrack/documentation/deployment/overview)
 
 Google Cloud team's overview and high-level documentation.
 
-## [Research & Findings](/google-cloud-research.md)
+## [Research & Findings](/products/ontrack/documentation/deployment/google-cloud/google-cloud-research)
 
 Google Cloud team's research and findings -
 

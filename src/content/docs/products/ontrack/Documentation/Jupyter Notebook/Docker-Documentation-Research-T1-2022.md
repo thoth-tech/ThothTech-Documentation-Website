@@ -2,7 +2,7 @@
 title: Docker Documentation and Research (WIP) T1-2022
 ---
 
-[Back to Jupyter Notebook Documentation Index](Index.md)
+[Back to Jupyter Notebook Documentation Index](/products/ontrack/documentation/jupyter-notebook)
 
 ## Intro
 

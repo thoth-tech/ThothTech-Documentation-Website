@@ -37,23 +37,23 @@ start over. If you have made commits you will need to change the fork location l
 
 3. Rename your origin to upstream
 
-   git remote rename origin upstream
+   `git remote rename origin upstream`
 
 4. Add the new fork as the origin
 
-   git remote add origin [git@github.com](git@github.com)/[GITHUB_USERNAME]/[YOUR_NEW_FORK_NAME]
+   `git remote add origin [git@github.com](git@github.com)/[GITHUB_USERNAME]/[YOUR_NEW_FORK_NAME]`
 
 5. Fetch from new origin
 
-   git fetch origin
+   `git fetch origin`
 
 6. Set origin master
 
-   git branch --set-upstream-to origin/master master
+   `git branch --set-upstream-to origin/master master`
 
 7. Push to fork
 
-   git push origin
+   `git push origin`
 
 ... Done!
 
@@ -145,7 +145,7 @@ branch:
 
 1. Please make sure you pull changes in the remote branch before starting your work.
 
-   git pull origin feature/_remote branch name_
+   `git pull origin feature/_remote branch name_`
 
 2. Resolve any merge conflicts that may now be revealed. **Please avoid force-push and rebase when
    working on a shared branch**. It can cause complex and hard to resolve merge conflicts as wellas

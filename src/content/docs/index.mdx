@@ -4,15 +4,21 @@ description: Get started building your docs site with Starlight.
 template: splash
 hero:
   tagline: One location for all Thoth Tech documentation!
+  image:
+    file: ../../assets/thoth-logo.png
   actions:
     - text: Our Products
-      link: /products/products/
+      link: /products/
       icon: right-arrow
       variant: primary
+    - text: Resources
+      link: /resources/introduction/
+      icon: right-arrow
+      variant: secondary
     - text: FAQ
       link: /resources/faq/
       icon: right-arrow
-      variant: primary
+      variant: secondary
 ---
 
 import { Card, LinkCard, CardGrid } from "@astrojs/starlight/components";
@@ -58,31 +64,18 @@ workplace.
 
 </Card>
 
-<CardGrid>
-  <LinkCard
-    title="Site Introduction"
-    description="Get to know what this site is all about."
-    href="/resources/introduction"
-  />
-
-{" "}
-
+<LinkCard
+  title="Site Introduction"
+  description="Get to know what this site is all about."
+  href="/resources/introduction"
+/>
 <LinkCard
   title="Onboarding Hub"
   description="Get started with Thoth Tech!"
   href="/resources/onboarding-hub/thothtech-onboarding-doc"
 />
-
-{" "}
-
 <LinkCard
   title="Documentation"
   description="Thoth Tech guides and templates."
-  href="/resources/documentation/documenting-for-thoth-tech"
+  href="/resources/documenting-for-thoth-tech"
 />
-
-  <LinkCard
-    title="News"
-    description="View the latest in Thoth Tech news."
-    href="/blog/" />
-</CardGrid>

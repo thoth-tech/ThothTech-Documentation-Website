@@ -42,9 +42,6 @@ a live document and ensures consistency across all Thoth Tech communications.
 - [Types of Writing](#types-of-writing)
   - [Technical Content](#technical-content)
   - [Code Examples](#code-examples)
-  - [Writing Instructions/Steps](#writing-instructionssteps)
-- [Bias-Free Communication](#bias-free-communication)
-- [Global Communication](#global-communication)
 
 ---
 
@@ -56,7 +53,7 @@ Headings should be clear and concise, with all content relating to the heading o
 relevant information. Avoid using question formats for article headings. Use `h1` (#) for main
 headings.
 
-#### Example:
+#### Example
 
 > **Creating a New Project**
 
@@ -67,7 +64,7 @@ headings.
 Subheadings highlight specific sections and should not exceed three hierarchical layers. Use `h2`
 (##) or `h3` (###) depending on the level.
 
-#### Example:
+#### Example
 
 > **Setting Up Your Environment**
 
@@ -78,7 +75,7 @@ Subheadings highlight specific sections and should not exceed three hierarchical
 Use notes for supplementary information necessary for understanding but outside the main content
 scope. Keep them brief and to the point, with optional links for further reading.
 
-#### Example:
+#### Example
 
 > **Note:** Remember to save your work frequently to avoid data loss.
 
@@ -89,7 +86,7 @@ scope. Keep them brief and to the point, with optional links for further reading
 Use hyperlinks to connect readers to additional relevant information when content is beyond the
 scope of the current article. For example:
 
-#### Example:
+#### Example
 
 > One reference for Australian spelling is the
 > [Macquarie Dictionary](https://www.macquariedictionary.com.au/).
@@ -101,7 +98,7 @@ scope of the current article. For example:
 Begin lists with a colon (:) and follow specific punctuation rules based on whether items are full
 sentences or fragments.
 
-#### Example:
+#### Example
 
 > Essential features include:
 >
@@ -114,7 +111,7 @@ sentences or fragments.
 Use unordered lists for items without a specific order. Begin with a dash (-) and avoid punctuation
 unless the items are full sentences.
 
-#### Example:
+#### Example
 
 > - Flexible
 > - Reliable
@@ -125,7 +122,7 @@ unless the items are full sentences.
 Use ordered lists for steps or items that follow a specific sequence. Number each item and ensure
 proper punctuation for complete sentences.
 
-#### Example:
+#### Example
 
 > 1. Open the application.
 > 2. Select 'File' from the menu.
@@ -139,7 +136,7 @@ proper punctuation for complete sentences.
 - **Bold**: Emphasis.
 - **_Bold and Italics_**: Combined emphasis.
 
-#### Example:
+#### Example
 
 > This feature is **essential** for a positive _SplashKit_ user experience.
 
@@ -150,7 +147,7 @@ proper punctuation for complete sentences.
 - Write out numbers one through nine; use numerals for 10 and above.
 - Use commas for clarity in large numbers (e.g., 25,000).
 
-#### Example:
+#### Example
 
 > The system processes three datasets daily and can handle up to 15,000 requests per second.
 
@@ -161,7 +158,7 @@ proper punctuation for complete sentences.
 Keep sentences concise, with an average length of 15-20 words, and a maximum of 25 words. Avoid
 redundancy and ensure clarity.
 
-#### Example (too long):
+#### Example (too long)
 
 > The application, which was developed over a period of three years by a team of skilled developers
 > and designers, incorporates a wide range of features that are intended to enhance user experience
@@ -170,7 +167,7 @@ redundancy and ensure clarity.
 
 **Explanation:** This sentence is too long, making it difficult to follow.
 
-#### Revised Example:
+#### Revised Example
 
 > The application was developed over three years by a skilled team. It includes features to enhance
 > user experience and improve functionality, making it one of the most comprehensive and
@@ -185,7 +182,7 @@ redundancy and ensure clarity.
 Spell out terms on first use, followed by the acronym in parentheses. Use the acronym alone
 thereafter.
 
-#### Example:
+#### Example
 
 > This is the Quality Assurance (QA) process. For all QA-related tasks, refer to the following
 > guidelines.
@@ -196,7 +193,7 @@ thereafter.
 
 Use capital letters for proper nouns. Follow sentence case for all writing, including headings.
 
-#### Example:
+#### Example
 
 > The team will visit Melbourne next month.
 
@@ -206,7 +203,7 @@ Use capital letters for proper nouns. Follow sentence case for all writing, incl
 
 Write verbs in the present tense and maintain consistency throughout.
 
-#### Example:
+#### Example
 
 > The system processes data efficiently.
 
@@ -217,11 +214,11 @@ Write verbs in the present tense and maintain consistency throughout.
 Prefer active voice for clarity and simplicity. Use passive voice only when necessary, such as for
 feedback or preserving relationships.
 
-#### Example (Active):
+#### Example (Active)
 
 > The developer fixed the bug.
 
-#### Example (Passive):
+#### Example (Passive)
 
 > The bug was fixed by the developer.
 
@@ -231,7 +228,7 @@ feedback or preserving relationships.
 
 Avoid converting verbs into nouns, as this can make writing cumbersome.
 
-#### Example:
+#### Example
 
 > Instead of "The implementation of the feature was successful," use "The team successfully
 > implemented the feature."
@@ -260,7 +257,7 @@ Avoid converting verbs into nouns, as this can make writing cumbersome.
 
 Write out full words to maintain a formal tone. Avoid contractions to ensure clarity.
 
-#### Example:
+#### Example
 
 > **Incorrect:** The user's guide can't be accessed online. **Correct:** The user's guide cannot be
 > accessed online.
@@ -272,7 +269,7 @@ Write out full words to maintain a formal tone. Avoid contractions to ensure cla
 Use a conversational tone, be brief, and direct. Avoid unnecessary words and contractions. Use the
 Oxford comma.
 
-#### Example:
+#### Example
 
 > You can find the instructions in the user manual.
 
@@ -282,7 +279,7 @@ Oxford comma.
 
 Use the second person (e.g., "You go to the library").
 
-#### Example:
+#### Example
 
 > You should update the software regularly.
 
@@ -295,7 +292,7 @@ Use the second person (e.g., "You go to the library").
 Technical content should include a table of contents, revision date, and version ID. Tailor it to
 the reader's skill level, and define technical terms clearly.
 
-#### Example:
+#### Example
 
 > **Revision Date:** July 2024  
 > **Version ID:** 1.0.0
@@ -307,7 +304,7 @@ the reader's skill level, and define technical terms clearly.
 Provide clear and concise examples for key development tasks. Ensure code is easy to replicate and
 follows best practices.
 
-#### Example:
+#### Example
 
 ```python
 print("Hello, world!")

@@ -1,6 +1,8 @@
 /*global theme*/
 /* Dark mode colors. */
 :root {
+  --purple-hsl: 255, 60%, 60%;
+  --overlay-blurple: hsla(var(--purple-hsl), 0.2);
   --sl-color-accent-low: #242424;
   --sl-color-accent: #6a6a6a;
   --sl-color-accent-high: #c8c8c8;
@@ -13,6 +15,7 @@
   --sl-color-gray-6: #272727;
   --sl-color-black: #181818;
 }
+
 /* Light mode colors!!! */
 :root[data-theme="light"] {
   --sl-color-accent-low: #d7d7d7;
@@ -29,6 +32,39 @@
   --sl-color-black: #ffffff;
 }
 
+[data-has-hero] .page {
+  background: linear-gradient(215deg, var(--overlay-blurple), transparent 40%),
+    radial-gradient(var(--overlay-blurple), transparent 40%) no-repeat -60vw -40vh / 105vw 200vh,
+    radial-gradient(var(--overlay-blurple), transparent 65%) no-repeat 50% calc(100% + 20rem) / 60rem 30rem;
+}
+
+/* --- START: Link Button styling ------*/
+
+[data-has-hero] .hero .sl-link-button {
+  padding: 1rem 1.25rem;
+  border: 3px solid transparent;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+[data-has-hero] .hero .sl-link-button:hover {
+  border: 3px solid var(--sl-color-white);
+}
+
+[data-has-hero] .hero .sl-link-button.secondary {
+  background-color: var(--sl-color-accent-low);
+  /* color: black; */
+}
+
+/* 
+[data-has-hero] .hero .sl-link-button.minimal {
+  background-color: var(--sl-color-accent);
+  color: black;
+} */
+
+/* --- END: Link Button styling ------*/
+
 /*landing page*/
 .aboutContainer {
   width: 100%;
@@ -38,20 +74,29 @@
 .aboutAbout {
   width: 20%;
 }
+
 .aboutButtons {
   width: 60%;
 }
 
 /*products page*/
 .ontrack {
-  --sl-color-gray-1: #3691ff; /*??*/
-  --sl-color-gray-2: #3691ff; /*hover outline*/
-  --sl-color-gray-3: #3691ff; /*Text Colour*/
-  --sl-color-gray-4: #3691ff; /*??*/
-  --sl-color-gray-5: #00459a; /*non-hover outline*/
-  --sl-color-gray-6: #131313; /*hover background*/
-  --sl-color-black: #3691ff; /*Text colour light mode*/
-  --sl-color-white: #3691ff; /*Text colour dark mode*/
+  --sl-color-gray-1: #3691ff;
+  /*??*/
+  --sl-color-gray-2: #3691ff;
+  /*hover outline*/
+  --sl-color-gray-3: #3691ff;
+  /*Text Colour*/
+  --sl-color-gray-4: #3691ff;
+  /*??*/
+  --sl-color-gray-5: #00459a;
+  /*non-hover outline*/
+  --sl-color-gray-6: #131313;
+  /*hover background*/
+  --sl-color-black: #3691ff;
+  /*Text colour light mode*/
+  --sl-color-white: #3691ff;
+  /*Text colour dark mode*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,69 +107,109 @@ img.ontrack {
 }
 
 .splashkit {
-  --sl-color-gray-1: #f5a623; /*??*/
-  --sl-color-gray-2: #f5a623; /*hover outline*/
-  --sl-color-gray-3: #f5a623; /*Text Colour*/
-  --sl-color-gray-4: #f5a623; /*??*/
-  --sl-color-gray-5: #855506; /*non-hover outline*/
-  --sl-color-gray-6: #131313; /*hover background*/
-  --sl-color-black: #f5a623; /*Text colour light mode*/
-  --sl-color-white: #f5a623; /*Text colour dark mode*/
+  --sl-color-gray-1: #f5a623;
+  /*??*/
+  --sl-color-gray-2: #f5a623;
+  /*hover outline*/
+  --sl-color-gray-3: #f5a623;
+  /*Text Colour*/
+  --sl-color-gray-4: #f5a623;
+  /*??*/
+  --sl-color-gray-5: #855506;
+  /*non-hover outline*/
+  --sl-color-gray-6: #131313;
+  /*hover background*/
+  --sl-color-black: #f5a623;
+  /*Text colour light mode*/
+  --sl-color-white: #f5a623;
+  /*Text colour dark mode*/
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .starlight {
-  --sl-color-gray-1: #545454; /*??*/
-  --sl-color-gray-2: #545454; /*hover outline*/
-  --sl-color-gray-3: #545454; /*Text Colour*/
-  --sl-color-gray-4: #545454; /*??*/
-  --sl-color-gray-5: #2a2a2a; /*non-hover outline*/
-  --sl-color-gray-6: #131313; /*hover background*/
-  --sl-color-black: #545454; /*Text colour light mode*/
-  --sl-color-white: #545454; /*Text colour dark mode*/
+  --sl-color-gray-1: #545454;
+  /*??*/
+  --sl-color-gray-2: #545454;
+  /*hover outline*/
+  --sl-color-gray-3: #545454;
+  /*Text Colour*/
+  --sl-color-gray-4: #545454;
+  /*??*/
+  --sl-color-gray-5: #2a2a2a;
+  /*non-hover outline*/
+  --sl-color-gray-6: #131313;
+  /*hover background*/
+  --sl-color-black: #545454;
+  /*Text colour light mode*/
+  --sl-color-white: #545454;
+  /*Text colour dark mode*/
   display: flex;
   justify-content: center;
 }
 
 
 .artGallery {
-  --sl-color-gray-1: #545454; /*??*/
-  --sl-color-gray-2: #545454; /*hover outline*/
-  --sl-color-gray-3: #545454; /*Text Colour*/
-  --sl-color-gray-4: #545454; /*??*/
-  --sl-color-gray-5: #2a2a2a; /*non-hover outline*/
-  --sl-color-gray-6: #131313; /*hover background*/
-  --sl-color-black: #545454; /*Text colour light mode*/
-  --sl-color-white: #545454; /*Text colour dark mode*/
+  --sl-color-gray-1: #545454;
+  /*??*/
+  --sl-color-gray-2: #545454;
+  /*hover outline*/
+  --sl-color-gray-3: #545454;
+  /*Text Colour*/
+  --sl-color-gray-4: #545454;
+  /*??*/
+  --sl-color-gray-5: #2a2a2a;
+  /*non-hover outline*/
+  --sl-color-gray-6: #131313;
+  /*hover background*/
+  --sl-color-black: #545454;
+  /*Text colour light mode*/
+  --sl-color-white: #545454;
+  /*Text colour dark mode*/
   display: flex;
   justify-content: center;
 }
 
 .courseFlow {
-  --sl-color-gray-1: #7089fd; /*??*/
-  --sl-color-gray-2: #7089fd; /*hover outline*/
-  --sl-color-gray-3: #7089fd; /*Text Colour*/
-  --sl-color-gray-4: #7089fd; /*??*/
-  --sl-color-gray-5: #0221b3; /*non-hover outline*/
-  --sl-color-gray-6: #131313; /*hover background*/
-  --sl-color-black: #7089fd; /*Text colour light mode*/
-  --sl-color-white: #7089fd; /*Text colour dark mode*/
+  --sl-color-gray-1: #7089fd;
+  /*??*/
+  --sl-color-gray-2: #7089fd;
+  /*hover outline*/
+  --sl-color-gray-3: #7089fd;
+  /*Text Colour*/
+  --sl-color-gray-4: #7089fd;
+  /*??*/
+  --sl-color-gray-5: #0221b3;
+  /*non-hover outline*/
+  --sl-color-gray-6: #131313;
+  /*hover background*/
+  --sl-color-black: #7089fd;
+  /*Text colour light mode*/
+  --sl-color-white: #7089fd;
+  /*Text colour dark mode*/
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .operations {
-  --sl-color-gray-1: #fc486b; /*??*/
-  --sl-color-gray-2: #fc486b; /*hover outline*/
-  --sl-color-gray-3: #fc486b; /*Text Colour*/
-  --sl-color-gray-4: #fc486b; /*??*/
-  --sl-color-gray-5: #9f0221; /*non-hover outline*/
-  --sl-color-gray-6: #131313; /*hover background*/
-  --sl-color-black: #fc486b; /*Text colour light mode*/
-  --sl-color-white: #fc486b; /*Text colour dark mode*/
+  --sl-color-gray-1: #fc486b;
+  /*??*/
+  --sl-color-gray-2: #fc486b;
+  /*hover outline*/
+  --sl-color-gray-3: #fc486b;
+  /*Text Colour*/
+  --sl-color-gray-4: #fc486b;
+  /*??*/
+  --sl-color-gray-5: #9f0221;
+  /*non-hover outline*/
+  --sl-color-gray-6: #131313;
+  /*hover background*/
+  --sl-color-black: #fc486b;
+  /*Text colour light mode*/
+  --sl-color-white: #fc486b;
+  /*Text colour dark mode*/
   display: flex;
   justify-content: center;
   align-items: center;

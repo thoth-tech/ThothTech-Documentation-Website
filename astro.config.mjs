@@ -28,90 +28,70 @@ export default defineConfig({
       sidebar: [
         {
           label: "Resources",
-          collapsed: true, // Collapsed by default
+          collapsed: false,
           items: [
-            { label: "Introduction", link: "/resources/introduction" },
-            { label: "Thoth Tech Technology Stack", link: "/resources/thoth-tech-technology-stack" },
-            { label: "Remote Working Guide", link: "/resources/remote-working-guide" },
+            {
+              label: "Introduction",
+              link: "/resources/introduction"
+            },
+            {
+              label: "Thoth Tech Technology Stack",
+              link: "/resources/thoth-tech-technology-stack"
+            },
+            {
+              label: "Remote Working Guide",
+              link: "/resources/remote-working-guide"
+            },
             {
               label: "Onboarding Hub",
-              collapsed: true, 
-              autogenerate: { directory: "resources/onboarding-hub" },
+              collapsed: true,
+              autogenerate: { directory: "Resources/Onboarding Hub" },
             },
             {
               label: "Quality Assurance",
               collapsed: true,
-              autogenerate: { directory: "resources/quality-assurance" },
+              autogenerate: { directory: "Resources/Quality Assurance" },
             },
-            { label: "Frequently Asked Questions (FAQ)", link: "/resources/faq" },
+            {
+              label: "Frequently Asked Questions (FAQ)",
+              link: "/resources/faq"
+            },
+          ],
+        },
+        {
+          label: "Products",
+          collapsed: false,
+          items: [
+            { label: "Products", link: "/products" },
+            {
+              label: "SplashKit",
+              collapsed: true,
+              autogenerate: { directory: "Products/SplashKit" },
+            },
+            {
+              label: "OnTrack",
+              collapsed: true,
+              autogenerate: { directory: "Products/OnTrack" },
+            },
+            {
+              label: "CourseFlow",
+              collapsed: true,
+              autogenerate: { directory: "Products/CourseFlow" },
+            },
           ],
         },
         {
           label: "Teams and Contributions",
           collapsed: true,
-          autogenerate: { directory: "teams-and-contributions" },
-        },
-        {
-          label: "Products",
-          collapsed: true,
-          items: [
-            { label: "Products", link: "/products/products" },
-            {
-              label: "SplashKit",
-              collapsed: true,
-              items: [
-                { label: "Overview", link: "/products/splashkit" },
-                {
-                  label: "Arcade Machine",
-                  collapsed: true,
-                  autogenerate: { directory: "products/splashkit/arcade-machine" },
-                },
-                {
-                  label: "Games Development",
-                  collapsed: true,
-                  autogenerate: { directory: "products/splashkit/games-development" },
-                },
-                {
-                  label: "SplashKit Expansion",
-                  collapsed: true,
-                  autogenerate: { directory: "products/splashkit/splashkit-expansion" },
-                },
-                {
-                  label: "SplashKit Online",
-                  collapsed: true,
-                  autogenerate: { directory: "products/splashkit/splashkit-online" },
-                },
-                {
-                  label: "SplashKit Website",
-                  collapsed: true,
-                  autogenerate: { directory: "products/splashkit/splashkit-website" },
-                },
-              ],
-            },
-            {
-              label: "OnTrack",
-              collapsed: true,
-              autogenerate: { directory: "products/ontrack" },
-            },
-            {
-              label: "CourseFlow",
-              collapsed: true,
-              autogenerate: { directory: "products/courseflow" },
-            },
-            {
-              label: "Art Gallery",
-              collapsed: true,
-              autogenerate: { directory: "products/art-gallery" },
-            },
-          ],
+          autogenerate: { directory: "Teams and Contributions" },
         },
         {
           label: "Feedback",
           collapsed: true,
           items: [
-            { 
-              label: "Feedback Form", 
-              link: "/feedback/feedback-form" 
+            {
+              label: "Feedback Form",
+              link: "/feedback/feedback-form"
             }
           ],
         },
