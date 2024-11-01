@@ -11,6 +11,7 @@ sidebar:
 [2. Showcase Video](#showcase-video)
 
 [3. Leadership Team](#leadership-team)
+
 > [3.1 Company Board](#company-board)  
 > [3.2 Product Mentors](#product-mentors)  
 > [3.3 Student Leaders](#student-leads)  
@@ -19,6 +20,7 @@ sidebar:
 [4. Company Structure](#company-structure)
 
 [5. Project 1: OnTrack](#project-1-ontrack)
+
 > [5.1 Project Overview](#project-overview)  
 > [5.2 User Manual](#user-manual)  
 > [5.3 Completed Deliverables](#completed-deliverables)  
@@ -26,6 +28,7 @@ sidebar:
 > [5.5 Open Issues](#open-issues)  
 > [5.6 Lessons Learned](#lessons-learned)  
 > [5.7 Product Development Life Cycle](#product-development-life-cycle)
+>
 > > [5.7.1 New Tasks](#new-tasks)  
 > > [5.7.2 Definition of Done](#definition-of-done)  
 > > [5.7.3 Task Review](#task-review)  
@@ -33,6 +36,7 @@ sidebar:
 > > [5.7.5 Branching Strategy](#branching-strategy)
 >
 > [5.8 Product Architecture](#product-architecture)
+>
 > > [5.8.1 Tech Stack](#tech-stack)
 >
 > [5.9 Source Code](#source-code)
@@ -40,12 +44,14 @@ sidebar:
 > [5.10 Login Credentials](#login-credentials)
 
 [6. Project 2: SplashKit](#project-2-splashkit)
+
 > [6.1 Project Overview](#project-overview-1)  
 > [6.2 User Manual](#user-manual-1)  
 > [6.3 Completed Deliverables](#completed-deliverables-1)  
 > [6.4 Roadmap](#roadmap-1)  
 > [6.5 Open Issues](#open-issues-1)  
 > [6.6 Product Development Life Cycle](#product-development-life-cycle-1)
+>
 > > [6.6.1 New Tasks](#new-tasks-1)  
 > > [6.6.2 Definition of Done](#definition-of-done-1)  
 > > [6.6.3 Task Review](#task-review-1)  
