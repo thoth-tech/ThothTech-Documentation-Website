@@ -1,5 +1,6 @@
 <p align="left">
-    <img width="150px" src="https://github.com/thoth-tech/.github/blob/main/images/splashkit.png"/>
+    <img width="150px" src="https://github.com/thoth-tech/.github/blob/main/images/splashkit.png"
+    alt="Thoth Tech Logo"/>
 </p>
 
 [![GitHub contributors](https://img.shields.io/github/contributors/thoth-tech/ThothTech-Documentation-Website?label=Contributors&color=F5A623)](https://github.com/thoth-tech/ThothTech-Documentation-Website/graphs/contributors)
@@ -15,14 +16,14 @@ hub for all Thoth Tech resources, designed to provide a structured and accessibl
 documentation, product information, and team resources.
 
 Built with Astro and Starlight, this website offers an organized space where users can explore
-Thoth Tech’s mission, values, and goals, along with in-depth information on each of the company's
+Thoth Tech's mission, values, and goals, along with in-depth information on each of the company's
 products and services. Each product has its own dedicated section, featuring a brief overview,
 its purpose, and comprehensive documentation to support both users and development teams.
 
 The site also includes team documentation for each semester, highlighting the efforts of the
-individuals contributing to Thoth Tech’s ongoing projects. Whether you're a developer, a team
+individuals contributing to Thoth Tech's ongoing projects. Whether you're a developer, a team
 member, or a user, this website provides all the information needed to understand and contribute
-to Thoth Tech’s vision and initiatives.
+to Thoth Tech's vision and initiatives.
 
 ## Format Checks to Run
 
