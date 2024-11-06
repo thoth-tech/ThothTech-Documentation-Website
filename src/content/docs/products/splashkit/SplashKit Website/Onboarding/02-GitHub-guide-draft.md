@@ -3,6 +3,7 @@ title: "splashkit.io GitHub Guide"
 sidebar:
   label: "2. splashkit.io GitHub Guide"
   order: 2
+draft: true
 ---
 
 ## Set up a Working Environment for SplashKit
@@ -34,7 +35,7 @@ collaborate. Before you start, ensure you have Git installed on your system.
 After installation, verify the installation with:
 
 ```shell
- git --version
+git --version
 ```
 
 ### 2. Download and Install VS Code
@@ -97,7 +98,7 @@ This will create a copy of the repository under your GitHub account.
 ### 5. Clone the Forked Repository
 
 - Copy the URL: Go to your forked repository, click on the green "Code" button, and copy the
-  repository URL (<https://github.com/thoth-tech/splashkit.io-starlight.git>).
+  repository URL (`https://github.com/thoth-tech/splashkit.io-starlight.git`).
 
 - Launch VS Code.
 
@@ -105,7 +106,7 @@ This will create a copy of the repository under your GitHub account.
   with the URL you copied earlier:
 
   ```shell
-    git clone <repository-url>
+  git clone <repository-url>
   ```
 
 Alternatively, you can select clone repository option from the start menu of VS Code. This will
@@ -217,5 +218,5 @@ repository.
   your changes, and submit the pull request.
 
 Please refer to the
-[Pull Request Guide](https://thoth-tech.netlify.app/products/splashkit/splashkit-tutorials/onboarding/03-pull-request/)
-for more information on creating a pull request.
+[Pull Request Guide](/products/splashkit/splashkit-website/onboarding/03-pull-request/) for more
+information on creating a pull request.
