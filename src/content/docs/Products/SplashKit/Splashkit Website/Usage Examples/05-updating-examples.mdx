@@ -1,0 +1,179 @@
+---
+title: Updating Usage Examples by Adding a Missing Language
+description:
+  Learn how to update an existing usage example by adding a missing language to the Splashkit
+  website.
+sidebar:
+  label: Updating Usage Examples
+  order: 3
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import { FileTree } from "@astrojs/starlight/components";
+import { Steps } from "@astrojs/starlight/components";
+
+This guide explains how to add a missing language to an existing usage example for the Splashkit
+website.
+
+### Steps to Update a Usage Example with a Missing Language
+
+When updating an existing usage example with a missing language, your contribution should include:
+
+1. Code in the missing language(s)
+2. Consistent comments and formatting across all language versions
+3. Updated file list with the new language version(s)
+
+## Updating Usage Examples with Missing Languages
+
+---
+
+<Steps>
+
+1. ### Reviewing Existing Examples
+
+   Planner cards are typically created to update existing examples with missing languages. Review
+   the planner board to find examples that need additional languages to be added.
+
+   For instance, if an example of `dec_to_hex` exists in C++ and Python but lacks a C# version and
+   there is a planner card for it, you can add the missing C# version.
+
+2. ### Writing the Program in the Missing Language
+
+   Write the program in the missing language while maintaining consistency with the other versions.
+   Follow similar structure, naming conventions, and commenting styles. Below is an example for
+   adding C# to an existing C++ example:
+
+   **Original C++ Code:**
+
+   ```cpp
+   #include "splashkit.h"
+
+   int main()
+   {
+       write_line("Hello! Welcome to the decimal to hexadecimal converter.");
+
+       // Prompt the user for a decimal input
+       write_line("Please enter a decimal number:");
+
+       // Read the input as a string
+       string dec_input = read_line();
+
+       // Convert the input string to an unsigned integer
+       unsigned int dec_value = convert_to_integer(dec_input);
+
+       // Convert the decimal value to hexadecimal format
+       string hex_value = dec_to_hex(dec_value);
+
+       // Display the result in hexadecimal format
+       write_line("The decimal value in hexadecimal format is: " + hex_value);
+
+       return 0;
+   }
+   ```
+
+   **C# Version (Top-level statements):**
+
+   Note, for C# top-level statements, use `using static SplashKitSDK.SplashKit;`.
+
+   ```csharp
+   using static SplashKitSDK.SplashKit;
+
+   WriteLine("Hello! Welcome to the decimal to hexadecimal converter.");
+
+   // Prompt the user for a decimal input
+   WriteLine("Please enter a decimal number:");
+
+   // Read the input as a string
+   string dec_input = ReadLine();
+
+   // Convert the input string to an unsigned integer
+   uint dec_value = ConvertToInteger(dec_input);
+
+   // Convert the decimal value to hexadecimal format
+   string hex_value = DecToHex(dec_value);
+
+   // Display the result in hexadecimal format
+   WriteLine("The decimal value in hexadecimal format is: " + hex_value);
+   ```
+
+   **C# Version (Object-Oriented Programming):**
+
+   For the object-oriented programming (OOP) version, use `using SplashKitSDK;`.
+
+   ```csharp
+
+   using SplashKitSDK;
+
+   namespace Program
+   {
+       public class Program
+       {
+           public static void Main()
+           {
+               SplashKit.WriteLine("Hello! Welcome to the decimal to hexadecimal converter.");
+
+               // Prompt the user for a decimal input
+               SplashKit.WriteLine("Please enter a decimal number:");
+
+               // Read the input as a string
+               string dec_input = SplashKit.ReadLine();
+
+               // Convert the input string to an unsigned integer
+               uint dec_value = SplashKit.ConvertToInteger(dec_input);
+
+               // Convert the decimal value to hexadecimal format
+               string hex_value = SplashKit.DecToHex(dec_value);
+
+               // Display the result in hexadecimal format
+               SplashKit.WriteLine("The decimal value in hexadecimal format is: " + hex_value);
+           }
+       }
+   }
+
+   ```
+
+   See how the structure and comments are consistent across all versions, with syntax changes
+   specific to the language. This consistency helps readers understand the program's structure and
+   function. If you need some help in understanding OOP and top level statements in C#, refer to the
+   [OOP Styling](/products/splashkit/splashkit-website/tutorials-documentation/04-oop-styling)
+   guide.
+
+3. ### Naming Files for the New Language Version
+
+   Rename the files according to Splashkit’s conventions. Use the same naming pattern as the
+   existing example.
+
+   For instance, if you add C# to a `write_line` example, you would name the two files as:
+
+   ```plaintext
+   write_line-1-hello-world-top-level.cs
+   write_line-1-hello-world-oop.cs
+   ```
+
+4. ### Adding the New Files to the Splashkit Starlight.io Repo
+
+   Add the new files to the `usage-example-files` folder under the appropriate function category,
+   following the existing file structure:
+
+   <FileTree>
+
+   - public
+     - usage-example-files
+       - terminal/
+         - write_line/
+           - write_line-1-hello-world-top-level.cs
+           - write_line-1-hello-world-oop.cs
+
+   </FileTree>
+
+   For detailed naming and placement rules, refer to
+   [CONTRIBUTING.md](https://splashkit.io/usage-examples/contributing/).
+
+</Steps>
+
+### Next Steps
+
+After adding the files, follow the steps in
+[Usage Example Pull Requests](/products/splashkit/splashkit-website/usage-examples/03-usage-pull-request)
+to submit for review. For peer review, refer to the
+[Peer Review Guide for Usage Examples](/products/splashkit/splashkit-website/usage-examples/04-usage-peer-review).

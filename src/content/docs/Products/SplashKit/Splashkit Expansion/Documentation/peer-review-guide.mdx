@@ -1,0 +1,127 @@
+---
+title: Peer Review Guide
+sidebar:
+  label: Peer Review Guide
+  order: 1
+---
+
+import { Aside } from "@astrojs/starlight/components";
+
+## Introduction
+
+<Aside type="tip" title="TL;DR">
+
+- Peer reviews are essential for maintaining high-quality code in SplashKit.
+- The Peer-Review Checklist is **required** to be completed for review to ensure consistency across
+  the project.
+- Peer-Review Prompts are **not mandatory** but serve as a resource to guide discussions. - Prompts
+  help foster a collaborative and conversational peer-review process.
+  - The goal is to verify code quality and improve together through collaboration.
+
+</Aside>
+
+In SplashKit, peer reviews are an essential part of maintaining high-quality code. The Peer-Review
+Checklist provided below is required for every pull request and ensures that all contributions meet
+a consistent standard across the project. This checklist covers essential aspects like code quality,
+functionality, and testing.
+
+However, we recognize that every feature or task is different, and it’s difficult to capture all
+potential review points in a single checklist. That’s why we’ve also included a set of Peer-Review
+Prompts. These prompts are not mandatory but serve as a resource to guide the peer-review
+discussion. Since peer reviews should always be collaborative, these prompts help ensure that the
+review process is conversational and thorough, encouraging reviewers to think critically and explore
+areas that may not be immediately obvious.
+
+Remember, the goal of peer reviews is not only to verify the quality of the code but also to foster
+a collaborative environment where we improve together.
+
+<Aside type="caution" title="Card Movement in Planner">
+
+As a reviewer, it is _your_ responsibility to move the Planner Card to the next column once approval
+has been given.
+
+</Aside>
+
+### Splashkit Peer-Review Checklist
+
+```md
+## General Information
+
+- [ ] Type of Change: Clearly indicate the type of change (choose one):
+  - [ ] Bug fix
+  - [ ] New feature
+  - [ ] Breaking change
+  - [ ] Documentation update
+
+## Code Quality
+
+- [ ] Repository: Is this Pull Request is made to the correct repository? (Thoth-Tech NOT SplashKit)
+- [ ] Readability: Is the code easy to read and follow? If not are there comments to help understand
+      the code?
+- [ ] Maintainability: Can this code be easily maintained or extended in the future?
+
+## Functionality
+
+- [ ] Correctness: Does the code meet the requirements of the task?
+- [ ] Impact on Existing Functionality: Has the impact on existing functionality been considered and
+      tested?
+
+## Testing
+
+- [ ] Test Coverage: Are unit tests provided for new or modified code?
+- [ ] Test Results: Have all tests passed?
+
+## Documentation
+
+- [ ] Documentation: Are both inline and applicable external documentation updated and clear?
+
+## Pull Request Details
+
+- [ ] PR Description: Is the problem being solved clearly described?
+- [ ] Checklist Completion: Have all relevant checklist items been reviewed and completed?
+```
+
+### Splashkit Review Prompts
+
+- **Type of Change**: Does this Pull Request correctly identify the type of change (bug fix, new
+  feature, breaking change, or documentation update)? Is it aligned with the stated issue or task?
+
+- **Code Readability**: Is the code structure clean and easy to follow? Could it benefit from
+  clearer variable names, additional comments, or better organization? Would this code be
+  understandable for a new developer joining the project?
+
+- **Maintainability**: How maintainable is the code? Is it modular and easy to extend in the future?
+  Does it avoid creating technical debt? Is the codebase as simple as possible while still
+  accomplishing the task?
+
+- **Code Simplicity**: Are there any overly complex or redundant sections in the code? Could they be
+  refactored for better simplicity or clarity? Does the code follow established design patterns and
+  best practices?
+
+- **Edge Cases**: Does the implementation consider potential edge cases? What could go wrong with
+  this code in unusual or unexpected scenarios? Are there any cases that haven’t been fully
+  addressed?
+
+- **Test Thoroughness**: Are all key scenarios (including edge cases and failure paths) covered by
+  tests? Could additional tests help ensure the reliability of the code? Has the code been tested
+  across different environments (e.g., multiple browsers or platforms)?
+
+- **Backward Compatibility**: Does this change break any existing functionality? If so, has backward
+  compatibility been handled or documented appropriately? Are there any warnings or notes in the
+  documentation regarding compatibility?
+
+- **Performance Considerations**: Could this code have a negative impact on performance? Have any
+  performance concerns been documented and tested? Could the code be optimized for better efficiency
+  without sacrificing readability?
+
+- **Security Concerns**: Could this change introduce security vulnerabilities, especially in terms
+  of input validation or sensitive data handling? Have security best practices been followed? Does
+  this code ensure proper user data handling?
+
+- **Dependencies**: Are the new dependencies truly necessary? Could they create conflicts or issues
+  down the line, particularly during upgrades or with other libraries in the project? Is there a
+  simpler way to achieve the same functionality without adding new dependencies?
+
+- **Documentation**: Is the documentation clear and complete for both internal developers and
+  external users? Could a new developer understand how to use or modify this feature from the
+  documentation provided? Does it cover any API or external interface changes?

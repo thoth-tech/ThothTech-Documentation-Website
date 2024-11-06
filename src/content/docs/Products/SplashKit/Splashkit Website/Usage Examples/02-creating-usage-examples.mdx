@@ -1,0 +1,225 @@
+---
+title: Guide to creating usage examples
+description: Learn how to create, submit, and review usage examples for the Splashkit website.
+sidebar:
+  label: Creating Usage Examples
+  order: 2
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import { Steps } from "@astrojs/starlight/components";
+import { FileTree } from "@astrojs/starlight/components";
+
+This guide explains how to create a usage example for the Splashkit website.
+
+### What are Usage Examples?
+
+Usage examples demonstrate a specific Splashkit function within a simple, small program. The goal is
+to keep the program minimal while clearly showing how the function works.
+
+For instance, the `write_line` example on the Splashkit site shows how the `write_line` function
+works, with a brief explanation, program code, and a screenshot of the output.
+
+![splashkit repo](./images/usageexample1.png)
+
+### Steps to Create a Usage Example
+
+A complete usage example includes:
+
+1. C++ code version
+2. C# (top-level statements) version
+3. C# (Object-Oriented Programming) version
+4. Python version
+5. One-sentence explanation
+6. Screenshot of the output
+
+<Steps>
+
+1. ### Choosing a Function
+
+   The planner board has numerous usage example suggestions for various functions, however you are
+   welcomed and encouraged to come up with your own creative ideas for these. Scroll through the
+   [Developer Documentation](https://splashkit.io/api/) to find various functions you could use for
+   the usage example, when coming up with an idea, make sure to also check to see if anyone else has
+   already done it.
+
+   Some current usage examples on the Splashkit Site:
+
+   - `is_integer`: Check if a value is an integer.
+   - `write_line`: Show how to use `write_line` in an ASCII art program.
+   - `dec_to_hex`: Convert decimal to hexadecimal.
+   - `fill_triangle_on_bitmap`: Create a smiley face with a triangle hat.
+
+   The goal is to create **one usage example per function** in the SplashKit library. Building out
+   these single examples for each function is the priority to round out the variety of examples
+   available.
+
+   If you come up with a creative idea for a function that already has an example, please share it
+   in the SplashKit group chat or reach out to your Capstone Mentor to discuss whether it's a good
+   idea to add another example for that function.
+
+2. ### creating the program
+
+   Create the program with as few lines of code as possible. You'll need to write the program in
+   C++, C# (using top-level statements and OOP version), and Python, all using Splashkit. Start with
+   the language you're most comfortable with, then convert it to the others.
+
+   Note for C# to-level: Use `using static SplashkitSDK.SplashKit;`. For the OOP version: use
+   `using SplashKitSDK;`.
+
+   #### Example
+
+   If C++ is your strength, begin by creating a small program like this `dec_to_hex` example:
+
+   ```cpp
+   #include "splashkit.h"
+
+   int main()
+   {
+       write_line("Hello! Welcome to the decimal to hexadecimal converter.");
+
+       // Prompt the user for a decimal input
+       write_line("Please enter a decimal number:");
+
+       // Read the input as a string
+       string dec_input = read_line();
+
+       // Convert the input string to an unsigned integer
+       unsigned int dec_value = convert_to_integer(dec_input);
+
+       // Convert the decimal value to hexadecimal format
+       string hex_value = dec_to_hex(dec_value);
+
+       // Display the result in hexadecimal format
+       write_line("The decimal value in hexadecimal format is: " + hex_value);
+
+       return 0;
+   }
+   ```
+
+   This example includes meaningful comments that clearly explain each part of the program, which
+   helps readers understand both the structure and function. When converting to C#, notice that the
+   structure and comments are kept consistent, with syntax changes specific to the language:
+
+   ```csharp
+   using static SplashKitSDK.SplashKit;
+
+   WriteLine("Hello! Welcome to the decimal to hexadecimal converter.");
+
+   // Prompt the user for a decimal input
+   WriteLine("Please enter a decimal number:");
+
+   // Read the input as a string
+   string dec_input = ReadLine();
+
+   // Convert the input string to an unsigned integer
+   uint dec_value = ConvertToInteger(dec_input);
+
+   // Convert the decimal value to hexadecimal
+   string hex_value = DecToHex(dec_value);
+
+   // Display the result
+   WriteLine("The decimal value in hexadecimal format is: " + hex_value);
+   ```
+
+3. ### Explanation and Screenshot
+
+   Provide a simple explanation and a screenshot of the program's output.
+
+   **Title:** Decimal to Hex Converter  
+   **Explanation:** This program converts a decimal value to hexadecimal using the `dec_to_hex`
+   function.
+
+   Take a screenshot of the output window and save it.
+
+4. ### Adding these files to Splashkit Starlight.io
+
+   Now that you're done, you should have the following files:
+
+   - txt file
+   - C++ file
+   - python file
+   - C# (top-level statements) file
+   - C# (OOP) file
+   - Screenshot of the output
+
+   Now you'll need to rename these before adding them to the Splashkit Starlight.io repo.
+
+   #### Example
+
+   Say you've created a `write_line` program. Rename the files as follows:
+
+   ```plaintext
+   write_line-1-hello-world.cpp
+   write_line-1-hello-world.py
+   write_line-1-hello-world-top-level.cs
+   write_line-1-hello-world-oop.cs
+   write_line-1-hello-world.png or .gif
+   write_line-1-hello-world.txt
+   ```
+
+   Now you can add these files to the Splashkit Starlight.io repo. If when you add them you find
+   there is already some files of a usage example using this same function, then you should
+   increment the number in the file name by 1.
+
+5. ### Adding these files to Splashkit Starlight.io
+
+   Now that your files are named, add all of your files to the `usage-examples-files` folder under
+   the appropriate function category (e.g., `terminal/write_line/`). The location in the
+   Statlight.io repo is:
+
+   <FileTree>
+
+   - public
+     - usage-example-files
+       - animations/
+       - audio/
+       - camera/
+       - color/
+       - geometry/
+       - graphics/
+       - input/
+       - interface/
+       - json/
+       - logging/
+       - networking/
+       - physics/
+       - rasberry/
+       - resources_bundles/
+       - resources/
+       - sprites/
+       - terminal/
+         - write_line/
+           - write_line-1-hello-world.cpp
+           - write_line-1-hello-world-oop.cs
+           - write_line-1-hello-world-top-level.cs
+           - write_line-1-hello-world.py
+           - write_line-1-hello-world.txt
+       - timers/
+       - utilities/
+       - windows/
+
+   </FileTree>
+
+   The contributing doc on [Splashkit](https://splashkit.io/usage-examples/contributing/) has more
+   details on proper file naming and placement. This is also found within the repo in the
+   `CONTRIBUTING.md`. Which can be found here:
+
+   <FileTree>
+
+   - src
+     - content
+       - docs
+         - usage-examples
+           - CONTRIBUTING.mdx
+
+   </FileTree>
+
+</Steps>
+
+## Next Steps
+
+Now follow the steps in
+[Usage Example Pull Requests](/products/splashkit/splashkit-website/usage-examples/03-usage-pull-request),
+and submit your usage example for review. For doing a peer review, follow the steps in
+[Peer Review Guide for Usage Examples](/products/splashkit/splashkit-website/usage-examples/04-usage-peer-review).

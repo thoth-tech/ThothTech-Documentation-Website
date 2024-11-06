@@ -1,0 +1,142 @@
+---
+title: Frequently Asked Questions (FAQ)
+description: Frequently Asked Questions
+---
+
+Welcome to Thoth Tech's Frequently Asked Questions (FAQ) section! We understand that you might have
+queries about contributing to Thoth Tech or seek clarification on how to use certain tools. Our aim
+is to provide you with comprehensive and straightforward answers to address your concerns promptly.
+
+<details>
+  <summary>Where can I find the link to Thoth Tech GitHub channel?</summary>
+
+Find the link [here](https://github.com/thoth-tech/).
+
+</details>
+
+<details>
+  <summary>Which Thoth Tech repository should I clone to contribute to the Documentation Website?</summary>
+
+To contribute to the Documentation Website, locate the
+["Thothtech-Documentation-Website" repository](https://github.com/thoth-tech/ThothTech-Documentation-Website/tree/main),
+navigate to the `src/content/docs`, and upload your `.md` or `.mdx` file to the relevant folder.
+
+</details>
+
+<details>
+  <summary>When I attempt to run the documentation website locally, it says "The .nvmrc file is using
+  a version of node that is not supported by Astro anymore". How do I fix this?</summary>
+
+Re-install or upgrade the version of Node.js software on your laptop.
+
+</details>
+
+<details>
+  <summary>How do I make a newly created folder appear on the side navbar of the Documentation website?</summary>
+
+In the `astro.config.mjs` file, create a new label (if it’s a main folder) or item (if it’s a
+subfolder). You do not need to reinvent the wheel; you can copy from what already exists in the
+`astro.config.mjs` file, insert the copied block into the right location, and modify the labels and
+directory link.
+
+</details>
+
+<details>
+  <summary>Is there a video that helps me understand how to migrate documents to the Documentation website?</summary>
+
+Yes, there is. Find some helpful links below:
+
+- [Instructional video](https://deakin365.sharepoint.com/:v:/r/sites/ThothTech2/Shared%20Documents/General/Instructional%20Video%20-%20How%20To%20Upload%20Documents%20to%20Starlight.mp4?csf=1&web=1&e=s26lMo).
+- [Help hub session recording](https://deakin.au.panopto.com/Panopto/Pages/Viewer.aspx?id=2bd50464-8fe7-4b23-9724-b1c101654ccc).
+
+</details>
+
+<details>
+  <summary>What do I do to resolve Linelint issues in the CI build checks for my Pull Request?</summary>
+
+Identify the file with the lint issue from the details section of the CI build check. Open the
+identified file in Visual Studio Code or your editor of choice, right-click on the document, and
+select "Format document with markdownlint". Ensure that you have the markdownlint extension
+installed on your code editor.
+
+</details>
+
+<details>
+  <summary>What do I do to resolve Prettier issues in the CI build checks for my Pull Request?</summary>
+
+Identify the file with the Prettier issue from the details section of the CI build check. Open the
+identified file in Visual Studio Code or your editor of choice, right-click on the document, and
+select "Format document with Prettier". Ensure that you have the Prettier extension installed on
+your code editor.
+
+</details>
+
+<details>
+  <summary>My Pull Request keeps failing the Netlify checks. What should I do?</summary>
+
+The primary reason for this issue is often due to the absence of a title block at the start of your
+Markdown file. For example:
+
+```markdown
+title: Frequently Asked Questions (FAQ) description: Frequently Asked Questions
+```
+
+</details>
+
+<details>
+  <summary>
+    I currently have a Pull Request that is still under review. When I make a commit for a new
+    change, I am unable to create another Pull Request. Why is that?
+  </summary>
+  Because your Pull Request is still under review and you are pushing changes from the same GitHub
+  account (which is your personal one), your new commit will still fall under your old PR. No cause
+  for alarm—if all checks in your PR have passed, reach out to your approver to approve it so you
+  can create a new PR for new commits.
+</details>
+
+<details>
+  <summary>
+    How do I set up my local development environment for contributing to the Documentation Website?
+  </summary>
+  To set up your local development environment, follow these steps: 1. Clone the repository: `git
+  clone https://github.com/thoth-tech/ThothTech-Documentation-Website.git` 2. Navigate to the
+  project directory: `cd ThothTech-Documentation-Website` 3. Install dependencies: `npm install` 4.
+  Run the development server: `npm start` Ensure you have Node.js and npm installed on your machine.
+</details>
+
+<details>
+  <summary>What are the guidelines for writing and formatting documentation?</summary>
+  When writing and formatting documentation, follow the [Writing Style
+  Guide](/resources/writing-style-guide)
+</details>
+
+<details>
+  <summary>How do I update or correct existing documentation?</summary>
+  To update or correct existing documentation: 1. Locate the relevant Markdown file in the
+  repository. 2. Make your changes or corrections. 3. Commit your changes and push them to your
+  branch. 4. Create a Pull Request with a clear description of the changes made.
+</details>
+
+<details>
+  <summary>
+    How do I contribute to the development of new features or improvements for the Documentation
+    Website?
+  </summary>
+  To contribute to new features or improvements: 1. Fork the repository and create a new branch for
+  your changes. 2. Develop and test your changes locally. 3. Submit a Pull Request with a clear
+  description of the feature or improvement.
+</details>
+
+<details>
+  <summary>How do I navigate the documentation website effectively?</summary>
+  To navigate the documentation website: - Use the search feature to find specific topics. - Browse
+  the table of contents to locate sections.
+</details>
+
+<details>
+  <summary>
+    What are the best practices for including code snippets or examples in documentation?
+  </summary>
+  Best practices for code snippets: - Use fenced code blocks for better readability. - Include
+  comments to explain complex code sections. - Ensure code examples are tested and functional.
+</details>

@@ -4,50 +4,78 @@ description: Get started building your docs site with Starlight.
 template: splash
 hero:
   tagline: One location for all Thoth Tech documentation!
+  image:
+    file: ../../assets/thoth-logo.png
   actions:
     - text: Our Products
-      link: /products/products/
+      link: /products/
       icon: right-arrow
       variant: primary
+    - text: Resources
+      link: /resources/introduction/
+      icon: right-arrow
+      variant: secondary
     - text: FAQ
-      link: /reference/faq/
+      link: /resources/faq/
       icon: right-arrow
-      variant: primary
+      variant: secondary
 ---
 
 import { Card, LinkCard, CardGrid } from "@astrojs/starlight/components";
 
-## About Us:
+## About Us
 
-<Card title="What we do">
-  Thoth tech creates tools that enhance education outcomes by empowering students, connecting them
-  with tutors and facilitating personalised learning experiences. Values Our values describe how we
-  work, what we represent, and guide us to be the kind of company and team members we want to be.
-  When we live up to these values we will: Be people-focused We expect the best from each other,
-  give each other the benefit of the doubt, encourage each other to take initiative to improve
-  ourselves and the company, and provide direct and constructive help to each other. We collaborate
-  with kindness while being respectful of each other. Uphold sustainable excellence We create
-  working, maintainable, and understandable software that is enjoyable and easy to use. 8 We strive
-  to do it in a way that is sustainable for our team members and for our environment. Be inclusive
-  and supportive We celebrate diverse perspectives and embrace uncomfortable ideas and
+<Card title="Thoth Tech Mission">
+
+At Thoth Tech, we create tools designed to enhance educational outcomes by:
+
+- Empowering students
+- Connecting them with tutors
+- Facilitating personalised learning experiences
+
+### Our Values
+
+Our values define how we operate, what we represent, and guide us to be the kind of company and team
+members we aspire to be. By living up to these values, we aim to:
+
+#### Be People-Focused
+
+- **Expect the Best:** We hold each other to high standards and provide constructive feedback.
+- **Encourage Growth:** We support each other in taking initiative to improve both personally and
+  professionally.
+- **Collaborate with Kindness:** We work together respectfully and with kindness.
+
+#### Uphold Sustainable Excellence
+
+- **Create Quality Software:** We develop software that is not only functional but also maintainable
+  and enjoyable to use.
+- **Ensure Sustainability:** We strive to work in a way that is sustainable for our team and the
+  environment.
+
+#### Be Inclusive and Supportive
+
+- **Celebrate Diversity:** We value diverse perspectives and embrace challenging ideas and
   conversations.
+- **Foster Inclusivity:** We support each other and encourage an environment where everyone feels
+  included.
+
+By adhering to these principles, we aim to build a collaborative, innovative, and respectful
+workplace.
+
 </Card>
 
-<CardGrid>
-  <LinkCard
-    title="Policies"
-    description="Understand what we stand for."
-    href="/policies/github-management-policy/"
-  />
-  <LinkCard
-    title="Process"
-    description="Learn how Thoth Tech functions."
-    href="/processes/introduction/"
-  />
-  <LinkCard title="News" description="View the latest in Thoth Tech news." href="/blog/" />
-  <LinkCard
-    title="Leadership"
-    description="Meet our team."
-    href="/teams-and-leadership/leadership-t2-2023/"
-  />
-</CardGrid>
+<LinkCard
+  title="Site Introduction"
+  description="Get to know what this site is all about."
+  href="/resources/introduction"
+/>
+<LinkCard
+  title="Onboarding Hub"
+  description="Get started with Thoth Tech!"
+  href="/resources/onboarding-hub/thothtech-onboarding-doc"
+/>
+<LinkCard
+  title="Documentation"
+  description="Thoth Tech guides and templates."
+  href="/resources/documenting-for-thoth-tech"
+/>

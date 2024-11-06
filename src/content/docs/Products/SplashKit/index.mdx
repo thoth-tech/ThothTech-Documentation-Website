@@ -1,0 +1,268 @@
+---
+title: SplashKit
+description: The landing page for SplashKit.
+sidebar:
+  order: 0
+tableOfContents:
+  maxHeadingLevel: 4
+---
+
+import { Card, LinkCard, CardGrid, Icon, Aside } from "@astrojs/starlight/components";
+
+Welcome to SplashKit! Further resources detailing how to work on SplashKit are provided per-project
+in the sidebar to the left.
+
+<LinkCard
+  title="SplashKit Planner Board"
+  href="https://teams.microsoft.com/l/entity/com.microsoft.teamspace.tab.planner/_djb2_msteams_prefix_726994776?context=%7B%22channelId%22%3A%2219%3Aeacddf4a1ced46dbaa8e8a6ea0b47a86%40thread.tacv2%22%7D&tenantId=d02378ec-1688-46d5-8540-1c28b5f470f6"
+  description="Here you can find a link to our Teams Planner board."
+/>
+
+## SplashKit Overview
+
+As a new contributor to SplashKit, you’ll be working on a versatile and beginner-friendly software
+development toolkit focused on simplifying 2D game development and interactive applications.
+SplashKit already supports cross-platform development for Windows, macOS, and Linux, allowing
+developers to use a single codebase for multiple platforms.
+
+This document aims to provide a brief overview of the SplashKit ecosystem and highlight the core
+areas where you’ll contribute to SplashKit’s growth. The focus of future growth will be on extending
+its functionality, improving existing features, and supporting the developer community through
+improved tutorials and documentation.
+
+### SplashKit Documentation
+
+#### SplashKit.io
+
+<LinkCard title="Live Site" href="https://splashkit.io/" />
+<CardGrid>
+  <LinkCard title="Repository" href="https://github.com/thoth-tech/splashkit.io-starlight" />
+  <LinkCard
+    title="Contributing"
+    href="https://github.com/thoth-tech/splashkit.io-starlight/blob/main/CONTRIBUTE.md"
+  />
+</CardGrid>
+
+<Aside type="tip" title="TL;DR">
+
+- Public-facing website for the SplashKit community.
+- Main Responsibility: Guides, tutorials, and API documentation.
+- Target Audience: External developers, especially beginners using SplashKit.
+
+</Aside>
+
+SplashKit.io is the primary public-facing website for the SplashKit community. It contains guides,
+tutorials, and comprehensive API documentation. This platform is designed to help users, especially
+beginners, learn how to use SplashKit effectively in their projects. As a contributor, your
+responsibilities might include writing new guides, updating existing tutorials, and ensuring the API
+documentation is clear and up-to-date.
+
+#### Thoth-Tech Documentation Website
+
+<LinkCard title="Live Site" href="https://thoth-tech.netlify.app/" />
+<CardGrid>
+  <LinkCard
+    title="Repository"
+    href="https://github.com/thoth-tech/ThothTech-Documentation-Website"
+  />
+  <LinkCard
+    title="Contributing"
+    href="https://github.com/thoth-tech/ThothTech-Documentation-Website/blob/main/CONTRIBUTING.md"
+  />
+</CardGrid>
+
+<Aside type="tip" title="TL;DR">
+
+- Internal-facing website for Thoth-Tech team members.
+- Main Responsibility: Internal guides, feature explanations, and team-focused documentation.
+- Target Audience: Thoth-Tech team members.
+
+</Aside>
+
+The Thoth-Tech Documentation Website is an internal platform focused on providing detailed
+explanations of features and guides targeted at the Thoth-Tech team. It serves as a valuable
+resource for team members to reference when contributing to SplashKit or collaborating on projects.
+Contributors may need to update or write internal-facing documentation, particularly as new features
+or internal tools are developed.
+
+#### Documentation
+
+<CardGrid>
+  <LinkCard title="Repository" href="https://github.com/thoth-tech/documentation" />
+  <LinkCard
+    title="Contributing"
+    href="https://github.com/thoth-tech/documentation/blob/main/CONTRIBUTING.md"
+  />
+</CardGrid>
+
+<Aside type="tip" title="TL;DR">
+
+- Miscellaneous documentation for research, uncompleted work, or non-public reports.
+- Main Responsibility: Contributing to documents that do not fit within the other repositories.
+- Target Audience: Internal team members needing access to research reports, development notes, and
+  incomplete work.
+
+</Aside>
+
+The documentation repository is a 'miscellaneous' collection where all documents that do not fit
+into other repositories are stored. This might include research reports, documentation on incomplete
+or experimental features, or other internal records. Contributors might add new documentation here
+or help organize and maintain existing records to ensure they are accessible and up-to-date.
+
+### SplashKit Development
+
+#### SplashKit Core
+
+<CardGrid>
+  <LinkCard title="Repository" href="https://github.com/thoth-tech/splashkit-core" />
+  <LinkCard
+    title="Contributing"
+    href="https://github.com/thoth-tech/splashkit-core/blob/develop/CONTRIBUTING.md"
+  />
+</CardGrid>
+
+<Aside type="tip" title="TL;DR">
+
+- Contribute to the foundation of the SDK
+- Primarily built in C++ and is translated into C#, Python and Pascal
+- Main Responsibilities: Adding new features and fixing bugs.
+- Cross-Platform: Windows, MacOS and Linux.
+
+</Aside>
+
+Contributing to SplashKit Core means working directly on the foundation of the SDK. This involves
+core functionalities like rendering, audio management, input handling, and more. As a team member,
+you’ll focus on adding new features, fixing bugs, and ensuring the overall performance of the SDK
+remains high.
+
+While the core is primarily built in C++, you’ll be contributing to a codebase that supports
+translation into other languages like C#, Python, and Pascal. Although the translation process is
+largely automated, maintaining the quality and performance of the core features will be your main
+responsibility. Cross-platform development is central to SplashKit, so you'll be handling different
+OS nuances as you work on features that need to run smoothly on Windows, macOS, and Linux.
+
+#### SplashKit Manager (SKM)
+
+<CardGrid>
+  <LinkCard title="Repository" href="https://github.com/thoth-tech/skm" />
+</CardGrid>
+
+<Aside type="tip" title="TL;DR">
+
+- CLI tool for project setup, dependency management and compilation.
+- Main Responsibiltiies: Ensuring alignment with SplashKit-Core updates and new features.
+- Focus is on integration of dependencies and improving developer workflows.
+
+</Aside>
+
+The SplashKit Manager (SKM) is a command-line interface (CLI) and application tool designed to
+simplify the development workflow with SplashKit. It automates tasks such as project setup,
+dependency management, compilation, and running code across different platforms. Contributions to
+SKM will primary be to ensure it stays aligned with updates and new features in SplashKit Core. For
+example, you’ll ensure that new dependencies or libraries introduced in the core SDK are correctly
+included and managed across all supported platforms.
+
+Beyond core synchronisation, there may also be opportunities to improve the overall user experience
+by streamlining project initialization, refining dependency management, or adding tools that make
+the workflow more efficient for developers. However, your primary focus will be ensuring SKM
+seamlessly integrates with the evolving features and requirements of the core SplashKit SDK.
+
+#### SplashKit Translator
+
+<CardGrid>
+  <LinkCard title="Repository" href="https://github.com/thoth-tech/splashkit-translator" />
+</CardGrid>
+
+<Aside type="tip" title="TL;DR">
+
+- Translates SplashKits' C++ core functionality into C#, Python and Pascal bindings.
+- Written in Ruby and uses the ERB templating system.
+- Minimal direct contributions needed, focus remains on core SDK improvements which propagate
+  through translation.
+
+</Aside>
+
+The SplashKit Translator automates the process of translating SplashKit’s core C++ functionality
+into other supported languages like C#, Python, and Pascal. Since this process is largely automated
+using ERB templating, there’s minimal need for direct contributions here.
+
+Your focus will remain on maintaining and enhancing the core SDK, as changes there will naturally
+propagate through the automated translation process. Ensuring that core features are implemented
+cleanly and efficiently in C++ will help maintain consistency across languages.
+
+#### SplashKit Online
+
+<CardGrid>
+  <LinkCard title="Repository" href="https://github.com/thoth-tech/SplashkitOnline" />
+</CardGrid>
+
+<Aside type="tip" title="TL;DR">
+
+- Web-Based IDE for using SplashKit in the browser.
+- Currently supports Javascript and (experimental) C++ - Main responsiibilities may include
+  integrating full language support.
+- Focus on improving the user experience, performance and language-specific features.
+
+</Aside>
+
+SplashKit Online is a web-based IDE designed to help beginner programmers quickly start building 2D
+games directly in the browser. While it currently supports JavaScript (with experimental C++
+functionality) and leverages WebAssembly (Wasm) to execute SplashKit code, the goal is to expand
+this support to include all languages that SplashKit supports: C#, Python, and Pascal.
+
+As a contributor to SplashKit Online, your primary responsibility will be developing and integrating
+full support for these languages, allowing users to write and run code in C#, Python, and Pascal
+seamlessly within the browser-based environment. This will involve extending the IDE's functionality
+to handle language-specific nuances and ensuring that WebAssembly can execute code from these
+languages efficiently.
+
+Your work will also include improving the user experience, making the platform more intuitive and
+accessible for users, and ensuring that the transition between languages is smooth. This could
+involve building better language selection interfaces, optimizing performance for different
+languages, and adding language-specific tools or debugging features.
+
+#### Arcade Machines
+
+<CardGrid>
+  <LinkCard title="Repository" href="https://github.com/thoth-tech/arcade-machine" />
+  <LinkCard
+    title="Contributing"
+    href="https://github.com/thoth-tech/arcade-machine/blob/main/CONTRIBUTING.md"
+  />
+</CardGrid>
+
+<Aside type="tip" title="TL;DR">
+
+- SplashKit-powered arcade machines located on Deakin campuses.
+- Uses emulationstation, retropie, and a custom application for game execution.
+- Allows students to upload and test games on real arcade hardware.
+
+</Aside>
+
+The Arcade Machines on Deakin Campuses use emulationstation, retropie, and a custom SplashKit
+application to run games built using the SplashKit SDK. These machines offer students the
+opportunity to upload their games and test them in a real-world arcade environment. The machines are
+designed to help students see their creations in action on physical hardware, making for a hands-on
+experience that bridges the gap between development and arcade-style game deployment.
+
+#### Game Development
+
+<CardGrid>
+  <LinkCard title="Repository" href="https://github.com/thoth-tech/arcade-games" />
+  <LinkCard title="Contributing" href="https://github.com/thoth-tech/arcade-games#contributing" />
+</CardGrid>
+
+<Aside type="tip" title="TL;DR">
+
+- Focused team developing games to showcase SplashKit’s capabilities.
+- Adheres to industry-standard game design patterns and practices.
+- Aims to demonstrate the full potential of SplashKit in game development.
+
+</Aside>
+
+The Game Development team is a small, focused group that produces games designed to highlight the
+capabilities of SplashKit. These games follow industry-standard design patterns and practices to
+ensure they are polished and well-structured. The goal is to showcase what can be achieved using
+SplashKit while maintaining professional standards in game design and development. These projects
+serve as both a demonstration of SplashKit’s features and an inspiration for developers using the
+SDK to build their own games.

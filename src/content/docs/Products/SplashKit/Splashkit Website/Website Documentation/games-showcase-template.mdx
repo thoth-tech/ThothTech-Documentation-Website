@@ -1,0 +1,77 @@
+---
+title: Games Showcase Template
+description: Game Description
+download-link: ""
+featured: false
+sidebar:
+  hidden: true
+---
+
+{/* Embedding dynamic JavaScript directly in MDX to generate game gif - do not alter */}
+{/* gif files are to go in the /public/gifs/games-showcase folder with the naming convention game-title-showcase.gif */}
+
+<img
+  src={`/gifs/games-showcase/${frontmatter.title.toLowerCase().replace(/\s+/g, "-")}-showcase.gif`}
+  alt={`${frontmatter.title} Showcase`}
+/>
+
+## Description
+
+_Game Description_
+
+## Installation
+
+_Installation instructions_
+
+{/* Delete this tip from the final games showcase file */} :::tip An example may look like this:
+
+```markdown
+1. Download the game files.
+2. Navigate to the folder.
+3. Execute `dotnet run` through the MSYS2 terminal.
+```
+
+:::
+
+{/* Download button automatically derived from correct frontmatter - do not alter */}
+
+<div class="centered-button-container">
+  <button
+    class="custom-button"
+    onclick={`window.open('${frontmatter["download-link"]}', '_blank')`}
+  >
+    Download
+  </button>
+</div>
+
+## Gameplay
+
+_Briefly describe the gameplay of the game. Include any controls._
+
+{/* Delete this tip from the final games showcase file */} :::tip An example may look like this:
+
+```markdown
+| Action     | Player 1 |
+| ---------- | -------- |
+| Move Up    | W        |
+| Move Down  | S        |
+| Move Left  | A        |
+| Move Right | D        |
+| Shoot      | Space    |
+```
+
+:::
+
+## Developers
+
+- [Developer Name](developer github)
+
+Last updated: _last updated date for the game_
+
+{/* Return button automatically generated - do not alter */}
+
+<div class="centered-button-container">
+  <button class="custom-button" onclick="location.href='/games'">
+    Back to Games Index
+  </button>
+</div>

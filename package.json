@@ -5,21 +5,22 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "npm run format && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "format": "prettier --write \"**/*.md\"",
-    "format:check": "prettier --check \"**/*.md\"",
+    "format": "prettier --write \"**/*.md\" && prettier --write \"**/*.mdx\"",
+    "format:check": "prettier --check \"**/*.md\" && prettier --check \"**/*.mdx\"",
     "prose:check": "vale --minAlertLevel error --output=.vale/vale.tmpl docs",
     "lint": "npm run format:check && npm run prose:check"
   },
   "dependencies": {
     "@astrojs/netlify": "^3.0.0",
-    "@astrojs/starlight": "^0.13.0",
-    "astro": "^3.6.0",
+    "@astrojs/starlight": "^0.28.2",
+    "astro": "^4.13.3",
     "sharp": "^0.32.3",
     "starlight": "^0.3.9",
-    "starlight-blog": "^0.4.0"
+    "starlight-blog": "^0.4.0",
+    "starlight-links-validator": "^0.12.3"
   },
   "devDependencies": {
     "markdownlint": "^0.31.1",
