@@ -2,4 +2,5 @@
 title: OnTrack Onboarding Guide
 ---
 
-Placeholder
+While this page is still being updated, please see OnTrack's
+[Start Contributing](/products/ontrack/start-contributing/) guide.
