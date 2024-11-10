@@ -72,7 +72,7 @@ All commands should be run from the root of the project in the terminal:
 | Command                   | Action                                                  |
 | :------------------------ | :------------------------------------------------------ |
 | `npm install`             | Installs all dependencies                               |
-| `npm run dev`             | Starts the local development server at `localhost:3000` |
+| `npm run dev`             | Starts the local development server at `localhost:4321` |
 | `npm run build`           | Builds the production-ready site in `./dist/`           |
 | `npm run preview`         | Previews your build locally before deployment           |
 | `npm run astro ...`       | Runs Astro CLI commands like `astro add`, `astro check` |
