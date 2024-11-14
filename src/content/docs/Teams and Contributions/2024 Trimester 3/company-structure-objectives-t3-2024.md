@@ -78,7 +78,7 @@ This trimester, Thoth Tech aims to achieve the following:
 
 ## Company Structure and Projects Overview
 
-![Org chart](/public/company-structure/2024-t3-thoth-tech-structure.png)
+![Org chart](/company-structure/2024-t3-thoth-tech-structure.png)
 
 ## Project 1 - OnTrack
 
