@@ -34,7 +34,7 @@ title: Team Members T3 2024
 | ETHAN HOLLEY         | Team Member - SplashKit Online                       | Senior        |
 | HANGYU LI            | Team Member - SplashKit Website and Expansion        | Senior        |
 | MATTHEW HARDING      | Team Member - SplashKit Expansion                    | Senior        |
-| SOVANPANHA RIN       | Junior Lead - SplashKit Website and Expansion        | Junior        |
+| ETHAN RIN            | Junior Lead - SplashKit Website and Expansion        | Junior        |
 | VISHNU VENGADESWARAN | Junior Lead - SplashKit Website and Expansion        | Junior        |
 | DANIEL GARCIA VARGAS | Team Member - SplashKit Online                       | Junior        |
 | JIAYI ZHANG          | Team Member - SplashKit Online                       | Junior        |
