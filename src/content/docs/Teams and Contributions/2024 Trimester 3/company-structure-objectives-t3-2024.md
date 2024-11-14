@@ -94,15 +94,87 @@ educators.
 
 ### Aims for Trimester
 
-...
+#### Documentation Website
+
+- **Complete API Documentation**: Finalise documentation for all API endpoints, ensuring they are
+  detailed, accurate, and user-friendly to assist developers in navigating OnTrack’s API
+  efficiently.
+
+- **Identify and Fill Documentation Gaps**: Address missing entries and clarify existing ones,
+  establishing a roadmap to cover any essential areas still in need of documentation. This effort
+  will support onboarding and provide a comprehensive guide for new contributors.
+
+#### Frontend Migration
+
+- **Achieve Frontend Migration Milestone**: Continue to migrate the frontend backlog from Angular.js
+  and CoffeeScript to Angular 17 and TypeScript, prioritising modules critical for current user
+  needs. This effort will modernise OnTrack’s frontend architecture for better performance and
+  maintainability.
+
+#### New Feature Additions
+
+- **Notification System Ideation & Blueprint**: Develop code for sending notifications to students
+  when the tutor messages them.
+
+#### Long-term Deliverables
+
+- **Complete Frontend Migration to Angular and TypeScript**
+  - **Complete Remaining Frontend Modules**: Continue the migration process beyond the trimester,
+    aiming for a full transition to Angular 17 and TypeScript to ensure a consistent and modern
+    codebase.
 
 ### Deliverables
 
-...
+### Documentation Website
+
+- **Complete API Documentation**: Finalise documentation for all API endpoints, ensuring they are
+  detailed, accurate, and user-friendly to assist developers in navigating OnTrack’s API
+  efficiently.
+
+- **Identify and Fill Documentation Gaps**: Address missing entries and clarify existing ones,
+  establishing a roadmap to cover any essential areas still in need of documentation. This effort
+  will support onboarding and provide a comprehensive guide for new contributors.
+
+### Frontend Migration
+
+- **Achieve Frontend Migration Milestone**: Continue to migrate the frontend backlog from Angular.js
+  and CoffeeScript to Angular 17 and TypeScript, prioritising modules critical for current user
+  needs. This effort will modernise OnTrack’s frontend architecture for better performance and
+  maintainability.
+
+### New Feature Additions
+
+- **Notification System Ideation & Blueprint**: Develop code for sending notifications to students
+  when the tutor messages them.
+
+### Long-term Deliverables
+
+- **Complete Frontend Migration to Angular and TypeScript**
+  - **Complete Remaining Frontend Modules**: Continue the migration process beyond the trimester,
+    aiming for a full transition to Angular 17 and TypeScript to ensure a consistent and modern
+    codebase.
 
 ### Project Members
 
-...
+| Member Name                   | Role/Responsibilities                   | Junior/Senior |
+| ----------------------------- | --------------------------------------- | ------------- |
+| ALVIN ODUNGA                  | Team Member - Frontend Migration        | Senior        |
+| TAN TAI NGUYEN                | Team Member - Frontend Migration        | Senior        |
+| SHOUNAK RAVI BHALERAO         | Junior Lead - Frontend Migration        | Junior        |
+| ASHWINI CHANDRAKANT DEORE     | Junior Lead - Survey Documentation      | Junior        |
+| HIRDYANSH DUDI                | Junior Lead - Frontend Migration        | Junior        |
+| HARSHA JAYAMANGALA            | Team Member - Frontend Migration        | Junior        |
+| HASHINI MADUSHANI NANAYAKKARA | Team Member - Frontend Migration        | Junior        |
+| JUDE ROZAIRO                  | Team Member - Target Grades History     | Junior        |
+| LAKSH GANESH GUPTA            | Team Member - Frontend Migration        | Junior        |
+| SAM WONG                      | Team Member - Frontend Migration        | Junior        |
+| ANMOL SAINI                   | Team Member - Visualisation Development | Junior        |
+| ADITYA PRATAP SINGH TOMAR     |                                         |               |
+| CHEE YU KOH                   |                                         |               |
+| EPITACIO DO NASCIMENTO NETO   |                                         |               |
+| HARSHIT ARORA                 |                                         |               |
+| RAMANDEEP SINGH BHOMRAH       |                                         |               |
+| XIN HUANG                     |                                         |               |
 
 ## Project 2 - SplashKit
 
@@ -147,7 +219,7 @@ in their browsers. Initially launched as a prototype in 2023, the 2024 goal is t
 into a comprehensive product, including C# support and an embeddable version for the SplashKit
 website.
 
-SplashKit also has two other main lines of effort, however these will not be running in T3 2024:
+_SplashKit also has two other main lines of effort, however these will not be running in T3 2024:_
 
 #### **Arcade Machines**
 
@@ -363,6 +435,7 @@ deliverables for these projects are outlined to facilitate recommencement in T1 
 | ETHAN HOLLEY         | Team Member - SplashKit Online                       | Senior        |
 | HANGYU LI            | Team Member - SplashKit Website and Expansion        | Senior        |
 | MATTHEW HARDING      | Team Member - SplashKit Expansion                    | Senior        |
+| RACHEL CHU           | Junior Lead - SplashKit Website                      | Junior        |
 | SOVANPANHA RIN       | Junior Lead - SplashKit Website and Expansion        | Junior        |
 | VISHNU VENGADESWARAN | Junior Lead - SplashKit Website and Expansion        | Junior        |
 | DANIEL GARCIA VARGAS | Team Member - SplashKit Online                       | Junior        |
@@ -371,5 +444,4 @@ deliverables for these projects are outlined to facilitate recommencement in T1 
 | MUHAMMAD DANIAL      | Team Member - SplashKit Website                      | Junior        |
 | NOAH CROSS           | Team Member - SplashKit Website                      | Junior        |
 | PRASANNA SINGHARA    | Team Member - SplashKit Online                       | Junior        |
-| RACHEL CHU           | Team Member - SplashKit Website                      | Junior        |
 | SIMON RHOOK          | Team Member - SplashKit Website and Expansion        | Junior        |
