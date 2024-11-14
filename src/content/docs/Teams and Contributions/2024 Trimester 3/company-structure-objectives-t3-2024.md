@@ -1,7 +1,7 @@
 ---
-title: Company Structure and Objective T3 2024
+title: Company Structure and Objectives T3 2024
 sidebar:
-  label: Company Structure and Objective T3 2024
+  label: Company Structure and Objectives T3 2024
 ---
 
 ## Executive Summary
