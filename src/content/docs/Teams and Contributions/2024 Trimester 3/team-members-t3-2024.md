@@ -4,28 +4,25 @@ title: Team Members T3 2024
 
 ## OnTrack
 
-| Member Name     | Role/Responsibilities                           | Junior/Senior |
-| --------------- | ----------------------------------------------- | ------------- |
-| Jack Carroll    | Senior Lead - JPLag Implementation              | Senior        |
-| Jake Mansfield  | Senior Lead - Courseflow Development            | Senior        |
-| Samuel Rolfe    | Team Member - Courseflow Development & Frontend | Senior        |
-| Joshua Bourquin | Team Member - Courseflow Development & Frontend | Senior        |
-| Su Myat Thiri   | Team Member - Frontend Migration                | Senior        |
-| Yuheng Wang     | Team Member - Frontend Migration                | Senior        |
-| Minu Sunil      | Team Member - Documentation Website             | Senior        |
-| Shyama Pillai   | Team Member - Documentation Website             | Senior        |
-| Isabelle Holt   | Team Member - Frontend Migration                | Senior        |
-| Anirudh Joshi   | Team Member - Frontend Migration                | Senior        |
-| Amos Saji       | Team Member - Frontend Migration                | Senior        |
-| Atharv Bhandare | Junior Lead - JPLag Implementation              | Junior        |
-| Ivan Justin     | Junior Lead - Frontend Migration                | Junior        |
-| Thuy Tien Hoa   | Team Member - Frontend Migration                | Junior        |
-| Amrith Jayadeep | Team Member - Frontend Migration                | Junior        |
-| George Muyomba  | Team Member - Frontend Migration                | Junior        |
-| Shen Tian       | Team Member - Frontend Migration                | Junior        |
-| Xin Huang       | Team Member - Frontend Migration                | Junior        |
-| Muhammad Danial | Team Member - Frontend Migration                | Junior        |
-| Eliya Geerlings | Team Member - Frontend Migration                | Junior        |
+| Member Name                   | Role/Responsibilities                   | Junior/Senior |
+| ----------------------------- | --------------------------------------- | ------------- |
+| ALVIN ODUNGA                  | Team Member - Frontend Migration        | Senior        |
+| TAN TAI NGUYEN                | Team Member - Frontend Migration        | Senior        |
+| SHOUNAK RAVI BHALERAO         | Junior Lead - Frontend Migration        | Junior        |
+| ASHWINI CHANDRAKANT DEORE     | Junior Lead - Survey Documentation      | Junior        |
+| HIRDYANSH DUDI                | Junior Lead - Frontend Migration        | Junior        |
+| HARSHA JAYAMANGALA            | Team Member - Frontend Migration        | Junior        |
+| HASHINI MADUSHANI NANAYAKKARA | Team Member - Frontend Migration        | Junior        |
+| JUDE ROZAIRO                  | Team Member - Target Grades History     | Junior        |
+| LAKSH GANESH GUPTA            | Team Member - Frontend Migration        | Junior        |
+| SAM WONG                      | Team Member - Frontend Migration        | Junior        |
+| ANMOL SAINI                   | Team Member - Visualisation Development | Junior        |
+| ADITYA PRATAP SINGH TOMAR     |                                         |               |
+| CHEE YU KOH                   |                                         |               |
+| EPITACIO DO NASCIMENTO NETO   |                                         |               |
+| HARSHIT ARORA                 |                                         |               |
+| RAMANDEEP SINGH BHOMRAH       |                                         |               |
+| XIN HUANG                     |                                         |               |
 
 ## SplashKit
 
