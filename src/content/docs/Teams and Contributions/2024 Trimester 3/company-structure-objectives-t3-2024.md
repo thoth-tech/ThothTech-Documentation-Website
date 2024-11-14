@@ -445,3 +445,4 @@ deliverables for these projects are outlined to facilitate recommencement in T1 
 | NOAH CROSS           | Team Member - SplashKit Website                      | Junior        |
 | PRASANNA SINGHARA    | Team Member - SplashKit Online                       | Junior        |
 | SIMON RHOOK          | Team Member - SplashKit Website and Expansion        | Junior        |
+
