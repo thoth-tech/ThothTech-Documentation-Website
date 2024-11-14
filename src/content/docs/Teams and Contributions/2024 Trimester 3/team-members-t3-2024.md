@@ -44,3 +44,5 @@ title: Team Members T3 2024
 | PRASANNA SINGHARA    | Team Member - SplashKit Online                       | Junior        |
 | RACHEL CHU           | Team Member - SplashKit Website                      | Junior        |
 | SIMON RHOOK          | Team Member - SplashKit Website and Expansion        | Junior        |
+
+---
