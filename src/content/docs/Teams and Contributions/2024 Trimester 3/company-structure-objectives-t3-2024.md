@@ -125,7 +125,7 @@ educators.
 
 ### Deliverables
 
-### Documentation Website
+#### Documentation Website
 
 - **Complete API Documentation**: Finalise documentation for all API endpoints, ensuring they are
   detailed, accurate, and user-friendly to assist developers in navigating OnTrack’s API
@@ -135,19 +135,19 @@ educators.
   establishing a roadmap to cover any essential areas still in need of documentation. This effort
   will support onboarding and provide a comprehensive guide for new contributors.
 
-### Frontend Migration
+#### Frontend Migration
 
 - **Achieve Frontend Migration Milestone**: Continue to migrate the frontend backlog from Angular.js
   and CoffeeScript to Angular 17 and TypeScript, prioritising modules critical for current user
   needs. This effort will modernise OnTrack’s frontend architecture for better performance and
   maintainability.
 
-### New Feature Additions
+#### New Feature Additions
 
 - **Notification System Ideation & Blueprint**: Develop code for sending notifications to students
   when the tutor messages them.
 
-### Long-term Deliverables
+#### Long-term Deliverables
 
 - **Complete Frontend Migration to Angular and TypeScript**
   - **Complete Remaining Frontend Modules**: Continue the migration process beyond the trimester,
