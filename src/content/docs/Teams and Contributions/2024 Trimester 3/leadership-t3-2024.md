@@ -23,7 +23,7 @@ title: Leadership T2 2024
 - Hirdyansh Dudi – Junior Leader (OnTrack)
 - Shounak Bhalerao – Junior Leader (OnTrack)
 - Rachel Chu – Junior Leader (SplashKit)
-- Sovanpanha Rin – Junior Leader (SplashKit)
+- Ethan Rin – Junior Leader (SplashKit)
 - Vishnu Vengadeswaran – Junior Leader (SplashKit)
 
 ## Roles and Responsibilities
