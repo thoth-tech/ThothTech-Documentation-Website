@@ -42,7 +42,7 @@ trimester, Thoth Tech will be running the two main products: OnTrack and SplashK
 - Hirdyansh Dudi – Junior Leader (OnTrack)
 - Shounak Bhalerao – Junior Leader (OnTrack)
 - Rachel Chu – Junior Leader (SplashKit)
-- Sovanpanha Rin – Junior Leader (SplashKit)
+- Ethan Rin – Junior Leader (SplashKit)
 - Vishnu Vengadeswaran – Junior Leader (SplashKit)
 
 ## Trimester Goals and Objectives
@@ -436,7 +436,7 @@ deliverables for these projects are outlined to facilitate recommencement in T1 
 | HANGYU LI            | Team Member - SplashKit Website and Expansion        | Senior        |
 | MATTHEW HARDING      | Team Member - SplashKit Expansion                    | Senior        |
 | RACHEL CHU           | Junior Lead - SplashKit Website                      | Junior        |
-| SOVANPANHA RIN       | Junior Lead - SplashKit Website and Expansion        | Junior        |
+| ETHAN RIN            | Junior Lead - SplashKit Website and Expansion        | Junior        |
 | VISHNU VENGADESWARAN | Junior Lead - SplashKit Website and Expansion        | Junior        |
 | DANIEL GARCIA VARGAS | Team Member - SplashKit Online                       | Junior        |
 | JIAYI ZHANG          | Team Member - SplashKit Online                       | Junior        |
