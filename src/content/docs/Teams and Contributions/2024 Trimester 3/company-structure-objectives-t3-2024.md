@@ -352,12 +352,20 @@ SplashKit’s capabilities as a comprehensive online IDE.
   addressing issues such as clarity in tutorial language. Continue expanding languages to include
   code examples in C++, C# (OOP and Top level), and Python to widen accessibility.
 - **Complete Key Tutorials**: Finalise and polish pending tutorials.
+- **Usage Example Expansion**: Develop usage examples for all of the Graphics, Geometry and
+  utilities functions within Splashkit. The goal is to highlight each function within a simple
+  program to show how it could be used by students.
 - **Develop Networking Tutorials**: Create introductory tutorials for networking basics in Python
   using SplashKit, including a simple client-server setup, laying the groundwork for future
   multi-player games over the local network.
 - **Cryptography and Maths Tutorials**: Create tutorials on encrypting and decrypting messages using
   Caesar Cipher, RSA, and DHKE for secure message transmission in local chat applications, along
   with a guide on building different maths operations.
+- **Stegnography on Bitmaps**: Develop a tutorial showing how to embed messages and files into bitmaps
+  using steganography, this tutorial will demonstrate the process of embedding and extracting from a
+  bitmap image. This tutorial will also highlight how the message can be encoded/decoded using various
+  methods like base64 encoding, ceaser cipher which will relate to the cryptography tutorial, as well
+  as using some of the conversion functions being developed for SplashKit core.
 - **Documentation for Tutorial Contributions**: Refine guide for contributors on how to propose and
   create new tutorials, streamlining the contribution process and helping maintain quality
   standards.
@@ -371,6 +379,9 @@ SplashKit’s capabilities as a comprehensive online IDE.
   centre with learning paths, guides, and templates for tutorial development.
 - **Develop Advanced Tutorials**: Create in-depth tutorials covering complex topics like AI and game
   development, ensuring SplashKit supports advanced use cases.
+- **Further expansion on usage examples**: Long term the goal is to have usage examples for every
+  function in SplashKit, this will help students understand how to use the functions and what they
+  do.
 
 #### SplashKit Expansion
 
@@ -384,7 +395,8 @@ SplashKit’s capabilities as a comprehensive online IDE.
   towards stable functionality across all versions, including testing and documentation for
   consistent results.
 - **SplashKit Translator**: Address issues with enum handling in the translator so that enums
-  display correctly for each language.
+  display correctly for each language. Then work on implementing this into the config file
+  on starlight to correctly display tabs for each language.
 - **SplashKit Core Functions**: Create new functions for converting between different values and
   basic maths operations.
 - **C# Issues in SplashKit Core**: Address translation issues in SplashKit core for C# where
