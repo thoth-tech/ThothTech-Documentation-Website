@@ -103,6 +103,8 @@ educators.
 - **Identify and Fill Documentation Gaps**: Address missing entries and clarify existing ones,
   establishing a roadmap to cover any essential areas still in need of documentation. This effort
   will support onboarding and provide a comprehensive guide for new contributors.
+- **Backend Code Review**: Conduct a systematic review of the OnTrack platform's backend codebase to identify potential
+  vulnerabilities.
 
 #### Frontend Migration
 
@@ -116,12 +118,53 @@ educators.
 - **Notification System Ideation & Blueprint**: Develop code for sending notifications to students
   when the tutor messages them.
 
-#### Long-term Deliverables
+Long Term Deliverables:
 
-- **Complete Frontend Migration to Angular and TypeScript**
-  - **Complete Remaining Frontend Modules**: Continue the migration process beyond the trimester,
-    aiming for a full transition to Angular 17 and TypeScript to ensure a consistent and modern
-    codebase.
+- **OnTrack Bug Fixes**
+  - Continuously document and identify issues faced by users and rectify them once the causes have
+    been diagnosed.
+  - Current prominent issues include:
+    - Student calendar and notifications not working for certain students.
+    - Task sheets and/or resources appearing as unavailable after unit rollovers.
+- **Urgent Enhancements**
+  - Add support for ZIP file uploads and integrate frontend displays for tutors.
+  - Implement the ability for students and staff to view the history of target grade changes.
+  - Enable the saving of draft comments locally per task, allowing tutors to maintain different
+    unsent draft comments for each task.
+  - Adjust the automatic extension system so that the “resubmit” status provides a one-week
+    extension from the date of feedback.
+  - Extend the group lock feature to allow students to lock and unlock their groups.
+- **Incorporate Multiple Organisations on Single OnTrack Server**
+  - Develop the capability to create, edit, and disable multiple organisations on a single server.
+  - Create frontend interfaces for these features on a dedicated dashboard for teaching staff to
+    perform management tasks.
+  - Update backend systems to support these features and create unit tests for both frontend and
+    backend to verify implementation and functionality.
+- **Quality of Life Improvements**
+  - Add functionality for Unit Chairs to set target dates for each grade, which would impact the due
+    dates of tasks based on the selected grade.
+  - Develop a new visualisation to help students see their selected target grade, along with
+    estimated, submitted, and marked progress bars.
+- **Authentication Module**
+  - Abstract the existing authentication functionality into its own system/module.
+  - Create unit tests for this new module to ensure its implementation and functionality.
+- **Tutor Times**
+  - For the frontend, implement stopwatch and manual time input features, as well as a notification
+    system.
+  - For the backend, develop systems to store, manage, and serve marking time data, including
+    creating database tables, API endpoints, and secure data handling.
+  - Create unit tests for both frontend and backend to verify implementation and functionality.
+- **Panopto Video Integration**
+  - Implement frontend interfaces for uploading videos to Panopto and viewing embeds directly in
+    OnTrack.
+  - For the backend, establish systems to bridge OnTrack and Panopto, including creating API
+    endpoints, implementing a playback mechanism, and ensuring user authentication.
+  - Create unit tests for both frontend and backend to validate implementation and functionality.
+- **Staff Extensions**
+  - Develop a frontend UI that allows teaching staff to view and manage student extensions.
+  - Implement a backend feature enabling staff to manually grant extensions to students, even
+    without formal extension requests in the system.
+  - Create unit tests for both frontend and backend to confirm implementation and functionality.
 
 ### Deliverables
 
@@ -156,25 +199,25 @@ educators.
 
 ### Project Members
 
-| Member Name                   | Role/Responsibilities                   | Junior/Senior |
-| ----------------------------- | --------------------------------------- | ------------- |
-| ALVIN ODUNGA                  | Team Member - Frontend Migration        | Senior        |
-| TAN TAI NGUYEN                | Team Member - Frontend Migration        | Senior        |
-| SHOUNAK RAVI BHALERAO         | Junior Lead - Frontend Migration        | Junior        |
-| ASHWINI CHANDRAKANT DEORE     | Junior Lead - Survey Documentation      | Junior        |
-| HIRDYANSH DUDI                | Junior Lead - Frontend Migration        | Junior        |
-| HARSHA JAYAMANGALA            | Team Member - Frontend Migration        | Junior        |
-| HASHINI MADUSHANI NANAYAKKARA | Team Member - Frontend Migration        | Junior        |
-| JUDE ROZAIRO                  | Team Member - Target Grades History     | Junior        |
-| LAKSH GANESH GUPTA            | Team Member - Frontend Migration        | Junior        |
-| SAM WONG                      | Team Member - Frontend Migration        | Junior        |
-| ANMOL SAINI                   | Team Member - Visualisation Development | Junior        |
-| ADITYA PRATAP SINGH TOMAR     |                                         |               |
-| CHEE YU KOH                   |                                         |               |
-| EPITACIO DO NASCIMENTO NETO   |                                         |               |
-| HARSHIT ARORA                 |                                         |               |
-| RAMANDEEP SINGH BHOMRAH       |                                         |               |
-| XIN HUANG                     |                                         |               |
+| Member Name                   | Role/Responsibilities                           | Junior/Senior |
+| ----------------------------- |-------------------------------------------------|---------------|
+| ALVIN ODUNGA                  | Team Member - Frontend Migration                | Senior        |
+| TAN TAI NGUYEN                | Team Member - Frontend Migration                | Senior        |
+| SHOUNAK RAVI BHALERAO         | Junior Lead - Frontend Migration                | Junior        |
+| ASHWINI CHANDRAKANT DEORE     | Junior Lead - Survey Documentation              | Junior        |
+| HIRDYANSH DUDI                | Junior Lead - Frontend Migration                | Junior        |
+| HARSHA JAYAMANGALA            | Team Member - Frontend Migration                | Junior        |
+| HASHINI MADUSHANI NANAYAKKARA | Team Member - Frontend Migration                | Junior        |
+| JUDE ROZAIRO                  | Team Member - Target Grades History             | Junior        |
+| LAKSH GANESH GUPTA            | Team Member - Frontend Migration                | Junior        |
+| SAM WONG                      | Team Member - Frontend Migration                | Junior        |
+| ANMOL SAINI                   | Team Member - Visualisation Development         | Junior        |
+| ADITYA PRATAP SINGH TOMAR     | Junior Lead - Frontend Migration                | Junior        |
+| CHEE YU KOH                   | Team Member - Backend/ Bugfix                   | Junior        |
+| EPITACIO DO NASCIMENTO NETO   | Team Member - Backend Review                    | Junior        |
+| HARSHIT ARORA                 | Team Member - Frontend Migration                | Junior        |
+| RAMANDEEP SINGH BHOMRAH       | Team Member - Frontend Migration                | Junior        |
+| XIN HUANG                     | Team Member - Frontend Migration                | Senior        |
 
 ## Project 2 - SplashKit
 

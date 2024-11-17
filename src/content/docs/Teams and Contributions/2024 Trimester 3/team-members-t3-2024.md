@@ -4,25 +4,25 @@ title: Team Members T3 2024
 
 ## OnTrack
 
-| Member Name                   | Role/Responsibilities                   | Junior/Senior |
-| ----------------------------- | --------------------------------------- | ------------- |
-| ALVIN ODUNGA                  | Team Member - Frontend Migration        | Senior        |
-| TAN TAI NGUYEN                | Team Member - Frontend Migration        | Senior        |
-| SHOUNAK RAVI BHALERAO         | Junior Lead - Frontend Migration        | Junior        |
-| ASHWINI CHANDRAKANT DEORE     | Junior Lead - Survey Documentation      | Junior        |
-| HIRDYANSH DUDI                | Junior Lead - Frontend Migration        | Junior        |
-| HARSHA JAYAMANGALA            | Team Member - Frontend Migration        | Junior        |
-| HASHINI MADUSHANI NANAYAKKARA | Team Member - Frontend Migration        | Junior        |
-| JUDE ROZAIRO                  | Team Member - Target Grades History     | Junior        |
-| LAKSH GANESH GUPTA            | Team Member - Frontend Migration        | Junior        |
-| SAM WONG                      | Team Member - Frontend Migration        | Junior        |
-| ANMOL SAINI                   | Team Member - Visualisation Development | Junior        |
-| ADITYA PRATAP SINGH TOMAR     |                                         |               |
-| CHEE YU KOH                   |                                         |               |
-| EPITACIO DO NASCIMENTO NETO   |                                         |               |
-| HARSHIT ARORA                 |                                         |               |
-| RAMANDEEP SINGH BHOMRAH       |                                         |               |
-| XIN HUANG                     |                                         |               |
+| Member Name                   | Role/Responsibilities                           | Junior/Senior |
+| ----------------------------- |-------------------------------------------------|---------------|
+| ALVIN ODUNGA                  | Team Member - Frontend Migration                | Senior        |
+| TAN TAI NGUYEN                | Team Member - Frontend Migration                | Senior        |
+| SHOUNAK RAVI BHALERAO         | Junior Lead - Frontend Migration                | Junior        |
+| ASHWINI CHANDRAKANT DEORE     | Junior Lead - Survey Documentation              | Junior        |
+| HIRDYANSH DUDI                | Junior Lead - Frontend Migration                | Junior        |
+| HARSHA JAYAMANGALA            | Team Member - Frontend Migration                | Junior        |
+| HASHINI MADUSHANI NANAYAKKARA | Team Member - Frontend Migration                | Junior        |
+| JUDE ROZAIRO                  | Team Member - Target Grades History             | Junior        |
+| LAKSH GANESH GUPTA            | Team Member - Frontend Migration                | Junior        |
+| SAM WONG                      | Team Member - Frontend Migration                | Junior        |
+| ANMOL SAINI                   | Team Member - Visualisation Development         | Junior        |
+| ADITYA PRATAP SINGH TOMAR     | Junior Lead - Frontend Migration                | Junior        |
+| CHEE YU KOH                   | Team Member - Backend/ Bugfix                   | Junior        |
+| EPITACIO DO NASCIMENTO NETO   | Team Member - Backend Review                    | Junior        |
+| HARSHIT ARORA                 | Team Member - Frontend Migration                | Junior        |
+| RAMANDEEP SINGH BHOMRAH       | Team Member - Frontend Migration                | Junior        |
+| XIN HUANG                     | Team Member - Frontend Migration                | Senior        |
 
 ## SplashKit
 
