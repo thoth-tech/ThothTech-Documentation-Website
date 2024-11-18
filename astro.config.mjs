@@ -1,6 +1,7 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import starlightLinksValidator from 'starlight-links-validator';
+import partytown from '@astrojs/partytown';
 
 // https://astro.build/config
 export default defineConfig({
@@ -8,6 +9,26 @@ export default defineConfig({
     starlight({
       title: "Thoth Tech",
       favicon: "/favicon.svg",
+      head: [
+        // Google Analytics script tag
+        {
+          tag: 'script',
+          attrs: {
+            async: true,
+            src: 'https://www.googletagmanager.com/gtag/js?id=G-D62C4YT9KZ',
+          },
+        },
+        // Google Analytics inline configuration
+        {
+          tag: 'script',
+          children: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-D62C4YT9KZ');
+          `,
+        },
+      ],
       plugins: [
         starlightLinksValidator({
           errorOnRelativeLinks: true,
