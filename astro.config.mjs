@@ -1,7 +1,7 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import starlightLinksValidator from 'starlight-links-validator';
-import partytown from '@astrojs/partytown'
+import partytown from '@astrojs/partytown';
 
 // https://astro.build/config
 export default defineConfig({
