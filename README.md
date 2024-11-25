@@ -13,7 +13,11 @@
 
 Welcome to the **ThothTech Documentation Website** repository! This project serves as the central
 hub for all Thoth Tech resources, designed to provide a structured and accessible platform for
-documentation, product information, and team resources.
+documentation, product information, and team resources. This contains out long term documentation,
+such as the documentation for onboarding information, general information and company deliverables.
+
+Short term documentation such as spike reports and sprint reports are stored in the
+[Documentation](https://github.com/thoth-tech/documentation) repository.
 
 Built with Astro and Starlight, this website offers an organized space where users can explore Thoth
 Tech's mission, values, and goals, along with in-depth information on each of the company's products
