@@ -22,14 +22,15 @@ export default defineConfig({
         // Google Analytics inline configuration
         {
           tag: 'script',
-          type: 'text/partytown',
-          innerHTML: 
-          `window.dataLayer = window.dataLayer || [];
+          attrs: {
+            type: 'text/partytown',
+            innerHTML: `window.dataLayer = window.dataLayer || [];
             function gtag() {
               dataLayer.push(arguments);
             }
             gtag("js", new Date());
             gtag("config", "G-D62C4YT9KZ");`,
+          },
         },
       ],
       plugins: [
@@ -123,8 +124,8 @@ export default defineConfig({
     }),
     partytown({
       config: {
-        forward: ["dataLayer.push"]
-      }
+        forward: ["dataLayer.push"],
+      },
     })
   ],
   // Image processing
