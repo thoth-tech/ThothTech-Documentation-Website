@@ -12,25 +12,25 @@ export default defineConfig({
       head: [
         // Google Analytics script tag
         {
-          tag: 'script',
+          tag: "script",
           attrs: {
-            type: 'text/partytown',
-            async: true,
+            type: "text/partytown",
             src: 'https://www.googletagmanager.com/gtag/js?id=G-D62C4YT9KZ',
+            async: true,
           },
         },
         // Google Analytics inline configuration
         {
-          tag: 'script',
+          tag: "script",
           attrs: {
-            type: 'text/partytown',
-            innerHTML: `window.dataLayer = window.dataLayer || [];
-            function gtag() {
-              dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
-            gtag("config", "G-D62C4YT9KZ");`,
+            type: "text/partytown",
           },
+          content: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-D62C4YT9KZ');
+            `,
         },
       ],
       plugins: [
@@ -125,6 +125,7 @@ export default defineConfig({
     partytown({
       config: {
         forward: ["dataLayer.push"],
+        // forward: ["dataLayer.push", "gtag"],
       },
     })
   ],
