@@ -218,7 +218,7 @@ Long Term Deliverables:
 | RAMANDEEP SINGH BHOMRAH       | Team Member - Frontend Migration                             | Junior        |
 | XIN HUANG                     | Team Member - Frontend Migration                             | Senior        |
 
-### Project Update
+### Progress Update
 
 #### Document Website Expansion
 
