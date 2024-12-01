@@ -199,25 +199,91 @@ Long Term Deliverables:
 
 ### Project Members
 
-| Member Name                   | Role/Responsibilities                   | Junior/Senior |
-| ----------------------------- | --------------------------------------- | ------------- |
-| ALVIN ODUNGA                  | Team Member - Frontend Migration        | Senior        |
-| TAN TAI NGUYEN                | Team Member - Frontend Migration        | Senior        |
-| SHOUNAK RAVI BHALERAO         | Junior Lead - Frontend Migration        | Junior        |
-| ASHWINI CHANDRAKANT DEORE     | Junior Lead - Survey Documentation      | Junior        |
-| HIRDYANSH DUDI                | Junior Lead - Frontend Migration        | Junior        |
-| HARSHA JAYAMANGALA            | Team Member - Frontend Migration        | Junior        |
-| HASHINI MADUSHANI NANAYAKKARA | Team Member - Frontend Migration        | Junior        |
-| JUDE ROZAIRO                  | Team Member - Target Grades History     | Junior        |
-| LAKSH GANESH GUPTA            | Team Member - Frontend Migration        | Junior        |
-| SAM WONG                      | Team Member - Frontend Migration        | Junior        |
-| ANMOL SAINI                   | Team Member - Visualisation Development | Junior        |
-| ADITYA PRATAP SINGH TOMAR     | Junior Lead - Frontend Migration        | Junior        |
-| CHEE YU KOH                   | Team Member - Backend/ Bugfix           | Junior        |
-| EPITACIO DO NASCIMENTO NETO   | Team Member - Backend Review            | Junior        |
-| HARSHIT ARORA                 | Team Member - Frontend Migration        | Junior        |
-| RAMANDEEP SINGH BHOMRAH       | Team Member - Frontend Migration        | Junior        |
-| XIN HUANG                     | Team Member - Frontend Migration        | Senior        |
+| Member Name                   | Role/Responsibilities                                        | Junior/Senior |
+| ----------------------------- | ------------------------------------------------------------ | ------------- |
+| ALVIN ODUNGA                  | Team Member - Frontend Migration                             | Senior        |
+| TAN TAI NGUYEN                | Team Member - Frontend Migration                             | Senior        |
+| SHOUNAK RAVI BHALERAO         | Junior Lead - Frontend Migration/Bugfix/Feature Creation     | Junior        |
+| ASHWINI CHANDRAKANT DEORE     | Junior Lead - Documentation Upgradation                      | Junior        |
+| HIRDYANSH DUDI                | Junior Lead - Frontend Documentation/Feature Creation        | Junior        |
+| HASHINI MADUSHANI NANAYAKKARA | Team Member - Frontend Migration                             | Junior        |
+| JUDE ROZAIRO                  | Team Member - Target Grades History                          | Junior        |
+| LAKSH GANESH GUPTA            | Team Member - Frontend Migration                             | Junior        |
+| SAM WONG                      | Team Member - Frontend Migration                             | Junior        |
+| ANMOL SAINI                   | Team Member - Visualisation Development                      | Junior        |
+| ADITYA PRATAP SINGH TOMAR     | Junior Lead - Frontend Migration                             | Junior        |
+| CHEE YU KOH                   | Team Member - Backend/ Bugfix                                | Junior        |
+| EPITACIO DO NASCIMENTO NETO   | Team Member - Backend Review                                 | Junior        |
+| HARSHIT ARORA                 | Team Member - Frontend Migration                             | Junior        |
+| RAMANDEEP SINGH BHOMRAH       | Team Member - Frontend Migration                             | Junior        |
+| XIN HUANG                     | Team Member - Frontend Migration                             | Senior        |
+
+### Project Update
+
+#### Document Website Expansion
+
+- Conducted an in-depth audit and survey of current documentation.
+  Identified gaps and created a backlog for Rails Backend.
+- Updated documentation for the Frontend and Backend systems to
+  ensure alignment with recent feature updates and new workflows.
+- Integrated improved documentation for OnTrack’s related modules
+  streamlining the onboarding process for new developers.
+
+#### CyberSecurity Audit
+
+- Conducting a comprehensive Web Security Audit, addressing vulnerabilities in areas such as:  
+  - Broken Access Control
+  - Identification and Authentication Failures
+  - Security Misconfiguration
+  - Injection Attacks
+  - Vulnerable and Outdated Components
+- Implemented fixes for critical vulnerabilities to enhance the
+  platform's overall security and reliability.
+
+#### Feature Development
+
+- Working on implementing a Google Sign-In functionality, simplifying the user login process
+  and enhancing authentication security.
+- Developed a new visualization for Target Grades and Charts,
+  improving analytics and reporting features for users.
+- Adding support for video uploads based on Panopto integration.
+- Designed a Notification System Proof of Concept (PoC) to improve
+  communication within the application, based on sending email when the tutor marks the submission
+  as resubmit.
+
+#### Migration To Modern Codebase
+
+- Working to Close following Angular Migration tasks:
+  - group-selector.coffee
+  - project-tasks-list.coffee
+  - grade-icon.coffee
+  - unit-staff-editor.coffee
+  - unit-dates-selector.coffee
+
+#### Documentation Improvement
+
+- Linked API documentation with usage examples for seamless understanding
+  and navigation.
+- Enhanced the documentation backlog with detailed records and reference
+  links for ongoing and future development tasks.
+- Introduced new visualization elements in the documentation to make
+  technical concepts more accessible to stakeholders.
+- Enhanced Frontend Migration documentation
+- Created general setup documentation.
+
+#### Backend Updates
+
+- Working on refactoring organization management, including site
+  administrator logic and organization switch logic for improved performance.
+- Introduced APIs for historical tracking of Target Grade changes, providing
+  clear audit trails and data accuracy.
+- Fixed a bug related to adjust the automatic extension on "resubmit" being
+  awarded to be one week from the date of the feedback.
+- Working on ZIP File Upload and their subsequent presentation to the tutors.
+
+### Team Members and Contributions
+
+[TOBE ADDED]
 
 ## Project 2 - SplashKit
 
