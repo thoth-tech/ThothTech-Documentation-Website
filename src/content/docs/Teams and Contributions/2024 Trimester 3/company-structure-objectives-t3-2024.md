@@ -314,6 +314,7 @@ Long Term Deliverables:
 The OnTrack team has consistently adhered to its previous commits and has made great inroads in
 Angular Migration Tasks. We were also able to close multiple bugs and identify some of the new items.
 We are currently in-progress of peforming our cybersecurity issue.
+There are also some team members working on tasks for which we are yet to recieve any updates.
 Moreover, planning and implementing new features has been our aim, and we will continue to complete
 it by the end of this trimester. Finally, documentation has been a focus point for us, and guides for
  new joiners have been created for ease of access.
