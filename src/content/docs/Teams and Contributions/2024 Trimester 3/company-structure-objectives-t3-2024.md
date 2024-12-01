@@ -654,6 +654,8 @@ deliverables for these projects are outlined to facilitate recommencement in T1 
 
 - Implemented the ability to load a project from URL in SK Online by passing the project's URL as a parameter. This update allows the IDE to load project zip files via a simple URL, improving the ease of project loading.
 
+- Integrated the SK Online IDE into the SplashKit website to provide users with seamless access to the platform. The integration will allow users to interact with SplashKit library while exploring the site.
+
 ### In Development Tasks 
 
 #### SplashKit Expansion
@@ -670,7 +672,7 @@ deliverables for these projects are outlined to facilitate recommencement in T1 
 
 #### SplashKit Online
 
-- Integrating the SK Online IDE into the SplashKit website to provide users with seamless access to the platform. The integration will allow users to interact with SplashKit library while exploring the site.
+- Continue C# Support Development: Reproduce prior research results, and begin initial integration of browser-based C# compilation and execution.
 
 - Improving load times when loading multiple copies, with the goal of storing a pre-decompressed version to avoid repeated decompression during page loads.
 
