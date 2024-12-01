@@ -281,6 +281,23 @@ Long Term Deliverables:
   awarded to be one week from the date of the feedback.
 - Working on ZIP File Upload and their subsequent presentation to the tutors.
 
+### In Development Tasks
+
+#### Frontend Angular17 Migration & Development
+
+- Currently working on 5 components for Component Migration.
+- Implementing better visualisation for Ontrack Frontend.
+
+#### Backend Bugfix and Changes
+
+- Fixing 2 Bugs.
+- The Team is working on 2 feature implementation from the backend side.
+
+#### Documentation
+
+- Creating new item for joiners, for easy onboarding.
+- Updating MIGRATION.md
+
 ### Team Members and Contributions
 
 | Name                        | Contributions | Task Attachment |
