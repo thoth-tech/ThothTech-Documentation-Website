@@ -1,7 +1,7 @@
 ---
-title: "Spike Guidance: Integrating Panopto with OnTrack"
+title: "Integrating Panopto with OnTrack through Oauth2"
 ---
 
 # Panopto Integration
 
-## Api Client 
+## Oauth2 panopto api client 
