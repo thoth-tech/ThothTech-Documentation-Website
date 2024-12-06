@@ -1,0 +1,743 @@
+---
+title: Adding OOP Principles to the Shape Types, Simplifying Collision Classification and Resolution Functions
+sidebar:
+  label: Adding OOP Principles to the Shape Types, Simplifying Collision Classification and Resolution Functions
+  order: 1
+---
+
+## Description
+
+This document outlines the refactoring of a previous PR:
+[Pull Request 83](https://github.com/thoth-tech/splashkit-core/pull/83). The goal was to eliminate
+the need for void and function pointers by having sprites, rectangles, circles, triangles and quads
+inherit from the abstract class shape. Unfortunately, I was unable to get the program to compile. I
+am fairly certain that it is due to circular dependencies.
+
+The major issue is that `_sprite_data` is abstracted entirely from students by being declared in
+`sprite.cpp`. However, moving `_sprite_data` from `sprites.cpp` to `sprites.h` leads to circular
+dependencies between `collision.h`, `types.h`, `sprites.h` and `backend_types.h`.
+
+I am sure that the compilation errors could be resolved, however it would be a difficult process. My
+plan would be to split larger header files such as `types.h` into smaller files for each struct.
+There would be then be a `rectangle.h`, `circle.h` and so on.
+
+Similarly, `backend_types.h` would be split into many smaller header files for each enum. This would
+allow for fine-grain control of includes which will make diagnosing and rectifying the circular
+dependencies easier.
+
+By moving to an OOP approach, the code can be more understood, debugged and maintained.
+
+## Code
+
+### `types.cpp` Additions
+
+```cpp
+bool shape::intersects(const shape* other) const
+{
+    switch (other->get_shape_type())
+    {
+        case shape_type::SPRITE:
+            return other->intersects(*this);
+        case shape_type::RECTANGLE:
+            return this->intersects(*dynamic_cast<const rectangle*>(other));
+        case shape_type::CIRCLE:
+            return this->intersects(*dynamic_cast<const circle*>(other));
+        case shape_type::TRIANGLE:
+            return this->intersects(*dynamic_cast<const triangle*>(other));
+        case shape_type::QUAD:
+            return this->intersects(*dynamic_cast<const quad*>(other));
+    };
+
+    return false;
+}
+
+bool shape::intersects(const shape& other) const
+{
+    return this->intersects(&other);
+}
+
+bool shape::AABB_intersects(const shape* other) const
+{
+    return this->get_bounding_box().intersects(other->get_bounding_box());
+}
+
+rectangle::rectangle()
+{
+    x = 0.0;
+    y = 0.0;
+    width = 0.0;
+    height = 0.0;
+}
+
+rectangle::rectangle(double x, double y, double width, double height)
+{
+    this->x = x;
+    this->y = y;
+    this->width = width;
+    this->height = height;
+}
+
+rectangle rectangle::get_bounding_box() const
+{
+    return *this;
+}
+
+shape_type rectangle::get_shape_type() const
+{
+    return shape_type::RECTANGLE;
+}
+
+bool rectangle::intersects(const _sprite_data& other) const
+{
+    return other.intersects(*this);
+}
+
+bool rectangle::intersects(const rectangle& other) const
+{
+    return rectangles_intersect(*this, other);
+}
+
+bool rectangle::intersects(const circle& other) const
+{
+    return rectangle_circle_intersect(*this, other);
+}
+
+bool rectangle::intersects(const triangle& other) const
+{
+    return triangle_rectangle_intersect(other, *this);
+}
+
+bool rectangle::intersects(const quad& other) const
+{
+    return quads_intersect(quad_from(*this), other);
+}
+
+void rectangle::move_by(const vector_2d& amount)
+{
+    x += amount.x;
+    y += amount.y;
+}
+
+quad::quad()
+{
+    for (int i = 0; i < 4; i++)
+    {
+        points[i] = {0.0, 0.0};
+    }
+}
+
+quad::quad(const point_2d& top_left, const point_2d& top_right,
+        const point_2d& bottom_left, const point_2d& bottom_right)
+{
+    points[0] = top_left;
+    points[1] = top_right;
+    points[2] = bottom_left;
+    points[3] = bottom_right;
+}
+
+rectangle quad::get_bounding_box() const
+{
+    return rectangle_around(*this);
+}
+
+shape_type quad::get_shape_type() const
+{
+    return shape_type::QUAD;
+}
+
+bool quad::intersects(const _sprite_data& other) const
+{
+    return other.intersects(*this);
+}
+
+bool quad::intersects(const rectangle& other) const
+{
+    return other.intersects(*this);
+}
+
+bool quad::intersects(const circle& other) const
+{
+    return other.intersects(*this);
+}
+
+bool quad::intersects(const triangle& other) const
+{
+    return other.intersects(*this);
+}
+
+bool quad::intersects(const quad& other) const
+{
+    return other.intersects(*this);
+}
+
+void quad::move_by(const vector_2d& amount)
+{
+    for (int i = 0; i < 4; i++)
+    {
+        points[i].x += amount.x;
+        points[i].y += amount.y;
+    }
+}
+
+circle::circle()
+{
+    center = {0.0, 0.0};
+    radius = 0.0;
+}
+
+circle::circle(const point_2d& center, double radius)
+{
+    this->center = center;
+    this->radius = radius;
+}
+
+rectangle circle::get_bounding_box() const
+{
+    return rectangle_around(*this);
+}
+
+shape_type circle::get_shape_type() const
+{
+    return shape_type::CIRCLE;
+}
+
+bool circle::intersects(const _sprite_data& other) const
+{
+    return other.intersects(*this);
+}
+
+bool circle::intersects(const rectangle& other) const
+{
+    return other.intersects(*this);
+}
+
+bool circle::intersects(const circle& other) const
+{
+    return circles_intersect(*this, other);
+}
+
+bool circle::intersects(const triangle& other) const
+{
+    return circle_triangle_intersect(*this, other);
+}
+
+bool circle::intersects(const quad& other) const
+{
+    return circle_quad_intersect(*this, other);
+}
+
+void circle::move_by(const vector_2d& amount)
+{
+    center.x += amount.x;
+    center.y += amount.y;
+}
+
+triangle::triangle()
+{
+    for (int i = 0; i < 3; i++)
+    {
+        points[i] = {0.0, 0.0};
+    }
+}
+
+triangle::triangle(const point_2d& p1, const point_2d& p2, const point_2d& p3)
+{
+    points[0] = p1;
+    points[1] = p2;
+    points[2] = p3;
+}
+
+rectangle triangle::get_bounding_box() const
+{
+    return rectangle_around(*this);
+}
+
+shape_type triangle::get_shape_type() const
+{
+    return shape_type::TRIANGLE;
+}
+
+bool triangle::intersects(const _sprite_data& other) const
+{
+    return other.intersects(*this);
+}
+
+bool triangle::intersects(const rectangle& other) const
+{
+    return other.intersects(*this);
+}
+
+bool triangle::intersects(const circle& other) const
+{
+    return other.intersects(*this);
+}
+
+bool triangle::intersects(const triangle& other) const
+{
+    return triangles_intersect(*this, other);
+}
+
+bool triangle::intersects(const quad& other) const
+{
+    return triangle_quad_intersect(*this, other);
+}
+
+void triangle::move_by(const vector_2d& amount)
+{
+    for (int i = 0; i < 3; i++)
+    {
+        points[i].x += amount.x;
+        points[i].y += amount.y;
+    }
+}
+```
+
+### `collisions.cpp` Modified Methods 
+
+```cpp
+collision_direction _calculate_object_collision_direction(const shape* collider, const shape* collidee)
+{
+    if (!collider->intersects(collidee))
+    {
+        return collision_direction::NONE;
+    }
+
+    return _rectangle_rectangle_collision_direction(collider->get_bounding_box(), collidee->get_bounding_box());
+}
+
+bool _resolve_object_collision(shape* collider, const shape* collidee, collision_direction direction)
+{
+    // check if the sprites are colliding
+    if (direction == collision_direction::NONE || !collider->intersects(collidee))
+    {
+        return false;
+    }
+
+    if (_get_collision_test_kind(collider) == AABB_COLLISIONS && _get_collision_test_kind(collidee) == AABB_COLLISIONS)
+    {
+        _resolve_object_AABB_collision(collider, collidee, direction);
+    }
+    else // one or both of the sprites are using pixel collision
+    {
+        //bracket_func(collider, collidee, _direction_from_collision(direction), BRACKET_ITERATIONS);
+        _bracket_object_collision_generic(collider, collidee, _direction_from_collision(direction), BRACKET_ITERATIONS);
+    }
+
+    return true;
+}
+
+collision_test_kind _get_collision_test_kind(const shape* s)
+{
+    shape_type type = s->get_shape_type();
+    
+    if (type == shape_type::RECTANGLE)
+    {
+        return AABB_COLLISIONS;
+    }
+    else if (type == shape_type::SPRITE)
+    {
+        const _sprite_data* sprite_data = dynamic_cast<const _sprite_data*>(s);
+        if (sprite_data && sprite_collision_kind(const_cast<sprite>(sprite_data)) == AABB_COLLISIONS)
+        {
+            return AABB_COLLISIONS;
+        }
+    }
+    
+    return PIXEL_COLLISIONS;
+}
+
+void _resolve_object_AABB_collision(shape* collider, const shape* collidee, collision_direction direction)
+{
+    // get the intersection rectangle
+    rectangle inter = intersection(collider->get_bounding_box(), collidee->get_bounding_box());
+    vector_2d amount = vector_to(inter.width, inter.height);
+
+    _move_object_by_direction(collider, _direction_from_collision(direction), amount);
+}
+
+void _move_object_by_direction(shape* obj, _sprite_movement_direction direction, const vector_2d& amount)
+{
+    if (amount.x == 0.0 && amount.y == 0.0)
+    {
+        return;
+    }
+    
+    switch (direction)
+    {
+    case _sprite_movement_direction::UP:
+        obj->move_by(vector_to(0.0, -amount.y));
+        break;
+    case _sprite_movement_direction::DOWN:
+        obj->move_by(vector_to(0.0, amount.y));
+        break;
+    case _sprite_movement_direction::LEFT:
+        obj->move_by(vector_to(-amount.x, 0.0));
+        break;
+    case _sprite_movement_direction::RIGHT:
+        obj->move_by(vector_to(amount.x, 0.0));
+        break;
+    case _sprite_movement_direction::UP_LEFT:
+        obj->move_by(vector_to(-amount.x, -amount.y));
+        break;
+    case _sprite_movement_direction::UP_RIGHT:
+        obj->move_by(vector_to(amount.x, -amount.y));
+        break;
+    case _sprite_movement_direction::DOWN_LEFT:
+        obj->move_by(vector_to(-amount.x, amount.y));
+        break;
+    default: // _sprite_movement_direction::DOWN_RIGHT:
+        obj->move_by(vector_to(amount.x, amount.y));
+        break;
+    };
+}
+
+bool _bracket_object_collision_generic(shape* collider, const shape* collidee,
+                                            _sprite_movement_direction collider_direction, int iterations)
+{
+    rectangle collider_aabb = collider->get_bounding_box();
+    
+    for (int i = 1; i <= iterations; i++)
+    {
+        if (!_bracket_object_collision(collider->intersects(collidee), i, collider, collider_direction))
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
+bool _bracket_object_collision(bool colliding, int i, shape* collider, _sprite_movement_direction collider_direction)
+{
+    rectangle collider_aabb = collider->get_bounding_box();
+    
+    if (colliding)
+    {
+        _move_object_by_direction_relative_to_size(collider, collider_direction,
+                                                    1.0 / pow(ITERATION_POWER, static_cast<double>(i)));
+    }
+    else if (i == 1) // no collision in the first iteration
+    {
+        return false;
+    }
+    else
+    {
+        _move_object_by_direction_relative_to_size(collider, _opposite_direction(collider_direction),
+                                                    1.0 / pow(ITERATION_POWER, static_cast<double>(i)));
+    }
+    return true;
+}
+
+void _move_object_by_direction_relative_to_size(shape* obj, _sprite_movement_direction direction, double relative_amount = 1.0)
+{
+    rectangle obj_aabb = obj->get_bounding_box();
+    
+    double relative_width = obj_aabb.width * relative_amount;
+    double relative_height = obj_aabb.height * relative_amount;
+
+    switch (direction)
+    {
+    case _sprite_movement_direction::UP:
+        _move_object_by_direction(obj,_sprite_movement_direction::UP, vector_to(0.0, relative_height));
+        break;
+    case _sprite_movement_direction::DOWN:
+        _move_object_by_direction(obj, _sprite_movement_direction::DOWN, vector_to(0.0, relative_height));
+        break;
+    case _sprite_movement_direction::LEFT:
+        _move_object_by_direction(obj, _sprite_movement_direction::LEFT, vector_to(relative_width, 0.0));
+        break;
+    case _sprite_movement_direction::RIGHT:
+        _move_object_by_direction(obj, _sprite_movement_direction::RIGHT, vector_to(relative_width, 0.0));
+        break;
+    case _sprite_movement_direction::UP_LEFT:
+        _move_object_by_direction(obj, _sprite_movement_direction::UP_LEFT, vector_to(relative_width, relative_height));
+        break;
+    case _sprite_movement_direction::UP_RIGHT:
+        _move_object_by_direction(obj, _sprite_movement_direction::UP_RIGHT, vector_to(relative_width, relative_height));
+        break;
+    case _sprite_movement_direction::DOWN_LEFT:
+        _move_object_by_direction(obj, _sprite_movement_direction::DOWN_LEFT, vector_to(relative_width, relative_height));
+        break;
+    default: // _sprite_movement_direction::DOWN_RIGHT:
+        _move_object_by_direction(obj, _sprite_movement_direction::DOWN_RIGHT, vector_to(relative_width, relative_height));
+        break;
+    };
+}
+```
+
+### `sprites.h` First Section With New Declaration
+
+```cpp
+/**
+ * @header  sprites
+ * @author  Andrew Cain
+ * @brief   SplashKit Sprites allows you to create images you can easily
+ *          move and animate.
+ *
+ * SplashKit sprites are game elements that can be moved, and animated. Sprites
+ * are located at a position in the game, have a velocity, and an animation.
+ * The sprite can also have arbitary data associated with it for game specific
+ * purposes.
+ *
+ * @attribute group  sprites
+ * @attribute static sprite
+ */
+
+#ifndef sprites_h
+#define sprites_h
+
+#include "matrix_2d.h"
+#include "types.h"
+namespace splashkit_lib
+{
+    /**
+     *  This enumeration contains a list of all of the different kinds of
+     *  events that a Sprite can raise. When the event is raised the assocated
+     *  sprite_event_kind value passed to the event handler to indicate the
+     *  kind of event that has occurred.
+     *
+     *  @constant SPRITE_ARRIVED_EVENT   The sprite has arrived at the end of a move
+     *  @constant SPRITE_ANIMATION_ENDED_EVENT The Sprite's animation has ended.
+     *  @constant SPRITE_TOUCHED_EVENT         The Sprite was touched
+     *  @constant SPRITE_CLICKED_EVENT         The Sprite was touched
+     */
+    enum sprite_event_kind
+    {
+        SPRITE_ARRIVED_EVENT,
+        SPRITE_ANIMATION_ENDED_EVENT,
+        SPRITE_TOUCHED_EVENT,
+        SPRITE_CLICKED_EVENT
+    };
+
+    /**
+     * This enumeration can be used to set the kind of collisions a sprite will check for.
+     *
+     * @constant PIXEL_COLLISIONS   The sprite will check for collisions with its collision bitmap.
+     * @constant AABB_COLLISIONS    The sprite will check for collisions with a bounding box around the sprite.
+     */
+    enum collision_test_kind
+    {
+        PIXEL_COLLISIONS,
+        AABB_COLLISIONS
+    };
+
+    /**
+     * Sprites combine an image, with position and animation details. You can
+     * create a sprite using `create_sprite`, draw it with `draw_sprite`, move it
+     * using the `sprite_velocity` with `update_sprite`, and animate it using an
+     * `animation_script`.
+     *
+     * @attribute class sprite
+     */
+    typedef struct _sprite_data *sprite;
+
+    /**
+     *  The sprite_event_handler function pointer is used when you want to register
+     *  to receive events from a Sprite.
+     *
+     * @param s  The `sprite` raising the event.
+     * @param evt  The `sprite_event_kind` being raised.
+     */
+    typedef void (sprite_event_handler) (void *s, int evt);
+
+    /**
+     *  sprite_function is used with SpritePacks to provide a procedure to be
+     *  called for each of the Sprites in the SpritePack.
+     *
+     * @param s The `sprite` being passed to the sprite function.
+     */
+    typedef void (sprite_function)(void *s);
+
+    /**
+     *  The sprite single function is used with sprite packs to provide a
+     *  procedure to be called for each of the Sprites in the sprite pack,
+     *  where a float value is required.
+     *
+     * @param s The `sprite` being passed to the sprite function.
+     * @param f The value to be passed to the function.
+     */
+    typedef void (sprite_float_function)(void *s, float f);
+
+    std::vector<void *> &current_pack();
+
+    struct _sprite_data : public shape
+    {
+        pointer_identifier  id;
+        std::string name;                          // The name of the sprite for resource management
+
+        std::vector<bitmap>      layers;           // Layers of the sprites
+        std::map<std::string, int>    layer_names;
+        std::vector<int>         visible_layers;   // The indexes of the visible layers
+        std::vector<vector_2d>   layer_offsets;    // Offsets from drawing the layers
+
+        std::map<std::string, float>  values;           // Values associated with this sprite
+
+
+        animation           animation_info;   // The data used to animate this sprite
+        animation_script    script;           // The template for this sprite"s animations
+
+        point_2d            position;         // The game location of the sprite
+        vector_2d           velocity;         // The velocity of the sprite
+
+        collision_test_kind collision_kind;   //The kind of collisions used by this sprite
+        bitmap              collision_bitmap; // The bitmap used for collision testing (default to first image)
+
+        point_2d            anchor_point;
+        bool                position_at_anchor_point;
+        bool                draw_at_anchor_point;
+
+        bool                is_moving;          // Used for events to indicate the sprite is moving
+        point_2d            destination;        // The destination the sprite is moving to
+        vector_2d           moving_vec;         // The sprite"s movement vector
+        float               arrive_in_sec;      // Amount of time in seconds to arrive at point
+        int                 last_update;        // Time of last update
+
+        bool                announced_animation_end; // Used to avoid multiple announcements of an end of an animation
+
+        std::vector<sprite_event_handler *> evts;    // The call backs listening for sprite events
+
+        std::vector<void *>      &pack;              // Points the the SpritePack that contains this sprite
+
+        _sprite_data() : pack( current_pack() )
+        {
+        }
+
+        rectangle get_bounding_box() const override;
+        shape_type get_shape_type() const override;
+        bool intersects(const _sprite_data& other) const override;
+        bool intersects(const rectangle& other) const override;
+        bool intersects(const circle& other) const override;
+        bool intersects(const triangle& other) const override;
+        bool intersects(const quad& other) const override;
+        void move_by(const vector_2d& amount) override;
+    };
+
+    // *****
+}
+```
+
+### `sprites.cpp` First Section With New Member Functions
+
+```cpp
+//
+//  sprites.cpp
+//  splashkit
+//
+//  Created by Andrew Cain on 23/08/2016.
+//  Copyright © 2016 Andrew Cain. All rights reserved.
+//
+
+#include "animations.h"
+#include "backend_types.h"
+#include "camera.h"
+#include "collisions.h"
+#include "geometry.h"
+#include "images.h"
+#include "mouse_input.h"
+#include "sprites.h"
+#include "timers.h"
+#include "utility_functions.h"
+#include "vector_2d.h"
+
+#include <cmath>
+#include <map>
+#include <vector>
+
+using std::map;
+using std::vector;
+using std::to_string;
+using std::swap;
+
+namespace splashkit_lib
+{
+    timer _sprite_timer = nullptr;
+    vector<sprite_event_handler *> _global_sprite_event_handlers;
+
+    map<string, sprite> _sprites;
+
+    // Sprite pack data
+#define INITIAL_PACK_NAME "default"
+    map<string, vector<void *>> _sprite_packs;
+    string _current_pack = INITIAL_PACK_NAME;
+
+    vector<void *> &current_pack()
+    {
+        return _sprite_packs[_current_pack];
+    }
+
+#define SCALE_KEY       "scale"
+#define ROTATION_KEY    "rotation"
+#define MASS_KEY        "mass"
+
+    rectangle _sprite_data::get_bounding_box() const
+    {
+        return sprite_collision_rectangle(const_cast<sprite>(this));
+    }
+
+    shape_type _sprite_data::get_shape_type() const
+    {
+        return shape_type::SPRITE;
+    }
+
+    bool _sprite_data::intersects(const _sprite_data& other) const
+    {
+        return sprite_collision(const_cast<sprite>(this), const_cast<sprite>(&other));
+    }
+
+    bool _sprite_data::intersects(const rectangle& other) const
+    {
+        bool aabb_collision = this->AABB_intersects(&other);
+
+        if (this->collision_kind == AABB_COLLISIONS || !aabb_collision)
+        {
+            return aabb_collision;
+        }
+
+        return sprite_rectangle_collision(const_cast<sprite>(this), other);
+    }
+
+    bool _sprite_data::intersects(const circle& other) const
+    {
+        bool aabb_collision = this->AABB_intersects(&other);
+
+        if (this->collision_kind == AABB_COLLISIONS || !aabb_collision)
+        {
+            return aabb_collision;
+        }
+
+        return sprite_circle_collision(const_cast<sprite>(this), other);
+    }
+
+    bool _sprite_data::intersects(const triangle& other) const
+    {
+        bool aabb_collision = this->AABB_intersects(&other);
+
+        if (this->collision_kind == AABB_COLLISIONS || !aabb_collision)
+        {
+            return aabb_collision;
+        }
+
+        return sprite_triangle_collision(const_cast<sprite>(this), other);
+    }
+
+    bool _sprite_data::intersects(const quad& other) const
+    {
+        bool aabb_collision = quads_intersect(
+            quad_from(sprite_collision_rectangle(const_cast<sprite>(this))), other);
+
+        if (this->collision_kind == AABB_COLLISIONS || !aabb_collision)
+        {
+            return aabb_collision;
+        }
+
+        return sprite_quad_collision(const_cast<sprite>(this), other);
+    }
+
+    void _sprite_data::move_by(const vector_2d& amount)
+    {
+        this->position.x += amount.x;
+        this->position.y += amount.y;
+    }
+
+    // *****
+}
+```
