@@ -188,3 +188,18 @@ PR template provides a framework for how to structure the associated PR document
 
 If changes are requested during a PR review, pushing further commits to the same branch will
 automatically be added to the PR.
+
+## Troubleshooting
+
+Solutions for common issues can be found below.
+
+### Empty Translator folder
+
+If the translator folder is empty, it may be due to an issue with the submodules. In an WSL
+terminal, enter the following:
+
+```sh
+cd
+cd splashkit-core
+git submodule update --init --recursive
+```
