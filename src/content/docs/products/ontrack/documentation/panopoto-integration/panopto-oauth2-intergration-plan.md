@@ -31,6 +31,12 @@ Once the API client is set up, the next step involves exchanging the authorisati
 1. Visit the Authorisation URL:
 
    - This will initiate the OAuth2 authorisation process, where you will log in and grant access.
-2. Exchange Authorisation Code for Access Token:
+     
+   # How to
+
+   -  Reaplce ' insert_client_id ' with your client id and ' port ' with the port used in the api client setup
+   - https://deakin.au.panopto.com/Panopto/oauth2/connect/authorize?client_id=insert_client_id&response_type=code&redirect_uri=http://localhost:port&scope=openid%20api&nonce=12345![image]
+
+3. Exchange Authorisation Code for Access Token:
 
    - After successful authentication, you will receive an authorisation code. This code can be exchanged for an access token, which will allow uploading videos to the user's Panopto instance.
