@@ -32,14 +32,31 @@ Once the API client is set up, the next step involves exchanging the authorisati
 
    - This will initiate the OAuth2 authorisation process, where you will log in and grant access.
      
-   # How to
+   ### How to manually recieve code
 
-   - Reaplce `insert_client_id` with your client id and `port` with the port used in the api client setup
+   - Replace `insert_client_id` with your client id and `port` with the port used in the api client setup
    - https://deakin.au.panopto.com/Panopto/oauth2/connect/authorize?client_id=insert_client_id&response_type=code&redirect_uri=http://localhost:port&scope=openid%20api&nonce=12345
+  
 
 3. Exchange Authorisation Code for Access Token:
 
    - After successful authentication, you will receive an authorisation code. This code can be exchanged for an access token, which will allow uploading videos to the user's Panopto instance.
+  
+   ### How to manually recieve access token
+
+   - Using the curl request below replacing `YOUR_CLIENT_ID`, `YOUR_CLIENT_SECRET` and `YOUR_AUTHORISATION_CODE`
+
+``` Typescript
+   curl -X POST "https://deakin.au.panopto.com/Panopto/oauth2/connect/token" \
+     -H "Content-Type: application/x-www-form-urlencoded" \
+     -d "grant_type=authorisation_code" \
+     -d "code=YOUR_AUTHORISATION_CODE" \
+     -d "redirect_uri=http://localhost:8000" \
+     -d "client_id=YOUR_CLIENT_ID" \
+     -d "client_secret=YOUR_CLIENT_SECRET"
+```
+
 ## Step 4: Integrating with ontrack
-1. The next steps of the task is to integrate with ontrack by automating the retrieval of the autheticatio phase and retrieval or bearers token
-2. Additionally sd
+1. The next steps of the task is to automate the entire process so that you supply an `env` file with `client_id` and `client_secret`.
+2. It provides you with a link to click on, which give the program the authorisation code.
+3. With this it retrieves the access token for your panopto instance and allowing a video upload to occur using the api
