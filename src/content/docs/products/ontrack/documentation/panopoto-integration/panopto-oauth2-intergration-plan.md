@@ -34,9 +34,12 @@ Once the API client is set up, the next step involves exchanging the authorisati
      
    # How to
 
-   -  Reaplce ' insert_client_id ' with your client id and ' port ' with the port used in the api client setup
-   - https://deakin.au.panopto.com/Panopto/oauth2/connect/authorize?client_id=insert_client_id&response_type=code&redirect_uri=http://localhost:port&scope=openid%20api&nonce=12345![image]
+   - Reaplce `insert_client_id` with your client id and `port` with the port used in the api client setup
+   - https://deakin.au.panopto.com/Panopto/oauth2/connect/authorize?client_id=insert_client_id&response_type=code&redirect_uri=http://localhost:port&scope=openid%20api&nonce=12345
 
 3. Exchange Authorisation Code for Access Token:
 
    - After successful authentication, you will receive an authorisation code. This code can be exchanged for an access token, which will allow uploading videos to the user's Panopto instance.
+## Step 4: Integrating with ontrack
+1. The next steps of the task is to integrate with ontrack by automating the retrieval of the autheticatio phase and retrieval or bearers token
+2. Additionally sd
