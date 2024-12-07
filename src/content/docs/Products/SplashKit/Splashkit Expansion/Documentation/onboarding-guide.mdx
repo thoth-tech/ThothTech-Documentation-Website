@@ -13,20 +13,22 @@ Feel free to skip steps which you have already completed or are familiar with.
 ## Installing WSL
 
 WSL is a built-in Linux distribution virtual machine for Windows. splashkit-core will be installed
-to the Linux distribution. The official Microsoft documentation provides high-quality instructions
-on how to install WSL: [Install WSL](https://learn.microsoft.com/en-us/windows/wsl/install). This
-guide has been tested with the default Ubuntu distribution, but others may also work.
+to the Linux distribution. The official SplashKit installation instructions can be found here:
+[Windows (WSL) Installation Overview](https://splashkit.io/installation/windows-wsl).
+This guide has been tested with the default Ubuntu distribution, but others may also work.
 
 ### Installing Visual Studio Code
 
 Once WSL has been installed to Windows, Visual Studio Code needs to be installed to WSL.
-The Microsoft documentation is again the best reference for this process:
-[Install VS Code](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode).
+The SplashKit documentation explains the process:
+[Install Visual Studio Code](https://splashkit.io/installation/windows-wsl/step-3)
 
 ### Installing Git
 
 Now Git must be installed to WSL. Follow the Microsoft installation instructions:
 [Install Git](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-git).
+GitHub's Git Cheat Sheet is useful for both installation and usage of Git:
+[GitHub Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
 ### Installing Windows Terminal (optional)
 
@@ -50,6 +52,10 @@ A fork is a copy of a repository which allows for independent development withou
 the primary repository itself. To create a personal fork of splashkit-core, navigate to
 [GitHub splashkit-core](https://github.com/splashkit/splashkit-core) and click ‘Fork’. On the next
 page, keep the default name and click ‘Create fork’.
+
+The following guide for the SplashKit Website has useful information regarding forks and branches
+which can be adjusted for splashkit-core by substitutung repository names:
+[Get Your Environment Set Up](https://thoth-tech.netlify.app/products/splashkit/splashkit-website/onboarding/01-setting-up).
 
 ### Cloning splashkit-core Repository
 
@@ -172,7 +178,7 @@ make
 
 ### Documenting Changes
 
-Local changes can be tested building and running the test programs. However, once changes are to be
+Local changes can be tested by building and running the test programs. However, once changes are to be
 submitted for review, they need to be staged, committed and pushed. It is good practice to perform
 multiple smaller commits with meaningful descriptions rather than a single monolithic commit. In
 addition, pushing commits to GitHub provides a layer of backup in case of local machine failure.
@@ -184,14 +190,32 @@ there are now three relevant splashkit-core repositories at play: splashkit-core
 fork, and your personal fork. During trimester, PRs should be made against the thoth-tech fork. The
 PR template provides a framework for how to structure the associated PR documentation.
 
+The following guide details how to create PRs for the SplashKit Website. The same instructions can
+be used for splashkit-core by simply changing the repository name:
+[How to Create a Pull Request](https://thoth-tech.netlify.app/products/splashkit/splashkit-website/onboarding/03-pull-request).
+
 ### Responding to Peer Reviews
 
 If changes are requested during a PR review, pushing further commits to the same branch will
 automatically be added to the PR.
 
+### Performing Peer Reviews
+
+A critical component to SplashKit development is the process of reviewing your peers' PRs and
+providing contructive feedback. This process has been detailed in the following guide:
+[A Guide to Doing Peer Reviews](https://thoth-tech.netlify.app/products/splashkit/splashkit-website/onboarding/05-peer-review)
+
+### Planner Board
+
+The planner board is used to coordinate tasks while they are being completed and reviewed. The
+following guide details the procedure and ettique which is expected while using the planner board:
+[Planner Board Ettiquete](https://thoth-tech.netlify.app/products/splashkit/splashkit-website/onboarding/07-planner-board)
+
 ## Troubleshooting
 
-Solutions for common issues can be found below.
+Solutions for common issues can be found below. Be sure to also check the following page for
+help troubleshooting:
+[Guide to resolving Common Issues](https://thoth-tech.netlify.app/products/splashkit/splashkit-website/onboarding/02-troubleshooting)  
 
 ### Empty Translator folder
 
