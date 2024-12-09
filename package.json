@@ -21,7 +21,8 @@
     "sharp": "^0.32.3",
     "starlight": "^0.3.9",
     "starlight-blog": "^0.4.0",
-    "starlight-links-validator": "^0.12.3"
+    "starlight-links-validator": "^0.12.3",
+    "vanilla-cookieconsent": "^3.0.1"
   },
   "devDependencies": {
     "markdownlint": "^0.31.1",
