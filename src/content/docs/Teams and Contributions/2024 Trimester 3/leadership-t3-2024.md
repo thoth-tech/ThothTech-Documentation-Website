@@ -2,9 +2,10 @@
 title: Leadership T2 2024
 ---
 
-### Company Director
+### Company Board
 
-- Andrew Cain - Director / Productor Owner (OnTrack & SplashKit)
+- Farah Farizi - Company Director
+- Andrew Cain - Product Owner (OnTrack & SplashKit)
 
 ### Product Mentors
 
@@ -13,15 +14,17 @@ title: Leadership T2 2024
 
 ### Student Leadership
 
-- Jake Mansfield - Student Lead | OnTrack CourseFlow Development
-- Jack Carroll - Student Lead | OnTrack JPLag Implementation
-- Atharv Bhandare - Junior Leader | OnTrack JPLag Implementation
-- Ivan Justin - Junior Leader | OnTrack FrontEnd Migration
-- Jonathan Tynan - Student Lead | SplashKit Expansion & Tutorials
-- Oscar Harris - Student Lead | SplashKit Games Development & Design
-- Hayley Hughes - Student Lead | SplashKit Expansion & Arcade Machines
-- Shaun Ratcliff - Junior Leader | SplashKit Website & Tutorials
-- Brianna Laird - Junior Leader | SplashKit Tutorials & Expansion
+- Tan Tai Nguyen – Senior Leader (OnTrack)
+- Brianna Laird – Senior Leader (SplashKit)
+- Shaun Ratcliff – Senior Leader (SplashKit)
+- Eswar Sivan Sethu – Senior Leader (SplashKit)
+- Aditya Tomer – Junior Leader (OnTrack)
+- Ashwini Deore – Junior Leader (OnTrack)
+- Hirdyansh Dudi – Junior Leader (OnTrack)
+- Shounak Bhalerao – Junior Leader (OnTrack)
+- Rachel Chu – Junior Leader (SplashKit)
+- Ethan Rin – Junior Leader (SplashKit)
+- Vishnu Vengadeswaran – Junior Leader (SplashKit)
 
 ## Roles and Responsibilities
 
