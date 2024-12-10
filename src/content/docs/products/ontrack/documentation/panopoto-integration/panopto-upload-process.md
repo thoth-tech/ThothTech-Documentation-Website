@@ -41,12 +41,12 @@ The session creation process is triggered by sending a POST request to the `sess
   }
   ```
 ## Step 2: Upload Video via Multipart Upload
-Panopto supports multipart uploads for large video files. This step uploads the video in parts to the upload target specified in the session creation response.
+Panopto supports multipart uploads for large video files. This step uploads the video in parts to the ```upload target``` specified in the session creation response.
 
 #### 1. Initiate Multipart Upload:
-- Get the Upload URL: After creating a session, extract the UploadTarget URL from the session creation response. This URL specifies where the video should be uploaded.
+- Get the Upload URL: After creating a session, extract the ```UploadTarget``` URL from the session creation response. This URL specifies where the video should be uploaded.
 
-- Set Up AWS SDK (boto3): Even though Panopto doesn’t require AWS credentials, we use AWS SDK to handle the multipart upload. Initialise the SDK with dummy credentials (to bypass authentication but still use the multipart upload logic).
+- Set Up AWS SDK (boto3): Even though Panopto doesn’t require AWS credentials, use AWS SDK to handle the multipart upload. Initialise the SDK with dummy credentials (to bypass authentication but still use the multipart upload logic).
 
 ```ruby
 # Extract the Upload Target URL from the session creation response
@@ -67,7 +67,7 @@ upload_id = mpu['UploadId']
 ### 2. Upload Parts:
 - Split the Video File: Split the video into parts, each no larger than 5MB. You can adjust the part size as needed.
 
-- Upload Each Part: Iterate over the parts and upload them using the AWS SDK. Track the ETag for each part.
+- Upload Each Part: Iterate over the parts and upload them using the AWS SDK.
 
 ```ruby
 # Read the video file in 5MB chunks and upload parts
@@ -86,7 +86,7 @@ File.open('video_path.mp4', 'rb') do |file|
 end
 ```
 ### 3. Complete Multipart Upload:
-- Finalise the Upload: Once all parts have been uploaded, call the complete_multipart_upload method to combine the parts into one video file in Panopto.
+- Finalise the Upload: Once all parts have been uploaded, call the ``complete_multipart_upload`` method to combine the parts into one video file in Panopto.
 
 ```ruby
 # After all parts have been uploaded, complete the upload
@@ -120,7 +120,7 @@ Copy code
 </Session>
 ```
 ### 2. Upload the Manifest File:
-- The manifest file is uploaded in the same way as the video parts, using multipart upload.
+- The manifest file is uploaded in the same way as the video parts, using `multipart upload`.
 ``` Example Upload (Using AWS SDK):
 ruby
 
@@ -161,7 +161,7 @@ RestClient.put(
 )
 ```
 ## 2. Monitor the Upload Status:
-- Check for Processing: After finalising, periodically check the session state to ensure it is processed and completed.
+- Check for Processing: After finalising, periodically check the `session state` to ensure it is processed and completed.
 
 Polling Example:
 
