@@ -32,7 +32,7 @@ CookieConsent.run({
             en: {
                 consentModal: {
                     title: "Your Privacy Matters to Us",
-                    description: "We use cookies to enhance your experience and gather anonymised analytics data to improve our website. We are a non-profit open-source project and will never use your data for advertising or sell it to third parties. For more details, see our <a href=\"#privacy-policy\">Privacy Policy</a>.",
+                    description: "We use cookies to enhance your experience and gather anonymised analytics data to improve our website. We are a non-profit open-source project and will never use your data for advertising or sell it to third parties. For more details, see our <a href=\"/Resources/privacy-policy\">Privacy Policy</a>.",
                     acceptAllBtn: "Accept All Cookies",
                     acceptNecessaryBtn: "Reject Non-Essential Cookies",
                     showPreferencesBtn: "Manage Preferences",
@@ -71,5 +71,5 @@ CookieConsent.run({
             }
         }
     },
-    disablePageInteraction: true
+    disablePageInteraction: false
 });
