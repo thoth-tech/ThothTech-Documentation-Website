@@ -1,3 +1,8 @@
+import 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.umd.js';
+
+// Enable dark mode
+document.documentElement.classList.add('cc--darkmode');
+
 CookieConsent.run({
     guiOptions: {
         consentModal: {
@@ -60,7 +65,7 @@ CookieConsent.run({
                         },
                         {
                             title: "More Information",
-                            description: "For questions about our cookie policy or how your data is used, please <a class=\"cc__link\" href=\"#src\content\docs\Resources\privacy-policy.mdx\">contact us</a>."
+                            description: "For questions about our cookie policy or how your data is used, please <a class=\"cc__link\" href=\"#privacy-policy\">contact us</a>."
                         }
                     ]
                 }
