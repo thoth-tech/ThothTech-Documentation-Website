@@ -46,7 +46,7 @@ Panopto supports multipart uploads for large video files. This step uploads the 
 #### 1. Initiate Multipart Upload:
 - Get the Upload URL: After creating a session, extract the ```UploadTarget``` URL from the session creation response. This URL specifies where the video should be uploaded.
 
-- Set Up AWS SDK (boto3): Even though Panopto doesn’t require AWS credentials, use AWS SDK to handle the multipart upload. Initialise the SDK with dummy credentials (to bypass authentication but still use the multipart upload logic).
+- Set Up AWS SDK : Even though Panopto doesn’t require AWS credentials, use AWS SDK to handle the multipart upload. Initialise the SDK with dummy credentials (to bypass authentication but still use the multipart upload logic).
 
 ```ruby
 # Extract the Upload Target URL from the session creation response
