@@ -1,7 +1,7 @@
-# Panopto Video Upload Process Guide
+# Panopto Video Upload Process
 
 ## Overview
-This document provides a step-by-step guide on how to upload videos to Panopto using the Panopto REST API. The process includes creating a session, uploading the video file using multipart upload, creating a manifest, and finalising the upload.
+This document outlines key information about the process of uploading videos to Panopto using the Panopto REST API. While this isn't a comprehensive guide, it highlights the steps involved in creating a session, performing a multipart upload of the video file, creating the manifest, and finalising the upload. This serves as an informational resource for implementing the video upload functionality in the future. Additional research and context will be needed to fully integrate these steps.
 
 ---
 
