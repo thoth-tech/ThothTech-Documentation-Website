@@ -48,8 +48,6 @@ Panopto supports multipart uploads for large video files. This step uploads the 
 
 - Set Up AWS SDK (boto3): Even though Panopto doesn’t require AWS credentials, we use AWS SDK to handle the multipart upload. Initialise the SDK with dummy credentials (to bypass authentication but still use the multipart upload logic).
 
-Sample Code:
-
 ```ruby
 # Extract the Upload Target URL from the session creation response
 upload_target = "https://deakin.au.panopto.com/Panopto/Upload/..."
@@ -67,11 +65,9 @@ mpu = s3.create_multipart_upload(Bucket: 'upload-bucket', Key: 'video-file.mp4')
 upload_id = mpu['UploadId']
 ```
 ### 2. Upload Parts:
-Split the Video File: Split the video into parts, each no larger than 5MB. You can adjust the part size as needed.
+- Split the Video File: Split the video into parts, each no larger than 5MB. You can adjust the part size as needed.
 
-Upload Each Part: Iterate over the parts and upload them using the AWS SDK. Track the ETag for each part.
-
-Sample Code:
+- Upload Each Part: Iterate over the parts and upload them using the AWS SDK. Track the ETag for each part.
 
 ```ruby
 # Read the video file in 5MB chunks and upload parts
@@ -91,7 +87,6 @@ end
 ```
 ### 3. Complete Multipart Upload:
 - Finalise the Upload: Once all parts have been uploaded, call the complete_multipart_upload method to combine the parts into one video file in Panopto.
-Sample Code:
 
 ```ruby
 # After all parts have been uploaded, complete the upload
@@ -102,4 +97,81 @@ s3.complete_multipart_upload(
   multipart_upload: { parts: parts_metadata }  # Metadata about each uploaded part
 )
 ```
+## Step 3: Create and Upload the Manifest File
+Once the video is uploaded, the next step is to create the manifest file. The manifest provides metadata for the video, including its title, description, and the file name.
 
+### 1. Create the Manifest File:
+- The manifest file is an XML file that contains the following key elements:
+
+```xml
+Copy code
+<?xml version="1.0" encoding="utf-8"?>
+<Session xmlns="http://tempuri.org/UniversalCaptureSpecification/v1">
+  <Title>{Video_Title}</Title>
+  <Description>{Video_Description}</Description>
+  <Date>{Current_Date}</Date>
+  <Videos>
+    <Video>
+      <Start>PT0S</Start>
+      <File>{Video_File_Name}</File>
+      <Type>Primary</Type>
+    </Video>
+  </Videos>
+</Session>
+```
+### 2. Upload the Manifest File:
+- The manifest file is uploaded in the same way as the video parts, using multipart upload.
+``` Example Upload (Using AWS SDK):
+ruby
+
+s3 = Aws::S3::Client.new(
+  endpoint: upload_target,
+  region: 'us-east-1',
+  access_key_id: 'dummy',
+  secret_access_key: 'dummy'
+)
+
+s3.put_object(bucket: bucket_name, key: manifest_key, body: File.read(manifest_file))
+```
+## Step 4: Finalise the Upload
+After uploading the video and the manifest file, the final step is to finalise the session marking it as complete.
+
+### 1. Send the PUT Request to Finalise Session:
+API Endpoint:
+
+```ruby
+PUT https://{server}/Panopto/PublicAPI/REST/sessionUpload/{session_id}
+```
+Payload:
+
+```ruby
+
+{
+  "State": 1,  # Mark as completed
+  "FolderId": "{folder_id}"
+}
+```
+Example Code:
+
+```ruby
+RestClient.put(
+  "https://#{@server}/Panopto/PublicAPI/REST/sessionUpload/#{@session_id}",
+  { "State" => 1, "FolderId" => @folder_id }.to_json,
+  { content_type: :json, accept: :json, authorization: "Bearer #{@access_token}" }
+)
+```
+## 2. Monitor the Upload Status:
+- Check for Processing: After finalising, periodically check the session state to ensure it is processed and completed.
+
+Polling Example:
+
+```ruby
+
+while true
+  sleep(5)  # Wait a few seconds before checking  status
+  session = RestClient.get("https://#{@server}/Panopto/PublicAPI/REST/sessionUpload/#{@session_id}")
+  if JSON.parse(session.body)["State"] == 4  # State 4 means processing complete
+    break
+  end
+end
+```
