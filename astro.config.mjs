@@ -26,22 +26,38 @@ export default defineConfig({
         },
         // Google Analytics inline configuration
         {
-          tag: "script",
+          tag: 'script',
+          type: 'text/partytown',
+          innerHTML: 
+          `window.dataLayer = window.dataLayer || [];
+            function gtag() {
+              dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-D62C4YT9KZ");`,
+        },
+        // CookieConsent stylesheet
+        {
+          tag: 'link',
           attrs: {
-            type: "text/partytown",
+            rel: 'stylesheet',
+            href: 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css',
           },
-          content: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-D62C4YT9KZ');
-            `,
+        },
+        // CookieConsent configuration script
+        {
+          tag: 'script',
+          attrs: {
+            type: 'module',
+            src: '/cookieconsent-config.js', // Ensure this script exists in the `public/` folder
+          },
         },
       ],
       plugins: [
         starlightLinksValidator({
           errorOnRelativeLinks: true,
         }),
+        
       ],
       customCss: ["./src/styles/custom.css"],
       social: {
