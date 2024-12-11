@@ -8,32 +8,6 @@ import { Tabs, TabItem } from "@astrojs/starlight/components";
 import { Code } from "@astrojs/starlight/components";
 import { Steps } from "@astrojs/starlight/components";
 
-<script>{`
-// Find and fix up the URL for downloading and running the script
-
-// This is a hack, but not sure of a better way to make sure
-// the link is always valid across different deployments.
-// If this can be improved, please let me know, or fix it! :D
-window.onload = (e) => {
-    const targetLink = 'https://raw.githubusercontent.com/thoth-tech/ThothTech-Documentation-Website/refs/heads/main/public/scripts/MSTeamsPlannerExportScript.py';
-    const fixedLink = new URL('../../', window.location.href).href + "public/scripts/MSTeamsPlannerExportScript.py";
-
-    // Fix the code
-    document.querySelectorAll('span').forEach(span => {
-        if (span.textContent.includes(targetLink) && span.children.length == 0) {
-            span.textContent = span.textContent.replace(targetLink, fixedLink);
-        }
-    });
-
-    // Fix the 'copy to clipboard' code
-    document.querySelectorAll('button[data-code]').forEach(button => {
-        if (button.dataset.code.includes(targetLink)) {
-            button.dataset.code = button.dataset.code.replace(targetLink, fixedLink);
-        }
-    });
-};
-`}</script>
-
 To help with assembling the company reports/handover documents, we have a Python script that fetches
 the current tasks from the MS Teams Planner board and exports them as a `csv`, for inclusion as a
 table in the document. It uses the Microsoft Graph API to access the data.
