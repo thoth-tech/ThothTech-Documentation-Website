@@ -222,3 +222,58 @@ img.ontrack {
   object-fit: scale-down;
   margin: 30px;
 }
+
+/* Better table styling */
+.sl-markdown-content table {
+  border-radius: 0.5rem;
+  box-shadow: var(--sl-shadow-md);
+  border: 1px solid var(--sl-color-gray-5);
+  text-align: left;
+
+  tr:first-child th {
+    background-color: var(--sl-color-gray-6);
+  }
+
+  td,
+  th {
+    border-right: 1px solid var(--sl-color-gray-5);
+  }
+
+  td:first-child,
+  th:first-child {
+    padding-left: 15px;
+  }
+
+  td:last-child,
+  th:last-child {
+    border-right: none;
+    padding-right: 15px;
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+
+  ul {
+    padding-left: 15px;
+  }
+}
+
+/* Table widths in company submission docs */
+.leadership-table table {
+  th:first-of-type {
+    width: 10%;
+  }
+
+  th:nth-of-type(2) {
+    width: 30%;
+  }
+
+  th:nth-of-type(3) {
+    width: 30%;
+  }
+
+  th:nth-of-type(4) {
+    width: 30%;
+  }
+}

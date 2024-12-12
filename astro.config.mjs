@@ -6,17 +6,22 @@ import partytown from '@astrojs/partytown';
 // https://astro.build/config
 export default defineConfig({
   integrations: [
+    partytown({
+      config: {
+        forward: ["dataLayer.push", "gtag"], // Forward both for compatibility
+      },
+    }),
     starlight({
       title: "Thoth Tech",
       favicon: "/favicon.svg",
       head: [
         // Google Analytics script tag
         {
-          tag: 'script',
+          tag: "script",
           attrs: {
-            type: 'text/partytown',
-            async: true,
+            type: "text/partytown",
             src: 'https://www.googletagmanager.com/gtag/js?id=G-D62C4YT9KZ',
+            async: true,
           },
         },
         // Google Analytics inline configuration
@@ -143,11 +148,6 @@ export default defineConfig({
         },
       ],
     }),
-    partytown({
-      config: {
-        forward: ["dataLayer.push"]
-      }
-    })
   ],
   // Image processing
   image: {
