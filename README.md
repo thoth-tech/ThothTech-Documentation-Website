@@ -46,6 +46,12 @@ request:
    npm run lint
    ```
 
+3. **Build the website (and check links are valid)**:
+
+   ```shell
+   npm run build
+   ```
+
 ## Project Structure
 
 This website is built with Astro and uses the **Starlight Starter Kit** as a foundation. Below is a
