@@ -22,7 +22,37 @@ CookieConsent.run({
         necessary: {
             readOnly: true
         },
-        analytics: {},
+        analytics: {
+            services: {
+                ga4: {
+                    label: 'Google Analytics 4',
+                    onAccept: () => {
+                        console.log("Analytics consent granted");
+                        window.gtag('consent', 'update', {
+                            ad_storage: 'granted',
+                            ad_user_data: 'granted',
+                            ad_personalization: 'granted',
+                            analytics_storage: 'granted',
+                        });
+                    },
+                    onReject: () => {
+                        console.log("Analytics consent denied");
+                        window.gtag('consent', 'update', {
+                            ad_storage: 'denied',
+                            ad_user_data: 'denied',
+                            ad_personalization: 'denied',
+                            analytics_storage: 'denied',
+                        });
+                    },
+                    cookies: [
+                        {
+                            name: /^_ga/,
+                            path: '/',
+                        },
+                    ],
+                },
+            },
+        },
         marketing: {}
     },
     language: {
@@ -32,7 +62,7 @@ CookieConsent.run({
             en: {
                 consentModal: {
                     title: "Your Privacy Matters to Us",
-                    description: "We use cookies to enhance your experience and gather anonymised analytics data to improve our website. We are a non-profit open-source project and will never use your data for advertising or sell it to third parties. For more details, see our <a href=\"/Resources/privacy-policy\">Privacy Policy</a>.",
+                    description: "We use cookies to enhance your experience and gather anonymised analytics data to improve our website. We are a non-profit open-source project and will never use your data for advertising or sell it to third parties. For more details, see our <a href=\"/resources/privacy-policy\">Privacy Policy</a>.",
                     acceptAllBtn: "Accept All Cookies",
                     acceptNecessaryBtn: "Reject Non-Essential Cookies",
                     showPreferencesBtn: "Manage Preferences",
@@ -64,7 +94,7 @@ CookieConsent.run({
                         },
                         {
                             title: "More Information",
-                            description: "Please see our <a class=\"cc__link\" href=\"/Resources/privacy-policy\">privacy policy</a> for more information."
+                            description: "Please see our <a class=\"cc__link\" href=\"/resources/privacy-policy\">privacy policy</a> for more information."
                         }
                     ]
                 }
