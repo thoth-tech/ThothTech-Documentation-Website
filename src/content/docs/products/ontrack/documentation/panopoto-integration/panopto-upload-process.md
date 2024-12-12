@@ -46,41 +46,54 @@ Panopto supports multipart uploads for large video files. This step uploads the 
 #### 1. Initiate Multipart Upload:
 - Get the Upload URL: After creating a session, extract the ```UploadTarget``` URL from the session creation response. This URL specifies where the video should be uploaded.
 
-- Set Up AWS SDK : Even though Panopto doesn’t require AWS credentials, use AWS SDK to handle the multipart upload. Initialise the SDK with dummy credentials (to bypass authentication but still use the multipart upload logic).
+- Use `Net::HTTP` and `URI` for Multipart Upload: Use Ruby's standard libraries to handle the multipart upload. The following example demonstrates how to upload a file in parts using `Net::HTTP:`
 
 ```ruby
+
 # Extract the Upload Target URL from the session creation response
 upload_target = "https://deakin.au.panopto.com/Panopto/Upload/..."
 
-# Set up AWS SDK for multipart upload
-s3 = Aws::S3::Client.new(
-  endpoint: upload_target,
-  region: 'us-east-1',
-  access_key_id: 'dummy',
-  secret_access_key: 'dummy'
-)
 
-# Initiate multipart upload
-mpu = s3.create_multipart_upload(Bucket: 'upload-bucket', Key: 'video-file.mp4')
-upload_id = mpu['UploadId']
+# Define the chunk size for multipart upload (5MB per part)
+chunk_size = 5 * 1024 * 1024
+
+# Initialise  upload process 
+uri = URI(upload_target)
+request = Net::HTTP::Post.new(uri)
+request['Content-Type'] = 'multipart/form-data'
+
+# Read and upload the video file in chunks
+while chunk = file.read(chunk_size)
+  form_data = [['file', chunk]]
+  request.set_form form_data, 'multipart/form-data'
+
+  response = Net::HTTP.start(uri.hostname, uri.port, use_ssl: true) do |http|
+    http.request(request)
+  end
+
+  # Check the response (e.g., for successful upload)
+  puts response.body
+end
 ```
 ### 2. Upload Parts:
 - Split the Video File: Split the video into parts, each no larger than 5MB. You can adjust the part size as needed.
 
-- Upload Each Part: Iterate over the parts and upload them using the AWS SDK.
+- Upload Each Part: Iterate over the parts and upload them using `Net::HTTP:`
 
 ```ruby
-# Read the video file in 5MB chunks and upload parts
+# Read video file in 5MB chunks and upload each part
 File.open('video_path.mp4', 'rb') do |file|
   part_number = 1
   while (chunk = file.read(5 * 1024 * 1024))  # 5MB per part
-    s3.upload_part(
-      bucket: 'upload-bucket',
-      key: 'test-video.mp4',
-      part_number: part_number,
-      upload_id: upload_id,
-      body: chunk
-    )
+    form_data = [['file', chunk]]
+    request.set_form form_data, 'multipart/form-data'
+
+    response = Net::HTTP.start(uri.hostname, uri.port, use_ssl: true) do |http|
+      http.request(request)
+    end
+
+    # Handle response
+    puts "Part #{part_number} uploaded: #{response.body}"
     part_number += 1
   end
 end
@@ -89,13 +102,15 @@ end
 - Finalise the Upload: Once all parts have been uploaded, call the ``complete_multipart_upload`` method to combine the parts into one video file in Panopto.
 
 ```ruby
-# After all parts have been uploaded, complete the upload
-s3.complete_multipart_upload(
-  bucket: 'upload-bucket',
-  key: 'video-file.mp4',
-  upload_id: upload_id,
-  multipart_upload: { parts: parts_metadata }  # Metadata about each uploaded part
-)
+# Finalise the upload once all parts are uploaded
+complete_upload_uri = URI("#{upload_target}/complete")
+complete_request = Net::HTTP::Post.new(complete_upload_uri)
+complete_request['Content-Type'] = 'application/json'
+
+# Send the finalisation request
+response = Net::HTTP.start(complete_upload_uri.hostname, complete_upload_uri.port, use_ssl: true) do |http|
+  http.request(complete_request)
+end
 ```
 ## Step 3: Create and Upload the Manifest File
 Once the video is uploaded, the next step is to create the manifest file. The manifest provides metadata for the video, including its title, description, and the file name.
@@ -121,17 +136,24 @@ Copy code
 ```
 ### 2. Upload the Manifest File:
 - The manifest file is uploaded in the same way as the video parts, using `multipart upload`.
-``` Example Upload (Using AWS SDK):
-ruby
 
-s3 = Aws::S3::Client.new(
-  endpoint: upload_target,
-  region: 'us-east-1',
-  access_key_id: 'dummy',
-  secret_access_key: 'dummy'
-)
+```ruby
+manifest_file = 'upload_manifest_generated.xml'
+file = File.open(manifest_file, 'rb')
 
-s3.put_object(bucket: bucket_name, key: manifest_key, body: File.read(manifest_file))
+# Prepare the POST request for multipart upload
+request = Net::HTTP::Post.new(uri)
+request['Content-Type'] = 'multipart/form-data'
+
+# Upload the manifest in chunks
+while chunk = file.read(5 * 1024 * 1024)  # 5MB per part
+  form_data = [['file', chunk]]
+  request.set_form form_data, 'multipart/form-data'
+
+  # Send the request to upload the part
+  response = Net::HTTP.start(uri.hostname, uri.port, use_ssl: true) do |http|
+    http.request(request)
+  end
 ```
 ## Step 4: Finalise the Upload
 After uploading the video and the manifest file, the final step is to finalise the session marking it as complete.
