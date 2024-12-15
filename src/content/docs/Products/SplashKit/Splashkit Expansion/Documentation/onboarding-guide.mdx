@@ -1,7 +1,7 @@
 ---
 title: SplashKit Expansion Onboarding Guide
 sidebar:
-  label: SplashKit Expansion Onboarding Guide
+  label: SK Expansion Onboarding Guide
   order: 1
 ---
 
@@ -61,14 +61,14 @@ which can be adjusted for splashkit-core by substituting repository names:
 
 Open a WSL terminal and change directory to your home with:
 
-```sh
+```shell
 cd
 ```
 
 Note that this guide clones the repository to the home directory, but feel free to move its
 location. Now initiate the clone process of your fork with:
 
-```sh
+```shell
 git clone --recursive -j2 https://github.com/{user name}/splashkit-core.git
 ```
 
@@ -85,26 +85,25 @@ It is now time to start fixing bugs and adding functionality to splashkit-core.
 When modifying the repository, changes should be logically grouped together onto separate branches.
 To create a branch, open a WSL terminal and navigate to the `splashkit-core` folder with:
 
-```sh
-cd
+```shell
 cd splashkit-core
 ```
 
 Check the current branch with:
 
-```sh
+```shell
 git branch
 ```
 
 Create a new branch using the current branch as a base:
 
-```sh
+```shell
 git branch {new branch name}
 ```
 
 Swap to new branch with:
 
-```sh
+```shell
 git checkout {new branch name}
 ```
 
@@ -117,7 +116,7 @@ library. Instead, two programs are generated which can be configured to test its
 `sktest` and `skunit_tests`. They are built with CMake using a preconfigured `CMakeLists.txt` file.
 Open a WSL terminal and enter:
 
-```sh
+```shell
 cd
 cd splashkit-core/projects/cmake
 cmake -G "Unix Makefiles" .
@@ -131,20 +130,20 @@ The associated macOS and Linux commands can be found here:
 
 To run the test programs, open a WSL terminal and enter:
 
-```sh
+```shell
 cd
 cd splashkit-core/bin
 ```
 
 Then for sktest:
 
-```sh
+```shell
 ./sktest
 ```
 
 Or for skunit_tests:
 
-```sh
+```shell
 ./skunit_tests
 ```
 
@@ -164,7 +163,7 @@ should be followed to improve readability and tracing of errors.
 
 If a change is made to the code, the test programs need to be rebuilt. In a WSL terminal enter:
 
-```sh
+```shell
 cd
 cd splashkit-core/projects/cmake
 make
@@ -172,7 +171,7 @@ make
 
 If any files were created or deleted, the CMake files need to be regenerated. In that case use:
 
-```sh
+```shell
 cd
 cd splashkit-core/projects/cmake
 cmake -G "Unix Makefiles" .
@@ -227,7 +226,7 @@ troubleshooting:
 If the translator folder is empty, it may be due to an issue with the submodules. In an WSL
 terminal, enter the following:
 
-```sh
+```shell
 cd
 cd splashkit-core
 git submodule update --init --recursive
