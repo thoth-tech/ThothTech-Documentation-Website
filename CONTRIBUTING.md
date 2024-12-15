@@ -94,7 +94,7 @@ syllables per word. For more information, see
    [official instructions to install nvm](https://github.com/nvm-sh/nvm#installing-and-updating), a
    Node version manager. Then, run the following to install and use the repository's Node version:
 
-   ```sh
+   ```shell
    nvm install
    nvm use
    ```
@@ -104,7 +104,7 @@ syllables per word. For more information, see
 
 1. Install all dependencies
 
-   ```sh
+   ```shell
    npm install
    ```
 
@@ -124,7 +124,7 @@ syllables per word. For more information, see
 
 1. Install curl
 
-   ```sh
+   ```shell
    sudo apt-get install curl
    ```
 
@@ -132,7 +132,7 @@ syllables per word. For more information, see
    [official instructions to install nvm](https://github.com/nvm-sh/nvm#installing-and-updating), a
    Node version manager. Then, run the following to install and use the repository's Node version:
 
-   ```sh
+   ```shell
    nvm install
    nvm use
    ```
@@ -142,7 +142,7 @@ syllables per word. For more information, see
 
 1. Install all dependencies
 
-   ```sh
+   ```shell
    npm install
    ```
 
