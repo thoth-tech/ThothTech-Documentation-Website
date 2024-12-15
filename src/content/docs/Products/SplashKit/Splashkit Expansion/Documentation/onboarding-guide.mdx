@@ -14,20 +14,20 @@ Feel free to skip steps which you have already completed or are familiar with.
 
 WSL is a built-in Linux distribution virtual machine for Windows. splashkit-core will be installed
 to the Linux distribution. The official SplashKit installation instructions can be found here:
-[Windows (WSL) Installation Overview](https://splashkit.io/installation/windows-wsl).
-This guide has been tested with the default Ubuntu distribution, but others may also work.
+[Windows (WSL) Installation Overview](https://splashkit.io/installation/windows-wsl). This guide has
+been tested with the default Ubuntu distribution, but others may also work.
 
 ### Installing Visual Studio Code
 
-Once WSL has been installed to Windows, Visual Studio Code needs to be installed to WSL.
-The SplashKit documentation explains the process:
+Once WSL has been installed to Windows, Visual Studio Code needs to be installed to WSL. The
+SplashKit documentation explains the process:
 [Install Visual Studio Code](https://splashkit.io/installation/windows-wsl/step-3)
 
 ### Installing Git
 
 Now Git must be installed to WSL. Follow the Microsoft installation instructions:
-[Install Git](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-git).
-GitHub's Git Cheat Sheet is useful for both installation and usage of Git:
+[Install Git](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-git). GitHub's Git Cheat
+Sheet is useful for both installation and usage of Git:
 [GitHub Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
 ### Installing Windows Terminal (optional)
@@ -65,16 +65,16 @@ Open a WSL terminal and change directory to your home with:
 cd
 ```
 
-Note that this guide clones the repository to the home directory, but feel free to move its location.
-Now initiate the clone process of your fork with:
+Note that this guide clones the repository to the home directory, but feel free to move its
+location. Now initiate the clone process of your fork with:
 
 ```sh
 git clone --recursive -j2 https://github.com/{user name}/splashkit-core.git
 ```
 
-splashkit-core contains multiple submodules (separate repositories which splashkit-core depends upon).
-The `--recursive` argument ensures that the submodules are also downloaded when calling clone. Wait
-for the download to complete before continuing to the next step.
+splashkit-core contains multiple submodules (separate repositories which splashkit-core depends
+upon). The `--recursive` argument ensures that the submodules are also downloaded when calling
+clone. Wait for the download to complete before continuing to the next step.
 
 ## Contributing to splashkit-core
 
@@ -156,9 +156,9 @@ tests, modify one or more of the files such as `test_animation.cpp`.
 `skunit_tests` is built with the .cpp files from `~/splashkit-core/coreskd/src/test/unit_tests/`.
 When it runs, all unit tests from all files in this folder are executed. Additional files can be
 added to this folder if necessary. If adding a new file, copy the structure from one of the existing
-unit test files. Critically, `#include "catch.hpp"` must be present in the file for it to be compiled
-into `skunit_tests`. Beyond that, the hierarchy of, `TEST_CASE > SECTION > ASSERTION` should be
-followed to improve readability and tracing of errors.
+unit test files. Critically, `#include "catch.hpp"` must be present in the file for it to be
+compiled into `skunit_tests`. Beyond that, the hierarchy of, `TEST_CASE > SECTION > ASSERTION`
+should be followed to improve readability and tracing of errors.
 
 ### Testing Changes
 
@@ -181,17 +181,19 @@ make
 
 ### Documenting Changes
 
-Local changes can be tested by building and running the test programs. However, once changes are to be
-submitted for review, they need to be staged, committed and pushed. It is good practice to perform
-multiple smaller commits with meaningful descriptions rather than a single monolithic commit. In
-addition, pushing commits to GitHub provides a layer of backup in case of local machine failure.
+Local changes can be tested by building and running the test programs. However, once changes are to
+be submitted for review, they need to be staged, committed and pushed. It is good practice to
+perform multiple smaller commits with meaningful descriptions rather than a single monolithic
+commit. In addition, pushing commits to GitHub provides a layer of backup in case of local machine
+failure.
 
 ### Creating a Pull Request
 
 Once you have completed work on a particular branch, a pull request (PR) can be made. At this point
-there are now three relevant splashkit-core repositories at play: splashkit-core itself, thoth-tech’s
-fork, and your personal fork. During trimester, PRs should be made against the thoth-tech fork. The
-PR template provides a framework for how to structure the associated PR documentation.
+there are now three relevant splashkit-core repositories at play: splashkit-core itself,
+thoth-tech’s fork, and your personal fork. During trimester, PRs should be made against the
+thoth-tech fork. The PR template provides a framework for how to structure the associated PR
+documentation.
 
 The following guide details how to create PRs for the SplashKit Website. The same instructions can
 be used for splashkit-core by simply changing the repository name:
@@ -216,9 +218,9 @@ following guide details the procedure and etiquette which is expected while usin
 
 ## Troubleshooting
 
-Solutions for common issues can be found below. Be sure to also check the following page for
-help troubleshooting:
-[Guide to resolving Common Issues](https://thoth-tech.netlify.app/products/splashkit/splashkit-website/onboarding/02-troubleshooting)  
+Solutions for common issues can be found below. Be sure to also check the following page for help
+troubleshooting:
+[Guide to resolving Common Issues](https://thoth-tech.netlify.app/products/splashkit/splashkit-website/onboarding/02-troubleshooting)
 
 ### Empty Translator folder
 
