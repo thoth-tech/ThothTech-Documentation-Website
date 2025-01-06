@@ -277,3 +277,45 @@ img.ontrack {
     width: 30%;
   }
 }
+.steps {
+  list-style: none;
+  counter-reset: step;
+  padding-left: 0;
+  margin: 2rem 0;
+}
+
+.steps > li {
+  counter-increment: step;
+  position: relative;
+  margin-bottom: 1.5rem;
+  padding-left: 2.5rem;
+}
+
+.steps > li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  background: var(--sl-color-accent-low, #f5a623);
+  color: var(--sl-color-white, #ffffff);
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.steps > li::after {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  top: 2rem;
+  width: 2px;
+  height: calc(100% - 2rem);
+  background: var(--sl-color-accent-low, #f5a623);
+}
+
+.steps > li:last-child::after {
+  display: none;
+}

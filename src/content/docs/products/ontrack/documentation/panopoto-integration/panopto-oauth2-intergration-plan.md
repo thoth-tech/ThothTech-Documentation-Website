@@ -1,3 +1,6 @@
+---
+title: "Panopto OAuth2 Integration Plan"
+---
 
 # Panopto OAuth2 Integration Guide (Updated)
 
