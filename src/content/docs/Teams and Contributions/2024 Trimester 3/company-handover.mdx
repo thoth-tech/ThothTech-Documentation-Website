@@ -672,6 +672,27 @@ repositories for the relevant teams.
   - Fixed bug in `line_intersects_rect` for lines within rectangles.
   - Corrected tangent point bug for accurate collision behavior.
 
+##### Particle System
+
+- **Dynamic Particle Emission**:  
+  Emit particles from a circular area, supporting both continuous and burst emission modes for diverse effects. Add randomness to particle size, speed, and direction for natural, less uniform effects, enhancing realism in particle-based simulations.
+
+- **Lifespan and Removal Management**:  
+  Configure individual particle lifespans in milliseconds. Automatically removes expired particles to ensure memory optimization. Detect and remove particles that move off-screen, maintaining performance without manual intervention.
+
+- **Customizable Particle Appearance**:  
+  Define static or varying particle sizes and colors, including support for gradient transitions over the particle’s lifetime. Smoothly fade particle opacity over time, creating elegant effects like smoke dispersal or spark dimming. Specify particle rendering order to prevent visual interference with UI or background elements.
+
+- **Motion and Dynamics**:  
+  Control particle speed and direction using an adjustable emission angle range. Simulate gravity or deceleration for lifelike motion dynamics, such as falling leaves or drifting snow.
+
+- **Emitter and System Management**:  
+  Dynamically reposition emitters, supporting static or relative positioning for moving objects (e.g., following a character). Manage multiple independent particle systems simultaneously, each with unique configurations and behaviors. Optimize performance by updating all particles in a system collectively.
+
+- **Bug Fixes**:  
+  Resolved issues with **particle lifespan exceeding bounds**, ensuring consistent removal at the correct time. Fixed **off-screen particle cleanup** to prevent memory leaks. Addressed visual glitches related to overlapping particles in layered rendering.
+
+
 ##### Code Quality and Performance Enhancements
 
 - **Extensive Function Overloads**:  
@@ -989,6 +1010,7 @@ repositories for the relevant teams.
 | Daniel Garcia Vargas                   | Main Contributor | Draw Circle - Graphics - Usage Example Creation                                                                      | https://github.com/thoth-tech/splashkit.io-starlight/pull/237          |
 | Daniel Garcia Vargas                   | Reviewer         | Improve run/compile program notifications                                                                            | https://github.com/thoth-tech/SplashkitOnline/pull/99                  |
 | Eswar Sivan Sethu                      | Main Contributor | Particle System Frontend                                                                                             | https://github.com/splashkit/splashkit-core/pull/194                   |
+| Eswar Sivan Sethu                      | Main Contributor | Particle System Frontend                                                                                             | https://github.com/splashkit/splashkit-core/pull/202                   |
 | Eswar Sivan Sethu                      | Reviewer         | Draw Rectangle on Window - Graphics - Usage Example Creation                                                         | https://github.com/thoth-tech/splashkit.io-starlight/pull/253          |
 | Ethan Rin                              | Main Contributor | Language Update - Basic Blue Ellipse Usage Example                                                                   | https://github.com/thoth-tech/splashkit.io-starlight/pull/245          |
 | Ethan Rin                              | Main Contributor | Language Update - Dec to Hex Converter Usage Example                                                                 | https://github.com/thoth-tech/splashkit.io-starlight/pull/248          |
@@ -1039,7 +1061,13 @@ repositories for the relevant teams.
 | Hangyu Li                              | Main Contributor | Circle radius - Geometry - Usage Example Creation                                                                    | https://github.com/thoth-tech/splashkit.io-starlight/pull/313          |
 | Hangyu Li                              | Main Contributor | Draw Rectangle - Graphics - Usage Example Creation                                                                   | https://github.com/thoth-tech/splashkit.io-starlight/pull/272          |
 | Hangyu Li                              | Main Contributor | Point point angle - Geometry - Usage Example Creation                                                                | https://github.com/thoth-tech/splashkit.io-starlight/pull/309          |
-| Hangyu Li                              | Reviewer         | Current Clip - Graphics - Usage Example Creation                                                                     | https://github.com/thoth-tech/splashkit.io-starlight/pull/341          |
+| Hangyu Li	                             | Main Contributor	| Draw Circle on Window - Graphics - Usage Example Creation	                                                           |  https://github.com/thoth-tech/splashkit.io-starlight/pull/257          |
+| Hangyu Li	                             | Main Contributor |	Draw Rectangle - Graphics - Usage Example Creation	                                                                 | https://github.com/thoth-tech/splashkit.io-starlight/pull/272          |
+| Hangyu Li	                             | Main Contributor |	Draw Triangle - Graphics - Usage Example Creation                                                                   |	https://github.com/thoth-tech/splashkit.io-starlight/pull/274          |
+| Hangyu Li	                             | Main Contributor |	Draw Triangle on Window - Graphics - Usage Example Creation                                                         |	https://github.com/thoth-tech/splashkit.io-starlight/pull/258          |
+| Hangyu Li	                             | Main Contributor |	Text height - Graphics - Usage Example Creation                                                                     |	https://github.com/thoth-tech/splashkit.io-starlight/pull/300          |
+| Hangyu Li	                             | Main Contributor |	Text width - Graphics - Usage Example Creation                                                                      |	https://github.com/thoth-tech/splashkit.io-starlight/pull/299          |
+| Hangyu Li                              | Reviewer         |  Current Clip - Graphics - Usage Example Creation                                                                    | https://github.com/thoth-tech/splashkit.io-starlight/pull/341          |
 | Hangyu Li                              | Reviewer         | Pop Clip - Graphics - Usage Example Creation                                                                         | https://github.com/thoth-tech/splashkit.io-starlight/pull/341          |
 | Hangyu Li                              | Reviewer         | Push Clip - Graphics - Usage Example Creation                                                                        | https://github.com/thoth-tech/splashkit.io-starlight/pull/341          |
 | Hangyu Li                              | Reviewer         | Reset Clip - Graphics - Usage Example Creation                                                                       | https://github.com/thoth-tech/splashkit.io-starlight/pull/341          |
@@ -1053,10 +1081,14 @@ repositories for the relevant teams.
 | Hangyu Li                              | Reviewer         | Free Font - Graphics - Usage Example Creation                                                                        | https://github.com/thoth-tech/splashkit.io-starlight/pull/297          |
 | Hangyu Li                              | Reviewer         | Point line distance - Geometry - Usage Example Creation                                                              | https://github.com/thoth-tech/splashkit.io-starlight/pull/295          |
 | Hangyu Li                              | Reviewer         | Update Splashkit Sprite tutorial                                                                                     | https://github.com/thoth-tech/splashkit.io-starlight/pull/142          |
+| Hayley Rose Hughes	                    | Reviewer	      | Fix issue with ipv4_to_str function                                                                                  | https://github.com/thoth-tech/splashkit-core/pull/71                   |
+| Jake Andrew Oxley	                       | Main Contributor |	Create Homebrew Package for Splashkit                                                                               |	https://github.com/thoth-tech/splashkit-core/pull/74                   |
 | Jiayi Zhang                            | Main Contributor | Improve run/compile program notifications                                                                            | https://github.com/thoth-tech/SplashkitOnline/pull/99                  |
 | Jiayi Zhang                            | Main Contributor | Documenting Microsoft Edge Issues with Compiling Specific Demos                                                      | https://github.com/thoth-tech/SplashkitOnline/pull/103                 |
 | Jiayi Zhang                            | Main Contributor | Improve Load Time when Loading Multiple Copies                                                                       | https://github.com/thoth-tech/SplashkitOnline/pull/105                 |
 | Jiayi Zhang                            | Reviewer         | Load project from URL GET parameter                                                                                  | https://github.com/thoth-tech/SplashkitOnline/pull/98                  |
+| Jonathan James Tynan	                    | Reviewer         | Fix issue with ipv4_to_str function                                                                                  |	https://github.com/thoth-tech/splashkit-core/pull/71                   |
+| Jonathan James Tynan	                    | Reviewer         | Onboarding Hub - Add SplashKit Information                                                                           |	https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/99  |
 | Lam Quoc Huy Huynh                     | Main Contributor | Language Update - Hex to Dec Converter Usage Example                                                                 | https://github.com/thoth-tech/splashkit.io-starlight/pull/304          |
 | Lam Quoc Huy Huynh                     | Main Contributor | Language Update - Ipv4 to Dec Converter Usage Example                                                                | https://github.com/thoth-tech/splashkit.io-starlight/pull/303          |
 | Lam Quoc Huy Huynh                     | Main Contributor | Language Update - Simple Red Triangle Usage Example                                                                  | https://github.com/thoth-tech/splashkit.io-starlight/pull/256/files    |
@@ -1113,6 +1145,9 @@ repositories for the relevant teams.
 | Lam Quoc Huy Huynh                     | Reviewer         | Fill Triangle on Window - Graphics - Usage Example Creation                                                          | https://github.com/thoth-tech/splashkit.io-starlight/pull/279          |
 | Lam Quoc Huy Huynh                     | Reviewer         | Is integer - Utility - Usage Example                                                                                 | https://github.com/thoth-tech/splashkit.io-starlight/pull/217          |
 | Lam Quoc Huy Huynh                     | Reviewer         | Random window point - Geometry - Usage Example Creation                                                              | https://github.com/thoth-tech/splashkit.io-starlight/pull/264          |
+| Lam Quoc Huy Huynh	                    | Reviewer         | Same point - Geometry - Usage Example Creation                                                                       |	https://github.com/thoth-tech/splashkit.io-starlight/pull/269          |
+| Lam Quoc Huy Huynh	                    | Reviewer         | Fill Triangle on Window - Graphics - Usage Example Creation                                                          |	https://github.com/thoth-tech/splashkit.io-starlight/pull/279          |
+| Lam Quoc Huy Huynh	                    | Reviewer         | Trim - Utility - Usage Example                                                                                       |	https://github.com/thoth-tech/splashkit.io-starlight/pull/261          |
 | Matthew James Harding                  | Main Contributor | Add bitmap-ray and sprite-ray collision functions                                                                    | https://github.com/thoth-tech/splashkit-core/pull/85                   |
 | Matthew James Harding                  | Main Contributor | Add ray intersection tests for primitive shapes                                                                      | https://github.com/thoth-tech/splashkit-core/pull/87                   |
 | Matthew James Harding                  | Main Contributor | Add onboarding guide for SplashKit Expansion                                                                         | https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/118 |
@@ -1120,6 +1155,10 @@ repositories for the relevant teams.
 | Matthew James Harding                  | Main Contributor | Add unit tests and fix bugs for sprites                                                                              | https://github.com/thoth-tech/splashkit-core/pull/80                   |
 | Matthew James Harding                  | Main Contributor | Add OOP guide for shapes and collisions                                                                              | https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/119 |
 | Matthew James Harding                  | Main Contributor | Add object collision classification and resolution functions                                                         | https://github.com/thoth-tech/splashkit-core/pull/83                   |
+| Matthew James Harding	                 | Main Contributor	| Add ray intersection tests for primitive shapes                                                                      |	https://github.com/thoth-tech/splashkit-core/pull/87                   |
+| Matthew James Harding	                 | Main Contributor | Add unit tests and fix bugs for geometry                                                                             |	https://github.com/thoth-tech/splashkit-core/pull/82/                  |
+| Matthew James Harding	                 | Main Contributor | Add unit tests and fix bugs for sprites                                                                              | https://github.com/thoth-tech/splashkit-core/pull/80                   |
+| Matthew James Harding	                 | Main Contributor	| Add OOP guide for shapes and collisions                                                                              |	https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/119 |
 | Matthew James Harding                  | Reviewer         | Particle System Frontend                                                                                             | https://github.com/splashkit/splashkit-core/pull/194                   |
 | Matthew James Harding                  | Reviewer         | Adding Binary to IPv4 and Back Functions                                                                             | https://github.com/thoth-tech/splashkit-core/pull/75                   |
 | Matthew James Harding                  | Reviewer         | Function to Validate IP addresses                                                                                    | https://github.com/thoth-tech/splashkit-core/pull/78                   |
@@ -1129,6 +1168,13 @@ repositories for the relevant teams.
 | Matthew James Harding                  | Reviewer         | Fix C# signature error in api.json                                                                                   | https://github.com/thoth-tech/splashkit-translator/pull/18             |
 | Matthew James Harding                  | Reviewer         | Fix replace all error in python                                                                                      | https://github.com/thoth-tech/splashkit-core/pull/86                   |
 | Matthew James Harding                  | Reviewer         | Update Enums and Constants in the Translator                                                                         | https://github.com/thoth-tech/splashkit-translator/pull/17             |
+| Matthew James Harding	                 | Reviewer         | Particle System Frontend                                                                                             |	https://github.com/splashkit/splashkit-core/pull/194                   |
+| Matthew James Harding	                 | Reviewer	      | Adding Binary to IPv4 and Back Functions	                                                                          |  https://github.com/thoth-tech/splashkit-core/pull/75                   |
+| Matthew James Harding	                 | Reviewer	      | Fix replace all error in python	                                                                                   | https://github.com/thoth-tech/splashkit-core/pull/86                   |
+| Matthew James Harding	                 | Reviewer         | Function to Validate IP addresses                                                                                    |	https://github.com/thoth-tech/splashkit-core/pull/78                   |
+| Matthew James Harding	                 | Reviewer         | MAC Address to Hex and Back                                                                                          |	https://github.com/thoth-tech/splashkit-core/pull/79                   |
+| Matthew James Harding	                 | Reviewer         | Suite of Conversion Functions for SplashKit                                                                          |	https://github.com/thoth-tech/splashkit-core/pull/81                   |
+| Matthew James Harding	                 | Reviewer	      | Fix C# signature error in api.json                                                                                   |	https://github.com/thoth-tech/splashkit-translator/pull/18             |
 | Noah Cross                             | Main Contributor | Draw Circle on Bitmap - Graphics - Usage Example Creation                                                            | https://github.com/thoth-tech/splashkit.io-starlight/pull/226          |
 | Noah Cross                             | Main Contributor | Draw Line on Bitmap - Graphics - Usage Example Creation                                                              | https://github.com/thoth-tech/splashkit.io-starlight/pull/219          |
 |                                        |                  |                                                                                                                      | https://github.com/thoth-tech/splashkit.io-starlight/pull/227          |
@@ -1146,6 +1192,7 @@ repositories for the relevant teams.
 | Noah Cross                             | Reviewer         | Add unit tests and fix bugs for sprites                                                                              | https://github.com/thoth-tech/splashkit-core/pull/80                   |
 | Prasanna Pradeep Kumara Silva Singhara | Main Contributor | Add "End Program" Function                                                                                           | https://github.com/thoth-tech/SplashkitOnline/pull/98                  |
 | Prasanna Pradeep Kumara Silva Singhara | Main Contributor | Load project from URL GET parameter                                                                                  | https://github.com/thoth-tech/SplashkitOnline/pull/98                  |
+| Prasanna Pradeep Kumara Silva Singhara | Main Contributor | update fav icon and Nav bar                                                                                          |	https://github.com/thoth-tech/SplashkitOnline/pull/110                 |
 | Rachel Mei Alonzo Chu                  | Main Contributor | Language Update - Clear screen Background Color Usage Example                                                        | https://github.com/thoth-tech/splashkit.io-starlight/pull/244          |
 | Rachel Mei Alonzo Chu                  | Main Contributor | Add nested tab for Beyond SplashKit                                                                                  | https://github.com/thoth-tech/splashkit.io-starlight/pull/339          |
 | Rachel Mei Alonzo Chu                  | Main Contributor | Closest point on Circle - Geometry - Usage Example Creation                                                          | https://github.com/thoth-tech/splashkit.io-starlight/pull/322          |
@@ -1172,6 +1219,7 @@ repositories for the relevant teams.
 | Rachel Mei Alonzo Chu                  | Reviewer         | Beyond splashkit - Graphics and Audio                                                                                | https://github.com/thoth-tech/splashkit.io-starlight/pull/338          |
 | Rachel Mei Alonzo Chu                  | Reviewer         | Fill Triangle on Window - Graphics - Usage Example Creation                                                          | https://github.com/thoth-tech/splashkit.io-starlight/pull/279          |
 | Rachel Mei Alonzo Chu                  | Reviewer         | Improve Search Functionality                                                                                         | https://github.com/thoth-tech/splashkit.io-starlight/pull/342          |
+| Rachel Mei Alonzo Chu	                 | Reviewer	      | Text width - Graphics - Usage Example Creation	                                                                    | https://github.com/thoth-tech/splashkit.io-starlight/pull/299          |
 | Shaun Ratcliff                         | Main Contributor | Add Bitmap Collisions Physics Usage Examples                                                                         | https://github.com/thoth-tech/splashkit.io-starlight/pull/283          |
 | Shaun Ratcliff                         | Main Contributor | Add Vector Arithmetic Physics Usage Examples                                                                         | https://github.com/thoth-tech/splashkit.io-starlight/pull/287          |
 | Shaun Ratcliff                         | Main Contributor | Add Vector Generation Physics Usage Examples                                                                         | https://github.com/thoth-tech/splashkit.io-starlight/pull/286          |
@@ -1285,6 +1333,9 @@ repositories for the relevant teams.
 | Vishnu Vengadeswaran                   | Reviewer         | Circle X - Geometry - Usage Example Creation                                                                         | https://github.com/thoth-tech/splashkit.io-starlight/pull/316          |
 | Vishnu Vengadeswaran                   | Reviewer         | Circle Y - Geometry - Usage Example Creation                                                                         | https://github.com/thoth-tech/splashkit.io-starlight/pull/315          |
 | Vishnu Vengadeswaran                   | Reviewer         | Circle radius - Geometry - Usage Example Creation                                                                    | https://github.com/thoth-tech/splashkit.io-starlight/pull/313          |
+| Will Saunders	                          | Main Contributor | Update Splashkit Sprite tutorial                                                                                     |	https://github.com/thoth-tech/splashkit.io-starlight/pull/142          |
+| Yuyang Yang	                             | Main Contributor | Graphical Application - Graphical operation management                                                               | 	https://github.com/thoth-tech/splashkit.io-starlight/pull/180          |
+
 
 ### Roadmap
 
