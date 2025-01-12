@@ -2,8 +2,6 @@
 title: "Spike Research: Integrating Panopto with OnTrack"
 ---
 
-# Integrating Panopto with OnTrack
-
 ## Overview
 
 This document explores the integration of Panopto video functionalities into the OnTrack platform.
