@@ -1,6 +1,6 @@
 ---
 title: Pull Request Template
-description: This is a template for creating a pull request for SplashKit Website.
+description: This is a template for creating a pull request for OnTrack.
 sidebar:
   label: Pull Request Template
   order: 5
