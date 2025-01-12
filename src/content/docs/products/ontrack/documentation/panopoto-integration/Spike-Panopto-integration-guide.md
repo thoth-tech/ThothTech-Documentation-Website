@@ -2,8 +2,6 @@
 title: "Spike Guidance: Integrating Panopto with OnTrack"
 ---
 
-# Panopto Integration
-
 ## Angular Frontend (doubtfire-web)
 
 ### 1. Set Up Environment Configuration
