@@ -39,7 +39,6 @@ title: Team Members T3 2024
 | DANIEL GARCIA VARGAS | Team Member - SplashKit Online                       | Junior        |
 | JIAYI ZHANG          | Team Member - SplashKit Online                       | Junior        |
 | LAM QUOC HUY HUYNH   | Team Member - SplashKit Website                      | Junior        |
-| MUHAMMAD DANIAL      | Team Member - SplashKit Website                      | Junior        |
 | NOAH CROSS           | Team Member - SplashKit Website                      | Junior        |
 | PRASANNA SINGHARA    | Team Member - SplashKit Online                       | Junior        |
 | RACHEL CHU           | Team Member - SplashKit Website                      | Junior        |
