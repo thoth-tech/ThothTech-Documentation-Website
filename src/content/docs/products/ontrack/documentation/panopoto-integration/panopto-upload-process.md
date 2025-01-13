@@ -1,3 +1,8 @@
+---
+title: "Panopto Upload Process"
+description: "Guide on uploading content to Panopto for OnTrack documentation."
+---
+
 # Panopto Video Upload Process
 
 ## Overview

@@ -1,3 +1,6 @@
+---
+title:  Panopto OAuth2 Integration Guide (Updated)
+---
 
 # Panopto OAuth2 Integration Guide (Updated)
 
