@@ -10,7 +10,7 @@ everyone who is interested in contributing.
 ## Documentation testing
 
 We treat documentation like code. Therefore, we use processes similar to those used for code to
-maintain standards and quality of documentation.
+maintain sFtandards and quality of documentation.
 
 We have tests:
 
