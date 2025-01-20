@@ -96,12 +96,12 @@ export default defineConfig({
             {
               label: "Onboarding Hub",
               collapsed: true,
-              autogenerate: { directory: "Resources/Onboarding Hub" },
+              autogenerate: { directory: "Resources/onboarding_hub" },
             },
             {
               label: "Quality Assurance",
               collapsed: true,
-              autogenerate: { directory: "Resources/Quality Assurance" },
+              autogenerate: { directory: "Resources/quality_assurance" },
             },
             {
               label: "Frequently Asked Questions (FAQ)",
@@ -117,24 +117,24 @@ export default defineConfig({
             {
               label: "SplashKit",
               collapsed: true,
-              autogenerate: { directory: "Products/SplashKit" },
+              autogenerate: { directory: "products/splashkit" },
             },
             {
               label: "OnTrack",
               collapsed: true,
-              autogenerate: { directory: "Products/OnTrack" },
+              autogenerate: { directory: "products/ontrack" },
             },
             {
               label: "CourseFlow",
               collapsed: true,
-              autogenerate: { directory: "Products/CourseFlow" },
+              autogenerate: { directory: "products/courseFlow" },
             },
           ],
         },
         {
           label: "Teams and Contributions",
           collapsed: true,
-          autogenerate: { directory: "Teams and Contributions" },
+          autogenerate: { directory: "teams_and_contributions" },
         },
         {
           label: "Feedback",
