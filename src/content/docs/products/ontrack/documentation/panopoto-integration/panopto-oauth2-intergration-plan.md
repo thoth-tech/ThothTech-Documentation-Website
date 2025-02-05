@@ -2,6 +2,8 @@
 title: Panopto OAuth2 Integration Guide (Updated)
 ---
 
+# Panopto OAuth2 Integration Guide (Updated)
+
 ## Overview
 
 This guide provides a detailed, step-by-step process to integrate Panopto’s OAuth2-based
