@@ -1,6 +1,8 @@
 ---
-title: Panopto Video Upload Process
+title: "Panopto Upload Process"
 ---
+
+# Panopto Video Upload Process
 
 ## Overview
 
