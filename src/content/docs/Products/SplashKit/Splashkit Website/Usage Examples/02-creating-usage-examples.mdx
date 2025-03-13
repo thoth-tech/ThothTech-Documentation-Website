@@ -18,9 +18,9 @@ Usage examples demonstrate a specific Splashkit function within a simple, small 
 to keep the program minimal while clearly showing how the function works.
 
 For instance, the `write_line` example on the Splashkit site shows how the `write_line` function
-works, with a brief explanation, program code, and a screenshot of the output.
+works, with a brief title, program code, and a screenshot of the output.
 
-![splashkit repo](./images/usageexample1.png)
+![splashkit repo](./images/updated_usageexample.png)
 
 ### Steps to Create a Usage Example
 
@@ -43,13 +43,6 @@ A complete usage example includes:
    [Developer Documentation](https://splashkit.io/api/) to find various functions you could use for
    the usage example, when coming up with an idea, make sure to also check to see if anyone else has
    already done it.
-
-   Some current usage examples on the Splashkit Site:
-
-   - `is_integer`: Check if a value is an integer.
-   - `write_line`: Show how to use `write_line` in an ASCII art program.
-   - `dec_to_hex`: Convert decimal to hexadecimal.
-   - `fill_triangle_on_bitmap`: Create a smiley face with a triangle hat.
 
    The goal is to create **one usage example per function** in the SplashKit library. Building out
    these single examples for each function is the priority to round out the variety of examples
@@ -123,13 +116,11 @@ A complete usage example includes:
    WriteLine("The decimal value in hexadecimal format is: " + hex_value);
    ```
 
-3. ### Explanation and Screenshot
+3. ### Title and Screenshot
 
-   Provide a simple explanation and a screenshot of the program's output.
+   Provide a simple title and a screenshot of the program's output.
 
    **Title:** Decimal to Hex Converter  
-   **Explanation:** This program converts a decimal value to hexadecimal using the `dec_to_hex`
-   function.
 
    Take a screenshot of the output window and save it.
 
@@ -139,7 +130,6 @@ A complete usage example includes:
 
    - txt file
    - C++ (SplashKit) file
-   - C++ (Beyond SplashKit) file (optional - can be completed in a separate task)
    - python file
    - C# (top-level statements) file
    - C# (OOP) file
@@ -149,16 +139,14 @@ A complete usage example includes:
 
    #### Example
 
-   Say you've created a `write_line` program. Rename the files as follows:
+   Say you've created a `dec_to_hex` program. Rename the files as follows:
 
    ```plaintext
-   write_line-1-hello-world-sk.cpp
-   write_line-1-hello-world-beyond.cpp (optional - can be completed in a separate task)
-   write_line-1-hello-world.py
-   write_line-1-hello-world-top-level.cs
-   write_line-1-hello-world-oop.cs
-   write_line-1-hello-world.png or .gif
-   write_line-1-hello-world.txt
+  dec_to_hex-1-example.cpp
+  dec_to_hex-1-example-oop.cs
+  dec_to_hex-1-example-top-level.cs
+  dec_to_hex-1-example.py
+  dec_to_hex-1-example.txt
    ```
 
    Now you can add these files to the Splashkit Starlight.io repo. If when you add them you find
@@ -167,14 +155,14 @@ A complete usage example includes:
 
 5. ### Adding these files to Splashkit Starlight.io
 
-   Now that your files are named, add all of your files to the `usage-examples-files` folder under
-   the appropriate function category (e.g., `terminal/write_line/`). The location in the
+   Now that your files are named, add all of your files to the `usage-examples` folder under
+   the appropriate function category (e.g., `networking/`). The location in the
    Statlight.io repo is:
 
    <FileTree>
 
    - public
-     - usage-example-files
+     - usage-examples
        - animations/
        - audio/
        - camera/
@@ -186,36 +174,31 @@ A complete usage example includes:
        - json/
        - logging/
        - networking/
+        - dec_to_hex-1-example.cpp
+        - dec_to_hex-1-example-oop.cs
+        - dec_to_hex-1-example-top-level.cs
+        - dec_to_hex-1-example.py
+        - dec_to_hex-1-example.txt
        - physics/
        - rasberry/
        - resources_bundles/
        - resources/
        - sprites/
        - terminal/
-         - write_line/
-           - write_line-1-hello-world-sk.cpp
-           - write_line-1-hello-world-beyond.cpp (optional - can be completed in a separate task)
-           - write_line-1-hello-world-oop.cs
-           - write_line-1-hello-world-top-level.cs
-           - write_line-1-hello-world.py
-           - write_line-1-hello-world.txt
        - timers/
        - utilities/
        - windows/
 
    </FileTree>
 
-   The contributing doc on [Splashkit](https://splashkit.io/usage-examples/contributing/) has more
-   details on proper file naming and placement. This is also found within the repo in the
-   `CONTRIBUTING.md`. Which can be found here:
+
+   For more information regarding the proper file naming and placement can be found within the repo in the `CONTRIBUTING.mdx`. The location of the file can be found here:
 
    <FileTree>
 
-   - src
-     - content
-       - docs
-         - usage-examples
-           - CONTRIBUTING.mdx
+   - public
+      - usage-examples
+        - CONTRIBUTING.mdx
 
    </FileTree>
 
