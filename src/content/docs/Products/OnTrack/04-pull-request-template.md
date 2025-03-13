@@ -8,11 +8,11 @@ sidebar:
 
 ## Template for making a pull request
 
-When making a pull request to the Ontrack repository, please use the following
-template to ensure that your pull request covers all the required steps and can be reviewed by your
-peers. The template includes a checklist of items that you need to complete before submitting your
-pull request, some of which may not be relevant to your specific pull request. Please ensure that
-you complete all the relevant items before submitting your pull request.
+When making a pull request to the Ontrack repository, please use the following template to ensure
+that your pull request covers all the required steps and can be reviewed by your peers. The template
+includes a checklist of items that you need to complete before submitting your pull request, some of
+which may not be relevant to your specific pull request. Please ensure that you complete all the
+relevant items before submitting your pull request.
 
 ```markdown
 # Description
@@ -67,8 +67,6 @@ Please list the folders and files added/modified with this pull request.
 - Modified:
   - [ ] folder/file
   - [ ] folder/file
-
-
 ```
 
 Please refer to Pull Request Guide for more information on creating a pull request.

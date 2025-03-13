@@ -115,7 +115,7 @@ included, you can use it to obtain new access tokens without user re-authorizati
 
    - Create an `.env` file (for local development):
 
-     ```env
+     ```plaintext
      PANOPTO_CLIENT_ID=your_panopto_client_id
      PANOPTO_CLIENT_SECRET=your_panopto_client_secret
      PANOPTO_REDIRECT_URI=http://localhost:9127/redirect

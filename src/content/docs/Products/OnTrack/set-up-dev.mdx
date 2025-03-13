@@ -2,18 +2,18 @@
 title: OnTrack Development Environment Setup
 ---
 
-Welcome to the comprehensive guide for setting up the OnTrack (Doubtfire) Development Environment. Follow these steps carefully to ensure a smooth configuration.
+Welcome to the comprehensive guide for setting up the OnTrack (Doubtfire) Development Environment.
+Follow these steps carefully to ensure a smooth configuration.
 
 ## Step 1: Overview
 
-
-
-In this tutorial, we will set up the OnTrack (Doubtfire) Development Environment. Ensure you are familiar with the repositories, as you’ll be working with the Thoth-Tech versions, not the original Doubtfire LMS repositories.
+In this tutorial, we will set up the OnTrack (Doubtfire) Development Environment. Ensure you are
+familiar with the repositories, as you’ll be working with the Thoth-Tech versions, not the original
+Doubtfire LMS repositories.
 
 ---
 
 ## Step 2: Pre-Requisites
-
 
 Before proceeding, ensure the following are installed and set up:
 
@@ -26,13 +26,12 @@ Before proceeding, ensure the following are installed and set up:
 
 ## Step 3: Restart if Needed
 
-
-If you have faced errors in previous setup attempts, start from scratch. Follow this tutorial step-by-step to avoid missing any crucial details.
+If you have faced errors in previous setup attempts, start from scratch. Follow this tutorial
+step-by-step to avoid missing any crucial details.
 
 ---
 
 ## Step 4: Accessing the Thoth-Tech Repository
-
 
 Navigate to the Thoth-Tech GitHub organization and locate these repositories:
 
@@ -46,16 +45,15 @@ Make sure you are using the Thoth-Tech versions of these repositories.
 
 ## Step 5: Fork the `doubtfire-deploy` Repository
 
-
 1. Open the `doubtfire-deploy` repository under Thoth-Tech.
 2. Click on the **Fork** button in the top-right corner.
-3. **Important**: Untick the checkbox for "Copy the main branch only" to include the development branch.
+3. **Important**: Untick the checkbox for "Copy the main branch only" to include the development
+   branch.
 4. Click **Create Fork**.
 
 ---
 
 ## Step 6: Repeat for `doubtfire-api` and `doubtfire-web`
-
 
 Repeat the forking process for these repositories:
 
@@ -65,9 +63,10 @@ Repeat the forking process for these repositories:
 Ensure the development branch is included by unticking "Copy the main branch only".
 
 ---
-![Step ](images/image-one.PNG)
-## Step 7: Open the Terminal and Navigate to Your Folder
 
+![Step ](images/image-one.PNG)
+
+## Step 7: Open the Terminal and Navigate to Your Folder
 
 1. Open a terminal (Command Prompt, PowerShell, or Terminal).
 2. Use the `cd` command to navigate to the folder where you want to store the repository. Example:
@@ -79,7 +78,6 @@ cd dev
 ---
 
 ## Step 8: Clone the Repository
-
 
 Clone the `doubtfire-deploy` repository along with its submodules:
 
@@ -97,13 +95,14 @@ git clone --recurse-submodules https://github.com/aditya993388/doubtfire-deploy.
 
 ## Step 9: Wait for the Cloning Process
 
-
-The terminal will display the cloning progress for the repository and its submodules (e.g., `doubtfire-api`, `doubtfire-overseer`, `doubtfire-web`). Wait until the process completes.
+The terminal will display the cloning progress for the repository and its submodules (e.g.,
+`doubtfire-api`, `doubtfire-overseer`, `doubtfire-web`). Wait until the process completes.
 
 ---
-![Step ](images/image-two.PNG)
-## Step 10: Navigate into the Cloned Repository
 
+![Step ](images/image-two.PNG)
+
+## Step 10: Navigate into the Cloned Repository
 
 Navigate into the cloned repository:
 
@@ -114,7 +113,6 @@ cd doubtfire-deploy
 ---
 
 ## Step 11: Check Current Remote Settings
-
 
 Verify the current remote settings:
 
@@ -128,7 +126,6 @@ Ensure only the `origin` is set, pointing to your forked repository.
 
 ## Step 12: Add the Upstream Remote
 
-
 Add the upstream remote to point to the Thoth-Tech repository:
 
 ```bash
@@ -138,9 +135,10 @@ git remote add upstream https://github.com/thoth-tech/doubtfire-deploy.git
 This ensures that upstream points to the Thoth-Tech version, not the original LMS repository.
 
 ---
-![Step ](images/image-three.PNG)
-## Step 13: Verify Remote Settings
 
+![Step ](images/image-three.PNG)
+
+## Step 13: Verify Remote Settings
 
 Verify the upstream remote setup:
 
@@ -154,8 +152,11 @@ Ensure both `origin` and `upstream` are listed correctly:
 - **Upstream**: Points to Thoth-Tech’s repository.
 
 ---
+
 ![Step ](images/image-four.PNG)
+
 ## Step 14: Switch to the Development Branch
+
 By default, the repository is on the `main` branch. Switch to the `development` branch:
 
 ```bash
@@ -183,7 +184,6 @@ The `*` symbol next to `development` confirms you are on the correct branch.
 
 ---
 
-
 ### Step 16: Check Current Remote Settings
 
 - Use the following command to view the current remote settings:
@@ -194,7 +194,6 @@ The `*` symbol next to `development` confirms you are on the correct branch.
 
 ---
 
-
 ### Step 17: Add the Upstream Remote
 
 - Add the upstream remote to point to the Thoth-Tech repository:
@@ -203,7 +202,6 @@ The `*` symbol next to `development` confirms you are on the correct branch.
   ```
 
 ---
-
 
 ### Step 18: Verify the Upstream Remote
 
@@ -236,8 +234,10 @@ The `*` symbol next to `development` confirms you are on the correct branch.
   git remote -v
   ```
   - Verify the following:
-    - **Origin**: Points to your forked repository (`https://github.com/aditya993388/doubtfire-web.git`).
-    - **Upstream**: Points to the Thoth-Tech repository (`https://github.com/thoth-tech/doubtfire-web.git`).
+    - **Origin**: Points to your forked repository
+      (`https://github.com/aditya993388/doubtfire-web.git`).
+    - **Upstream**: Points to the Thoth-Tech repository
+      (`https://github.com/thoth-tech/doubtfire-web.git`).
 
 ---
 
@@ -255,18 +255,19 @@ The `*` symbol next to `development` confirms you are on the correct branch.
   ```
   - The `*` symbol next to `development` confirms you are on the correct branch.
 
-
-
 ### Step 22: Pull the Latest Updates for `doubtfire-web`
 
-- After switching to the `development` branch, pull the latest updates from the repository to ensure you have the most recent changes:
+- After switching to the `development` branch, pull the latest updates from the repository to ensure
+  you have the most recent changes:
   ```bash
   git pull
   ```
   - This fetches and merges all updates from the `origin/development` branch.
 
 ---
+
 ![Step 32](images/image-ten.PNG)
+
 ### Step 23: Update the Git Origin for `doubtfire-deploy`
 
 - Navigate back to the `doubtfire-deploy` directory using the command:
@@ -329,30 +330,38 @@ The `*` symbol next to `development` confirms you are on the correct branch.
 ### Step 25: Accessing Dev Containers via VS Code
 
 - Exit the terminal and open Visual Studio Code (VS Code).
-- Press `Command + Shift + P` (on Mac) or `Ctrl + Shift + P` (on Windows/Linux) to open the VS Code Command Panel.
+- Press `Command + Shift + P` (on Mac) or `Ctrl + Shift + P` (on Windows/Linux) to open the VS Code
+  Command Panel.
 - In the Command Panel, search for **Dev Containers**.
 - Select the option **Dev Containers: Open Folder in Container...** from the list.
 - Before proceeding, ensure that Docker is running in the background.
-![Step 26](images/image-14.PNG)
+  ![Step 26](images/image-14.PNG)
+
 ---
 
 ![Step 27](images/image-15.PNG)
+
 ### Step 26: Reading Dev Container Configuration
 
-- Once the folder opens in the container, look for the **Reading Dev Container Configuration (show log)** message in the bottom-right corner of VS Code.
+- Once the folder opens in the container, look for the **Reading Dev Container Configuration (show
+  log)** message in the bottom-right corner of VS Code.
 - Click on **(show log)** to view the progress and ensure everything is being set up correctly.
-- If it’s your first time setting up the container, expect the process to take some time as it configures all necessary components.
+- If it’s your first time setting up the container, expect the process to take some time as it
+  configures all necessary components.
 
 ---
 
-
-
 ![Step 27](images/image-17.PNG)
+
 ### Step 27: Running the Front-End and Back-End Applications
 
-- At this stage, the front-end application is running on the left terminal, while the back-end (server) is active on the right terminal.
-- Note: It's common to encounter errors during the first run of the front-end. These may relate to missing dependencies or configuration conflicts.
-- Review the error messages carefully. For issues like dependency conflicts, try resolving them with appropriate commands such as `npm install` or check the error log paths mentioned in the terminal for further details.
+- At this stage, the front-end application is running on the left terminal, while the back-end
+  (server) is active on the right terminal.
+- Note: It's common to encounter errors during the first run of the front-end. These may relate to
+  missing dependencies or configuration conflicts.
+- Review the error messages carefully. For issues like dependency conflicts, try resolving them with
+  appropriate commands such as `npm install` or check the error log paths mentioned in the terminal
+  for further details.
 
 ---
 
@@ -362,13 +371,14 @@ The `*` symbol next to `development` confirms you are on the correct branch.
 
 - Open a new terminal window in your development environment.
 - Use the command `cd doubtfire-web` to navigate into the `doubtfire-web` directory.
-- Run the command `npm install -f` to forcefully install and resolve any missing dependencies for the front-end application.
-  - This command ensures that all required packages are installed and any conflicting dependencies are resolved.
+- Run the command `npm install -f` to forcefully install and resolve any missing dependencies for
+  the front-end application.
+  - This command ensures that all required packages are installed and any conflicting dependencies
+    are resolved.
 
 ---
 
 ![Step 29](images/image-20.PNG)
-
 
 ### Step 29: Run the Frontend
 
@@ -376,9 +386,11 @@ The `*` symbol next to `development` confirms you are on the correct branch.
   ```bash
   npm start
   ```
-  - This will build and run the frontend application. If successful, it will host the application locally on port `4200`.
-  ![Step 29](images/confirmation.PNG)
-- Confirmation Notification: Once the frontend is running, you will see a notification in the bottom-right corner of your Visual Studio Code window indicating that the application is available on `localhost:4200`.
+  - This will build and run the frontend application. If successful, it will host the application
+    locally on port `4200`. ![Step 29](images/confirmation.PNG)
+- Confirmation Notification: Once the frontend is running, you will see a notification in the
+  bottom-right corner of your Visual Studio Code window indicating that the application is available
+  on `localhost:4200`.
 
 ---
 
@@ -388,11 +400,13 @@ The `*` symbol next to `development` confirms you are on the correct branch.
 
 - Open the **Ports Panel** in Visual Studio Code to see all forwarded ports and their statuses.
 - Locate the forwarded address for port `4200`.
-- Hover over the address and click on the globe icon to open the application in your default browser.
+- Hover over the address and click on the globe icon to open the application in your default
+  browser.
 
 ![Step 32](images/image-23.PNG)
 
-  - If everything is configured correctly, the OnTrack application login page will open in your browser.
+- If everything is configured correctly, the OnTrack application login page will open in your
+  browser.
 
 ---
 
@@ -420,12 +434,14 @@ The `*` symbol next to `development` confirms you are on the correct branch.
 ### Step 32: Exploring the Dashboard
 
 - After logging in, you’ll be directed to the dashboard showing **Enrolled Units**. Examples:
+
   - Introduction to Programming
   - Object-Oriented Programming
   - Artificial Intelligence for Games
   - Game Programming
 
 - Interact with the dashboard by:
+
   - Clicking on any enrolled unit to view details such as assignments and grades.
   - Using the "Select Unit" dropdown in the top-left corner to switch between units.
 
@@ -434,5 +450,5 @@ The `*` symbol next to `development` confirms you are on the correct branch.
   - Analyze your performance using tools like the **Burndown Chart**.
 
 ---
-Reach out to your mentors or attend the Help-Hub for any queries.
 
+Reach out to your mentors or attend the Help-Hub for any queries.
