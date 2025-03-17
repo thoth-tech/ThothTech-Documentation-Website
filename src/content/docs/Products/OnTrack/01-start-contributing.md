@@ -1,8 +1,8 @@
 ---
 title: Getting Started Contributing
 sidebar:
+  label: "- Start Contributing"
   order: 1
-  label: Start Contributing
 ---
 
 ### Ontrack Libraries
