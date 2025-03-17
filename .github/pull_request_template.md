@@ -25,9 +25,9 @@ reproduce. Please also list any relevant details for your test configuration_
 - [ ] Have run `npm run format`
 - [ ] Have run `npm run build`
 - [ ] Have run `npm run dev` and/or `npm run preview`, using:
-      - [ ] Chrome
-      - [ ] Safari
-      - [ ] Firefox
+  - [ ] Chrome
+  - [ ] Safari
+  - [ ] Firefox
 
 ## Checklist
 
