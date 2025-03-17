@@ -22,9 +22,12 @@ reproduce. Please also list any relevant details for your test configuration_
 
 ## Testing Checklist
 
-- [ ] Tested in latest Chrome
-- [ ] Tested in latest Safari
-- [ ] Tested in latest Firefox
+- [ ] Have run `npm run format`
+- [ ] Have run `npm run build`
+- [ ] Have run `npm run dev` and/or `npm run preview`, using:
+      - [ ] Chrome
+      - [ ] Safari
+      - [ ] Firefox
 
 ## Checklist
 
