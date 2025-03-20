@@ -20,17 +20,22 @@ to keep the program minimal while clearly showing how the function works.
 For instance, the `write_line` example on the Splashkit site shows how the `write_line` function
 works, with a brief explanation, program code, and a screenshot of the output.
 
-![splashkit repo](./images/usageexample2.png)
+![example showing on site for write line function](./images/usageexample.png)
 
 ### Steps to Create a Usage Example
 
-A complete usage example includes:
+An initial usage example includes 6 files:
 
-1. C++ (SplashKit) version
-2. C# (top-level statements) version
-3. C# (Object-Oriented Programming) version
-4. Python version
-5. Screenshot of the output
+- C++ (SplashKit) version
+- C# (top-level statements) version
+- C# (Object-Oriented Programming) version
+- Python version
+- Descriptive title for the example, in a text file
+- Screenshot of the output
+
+In a separate pull request, to add to existing examples:
+
+- C++ (Beyond SplashKit version)
 
 <Steps>
 
@@ -126,7 +131,8 @@ A complete usage example includes:
 
 4. ### Adding these files to Splashkit Starlight.io
 
-   Now that you're done, you should have the following files:
+   Now that you're done, you should have the following 6 files when completing an initial usage
+   example PR:
 
    - txt file
    - C++ (SplashKit) file
@@ -134,6 +140,10 @@ A complete usage example includes:
    - C# (top-level statements) file
    - C# (OOP) file
    - Screenshot of the output
+
+   In a separate pull request, to add to existing examples:
+
+   - C++ (Beyond SplashKit version)
 
    Now you'll need to rename these before adding them to the Splashkit Starlight.io repo.
 
@@ -150,13 +160,20 @@ A complete usage example includes:
    write_line-1-example.txt
    ```
 
+   In a separate pull request, to add to existing examples:
+
+   ```plaintext
+   write_line-1-hello-world-beyond.cpp
+   ```
+
    Now you can add these files to the Splashkit Starlight.io repo. If when you add them you find
    there is already some files of a usage example using this same function, then you should
-   increment the number in the file name by 1. Furthermore, it is important that you use the function's unique global name for the files names *(This only applies for functions that is overloaded.)*
+   increment the number in the file name by 1. Furthermore, it is important that you use the
+   function's unique global name for the files names _(This only applies for functions that are
+   overloaded.)_
 
-   Now that your files are named, add all of your files to the `usage-examples` folder under
-   the appropriate function category (e.g., `terminal/`). The location in the
-   Statlight.io repo is:
+   Now that your files are named, add all of your files to the `usage-examples` folder under the
+   appropriate function category (e.g., `terminal/`). The location in the Statlight.io repo is:
 
    <FileTree>
 
@@ -179,24 +196,25 @@ A complete usage example includes:
        - resources/
        - sprites/
        - terminal/
-          - write_line-1-example.cpp
-          - write_line-1-example-oop.cs
-          - write_line-1-example-top-level.cs
-          - write_line-1-example.py
-          - write_line-1-example.txt
+         - write_line-1-example.cpp
+         - write_line-1-example-oop.cs
+         - write_line-1-example-top-level.cs
+         - write_line-1-example.py
+         - write_line-1-example.txt
        - timers/
        - utilities/
        - windows/
 
    </FileTree>
 
-   For more information regarding the proper file naming and placement can be found within the repo in the `CONTRIBUTING.mdx`. The location of the file can be found here:
+   For more information regarding the proper file naming and placement can be found within the repo
+   in the `CONTRIBUTING.mdx`. The location of the file can be found here:
 
    <FileTree>
 
    - src
-      - usage-examples
-        - CONTRIBUTING.mdx
+     - usage-examples
+       - CONTRIBUTING.mdx
 
    </FileTree>
 
