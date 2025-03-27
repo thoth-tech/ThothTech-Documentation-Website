@@ -20,19 +20,22 @@ to keep the program minimal while clearly showing how the function works.
 For instance, the `write_line` example on the Splashkit site shows how the `write_line` function
 works, with a brief explanation, program code, and a screenshot of the output.
 
-![splashkit repo](./images/usageexample1.png)
+![example showing on site for write line function](./images/usageexample.png)
 
 ### Steps to Create a Usage Example
 
-A complete usage example includes:
+An initial usage example includes 6 files:
 
-1. C++ (SplashKit) version
-2. C++ (Beyond SplashKit) version (optional - can be completed in a separate task)
-3. C# (top-level statements) version
-4. C# (Object-Oriented Programming) version
-5. Python version
-6. One-sentence explanation
-7. Screenshot of the output
+- C++ (SplashKit) version
+- C# (top-level statements) version
+- C# (Object-Oriented Programming) version
+- Python version
+- Descriptive title for the example, in a text file
+- Screenshot of the output
+
+In a separate pull request, to add to existing examples:
+
+- C++ (Beyond SplashKit version)
 
 <Steps>
 
@@ -44,13 +47,6 @@ A complete usage example includes:
    the usage example, when coming up with an idea, make sure to also check to see if anyone else has
    already done it.
 
-   Some current usage examples on the Splashkit Site:
-
-   - `is_integer`: Check if a value is an integer.
-   - `write_line`: Show how to use `write_line` in an ASCII art program.
-   - `dec_to_hex`: Convert decimal to hexadecimal.
-   - `fill_triangle_on_bitmap`: Create a smiley face with a triangle hat.
-
    The goal is to create **one usage example per function** in the SplashKit library. Building out
    these single examples for each function is the priority to round out the variety of examples
    available.
@@ -59,7 +55,7 @@ A complete usage example includes:
    in the SplashKit group chat or reach out to your Capstone Mentor to discuss whether it's a good
    idea to add another example for that function.
 
-2. ### creating the program
+2. ### Creating The Program
 
    Create the program with as few lines of code as possible. You'll need to write the program in
    C++, C# (using top-level statements and OOP version), and Python, all using Splashkit. Start with
@@ -135,15 +131,19 @@ A complete usage example includes:
 
 4. ### Adding these files to Splashkit Starlight.io
 
-   Now that you're done, you should have the following files:
+   Now that you're done, you should have the following 6 files when completing an initial usage
+   example PR:
 
    - txt file
    - C++ (SplashKit) file
-   - C++ (Beyond SplashKit) file (optional - can be completed in a separate task)
    - python file
    - C# (top-level statements) file
    - C# (OOP) file
    - Screenshot of the output
+
+   In a separate pull request, to add to existing examples:
+
+   - C++ (Beyond SplashKit version)
 
    Now you'll need to rename these before adding them to the Splashkit Starlight.io repo.
 
@@ -152,24 +152,28 @@ A complete usage example includes:
    Say you've created a `write_line` program. Rename the files as follows:
 
    ```plaintext
-   write_line-1-hello-world-sk.cpp
-   write_line-1-hello-world-beyond.cpp (optional - can be completed in a separate task)
-   write_line-1-hello-world.py
-   write_line-1-hello-world-top-level.cs
-   write_line-1-hello-world-oop.cs
-   write_line-1-hello-world.png or .gif
-   write_line-1-hello-world.txt
+   write_line-1-example-oop.cs
+   write_line-1-example-top-level.cs
+   write_line-1-example-sk.cpp
+   write_line-1-example.png or .gif
+   write_line-1-example.py
+   write_line-1-example.txt
+   ```
+
+   In a separate pull request, to add to existing examples:
+
+   ```plaintext
+   write_line-1-hello-world-beyond.cpp
    ```
 
    Now you can add these files to the Splashkit Starlight.io repo. If when you add them you find
    there is already some files of a usage example using this same function, then you should
-   increment the number in the file name by 1.
+   increment the number in the file name by 1. Furthermore, it is important that you use the
+   function's unique global name for the files names _(This only applies for functions that are
+   overloaded.)_
 
-5. ### Adding these files to Splashkit Starlight.io
-
-   Now that your files are named, add all of your files to the `usage-examples-files` folder under
-   the appropriate function category (e.g., `terminal/write_line/`). The location in the
-   Statlight.io repo is:
+   Now that your files are named, add all of your files to the `usage-examples` folder under the
+   appropriate function category (e.g., `terminal/`). The location in the Statlight.io repo is:
 
    <FileTree>
 
@@ -192,30 +196,26 @@ A complete usage example includes:
        - resources/
        - sprites/
        - terminal/
-         - write_line/
-           - write_line-1-hello-world-sk.cpp
-           - write_line-1-hello-world-beyond.cpp (optional - can be completed in a separate task)
-           - write_line-1-hello-world-oop.cs
-           - write_line-1-hello-world-top-level.cs
-           - write_line-1-hello-world.py
-           - write_line-1-hello-world.txt
+         - write_line-1-example-oop.cs
+         - write_line-1-example-top-level.cs
+         - write_line-1-example-sk.cpp
+         - write_line-1-example.png
+         - write_line-1-example.py
+         - write_line-1-example.txt
        - timers/
        - utilities/
        - windows/
 
    </FileTree>
 
-   The contributing doc on [Splashkit](https://splashkit.io/usage-examples/contributing/) has more
-   details on proper file naming and placement. This is also found within the repo in the
-   `CONTRIBUTING.md`. Which can be found here:
+   For more information regarding the proper file naming and placement can be found within the repo
+   in the `CONTRIBUTING.mdx`. The location of the file can be found here:
 
    <FileTree>
 
-   - src
-     - content
-       - docs
-         - usage-examples
-           - CONTRIBUTING.mdx
+   - public
+     - usage-examples
+       - CONTRIBUTING.mdx
 
    </FileTree>
 
