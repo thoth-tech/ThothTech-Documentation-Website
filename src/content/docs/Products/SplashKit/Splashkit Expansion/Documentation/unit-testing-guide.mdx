@@ -1,0 +1,174 @@
+---
+title: Unit Testing Guide
+sidebar:
+  label: Unit Testing Guide
+---
+
+import { FileTree } from "@astrojs/starlight/components";
+import { Steps } from "@astrojs/starlight/components";
+
+## Introduction
+
+SplashKit uses [Catch2 2.x](https://github.com/catchorg/Catch2/tree/v2.x) as a framework for unit
+tests.
+
+Tests are written in C++ with the aid of macros from Catch2. Test files are located at:
+
+<FileTree>
+
+- coresdk
+  - src
+    - test
+      - unit_test_main.cpp
+      - unit*test*[name].cpp
+
+</FileTree>
+
+`unit_test_main.cpp` is the entry point for all unit tests. You do not need to modify this to write
+your own tests or update existing ones.
+
+The `unit_test_[name].cpp` files contain tests for related parts of SplashKit. For example,
+`unit_test_utilities.cpp` has tests for SplashKit's utility functions. A test file must include the
+Catch2 header file along with any other includes required:
+
+```cpp
+#include "catch.hpp"
+```
+
+## Writing a Unit Test
+
+At a minimum, a unit test consists of a `TEST_CASE` and an assertion (usually `REQUIRE`):
+
+```cpp
+TEST_CASE("gets the number of milliseconds that have passed since the program was started", "[current_ticks]")
+{
+    unsigned int result = current_ticks();
+    REQUIRE(result >= 0);
+}
+```
+
+`TEST_CASE(name, [,tags])` defines a test case with the given name and, optionally, one or more
+tags.
+
+`REQUIRE` evaluates an expression and aborts the test as a failure if the result is false.
+`REQUIRE_FALSE` is similar but fails if the expression evaluates true. There are
+[other assertion macros](https://github.com/catchorg/Catch2/blob/v2.x/docs/assertions.md#top) but
+these are the most common.
+
+A test may contain multiple assertions:
+
+```cpp
+TEST_CASE("random number float between 0 and 1 is generated", "[rnd]")
+{
+    float result = rnd();
+    REQUIRE(result >= 0);
+    REQUIRE(result <= 1);
+}
+```
+
+You may write tests that have some common steps, such as defining a variable. You can define one or
+more `SECTION(name)` inside a `TEST_CASE`. The `TEST_CASE` is run from the start for each `SECTION`.
+
+```cpp
+TEST_CASE("return a SplashKit resource of resource_kind with name filename as a string", "[file_as_string]")
+{
+    const resource_kind RESOURCE = resource_kind::BUNDLE_RESOURCE;
+    const string RESOURCE_PATH = "blah.txt";
+
+    SECTION("filename is a valid file")
+    {
+        string result = file_as_string(RESOURCE_PATH, RESOURCE);
+        string expected = "BITMAP,ufo,ufo.png\n";
+        REQUIRE(result == expected);
+    }
+    SECTION("filename is an empty string")
+    {
+        string result = file_as_string("", RESOURCE);
+        string expected = "";
+        REQUIRE(result == expected);
+    }
+    SECTION("filename is an invalid file")
+    {
+        string result = file_as_string("invalid.txt", RESOURCE);
+        string expected = "";
+        REQUIRE(result == expected);
+    }
+}
+```
+
+This test has three `SECTION`s, so the `TEST_CASE` will run three times. Each time, the `RESOURCE`
+and `RESOURCE_PATH` variables will be defined.
+
+## Running Unit Tests
+
+### Linux
+
+<Steps>
+
+1. Install prerequisites
+
+   - Update
+
+     ```shell
+     sudo apt-get update
+     sudo apt-get upgrade -y
+     ```
+
+   - Install
+
+     ```shell
+     sudo apt-get install -y \
+     git build-essential cmake g++ libpng-dev libcurl4-openssl-dev libsdl2-dev \
+     libsdl2-mixer-dev libsdl2-gfx-dev libsdl2-image-dev libsdl2-net-dev libsdl2-ttf-dev \
+     libmikmod-dev libbz2-dev libflac-dev libvorbis-dev libwebp-dev libfreetype6-dev
+     ```
+
+2. Build test project
+
+   ```shell
+   cd projects/cmake
+   cmake .
+   make
+   ```
+
+3. Run unit tests
+
+   - Running all tests
+
+     ```shell
+     cd ../../bin
+     ./skunit_tests
+     ```
+
+     Example output:
+
+     ```
+     (14/04/2025) ERROR -> Invalid binary string passed to bin_to_oct: 2, returning empty string [raised in basics.cpp:340]
+     (14/04/2025) ERROR -> Invalid hexadecimal string passed to hex_to_oct: G, returning empty string [raised in basics.cpp:371]
+     (14/04/2025) ERROR -> Invalid octal string passed to hex_to_dec: G, returning 0 [raised in basics.cpp:305]
+     (14/04/2025) ERROR -> Invalid octal string passed to oct_to_hex: 8, returning empty string [raised in basics.cpp:383]
+     ===============================================================================
+     All tests passed (1258 assertions in 74 test cases)
+     ```
+
+   - Running a specific test
+
+     ```shell
+     ./skunit_tests [test name or tag]
+     ```
+
+     Example output:
+
+     ```
+     ./skunit_tests "[least_common_multiple]"
+     Filters: [least_common_multiple]
+     ===============================================================================
+     All tests passed (7 assertions in 1 test case)
+     ```
+
+</Steps>
+
+## See Also:
+
+- [Catch2 tutorial](https://github.com/catchorg/Catch2/blob/v2.x/docs/tutorial.md)
+- [Catch2 reference](https://github.com/catchorg/Catch2/blob/v2.x/docs/Readme.md)
