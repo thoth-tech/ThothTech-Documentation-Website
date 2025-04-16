@@ -1,0 +1,169 @@
+---
+title: Usage Example Styling Guide
+description: General rules to follow when creating usage examples
+sidebar:
+  label: Usage Example Styling
+  order: 1
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+
+## Code Style and Formatting Guide
+
+This guide aims to introduce new team members to some standard practices for contributing to
+splashkit, such as varable declarations, formatting across languages and general do's and dont's
+
+## Naming Conventions
+
+These are general naming conventions for variables, functions, namespaces and more that should be
+used when creating usage examples for SplashKit.
+
+### Variable declarations
+
+Variable declarations for SplashKit usage examples should be in the following format:
+
+- For Python and C++ we use `snake_case`
+- For C# OOP and Top-Level we use `camelCase`
+
+| Do                                    | Don't                               |
+| ------------------------------------- | ----------------------------------- |
+| Use descriptive variable names        | Use `i`, `x`, `val` in main logic   |
+| Use variables for multiple use values | Declare a variable for one time use |
+| Use proper types for variables        | Use types such as `var` and `float` |
+
+### Example declarations
+
+<Tabs syncKey="code-language">
+<TabItem label="C++">
+
+```cpp
+#include "splashkit.h"
+
+int main()
+{
+    // Declare a variable with snake_case
+    string variable_name = "This is snake case";
+    return 0;
+}
+```
+
+</TabItem>
+<TabItem label="C#">
+
+<Tabs syncKey="csharp-style">
+<TabItem label="Top-level Statements">
+
+```csharp
+using static SplashKitSDK.SplashKit;
+
+// Declare a variable with camelCase
+string variableName = "this is an example of camelCase";
+```
+
+</TabItem>
+<TabItem label="Object-Oriented">
+
+```csharp
+using SplashKitSDK;
+
+namespace ReadingText
+{
+    public class Program
+    {
+        public static void Main()
+        {
+            // Declare a variable with camelCase
+            string variableName = "this is an example of camelCase";
+
+        }
+    }
+}
+```
+
+</TabItem>
+</Tabs>
+
+</TabItem>
+<TabItem label="Python">
+
+```python
+from splashkit import *
+
+# declare a variable with snake_case
+string variable_name = "This is snake case"
+
+```
+
+</TabItem>
+</Tabs>
+
+### Function and Methods
+
+When calling and naming functions and methods using SplashKit we do the following:
+
+- C++ / Python: `snake_case` (e.g `draw_rectangle()`)
+- C#: `PascalCase` (e.g. `DrawRectangle()`)
+
+### Namespaces in C#
+
+The namespace for a usage example in C# should always be the function being demonstrated with
+example added on the end, also written in Pascal case.
+
+#### Example:
+
+- `namespace DrawRectangleExample`
+
+### Window Names
+
+When using windows to display any graphics the window name should be a description of what is
+happening on the window rather than the name of the function you are displaying.
+
+#### Example:
+
+- Do (`"Colourful Starburst"`):
+  ***
+  ![Good window name](images/goodname.png)
+- Don't (`"Draw Line"`):
+  ***
+  ![Bad window name](images/badname.png)
+
+## Code Comments
+
+Code comments should be used to explain the _why_ behind code, not the _what_. Code comments should
+be clear and concise
+
+A good Comment should explain the intent or purpose A bad comment will state the obvious
+
+| Do                                            | Don't                                                                            |
+| --------------------------------------------- | -------------------------------------------------------------------------------- |
+| `// Draw rectangle to window`                 | `// Call the DrawRectangle function`                                             |
+| `// Wait for user input`                      | `// Hold program to wait for user to press any key before the program continues` |
+| Use comments for complex or non-obvious logic | Use comments to repeat code literally                                            |
+
+#### Example
+
+```csharp
+// Good comment
+if (playerHealth <= 0)
+{
+    // End the game if the player runs out of health
+    WriteLine("Game Over");
+}
+
+// Bad Comment
+if (playerHealth <= 0)
+{
+    // Call WriteLine when health reaches 0
+    WriteLine("Game Over");
+}
+```
+
+## General things to avoid
+
+As SplashKit usage examples are targeted to beginners, so it's important to keep the code as simple
+and readable as possible. Avoid using advanced features such as:
+
+- Ternary operators (condition ? value1 : value2) - Stick to traditional if/else statements
+- Lambda expressions - Keep function logic clear and named
+- Infinite Loops such as `while(true)` - instead always use a loop condition that is defined by a
+  boolean function (e.g. `while(!quit_requested)`)
