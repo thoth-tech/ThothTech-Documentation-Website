@@ -54,11 +54,11 @@ To create Aliases:
 
 Now when you enter your alias it should run the command you have set. Some Aliases I use are:
 
-| Aliases                                  | Purpose                                          |
-| ---------------------------------------- | ------------------------------------------------ |
-| alias gc='git checkout'                  | allows gc branchname for easier branch switching |
-| alias gcm='git checkout main'            | quickly get to main branch                       |
-| alias skcompile='skm clang++ \*.cpp -o a | quickly compiles C++ SplashKit projects          |
+| Aliases                                          | Purpose                                                         |
+| ------------------------------------------------ | --------------------------------------------------------------- |
+| alias gc='git checkout'                          | allows gc branchname for easier branch switching                |
+| alias gcm='git checkout main'                    | quickly get to main branch                                      |
+| alias skcompile='skm clang++ \*.cpp -o a && ./a' | quickly compiles and runs C++ SplashKit projects in one command |
 
 These are some example aliases but you can do pretty much anything. If there are any commands you
 find yourself typing and think "Man this is tedious" just make a new alias for it!
