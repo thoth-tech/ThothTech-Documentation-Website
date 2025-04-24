@@ -6,6 +6,7 @@ sidebar:
 
 import { FileTree } from "@astrojs/starlight/components";
 import { Steps } from "@astrojs/starlight/components";
+import { Tabs, TabItem } from "@astrojs/starlight/components";
 
 ## Introduction
 
@@ -99,74 +100,117 @@ TEST_CASE("return a SplashKit resource of resource_kind with name filename as a 
 This test has three `SECTION`s, so the `TEST_CASE` will run three times. Each time, the `RESOURCE`
 and `RESOURCE_PATH` variables will be defined.
 
-## Running Unit Tests
+## Building the test project
 
-### Linux / WSL
-
+<Tabs syncKey="platform">
+<TabItem label="Linux/WSL">
 <Steps>
 
-1. Install prerequisites
+1.  Open a terminal and install prerequisites with these commands:
 
-   - Update
+    ```shell
+    sudo apt-get update
+    sudo apt-get upgrade -y
+    sudo apt-get install -y \
+    git build-essential cmake g++ libpng-dev libcurl4-openssl-dev libsdl2-dev \
+    libsdl2-mixer-dev libsdl2-gfx-dev libsdl2-image-dev libsdl2-net-dev libsdl2-ttf-dev \
+    libmikmod-dev libbz2-dev libflac-dev libvorbis-dev libwebp-dev libfreetype6-dev
+    ```
 
-     ```shell
-     sudo apt-get update
-     sudo apt-get upgrade -y
-     ```
+2.  Install the CMake Tools extension from the VS Code extension browser or
+    [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools).
 
-   - Install
+3.  Configure the extension:  
+    Select `${workspaceFolder}/projects/cmake/CMakeLists.txt`  
+    Select the Linux configure preset  
+    In the CMake Tools extension set the Build target to skunit_tests  
+    Set the Debug and Launch target to skunit_tests  
+    Configure VS Code debugging
 
-     ```shell
-     sudo apt-get install -y \
-     git build-essential cmake g++ libpng-dev libcurl4-openssl-dev libsdl2-dev \
-     libsdl2-mixer-dev libsdl2-gfx-dev libsdl2-image-dev libsdl2-net-dev libsdl2-ttf-dev \
-     libmikmod-dev libbz2-dev libflac-dev libvorbis-dev libwebp-dev libfreetype6-dev
-     ```
-
-2. Build test project
-
-   ```shell
-   cd projects/cmake
-   cmake .
-   make
-   ```
-
-3. Run unit tests
-
-   - Running all tests
-
-     ```shell
-     cd ../../bin
-     ./skunit_tests
-     ```
-
-     Example output:
-
-     ```
-     (14/04/2025) ERROR -> Invalid binary string passed to bin_to_oct: 2, returning empty string [raised in basics.cpp:340]
-     (14/04/2025) ERROR -> Invalid hexadecimal string passed to hex_to_oct: G, returning empty string [raised in basics.cpp:371]
-     (14/04/2025) ERROR -> Invalid octal string passed to hex_to_dec: G, returning 0 [raised in basics.cpp:305]
-     (14/04/2025) ERROR -> Invalid octal string passed to oct_to_hex: 8, returning empty string [raised in basics.cpp:383]
-     ===============================================================================
-     All tests passed (1258 assertions in 74 test cases)
-     ```
-
-   - Running a specific test
-
-     ```shell
-     ./skunit_tests [test name or tag]
-     ```
-
-     Example output:
-
-     ```
-     ./skunit_tests "[least_common_multiple]"
-     Filters: [least_common_multiple]
-     ===============================================================================
-     All tests passed (7 assertions in 1 test case)
-     ```
+4.  Build test project:  
+    From the command line:
+    ```shell
+    cd projects/cmake
+    cmake .
+    make
+    ```
+    Or in VS Code:  
+    In the CMake Tools extension, click Build. The test project will also be built when you refresh
+    tests on the Testing tab of VS Code.
 
 </Steps>
+</TabItem>
+<TabItem label="macOS">
+<Steps>
+1. Step one:
+
+2. Step two:
+
+</Steps>
+</TabItem>
+<TabItem label="Windows">
+<Steps>
+1. Step one:
+
+2. Step two:
+
+</Steps>
+</TabItem>
+</Tabs>
+
+## Running unit tests
+
+### From the command line
+
+<Tabs syncKey="platform">
+<TabItem label="Linux/WSL">
+
+- Running all tests:
+
+  ```shell
+  cd ../../bin
+  ./skunit_tests
+  ```
+
+  Example output:
+
+  ```
+  (14/04/2025) ERROR -> Invalid binary string passed to bin_to_oct: 2, returning empty string [raised in basics.cpp:340]
+  (14/04/2025) ERROR -> Invalid hexadecimal string passed to hex_to_oct: G, returning empty string [raised in basics.cpp:371]
+  (14/04/2025) ERROR -> Invalid octal string passed to hex_to_dec: G, returning 0 [raised in basics.cpp:305]
+  (14/04/2025) ERROR -> Invalid octal string passed to oct_to_hex: 8, returning empty string [raised in basics.cpp:383]
+  ===============================================================================
+  All tests passed (1258 assertions in 74 test cases)
+  ```
+
+- Running a specific test:
+
+  ```shell
+  ./skunit_tests [test name or tag]
+  ```
+
+  Example output:
+
+  ```
+  ./skunit_tests "[least_common_multiple]"
+  Filters: [least_common_multiple]
+  ===============================================================================
+  All tests passed (7 assertions in 1 test case)
+  ```
+
+</TabItem>
+<TabItem label="macOS">
+</TabItem>
+<TabItem label="Windows">
+</TabItem>
+</Tabs>
+
+### In VS Code
+
+- Running all tests:  
+  Click Run Tests. Each test will be run and the status of each can be seen in the test list.
+- Running a specific test:  
+  Click Run Test next to any test on the test list to run it
 
 ## See Also:
 
