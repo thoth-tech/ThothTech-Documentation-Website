@@ -122,28 +122,63 @@ and `RESOURCE_PATH` variables will be defined.
 
 3.  Configure the extension:  
     Select `${workspaceFolder}/projects/cmake/CMakeLists.txt`  
-    Select the Linux configure preset  
-    In the CMake Tools extension set the Build target to skunit_tests  
-    Set the Debug and Launch target to skunit_tests  
+    ![Select CMake Lists](images/build-unit-tests/1-select-cmakelists.png)  
+    Select the Linux preset  
+    ![Select Linux preset](images/build-unit-tests/2-select-preset-linux.png)  
+    Select the Default configure preset  
+    ![Select Default preset](images/build-unit-tests/2-select-preset-default.png)  
+    In the CMake Tools extension click the button
+    ![Build target button](images/build-unit-tests/select-target.png) next to Build and select
+    skunit_tests  
+    ![Select build target](images/build-unit-tests/3-target-unit-tests.png)  
+    Click the button ![Select Default preset](images/build-unit-tests/select-target.png) next to
+    Debug and select skunit_tests  
+    ![Select debug/launch target](images/build-unit-tests/4-debug-target.png)
 
 4.  Build test project:  
     From the command line:
     ```shell
     cd projects/cmake
-    cmake .
-    make
+    cmake --preset Linux
     ```
     Or in VS Code:  
-    In the CMake Tools extension, click Build. The test project will also be built when you refresh
-    tests on the Testing tab of VS Code.
+    In the CMake Tools extension, click the Build button. The test project will also be built when
+    you refresh tests on the Testing tab of VS Code.  
+    ![Build tests](images/build-unit-tests/5-build.png)
 
 </Steps>
 </TabItem>
 <TabItem label="macOS">
 <Steps>
-1. Step one:
 
-2. Step two:
+1.  Install the CMake Tools extension from the VS Code extension browser or
+    [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools).
+
+2.  Configure the extension:  
+    Select `${workspaceFolder}/projects/cmake/CMakeLists.txt`  
+    ![Select CMake Lists](images/build-unit-tests/1-select-cmakelists.png)  
+    Select the macOS preset  
+    ![Select macOS preset](images/build-unit-tests/2-select-preset-mac.png)  
+    Select the Default configure preset  
+    ![Select Default preset](images/build-unit-tests/2-select-preset-default.png)  
+    In the CMake Tools extension click the button
+    ![Build target button](images/build-unit-tests/select-target.png) next to Build and select
+    skunit_tests  
+    ![Select build target](images/build-unit-tests/3-target-unit-tests.png)  
+    Click the button ![Select Default preset](images/build-unit-tests/select-target.png) next to
+    Debug and select skunit_tests  
+    ![Select debug/launch target](images/build-unit-tests/4-debug-target.png)
+
+3.  Build test project:  
+    From the command line:
+    ```shell
+    cd projects/cmake
+    cmake --preset macOS
+    ```
+    Or in VS Code:  
+    In the CMake Tools extension, click Build. The test project will also be built when you refresh
+    tests on the Testing tab of VS Code.  
+    ![Build tests](images/build-unit-tests/5-build.png)
 
 </Steps>
 </TabItem>
@@ -162,9 +197,18 @@ and `RESOURCE_PATH` variables will be defined.
 
 3.  Configure the extension:  
     Select `${workspaceFolder}/projects/cmake/CMakeLists.txt`  
-    Select the Windows configure preset  
-    In the CMake Tools extension set the Build target to skunit_tests  
-    Set the Debug and Launch target to skunit_tests  
+    ![Select CMake Lists](images/build-unit-tests/1-select-cmakelists.png)  
+    Select the Windows preset  
+    ![Select Windows preset](images/build-unit-tests/2-select-preset-windows.png)  
+    Select the Default configure preset  
+    ![Select Default preset](images/build-unit-tests/2-select-preset-default.png)  
+    In the CMake Tools extension click the button
+    ![Build target button](images/build-unit-tests/select-target.png) next to Build and select
+    skunit_tests  
+    ![Select build target](images/build-unit-tests/3-target-unit-tests.png)  
+    Click the button ![Select Default preset](images/build-unit-tests/select-target.png) next to
+    Debug and select skunit_tests  
+    ![Select debug/launch target](images/build-unit-tests/4-debug-target.png)
 
 4.  Build test project:  
     From the command line:
@@ -174,7 +218,8 @@ and `RESOURCE_PATH` variables will be defined.
     ```
     Or in VS Code:  
     In the CMake Tools extension, click Build. The test project will also be built when you refresh
-    tests on the Testing tab of VS Code.
+    tests on the Testing tab of VS Code.  
+    ![Build tests](images/build-unit-tests/5-build.png)
 
 </Steps>
 </TabItem>
@@ -222,6 +267,32 @@ and `RESOURCE_PATH` variables will be defined.
 
 </TabItem>
 <TabItem label="macOS">
+
+- Running all tests:
+
+  ```shell
+  cd ../../bin
+  ./skunit_tests
+  ```
+
+  Example output:
+
+  ```
+  TODO: Example output
+  ```
+
+- Running a specific test:
+
+  ```shell
+  ./skunit_tests [test name or tag]
+  ```
+
+  Example output:
+
+  ```
+  TODO: Example output
+  ```
+
 </TabItem>
 <TabItem label="Windows">
 
@@ -265,10 +336,17 @@ and `RESOURCE_PATH` variables will be defined.
 
 ### In VS Code
 
+You can run tests from the Testing tab in VS Code
+![Testing tab](images/run-unit-tests/1-testing-tab.png)
+
 - Running all tests:  
-  Click Run Tests. Each test will be run and the status of each can be seen in the test list.
+  Click Run Tests. Each test will be run and the status of each can be seen in the test list after a
+  test runs.  
+  ![Run Tests](images/run-unit-tests/2-run-tests.png)
 - Running a specific test:  
-  Click Run Test next to any test on the test list to run it
+  Click Run Test next to any test on the test list to run it  
+  ![Run Test](images/run-unit-tests/3-run-test.png)  
+  ![Test status](images/run-unit-tests/4-test-status.png)
 
 ## See Also:
 
