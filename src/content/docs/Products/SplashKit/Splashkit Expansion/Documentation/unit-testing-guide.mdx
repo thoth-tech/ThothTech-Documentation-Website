@@ -150,9 +150,32 @@ and `RESOURCE_PATH` variables will be defined.
 </TabItem>
 <TabItem label="Windows">
 <Steps>
-1. Step one:
 
-2. Step two:
+1.  Open the MINGW64 terminal and install prerequisites with these commands:
+
+    ```shell
+    pacman -Syu
+    pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-gdb mingw-w64-x86_64-cmake mingw-w64-x86_64-make
+    ```
+
+2.  Install the CMake Tools extension from the VS Code extension browser or
+    [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools).
+
+3.  Configure the extension:  
+    Select `${workspaceFolder}/projects/cmake/CMakeLists.txt`  
+    Select the Windows configure preset  
+    In the CMake Tools extension set the Build target to skunit_tests  
+    Set the Debug and Launch target to skunit_tests  
+
+4.  Build test project:  
+    From the command line:
+    ```shell
+    cd projects/cmake
+    cmake --preset Windows
+    ```
+    Or in VS Code:  
+    In the CMake Tools extension, click Build. The test project will also be built when you refresh
+    tests on the Testing tab of VS Code.
 
 </Steps>
 </TabItem>
@@ -202,6 +225,42 @@ and `RESOURCE_PATH` variables will be defined.
 <TabItem label="macOS">
 </TabItem>
 <TabItem label="Windows">
+
+- Running all tests:
+
+  ```shell
+  cd ../../bin
+  ./skunit_tests.exe
+  ```
+
+  Example output:
+
+  ```
+  (26/04/2025) ERROR -> Could not establish connection at open_connection after calling _establish_connection [raised in networking.cpp:223]
+  (26/04/2025) WARNING -> Invalid connection passed to is_connection_open [raised in networking.cpp:365]
+  (26/04/2025) WARNING -> Unable to locate file for non_existent (C:\msys64\home\Daniel\splashkit-core\bin\Resources\sounds\non_existent.mp3) [raised in music.cpp:47]
+  (26/04/2025) WARNING -> Unable to locate file for non_existent (C:\msys64\home\Daniel\splashkit-core\bin\Resources\images\non_existent.jpg) [raised in images.cpp:102]
+  ===============================================================================
+  All tests passed (1212 assertions in 54 test cases)
+
+  ```
+
+- Running a specific test:
+
+  ```shell
+  ./skunit_tests.exe [test name or tag]
+  ```
+
+  Example output:
+
+  ```
+  ./skunit_tests.exe "[contains]"
+  Filters: [contains]
+  ===============================================================================
+  All tests passed (9 assertions in 1 test case)
+
+  ```
+
 </TabItem>
 </Tabs>
 
