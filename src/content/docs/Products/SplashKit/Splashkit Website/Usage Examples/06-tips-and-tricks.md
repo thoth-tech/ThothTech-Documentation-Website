@@ -86,3 +86,17 @@ To enable this:
 1. Go to File -> Preferences -> Settings or `Ctrl + ,`
 2. In the search bar type "Format on save"
 3. Enable the Format on save box ![FormatOnSave](images/FormatOnSave.png)
+
+## Common Git Commands
+
+| Command                | Purpose                                                                                                                   |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| git pull upstream main | Pulls changes from the main branch of the upstream repo – great to run at the start of the day                            |
+| git clean -df          | Removes untracked files and directories - helpful if you forget a branch name                                             |
+| git branch             | Lists all branches in your repo - good if you have forgotten the name of a branch                                         |
+| git stash              | Temporarily stores uncommitted changes so you can switch branches or pull updates                                         |
+| git checkout -b <name> | Allows the creation and checkout of branch in 1 command                                                                   |
+| git add .              | Stages all changed files in the current directory and below                                                               |
+| git status             | Shows staging area - Useful to see what will be committed                                                                 |
+| git commit -m "message | Commits and creates messages in 1 command                                                                                 |
+| git reset --hard       | Resets your working directory to last commit - Useful if you make some breaking changes and cannot fix. **use with care** |
