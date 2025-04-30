@@ -6,6 +6,8 @@ sidebar:
   order: 1
 ---
 
+import { Steps } from "@astrojs/starlight/components";
+
 ## General tips and tricks to make your life easier.
 
 This guide will provide some useful tips and tricks that have been useful for me while working on
@@ -18,8 +20,10 @@ open a new terminal and changing directory to your working directory.
 
 To do this:
 
+<Steps>
+
 1.  Open VS Code
-2.  Open a new terminal by pressing ``Ctrl + Shift + ` `` or Terminal tab -> new terminal
+2.  Open a new terminal by pressing `` Ctrl + Shift + ` `` or Terminal tab -> new terminal
     ![newterminal](./images/newterminal.png)
 3.  In the terminal, locate the small drop down arrow to the top right
     ![dropdown](./images/dropdown.png)
@@ -29,8 +33,10 @@ To do this:
     select Git Bash or your terminal of choice. ![selectTerminal](images/selectterminal.png)
 6.  Select the terminal you would like as the default terminal within VS Code. I recommend Git Bash
 
+</Steps>
+
 By following these steps, VS Code will automatically open an embedded terminal in your working
-directory. No more alt-tabbing when building your SplashKit projects
+directory. No more alt-tabbing when building your SplashKit projects.
 
 ## Setting up aliases in your Bash terminal
 
@@ -39,6 +45,8 @@ yourself a bunch of time. Whether it is shortened git commands or a compilation 
 aliases are a great time saver.
 
 To create Aliases:
+
+<Steps>
 
 1. Open a new terminal
 2. Enter the command `nano ~/.bashrc`
@@ -52,13 +60,15 @@ To create Aliases:
    you back to the terminal
 6. Now to apply the changes enter the command `source ~/.bashrc` or restart your terminal
 
+</Steps>
+
 Now when you enter your alias it should run the command you have set. Some Aliases I use are:
 
 | Aliases                                            | Purpose                                                         |
 | -------------------------------------------------- | --------------------------------------------------------------- |
 | `alias gc='git checkout'                         ` | allows gc branchname for easier branch switching                |
 | `alias gcm='git checkout main'                   ` | quickly get to main branch                                      |
-| `alias skcompile='skm clang++ \*.cpp -o a && ./a'` | quickly compiles and runs C++ SplashKit projects in one command |
+| `alias skcompile='skm clang++ \*.cpp -o a && ./a ` | quickly compiles and runs C++ SplashKit projects in one command |
 
 These are some example aliases but you can do pretty much anything. If there are any commands you
 find yourself typing and think "Man this is tedious" just make a new alias for it!
@@ -83,9 +93,13 @@ format your code automatically when you save the document.
 
 To enable this:
 
+<Steps>
+
 1. Go to File -> Preferences -> Settings or `Ctrl + ,`
 2. In the search bar type "Format on save"
 3. Enable the Format on save box ![FormatOnSave](images/FormatOnSave.png)
+
+</Steps>
 
 ## Common Git Commands
 
