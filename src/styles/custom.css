@@ -321,3 +321,43 @@ img.ontrack {
 .steps>li:last-child::after {
   display: none;
 }
+
+@media print {
+
+  h3#student-leadership,
+  h2#project-1---ontrack,
+  h2#project-2---splashkit,
+  h3#project-members,
+  h3#project-members-1 {
+    page-break-before: always
+  }
+
+  header {
+    display: none;
+  }
+
+  footer {
+    display: none !important;
+  }
+
+  summary {
+    display: none !important;
+  }
+
+  button {
+    display: none !important;
+  }
+
+  aside {
+    display: none !important;
+  }
+
+  .main-frame {
+    padding-top: 0px;
+    margin-top: 30px;
+  }
+
+  .sidebar-content {
+    display: none !important;
+  }
+}
