@@ -1,0 +1,248 @@
+---
+title: Usage Example Style Guide
+description: General rules to follow when creating usage examples
+sidebar:
+  label: Style Guide
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+
+## Code Style and Formatting Guide
+
+This guide aims to introduce new team members to some standard practices for contributing to
+splashkit, such as variable declarations, formatting across languages and general do's and don'ts
+
+## Naming Conventions
+
+These are general naming conventions for variables, functions, namespaces and more that should be
+used when creating usage examples for SplashKit.
+
+### 1. Variable declarations
+
+Variable declarations for SplashKit usage examples should be in the following format:
+
+| Language | Naming convention | Variable Example       |
+| -------- | ----------------- | ---------------------- |
+| C++      | snake_case        | `string variable_name` |
+| C#       | camelCase         | `string variableName`  |
+| Python   | snake_case        | `variable_name`        |
+
+See the examples below:
+
+<Tabs syncKey="code-language">
+<TabItem label="C++">
+
+```cpp
+#include "splashkit.h"
+
+int main()
+{
+    // Declare a variable with snake_case
+    string variable_name = "This is snake case";
+    return 0;
+}
+```
+
+</TabItem>
+<TabItem label="C#">
+
+<Tabs syncKey="csharp-style">
+<TabItem label="Top-level Statements">
+
+```csharp
+using static SplashKitSDK.SplashKit;
+
+// Declare a variable with camelCase
+string variableName = "this is an example of camelCase";
+```
+
+</TabItem>
+<TabItem label="Object-Oriented">
+
+```csharp
+using SplashKitSDK;
+
+namespace VariableExample
+{
+    public class Program
+    {
+        public static void Main()
+        {
+            // Declare a variable with camelCase
+            string variableName = "this is an example of camelCase";
+
+        }
+    }
+}
+```
+
+</TabItem>
+</Tabs>
+
+</TabItem>
+<TabItem label="Python">
+
+```python
+from splashkit import *
+
+# declare a variable with snake_case
+variable_name = "This is snake case"
+
+```
+
+</TabItem>
+</Tabs>
+
+**Other guidelines when creating variables**:
+
+| Do                                    | Don't                               |
+| ------------------------------------- | ----------------------------------- |
+| Use descriptive variable names        | Use `i`, `x`, `val` in main logic   |
+| Use variables for multiple use values | Declare a variable for one time use |
+| Use proper types for variables        | Use types such as `var` and `float` |
+
+### 2. Function and Methods
+
+When calling and naming functions and methods using SplashKit we do the following:
+
+| Language             | Naming convention | Function/Method Example              |
+| -------------------- | ----------------- | ------------------------------------ |
+| C++                  | snake_case        | `refresh_screen(60)`                 |
+| C# (Top-Level)       | PascalCase        | `RefreshScreen(60)`                  |
+| C# (Object-Oriented) | PascalCase        | `SplashKit.RefreshScreen(60)`        |
+| Python               | snake_case        | `refresh_screen_with_target_fps(60)` |
+
+:::tip[Python function names]
+
+Python function names will often differ from other languages due to python not handling function
+overloads. The example above shows the difference for this overload of Refresh Screen.
+
+You can check the correct function signature in the [API Documentation](https://splashkit.io/api/)
+pages.
+
+:::
+
+### 3. C# Namespaces (Object-Oriented)
+
+The namespace for a usage example in C# (Object-Oriented version) should be written in Pascal case,
+and will follow the convention of: The name of the function being demonstrated, with the word
+"Example" added on the end, also written in Pascal case.
+
+**For example**:
+
+```csharp
+using SplashKitSDK;
+
+namespace DrawRectangleExample
+{
+  // ...
+}
+```
+
+### 4. Window Names
+
+When using windows to display any graphics the window name should be a description of what is
+happening on the window rather than the name of the function you are displaying.
+
+| Good Window Name                         | Bad Window Name                        |
+| ---------------------------------------- | -------------------------------------- |
+| `"Colourful Starburst"`                  | `"Draw Line"`                          |
+| ![Good window name](images/goodname.png) | ![Bad window name](images/badname.png) |
+
+## Formatting, Structure and Readability
+
+### Code Comments
+
+Code comments should be used to explain the _why_ behind code, not the _what_. Code comments should
+be clear and concise
+
+A good Comment should explain the intent or purpose A bad comment will state the obvious
+
+| Do                                            | Don't                                                                            |
+| --------------------------------------------- | -------------------------------------------------------------------------------- |
+| `// Draw rectangle to window`                 | `// Call the DrawRectangle function`                                             |
+| `// Wait for user input`                      | `// Hold program to wait for user to press any key before the program continues` |
+| Use comments for complex or non-obvious logic | Use comments to repeat code literally                                            |
+
+#### C# Example
+
+```csharp
+// Good comment
+if (playerHealth <= 0)
+{
+    // End the game if the player runs out of health
+    WriteLine("Game Over");
+}
+
+// Bad Comment
+if (playerHealth <= 0)
+{
+    // Call WriteLine when health reaches 0
+    WriteLine("Game Over");
+}
+```
+
+### Braces and Indentation
+
+- **Braces:** Place braces (curly brackets) on the line following the declaration.
+- **Indentation:** Between any new pair of curly brackets (`{`, `}`), write your code **4** further
+  spaces in from the left.
+
+**Do**:
+
+```cpp
+int main()
+{
+    // ...
+}
+```
+
+**Don't do**:
+
+```cpp
+int main() {
+  // ...
+}
+```
+
+### If Statements
+
+- The if statement condition should be on its own line.
+- Use braces, even if just 1 line below, as this is easier for beginners to read.
+
+**Do**:
+
+```cpp
+if (mouse_clicked(LEFT_BUTTON))
+{
+    x -= SPEED;
+}
+```
+
+**Don't do**:
+
+```cpp
+if (mouse_clicked(LEFT_BUTTON)) x-= SPEED;
+```
+
+### Graphical Examples
+
+- If your program is using a Graphical Window, any text information should be displayed on the
+  Window.
+- Do not use terminal outputs when using a graphics window in your program.
+
+### Looping
+
+- Do not use infinite loops, such as `while(true)`, as this is poor practice.
+- Instead, use a loop condition that is defined by a boolean function, such as
+  `while (!quit_requested())`.
+
+### Use simple code
+
+As SplashKit usage examples are targeted to beginners, so it's important to keep the code as simple
+and readable as possible.
+
+Avoid using advanced features such as:
+
+- **Ternary statements/operators** (`condition ? value-if-true : value-if-false`), and instead,
+  stick to traditional if/else statements.
