@@ -217,5 +217,5 @@ repository.
   your changes, and submit the pull request.
 
 Please refer to the
-[Pull Request Guide](/products/splashkit/splashkit-website/onboarding/03-pull-request/) for more
+[Pull Request Guide](/products/splashkit/04-pull-request/) for more
 information on creating a pull request.
