@@ -2,170 +2,149 @@
 title: Get Your Environment Set Up
 description: This is a step-by-step guide on how to get started within the SplashKit Starlight repo.
 sidebar:
-  label: "- Setting Up"
+  label: "- Setting Up Your Environment"
   order: 2
 ---
 
-import { Tabs, TabItem } from "@astrojs/starlight/components";
-import { Steps } from "@astrojs/starlight/components";
+import { Steps, Aside, Tabs, TabItem } from "@astrojs/starlight/components";
 
 ## Install Necessary Tools
 
 First things first, you'll need to install the necessary tools to get started working within
 SplashKit.io.
 
+### 1. Install GIT
+
+Git is essential for version control, allowing you to clone repositories, commit changes, and
+collaborate. Before you start, ensure you have Git installed on your system.
+
+- Windows: Download Git from [here](https://git-scm.com/download/win) and run the installer `.exe`
+  file.
+- macOS: Git should already be installed, but you can install it with [homebrew](https://brew.sh/)
+  using the following command in your terminal:
+
+  ```shell
+  brew install git
+  ```
+
+- Linux: Install using the package manager. For example, on Ubuntu or Debian, run the following
+  command:
+
+  ```shell
+  sudo apt-get install git
+  ```
+
+After installation, verify the installation with:
+
+```shell
+git --version
+```
+
+### 2. Download and Install VS Code
+
+- Download VS Code: Visit the official
+  [VS Code download page](https://code.visualstudio.com/download) and select the appropriate
+  installer for your operating system (Windows, macOS, or Linux).
+
+- Install VS Code:
+
+  - Windows: Run the downloaded `.exe` file and follow the installation wizard.
+  - macOS: Open the `.dmg` file and drag the Visual Studio Code icon to the Applications folder.
+  - Linux: Install using the appropriate package manager or by downloading the `.deb` or `.rpm`
+    package from the website.
+
+- Launch VS Code: Once installed, launch Visual Studio Code.
+
+### 3. Download and Install Node.js
+
+- Download Node.js: Go to the official
+  [Node.js website](https://nodejs.org/en/download/package-manager) and download the LTS version for
+  your operating system.
+- Install Node.js:
+
+  - Windows: Run the downloaded `.msi` file and follow the installation wizard.
+  - macOS: Open the `.pkg` file and follow the instructions.
+  - Linux: You can use a package manager or install it via NodeSource.
+
+- Verify Installation: Open a terminal (or command prompt) and check if Node.js is installed
+  correctly by running the following command:
+
+  ```shell
+  node -v
+  ```
+
+  This should return the version number of Node.js.
+
+  Also, verify the installation of npm (Node Package Manager) by running the following command:
+
+  ```shell
+  npm -v
+  ```
+
+  This should return the version of npm installed.
+
+### 4. Install SplashKit
 Head to the [SplashKit.io](https://splashkit.io/) website and follow the instructions for your
 specific operating system to install SplashKit.
-
-Then, head to [Docker](https://docs.docker.com/engine/install/) and install Docker for your specific
+ 
+### 5. Install Docker 
+Head to [Docker](https://docs.docker.com/engine/install/) and install Docker for your specific
 operating system.
 
-Finally, in your code editor of choice, ensure you have added the
-[Astro Extension](https://docs.astro.build/en/editor-setup/) to your editor.
+### 6. Install Extensions for VS Code
 
-## Contributing on GitHub
+- Node.js Extension: Install the Node.js extension in VS Code for better integration:
 
-### Fork the SplashKit.io Repo
+  - Open VS Code and go to the Extensions sidebar.
+  - Search for "Node.js Extension Pack" and install it.
 
-To get started working within the Starlight repo, you need to first head over to GitHub and make
-your own fork of the [SplashKit Repo](https://github.com/thoth-tech/splashkit.io-starlight).
+- GitHub Extension: This allows you to interact with GitHub directly from VS Code.:
 
-![splashkit repo](./images/starlightrepo.png)
+  - In the Extensions sidebar, search for "GitHub Pull Requests and Issues" and install it.
 
-Then, select the fork button and create the fork:
+### 7. Install Dependencies
 
-![splashkit fork](./images/splashkitfork.png)
+- Once the project is cloned, navigate to the Project Directory: In the terminal, change into the
+  cloned project directory:
 
-### Steps to Clone the Repo
+  ```shell
+  cd <project-directory>
+  ```
 
-<Tabs syncKey="github-management">
-<TabItem label="Via CLI">
+  Replace `<project-directory>` with your actual folder name.
 
-<Steps>
+- Install Node Dependencies:
 
-1. Open a terminal on your machine and run the following commands, making sure to replace `USERNAME`
-   with your own GitHub username:
+  ```shell
+  npm install
+  ```
 
-   ```shell
-   git clone https://github.com/USERNAME/splashkit.io-starlight.git
-   ```
+This will install all the necessary packages listed in the `package.json` file.
 
-2. Then, navigate into the directory:
+---
 
-   ```shell
-   cd splashkit.io-starlight
-   git remote add upstream https://github.com/thoth-tech/splashkit.io-starlight.git
-   ```
+### 8. Installing WSL
 
-3. Now you're all set up to start working on the SplashKit.io repo.
+<Aside>
+The next steps are only required for SplashKit Core members
+</Aside>
+WSL is a built-in Linux distribution virtual machine for Windows. splashkit-core will be installed
+to the Linux distribution. The official SplashKit installation instructions can be found here:
+[Windows (WSL) Installation Overview](https://splashkit.io/installation/windows-wsl). 
 
-</Steps>
+### 9. Installing Windows Terminal (optional)
 
-</TabItem>
-<TabItem label="Via VSCode">
+Windows Terminal is an updated Command Prompt with many useful features. It is not mandatory to
+install, however it is recommended due to its ease of use. More information about Windows Terminal
+can be found here: [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/).It can be
+installed through the Microsoft Store.
 
-<Steps>
+By default, new tabs will open as a Command Prompt, with WSL terminals being accessible with the
+down-arrow. Since WSL will be used so frequently, there is the option to change the default tab to
+WSL. Open the settings by clicking the down arrow and selecting ‘Settings’. In the ‘Startup’ tab,
+‘Default profile’ allows you to change the default tab type to WSL.
 
-1. Open a new VSCode window.
-2. Open the command palette by pressing `cmd + shift + p` (or `ctrl + shift + p` on Windows/Linux).
-3. Type `git clone` and paste the URL of your forked repo.
+## Contributing 
+You are should now be ready to start contributing to your team project. Make sure you head over to the [Planner board etiquette](/products/splashkit/07-planner-board) page and familiarize yourself with how to correctly interact with the Microsoft Teams Planner board and then get started.
 
-   ![splashkit repo](./images/gitclone.gif)
-
-4. When prompted, select the folder location where you want to clone the repo.
-
-   ![splashkit repo](./images/cloningrepo.png)
-
-5. Once the repo is cloned, VSCode will prompt you to open the repo folder location.
-
-   ![splashkit repo](./images/openrepo.png)
-
-</Steps>
-
-Now you're all set up to start working on the SplashKit.io repo in VSCode.
-
-</TabItem>
-<TabItem label="Via GitHub Desktop">
-
-<Steps>
-
-1. Open GitHub Desktop and click on the `File` tab in the top-left corner, then select
-   `Clone Repository`.
-
-   ![splashkit repo](./images/clonegitdesk.png)
-
-2. Here you can either filter via your existing repositories, find the forked repo, or paste the URL
-   of the forked repo.
-
-   ![splashkit repo](./images/cloneurlgitdesk.png)
-
-3. Once the repo is cloned, you can open the repo in your preferred code editor.
-
-</Steps>
-
-</TabItem>
-</Tabs>
-
-### Create Branches for Contributions
-
-To start contributing to the SplashKit.io repo, you'll need to create a new branch for each
-contribution. This will keep your changes separate from the main branch. You can create a new branch
-in a few different ways:
-
-<Tabs syncKey="github-management">
-<TabItem label="Via CLI">
-Move into the SplashKit.io directory and create a new branch:
-
-```shell
-git checkout -b your-branch-name
-```
-
-Then, push the branch to your fork:
-
-```shell
-git push origin your-branch-name
-```
-
-Now you're all set up to start working on your new branch.
-
-</TabItem>
-<TabItem label="Via VSCode">
-
-Open source control by clicking on the icon on the left-hand side of the VSCode window. Then click
-on the three dots, go down to `Branch`, and select `Create Branch from`.
-
-![splashkit repo](./images/newbranch-vscode.png)
-
-Then, select to make the new branch from `master` and name your branch.
-
-![splashkit repo](./images/addbranch-vscode.png) ![splashkit repo](./images/namebranch-vscode.png)
-
-Next, push the branch to your fork by clicking on the `Publish Branch` button in source control.
-
-![splashkit repo](./images/publishbranch-vscode.png)
-
-Now you're all set up to start working on your new branch.
-
-</TabItem>
-<TabItem label="Via GitHub Desktop">
-
-Select the Starlight repo in GitHub Desktop, then click on the `Current Branch` tab and select
-`New Branch`.
-
-![splashkit repo](./images/addbranch-gitdesk.png)
-
-Name your branch and then click `Create Branch`.
-
-![splashkit repo](./images/namebranch-gitdesk.png)
-
-Then push the branch to your fork by clicking on the `Publish Branch` button.
-
-![splashkit repo](./images/publishbranch-gitdesk.png)
-
-Now you're all set up to start working on your new branch.
-
-</TabItem>
-</Tabs>
-
-By creating a new branch for each contribution, you can keep your changes separate from the main
-branch.
+If you are unfamiliar with how to start contributing through GitHub, check out the [GitHub guide.](/products/splashkit/03-github-guide)
