@@ -2,7 +2,7 @@
 title: Overview
 ---
 
-import { Card, LinkCard, CardGrid, Icon } from "@astrojs/starlight/components";
+import { Aside, Card, LinkCard, CardGrid, Icon } from "@astrojs/starlight/components";
 
 ## Contributing to splashkit-core
 
@@ -79,6 +79,8 @@ Or for skunit_tests:
 ./skunit_tests
 ```
 
+
+
 ### Making Changes
 
 `sktest` is built with the .cpp files from `~/splashkit-core/coreskd/src/test/`. To add your own
@@ -153,13 +155,3 @@ Solutions for common issues can be found below. Be sure to also check the follow
 troubleshooting:
 [Guide to resolving Common Issues](https://thoth-tech.netlify.app/products/splashkit/splashkit-website/onboarding/02-troubleshooting)
 
-### Empty Translator folder
-
-If the translator folder is empty, it may be due to an issue with the submodules. In an WSL
-terminal, enter the following:
-
-```shell
-cd
-cd splashkit-core
-git submodule update --init --recursive
-```

@@ -23,7 +23,7 @@ First step is to ensure you have the necessary tools installed on your workspace
 
   Navigate to the appropriate repo for your team:
   - [SplashKit Website repository](https://github.com/thoth-tech/splashkit.io-starlight).
-  - [SplashKit Online repository](https://github.com/thoth-tech/SplashkitOnline).
+  - [SplashKit Online repository](https://github.com/thoth-tech/SplashKitOnline).
   - [SplashKit Core repository](https://github.com/thoth-tech/splashkit-core).
   - [Thoth-Tech Documentation Site repository](https://github.com/thoth-tech/ThothTech-Documentation-Website).
   
@@ -35,7 +35,7 @@ First step is to ensure you have the necessary tools installed on your workspace
 
 ### 3. Clone the Forked Repository
 <Aside>
-SplahKit Core cloning is slightly different! Make sure you follow the right method below
+SplashKit Core cloning is slightly different! Make sure you follow the right method below
 </Aside>
 <Tabs>
 <TabItem label="Website">
@@ -111,7 +111,7 @@ Now you're all set up to start working on the SplashKit.io repo in VSCode.
 Open a WSL terminal and change directory to your home with:
 
 ```shell
-cd
+cd splashkit-core
 ```
 
 Note that this guide clones the repository to the home directory, but feel free to move its
@@ -124,6 +124,18 @@ git clone --recursive -j2 https://github.com/{user name}/splashkit-core.git
 splashkit-core contains multiple submodules (separate repositories which splashkit-core depends
 upon). The `--recursive` argument ensures that the submodules are also downloaded when calling
 clone. Wait for the download to complete before continuing to the next step.
+
+<Aside type="caution">
+
+If the translator folder is empty, it may be due to an issue with the submodules. In an WSL
+terminal, enter the following:
+
+```shell
+cd splashkit-core
+git submodule update --init --recursive
+```
+
+</Aside>
 </TabItem>
 </Tabs>
 
@@ -261,7 +273,7 @@ You should now have everything you need to begin contributing to you team.
 Be sure to check out the CONTRIBUTE.md for your team:
 
 - [Website](https://github.com/thoth-tech/splashkit.io-starlight/blob/main/CONTRIBUTE.md)
-- [Online](https://github.com/thoth-tech/SplashkitOnline/blob/main/README.md)
+- [Online](https://github.com/thoth-tech/SplashKitOnline/blob/main/README.md)
 - [Core](https://github.com/thoth-tech/splashkit-core/blob/develop/CONTRIBUTING.md)
 
 ---
