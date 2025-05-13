@@ -5,7 +5,7 @@ sidebar:
   label: Style Guide
 ---
 
-import { Steps, Tabs, TabItem } from "@astrojs/starlight/components";
+import { Steps, Tabs, TabItem, Aside } from "@astrojs/starlight/components";
 
 ## Code Style and Formatting Guide
 
@@ -265,6 +265,54 @@ Avoid using advanced features such as:
 - Uses `using SplashKitSDK;`, meaning all SplashKit commands are prefixed with `SplashKit.` (e.g.,
   `SplashKit.WriteLine("Hello!");`).
 
+### Some key differences
+<Aside>
+When converting to OOP you should try and create and use objects where possible.
+</Aside>
+
+Some key differences to note when converting between OOP and top level statements are that OOP should be seeking to highlight the objectivity where possible.
+
+Note the code examples below:
+
+ ```csharp
+// OOP Code
+using SplashKitSDK;
+
+public class Program
+{
+    public static void Main()
+    {
+        Rectangle rectangle = new Rectangle{X=100, Y=100, Width=100, Height=100};
+        Window window = new Window("Example", 600, 400);
+
+        window.Clear(Color.White);
+        window.DrawRectangle(Color.Red, rectangle);
+        window.Refresh();
+        SplashKit.Delay(5000);
+    }
+}
+```
+```csharp
+// Top Level Code
+using SplashKitSDK;
+using static SplashKitSDK.SplashKit;
+
+Rectangle rectangle = RectangleFrom(100,100,100,100);
+Window window = OpenWindow("Example", 600, 400);
+
+ClearScreen(ColorWhite());
+DrawRectangleOnWindow(window, ColorRed(), rectangle);
+RefreshScreen();
+Delay(5000);
+```
+The two code blocks here are functionally identical, but highlight some key differences between top level code and OOP code. 
+
+Notice in the OOP code, we create the `rectangle` and `window` objects, and then perform the drawing of the rectangles through the objects' methods.
+In the top level code however we are calling functions and passing in the object as parameters.
+
+Another key difference here, in OOP we call the color class `Color` and specify the colour we want via the member `Red` whereas in Top Level code we call the function `ColorRed()` 
+
+---
 ### Converting from Top-Level Statements to OOP
 
 To convert from top-level statements to OOP, follow these steps:
