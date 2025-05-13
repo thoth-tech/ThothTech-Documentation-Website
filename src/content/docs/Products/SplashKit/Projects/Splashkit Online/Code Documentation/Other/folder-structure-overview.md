@@ -57,8 +57,8 @@ for internal documentation.
 
 `treeview.js` - Holds the TreeView class, used to display a tree view targeted at showing a
 filesystem. See
-[TreeView](/products/splashkit/projects/splashkit-online/code-documentation/classes/tree-view) for internal
-documentation.
+[TreeView](/products/splashkit/projects/splashkit-online/code-documentation/classes/tree-view) for
+internal documentation.
 
 `fileview.js` - Creates an instance of the TreeView class, hooks it into the IDBStoredProject and
 ExecutionEnvironment's filesystems, and places it on the main page.
