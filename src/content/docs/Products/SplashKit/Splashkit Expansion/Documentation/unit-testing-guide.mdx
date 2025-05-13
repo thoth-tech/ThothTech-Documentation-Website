@@ -21,14 +21,14 @@ Tests are written in C++ with the aid of macros from Catch2. Test files are loca
   - src
     - test
       - unit_test_main.cpp
-      - unit*test*[name].cpp
+      - `unit_test_<name>.cpp`
 
 </FileTree>
 
 `unit_test_main.cpp` is the entry point for all unit tests. You do not need to modify this to write
 your own tests or update existing ones.
 
-The `unit_test_[name].cpp` files contain tests for related parts of SplashKit. For example,
+The `unit_test_<name>.cpp` files contain tests for related parts of SplashKit. For example,
 `unit_test_utilities.cpp` has tests for SplashKit's utility functions. A test file must include the
 Catch2 header file along with any other includes required:
 
@@ -235,104 +235,74 @@ and `RESOURCE_PATH` variables will be defined.
 <Tabs syncKey="platform">
 <TabItem label="Linux/WSL">
 
-- Running all tests:
+- It's a good idea to run the unit tests in a random order so that you can confirm that they run
+  indepedently of one another:
 
   ```shell
   cd ../../bin
-  ./skunit_tests
+  ./skunit_tests --order rand
   ```
 
-  Example output:
+  By default, this will only show reports for failed tests. To show reports for successful tests as
+  well, use the option `--success`. More command line options can be found in
+  [Catch2's documentation](https://github.com/catchorg/Catch2/blob/v2.x/docs/command-line.md).
 
-  ```
-  (14/04/2025) ERROR -> Invalid binary string passed to bin_to_oct: 2, returning empty string [raised in basics.cpp:340]
-  (14/04/2025) ERROR -> Invalid hexadecimal string passed to hex_to_oct: G, returning empty string [raised in basics.cpp:371]
-  (14/04/2025) ERROR -> Invalid octal string passed to hex_to_dec: G, returning 0 [raised in basics.cpp:305]
-  (14/04/2025) ERROR -> Invalid octal string passed to oct_to_hex: 8, returning empty string [raised in basics.cpp:383]
-  ===============================================================================
-  All tests passed (1258 assertions in 74 test cases)
-  ```
-
-- Running a specific test:
+- If you want to run a specific test, or group of tests, you can do so:
 
   ```shell
-  ./skunit_tests [test name or tag]
+  ./skunit_tests <test spec>
   ```
 
-  Example output:
-
-  ```
-  ./skunit_tests "[least_common_multiple]"
-  Filters: [least_common_multiple]
-  ===============================================================================
-  All tests passed (7 assertions in 1 test case)
-  ```
+  The `test spec` can be a test name or tags and supports wildcards. For example, `*string*` would
+  run all of the tests with "string" in the name.
 
 </TabItem>
 <TabItem label="macOS">
 
-- Running all tests:
+- It's a good idea to run the unit tests in a random order so that you can confirm that they run
+  indepedently of one another:
 
   ```shell
   cd ../../bin
-  ./skunit_tests
+  ./skunit_tests --order rand
   ```
 
-  Example output:
+  By default, this will only show reports for failed tests. To show reports for successful tests as
+  well, use the option `--success`. More command line options can be found in
+  [Catch2's documentation](https://github.com/catchorg/Catch2/blob/v2.x/docs/command-line.md).
 
-  ```
-  TODO: Example output
-  ```
-
-- Running a specific test:
+- If you want to run a specific test, or group of tests, you can do so:
 
   ```shell
-  ./skunit_tests [test name or tag]
+  ./skunit_tests <test spec>
   ```
 
-  Example output:
-
-  ```
-  TODO: Example output
-  ```
+  The `test spec` can be a test name or tags and supports wildcards. For example, `*string*` would
+  run all of the tests with "string" in the name.
 
 </TabItem>
 <TabItem label="Windows">
 
-- Running all tests:
+- It's a good idea to run the unit tests in a random order so that you can confirm that they run
+  indepedently of one another:
 
   ```shell
   cd ../../bin
-  ./skunit_tests.exe
+  ./skunit_tests.exe --order rand
   ```
 
-  Example output:
+  By default, this will only show reports for failed tests. To show reports for successful tests as
+  well, use the option `--success`. More command line options can be found in
+  [Catch2's documentation](https://github.com/catchorg/Catch2/blob/v2.x/docs/command-line.md).
 
-  ```
-  (26/04/2025) ERROR -> Could not establish connection at open_connection after calling _establish_connection [raised in networking.cpp:223]
-  (26/04/2025) WARNING -> Invalid connection passed to is_connection_open [raised in networking.cpp:365]
-  (26/04/2025) WARNING -> Unable to locate file for non_existent (C:\msys64\home\Daniel\splashkit-core\bin\Resources\sounds\non_existent.mp3) [raised in music.cpp:47]
-  (26/04/2025) WARNING -> Unable to locate file for non_existent (C:\msys64\home\Daniel\splashkit-core\bin\Resources\images\non_existent.jpg) [raised in images.cpp:102]
-  ===============================================================================
-  All tests passed (1212 assertions in 54 test cases)
-
-  ```
-
-- Running a specific test:
+- If you want to run a specific test, or group of tests, you can do so:
 
   ```shell
-  ./skunit_tests.exe [test name or tag]
+  ./skunit_tests.exe <test spec>
   ```
 
-  Example output:
-
-  ```
-  ./skunit_tests.exe "[contains]"
-  Filters: [contains]
-  ===============================================================================
-  All tests passed (9 assertions in 1 test case)
-
-  ```
+  The `test spec` can be a test name or tags and supports wildcards. For example, `*string*` would
+  run all of the tests with "string" in the name.
 
 </TabItem>
 </Tabs>
