@@ -1,24 +1,23 @@
 ---
 title: Peer Review Guide
 sidebar:
-  label: Peer Review Guide for Web Dev
-  order: 7
+  label: "- Peer Review Guide for Web Dev"
 ---
 
 import { Aside } from "@astrojs/starlight/components";
 
-## Introduction on how to do a peer review within the Ontrack Web Dev Team
+## Introduction on how to do a peer review within the SplashKit Web Dev Team
 
 <Aside type="tip" title="TL;DR">
 
-- Peer reviews are essential for maintaining high-quality code in the Ontrack team project.
+- Peer reviews are essential for maintaining high-quality code in the SplashKit website project.
 - The Peer-Review Checklist is **required** for every review to ensure consistency.
 - Peer-Review Prompts are **optional** but serve as a resource to guide discussions.
 - The goal is to verify code quality while fostering collaboration and improvement.
 
 </Aside>
 
-In Ontrack, peer reviews are a vital process to ensure code quality, maintainability, and
+In SplashKit, peer reviews are a vital process to ensure code quality, maintainability, and
 consistency across the website development project. Every pull request (PR) must follow the
 Peer-Review Checklist, which checks for key factors like functionality, code readability, and
 documentation.
@@ -33,7 +32,7 @@ when moving tasks in the planner board.
 
 </Aside>
 
-### Ontrack Peer-Review Checklist
+### SplashKit Peer-Review Checklist
 
 The following checklist is required to be completed for every review to ensure high-quality
 contributions.
@@ -73,50 +72,15 @@ contributions.
 - [ ] Checklist Completion: Have all relevant checklist items been reviewed and completed?
 ```
 
-### Ontrack Peer-Review Prompts
+### SplashKit Peer-Review Prompts
 
-- **General Information**:
-
-  - [ ] Type of Change: Clearly indicate the type of change (choose one):
-    - [ ] Bug fix
-    - [ ] New feature
-    - [ ] Breaking change
-    - [ ] Documentation update
-
-- **Code Quality**:
-
-  - [ ] Repository: Ensure the PR is made to the correct repository.
-  - [ ] Readability: Is the code easy to read and follow? Are comments included where necessary?
-  - [ ] Maintainability: Can this code be maintained or extended easily in the future?
-
-- **Functionality**:
-
-  - [ ] Correctness: Does the code meet the task requirements?
-  - [ ] Existing Functionality: Has the impact on existing functionality been considered and tested?
-
-- **Testing**:
-
-  - [ ] Test Coverage: Are unit tests provided for new or modified code?
-  - [ ] Test Results: Have all tests passed successfully?
-
-- **Documentation**:
-
-  - [ ] Documentation: Is the inline and external documentation updated and clear?
-
-- **Pull Request Details**:
-  - [ ] PR Description: Is the problem being solved clearly described?
-  - [ ] Checklist Completion: Have all relevant checklist items been reviewed and completed?
-
----
-
-## OnTrack Peer-Review Prompts
-
-Use these prompts to guide discussions and ensure high-quality code contributions:
+These prompts can help guide discussions during the review process and ensure that the code meets
+high standards.
 
 - **Type of Change**: Is the PR correctly identifying the type of change (bug fix, new feature,
   etc.)?
 - **Code Readability**: Is the code well-structured and easy to follow? Could better comments,
-  names, or organization improve it?
+  names, or organisation improve it?
 - **Maintainability**: Is the code modular and easy to maintain? Does it introduce any technical
   debt?
 - **Code Simplicity**: Are there redundant or overly complex parts of the code that could be
@@ -126,7 +90,7 @@ Use these prompts to guide discussions and ensure high-quality code contribution
   tests to ensure code reliability?
 - **Backward Compatibility**: Does the change break any existing functionality? If so, is backward
   compatibility handled or documented?
-- **Performance Considerations**: Could this code impact performance negatively? Can it be optimized
+- **Performance Considerations**: Could this code impact performance negatively? Can it be optimised
   while maintaining readability?
 - **Security Concerns**: Does this change introduce any security risks? Is input validation handled
   properly?
@@ -139,33 +103,39 @@ Use these prompts to guide discussions and ensure high-quality code contribution
 
 ## Review Guidelines for Specific File Types
 
+Different file types require different levels of attention during the review process. Here's what to
+look for when reviewing each type of file:
+
 ### `.mdx` Files
 
 - **Content Accuracy**: Ensure that the content is clear and accurate. Double-check for any errors
-  in documentation or guides.
+  in the documentation or guides.
 - **Frontmatter**: Ensure the frontmatter (`title`, `description`, etc.) is correctly filled out.
-- **Component Usage**: Verify that components like `LinkCard` or `CardGrid` are used appropriately
-  within `.mdx` files.
+- **Component Usage**: Verify that components such as `LinkCard`, `CardGrid`, or others are being
+  used appropriately within the `.mdx` files.
 
 ### `.css` Files
 
-- **Consistency**: Check alignment with the **Styling Guide** and consistent use of variables (e.g.,
-  colors, fonts, spacing).
-- **Accessibility**: Ensure animations respect user preferences, and contrast ratios meet **WCAG 2.1
-  AA** standards.
-- **Naming Conventions**: Verify CSS class names follow consistent patterns.
+- **Consistency**: Check that the styles align with the **Styling Guide** and maintain a consistent
+  use of variables (e.g., colours, fonts, spacing).
+- **Accessibility**: Review for accessibility considerations, such as whether animations are
+  disabled for users who prefer reduced motion, and whether contrast ratios meet **WCAG 2.1 AA**
+  standards.
+- **Naming Conventions**: Ensure that CSS class names follow a consistent naming pattern.
 
 ### `.jsx`/`.tsx` Files
 
-- **Functionality**: Validate that interactive components (e.g., forms, sliders) work as expected
-  and meet task requirements.
-- **Performance**: Identify unnecessary re-renders or performance concerns.
-- **Code Style**: Ensure compliance with **React/JSX** best practices and linting rules.
+- **Functionality**: Make sure the interactive components (e.g., sliders, forms) work as expected
+  and meet the requirements of the task.
+- **Performance**: Look for unnecessary re-renders or other performance concerns.
+- **Code Style**: Ensure the code follows **React/JSX** best practices and any project-specific
+  linting rules.
 
 ### `.astro` Files
 
-- **Structure**: Verify page/component structure aligns with **Astro standards**.
-- **Reusability**: Look for repetitive code that could be refactored into reusable components.
+- **Structure**: Ensure the page or component is well-structured and follows the **Astro standards**
+  for component and page creation.
+- **Reusability**: Look for opportunities to refactor repetitive code into reusable components.
 
 ---
 
@@ -179,6 +149,6 @@ Use these prompts to guide discussions and ensure high-quality code contribution
 
 ---
 
-By following these guidelines, you’ll help maintain high standards of code quality, performance, and
-accessibility in the OnTrack project. Peer reviews not only ensure the quality of the code but also
-foster collaboration and shared learning among the team.
+By following these guidelines, you'll ensure that the SplashKit website project maintains high
+standards of code quality, performance, and accessibility. Remember, peer reviews are not only about
+verifying the code but also about learning and improving together as a team.
