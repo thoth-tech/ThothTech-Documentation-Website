@@ -5,7 +5,7 @@ sidebar:
   label: Style Guide
 ---
 
-import { Steps, Tabs, TabItem, Aside } from "@astrojs/starlight/components";
+import { Steps, Tabs, TabItem } from "@astrojs/starlight/components";
 
 ## Code Style and Formatting Guide
 
@@ -163,18 +163,23 @@ A good Comment should explain the intent or purpose A bad comment will state the
 | `// Draw rectangle to window`                 | `// Call the DrawRectangle function`                                             |
 | `// Wait for user input`                      | `// Hold program to wait for user to press any key before the program continues` |
 | Use comments for complex or non-obvious logic | Use comments to repeat code literally                                            |
+| Use comments for group of code or code block  | Use comments for only the line below the comment                                            |
 
 #### C# Example
 
+**Good comment example**:
+
 ```csharp
-// Good comment
+// End the game if the player runs out of health
 if (playerHealth <= 0)
 {
-    // End the game if the player runs out of health
     WriteLine("Game Over");
 }
+```
 
-// Bad Comment
+**Bad comment example**:
+
+```csharp
 if (playerHealth <= 0)
 {
     // Call WriteLine when health reaches 0
@@ -266,7 +271,11 @@ Avoid using advanced features such as:
 
 ### Some key differences
 
-<Aside>When converting to OOP you should try and create and use objects where possible.</Aside>
+:::note
+
+When converting to OOP you should try and create and use objects where possible.
+
+:::
 
 Some key differences to note when converting between OOP and top level statements are that OOP
 should be seeking to highlight the objectivity where possible.
@@ -277,18 +286,22 @@ Note the code examples below:
 // OOP Code
 using SplashKitSDK;
 
-public class Program
+namespace DrawRectangleOnWindowExample
 {
-   public static void Main()
-   {
-       Rectangle rectangle = new Rectangle{X=100, Y=100, Width=100, Height=100};
-       Window window = new Window("Example", 600, 400);
+    public class Program
+    {
+        public static void Main()
+        {
+            Rectangle rectangle = new Rectangle { X = 100, Y = 100, Width = 100, Height = 100 };
+            Window window = new Window("Example", 600, 400);
 
-       window.Clear(Color.White);
-       window.DrawRectangle(Color.Red, rectangle);
-       window.Refresh();
-       SplashKit.Delay(5000);
-   }
+            window.Clear(Color.White);
+            window.DrawRectangle(Color.Red, rectangle);
+            window.Refresh();
+            SplashKit.Delay(5000);
+            window.Close();
+        }
+    }
 }
 ```
 
@@ -297,13 +310,14 @@ public class Program
 using SplashKitSDK;
 using static SplashKitSDK.SplashKit;
 
-Rectangle rectangle = RectangleFrom(100,100,100,100);
+Rectangle rectangle = RectangleFrom(100, 100, 100, 100);
 Window window = OpenWindow("Example", 600, 400);
 
-ClearScreen(ColorWhite());
+ClearWindow(window, ColorWhite());
 DrawRectangleOnWindow(window, ColorRed(), rectangle);
-RefreshScreen();
+RefreshWindow(window);
 Delay(5000);
+CloseWindow(window);
 ```
 
 The two code blocks here are functionally identical, but highlight some key differences between top
@@ -314,7 +328,16 @@ of the rectangles through the objects' methods. In the top level code however we
 functions and passing in the object as parameters.
 
 Another key difference here, in OOP we call the color class `Color` and specify the colour we want
-via the member `Red` whereas in Top Level code we call the function `ColorRed()`
+via the member `Red` whereas in Top Level code we call the function `ColorRed()`.
+
+:::tip[Using SplashKit.OpenWindow]
+
+For examples that do not require a `Window` variable, the C# OOP code should use
+`SplashKit.OpenWindow(...)` rather than `new Window(...)`.
+
+This also applies to other SplashKit types such as Bitmaps and Fonts.
+
+:::
 
 ---
 
@@ -358,7 +381,7 @@ WriteLine("Hello, " + name + "!");
 ```csharp
 using SplashKitSDK;
 
-namespace Program
+namespace WriteLineExample
 {
     public class Program
     {
@@ -402,7 +425,7 @@ To convert from OOP to top-level statements:
 ```csharp
 using SplashKitSDK;
 
-namespace Program
+namespace WriteLineExample
 {
     public class Program
     {
@@ -436,7 +459,7 @@ WriteLine("Hello, " + name + "!");
 - Wrap code in:
 
   ```csharp
-  namespace Program
+  namespace FunctionNameExample
   {
       public class Program
       {
@@ -448,11 +471,28 @@ WriteLine("Hello, " + name + "!");
   }
   ```
 
+  :::note[Namespace naming]
+
+  In the namespace name, replace `FunctionName` with the name of the function, using PascalCase.
+
+  :::
+
 - Prefix SplashKit functions with `SplashKit.`.
 
 **OOP to Top-Level**:
 
 - Replace `using SplashKitSDK;` with `using static SplashKitSDK.SplashKit;`.
+
+  :::note[Variables with SplashKit types]
+
+  If your code has variables with a SplashKit data type, such as `Window`, `Bitmap`, etc, then you
+  will need to include `using SplashKitSDK;` as well.
+
+  You can then comment this line out, and check that only the SplashKit variables have error
+  squiggles, then uncomment the line again.
+
+  :::
+
 - Remove `namespace`, `class`, and `Main` method wrappers.
 - Remove `SplashKit.` prefixes.
 
