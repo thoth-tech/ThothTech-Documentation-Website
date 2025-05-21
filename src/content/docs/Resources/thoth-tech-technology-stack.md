@@ -144,8 +144,6 @@ joining a product team.
 
 ---
 
-## CourseFlow
-
 ### Tools
 
 - **GitHub**: Repository hosting service for version control and collaboration.
