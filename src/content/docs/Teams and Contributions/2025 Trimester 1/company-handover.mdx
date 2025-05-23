@@ -405,42 +405,55 @@ repositories for the relevant teams.
 ### Completed Deliverables
 
 #### SplashKit Expansion
-- **New Unit Testing Guide**:
-  - Guide for unit testing which covers how to write a unit test with examples and how to build and run tests.
+
 - **Expanded Unit Tests to Cover the of basics.cpp**:
   - Work that started last trimester was added to to complete unit test coverage for the basics.cpp file.
+
 - **Added new Unit Tests for the Graphics Module**:
   - A new unit testing suite was added to the graphics module to reduce the number of bugs that make it to production.
+
 - **Documented macOS Build and Test Instructions**:
   - These were added to the top-level readme for four different commands aimed at making the process easier to complete.
+  
 - **Added new Helper Scripts and CMake Presets to the Build Process of SplashKit**:
-  - Catch helper scripts and CMake presets were added to simplifier building the project and enable the use of the CMake Tools extension 
-    for VS Code.
+  - Catch helper scripts and CMake presets were added to simplifier building the project and enable the use of the CMake Tools extension for VS Code.
+
 - **Updated Raspberry Pis to use Newer Libraries**:
   - The pigpio library was changed to WiringPi and SSH to allow for support of newer Raspberry Pi models.
+
 - **Bug fix for Using CMake with Raspberry Pi**:
   - A fix was added that allowed for Cmake to more easily recognise a Raspberry Pi.
+
 - **Bug fixes for the Window Class**:
-  - Added missing methods to the C# implementation of draw_pixel_on_window functions.
+  - Added missing methods to the C# implementation of `draw_pixel_on_window` functions.
   - Fixed missing attributes in the header documentation for the Window class.
-  - Removed overloads for get_pixel() that shouldn't exists.
+  - Removed overloads for `get_pixel()` that shouldn't exists.
   - Updated class to user proper destructor.
 
 #### SplashKit Website & Tutorials
 
 - **Implementation References Update**:
   - The implementation reference has been updated to include instances when the functions are used in other usage examples, resulting in a larger number of references.
+
 - **Usage Examples Identifier**:
   - The function headers in API Documentation has been updated to indicate which functions has examples created or implementation for it references, resulting in a better user experience and visibility.
-- **Game Showcase**:
+
+- **Game Showcase Updates**:
   - A script has been created to generate the each game showcase markdown files automatically using a JSON that stores all of the showcases' data.
   - A new page has been created to allow users to test out the games online using SplashKit Online Lite.
+
 - **SplashKit Blog Addition**:
   - Created new blog posts about the usage examples and implementation references on the API Documentation and the new Algolia DocSearch engine.
+
 - **Usage Examples Expansion**:
-  - Significantly expanded usage examples across various categories which improve the overall quality of the site. Addition include comprehensive examples for Graphics, Geometery, Audio, Interface, and Networking functions.
+  - Significantly expanded usage examples across various categories which improve the overall quality of the site.Addition include comprehensive examples for Graphics, Geometery, Audio, Interface, and Networking functions.
+
+- **Beyond SplashKit Expansion**:
+  - Considerable addition to the Beyond SplashKit iniatives with examples created primarily for Graphics and Geometery functions.
+
 - **Updated README File**:
   - Updated the CONTRIBUTING markdown file for the usage examples to improve overall clarity of the process.
+  
 - **Documentation site Updates**:
   - Updated the Usage Examples documentation to reflect the new contributing process, helping students contribute effciently.
   - Created a styling guide for usage example, standardizing the process and improving consistency across examples.
@@ -463,10 +476,123 @@ repositories for the relevant teams.
   - SplashKit Online now can be used on mobile devices, allowing greater access to the IDE.
   - Additionally restructured CSS so that adding more screen sizes will be far simplier.
 
-- **Overhaulled Project Documentation**
+- **Overhauled Project Documentation**
   - The project's documentation was overhauled and updated to be reflect the current state of the project.
 
 ### Roadmap
+
+#### SplashKit Expansion
+
+- **Comprehensive Testing and Debugging**: Develop a thorough test suite for SplashKit libraries to ensure stability across the library.
+- **Unit Tests Revision**: Refactor existing unit tests to ensure that each tests run independently, with a focus on addressing shared state issues.
+- **SplashKit Libraries addition to NuGet**: Add the required SplashKit libraries to the existing NuGet package with a proper icon, description, and documentation of the packaging process.
+- **Rust Translation**: Port the SplashKit framework to Rust, expanding its accessibility and allowing developers using Rust to take advantage of SplashKit's features and capabilities.
+- **Fix Pascal Memory Leaks**: Investigate and fix the issues with Pascal programs memory leaks after compilation with FPC.
+- **Functions Header Revision**: Review the current header information to ensure accuracy for each functions.
+
+#### SplashKit Website & Tutorials
+
+- **Expand Onboarding Hub**: Continue building the onboarding hub to include information about learning paths, guides, and tutorial templates to allow for an easier transition.
+- **Further Usage Example Expansion**: Create examples for every SplashKit function to improve accessibility for users.
+- **API Documentation Updates**: Further refine the information in the API Documentation page to improve clarity and accuracy.
+- **Advanced Tutorials**: Develop in-depth tutorials on AI and advanced game development topics.
+- **Tutorials Review and Refinement**: A thorough review of each tutorials to ensure that they are up-to-date and align with our current standards.
+- **Data Analytics Integration**: Integrate data analytics to track the most-viewed pages on the website, allowing for data-driven decisions.
+- **Netlify Build Process Improvement**: Update the configuration of the site deployment so that each deploys are only built when needed, decreasing build minutes.
+- **Beyond SplashKit Project**: Further develop resources showcasing users how to program without SplashKit.
+
+#### SplashKit Online
+
+- **C# Support**: Continue developing browser-based C# compilation and execution features.
+- **Autocomplete Improvement**: Improve the functionality of the search autocomplete to support C++ languages result.
+- **Debugging Features**: Investigate and implement debugging features regarding breakpoints and variable watch window.
+- **Collaborative Features**: Investigate and implement real-time collaboration tools to allow for seamless shared projects among various users.
+- **Further Features Refinements**: Continue developing SplashKit Online features to improve user experience and functionality of the platform.
+
+#### Game Development
+
+- **Establish Standardised Implementation Patterns**:
+
+  - Enforce the decoupling of data/functionality and state/render patterns to improve modularity and
+    maintainability.
+  - Develop and document a prescribed implementation pattern to ensure consistency and quality
+    across all projects.
+
+- **Develop a "10 Minute Game"**:
+
+  - Collaboratively plan and execute the development of a simple game (e.g., idle game, tower
+    defence, or survivor.io-like).
+  - Prioritise implementing core game mechanics in the first sprint to establish a functional
+    baseline.
+  - Dedicate the latter half of the trimester to improving visual representation, adding "juice,"
+    and creating variations of core game elements (e.g., enemies, powerups, weapons).
+  - This approach ensures core functionality is completed within a single trimester, while
+    additional features are developed using a standardised interface that integrates seamlessly with
+    the core game types.
+
+- **Iterate on Prescribed Patterns**:
+
+  - Adjust and refine the implementation pattern based on student feedback and practical
+    experiences.
+
+- **Generate Development Artifacts**:
+
+  - Create comprehensive documentation on the implementation of discrete game systems, including:
+    - Terrain generation systems (e.g., IDW, random walk, noise-based techniques).
+    - 2D light marching.
+    - Threaded state update and render patterns.
+
+- **Improve Documentation**:
+
+  - Address the lack of adequate documentation for existing games to significantly reduce onboarding
+    time for new contributors.
+  - For completed games, create:
+    - UML diagrams.
+    - Overviews of gameplay mechanics.
+    - Guides for creating levels in each game's format.
+  - Improve the discoverability of existing documentation and resources by updating README files to
+    reflect current focus areas and ensuring all documentation is easy to find and navigate.
+
+- **Complete Core Functionality of Incomplete Games**:
+
+  - Focus on finishing key core functionalities for games currently in development (e.g., _Sky
+    Surge_, _Single Combat_).
+
+- **Extend Gameplay and Functionality of Completed Games**:
+  - Enhance and expand gameplay and features in completed games to ensure they remain engaging and
+    challenging for players.
+
+#### Arcade Machine
+
+- **Consolidate Documentation**:
+
+  - Centralise all documentation in a single location or repository to improve accessibility and
+    ensure consistency across projects.
+
+- **Add Additional Modes to the Arcade Machine Software**:
+
+  - **Kiosk Mode**: Display only published games, making it ideal for showcasing at events or
+    exhibitions.
+  - **Normal Mode**: Show both published and test games, catering to developers and testers.
+
+- **Implement Voting System**:
+
+  - Integrate a voting system to give greater significance to the star ranking currently available
+    on the machines, enhancing user engagement and feedback mechanisms.
+
+- **Correct C# Compatibility for ARM**:
+
+  - Address the issue of .NET not running correctly in the emulated Raspberry Pi environment used
+    for C++ games, ensuring seamless compatibility for C# games.
+
+- **Implement Versioning for Compiled Games**:
+
+  - Introduce versioning to manage updates effectively, reducing potential issues with game
+    compatibility and ensuring a smooth update process.
+
+- **Continue Development of [Flipper](https://github.com/thoth-tech/flipper) Game Packaging Tool**:
+  - Advance the development of the _Flipper_ tool to streamline game packaging, deployment, and
+    compatibility across platforms.
 
 ### Open Issues
 
