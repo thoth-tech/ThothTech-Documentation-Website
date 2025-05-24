@@ -310,10 +310,12 @@ security testing process for OnTrack.
 #### New Feature Additions
 
 #### Student Self-Enrollment into Projects
+
 - An implementation plan has been proposed and has been adjusted accordingly to meet the project
   requirements. Progress has begun on the UI.
 
 #### Tutor Times Module
+
 - Progress has begun both on the front-end and back-end, but has temporarily been put on pause due
   to outdated documentation of the feature that has lead to different understandings of the goal of
   the feature.
@@ -407,21 +409,30 @@ repositories for the relevant teams.
 #### SplashKit Expansion
 
 - **Expanded Unit Tests to Cover the of basics.cpp**:
-  - Work that started last trimester was added to to complete unit test coverage for the basics.cpp file.
+
+  - Work that started last trimester was added to to complete unit test coverage for the basics.cpp
+    file.
 
 - **Added new Unit Tests for the Graphics Module**:
-  - A new unit testing suite was added to the graphics module to reduce the number of bugs that make it to production.
+
+  - A new unit testing suite was added to the graphics module to reduce the number of bugs that make
+    it to production.
 
 - **Documented macOS Build and Test Instructions**:
-  - These were added to the top-level readme for four different commands aimed at making the process easier to complete.
-  
+  - These were added to the top-level readme for four different commands aimed at making the process
+    easier to complete.
 - **Added new Helper Scripts and CMake Presets to the Build Process of SplashKit**:
-  - Catch helper scripts and CMake presets were added to simplifier building the project and enable the use of the CMake Tools extension for VS Code.
+
+  - Catch helper scripts and CMake presets were added to simplifier building the project and enable
+    the use of the CMake Tools extension for VS Code.
 
 - **Updated Raspberry Pis to use Newer Libraries**:
-  - The pigpio library was changed to WiringPi and SSH to allow for support of newer Raspberry Pi models.
+
+  - The pigpio library was changed to WiringPi and SSH to allow for support of newer Raspberry Pi
+    models.
 
 - **Bug fix for Using CMake with Raspberry Pi**:
+
   - A fix was added that allowed for Cmake to more easily recognise a Raspberry Pi.
 
 - **Bug fixes for the Window Class**:
@@ -433,81 +444,124 @@ repositories for the relevant teams.
 #### SplashKit Website & Tutorials
 
 - **Implementation References Update**:
-  - The implementation reference has been updated to include instances when the functions are used in other usage examples, resulting in a larger number of references.
+
+  - The implementation reference has been updated to include instances when the functions are used
+    in other usage examples, resulting in a larger number of references.
 
 - **Usage Examples Identifier**:
-  - The function headers in API Documentation has been updated to indicate which functions has examples created or implementation for it references, resulting in a better user experience and visibility.
+
+  - The function headers in API Documentation has been updated to indicate which functions has
+    examples created or implementation for it references, resulting in a better user experience and
+    visibility.
 
 - **Game Showcase Updates**:
-  - A script has been created to generate the each game showcase markdown files automatically using a JSON that stores all of the showcases' data.
-  - A new page has been created to allow users to test out the games online using SplashKit Online Lite.
+
+  - A script has been created to generate the each game showcase markdown files automatically using
+    a JSON that stores all of the showcases' data.
+  - A new page has been created to allow users to test out the games online using SplashKit Online
+    Lite.
 
 - **SplashKit Blog Addition**:
-  - Created new blog posts about the usage examples and implementation references on the API Documentation and the new Algolia DocSearch engine.
+
+  - Created new blog posts about the usage examples and implementation references on the API
+    Documentation and the new Algolia DocSearch engine.
 
 - **Usage Examples Expansion**:
-  - Significantly expanded usage examples across various categories which improve the overall quality of the site.Addition include comprehensive examples for Graphics, Geometery, Audio, Interface, and Networking functions.
+
+  - Significantly expanded usage examples across various categories which improve the overall
+    quality of the site.Addition include comprehensive examples for Graphics, Geometery, Audio,
+    Interface, and Networking functions.
 
 - **Beyond SplashKit Expansion**:
-  - Considerable addition to the Beyond SplashKit iniatives with examples created primarily for Graphics and Geometery functions.
+
+  - Considerable addition to the Beyond SplashKit iniatives with examples created primarily for
+    Graphics and Geometery functions.
 
 - **Updated README File**:
-  - Updated the CONTRIBUTING markdown file for the usage examples to improve overall clarity of the process.
-  
+  - Updated the CONTRIBUTING markdown file for the usage examples to improve overall clarity of the
+    process.
 - **Documentation site Updates**:
-  - Updated the Usage Examples documentation to reflect the new contributing process, helping students contribute effciently.
-  - Created a styling guide for usage example, standardizing the process and improving consistency across examples.
+  - Updated the Usage Examples documentation to reflect the new contributing process, helping
+    students contribute effciently.
+  - Created a styling guide for usage example, standardizing the process and improving consistency
+    across examples.
   - Created a unit testing guide on how the unit testing creation process.
-  - Created a tips and ticks guide which contain information that members can use to streamlime their development process.
+  - Created a tips and ticks guide which contain information that members can use to streamlime
+    their development process.
 
 #### SplashKit Online
 
 - **Added Support for Custom Themes**:
-  - Centralised all colour related styling into a single file, allowing for easy overriding off variables to create new themes.
+
+  - Centralised all colour related styling into a single file, allowing for easy overriding off
+    variables to create new themes.
   - Removed duplicate colours that created an inconsistenant user interface.
 
 - **Restructured Main Project Repository**
-  - Restructured the main repository with the goal of making it easier to work on and improve ease of maintainability in future.
+
+  - Restructured the main repository with the goal of making it easier to work on and improve ease
+    of maintainability in future.
 
 - **Added Support for C# in IDE**
-  - The C# programming language was added as a new language option that students can work with in the browser IDE.
+
+  - The C# programming language was added as a new language option that students can work with in
+    the browser IDE.
 
 - **Added Support for Mobile Screen Sizes**
+
   - SplashKit Online now can be used on mobile devices, allowing greater access to the IDE.
   - Additionally restructured CSS so that adding more screen sizes will be far simplier.
 
 - **Overhauled Project Documentation**
-  - The project's documentation was overhauled and updated to be reflect the current state of the project.
+  - The project's documentation was overhauled and updated to be reflect the current state of the
+    project.
 
 ### Roadmap
 
 #### SplashKit Expansion
 
-- **Comprehensive Testing and Debugging**: Develop a thorough test suite for SplashKit libraries to ensure stability across the library.
-- **Unit Tests Revision**: Refactor existing unit tests to ensure that each tests run independently, with a focus on addressing shared state issues.
-- **SplashKit Libraries addition to NuGet**: Add the required SplashKit libraries to the existing NuGet package with a proper icon, description, and documentation of the packaging process.
-- **Rust Translation**: Port the SplashKit framework to Rust, expanding its accessibility and allowing developers using Rust to take advantage of SplashKit's features and capabilities.
-- **Fix Pascal Memory Leaks**: Investigate and fix the issues with Pascal programs memory leaks after compilation with FPC.
-- **Functions Header Revision**: Review the current header information to ensure accuracy for each functions.
+- **Comprehensive Testing and Debugging**: Develop a thorough test suite for SplashKit libraries to
+  ensure stability across the library.
+- **Unit Tests Revision**: Refactor existing unit tests to ensure that each tests run independently,
+  with a focus on addressing shared state issues.
+- **SplashKit Libraries addition to NuGet**: Add the required SplashKit libraries to the existing
+  NuGet package with a proper icon, description, and documentation of the packaging process.
+- **Rust Translation**: Port the SplashKit framework to Rust, expanding its accessibility and
+  allowing developers using Rust to take advantage of SplashKit's features and capabilities.
+- **Fix Pascal Memory Leaks**: Investigate and fix the issues with Pascal programs memory leaks
+  after compilation with FPC.
+- **Functions Header Revision**: Review the current header information to ensure accuracy for each
+  functions.
 
 #### SplashKit Website & Tutorials
 
-- **Expand Onboarding Hub**: Continue building the onboarding hub to include information about learning paths, guides, and tutorial templates to allow for an easier transition.
-- **Further Usage Example Expansion**: Create examples for every SplashKit function to improve accessibility for users.
-- **API Documentation Updates**: Further refine the information in the API Documentation page to improve clarity and accuracy.
+- **Expand Onboarding Hub**: Continue building the onboarding hub to include information about
+  learning paths, guides, and tutorial templates to allow for an easier transition.
+- **Further Usage Example Expansion**: Create examples for every SplashKit function to improve
+  accessibility for users.
+- **API Documentation Updates**: Further refine the information in the API Documentation page to
+  improve clarity and accuracy.
 - **Advanced Tutorials**: Develop in-depth tutorials on AI and advanced game development topics.
-- **Tutorials Review and Refinement**: A thorough review of each tutorials to ensure that they are up-to-date and align with our current standards.
-- **Data Analytics Integration**: Integrate data analytics to track the most-viewed pages on the website, allowing for data-driven decisions.
-- **Netlify Build Process Improvement**: Update the configuration of the site deployment so that each deploys are only built when needed, decreasing build minutes.
-- **Beyond SplashKit Project**: Further develop resources showcasing users how to program without SplashKit.
+- **Tutorials Review and Refinement**: A thorough review of each tutorials to ensure that they are
+  up-to-date and align with our current standards.
+- **Data Analytics Integration**: Integrate data analytics to track the most-viewed pages on the
+  website, allowing for data-driven decisions.
+- **Netlify Build Process Improvement**: Update the configuration of the site deployment so that
+  each deploys are only built when needed, decreasing build minutes.
+- **Beyond SplashKit Project**: Further develop resources showcasing users how to program without
+  SplashKit.
 
 #### SplashKit Online
 
 - **C# Support**: Continue developing browser-based C# compilation and execution features.
-- **Autocomplete Improvement**: Improve the functionality of the search autocomplete to support C++ languages result.
-- **Debugging Features**: Investigate and implement debugging features regarding breakpoints and variable watch window.
-- **Collaborative Features**: Investigate and implement real-time collaboration tools to allow for seamless shared projects among various users.
-- **Further Features Refinements**: Continue developing SplashKit Online features to improve user experience and functionality of the platform.
+- **Autocomplete Improvement**: Improve the functionality of the search autocomplete to support C++
+  languages result.
+- **Debugging Features**: Investigate and implement debugging features regarding breakpoints and
+  variable watch window.
+- **Collaborative Features**: Investigate and implement real-time collaboration tools to allow for
+  seamless shared projects among various users.
+- **Further Features Refinements**: Continue developing SplashKit Online features to improve user
+  experience and functionality of the platform.
 
 #### Game Development
 
@@ -598,48 +652,92 @@ repositories for the relevant teams.
 
 #### Onboarding Process and Information
 
-Although the Onboarding documentation has been updated to streamline the process and provide clear guidance, there will still challenges during the onboarding phase. There will difficulties with setting up developement environments or understanding the workflow process. Through help hub sessions and mentorship, we were to somewhat address concerns but this issues suggest that while the documentation is a good foundation, it may benefit from further refinement. This could be adding step-by-step tutorials or a more structured onboarding checklist.
+Although the Onboarding documentation has been updated to streamline the process and provide clear
+guidance, there will still challenges during the onboarding phase. There will difficulties with
+setting up developement environments or understanding the workflow process. Through help hub
+sessions and mentorship, we were to somewhat address concerns but this issues suggest that while the
+documentation is a good foundation, it may benefit from further refinement. This could be adding
+step-by-step tutorials or a more structured onboarding checklist.
 
 #### Task Review Process
 
-While the requirement of each task to go through two peer reviews followed by a mentor review helps ensure quality and maintain high coding standards, it has also led to a significant bottleneck in the workflow. As the volume of tasks increase, the number of reviewers often falls short, causing many completed task to remain in a pending state for extended period. This delay can hinder overall progress and reduce team momentum. Without a more scalable review process or improved review scheduling, the current approach may continue to strain the efficiency of the team.
+While the requirement of each task to go through two peer reviews followed by a mentor review helps
+ensure quality and maintain high coding standards, it has also led to a significant bottleneck in
+the workflow. As the volume of tasks increase, the number of reviewers often falls short, causing
+many completed task to remain in a pending state for extended period. This delay can hinder overall
+progress and reduce team momentum. Without a more scalable review process or improved review
+scheduling, the current approach may continue to strain the efficiency of the team.
 
 #### Lack of Communication between Groups
 
-While regular stand-ups meetings with overlapping members from different sub-products exist, there is still a noticable lack of a collaborative efforts across teams. As a result, oppportunities for synergy between products are missed where shared challenged could arise across teams and allow for chances to reduce duplication in problem resolution. Moving forward, the company should consider creating more opportunities for collaboration with cross-functional discussions, shared planning sessions, or joint tasks could help bridge this gap and promote a stronger sense of team across the entire ecosystem.
+While regular stand-ups meetings with overlapping members from different sub-products exist, there
+is still a noticable lack of a collaborative efforts across teams. As a result, oppportunities for
+synergy between products are missed where shared challenged could arise across teams and allow for
+chances to reduce duplication in problem resolution. Moving forward, the company should consider
+creating more opportunities for collaboration with cross-functional discussions, shared planning
+sessions, or joint tasks could help bridge this gap and promote a stronger sense of team across the
+entire ecosystem.
 
 ### Lessons Learned
 
 #### The Importance of Collaboration
 
-This trimester offered a clear reminder of how essential effective is to the success of a project. While individual contributions are important, greater progress happens when team works together, share ideas or knowledge, and support one another. Instances where collaboration sparked often led to faster problem-solving, innovative ideas, and higher-quality outcomes. Moving forward, creating a more connected and communicative team culture is key to reaching the true potential of the company.
+This trimester offered a clear reminder of how essential effective is to the success of a project.
+While individual contributions are important, greater progress happens when team works together,
+share ideas or knowledge, and support one another. Instances where collaboration sparked often led
+to faster problem-solving, innovative ideas, and higher-quality outcomes. Moving forward, creating a
+more connected and communicative team culture is key to reaching the true potential of the company.
 
 #### Further Onboarding Refinements
 
-Despite improvements to the onboarding documentation, this trimester revealed areas that still need to be addressed. Some members found the setup process confusing, ran into build issues, or lacked clarity on where to start. This highlights the need for more structured onboarding, potentially with interactive guides, videos, or more designated support for new members.
+Despite improvements to the onboarding documentation, this trimester revealed areas that still need
+to be addressed. Some members found the setup process confusing, ran into build issues, or lacked
+clarity on where to start. This highlights the need for more structured onboarding, potentially with
+interactive guides, videos, or more designated support for new members.
 
 #### Balancing Contributions and Reviews
 
-As the trimester progressed, it became clear that balancing the rate of new contributions with capacity of peer reviews is essential for maintaining the project's momentum and efficiency. While students were increasingly productive in terms of pull requests, the review process often lagged behind, creating a backlog of tasks needing feedback. Building a stronger culture and emphasis around reviewing, dedicated review times, or review responsibilities assignment could lead to a better balance between contribtutions and reviews, allowing for a more efficient development cycle.
+As the trimester progressed, it became clear that balancing the rate of new contributions with
+capacity of peer reviews is essential for maintaining the project's momentum and efficiency. While
+students were increasingly productive in terms of pull requests, the review process often lagged
+behind, creating a backlog of tasks needing feedback. Building a stronger culture and emphasis
+around reviewing, dedicated review times, or review responsibilities assignment could lead to a
+better balance between contribtutions and reviews, allowing for a more efficient development cycle.
 
 ### Product Developement Life Cycle
 
 #### New Task
 
-In SplashKit, we place a strong emphasis on reponsiblity and accountablity; this means individuals are encouraged to ownership and self-assign tasks/cards to themselves. Members are free to assign themselves to any card unless noted otherwise. To ensure clarity and alignment with project's goals, the process of creating a new task are listed below:
-- **Problem or Opportunity Idenfication**: If you notice any areas of improvement or come across an idea for new features, discuss it with a mentor. This can be done via stand-ups/team meetings or direct one-on-one communication with the mentor.
-- **Approval**: Upon discussion, the mentor will evaluate the relevance and feasibility of the task brough up and if approved, this card should be made in Planner to outline its scope and requirements.
-- **Assignment**: After the card is created, you can assign yourself to it but you must ensure that the tasks's objectives are fully understood before work begins.
-- **Collaboration (if necessary)**: For larger or complex tasks, it can be coordinated with other members to determine if the task needs collaboration to complete.
+In SplashKit, we place a strong emphasis on reponsiblity and accountablity; this means individuals
+are encouraged to ownership and self-assign tasks/cards to themselves. Members are free to assign
+themselves to any card unless noted otherwise. To ensure clarity and alignment with project's goals,
+the process of creating a new task are listed below:
+
+- **Problem or Opportunity Idenfication**: If you notice any areas of improvement or come across an
+  idea for new features, discuss it with a mentor. This can be done via stand-ups/team meetings or
+  direct one-on-one communication with the mentor.
+- **Approval**: Upon discussion, the mentor will evaluate the relevance and feasibility of the task
+  brough up and if approved, this card should be made in Planner to outline its scope and
+  requirements.
+- **Assignment**: After the card is created, you can assign yourself to it but you must ensure that
+  the tasks's objectives are fully understood before work begins.
+- **Collaboration (if necessary)**: For larger or complex tasks, it can be coordinated with other
+  members to determine if the task needs collaboration to complete.
 
 #### Definition of Done
 
-A task is only considered fully done once it has been completed, submitted as a pull request, and reviewed by two other students who approve it (see below). Once a mentor reviews it, it may be considered fully complete or potentially moved back to “doing” if deemed unsatisfactory.
+A task is only considered fully done once it has been completed, submitted as a pull request, and
+reviewed by two other students who approve it (see below). Once a mentor reviews it, it may be
+considered fully complete or potentially moved back to “doing” if deemed unsatisfactory.
 
 #### Task Review
 
-Two mandatory peer reviews must be completed before the mentor reivew. Once a pull request is created: 
-1. **Contact a Reviewer**: You can either reach out a teammate for review or forward your pull request to the team channel. Upon agreement, tag them under the Teams Planner card and GitHub pull request as the reviewer.
+Two mandatory peer reviews must be completed before the mentor reivew. Once a pull request is
+created:
+
+1. **Contact a Reviewer**: You can either reach out a teammate for review or forward your pull
+   request to the team channel. Upon agreement, tag them under the Teams Planner card and GitHub
+   pull request as the reviewer.
 2. **Reviewer Responsibilities**: Review the code by:
    - Checking syntax, logic, and output.
    - Pulling the changes onto your local machine to test functionality.
@@ -653,7 +751,9 @@ Two mandatory peer reviews must be completed before the mentor reivew. Once a pu
 [Watch this tutorial video by Satika Jayawardena](https://deakin365.sharepoint.com/:v:/r/sites/ThothTech2/Shared%20Documents/OnTrack/Demo%20videos/pull-request-demo.mov?csf=1&web=1&e=a6p1gg&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 for a step-by-step guide on creating and reviewing pull requests.
 
-Once the pull request is in the “Mentor Review” column, a mentor will review the work. If satisfactory, it will be marked as complete and moved to the current sprint’s “Complete” column. If additional changes are needed, the task may be moved back to “Doing” for further refinement.
+Once the pull request is in the “Mentor Review” column, a mentor will review the work. If
+satisfactory, it will be marked as complete and moved to the current sprint’s “Complete” column. If
+additional changes are needed, the task may be moved back to “Doing” for further refinement.
 
 #### Testing
 
@@ -668,37 +768,61 @@ for guidelines on creating Git branches and commits for contributions.
 
 ### Product Architecture
 
-The SplashKit ecosystem is a comprehensive set of tools and platforms that streamline game development and support learning for both beginnners and experienced developers. The architecture consists of interconnected components, each with a specific purpose, working together to deliver a smooth and integrated experience:
+The SplashKit ecosystem is a comprehensive set of tools and platforms that streamline game
+development and support learning for both beginnners and experienced developers. The architecture
+consists of interconnected components, each with a specific purpose, working together to deliver a
+smooth and integrated experience:
 
 #### SplashKit SDK (Core Foundation)
 
-At the core of the SplashKit ecosystem is the SplashKit SDK, a powerful toolkit built with **C++**, **SDL**, and **OpenGL**. It provides essential game development featues such as graphics rendering, input handling, and audio support. Through automated translation into languages like **C#**, **Python**, and **Pascal**, the SDK broadens its accessibility across various programming communities.
+At the core of the SplashKit ecosystem is the SplashKit SDK, a powerful toolkit built with **C++**,
+**SDL**, and **OpenGL**. It provides essential game development featues such as graphics rendering,
+input handling, and audio support. Through automated translation into languages like **C#**,
+**Python**, and **Pascal**, the SDK broadens its accessibility across various programming
+communities.
 
-- Integration: The SDK powers all games developed within the ecosystem, supports tools like SplashKit Online, and forms the basis of the games showcased on the SplashKit.io website.
+- Integration: The SDK powers all games developed within the ecosystem, supports tools like
+  SplashKit Online, and forms the basis of the games showcased on the SplashKit.io website.
 
 #### SplashKit.io Website (User Portal)
 
-The SplashKit website acts as the primary interface for developers with access to the **API documentation**, **Installation Guides**, and **Tutorials**. It was built using **Astro Starlight**, **React**, **SolidJS**, and **TailwindCSS** to ensure responsive user-friendly experience. Integration using Dockerised deployment with **NodeJS** ensures scalability and consistency.
+The SplashKit website acts as the primary interface for developers with access to the **API
+documentation**, **Installation Guides**, and **Tutorials**. It was built using **Astro Starlight**,
+**React**, **SolidJS**, and **TailwindCSS** to ensure responsive user-friendly experience.
+Integration using Dockerised deployment with **NodeJS** ensures scalability and consistency.
 
-- Interaction: The website saw integration with SplashKit Online, allowing for interactive examples and development tools. It also showcases functions' examples along with games developed using SplashKit with a recently added feature where users can test out the game online.
+- Interaction: The website saw integration with SplashKit Online, allowing for interactive examples
+  and development tools. It also showcases functions' examples along with games developed using
+  SplashKit with a recently added feature where users can test out the game online.
 
 #### SplashKit Online (Interactive Development)
 
-SplashKit Online extends the capabilities of the SDK with a web-based **IDE** that allows for real-time coding and testing without the need for local installations. It's powered by **WebAssembly (WASM)** and **Emscripten**, the platform currently supports coding with **C++** and **JavaScript**.
+SplashKit Online extends the capabilities of the SDK with a web-based **IDE** that allows for
+real-time coding and testing without the need for local installations. It's powered by **WebAssembly
+(WASM)** and **Emscripten**, the platform currently supports coding with **C++** and **JavaScript**.
 
-- Role in Ecosystem: This component is an exciting and innovative tool that can used during onboarding new developers, especially for beginners, allowing them to experiment with SplashKit without any setup.
+- Role in Ecosystem: This component is an exciting and innovative tool that can used during
+  onboarding new developers, especially for beginners, allowing them to experiment with SplashKit
+  without any setup.
 
 #### Arcade Machine (Hardware Integration)
 
-Developed in collaboration with Deakin University, the arcade machines run on Raspberry Pi hardware, leveraging emulationstation and retropie. These machines allow developers to test and showcase their games in a real-world arcade environment, offering a tactile experience that bridges software and hardware.
+Developed in collaboration with Deakin University, the arcade machines run on Raspberry Pi hardware,
+leveraging emulationstation and retropie. These machines allow developers to test and showcase their
+games in a real-world arcade environment, offering a tactile experience that bridges software and
+hardware.
 
-- Interaction: Games created using the SplashKit SDK can be directly uploaded and tested on these machines, demonstrating the SDK’s versatility.
+- Interaction: Games created using the SplashKit SDK can be directly uploaded and tested on these
+  machines, demonstrating the SDK’s versatility.
 
 #### Game Development (Content Showcase)
 
-The Game Development team produces games that highlight the capabilities of the SplashKit SDK. These games, typically developed in **C++** or **C#**, showcase advanced features like dynamic graphics, audio handling, and AI systems, serving as inspiration and learning tools for new developers.
+The Game Development team produces games that highlight the capabilities of the SplashKit SDK. These
+games, typically developed in **C++** or **C#**, showcase advanced features like dynamic graphics,
+audio handling, and AI systems, serving as inspiration and learning tools for new developers.
 
-- Feedback Loop: These games not only demonstrate SplashKit’s potential but also inform SDK improvements based on practical usage and user feedback.
+- Feedback Loop: These games not only demonstrate SplashKit’s potential but also inform SDK
+  improvements based on practical usage and user feedback.
 
 ### Source Code
 
