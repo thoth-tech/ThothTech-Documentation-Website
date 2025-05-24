@@ -97,7 +97,7 @@ These are the following responsibilities of the company student leadership throu
 
 ![Org chart](/company-structure/2025-t1-thoth-tech-structure.png)
 
-## Project 1 - OnTrack
+## Project 1: OnTrack
 
 ### Project Overview
 
@@ -118,88 +118,157 @@ benefit of future users.
 
 ### User Manual
 
+This section provides all the essential tutorials and contribution guides to help new team members set up their local environment and begin contributing to OnTrack confidently.
+
+#### Tutorial Videos on Setting Up Your Local Development Environment
+
+- [T1 2025 Setup demo](https://drive.google.com/file/d/1Sg4A6UgFGbmmWJza8y8QjRzm2w64bVQx/view)
+  by Aditya Pratap Singh Tomar
+
+- [T3 2023 Setup demo](https://deakin365.sharepoint.com/:v:/s/ThothTech2/ESrgw0W_21pLn7kqS86WoJgBG71EPo7VPSp8AXt151JC2g?e=AZyu7I)
+  by Satika Jayawardena
+
+- [T2 2023 Setup demo](https://video.deakin.edu.au/media/t/1_6degiyrj) by Daniel Maddern
+
+- [T1 2024 Common setup error solutions](https://teams.microsoft.com/l/message/19:bd20175d09414f079490a2403f7fca74@thread.tacv2/1711021331051)
+  by Satika Jayawardena
+
+#### Contributing Guides
+
+- [T1 2025 Guide on Getting Started with OnTrack](https://teams.microsoft.com/l/message/19:bd20175d09414f079490a2403f7fca74@thread.tacv2/1742794510755?tenantId=d02378ec-1688-46d5-8540-1c28b5f470f6&groupId=0e15669c-3f66-49aa-b023-640fe1dda2e0&parentMessageId=1742794510755&teamName=Thoth%20Tech&channelName=OnTrack&createdTime=1742794510755)
+  by Atharv Sandip Bhandare
+
+- [T1 2025 Guide on getting 9.x and 8.0.x branches to build on Windows](https://teams.microsoft.com/l/message/19:bd20175d09414f079490a2403f7fca74@thread.tacv2/1743634833688?tenantId=d02378ec-1688-46d5-8540-1c28b5f470f6&groupId=0e15669c-3f66-49aa-b023-640fe1dda2e0&parentMessageId=1743634833688&teamName=Thoth%20Tech&channelName=OnTrack&createdTime=1743634833688)
+  by Eliya Geerlings
+
+- [App-Attack x OnTrack feature branch - Pull Request Contribution Guide](https://teams.microsoft.com/l/message/19:bd20175d09414f079490a2403f7fca74@thread.tacv2/1745987115089?tenantId=d02378ec-1688-46d5-8540-1c28b5f470f6&groupId=0e15669c-3f66-49aa-b023-640fe1dda2e0&parentMessageId=1745987115089&teamName=Thoth%20Tech&channelName=OnTrack&createdTime=1745987115089)
+  by Atharv Sandip Bhandare
+
+- [Doubtfire-deploy repository](https://github.com/thoth-tech/doubtfire-deploy/blob/development/CONTRIBUTING.md)
+
+- [OnTrack documentation](https://github.com/thoth-tech/documentation/tree/main/docs/OnTrack)
+
+- [ThothTech Documentation Website](https://main--strong-fairy-c1bde1.netlify.app/products/ontrack/example/)
+
+- [Doubfire technical documentation](https://github.com/thoth-tech/doubtfire-astro)
+
 ### Completed Deliverables
 
 #### Frontend Migration
 
-Completed migrations
+**Completed migrations:**
 
+- unit-dates-selector.coffee
 - date-service.coffee
-
-In development migrations:
-
-- runtime.coffee
-- progress-burndown-chart.coffee
-- outcome-service.coffee
-- listener-service
 - media-service.coffee
 - routing.coffee
+- outcome-service.coffee
+- analytics-service.coffee
+- unit-staff-editor.coffee
+- listener-service
+- progress-dashboard.coffee
+- student-task-status-pie-chart.coffee
+- tutorials.coffee
+- unit-details-editor.coffee
+- content-editable.coffee
+- group-member-contribution-assigner.coffee
+- task-ilo-alignment-rater.coffee
 - analytics.coffee
 - debug.coffee
-- unit-dates-selector.coffee
-- student-task-status-pie-chart.coffee
-- group-member-list.coffee
 - portfolio-grade-select-step.coffee
-- alignment-bar-chart.coffee
+
+**In development migrations:**
+
+- runtime.coffee
+- group-member-list.coffee
+- inbox.coffee
+- group-member-list 
+- task-ilo-alignment-modal.coffee
+- group-set-manager.coffee
+- file-uploader.coffee
+- Students-list.coffee
+- portfolio-review-step.coffee
+- portfolios.coffee
+- group-selector
 
 #### AppAttack x OnTrack
 
-We successfully initiated a collaboration with the HardHat AppAttack team to conduct a two-phase
-security testing process for OnTrack.
+We successfully initiated a collaboration with the HardHat AppAttack team to conduct a two-phase security testing process for OnTrack.
 
-- _Stage 1_ vulnerability scanning was completed, and initial findings were received on _7 April
-  2025_.
-- Recruited team members have categorized vulnerabilities based on severity.
-- _Patching of critical issues_ is planned to begin in _Week 7_, with task assignments managed via
-  Microsoft Teams Planner.
-- The objective is to patch all severe and major issues, coordinate a follow-up retest, and submit
-  the final report by _12 May 2025_.
+- _Stage 1_ vulnerability scanning was completed, and initial findings were received on _7 April 2025_.
+
+- A complete workflow was designed to manage the vulnerability mitigation process, which included:
+  1. Establishing scope and agreement with AppAttack,
+  2. Categorizing vulnerabilities based on severity,
+  3. Recruiting a dedicated patching team,
+  4. Creating and assigning tickets in Microsoft Teams Planner,
+  5. Prioritizing and addressing critical vulnerabilities first.
+
+- The team implemented fixes for multiple high-impact vulnerabilities, including:
+
+  | Vulnerability Name                                                  | Impact Level    |
+  |----------------------------------------------------------------------|-----------------|
+  | Clickjacking                                                        | Severe          |
+  | Insecure Direct Object Reference (IDOR)                             | Major           |
+  | Malicious Code Execution                                            | Major           |
+  | Exposed JavaScript Source Maps *(False Positive)*                  | Major           |
+  | Session Hijacking and Fixation                                      | Significant     |
+  | Token Exposure via Local Storage and HTTP Headers *(False Positive)*| Significant     |
+  | Misconfigured CORS *(False Positive)*                              | Significant     |
+
+- Fixes for Clickjacking and IDOR vulnerabilities were completed and pull requests were raised to the upstream feature branch, with Clickjacking successfully merged.
+
+- Although the full retesting cycle is pending, the team initiated internal validation of key fixes based on the documentation provided by AppAttack. This ensured timely feedback loops and quality assurance in the absence of immediate external retesting.
+
+- The final End-of-Trimester security report from AppAttack is expected to be shared to support future OnTrack development cycles and to maintain ongoing platform security improvements.
 
 #### SSRF Testing on OnTrack
 
 - Developed a _Bash-based automated script_ for SSRF payload injection across API endpoints.
 - Performed multiple rounds of testing and logged potential vulnerabilities.
-- Currently working on enhancing the script for _scalability and integration with Burp Suite_.
+- Worked on enhancing the script for _scalability and integration with Burp Suite_.
 - Collaborated with the patching team to address vulnerabilities discovered by the AppAttack phase.
 
 #### Bug Fixes & Urgent Enhancements
 
 - Issues with the student calendar and notifications has been resolved and pull requests have been
-  submitted, awaiting reviews.
+  submitted.
 - Issues with building the app on Windows has been identified and a fix has been deployed into the
   upstream 8.0.x branch.
 
 #### New Feature Additions
+
+#### Staff Extension Management
+
+- Planner board tickets for the Staff Grant Extension feature have been created, outlining frontend
+  and backend responsibilities in detail.
+- Backend development was completed for importing and exporting tutorial data using CSV format.
+- A new modal interface was implemented, allowing staff to enter extension durations and select multiple students simultaneously.
+- The backend now successfully grants extensions based on staff input, ensuring seamless interaction between UI and data layer.
+- A new in-system notification system was developed from scratch, allowing students to receive updates related to granted extensions directly within OnTrack.
+- Email notifications were also integrated, ensuring students are notified through multiple channels.
+- Initial UI wireframes and user flows were completed and used as the foundation for the final implementation.
+
+#### Gauge Chart 
+ 
+- Replaced the legacy progress burndown chart with an interactive **ngx-charts-based gauge chart** to provide a cleaner visual representation of student progress.
+- Dynamically displays key progress metrics including **Target**, **Projected**, **To Submit**, and **To Complete** using distinct color bands and percentage values in the form of a Gauge
+- Center value auto-updates based on the **Marked** percentage.
+- Interactive legend: Clicking on a legend item (e.g., "Marked") isolates that segment on the gauge, temporarily hiding all others for focused viewing.
 
 #### Student Self-Enrollment into Projects
 
 - An implementation plan has been proposed and has been adjusted accordingly to meet the project
   requirements. Progress has begun on the UI.
 
-#### Tutor Times Module
-
-- Progress has begun both on the front-end and back-end, but has temporarily been put on pause due
-  to outdated documentation of the feature that has lead to different understandings of the goal of
-  the feature.
-
-- ### Staff Extension Management
-
-- Planner board tickets for the Staff Grant Extension feature have been created, outlining frontend
-  and backend responsibilities in detail.
-- Backend development has been finalized for the CSV import/export of tutorial data.
-- Frontend work for the same functionality is underway, with integration currently in progress.
-- UI wireframes and user flow for the extension management interface have been completed, forming
-  the foundation for frontend implementation.
-
 #### List of Completed Deliverables
 
 | Name                                                       | Type             | Task Name                                                                                                                       | Task Attachment                                                                                                                                                                                                                                                              |
-| ---------------------------------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Aditya Pratap Singh Tomer                                  | -                | Clickjacking: X-Frame-Options header - Patch Fix and Validation                                                                 |                                                                                                                                                                                                                                                                              |
-| Aditya Pratap Singh Tomer                                  | -                | OWASP Top 10 report and action items                                                                                            |                                                                                                                                                                                                                                                                              |
+| ---------------------------------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |                                                                                                            
 | Aditya Pratap Singh Tomer                                  | Main Contributor | Create new Visualisation for Target Grade & Chart                                                                               | https://github.com/thoth-tech/doubtfire-web/pull/326                                                                                                                                                                                                                         |
+| Aditya Pratap Singh Tomer                                  | Main Contributor | Migrate Create Unit Modal                                                                               | https://github.com/thoth-tech/doubtfire-web/pull/350                                                                                                                                                                                                                         |
+| Aditya Pratap Singh Tomer                                  | Main Contributor | Migrate Content Editable                                                                               | https://github.com/thoth-tech/doubtfire-web/pull/342                                                                                                                                                                                                                         |
 | Aditya Pratap Singh Tomer                                  | Main Contributor | Design Feature - Incorporate Content                                                                                            | https://github.com/thoth-tech/doubtfire-web/pull/365                                                                                                                                                                                                                         |
-| Aditya Pratap Singh Tomer                                  | Main Contributor | Consolidation of documentation, documentation-1 and documentation-2                                                             | https://github.com/thoth-tech/documentation/pull/572                                                                                                                                                                                                                         |
 | Aditya Pratap Singh Tomer                                  | Main Contributor | Create a new video guide/tutorial setting up dev environment                                                                    | https://github.com/thoth-tech/doubtfire-web/pull/358                                                                                                                                                                                                                         |
 | Aditya Pratap Singh Tomer                                  | Reviewer         | Zip file upload ASAP                                                                                                            | https://github.com/thoth-tech/doubtfire-web/pull/291                                                                                                                                                                                                                         |
 | Aditya Pratap Singh Tomer                                  | Reviewer         | Migrate file-uploader                                                                                                           | https://github.com/thoth-tech/documentation/pull/599 https://github.com/thoth-tech/doubtfire-web/pull/366                                                                                                                                                                    |
@@ -221,9 +290,7 @@ security testing process for OnTrack.
 | Alex Brown                                                 | Reviewer         | Migrate unit-staff-editor.coffee                                                                                                | https://github.com/thoth-tech/documentation/pull/607 https://github.com/thoth-tech/doubtfire-web/pull/334                                                                                                                                                                    |
 | Alex Brown                                                 | Reviewer         | Notifications for students not working                                                                                          | https://github.com/thoth-tech/doubtfire-api/pull/52                                                                                                                                                                                                                          |
 | Alvin Odunga                                               | -                | CORS Vulnerability - Patch Fix and Validation                                                                                   |                                                                                                                                                                                                                                                                              |
-| Alvin Odunga                                               | Main Contributor | Implement Video Upload Functionality in Backend                                                                                 | https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/120 https://github.com/thoth-tech/doubtfire-api/pull/48                                                                                                                                                   |
 | Alvin Odunga                                               | Main Contributor | Panopto Upload process documentation                                                                                            | https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/124                                                                                                                                                                                                       |
-| Alvin Odunga                                               | Reviewer         | History of Target Grade change                                                                                                  | https://github.com/thoth-tech/doubtfire-api/pull/44 https://github.com/thoth-tech/doubtfire-web/pull/262                                                                                                                                                                     |
 | Alvin Odunga                                               | Reviewer         | Migrate project-tasks-list.coffee                                                                                               | https://github.com/thoth-tech/documentation/pull/563 https://github.com/thoth-tech/doubtfire-web/pull/263                                                                                                                                                                    |
 | Amrith Jayadeep                                            | Main Contributor | Backend - Modify users Table to add Total Tutor Time                                                                            | https://github.com/thoth-tech/doubtfire-api/pull/53                                                                                                                                                                                                                          |
 | Amrith Jayadeep                                            | Main Contributor | Backend: Organization Management, Site Administrator Logic                                                                      | https://github.com/thoth-tech/doubtfire-api/pull/58                                                                                                                                                                                                                          |
@@ -241,12 +308,13 @@ security testing process for OnTrack.
 | Anmol Saini                                                | Reviewer         | Frontend: Organization Management, Site Administrator Logic and User Profiles                                                   | https://github.com/thoth-tech/doubtfire-web/pull/351                                                                                                                                                                                                                         |
 | Ash Deore                                                  | Main Contributor | Audit OnTrack related documentation                                                                                             | https://github.com/thoth-tech/documentation/pull/569                                                                                                                                                                                                                         |
 | Ash Deore                                                  | Reviewer         | Panopto Upload process documentation                                                                                            | https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/124                                                                                                                                                                                                       |
-| Atharv Sandip Bhandare                                     | -                | Security Issue: Session Hijacking via Forced Session Fixation                                                                   |                                                                                                                                                                                                                                                                              |
+| Atharv Sandip Bhandare                                     | Reviewer                | Security Issue: Session Hijacking via Forced Session Fixation                                                            | https://github.com/thoth-tech/doubtfire-api/pull/61                                                                                                                                                                                                                                                                              |
 | Atharv Sandip Bhandare                                     | Main Contributor | Migrate progress-burndown-chart.coffee                                                                                          | https://github.com/thoth-tech/documentation/pull/582 https://github.com/thoth-tech/doubtfire-web/pull/294                                                                                                                                                                    |
-| Atharv Sandip Bhandare                                     | Main Contributor | Migrate media-service.coffee                                                                                                    | https://github.com/doubtfire-lms/doubtfire-web/pull/929 https://github.com/thoth-tech/documentation/pull/580 https://github.com/thoth-tech/doubtfire-web/pull/284                                                                                                            |
-| Atharv Sandip Bhandare                                     | Main Contributor | Migrate routing.coffee                                                                                                          | https://github.com/thoth-tech/documentation/pull/584 https://github.com/thoth-tech/doubtfire-web/pull/296                                                                                                                                                                    |
+| Atharv Sandip Bhandare                                     | Reviewer | Migrate media-service.coffee                                                                                                    | https://github.com/doubtfire-lms/doubtfire-web/pull/929 https://github.com/thoth-tech/documentation/pull/580 https://github.com/thoth-tech/doubtfire-web/pull/284                                                                                                            |
+| Atharv Sandip Bhandare                                     | Reviewer | Migrate routing.coffee                                                                                                          | https://github.com/thoth-tech/documentation/pull/584 https://github.com/thoth-tech/doubtfire-web/pull/296                                                                                                                                                                    |
 | Atharv Sandip Bhandare                                     | Main Contributor | Security Issue: Clickjacking via Missing Security Headers                                                                       | https://github.com/thoth-tech/documentation/pull/593 https://github.com/thoth-tech/doubtfire-deploy/pull/28 https://github.com/thoth-tech/doubtfire-deploy/pull/29 https://github.com/thoth-tech/doubtfire-web/pull/321 https://github.com/thoth-tech/doubtfire-web/pull/322 |
-| Atharv Sandip Bhandare                                     | Main Contributor | Security Issue: Malicious Code Execution                                                                                        | https://github.com/thoth-tech/doubtfire-api/pull/65 https://github.com/thoth-tech/doubtfire-astro/pull/35 https://github.com/thoth-tech/doubtfire-web/pull/333 https://github.com/user-attachments/assets/12e0f75b-3941-45ff-82ce-c588c14a9554                               |
+| Atharv Sandip Bhandare                                     | Main Contributor | Security Issue: Insecure Direct Object Ref - Unauthorized Access to Staff Info                                                                       | https://github.com/thoth-tech/documentation/pull/598 https://github.com/thoth-tech/doubtfire-api/pull/63 |
+| Atharv Sandip Bhandare                                     | Reviewer | Security Issue: Malicious Code Execution                                                                                        | https://github.com/thoth-tech/doubtfire-api/pull/65 https://github.com/thoth-tech/doubtfire-astro/pull/35 https://github.com/thoth-tech/doubtfire-web/pull/333 https://github.com/user-attachments/assets/12e0f75b-3941-45ff-82ce-c588c14a9554                               |
 | Atharv Sandip Bhandare                                     | Reviewer         | Create Visualisation Service                                                                                                    | https://github.com/thoth-tech/doubtfire-web/pull/283                                                                                                                                                                                                                         |
 | Atharv Sandip Bhandare                                     | Reviewer         | Migrate outcome-service.coffee                                                                                                  | https://github.com/thoth-tech/doubtfire-web/pull/302                                                                                                                                                                                                                         |
 | Atharv Sandip Bhandare                                     | Reviewer         | Web Security Audit: Server-Side Request Forgery (SSRF)                                                                          | https://github.com/thoth-tech/doubtfire-astro/pull/28                                                                                                                                                                                                                        |
@@ -338,10 +406,6 @@ security testing process for OnTrack.
 | Eliya Geerlings                                            | Reviewer         | Backend Work: Set up notification system                                                                                        | https://github.com/thoth-tech/doubtfire-api/pull/60                                                                                                                                                                                                                          |
 | Eliya Geerlings                                            | Reviewer         | Migrate content-editable.coffee                                                                                                 | https://github.com/thoth-tech/doubtfire-web/pull/310                                                                                                                                                                                                                         |
 | Eliya Geerlings                                            | Reviewer         | [big task] Migrate filters.coffee                                                                                               | https://github.com/thoth-tech/doubtfire-web/pull/315                                                                                                                                                                                                                         |
-| Epitacio Do Nascimento Neto                                | -                | CORS Vulnerability - Patch Fix and Validation                                                                                   |                                                                                                                                                                                                                                                                              |
-| Epitacio Do Nascimento Neto                                | -                | Clickjacking: X-Frame-Options header - Patch Fix and Validation                                                                 |                                                                                                                                                                                                                                                                              |
-| Epitacio Do Nascimento Neto                                | -                | OWASP Top 10 report and action items                                                                                            |                                                                                                                                                                                                                                                                              |
-| Epitacio Do Nascimento Neto                                | Reviewer         | Implement Video Upload Functionality in Backend                                                                                 | https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/120 https://github.com/thoth-tech/doubtfire-api/pull/48                                                                                                                                                   |
 | Hasindu Deshitha Welarathne                                | Main Contributor | Migrate debug.coffee                                                                                                            | https://github.com/thoth-tech/doubtfire-web/pull/299                                                                                                                                                                                                                         |
 | Hasindu Deshitha Welarathne                                | Main Contributor | Migrate students-list.coffee                                                                                                    | https://github.com/thoth-tech/documentation/pull/597 https://github.com/thoth-tech/doubtfire-web/pull/356                                                                                                                                                                    |
 | Hasindu Deshitha Welarathne                                | Reviewer         | Fix: 9.x Burndown Data Visualisation                                                                                            | https://github.com/thoth-tech/doubtfire-web/pull/331                                                                                                                                                                                                                         |
@@ -410,7 +474,6 @@ security testing process for OnTrack.
 | Jude Rozairo                                               | Main Contributor | Enhance draft comments to save locally per task, rather than accross all tasks.                                                 | https://github.com/thoth-tech/doubtfire-web/pull/301                                                                                                                                                                                                                         |
 | Jude Rozairo                                               | Main Contributor | History of Target Grade change Pagination                                                                                       |                                                                                                                                                                                                                                                                              |
 | Jude Rozairo                                               | Reviewer         | Fix typo in /edit_profile                                                                                                       | https://github.com/doubtfire-lms/doubtfire-web/pull/921 https://github.com/thoth-tech/doubtfire-web/pull/279                                                                                                                                                                 |
-| Jude Rozairo                                               | Reviewer         | History of Target Grade change                                                                                                  | https://github.com/thoth-tech/doubtfire-api/pull/44 https://github.com/thoth-tech/doubtfire-web/pull/262                                                                                                                                                                     |
 | Jude Rozairo                                               | Reviewer         | Zip file upload ASAP                                                                                                            | https://github.com/thoth-tech/doubtfire-web/pull/291                                                                                                                                                                                                                         |
 | Jude Rozairo                                               | Reviewer         | Create new Visualisation for Target Grade & Chart                                                                               | https://github.com/thoth-tech/doubtfire-web/pull/326                                                                                                                                                                                                                         |
 | Jude Rozairo                                               | Reviewer         | Migrate debug.coffee                                                                                                            | https://github.com/thoth-tech/doubtfire-web/pull/299                                                                                                                                                                                                                         |
@@ -525,19 +588,191 @@ security testing process for OnTrack.
 
 ### Roadmap
 
+#### AppAttack x OnTrack
+Although the team successfully addressed 7 of the initially reported vulnerabilities, 3 critical issues remain unresolved due to time constraints in the current trimester:
+  - Publicly Accessible API Documentation via Swagger
+  - Privilege Escalation – Tutor Accessing Admin Pages
+  - Insufficient Token Entropy
+- These issues have been logged for future action and will be passed on to the incoming development cohort.
+- The AppAttack x OnTrack initiative is designed as a cyclical vulnerability resolution process, where ongoing findings from HardHat will be reviewed, prioritised, and patched incrementally by future teams.
+- End of Trimester Security Report with new vulnerabilities have been received for future cohorts to work upon. 
+- Patch plans are available in the security board to ensure smooth continuity.
+
+#### Onboarding Guide for New OnTrack Contributors
+An onboarding guide is planned to support new students joining the OnTrack project in future trimesters. This guide will be published in the OnTrack technical documentation (doubtfire-astro) and will include:
+  - Environment setup instructions (Node, Docker, Git access),
+  - Navigating the Planner board and understanding task structure,
+  - Contribution process (feature branches, PR creation, peer reviews),
+  - Common setup errors and FAQs.
+This task is currently not started and will be prioritized in the next trimester to streamline onboarding and reduce dependency on live mentorship.
+
+#### Bug Fixes & Urgent Enhancements
+Bug resolution and urgent frontend/backend enhancements are ongoing processes tracked in dedicated Planner buckets and will be continued by future teams as part of regular maintenance.
+
+#### Planned Improvements
+Ongoing improvements such as UI redesigns, grade tracking features, model migrations, and structural standardization are in the pipeline and recommended for future development cycles.
+
+#### Panopto Video Integration
+Integration with Panopto for secure video uploads, metadata handling, and embedding is fully scoped but remains in backlog for future implementation across frontend and backend components.
+
+#### OnTrack Documentation Website
+Efforts to centralize OnTrack’s technical documentation and create a dedicated onboarding experience remain in backlog, with plans to unify API and backend docs in upcoming trimesters.
+
+#### Multiple Organisations Support
+Planned enhancements to support multi-organisation functionality-including switching logic, access control, and org-based context switching-remain in backlog for future implementation.
+
+#### Incorporate Content in OnTrack
+A new feature to enable content integration within OnTrack-including API updates, frontend component builds, and database schema changes is fully scoped but remains in backlog.
+
+#### Tutor Times Feature
+A full-stack Tutor Times feature-spanning frontend integration, session tracking services, analytics APIs, and documentation has been fully scoped but remains in backlog for future development.
+
+####  Staff Grant Extension
+While the feature is functionally complete, remaining backlog items such as performance testing and error handling are pending and may be addressed in future sprints if required.
+
+#### Authentication Module
+The authentication module including third-party sign-ons, secure cookie handling, and internal password management is in backlog and scoped for future implementation.
+
+#### Security Enhancement
+Pending security tasks including CI/CD testing integration, access control fixes, audit issue resolutions, and standardizing authentication—are in backlog for future implementation and hardening.
+
+#### CourseFlow Feature
+CourseFlow aims to introduce interactive components for displaying unit details, credit points, and course requirements currently scoped and in backlog for future frontend development.
+
+#### Frontend Migration: AngularJS & CoffeeScript → Angular & TypeScript
+Migration of legacy AngularJS and CoffeeScript components to Angular 17 and TypeScript is underway, with several modules completed and others still in progress and under review.
+
 ### Open Issues
+- The purpose of this section is to flag things that may interfere with the future team's ability to work on the project, and to give advice as to how these issues could be fixed in the future.
+- Despite steady progress across technical deliverables, the OnTrack team has encountered several persistent issues that may impact continuity and learning outcomes for future cohorts:
+
+#### Skills Gap & Onboarding Challenges
+Many students join OnTrack with the intent to learn and contribute meaningfully. However, the steep learning curve particularly around complex technologies like Angular, TypeScript, and legacy CoffeeScript has made it difficult for newcomers to get started. Without structured technical onboarding, many spend the first 3–4 weeks simply trying to understand the system, which delays their ability to contribute effectively.
+
+#### Development Environment & Compatibility Issues
+Setting up the local development environment remains a significant hurdle, especially for peers using lower spec Windows machines. Docker image sizes are large, and the performance gap compared to Mac users creates an uneven learning experience. Compatibility differences between branches (e.g., `8.0.x` vs `9.x`) also lead to frequent build issues, creating confusion and discouraging ongoing contributions.
+
+#### Lack of Training & Documentation Support
+While OnTrack encourages open contributions, many team members struggle due to limited training in core concepts (e.g., Git workflows, Angular framework, Typescript, and Docker). There is an implicit expectation that students are already proficient, which often isn’t the case this leads to frustration and reduced engagement. Structured training sessions and technical documentation tailored for beginners would significantly improve project onboarding.
+
+#### Fragmented Review and Contribution Workflow
+The process for reviewing Planner board tasks, GitHub pull requests, and migration progress lacks consistency. Without clear ownership and review pathways, some completed work sits idle or gets delayed due to unclear approval hierarchies.
+
+#### Recommendations for Future Teams
+
+- Introduce a **structured onboarding program** covering setup, Git, and core stack training.
+- Create a **beginner-friendly setup guide** tailored for Windows environments.
+- Regularly audit compatibility across OnTrack branches and Docker images.
+- Communicate with **mentors** or **sub-leads** to guide and unblock newcomers.
+- Encourage documentation of common issues and fixes directly within the repo.
+- Leverage the resources listed in the **[User Manual](#user-manual)** section, which includes:
+  - [T1 2025 Setup Demo](https://drive.google.com/file/d/1Sg4A6UgFGbmmWJza8y8QjRzm2w64bVQx/view)  
+  - [Guide on Getting Started with OnTrack](https://teams.microsoft.com/l/message/19:bd20175d09414f079490a2403f7fca74@thread.tacv2/1742794510755)  
+  - [Compatibility Guide for 9.x and 8.0.x Branches](https://teams.microsoft.com/l/message/19:bd20175d09414f079490a2403f7fca74@thread.tacv2/1743634833688)
+
 
 ### Lessons Learned
 
+- Throughout the trimester, the OnTrack team gained valuable insights into effective collaboration, workflow management, and the importance of technical readiness. The following lessons are shared to help future teams avoid common pitfalls and adopt practices that support sustained progress and learning.
+
+#### Mentorship and Leadership Engagement
+
+- Mentors played a pivotal role in guiding the team, clarifying complex tasks, and helping contributors stay aligned with deadlines. However, low attendance in mentor meetings created knowledge gaps for some students, leading to missed updates and slower progress. Future cohorts should prioritize regular mentor engagement to stay informed and unblock technical or process-related issues early.
+
+#### Planner Board Usage and Task Management
+
+- A common challenge observed was the inconsistent use of the Planner board. Tasks were often left unupdated, causing confusion around team progress and responsibility. Familiarity with Planner usage, card ownership, and regular updates is essential for maintaining transparency, accountability, and momentum in collaborative work.
+
+#### GitHub Fluency and Frontend Migration
+
+- A significant number of contributors struggled with frontend migration tasks due to limited experience with GitHub and version control best practices. This impacted review cycles and slowed down feature delivery. It is highly recommended that new team members undergo early Git and GitHub training, particularly around pull requests, branching strategies, and commit hygiene.
+
+#### Continuous Learning and Skill Development
+
+- Capstone projects like OnTrack require more than just effort they demand continuous upskilling. Many students realized mid-trimester that improving their understanding of technologies like Angular, TypeScript, and Docker was essential to contribute effectively. Future teams should proactively allocate time for learning, especially when entering unfamiliar technical domains.
+
+#### Time Management and Self-Discipline
+
+- Delayed deliverables and unfinished tasks were often linked to weak time management. Without consistent planning and regular progress tracking, students found it difficult to meet sprint goals. Future cohorts should adopt strategies like weekly planning, setting personal deadlines, and using reminders to stay on track and contribute reliably.
+
+#### Final Advice
+
+- New teams may assume that deep technical knowledge is required before contributing. However, what truly matters is consistency, communication, and a willingness to learn. Investing time early to understand the workflow, connect with mentors, and get comfortable with the tools will yield strong contributions by the end of the trimester.
+
+
 ### Product Development Life Cycle
+We continue to use Agile methodologies to deliver updates and new features for OnTrack. Our approach includes 2-week sprints focused on completing tasks, and weekly stand-up meetings to assess progress, share updates, discuss roadblocks, and assign new tasks via Teams Planner cards.
+
+#### New Tasks
+
+- New tasks are assigned by the project mentor during the weekly stand-up meetings. Once you areassigned a task, be sure to assign yourself to the corresponding Teams Planner card and attach your draft or completed pull request when you begin work.
+- If you have an idea for a new feature or enhancement, schedule a meeting with the project mentor to discuss it. Upon approval, create a new card or backlog column in Teams Planner to track the task.
+- If the feature is large, start researching the benefits and challenges, and create a Spike document, which can be committed to the documentation repository.
+- Spike templates are available in the documentation repository.
+
+#### Definition of Done
+A task is considered complete once it has been fully tested, functions as expected, and is documented in a well-organized pull request. The task must also undergo peer review and be approved by your mentor. Ensure that the corresponding Teams Planner card is updated and keep in communication with your reviewer and mentor until your contribution is merged into the upstream `doubtfire-lms` repository.
+
+#### Task Review
+- Each pull request requires a mandatory peer review before a mentor review. After creating the pull request, contact a teammate to review it. Tag them as the reviewer in both the Teams Planner card and the GitHub pull request.
+- As a reviewer, ensure that you test the code by pulling the changes locally and reviewing the syntax, logic, and output. If any changes are needed, update the contribution and notify the reviewer. 
+- Once the updates are made, the pull request will be automatically updated.
+- After the peer review is complete, notify the mentor for their review. Once approved, you can submit the pull request to the upstream repository for the final review.
+
+#### Testing
+- For frontend changes, test the functionality in the browser or run specification tests as needed.
+- For backend changes, use browser interactions or tools like Postman to test functionality.
+- Additionally, GitHub CI Actions will run tests automatically when changes are pushed.
+- In the pull request template, include detailed instructions on how others can test your changes.
+- Always provide before-and-after screenshots to show the outcome of your modifications.
+
+#### Branching Strategy
+- When starting a new contribution, fork all three `thoth-tech` repositories (`deploy`, `web`, and `API`) to your GitHub profile. 
+- Create a new branch from the development branch of the relevant repository. For example, for frontend migrations, you would create a branch from the `doubtfire-web` development branch.\
+- Follow the **Branch Prefixes and Commit Message Format** in the Contributing Guide when naming branches and creating commits.
 
 ### Product Architecture
 
+OnTrack is developed as a collaborative open-source project built on top of the Doubtfire-LMS ecosystem. It comprises four key components:
+
+- **Doubtfire-Web**: The frontend application responsible for user interface and interactions. Built using Angular.
+- **Doubtfire-API**: The backend service that handles business logic and communicates with the database. Built using Ruby on Rails.
+- **Database**: A structured relational database (e.g., MariaDB) that stores all persistent application data.
+- **Doubtfire-Deploy**: Infrastructure scripts and configuration used to deploy OnTrack in a stable and maintainable environment, primarily using Docker and associated CI/CD tools.
+
+OnTrack is maintained and enhanced by **ThothTech**, a student-led capstone development team at Deakin University. The project is **forked from the official Doubtfire-LMS repository**, which is managed by Company Directors and Mentors. The LMS environment represents the **production-grade implementation**, while ThothTech serves as the innovation space where new features, patches, and improvements are developed, tested, and refined before potential upstream contribution.
+
+#### Tech Stack
+
+- **Frontend**: Currently being migrated from AngularJS and CoffeeScript to Angular 17 and
+  TypeScript. The stack also includes HTML, SCSS, and Tailwind CSS.
+
+- **Backend**: Built on Ruby on Rails with the Grape Framework. It uses MariaDB as the database
+  engine. Docker is used for deployment and local development.
+
 ### Source Code
+
+The following are the relevant GitHub repositories to this project:
+
+- **Deployment**: [thoth-tech/doubtfire-deploy](https://github.com/thoth-tech/doubtfire-deploy)
+- **Frontend**: [thoth-tech/doubtfire-web](https://github.com/thoth-tech/doubtfire-web)
+- **Backend**: [thoth-tech/doubtfire-api](https://github.com/thoth-tech/doubtfire-api)
+- **OnTrack Documentation Website**:
+  [thoth-tech/doubtfire-astro](https://github.com/thoth-tech/doubtfire-astro)
+- **Documentation**:
+  [OnTrack Documentation](https://github.com/thoth-tech/documentation/tree/main/docs/OnTrack)
+- **Templates**:
+  [Templates Documentation](https://github.com/thoth-tech/documentation/tree/main/docs/Templates)
+- **Course Flow documentation**:
+  [CourseFlow Docs](https://github.com/thoth-tech/doubtfire-astro/tree/main/src/content/docs/courseflow)
 
 ### Login Credentials
 
-## Project 2 - SplashKit
+Refer to the Working with Dev Containers section of the
+[Contributing Guide](https://github.com/thoth-tech/doubtfire-deploy/blob/main/CONTRIBUTING.md) for
+authentication credentials for locally deployed OnTrack.
+
+## Project 2: SplashKit
 
 ### Project Overview
 
