@@ -350,7 +350,14 @@ for task in tasks:
 
             if 'github' not in url:
                 continue
-
+            
+            # Create nice URL links
+            if url.endswith('/'):
+                url = url[:-1]
+            if url.endswith('/files'):
+                url = url[:-6]
+            print (f"[{url[url.find("https://github.com/")+len("https://github.com/"):url.rfind("/pull/")]} - PR#{url[url.find("/pull/")+len("/pull/"):url.rfind("/files")]}]({url})")
+            
             links.append(unquote(url))
 
             if user_id == str(link['lastModifiedBy']['user']['id']):
