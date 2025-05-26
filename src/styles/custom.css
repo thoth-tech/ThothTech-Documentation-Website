@@ -225,7 +225,8 @@ img.ontrack {
 
 /* Better table styling */
 .sl-markdown-content table {
-  width: fit-content;
+  /* width: fit-content; */
+  width: auto;
   border-radius: 0.5rem;
   box-shadow: var(--sl-shadow-md);
   border: 1px solid var(--sl-color-gray-5);
