@@ -1,8 +1,8 @@
 ---
-title: Adding OOP Principles to the Shape Types, Simplifying Collision Classification and Resolution Functions
-sidebar:
-  label: Adding OOP Principles to the Shape Types, Simplifying Collision Classification and Resolution Functions
-  order: 1
+title: Adding OOP Principles to Shape Types
+description:
+  This page is about adding OOP principles to SplashKit's Shape types to simplify the collision
+  classification and resolution functions
 ---
 
 ## Description
@@ -292,7 +292,7 @@ void triangle::move_by(const vector_2d& amount)
 }
 ```
 
-### `collisions.cpp` Modified Methods 
+### `collisions.cpp` Modified Methods
 
 ```cpp
 collision_direction _calculate_object_collision_direction(const shape* collider, const shape* collidee)
@@ -329,7 +329,7 @@ bool _resolve_object_collision(shape* collider, const shape* collidee, collision
 collision_test_kind _get_collision_test_kind(const shape* s)
 {
     shape_type type = s->get_shape_type();
-    
+
     if (type == shape_type::RECTANGLE)
     {
         return AABB_COLLISIONS;
@@ -342,7 +342,7 @@ collision_test_kind _get_collision_test_kind(const shape* s)
             return AABB_COLLISIONS;
         }
     }
-    
+
     return PIXEL_COLLISIONS;
 }
 
@@ -361,7 +361,7 @@ void _move_object_by_direction(shape* obj, _sprite_movement_direction direction,
     {
         return;
     }
-    
+
     switch (direction)
     {
     case _sprite_movement_direction::UP:
@@ -395,7 +395,7 @@ bool _bracket_object_collision_generic(shape* collider, const shape* collidee,
                                             _sprite_movement_direction collider_direction, int iterations)
 {
     rectangle collider_aabb = collider->get_bounding_box();
-    
+
     for (int i = 1; i <= iterations; i++)
     {
         if (!_bracket_object_collision(collider->intersects(collidee), i, collider, collider_direction))
@@ -409,7 +409,7 @@ bool _bracket_object_collision_generic(shape* collider, const shape* collidee,
 bool _bracket_object_collision(bool colliding, int i, shape* collider, _sprite_movement_direction collider_direction)
 {
     rectangle collider_aabb = collider->get_bounding_box();
-    
+
     if (colliding)
     {
         _move_object_by_direction_relative_to_size(collider, collider_direction,
@@ -430,7 +430,7 @@ bool _bracket_object_collision(bool colliding, int i, shape* collider, _sprite_m
 void _move_object_by_direction_relative_to_size(shape* obj, _sprite_movement_direction direction, double relative_amount = 1.0)
 {
     rectangle obj_aabb = obj->get_bounding_box();
-    
+
     double relative_width = obj_aabb.width * relative_amount;
     double relative_height = obj_aabb.height * relative_amount;
 
