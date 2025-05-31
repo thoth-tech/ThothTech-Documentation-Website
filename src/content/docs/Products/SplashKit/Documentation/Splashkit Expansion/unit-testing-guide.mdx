@@ -4,9 +4,7 @@ sidebar:
   label: Unit Testing Guide
 ---
 
-import { FileTree } from "@astrojs/starlight/components";
-import { Steps } from "@astrojs/starlight/components";
-import { Tabs, TabItem } from "@astrojs/starlight/components";
+import { FileTree, Steps, Tabs, TabItem } from "@astrojs/starlight/components";
 
 ## Introduction
 
@@ -106,123 +104,129 @@ and `RESOURCE_PATH` variables will be defined.
 <TabItem label="Linux/WSL">
 <Steps>
 
-1.  Open a terminal and install prerequisites with these commands:
+1. Open a terminal and install prerequisites with these commands:
 
-    ```shell
-    sudo apt-get update
-    sudo apt-get upgrade -y
-    sudo apt-get install -y \
-    git build-essential cmake g++ libpng-dev libcurl4-openssl-dev libsdl2-dev \
-    libsdl2-mixer-dev libsdl2-gfx-dev libsdl2-image-dev libsdl2-net-dev libsdl2-ttf-dev \
-    libmikmod-dev libbz2-dev libflac-dev libvorbis-dev libwebp-dev libfreetype6-dev
-    ```
+   ```shell
+   sudo apt-get update
+   sudo apt-get upgrade -y
+   sudo apt-get install -y \
+   git build-essential cmake g++ libpng-dev libcurl4-openssl-dev libsdl2-dev \
+   libsdl2-mixer-dev libsdl2-gfx-dev libsdl2-image-dev libsdl2-net-dev libsdl2-ttf-dev \
+   libmikmod-dev libbz2-dev libflac-dev libvorbis-dev libwebp-dev libfreetype6-dev
+   ```
 
-2.  Install the CMake Tools extension from the VS Code extension browser or
-    [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools).
+2. Install the CMake Tools extension from the VS Code extension browser or
+   [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools).
 
-3.  Configure the extension:  
-    Select `${workspaceFolder}/projects/cmake/CMakeLists.txt`  
-    ![Select CMake Lists](images/build-unit-tests/1-select-cmakelists.png)  
-    Select the Linux preset  
-    ![Select Linux preset](images/build-unit-tests/2-select-preset-linux.png)  
-    Select the Default configure preset  
-    ![Select Default preset](images/build-unit-tests/2-select-preset-default.png)  
-    In the CMake Tools extension click the button
-    ![Build target button](images/build-unit-tests/select-target.png) next to Build and select
-    skunit_tests  
-    ![Select build target](images/build-unit-tests/3-target-unit-tests.png)  
-    Click the button ![Select Default preset](images/build-unit-tests/select-target.png) next to
-    Debug and select skunit_tests  
-    ![Select debug/launch target](images/build-unit-tests/4-debug-target.png)
+3. Configure the extension:  
+   Select `${workspaceFolder}/projects/cmake/CMakeLists.txt`  
+   ![Select CMake Lists](images/build-unit-tests/1-select-cmakelists.png)  
+   Select the Linux preset  
+   ![Select Linux preset](images/build-unit-tests/2-select-preset-linux.png)  
+   Select the Default configure preset  
+   ![Select Default preset](images/build-unit-tests/2-select-preset-default.png)  
+   In the CMake Tools extension click the button
+   ![Build target button](images/build-unit-tests/select-target.png) next to Build and select
+   skunit_tests  
+   ![Select build target](images/build-unit-tests/3-target-unit-tests.png)  
+   Click the button ![Select Default preset](images/build-unit-tests/select-target.png) next to
+   Debug and select skunit_tests  
+   ![Select debug/launch target](images/build-unit-tests/4-debug-target.png)
 
-4.  Build test project:  
-    From the command line:
-    ```shell
-    cd projects/cmake
-    cmake --preset Linux
-    cmake --build build/
-    ```
-    Or in VS Code:  
-    In the CMake Tools extension, click the Build button. The test project will also be built when
-    you refresh tests on the Testing tab of VS Code.  
-    ![Build tests](images/build-unit-tests/5-build.png)
+4. Build test project:  
+   From the command line:
+
+   ```shell
+   cd projects/cmake
+   cmake --preset Linux
+   cmake --build build/
+   ```
+
+   Or in VS Code:  
+   In the CMake Tools extension, click the Build button. The test project will also be built when
+   you refresh tests on the Testing tab of VS Code.  
+   ![Build tests](images/build-unit-tests/5-build.png)
 
 </Steps>
 </TabItem>
 <TabItem label="macOS">
 <Steps>
 
-1.  Install the CMake Tools extension from the VS Code extension browser or
-    [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools).
+1. Install the CMake Tools extension from the VS Code extension browser or
+   [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools).
 
-2.  Configure the extension:  
-    Select `${workspaceFolder}/projects/cmake/CMakeLists.txt`  
-    ![Select CMake Lists](images/build-unit-tests/1-select-cmakelists.png)  
-    Select the macOS preset  
-    ![Select macOS preset](images/build-unit-tests/2-select-preset-mac.png)  
-    Select the Default configure preset  
-    ![Select Default preset](images/build-unit-tests/2-select-preset-default.png)  
-    In the CMake Tools extension click the button
-    ![Build target button](images/build-unit-tests/select-target.png) next to Build and select
-    skunit_tests  
-    ![Select build target](images/build-unit-tests/3-target-unit-tests.png)  
-    Click the button ![Select Default preset](images/build-unit-tests/select-target.png) next to
-    Debug and select skunit_tests  
-    ![Select debug/launch target](images/build-unit-tests/4-debug-target.png)
+2. Configure the extension:  
+   Select `${workspaceFolder}/projects/cmake/CMakeLists.txt`  
+   ![Select CMake Lists](images/build-unit-tests/1-select-cmakelists.png)  
+   Select the macOS preset  
+   ![Select macOS preset](images/build-unit-tests/2-select-preset-mac.png)  
+   Select the Default configure preset  
+   ![Select Default preset](images/build-unit-tests/2-select-preset-default.png)  
+   In the CMake Tools extension click the button
+   ![Build target button](images/build-unit-tests/select-target.png) next to Build and select
+   skunit_tests  
+   ![Select build target](images/build-unit-tests/3-target-unit-tests.png)  
+   Click the button ![Select Default preset](images/build-unit-tests/select-target.png) next to
+   Debug and select skunit_tests  
+   ![Select debug/launch target](images/build-unit-tests/4-debug-target.png)
 
-3.  Build test project:  
-    From the command line:
-    ```shell
-    cd projects/cmake
-    cmake --preset macOS
-    cmake --build build/
-    ```
-    Or in VS Code:  
-    In the CMake Tools extension, click Build. The test project will also be built when you refresh
-    tests on the Testing tab of VS Code.  
-    ![Build tests](images/build-unit-tests/5-build.png)
+3. Build test project:  
+   From the command line:
+
+   ```shell
+   cd projects/cmake
+   cmake --preset macOS
+   cmake --build build/
+   ```
+
+   Or in VS Code:  
+   In the CMake Tools extension, click Build. The test project will also be built when you refresh
+   tests on the Testing tab of VS Code.  
+   ![Build tests](images/build-unit-tests/5-build.png)
 
 </Steps>
 </TabItem>
 <TabItem label="Windows">
 <Steps>
 
-1.  Open the MINGW64 terminal and install prerequisites with these commands:
+1. Open the MINGW64 terminal and install prerequisites with these commands:
 
-    ```shell
-    pacman -Syu
-    pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-gdb mingw-w64-x86_64-cmake mingw-w64-x86_64-make
-    ```
+   ```shell
+   pacman -Syu
+   pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-gdb mingw-w64-x86_64-cmake mingw-w64-x86_64-make
+   ```
 
-2.  Install the CMake Tools extension from the VS Code extension browser or
-    [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools).
+2. Install the CMake Tools extension from the VS Code extension browser or
+   [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools).
 
-3.  Configure the extension:  
-    Select `${workspaceFolder}/projects/cmake/CMakeLists.txt`  
-    ![Select CMake Lists](images/build-unit-tests/1-select-cmakelists.png)  
-    Select the Windows preset  
-    ![Select Windows preset](images/build-unit-tests/2-select-preset-windows.png)  
-    Select the Default configure preset  
-    ![Select Default preset](images/build-unit-tests/2-select-preset-default.png)  
-    In the CMake Tools extension click the button
-    ![Build target button](images/build-unit-tests/select-target.png) next to Build and select
-    skunit_tests  
-    ![Select build target](images/build-unit-tests/3-target-unit-tests.png)  
-    Click the button ![Select Default preset](images/build-unit-tests/select-target.png) next to
-    Debug and select skunit_tests  
-    ![Select debug/launch target](images/build-unit-tests/4-debug-target.png)
+3. Configure the extension:  
+   Select `${workspaceFolder}/projects/cmake/CMakeLists.txt`  
+   ![Select CMake Lists](images/build-unit-tests/1-select-cmakelists.png)  
+   Select the Windows preset  
+   ![Select Windows preset](images/build-unit-tests/2-select-preset-windows.png)  
+   Select the Default configure preset  
+   ![Select Default preset](images/build-unit-tests/2-select-preset-default.png)  
+   In the CMake Tools extension click the button
+   ![Build target button](images/build-unit-tests/select-target.png) next to Build and select
+   skunit_tests  
+   ![Select build target](images/build-unit-tests/3-target-unit-tests.png)  
+   Click the button ![Select Default preset](images/build-unit-tests/select-target.png) next to
+   Debug and select skunit_tests  
+   ![Select debug/launch target](images/build-unit-tests/4-debug-target.png)
 
-4.  Build test project:  
-    From the command line:
-    ```shell
-    cd projects/cmake
-    cmake --preset Windows
-    cmake --build build/
-    ```
-    Or in VS Code:  
-    In the CMake Tools extension, click Build. The test project will also be built when you refresh
-    tests on the Testing tab of VS Code.  
-    ![Build tests](images/build-unit-tests/5-build.png)
+4. Build test project:  
+   From the command line:
+
+   ```shell
+   cd projects/cmake
+   cmake --preset Windows
+   cmake --build build/
+   ```
+
+   Or in VS Code:  
+   In the CMake Tools extension, click Build. The test project will also be built when you refresh
+   tests on the Testing tab of VS Code.  
+   ![Build tests](images/build-unit-tests/5-build.png)
 
 </Steps>
 </TabItem>
@@ -321,7 +325,7 @@ You can run tests from the Testing tab in VS Code
   ![Run Test](images/run-unit-tests/3-run-test.png)  
   ![Test status](images/run-unit-tests/4-test-status.png)
 
-## See Also:
+## See Also
 
 - [Catch2 tutorial](https://github.com/catchorg/Catch2/blob/v2.x/docs/tutorial.md)
 - [Catch2 reference](https://github.com/catchorg/Catch2/blob/v2.x/docs/Readme.md)
