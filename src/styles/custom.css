@@ -225,6 +225,7 @@ img.ontrack {
 
 /* Better table styling */
 .sl-markdown-content table {
+  width: fit-content;
   border-radius: 0.5rem;
   box-shadow: var(--sl-shadow-md);
   border: 1px solid var(--sl-color-gray-5);
@@ -277,6 +278,7 @@ img.ontrack {
     width: 30%;
   }
 }
+
 .steps {
   list-style: none;
   counter-reset: step;
@@ -284,14 +286,14 @@ img.ontrack {
   margin: 2rem 0;
 }
 
-.steps > li {
+.steps>li {
   counter-increment: step;
   position: relative;
   margin-bottom: 1.5rem;
   padding-left: 2.5rem;
 }
 
-.steps > li::before {
+.steps>li::before {
   content: counter(step);
   position: absolute;
   left: 0;
@@ -306,7 +308,7 @@ img.ontrack {
   font-weight: bold;
 }
 
-.steps > li::after {
+.steps>li::after {
   content: "";
   position: absolute;
   left: 1rem;
@@ -316,6 +318,46 @@ img.ontrack {
   background: var(--sl-color-accent-low, #f5a623);
 }
 
-.steps > li:last-child::after {
+.steps>li:last-child::after {
   display: none;
+}
+
+@media print {
+
+  h3#student-leadership,
+  h2#project-1---ontrack,
+  h2#project-2---splashkit,
+  h3#project-members,
+  h3#project-members-1 {
+    page-break-before: always
+  }
+
+  header {
+    display: none;
+  }
+
+  footer {
+    display: none !important;
+  }
+
+  summary {
+    display: none !important;
+  }
+
+  button {
+    display: none !important;
+  }
+
+  aside {
+    display: none !important;
+  }
+
+  .main-frame {
+    padding-top: 0px;
+    margin-top: 30px;
+  }
+
+  .sidebar-content {
+    display: none !important;
+  }
 }

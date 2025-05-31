@@ -1,0 +1,387 @@
+---
+title: A Guide to Doing Peer Reviews
+description: A guide on how to do a peer review within the SplashKit team.
+sidebar:
+  label: "- Peer Review Guide"
+  order: 6
+---
+
+import { Tabs, TabItem, Steps, Aside } from "@astrojs/starlight/components";
+
+<Aside type="tip" title="TL;DR">
+
+- Peer reviews are essential for maintaining high-quality code in SplashKit.
+- The Peer-Review Checklist is **required** to be completed for review to ensure consistency across
+  the project.
+- Peer-Review Prompts are **not mandatory** but serve as a resource to guide discussions. - Prompts
+  help foster a collaborative and conversational peer-review process.
+  - The goal is to verify code quality and improve together through collaboration.
+
+</Aside>
+
+<Aside>
+
+Conducting peer reviews for Usage examples contains additional steps which can be found
+[here](/products/splashkit/documentation/splashkit-website/usage-examples/04-usage-peer-review)
+
+</Aside>
+
+In SplashKit, peer reviews are an essential part of maintaining high-quality code. The Peer-Review
+Checklist provided below is required for every pull request and ensures that all contributions meet
+a consistent standard across the project. This checklist covers essential aspects like code quality,
+functionality, and testing.
+
+However, we recognize that every feature or task is different, and it’s difficult to capture all
+potential review points in a single checklist. That’s why we’ve also included a set of Peer-Review
+Prompts. These prompts are not mandatory but serve as a resource to guide the peer-review
+discussion. Since peer reviews should always be collaborative, these prompts help ensure that the
+review process is conversational and thorough, encouraging reviewers to think critically and explore
+areas that may not be immediately obvious.
+
+Remember, the goal of peer reviews is not only to verify the quality of the code but also to foster
+a collaborative environment where we improve together.
+
+<Aside type="caution" title="Card Movement in Planner">
+
+As a reviewer, it is _your_ responsibility to move the Planner Card to the next column once approval
+has been given.
+
+</Aside>
+
+## How to Perform a Peer Review
+
+To maintain code quality and ensure smooth integration of new features, it’s essential to follow
+these steps when reviewing a PR in the SplashKit Starlight repository.
+
+<Steps>
+
+1. ### Check for Upstream Branches
+
+   Start by verifying whether the upstream branches are already added to your local repository. This
+   is necessary to ensure that you can fetch PRs from the original repository for review.
+
+   ```shell
+   git remote -v
+   ```
+
+   If the output does not show `upstream` linked to the main repository, you’ll need to add it in
+   the next step.
+
+2. ### Add Upstream Branches (if not present)
+
+   If the upstream branch is missing, add it manually. Replace `<repo-name>` with the exact name of
+   the repository.
+
+   ```shell
+   git remote add upstream https://github.com/thoth-tech/<repo-name>.git
+   ```
+
+   #### Example: Adding the `splashkit.io-starlight` Repository
+
+   For the `splashkit.io-starlight` repository, the command will be:
+
+   ```shell
+   git remote add upstream https://github.com/thoth-tech/splashkit.io-starlight.git
+   ```
+
+3. ### Verify Upstream Branches
+
+   Confirm that the upstream branch has been added correctly by running:
+
+   ```shell
+   git remote -v
+   ```
+
+   You should see both `origin` (your fork) and `upstream` (the main project repository) listed.
+
+4. ### Pull the PR into a New Branch
+
+   To review a PR, you will fetch it into a new local branch. Locate the ID/number of the PR on
+   GitHub, and use this number in the following command. Replace `ID` with the PR number and
+   `PR-branch-name` with a name that represents the PR purpose.
+
+   ```shell
+   git fetch upstream pull/ID/head:PR-branch-name
+   ```
+
+   #### Example: Fetching PR #7 that Adds a "New Feature"
+
+   ```shell
+   git fetch upstream pull/7/head:test-new-feature
+   ```
+
+5. ### Checkout the New Branch
+
+   Switch to the newly created branch to start reviewing the PR.
+
+   ```shell
+   git checkout PR-branch-name
+   ```
+
+6. ### Review the Code
+
+   Now that you are on the PR branch, start by reviewing the code to check for:
+
+   - **Code Quality**: Confirm that the code aligns with the project’s coding standards and
+     guidelines. Look for clean, well-organised, and readable code.
+   - **Functionality**: Verify that the changes achieve the intended purpose and work as described.
+   - **Testing**: Check for the presence of adequate tests, including unit and integration tests
+     where necessary.
+   - **Documentation**: Ensure any new features or updates are documented, with clear comments for
+     any complex sections.
+
+   Refer to the pull request template as you go through these checks to confirm that all required
+   fields are covered.
+
+   ### SplashKit Pull Request Templates
+
+   Use this checklist as a reference to ensure you’re covering all necessary areas in your review.
+
+   <Tabs SyncKey="SplashKit Team">
+
+     <TabItem label ="Website">
+
+   ```markdown
+   # Description
+
+   Please include a summary of the changes and the related issue. Please also include relevant
+   motivation and context. List any dependencies that are required for this change.
+
+   ## Type of change
+
+   - [ ] Bug fix (non-breaking change which fixes an issue)
+   - [ ] New feature (non-breaking change which adds functionality)
+   - [ ] Breaking change (fix or feature that would cause existing functionality to not work as
+         expected)
+   - [ ] Documentation (update or new)
+
+   ## How Has This Been Tested?
+
+   Please describe the tests that you ran to verify your changes. Provide instructions so we can
+   reproduce. Please also list any relevant details for your test configuration.
+
+   - [ ] Tested in latest Chrome
+   - [ ] Tested in latest Firefox
+   - [ ] npm run build
+   - [ ] npm run preview
+
+   ## Checklist
+
+   ### If involving code
+
+   - [ ] My code follows the style guidelines of this project
+   - [ ] I have performed a self-review of my own code
+   - [ ] I have commented my code in hard-to-understand areas
+   - [ ] I have made corresponding changes to the documentation
+   - [ ] My changes generate no new warnings
+
+   ### If modified config files
+
+   - [ ] I have checked the following files for changes:
+     - [ ] package.json
+     - [ ] astro.config.mjs
+     - [ ] netlify.toml
+     - [ ] docker-compose.yml
+     - [ ] custom.css
+
+   ## Folders and Files Added/Modified
+
+   Please list the folders and files added/modified with this pull request.
+
+   - Added:
+     - [ ] folder/folder
+     - [ ] folder/folder
+   - Modified:
+     - [ ] folder/file
+     - [ ] folder/file
+
+   ## Additional Notes
+
+   Please add any additional information that might be useful for the reviewers.
+   ```
+
+     </TabItem>
+
+     <TabItem label ="Expansion/WebDev">
+
+   ```md
+   ## General Information
+
+   - [ ] Type of Change: Clearly indicate the type of change (choose one):
+     - [ ] Bug fix
+     - [ ] New feature
+     - [ ] Breaking change
+     - [ ] Documentation update
+
+   ## Code Quality
+
+   - [ ] Repository: Is this Pull Request is made to the correct repository? (Thoth-Tech NOT
+         SplashKit)
+   - [ ] Readability: Is the code easy to read and follow? If not are there comments to help
+         understand the code?
+   - [ ] Maintainability: Can this code be easily maintained or extended in the future?
+
+   ## Functionality
+
+   - [ ] Correctness: Does the code meet the requirements of the task?
+   - [ ] Impact on Existing Functionality: Has the impact on existing functionality been considered
+         and tested?
+
+   ## Testing
+
+   - [ ] Test Coverage: Are unit tests provided for new or modified code?
+   - [ ] Test Results: Have all tests passed?
+
+   ## Documentation
+
+   - [ ] Documentation: Are both inline and applicable external documentation updated and clear?
+
+   ## Pull Request Details
+
+   - [ ] PR Description: Is the problem being solved clearly described?
+   - [ ] Checklist Completion: Have all relevant checklist items been reviewed and completed?
+   ```
+
+     </TabItem>
+
+   </Tabs>
+
+   #### Splashkit Review Prompts
+
+   - **Type of Change**: Does this Pull Request correctly identify the type of change (bug fix, new
+     feature, breaking change, or documentation update)? Is it aligned with the stated issue or
+     task?
+
+   - **Code Readability**: Is the code structure clean and easy to follow? Could it benefit from
+     clearer variable names, additional comments, or better organization? Would this code be
+     understandable for a new developer joining the project?
+
+   - **Maintainability**: How maintainable is the code? Is it modular and easy to extend in the
+     future? Does it avoid creating technical debt? Is the codebase as simple as possible while
+     still accomplishing the task?
+
+   - **Code Simplicity**: Are there any overly complex or redundant sections in the code? Could they
+     be refactored for better simplicity or clarity? Does the code follow established design
+     patterns and best practices?
+
+   - **Edge Cases**: Does the implementation consider potential edge cases? What could go wrong with
+     this code in unusual or unexpected scenarios? Are there any cases that haven’t been fully
+     addressed?
+
+   - **Test Thoroughness**: Are all key scenarios (including edge cases and failure paths) covered
+     by tests? Could additional tests help ensure the reliability of the code? Has the code been
+     tested across different environments (e.g., multiple browsers or platforms)?
+
+   - **Backward Compatibility**: Does this change break any existing functionality? If so, has
+     backward compatibility been handled or documented appropriately? Are there any warnings or
+     notes in the documentation regarding compatibility?
+
+   - **Performance Considerations**: Could this code have a negative impact on performance? Have any
+     performance concerns been documented and tested? Could the code be optimized for better
+     efficiency without sacrificing readability?
+
+   - **Security Concerns**: Could this change introduce security vulnerabilities, especially in
+     terms of input validation or sensitive data handling? Have security best practices been
+     followed? Does this code ensure proper user data handling?
+
+   - **Dependencies**: Are the new dependencies truly necessary? Could they create conflicts or
+     issues down the line, particularly during upgrades or with other libraries in the project? Is
+     there a simpler way to achieve the same functionality without adding new dependencies?
+
+   - **Documentation**: Is the documentation clear and complete for both internal developers and
+     external users? Could a new developer understand how to use or modify this feature from the
+     documentation provided? Does it cover any API or external interface changes?
+
+7. ### Test the Changes Locally
+
+   After the code review, run the project locally to verify that the new feature or bug fix works as
+   expected. This can include:
+
+   - Running any test suites that come with the project.
+   - Manually checking if the new functionality behaves correctly and does not introduce any bugs.
+   - Ensuring the changes do not break other parts of the project.
+
+8. ### Provide Constructive Feedback
+
+   After reviewing and testing, leave constructive feedback directly on the PR on GitHub. Highlight
+   both positive aspects and areas for improvement.
+
+   - Use specific comments on code lines or sections where changes are required.
+   - Make sure to explain why a change is needed to help the author learn and understand.
+   - Be courteous and professional, focusing on improving the code and maintaining high project
+     standards.
+
+9. ### Approve or Request Changes
+
+   Once you’ve completed your review:
+
+   - **Approve** if everything meets the project’s standards and the code works as expected.
+   - **Request Changes** if the code requires adjustments before it can be merged. Clearly outline
+     the changes required.
+
+   In both cases, document your decision and leave detailed notes to assist the author.
+
+10. ### Update Planner Board Status
+
+    Following the [Planner Board Etiquette](/products/splashkit/07-planner-board), move the
+    associated Planner card to the next column based on the review outcome. If the PR is approved,
+    update the card’s status accordingly, and if you requested changes, mark it for revision.
+
+    By following this guide, you’ll ensure a thorough and professional review process, helping
+    maintain the quality and reliability of the SplashKit Starlight project.
+
+</Steps>
+
+### Review Guidelines for Specific File Types
+
+Different file types require different levels of attention during the review process. Here's what to
+look for when reviewing each type of file:
+
+#### `.mdx` Files
+
+- **Content Accuracy**: Ensure that the content is clear and accurate. Double-check for any errors
+  in the documentation or guides.
+- **Frontmatter**: Ensure the frontmatter (`title`, `description`, etc.) is correctly filled out.
+- **Component Usage**: Verify that components such as `LinkCard`, `CardGrid`, or others are being
+  used appropriately within the `.mdx` files.
+
+#### `.css` Files
+
+- **Consistency**: Check that the styles align with the **Styling Guide** and maintain a consistent
+  use of variables (e.g., colours, fonts, spacing).
+- **Accessibility**: Review for accessibility considerations, such as whether animations are
+  disabled for users who prefer reduced motion, and whether contrast ratios meet **WCAG 2.1 AA**
+  standards.
+- **Naming Conventions**: Ensure that CSS class names follow a consistent naming pattern.
+
+#### `.jsx`/`.tsx` Files
+
+- **Functionality**: Make sure the interactive components (e.g., sliders, forms) work as expected
+  and meet the requirements of the task.
+- **Performance**: Look for unnecessary re-renders or other performance concerns.
+- **Code Style**: Ensure the code follows **React/JSX** best practices and any project-specific
+  linting rules.
+
+#### `.astro` Files
+
+- **Structure**: Ensure the page or component is well-structured and follows the **Astro standards**
+  for component and page creation.
+- **Reusability**: Look for opportunities to refactor repetitive code into reusable components.
+
+---
+
+## Useful Resources for Reviewers
+
+- **Starlight Documentation**: [Starlight Docs](https://starlight.astro.build/getting-started/)
+- **Astro Documentation**: [Astro Docs](https://docs.astro.build/en/getting-started/)
+- **WCAG 2.1 AA Guidelines**: [W3C Accessibility Standards](https://www.w3.org/WAI/WCAG21/quickref/)
+- **MDN CSS Documentation**: [MDN CSS Guide](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- **React Documentation**: [React Official Docs](https://reactjs.org/docs/getting-started.html)
+- **Usage Example Styling Guide**:
+  [Style Guide](/products/splashkit/documentation/splashkit-website/usage-examples/05-usage-example-style-guide)
+
+---
+
+By following these guidelines, you'll ensure that the SplashKit website project maintains high
+standards of code quality, performance, and accessibility. Remember, peer reviews are not only about
+verifying the code but also about learning and improving together as a team.
