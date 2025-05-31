@@ -85,7 +85,7 @@ _from
 First, an `ExecutionEnvironment` is created.
 
 From the
-[Source Code Documentation](/products/splashkit/projects/splashkit-online/code-documentation/classes/execution-environment)
+[Source Code Documentation](/products/splashkit/documentation/splashkit-online/code-documentation/classes/execution-environment)
 
 > ExecutionEnvironment is a class designed to abstract out running the user's code, and also handle
 > the environment itself (such as resetting variables, preloading files, etc). It contains functions
@@ -94,7 +94,7 @@ From the
 
 When created, an important thing it does is create an iFrame (sort of a page inside the page), which
 is where all code execution will take place. This is done for security, see
-[here](/products/splashkit/projects/splashkit-online/code-documentation/classes/execution-environment/#why-create-an-iframe)
+[here](/products/splashkit/documentation/splashkit-online/code-documentation/classes/execution-environment/#why-create-an-iframe)
 for a more detailed explanation.
 
 Inside the iFrame, the page `executionEnvironment.html` is loaded, which loads in things like the

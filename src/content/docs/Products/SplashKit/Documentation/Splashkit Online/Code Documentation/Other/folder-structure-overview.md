@@ -47,18 +47,18 @@ It also creates the ExecutionEnvironment, and IDBStoredProject on startup.
 
 `IDBStoredProject.js` - Holds the IDBStoredProject class, which handles saving/loading the user's
 project to/from internal browser storage. See
-[IDBStoredProject](/products/splashkit/projects/splashkit-online/code-documentation/classes/idb-stored-project)
+[IDBStoredProject](/products/splashkit/documentation/splashkit-online/code-documentation/classes/idb-stored-project)
 for internal documentation.
 
 `executionEnvironment.js` - Holds the ExecutionEnvironment class, which handles 'compiling' and
 running the user's code in a safe way. See
-[ExecutionEnvironment](/products/splashkit/projects/splashkit-online/code-documentation/classes/execution-environment)
+[ExecutionEnvironment](/products/splashkit/documentation/splashkit-online/code-documentation/classes/execution-environment)
 for internal documentation.
 
 `treeview.js` - Holds the TreeView class, used to display a tree view targeted at showing a
 filesystem. See
-[TreeView](/products/splashkit/projects/splashkit-online/code-documentation/classes/tree-view) for
-internal documentation.
+[TreeView](/products/splashkit/documentation/splashkit-online/code-documentation/classes/tree-view)
+for internal documentation.
 
 `fileview.js` - Creates an instance of the TreeView class, hooks it into the IDBStoredProject and
 ExecutionEnvironment's filesystems, and places it on the main page.
