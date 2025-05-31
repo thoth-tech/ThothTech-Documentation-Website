@@ -2,13 +2,13 @@
 title: Tips and Tricks
 description: Some tips and tricks that can improve user experience when contributing to SplashKit
 sidebar:
-  label: Tips and Tricks
-  order: 1
+  label: "- Tips and Tricks"
+  order: 8
 ---
 
 import { Steps } from "@astrojs/starlight/components";
 
-## General tips and tricks to make your life easier.
+## General tips and tricks to make your life easier
 
 This guide will provide some useful tips and tricks that have been useful for me while working on
 SplashKit.
@@ -22,16 +22,15 @@ To do this:
 
 <Steps>
 
-1.  Open VS Code
-2.  Open a new terminal by pressing `` Ctrl + Shift + ` `` or Terminal tab -> new terminal
-    ![newterminal](./images/newterminal.png)
-3.  In the terminal, locate the small drop down arrow to the top right
-    ![dropdown](./images/dropdown.png)
-4.  In the drop down menu click "Select Default Profile"
-    ![defaultprofile](images/defaultprofile.png)
-5.  You should see a drop down menu at the top of the window with a list of terminals where you can
-    select Git Bash or your terminal of choice. ![selectTerminal](images/selectterminal.png)
-6.  Select the terminal you would like as the default terminal within VS Code. I recommend Git Bash
+1. Open VS Code
+2. Open a new terminal by pressing `` Ctrl + Shift + ` `` or Terminal tab -> new terminal
+   ![newterminal](./images/newterminal.png)
+3. In the terminal, locate the small drop down arrow to the top right
+   ![dropdown](./images/dropdown.png)
+4. In the drop down menu click "Select Default Profile" ![defaultprofile](images/defaultprofile.png)
+5. You should see a drop down menu at the top of the window with a list of terminals where you can
+   select Git Bash or your terminal of choice. ![selectTerminal](images/selectterminal.png)
+6. Select the terminal you would like as the default terminal within VS Code. I recommend Git Bash
 
 </Steps>
 
@@ -64,11 +63,11 @@ To create Aliases:
 
 Now when you enter your alias it should run the command you have set. Some Aliases I use are:
 
-| Aliases                                            | Purpose                                                         |
-| -------------------------------------------------- | --------------------------------------------------------------- |
-| `alias gc='git checkout'                         ` | allows gc branchname for easier branch switching                |
-| `alias gcm='git checkout main'                   ` | quickly get to main branch                                      |
-| `alias skcompile='skm clang++ \*.cpp -o a && ./a ` | quickly compiles and runs C++ SplashKit projects in one command |
+| Aliases                                           | Purpose                                                         |
+| ------------------------------------------------- | --------------------------------------------------------------- |
+| `alias gc='git checkout'`                         | allows gc branchname for easier branch switching                |
+| `alias gcm='git checkout main'`                   | quickly get to main branch                                      |
+| `alias skcompile='skm clang++ \*.cpp -o a && ./a` | quickly compiles and runs C++ SplashKit projects in one command |
 
 These are some example aliases but you can do pretty much anything. If there are any commands you
 find yourself typing and think "Man this is tedious" just make a new alias for it!
@@ -106,11 +105,11 @@ To enable this:
 | Command                  | Purpose                                                                                                                   |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
 | `git pull upstream main` | Pulls changes from the main branch of the upstream repo – great to run at the start of the day                            |
-| `git clean -df         ` | Removes untracked files and directories - helpful if you forget a branch name                                             |
-| `git branch            ` | Lists all branches in your repo - good if you have forgotten the name of a branch                                         |
-| `git stash             ` | Temporarily stores uncommitted changes so you can switch branches or pull updates                                         |
+| `git clean -df`          | Removes untracked files and directories - helpful if you forget a branch name                                             |
+| `git branch`             | Lists all branches in your repo - good if you have forgotten the name of a branch                                         |
+| `git stash`              | Temporarily stores uncommitted changes so you can switch branches or pull updates                                         |
 | `git checkout -b <name>` | Allows the creation and checkout of branch in 1 command                                                                   |
-| `git add .             ` | Stages all changed files in the current directory and below                                                               |
-| `git status            ` | Shows staging area - Useful to see what will be committed                                                                 |
+| `git add .`              | Stages all changed files in the current directory and below                                                               |
+| `git status`             | Shows staging area - Useful to see what will be committed                                                                 |
 | `git commit -m "message` | Commits and creates messages in 1 command                                                                                 |
-| `git reset --hard      ` | Resets your working directory to last commit - Useful if you make some breaking changes and cannot fix. **use with care** |
+| `git reset --hard`       | Resets your working directory to last commit - Useful if you make some breaking changes and cannot fix. **use with care** |
