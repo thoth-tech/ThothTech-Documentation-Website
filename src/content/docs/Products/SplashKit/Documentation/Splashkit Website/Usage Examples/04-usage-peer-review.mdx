@@ -1,0 +1,145 @@
+---
+title: How to do a Peer Review for Usage Examples
+description: Learn how to create, submit, and review usage examples for the Splashkit website.
+sidebar:
+  label: Usage Peer Review
+---
+
+## Peer Reviewing a Usage Example
+
+Doing a peer review for usage examples follows the same process as the
+[peer review guide](/products/splashkit/06-peer-review). However, you will need to follow the steps
+for reviewing usage examples.
+
+When reviewing an example, follow these steps:
+
+### 1. Test the code
+
+Compile/run each code file on your machine.
+
+- Are there any errors?
+- Are there any warnings?
+- Does the program run as expected?
+
+### 2. Analyse the effectiveness
+
+Consider the function being demonstrated and how it might be used by a SplashKit user.
+
+- Does the code example demonstrate the usefulness of the function?
+- Or, do the code example give more insight into how the function works?
+- Is the example simple enough for an SIT102 or SIT771 student to follow, while still being an
+  interesting example?
+
+### 3. Compare and analyse the code
+
+Check the structure and functionality of the code in each language.
+
+- Does the sequence of code match for all code files?
+- Do the code comments match across all code files?
+- Does the code follow the
+  [style guide](/products/splashkit/documentation/splashkit-website/usage-examples/05-usage-example-style-guide)
+  requirements?
+- Is the Object Oriented C# code using the Object Oriented format where possible/relevant?
+- Is the python code using the correct function names? (These function names will often differ from
+  other languages due to python not handling function overloads)
+
+### 4. Test in localhost
+
+Check the example displays correctly in your local development environment.
+
+- Does the website build successfully with `npm run build`?
+- Does the example display under the correct function when previewing the website with
+  `npm run preview`?
+- Is the correct function highlighted in the example code?
+
+### 5. Request changes
+
+Add your review comments on the pull request on GitHub.
+
+- Add comments for individual lines, or groups of lines in the code files. This helps the original
+  contributor to understand exactly what the issue is related to.
+- Use professional language, and be polite but assertive.
+- Include the correct version of code where relevant, or any suggested improvements.
+- Ask questions if something is confusing or unclear.
+
+:::note
+
+**First Peer Review:**
+
+- It is _very unlikely_ that you will approve a pull request on first review without any changes.
+- We all miss things in our own code, which is why peer reviews are so important.
+
+**Second Peer Review:**
+
+- This review is more likely to be able to be approved without changes being requested.
+- However, it is important to check that the first reviewer did not miss anything that _should have
+  been found_ in the first review.
+- You might also have experience that allows you to consider other aspects that the first reviewer
+  would not have noticed.
+
+:::
+
+### 6. Continue discussion about changes on the pull request
+
+Check for replies on the pull request from the original contributor.
+
+- These comments might be requesting more information about your suggested changes, so it is
+  important to respond quickly.
+- Discussions may include some debate on the best way forward. Be open to the ideas suggested by the
+  other person, and include evidence to back up your reasoning.
+- If needed, either the reviewer or the original contributor can reach out to your Mentor to help
+  decide what the outcome should be.
+- Check for a comment from the original contributor that the requested changes have been made.
+
+### 7. Review the pull request again
+
+Repeat steps 1 - 4 above.
+
+- It is important to review the pull request thoroughly to ensure that the changes have not caused
+  other issues.
+- You may notice other issues once changes have been made. This is okay, and is part of the
+  development process.
+- Ensure that the pull request will be able to be merged upstream to the live site before you
+  approve it.
+
+### 8. Approve the pull request
+
+Once all the requested changes have been made, approve the pull request using the following template
+in the comment of the approving review:
+
+```plaintext
+# Peer Review
+
+I've reviewed the ...
+
+## Checks
+
+- [ ] All required files are present.
+  - [ ] Example Title (.txt)
+  - [ ] C++ code (SplashKit)
+  - [ ] C# code (top-level statements)
+  - [ ] C# code (Object-Oriented Programming)
+  - [ ] Python code
+  Or, if Beyond SK Pull Request (remove if not relevant):
+  - [ ] C++ code (Beyond SplashKit)
+- [ ] Code correctly uses Splashkit functions.
+- [ ] Code clearly demonstrates the function.
+- [ ] All versions maintain the same structure and comments.
+
+## Code Tests done
+
+- [ ] C++ SplashKit code ran correctly.
+- [ ] C++ Beyond SplashKit code ran correctly.
+- [ ] C# top level code ran correctly.
+- [ ] C# OOP code ran correctly.
+- [ ] Python code ran correctly.
+
+## Website Tests done
+
+- [ ] npm run build
+- [ ] npm run preview
+```
+
+Ensure while doing peer reviews that you also follow the
+[Planner Board Etiquette](/products/splashkit/07-planner-board) for moving tasks through the
+process.
