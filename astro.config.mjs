@@ -124,11 +124,6 @@ export default defineConfig({
               collapsed: true,
               autogenerate: { directory: "Products/OnTrack" },
             },
-            {
-              label: "CourseFlow",
-              collapsed: true,
-              autogenerate: { directory: "Products/CourseFlow" },
-            },
           ],
         },
         {
