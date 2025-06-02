@@ -191,7 +191,7 @@ and one to wpa_supplicant:
    <a href="https://raw.githubusercontent.com/thoth-tech/ThothTech-Documentation-Website/refs/heads/main/public/arcade-machine-files/es_systems.cfg" download>Click
    to Download</a>
 
-   ```cfg
+   ```xml
    <!-- This is the EmulationStation Systems configuration file. All systems must be contained within the <systemList> tag.-->
 
    <systemList>
