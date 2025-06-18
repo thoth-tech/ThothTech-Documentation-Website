@@ -362,3 +362,93 @@ img.ontrack {
     display: none !important;
   }
 }
+
+/* 
+  ----- Start of new Tab Styling -----
+*/
+
+/* Variables for light and dark theme colors*/
+:root {
+  --tab-bg: var(--sl-color-gray-5);
+  --tab-hover-bg: var(--sl-color-gray-6);
+  --tab-text: var(--sl-color-gray-3);
+  --tab-hover-text: var(--sl-color-white);
+  --tab-outline: var(--sl-color-accent);
+  --focused-tab-outline: var(--sl-color-accent-high);
+}
+
+/* Basic Tab Style */
+[role="tab"] {
+  position: relative;
+  margin-right: 4px;
+  margin-left: 4px;
+  padding-bottom: 2px;
+  border-radius: 0.5rem 0.5rem 0 0;
+  border: 2px solid var(--focused-tab-outline);
+  background-color: var(--tab-bg);
+}
+
+[role="tab"][aria-selected="true"] {
+  background-color: inherit;
+  border-bottom-color: var(--sl-color-bg) !important;
+  padding-top: 2px;
+}
+
+[role="tab"][aria-selected="false"] {
+  margin-top: 3px;
+  color: var(--tab-text);
+  border-color: var(--tab-outline);
+  border-width: 1px;
+  border-bottom: none;
+}
+
+[role="tab"][aria-selected="false"]:hover {
+  cursor: pointer;
+  color: var(--tab-hover-text);
+  background-color: var(--tab-hover-bg);
+}
+
+[role="tablist"] {
+  border-bottom-color: var(--focused-tab-outline);
+}
+
+/* Round out styling using circle pseudo-element */
+[role="tab"][aria-selected="true"]::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  right: -15px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid transparent;
+  border-left-color: var(--focused-tab-outline);
+  border-bottom-color: var(--focused-tab-outline);
+  clip-path: inset(7px 5px 1px 0);
+  z-index: 2;
+  box-shadow: -4px 6px 0 var(--sl-color-bg);
+}
+
+[role="tab"][aria-selected="true"]::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: -15px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid transparent;
+  border-right-color: var(--focused-tab-outline);
+  border-bottom-color: var(--focused-tab-outline);
+  clip-path: inset(7px 0 1px 5px);
+  z-index: 2;
+  box-shadow: 4px 6px 0 var(--sl-color-bg);
+}
+
+/* 
+  ----- End Tab Styling -----
+*/
