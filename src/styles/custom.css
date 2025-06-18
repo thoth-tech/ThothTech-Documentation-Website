@@ -383,22 +383,20 @@ img.ontrack {
   position: relative;
   margin-right: 4px;
   margin-left: 4px;
-  border-radius: 0.5rem 0.5rem 0 0;
+  /* border-radius: 0.5rem 0.5rem 0 0; */
   border: 2px solid var(--focused-tab-outline);
   background-color: var(--tab-bg);
 }
 
 [role="tab"][aria-selected="false"] {
-  margin-top: 3px;
-  margin-bottom: 2px;
   color: var(--tab-text);
-  border-color: var(--tab-outline);
   border-width: 1px;
-  border-bottom: none;
+  border-color: var(--tab-outline);
+  border-bottom: none !important;
+  padding-bottom: 1px !important;
 }
 
 [role="tab"][aria-selected="true"] {
-  margin-top: 2px;
   background-color: inherit;
   border-color: var(--focused-tab-outline) !important;
   border-bottom-color: var(--sl-color-bg) !important;
@@ -412,11 +410,12 @@ img.ontrack {
 }
 
 [role="tablist"] {
-  border-bottom-color: var(--focused-tab-outline);
+  border-bottom-color: var(--focused-tab-outline) !important;
+  z-index: 3;
 }
 
 /* Round out styling using circle pseudo-element */
-[role="tab"][aria-selected="true"]::after {
+/* [role="tab"][aria-selected="true"]::after {
   content: "";
   display: block;
   position: absolute;
@@ -450,7 +449,7 @@ img.ontrack {
   clip-path: inset(8px 0px 0px 8px);
   z-index: 2;
   box-shadow: 4px 6px 0 var(--sl-color-bg);
-}
+} */
 
 /* 
   ----- End Tab Styling -----
