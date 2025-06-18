@@ -8,23 +8,73 @@ sidebar:
 
 import { Tabs, TabItem } from "@astrojs/starlight/components";
 
-<Tabs>
-<TabItem label="Core/WebDev">
-## Template for making a pull request
+Most SplashKit repos have a default pull request template that you can use. Usage Example PRs will
+need to use the template below.
 
-When making a pull request to the `splashkit.io-starlight` repository, please use the following
-template to ensure that your pull request covers all the required steps and can be reviewed by your
-peers. The template includes a checklist of items that you need to complete before submitting your
-pull request, some of which may not be relevant to your specific pull request. Please ensure that
-you complete all the relevant items before submitting your pull request.
+:::note
+
+The templates all include checklists of items that you need to complete before submitting your pull
+request, some of which may not be relevant to your specific pull request.
+
+Please ensure that you complete all the relevant items before submitting your pull request.
+
+:::
+
+See the templates in the tabs below:
+
+<Tabs>
+
+<TabItem label="Usage Examples">
+
+Remove the default template in the pull request, and instead, use the following template:
+
+{/* prettier-ignore-start */}
 
 ```markdown
 # Description
 
-Please include a summary of the changes and the related issue. Please also include relevant
-motivation and context. List any dependencies that are required for this change.
+**Splashkit Function:** `function_name`
+
+**Overview of example functionality:** _Describe the example and how it demonstrates the function._
+
+**Example Output:** _Add an image, or gif (or relevant demo file) of the example code running._
+
+# Files Included
+
+- [ ] C++ code (SplashKit)
+- [ ] C++ code (Beyond SplashKit) - Remove this line if not needed.
+- [ ] C# code (Top-Level statements)
+- [ ] C# code (Object-Oriented Programming)
+- [ ] Python code
+- [ ] Relevant title for the example (.txt)
+- [ ] Screenshot
+
+# Usage Example Checks (READ CAREFULLY)
+
+- [ ] Code uses Splashkit function above
+- [ ] Code does not use non-Splashkit functions
+- [ ] Code does not use extra function declarations or extra classes
+- [ ] Code does not violate any of the Thoth Tech SplashKit Style Guide rules
+- [ ] Simple, clear demonstration of the function
+- [ ] Tested in Chrome and Firefox
+```
+
+{/* prettier-ignore-end */}
+
+</TabItem>
+
+<TabItem label="SplashKit Website">
+
+{/* prettier-ignore-start */}
+
+```markdown
+# Description
+
+_Please include a summary of the changes and the related issue. Please also include relevant motivation and context. List any dependencies that are required for this change._
 
 ## Type of change
+
+_Please delete options that are not relevant._
 
 - [ ] Bug fix (non-breaking change which fixes an issue)
 - [ ] New feature (non-breaking change which adds functionality)
@@ -34,8 +84,9 @@ motivation and context. List any dependencies that are required for this change.
 
 ## How Has This Been Tested?
 
-Please describe the tests that you ran to verify your changes. Provide instructions so we can
-reproduce. Please also list any relevant details for your test configuration.
+_Please describe the tests that you ran to verify your changes. Provide instructions so we can reproduce. Please also list any relevant details for your test configuration._
+
+## Testing Checklist
 
 - [ ] Tested in latest Chrome
 - [ ] Tested in latest Firefox
@@ -43,6 +94,8 @@ reproduce. Please also list any relevant details for your test configuration.
 - [ ] npm run preview
 
 ## Checklist
+
+_Please delete options that are not relevant._
 
 ### If involving code
 
@@ -63,7 +116,7 @@ reproduce. Please also list any relevant details for your test configuration.
 
 ## Folders and Files Added/Modified
 
-Please list the folders and files added/modified with this pull request.
+_Please list the folders and files added/modified with this pull request and delete options that are not relevant._
 
 - Added:
   - [ ] folder/folder
@@ -74,66 +127,57 @@ Please list the folders and files added/modified with this pull request.
 
 ## Additional Notes
 
-Please add any additional information that might be useful for the reviewers.
+_Please add any additional information that might be useful for the reviewers._
 ```
 
-Please refer to Pull Request Guide for more information on creating a pull request.
+{/* prettier-ignore-end */}
 
 </TabItem>
-<TabItem label="Usage Example">
-## Preparing to do a Pull Request
 
-Before starting the pull request ensure you have followed the steps in the
-[Usage Example Overview](/products/splashkit/documentation/splashkit-website/usage-examples/01-overview)
-guide for creating a usage example. Ensure you have the files listed below added, with their names
-updated to the function you are demonstrating.
+<TabItem label="SplashKit Expansion">
 
-```plaintext
-write_line-1-example-oop.cs
-write_line-1-example-top-level.cs
-write_line-1-example-sk.cpp
-write_line-1-example.py
-write_line-1-example.png or .gif
-write_line-1-example.txt
+{/* prettier-ignore-start */}
+
+```markdown
+# Description
+
+_Please include a summary of the change and which issue is fixed. Please also include relevant motivation and context. List any dependencies that are required for this change._
+
+Fixes # (issue)
+
+## Type of change
+
+_Please delete options that are not relevant._
+
+- [ ] Bug fix (non-breaking change which fixes an issue)
+- [ ] New feature (non-breaking change which adds functionality)
+- [ ] Breaking change (fix or feature that would cause existing functionality to not work as
+      expected)
+- [ ] Documentation (update or new)
+
+## How Has This Been Tested?
+
+_Please describe the tests that you ran to verify your changes. Provide instructions so we can reproduce. Please also list any relevant details for your test configuration_
+
+## Testing Checklist
+
+- [ ] Tested with sktest
+- [ ] Tested with skunit_tests
+
+## Checklist
+
+- [ ] My code follows the style guidelines of this project
+- [ ] I have performed a self-review of my own code
+- [ ] I have commented my code in hard-to-understand areas
+- [ ] I have made corresponding changes to the documentation
+- [ ] My changes generate no new warnings
+- [ ] I have requested a review from ... on the Pull Request
 ```
 
-In a seperate pull request, to add to existing examples:
-
-```plaintext
-write_line-1-hello-world-beyond.cpp
-```
-
-## Creating a Pull Request
-
-Usage examples have their own process when it comes to doing pull requests. You'll follow the same
-steps on the [pull request guide](/products/splashkit/04-pull-request), however, the destination
-branch needs to be changed to be **usage-examples**.
-
-Then remove the default template in the pull request, and instead use the following template:
-
-```shell
-# Overview
-Describe the example and what it demonstrates.
-
-Splashkit Function: `function_name`
-
-# Files Included
-- [ ] Relevant title for the example (.txt)
-- [ ] C++ code (SplashKit)
-- [ ] C++ code (Beyond SplashKit - In separate pull request)
-- [ ] C# code (Top-Level statements)
-- [ ] C# code (Object-Oriented Programming)
-- [ ] Python code
-- [ ] Screenshot
-
-# Usage Example Checks
-- [ ] Simple, clear demonstration of the function
-- [ ] Code uses Splashkit functions
-- [ ] Tested in Chrome and Firefox
-```
-
-Once submitted, move the associated planner card to peer review and link the pull request. Follow
-the [Planner Board Etiquette](/products/splashkit/07-planner-board) for more details on the process.
+{/* prettier-ignore-end */}
 
 </TabItem>
 </Tabs>
+
+Once submitted, move the associated planner card to peer review and link the pull request. Follow
+the [Planner Board Etiquette](/products/splashkit/07-planner-board) for more details on the process.

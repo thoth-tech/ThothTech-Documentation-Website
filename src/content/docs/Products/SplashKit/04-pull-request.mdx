@@ -14,13 +14,6 @@ This guide provides a step-by-step process for creating a pull request (PR) in t
 Starlight repository, PRs are the primary way to contribute changes to the project. By following
 these steps, you can submit your own PRs and collaborate with other team members effectively.
 
-<Aside>
-
-Creating a pull request for Usage examples contains additional steps which can be found in the usage
-example tab [here](/products/splashkit/05-pull-request-template/)
-
-</Aside>
-
 <Steps>
 
 1. ### Check for Upstream Branches
@@ -52,13 +45,19 @@ example tab [here](/products/splashkit/05-pull-request-template/)
    git remote add upstream https://github.com/thoth-tech/<repo-name>.git
    ```
 
-   #### Example with `splashkit.io-starlight` Repository
+   #### Examples
 
-   For the `splashkit.io-starlight` repository, the command will look like this:
+   - For the `splashkit.io-starlight` repository, the command will look like this:
 
-   ```shell
-   git remote add upstream https://github.com/thoth-tech/splashkit.io-starlight.git
-   ```
+     ```shell
+     git remote add upstream https://github.com/thoth-tech/splashkit.io-starlight.git
+     ```
+
+   - For the `splashkit-core` repository, the command will look like this:
+
+     ```shell
+     git remote add upstream https://github.com/thoth-tech/splashkit-core.git
+     ```
 
 3. ### Verify Upstream Branches
 
@@ -116,9 +115,16 @@ Requests extension in VSCode.
 
    Next, make sure you're comparing the correct branches:
 
-   - **Base Repository**: This should be set to `thoth-tech/splashkit.io-starlight` (the original
+   - **Base Repository**: This should be set to `thoth-tech/repo_name` (the original
    - repository you're contributing to).
    - **Base Branch**: Select `main` as the branch to merge into.
+
+     :::caution[Usage Examples Base Branch]
+
+     For usage example tasks, the base branch (destination branch) needs to be changed to be
+     **usage-examples**.
+
+     :::
 
    The other dropdown should show your forked repository and the branch you want to merge from.
 
@@ -133,6 +139,31 @@ Requests extension in VSCode.
    to merge.
 
    Make sure everything looks correct before proceeding.
+
+   :::caution[Usage Example Files]
+
+   Ensure you have the files listed below added, with their names updated to the python signature of
+   the function you are demonstrating.
+
+   - For **standard** Usage Example PRs:
+
+     ```plaintext
+     write_line-1-example-oop.cs
+     write_line-1-example-top-level.cs
+     write_line-1-example-sk.cpp
+     write_line-1-example.py
+     write_line-1-example.png or .gif
+     write_line-1-example.txt
+     ```
+
+   - For **Beyond SplashKit** Usage Example PRs:
+
+     ```plaintext
+     write_line-1-example-sk.cpp
+     write_line-1-hello-world-beyond.cpp
+     ```
+
+   :::
 
 4. #### Add Pull Request Details
 
