@@ -371,9 +371,10 @@ img.ontrack {
 :root {
   --tab-bg: var(--sl-color-gray-5);
   --tab-hover-bg: var(--sl-color-gray-6);
-  --tab-text: var(--sl-color-gray-3);
+  --tab-text: var(--sl-color-gray-2);
   --tab-hover-text: var(--sl-color-white);
   --tab-outline: var(--sl-color-accent);
+  --tab-hover-outline: var(--sl-color-accent-high);
   --focused-tab-outline: var(--sl-color-accent-high);
 }
 
@@ -382,30 +383,32 @@ img.ontrack {
   position: relative;
   margin-right: 4px;
   margin-left: 4px;
-  padding-bottom: 2px;
   border-radius: 0.5rem 0.5rem 0 0;
   border: 2px solid var(--focused-tab-outline);
   background-color: var(--tab-bg);
 }
 
-[role="tab"][aria-selected="true"] {
-  background-color: inherit;
-  border-bottom-color: var(--sl-color-bg) !important;
-  padding-top: 2px;
-}
-
 [role="tab"][aria-selected="false"] {
   margin-top: 3px;
+  margin-bottom: 2px;
   color: var(--tab-text);
   border-color: var(--tab-outline);
   border-width: 1px;
   border-bottom: none;
 }
 
+[role="tab"][aria-selected="true"] {
+  margin-top: 2px;
+  background-color: inherit;
+  border-color: var(--focused-tab-outline) !important;
+  border-bottom-color: var(--sl-color-bg) !important;
+}
+
 [role="tab"][aria-selected="false"]:hover {
   cursor: pointer;
   color: var(--tab-hover-text);
   background-color: var(--tab-hover-bg);
+  border-color: var(--tab-hover-outline);
 }
 
 [role="tablist"] {
@@ -417,7 +420,7 @@ img.ontrack {
   content: "";
   display: block;
   position: absolute;
-  bottom: -3px;
+  bottom: -2px;
   right: -15px;
   width: 15px;
   height: 15px;
@@ -426,16 +429,16 @@ img.ontrack {
   border: 2px solid transparent;
   border-left-color: var(--focused-tab-outline);
   border-bottom-color: var(--focused-tab-outline);
-  clip-path: inset(7px 5px 1px 0);
+  clip-path: inset(8px 8px 0px 0);
   z-index: 2;
-  box-shadow: -4px 6px 0 var(--sl-color-bg);
+  box-shadow: -4px 1px 0 var(--sl-color-bg);
 }
 
 [role="tab"][aria-selected="true"]::before {
   content: "";
   display: block;
   position: absolute;
-  bottom: -3px;
+  bottom: -2px;
   left: -15px;
   width: 15px;
   height: 15px;
@@ -444,7 +447,7 @@ img.ontrack {
   border: 2px solid transparent;
   border-right-color: var(--focused-tab-outline);
   border-bottom-color: var(--focused-tab-outline);
-  clip-path: inset(7px 0 1px 5px);
+  clip-path: inset(8px 0px 0px 8px);
   z-index: 2;
   box-shadow: 4px 6px 0 var(--sl-color-bg);
 }
