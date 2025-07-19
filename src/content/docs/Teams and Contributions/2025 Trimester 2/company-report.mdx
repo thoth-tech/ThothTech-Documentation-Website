@@ -36,6 +36,7 @@ trimester, Thoth Tech will be running the two main products: OnTrack and SplashK
 - Ibitope Ebenezer Fatoki - Senior Leader (OnTrack)
 - Samindi Situmya Ratnayake Mudiyanselage - Senior Leader (OnTrack)
 - Martin John Dolores- Senior Leader (OnTrack)
+- BRENDAN HUYNH - Junior Leader (OnTrack)
 - Joshua Peyton Fernandes - Senior Leader (SplashKit)
 - Oliver Alexander Quail - Senior Leader (SplashKit)
 - Vishnu Vengadewaran - Senior Leader (SplashKit)
@@ -112,17 +113,112 @@ Our objective is simple: leave OnTrack better than we found it and make the next
 
 ### Aims for Trimester
 
-#### 1. ?
+This trimester, the OnTrack team at Thoth Tech will build upon the foundational work of T1 2025 to continue modernizing and expanding platform functionality, accessibility, and performance. Our focus will be on completing high-priority migrations, implementing user-focused features, and reinforcing system security and documentation standards. The following areas are targeted for completion or significant progress:
 
-- **Name**: Unknown
+#### 1. Frontend Migration: AngularJS → Angular 17
+
+- **Complete the migration** of remaining legacy components from AngularJS + CoffeeScript to Angular 17 + TypeScript.
+- **Refactor UI components** to match updated design language and improve accessibility (in conjunction with colour theme work).
+- **Test and optimize** performance for responsiveness and maintainability across devices and user roles.
+
+#### 2. Accessibility: Colour Themes
+
+- **Introduce customizable colour themes** with specific presets for various types of colour vision deficiencies (e.g. deuteranopia, protanopia).
+- **Integrate theme selector** into user settings and ensure WCAG 2.1 AA compliance across themes.
+- Conduct **user testing** to validate effectiveness and usability of new themes.
+
+#### 3. Security and Authentication
+
+- Implement **modular authentication logic** that separates concerns and strengthens isolation of login/session flows.
+- Continue applying **cybersecurity improvements** based on outcomes of the T1 2025 audit and any new findings.
+- Begin formalizing **SSO and mTLS integration** prototypes for future scalability.
+
+#### 4. Organisational Structure Support
+
+- **Introduce the concept of Organisations** into OnTrack: allow multiple institutions or units to operate under a single instance.
+- Develop and deploy the **Observer Role** to support administrative oversight without direct intervention privileges.
+- Finalize RBAC mappings and permission sets to ensure scalability and maintain security.
+
+#### 5. Tutor Activity Tracking
+
+- Deliver the **Tutor Time Tracking module**: Stopwatch + Manual Input + Analytics dashboard.
+- Enable **notifications for time limits** and allow Unit Chairs to access reports via a central interface.
+- Securely store and expose tracking data via authenticated APIs for internal analytics.
+
+#### 6. Self-Enrolment & Capstone Enhancements
+
+- Roll out **Student Self-Enrolment** for units and projects.
+- Enhance the **Capstone Project Selection tool** with input validation, improved form UI/UX, and backend CSV export support.
+
+#### 7. OnTrack Documentation Website
+
+- Finalize **API reference pages** for frontend and backend endpoints.
+- Fill documentation gaps from T1 and begin **“Getting Started” onboarding guide** series.
+- Host tutorials and videos to support student and developer use cases.
+
+#### 8. New Feature Explorations
+
+- Identify and scope **next-generation feature ideas** (e.g. Panopto integration phase 2, mobile optimization, AI tutor suggestions).
+- Conduct **internal design sprints** and feasibility studies for selected innovations.
 
 
+### Deliverables – T2 2025
 
-### Priorities
+The following deliverables are expected to be completed or reach significant milestones during Trimester 2, 2025:
 
-#### 1. ?
+#### 1. Frontend Migration
 
-- unknown
+- Migration of all legacy AngularJS and CoffeeScript components to Angular 17 and TypeScript.
+- Improved UI consistency and accessibility across updated components.
+- Performance benchmarking and optimization of migrated views.
+
+#### 2. Accessibility Enhancements
+
+- Deployment of configurable colour themes, including presets for various colour blindness types.
+- Theme selector integrated into user profile settings.
+- Accessibility compliance testing completed and passed (WCAG 2.1 AA baseline).
+
+#### 3. Security and Authentication Upgrades
+
+- Modular authentication system developed and integrated.
+- Security enhancements implemented based on T3 2024 audit outcomes.
+- Baseline groundwork completed for SSO/mTLS experimentation and prototyping.
+
+#### 4. Multi-Organisation Support
+
+- Backend schema updated to support multiple organisations.
+- Observer Role created and assigned appropriate RBAC permissions.
+- Initial organisation switching UI available to admins and superusers.
+
+#### 5. Tutor Activity Tracking Module
+
+- Stopwatch and manual time entry system deployed for tutors.
+- Alerts implemented for tutors exceeding marking time limits.
+- Tutor analytics dashboard available to staff with data pulled from secured API endpoints.
+
+#### 6. Student Self-Enrolment
+
+- Self-enrolment UI deployed for units and project-based tasks (e.g. Capstone).
+- Improved form validation and CSV export integration for administrative tasks.
+- End-to-end testing completed for enrolment workflows.
+
+#### 7. Staff Grant Extension System
+
+- Functional staff UI for manually processing extension requests.
+- Full CRUD capability for managing extensions stored in the database.
+- API endpoints secured and unit-tested.
+
+#### 8. Documentation Website
+
+- API reference fully updated with new and refactored endpoints.
+- Backend and frontend architecture docs finalized.
+- New “Getting Started” guide and walkthroughs published for onboarding.
+
+#### 9. Exploratory Features (R&D Stage)
+
+- Capstone Feature 2.0 ideation workshops completed.
+- Design sprint prototypes for Panopto Phase 2 or AI-driven features.
+- Internal technical review of feasibility and resource impact for long-term planning.
 
 
 ### Project Members
