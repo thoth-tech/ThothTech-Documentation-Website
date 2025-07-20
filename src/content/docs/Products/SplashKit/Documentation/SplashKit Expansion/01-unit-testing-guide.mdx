@@ -323,6 +323,59 @@ You can run tests from the Testing tab in VS Code
   ![Run Test](images/run-unit-tests/3-run-test.png)  
   ![Test status](images/run-unit-tests/4-test-status.png)
 
+## Code coverage
+
+<Tabs syncKey="platform">
+<TabItem label="Linux/WSL">
+<Steps>
+
+1. Install lcov via your package manager  
+   e.g., `apt install lcov` (note that your Linux distrubtion may use a different package manager
+   rather than `apt`, and you may need to `sudo` this command)
+2. Go to the CMake Tools settings in VS Code, switch to the Workspace tab, and change the following
+   settings:  
+   **Coverage Info Files:**  
+   Click Add Item and add `${workSpaceFolder}/projects/cmake/build/lcov.info`  
+   ![Coverage Info Files](images/code-coverage/option-coverage-info.png)  
+   **Pre Run Coverage Target:** `lcov-init-coverage`  
+   ![Lcov Pre Run Coverage Target](images/code-coverage/option-pre-run-lcov.png)  
+   **Post Run Coverage Target:** `lcov-capture-coverage`  
+   ![Lcov Post Run Coverage Target](images/code-coverage/option-post-run-lcov.png)
+
+3. Rebuild the test project, then run tests with coverage with this button  
+   ![Run Tests with Coverage](images/code-coverage/button-run-coverage.png)
+4. After the tests run, the test explorer pane in VS Code should update with the coverage info:  
+   ![Coverage Info](images/code-coverage/result-test-explorer.png)
+
+</Steps>
+</TabItem>
+<TabItem label="macOS">
+<Steps>
+
+1. Install gcovr via homebrew `brew install gcovr`
+2. Go to the CMake Tools settings in VS Code, switch to the Workspace tab, and change the following
+   settings:  
+   **Coverage Info Files:**  
+   Click Add Item and add `${workSpaceFolder}/projects/cmake/build/lcov.info`  
+   ![Coverage Info Files](images/code-coverage/option-coverage-info.png)  
+   **Post Run Coverage Target:** `gcovr-capture-coverage`  
+   ![Gcovr Post Run Coverage Target](images/code-coverage/option-post-run-gcovr.png)
+
+3. Rebuild the test project, then run tests with coverage with this button  
+   ![Run Tests with Coverage](images/code-coverage/button-run-coverage.png)
+4. After the tests run, the test explorer pane in VS Code should update with the coverage info:
+   ![Coverage Info](images/code-coverage/result-test-explorer.png)
+
+</Steps>
+</TabItem>
+<TabItem label="Windows">
+
+Code coverage is currently not supported on Windows with MSYS. Please use WSL if you're a Windows
+user.
+
+</TabItem>
+</Tabs>
+
 ## See Also
 
 - [Catch2 tutorial](https://github.com/catchorg/Catch2/blob/v2.x/docs/tutorial.md)
