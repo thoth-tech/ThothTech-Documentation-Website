@@ -279,80 +279,105 @@ Trimester 2, 2025:
 #### Frontend Migration Progress
 
 **Frontend components migrated:**
-  - task-ilo-alignment-rater.coffee
-  - analytics.coffee
-  - portfolio-grade-select-step.coffee
-  - unit-details-editor.component.ts
-  - filters.coffee
-  - content-editable.coffee
-  - tutorials.coffee
-  - unit-staff-editor.coffee
-  - date-service.coffee
-  - analytics-service.coffee
-  - portfolio-welcome-step.coffee
-  - group-member-contribution-assigner.coffee
+
+- task-ilo-alignment-rater.coffee
+- analytics.coffee
+- portfolio-grade-select-step.coffee
+- unit-details-editor.component.ts
+- filters.coffee
+- content-editable.coffee
+- tutorials.coffee
+- unit-staff-editor.coffee
+- date-service.coffee
+- analytics-service.coffee
+- portfolio-welcome-step.coffee
+- group-member-contribution-assigner.coffee
 
 **Frontend components no longer in 9.x:**
-  - all-projects-list.coffee
-  - all.coffee
-  - tutor-group-manager.coffee
-  - task-definition-selector.coffee
+
+- all-projects-list.coffee
+- all.coffee
+- tutor-group-manager.coffee
+- task-definition-selector.coffee
 
 #### Accessibility Color Themes
 
-Extensive research is underway to identify the various types of color blindness and determine optimal color palettes to accommodate affected users. Given that OnTrack relies heavily on color to communicate task status, this accessibility feature is a high priority. The team is committed to ensuring a thoughtful and effective rollout that meets the needs of all users.
+Extensive research is underway to identify the various types of color blindness and determine
+optimal color palettes to accommodate affected users. Given that OnTrack relies heavily on color to
+communicate task status, this accessibility feature is a high priority. The team is committed to
+ensuring a thoughtful and effective rollout that meets the needs of all users.
 
 #### Security
 
-The team has made significant progress in improving security this trimester. Key achievements include:
+The team has made significant progress in improving security this trimester. Key achievements
+include:
 
-  - Patching the Swagger vulnerability
-  - Investigating front end route access vulnerabilities
-  - Conducting a cryptography audit
-  - Standardizing API authentication
+- Patching the Swagger vulnerability
+- Investigating front end route access vulnerabilities
+- Conducting a cryptography audit
+- Standardizing API authentication
 
-Additionally, we have commenced a penetration testing initiative in collaboration with AppxAttack to further strengthen our security.
+Additionally, we have commenced a penetration testing initiative in collaboration with AppxAttack to
+further strengthen our security.
 
 #### Observer Role Creation
 
 Significant progress has been made in supporting organisational structure this trimester:
 
-  - The Observer Role has been developed and deployed, enabling administrative oversight without direct intervention privileges.
-  - Database migration for multi-organisation support has been finalized.
+- The Observer Role has been developed and deployed, enabling administrative oversight without
+  direct intervention privileges.
+- Database migration for multi-organisation support has been finalized.
 
 #### Tutor Activity Tracking
+
 Backend development for Tutor Times is progressing well. Key achievements include:
 
-- The database schema has been updated to introduce a Marking Session table, enabling accurate tracking of marking periods associated with tutors and units.
-- A Session Activities table has been added to systematically log user interactions, such as actions taken during task assessment, supporting improved analytics and reporting.
+- The database schema has been updated to introduce a Marking Session table, enabling accurate
+  tracking of marking periods associated with tutors and units.
+- A Session Activities table has been added to systematically log user interactions, such as actions
+  taken during task assessment, supporting improved analytics and reporting.
 
 Next steps involve:
-- Creating a Session Tracker Service to manage marking sessions based on a 15-minute activity threshold, tracking activities such as accessing and updating tasks.
-- Integrating the Session Tracker Service across related entities, including User, Unit, Project, and Task.
-- Implementing endpoints to retrieve Marking Sessions and Session Activities for enhanced visualization and analytics.
+
+- Creating a Session Tracker Service to manage marking sessions based on a 15-minute activity
+  threshold, tracking activities such as accessing and updating tasks.
+- Integrating the Session Tracker Service across related entities, including User, Unit, Project,
+  and Task.
+- Implementing endpoints to retrieve Marking Sessions and Session Activities for enhanced
+  visualization and analytics.
 
 #### Self-Enrolment & Capstone Enhancements
 
-*Progress update pending.*
+_Progress update pending._
 
 #### OnTrack Documentation Website
 
-Documentation efforts are progressing well this trimester. Setup guides have been updated with clear instructions for building on branch 9.x, and the team is now focused on consolidating documentation across all OnTrack projects to ensure consistency and comprehensive coverage.
+Documentation efforts are progressing well this trimester. Setup guides have been updated with clear
+instructions for building on branch 9.x, and the team is now focused on consolidating documentation
+across all OnTrack projects to ensure consistency and comprehensive coverage.
 
 #### New Feature Explorations
 
 This trimester, two innovative proposals have been introduced to further enhance OnTrack:
 
-- A performance benchmarking initiative using Google Lighthouse, proposed by Mostafa Nouri, aims to systematically evaluate and improve the platform’s speed, accessibility, and overall user experience.
-- A gamification strategy for the OnTrack UI, proposed by Joseph Kalayathankal Saji, is designed to boost user engagement through interactive and motivational elements.
+- A performance benchmarking initiative using Google Lighthouse, proposed by Mostafa Nouri, aims to
+  systematically evaluate and improve the platform’s speed, accessibility, and overall user
+  experience.
+- A gamification strategy for the OnTrack UI, proposed by Joseph Kalayathankal Saji, is designed to
+  boost user engagement through interactive and motivational elements.
 
-Both proposals are currently being developed and integrated into the Doubtfire-Astro repository, with ongoing expansion and refinement.
+Both proposals are currently being developed and integrated into the Doubtfire-Astro repository,
+with ongoing expansion and refinement.
 
 #### Staff Grant Extention
 
-The staff grant extension feature has progressed significantly this trimester. A dedicated page has been developed to enable staff to grant extensions, and the necessary backend API endpoints are now in place. 
+The staff grant extension feature has progressed significantly this trimester. A dedicated page has
+been developed to enable staff to grant extensions, and the necessary backend API endpoints are now
+in place.
 
-Next steps include finalizing the routing for the Staff Grant Extension (SGE) page, integrating the backend and frontend components, and ensuring that notification systems—both in-system and email—function reliably for all extension requests.
+Next steps include finalizing the routing for the Staff Grant Extension (SGE) page, integrating the
+backend and frontend components, and ensuring that notification systems—both in-system and
+email—function reliably for all extension requests.
 
 ### List of Completed Deliverables
 
@@ -398,7 +423,6 @@ Next steps include finalizing the routing for the Staff Grant Extension (SGE) pa
 | WAEL ALAHMADI                                              | Reviewer         | Migrate students-list.coffee                                 | https://github.com/thoth-tech/documentation/pull/597; https://github.com/thoth-tech/doubtfire-web/pull/389 |
 
 ### List of Deliverables in Progress
-
 
 | Name                                                       | Role             | Task                                                                                                                                             | Attachments                                                                                                                                                       |
 | ---------------------------------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -481,7 +505,6 @@ Next steps include finalizing the routing for the Staff Grant Extension (SGE) pa
 | TRIET LAM                                                  |                  | Cleanup feedback.coffee                                                                                                                          | https://github.com/thoth-tech/doubtfire-web/pull/399                                                                                                              |
 | WAEL ALAHMADI                                              | Main Contributor | Add observer property to unit-level roles                                                                                                        |                                                                                                                                                                   |
 | WAEL ALAHMADI                                              |                  | Develop Tutor Time Dashboard                                                                                                                     |                                                                                                                                                                   |
-
 
 ## Project 2 - SplashKit
 
@@ -697,47 +720,52 @@ the deliverables are depending on the number of students joining/working on the 
 | Rabail Aamir               | Team Member            | Junior        |
 
 ### Progress Update
-/* Anything in complete or mentor review */
 
-#### SplashKit Expansion 
-
+#### SplashKit Expansion
 
 #### SplashKit Website
+
 - Created new usage example for geometry function to improve documentation and accessibility.
 
 #### SplashKit Online
+
 - Update README documentation to include instructions for installation and working with C#
 - Ported new file structure created last trimester to the current repo
 
 #### SplashKit Arcade
+
 -NA
 
 ### In Development Tasks
-/* Anything in Peer review 1 or 2 */
 
 #### SplashKit Expansion
+
 - Unit test coverage being a follow up of a project from last trimester
 - Three new unit tests for unit testing of the code
 - Fixing a bug in C# SplashKit functions relating to missing attributes in header documentation
 
 #### SplashKit Website
-- Reviewed and updated the Games Showcase page from previous trimester, PR submitted and awaiting reviews. 
-- Completed tutorial reviews and updated older tutorials with clearer Python and C# examples. 
+
+- Reviewed and updated the Games Showcase page from previous trimester, PR submitted and awaiting
+  reviews.
+- Completed tutorial reviews and updated older tutorials with clearer Python and C# examples.
 - Added more usage examples for SplashKit functions to improve accessibility.
 
 #### SplashKit Online
+
 - Fixes that allow C++ code to be run in the browser with new file structure
 - Added a simple game C# game to demonstrate the functionaility in the browser
 - Added documentation for the addition of demo projects to SplashKit Online
 
 #### SplashKit Arcade
+
 -The Acrade machine documentation has been organized and organized into .md format
 
 ### Team Members and Contributions
-/* Anything in complete or mentor review */
-#### SplashKit Expansion
-- The fix to the repeated suffixes issue found in some of the SplashKit functions
 
+#### SplashKit Expansion
+
+- The fix to the repeated suffixes issue found in some of the SplashKit functions
 
 | Name                                    | Role             | Task                                                                     | Attachments                                                                                                                                                 |
 | --------------------------------------- | ---------------- | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
