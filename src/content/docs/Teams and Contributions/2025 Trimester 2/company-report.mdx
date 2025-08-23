@@ -172,7 +172,7 @@ significant progress:
 #### 7. Staff Grant Extension
 
 - Add UI that allows **tutors to grant extensions**
-- Enable **notifications for staff-granted extensions**, delivered via email or in-system. 
+- Enable **notifications for staff-granted extensions**, delivered via email or in-system.
 - Finalise and thoroughly test the backend API endpoints.
 
 #### 8. Courseflow
@@ -180,7 +180,6 @@ significant progress:
 - Add **Marking and Filter** feature to add capability to mark units as complete.
 - Add **skill tracker** that displays summary of skills learned through units.
 - Display **credit points achieved** and add **overlay component** for detailed units.
-
 
 #### 9. OnTrack Documentation Website
 
@@ -202,11 +201,13 @@ Trimester 2, 2025:
 #### 1. Frontend Migration
 
 **Trimester Priorities:**
-- Ensure that all child components are reviewed and migrated to ensure parent components can 
-  be migrated. 
-- Complete migrating all components that have no child/nested components. 
+
+- Ensure that all child components are reviewed and migrated to ensure parent components can be
+  migrated.
+- Complete migrating all components that have no child/nested components.
 
 **Long Term Priorities:**
+
 - Migration of all legacy AngularJS and CoffeeScript components to Angular 17 and TypeScript.
 - Improved UI consistency and accessibility across updated components.
 - Performance benchmarking and optimization of migrated views.
@@ -214,10 +215,12 @@ Trimester 2, 2025:
 #### 2. Accessibility Enhancements
 
 **Trimester Priorities:**
-- Create a document with information on implementing a guide to CSS styles. 
+
+- Create a document with information on implementing a guide to CSS styles.
 - Implement style guide restrictions onto components.
 
 **Long Term Priorities:**
+
 - Deployment of configurable colour themes, including presets for various colour blindness types.
 - Theme selector integrated into user profile settings.
 - Accessibility compliance testing completed and passed (WCAG 2.1 AA baseline).
@@ -225,10 +228,12 @@ Trimester 2, 2025:
 #### 3. Security and Authentication Upgrades
 
 **Trimester Priorities:**
+
 - Patch final two vulnerabilities left fropm T1 Penetration Test.
 - Improve Security Documentation and integrate Security testng into CI/CD pipeline.
 
 **Long Term Priorities:**
+
 - Modular authentication system developed and integrated.
 - Security enhancements implemented based on T1 2025 audit outcomes.
 - Baseline groundwork completed for SSO/mTLS experimentation and prototyping.
@@ -236,9 +241,11 @@ Trimester 2, 2025:
 #### 4. Multi-Organisation Support
 
 **Trimester Priorities:**
+
 - Complete the observer role creation and database migration.
 
 **Long Term Priorities:**
+
 - Backend schema updated to support multiple organisations.
 - Observer Role created and assigned appropriate RBAC permissions.
 - Initial organisation switching UI available to admins and superusers.
@@ -246,10 +253,12 @@ Trimester 2, 2025:
 #### 5. Tutor Activity Tracking Module
 
 **Trimester Priorities:**
-- Integrate the Session Tracker Service across related entities 
-- Comnplete backend endpoints to retrieve Marking Sessions and Session Activities. 
+
+- Integrate the Session Tracker Service across related entities
+- Comnplete backend endpoints to retrieve Marking Sessions and Session Activities.
 
 **Long Term Priorities:**
+
 - Stopwatch and manual time entry system deployed for tutors.
 - Alerts implemented for tutors exceeding marking time limits.
 - Tutor analytics dashboard available to staff with data pulled from secured API endpoints.
@@ -263,29 +272,37 @@ Trimester 2, 2025:
 #### 7. Staff Grant Extension System
 
 **Trimester Priorities:**
+
 - Complete the back-end and front-end integration.
 - Ensure that the notification system works when an extension is granted.
 
 **Long Term Priorities:**
+
 - Functional staff UI for manually processing extension requests.
 - Full CRUD capability for managing extensions stored in the database.
 - API endpoints secured and unit-tested.
 
 #### 8. Courseflow
+
 **Trimester Priorities:**
-- Complete marking unit as complete and skill summary feature. 
-- Work on filtering feature and add overlay component for detailed unit descriptions. 
+
+- Complete marking unit as complete and skill summary feature.
+- Work on filtering feature and add overlay component for detailed unit descriptions.
 
 **Long Term Priorities:**
-- Enhance unit information, skills summary and trimester timetables to improve functionality 
+
+- Enhance unit information, skills summary and trimester timetables to improve functionality
 - Add course discovery and skill tracker to track progress and visualise course maps for students.
 
 #### 9. Documentation Website
+
 **Trimester Priorities:**
+
 - Improve documentation across all OnTrack projects to ensure consistency and coverage.
-- Add timestamp and author to documentation. 
+- Add timestamp and author to documentation.
 
 **Long Term Priorities:**
+
 - API reference fully updated with new and refactored endpoints.
 - Backend and frontend architecture docs finalized.
 - New “Getting Started” guide and walkthroughs published for onboarding.
@@ -435,15 +452,15 @@ email—function reliably for all extension requests.
 
 #### 10. Courseflow 
 
-The Courseflow project has progressed quite far this trimester. The ability to mark units as complete 
-and a skills summary feature have been successfully implemented, providing clearer progress tracking for 
-students.
+The Courseflow project has progressed quite far this trimester. The ability to mark units as
+complete and a skills summary feature have been successfully implemented, providing clearer progress
+tracking for students.
 
-Next steps include working on below features: 
+Next steps include working on below features:
+
 - Implementing filtering options
 - Tracking credit points achieved
 - Developing an overlay component to display detailed information on completed units
-
 
 ### List of Completed Deliverables
 
@@ -789,6 +806,10 @@ the deliverables are depending on the number of students joining/working on the 
 
 #### SplashKit Expansion
 
+- Unit test coverage being a follow up of a project from last trimester
+- Three new unit tests for unit testing of the code
+- Fixing a bug in C# SplashKit functions relating to missing attributes in header documentation
+
 #### SplashKit Website
 
 - Created new usage example for geometry function to improve documentation and accessibility.
@@ -800,24 +821,24 @@ the deliverables are depending on the number of students joining/working on the 
 
 #### SplashKit Arcade
 
--NA
+- NA
 
 ### In Development Tasks
 
 #### SplashKit Expansion
 
-- Unit test coverage being a follow up of a project from last trimester
-- Three new unit tests for unit testing of the code
-- Fixing a bug in C# SplashKit functions relating to missing attributes in header documentation
-
+- The fix to the repeated suffixes issue found in some of the SplashKit functions
+  
 #### SplashKit Website
 
 - Reviewed and updated the Games Showcase page from previous trimester, PR submitted and awaiting
   reviews.
 - Completed tutorial reviews and updated older tutorials with clearer Python and C# examples.
 - Added more usage examples for SplashKit functions to improve accessibility.
-- Redesigned the Landing page and the Announcement page using Tailwind CSS, Preline, and existing libraries.
-- Adds full Simplified Chinese (zh-CN) localization with an internationalization framework, language switching, and complete translated content pages.
+- Redesigned the Landing page and the Announcement page using Tailwind CSS, Preline, and existing
+  libraries.
+- Adds full Simplified Chinese (zh-CN) localization with an internationalization framework, language
+  switching, and complete translated content pages.
 
 #### SplashKit Online
 
@@ -827,17 +848,12 @@ the deliverables are depending on the number of students joining/working on the 
 
 #### SplashKit Arcade
 
--The Acrade machine documentation has been organized and organized into .md format
+- The Acrade machine documentation has been organized and organized into .md format
 
-#### SplashKit Expansion
-
-- The fix to the repeated suffixes issue found in some of the SplashKit functions
-  
 ### Team Members and Contributions
 
 | Name                                    | Role             | Task                                                                     | Attachments                                                                                                                                                 |
 | --------------------------------------- | ---------------- | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ANANDIKA RAJEEV                         |                  | [TEMPLATE] Example to copy - Category - Usage Example Creation           |                                                                                                                                                             |
 | ANANDIKA RAJEEV                         | Main Contributor | Identify and Move Documentation to Thoth Tech Documentation Site         |                                                                                                                                                             |
 | ANANDIKA RAJEEV                         |                  | Update GPIO tutorials to support new Remote GPIO Module                  |                                                                                                                                                             |
 | ANISH SAMPSON                           |                  | Bitmap Bounding Rectangle - Graphics - Usage Example Creation            | https://github.com/thoth-tech/splashkit.io-starlight/pull/584                                                                                               |
@@ -942,7 +958,6 @@ the deliverables are depending on the number of students joining/working on the 
 | SANA NOUREEN                            |                  | Popular Tutorial Suggestions                                             |                                                                                                                                                             |
 | SANA NOUREEN                            |                  | Using PWM to control Led Brightness Tutorial - C# Language Update        |                                                                                                                                                             |
 | SANA NOUREEN                            |                  | Clean up existing documentation                                          |                                                                                                                                                             |
-| STAN JOVANOVIC                          |                  | [TEMPLATE] Tutorial Review/Update: [Tutorial Name]                       |                                                                                                                                                             |
 | SUYLANG SOK                             |                  | Tutorial Review/Update: How to make a RESTful API call using SplashKit   | https://github.com/thoth-tech/documentation/pull/624                                                                                                        |
 | VISHNU VENGADESWARAN                    | Main Contributor | Update/Continue Dynamic Camera Control Tutorial                          | https://github.com/thoth-tech/splashkit.io-starlight/pull/567                                                                                               |
 | VISHNU VENGADESWARAN                    | Reviewer         | Closest Point On Line - Geometry - Usage Example Creation                | https://github.com/thoth-tech/splashkit.io-starlight/pull/565/files                                                                                         |
