@@ -12,14 +12,13 @@ library. Instead, two programs are generated which can be configured to test its
 ### Making Changes
 
 `sktest` is built with the .cpp files from `~/splashkit-core/coreskd/src/test/`. To add your own
-tests, modify one or more of the files such as `test_animation.cpp`.
+tests, modify one or more of the files such as `test_animation.cpp`. Tests in `sktest` tend to focus on demonstrating the output of functions, and require a human to validate that output. They are written in standard C++ and can make use of SplashKit functions.
 
 `skunit_tests` is built with the .cpp files from `~/splashkit-core/coreskd/src/test/unit_tests/`.
 When it runs, all unit tests from all files in this folder are executed. Additional files can be
 added to this folder if necessary. If adding a new file, copy the structure from one of the existing
-unit test files. Critically, `#include "catch.hpp"` must be present in the file for it to be
-compiled into `skunit_tests`. Beyond that, the hierarchy of, `TEST_CASE > SECTION > ASSERTION`
-should be followed to improve readability and tracing of errors.
+unit test files. Unlike `sktest`, tests here need to be written as Catch2 test cases and `#include "catch.hpp"` must be present in a given file for it to be
+compiled into `skunit_tests`. See the [unit testing guide](/products/splashkit/documentation/splashkit-expansion/01-unit-testing-guide) for a more in depth explanation of how unit tests are written.
 
 ## Building the test project
 If a change is made to the code, the build process needs to be run. This applies whether changes were made to coresdk files (such as adding new functions to SplashKit or changing existing code) or new tests were added to sktest or skunit_tests.
