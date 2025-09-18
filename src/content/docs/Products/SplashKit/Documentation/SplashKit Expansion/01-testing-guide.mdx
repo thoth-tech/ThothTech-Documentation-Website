@@ -4,59 +4,68 @@ title: Testing Guide
 
 import { Steps, Tabs, TabItem } from "@astrojs/starlight/components";
 
-
 You cannot create new programs with splashkit-core as you do when using the traditional SplashKit
 library. Instead, two programs are generated which can be configured to test its functionality:
-`sktest` and `skunit_tests`. They are built with CMake using a preconfigured `CMakeLists.txt` file, which builds the SplashKit library and both test programs.
+`sktest` and `skunit_tests`. They are built with CMake using a preconfigured `CMakeLists.txt` file,
+which builds the SplashKit library and both test programs.
 
 ### Making Changes
 
 `sktest` is built with the .cpp files from `~/splashkit-core/coreskd/src/test/`. To add your own
-tests, modify one or more of the files such as `test_animation.cpp`. Tests in `sktest` tend to focus on demonstrating the output of functions, and require a human to validate that output. They are written in standard C++ and can make use of SplashKit functions.
+tests, modify one or more of the files such as `test_animation.cpp`. Tests in `sktest` tend to focus
+on demonstrating the output of functions, and require a human to validate that output. They are
+written in standard C++ and can make use of SplashKit functions.
 
 `skunit_tests` is built with the .cpp files from `~/splashkit-core/coreskd/src/test/unit_tests/`.
 When it runs, all unit tests from all files in this folder are executed. Additional files can be
 added to this folder if necessary. If adding a new file, copy the structure from one of the existing
-unit test files. Unlike `sktest`, tests here need to be written as Catch2 test cases and `#include "catch.hpp"` must be present in a given file for it to be
-compiled into `skunit_tests`. These tests evaluate actual output against expected output and produce an error if a test fails. See the [unit testing guide](/products/splashkit/documentation/splashkit-expansion/02-unit-testing-guide) for a more in depth explanation of how unit tests are written.
+unit test files. Unlike `sktest`, tests here need to be written as Catch2 test cases and
+`#include "catch.hpp"` must be present in a given file for it to be compiled into `skunit_tests`.
+These tests evaluate actual output against expected output and produce an error if a test fails. See
+the
+[unit testing guide](/products/splashkit/documentation/splashkit-expansion/02-unit-testing-guide)
+for a more in depth explanation of how unit tests are written.
 
 ## Building the test project
-If a change is made to the code, the build process needs to be run. This applies whether changes were made to coresdk files (such as adding new functions to SplashKit or changing existing code) or new tests were added to sktest or skunit_tests.
+
+If a change is made to the code, the build process needs to be run. This applies whether changes
+were made to coresdk files (such as adding new functions to SplashKit or changing existing code) or
+new tests were added to sktest or skunit_tests.
 
 ### From the command line
 
 <Tabs syncKey="platform">
 <TabItem label="Linux/WSL">
 
-   From the command line:
+From the command line:
 
-   ```shell
-   cd projects/cmake
-   cmake --preset Linux
-   cmake --build build/
-   ```
+```shell
+cd projects/cmake
+cmake --preset Linux
+cmake --build build/
+```
 
 </TabItem>
 <TabItem label="macOS">
 
-   From the command line:
+From the command line:
 
-   ```shell
-   cd projects/cmake
-   cmake --preset macOS
-   cmake --build build/
-   ```
+```shell
+cd projects/cmake
+cmake --preset macOS
+cmake --build build/
+```
 
 </TabItem>
 <TabItem label="Windows (MSYS)">
 
-   From the command line:
+From the command line:
 
-   ```shell
-   cd projects/cmake
-   cmake --preset Windows
-   cmake --build build/
-   ```
+```shell
+cd projects/cmake
+cmake --preset Windows
+cmake --build build/
+```
 
 </TabItem>
 </Tabs>
@@ -78,8 +87,7 @@ If a change is made to the code, the build process needs to be run. This applies
    Select the Default configure preset  
    ![Select Default preset](images/build-unit-tests/2-select-preset-default.png)  
    In the CMake Tools extension click the button
-   ![Build target button](images/build-unit-tests/select-target.png) next to Build and select
-   all  
+   ![Build target button](images/build-unit-tests/select-target.png) next to Build and select all  
    ![Select build target](images/build-unit-tests/3-target.png)  
    Click the button ![Select Default preset](images/build-unit-tests/select-target.png) next to
    Debug and select skunit_tests  
@@ -106,8 +114,7 @@ If a change is made to the code, the build process needs to be run. This applies
    Select the Default configure preset  
    ![Select Default preset](images/build-unit-tests/2-select-preset-default.png)  
    In the CMake Tools extension click the button
-   ![Build target button](images/build-unit-tests/select-target.png) next to Build and select
-   all  
+   ![Build target button](images/build-unit-tests/select-target.png) next to Build and select all  
    ![Select build target](images/build-unit-tests/3-target.png)  
    Click the button ![Select Default preset](images/build-unit-tests/select-target.png) next to
    Debug and select skunit_tests  
@@ -134,8 +141,7 @@ If a change is made to the code, the build process needs to be run. This applies
    Select the Default configure preset  
    ![Select Default preset](images/build-unit-tests/2-select-preset-default.png)  
    In the CMake Tools extension click the button
-   ![Build target button](images/build-unit-tests/select-target.png) next to Build and select
-   all  
+   ![Build target button](images/build-unit-tests/select-target.png) next to Build and select all  
    ![Select build target](images/build-unit-tests/3-target.png)  
    Click the button ![Select Default preset](images/build-unit-tests/select-target.png) next to
    Debug and select skunit_tests  
@@ -151,7 +157,9 @@ If a change is made to the code, the build process needs to be run. This applies
 </Tabs>
 
 ## Running Tests
-After building the test programs, the compiled executables wiil be found in the `splashkit-core/bin` directory. Running tests differs depending on if the tests are part of `sktest` or `skunit_tests`.
+
+After building the test programs, the compiled executables wiil be found in the `splashkit-core/bin`
+directory. Running tests differs depending on if the tests are part of `sktest` or `skunit_tests`.
 
 ### The sktest program
 
@@ -188,7 +196,8 @@ cd splashkit-core/bin
 </TabItem>
 </Tabs>
 
-A menu will be presented, showing a list of all the tests that are part of sktest. Select a test to run by entering the corresponding number.
+A menu will be presented, showing a list of all the tests that are part of sktest. Select a test to
+run by entering the corresponding number.
 
 ```plaintext
 ---------------------
@@ -238,7 +247,8 @@ Unit tests are built with the same process as `sktest`, but run with the `skunit
 <TabItem label="Linux/WSL">
 
 - It's a good idea to run the unit tests in a random order so that you can confirm that they run
-  indepedently of one another. If tests run in order, you may miss issues that occur when a test runs without the tests before it passing.
+  indepedently of one another. If tests run in order, you may miss issues that occur when a test
+  runs without the tests before it passing.
 
   ```shell
   cd ../../bin
@@ -262,7 +272,8 @@ Unit tests are built with the same process as `sktest`, but run with the `skunit
 <TabItem label="macOS">
 
 - It's a good idea to run the unit tests in a random order so that you can confirm that they run
-  indepedently of one another. If tests run in order, you may miss issues that occur when a test runs without the tests before it passing.
+  indepedently of one another. If tests run in order, you may miss issues that occur when a test
+  runs without the tests before it passing.
 
   ```shell
   cd ../../bin
@@ -286,7 +297,8 @@ Unit tests are built with the same process as `sktest`, but run with the `skunit
 <TabItem label="Windows (MSYS)">
 
 - It's a good idea to run the unit tests in a random order so that you can confirm that they run
-  indepedently of one another. If tests run in order, you may miss issues that occur when a test runs without the tests before it passing.
+  indepedently of one another. If tests run in order, you may miss issues that occur when a test
+  runs without the tests before it passing.
 
   ```shell
   cd ../../bin
@@ -311,8 +323,8 @@ Unit tests are built with the same process as `sktest`, but run with the `skunit
 
 #### In VS Code
 
-You can run tests from the Testing tab in VS Code if you've set up the CMake Tools extension as outlined above
-![Testing tab](images/run-unit-tests/1-testing-tab.png)
+You can run tests from the Testing tab in VS Code if you've set up the CMake Tools extension as
+outlined above ![Testing tab](images/run-unit-tests/1-testing-tab.png)
 
 - Running all tests:  
   Click Run Tests. Each test will be run and the status of each can be seen in the test list after a
