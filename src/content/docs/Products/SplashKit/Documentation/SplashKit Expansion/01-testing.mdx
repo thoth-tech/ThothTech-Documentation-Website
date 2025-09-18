@@ -153,26 +153,84 @@ If a change is made to the code, the build process needs to be run. This applies
 
 ## Running the Test Programs
 
-To run the test programs, open a WSL terminal and enter:
+### The sktest program
+
+<Tabs>
+<TabItem label="Linux/WSL">
+
+To run `sktest`, open a terminal and enter:
 
 ```shell
-cd
 cd splashkit-core/bin
-```
-
-Then for sktest:
-
-```shell
 ./sktest
 ```
 
-Or for skunit_tests:
+</TabItem>
+<TabItem label="macOS">
+
+To run `sktest`, open a terminal and enter:
 
 ```shell
-./skunit_tests
+cd splashkit-core/bin
+./sktest
 ```
 
-## Running unit tests
+</TabItem>
+<TabItem label="Windows (MSYS)">
+
+To run `sktest`, open the MinGW terminal and enter:
+
+```shell
+cd splashkit-core/bin
+./sktest.exe
+```
+
+</TabItem>
+</Tabs>
+
+A menu will be presented, showing a list of all the tests that are part of sktest. Select a test to run by entering the corresponding number.
+
+```plaintext
+---------------------
+ SplashKit Dev Tests
+---------------------
+ -1: Quit
+ 0: Animations
+ 1: Audio
+ 2: Bundles
+ 3: Camera
+ 4: Geometry
+ 5: Graphics
+ 6: Input
+ 7: Logging
+ 8: Physics
+ 9: Resources
+ 10: Shape drawing
+ 11: Sprite tests
+ 12: Terminal
+ 13: Text
+ 14: Timers
+ 15: Windows
+ 16: Cave Escape
+ 17: Web Server
+ 18: RESTful Web Service
+ 19: Network conversions
+ 20: UDP Networking Test
+ 21: TCP Networking Test
+ 22: GPIO Tests
+ 23: ADC Tests
+ 24: Motor Driver Tests
+ 25: Servo Driver Tests
+ 26: Remote GPIO Tests
+ 27: GPIO Tests - SPI
+ 28: UI Tests
+---------------------
+ Select test to run:
+```
+
+## Unit tests
+
+Unit tests are built with the same process as `sktest`, but run with the `skunit_tests` program.
 
 ### From the command line
 
