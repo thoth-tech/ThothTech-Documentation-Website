@@ -4,12 +4,13 @@ title: Unit Testing Guide
 
 import { FileTree, Steps, Tabs, TabItem } from "@astrojs/starlight/components";
 
-## Introduction
 
-SplashKit uses [Catch2 2.x](https://github.com/catchorg/Catch2/tree/v2.x) as a framework for unit
-tests.
+Unit tests are written in C++ with the aid of macros from [Catch2 2.x](https://github.com/catchorg/Catch2/tree/v2.x). These tests are suited for larger scale testing than `sktest`, as a large number of tests can be quickly run and the output easily checked. This makes them suited for automation, because any failing test will be flagged so that any issues can be resolved before merging the changes into the main repository of SplashKit.
 
-Tests are written in C++ with the aid of macros from Catch2. Test files are located at:
+When writing unit tests, you should aim to test the expected behaviour of a specific function or procedure. In addition to positive test cases (where the function or procedure takes valid input and should produce the expected output), consider negative cases (cases where the function or procedure has invalid input), as well as edge cases.
+
+## File structure
+Test files are located at:
 
 <FileTree>
 
