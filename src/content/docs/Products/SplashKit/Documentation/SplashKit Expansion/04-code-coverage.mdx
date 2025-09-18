@@ -2,7 +2,12 @@
 title: Code Coverage
 ---
 
-### Pre-requisites
+import { Steps, Tabs, TabItem } from "@astrojs/starlight/components";
+
+
+Code coverage provides a convenient way to see what parts of SplashKit are being tested. This is helpful for checking that existing tests are adequate, as well as for locating parts of the code would be good candidates for new tests. Consider generating a code coverage report after adding a new test, to see if there are any parts of the code that aren't being executed. This can sometimes help you come up with new test cases.
+
+## Pre-requisites
 
 To generate code coverage reports, install the required program based on your platform:
 
@@ -13,11 +18,13 @@ To generate code coverage reports, install the required program based on your pl
     this command)
   </TabItem>
   <TabItem label="macOS">Install gcovr via homebrew: `brew install gcovr`</TabItem>
-  <TabItem label="Windows">
+  <TabItem label="Windows (MSYS)">
     Code coverage is currently not supported on Windows with MSYS. Please use WSL if you're a
     Windows user.
   </TabItem>
 </Tabs>
+
+## Generating code coverage
 
 ### From the command line
 
@@ -62,7 +69,7 @@ To generate code coverage reports, install the required program based on your pl
 
 </Steps>
 </TabItem>
-<TabItem label="Windows">
+<TabItem label="Windows (MSYS)">
 
 Code coverage is currently not supported on Windows with MSYS. Please use WSL if you're a Windows
 user.
@@ -116,7 +123,7 @@ already) and selecting "Install Specific Version...". The latest version known t
 
 </Steps>
 </TabItem>
-<TabItem label="Windows">
+<TabItem label="Windows (MSYS)">
 
 Code coverage is currently not supported on Windows with MSYS. Please use WSL if you're a Windows
 user.
