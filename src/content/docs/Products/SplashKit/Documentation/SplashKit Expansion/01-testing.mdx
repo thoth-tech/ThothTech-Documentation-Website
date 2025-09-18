@@ -1,0 +1,208 @@
+---
+title: Testing Guide
+---
+
+import { Steps, Tabs, TabItem } from "@astrojs/starlight/components";
+
+### Building the Test Programs
+
+You cannot create new programs with splashkit-core as you do when using the traditional SplashKit
+library. Instead, two programs are generated which can be configured to test its functionality:
+`sktest` and `skunit_tests`. They are built with CMake using a preconfigured `CMakeLists.txt` file.
+Open a WSL terminal and enter:
+
+```shell
+cd
+cd splashkit-core/projects/cmake
+cmake -G "Unix Makefiles" .
+make
+```
+
+The associated macOS and Linux commands can be found here:
+[CONTRIBUTING](https://github.com/thoth-tech/splashkit-core/blob/develop/CONTRIBUTING.md)
+
+### Running the Test Programs
+
+To run the test programs, open a WSL terminal and enter:
+
+```shell
+cd
+cd splashkit-core/bin
+```
+
+Then for sktest:
+
+```shell
+./sktest
+```
+
+Or for skunit_tests:
+
+```shell
+./skunit_tests
+```
+
+### Making Changes
+
+`sktest` is built with the .cpp files from `~/splashkit-core/coreskd/src/test/`. To add your own
+tests, modify one or more of the files such as `test_animation.cpp`.
+
+`skunit_tests` is built with the .cpp files from `~/splashkit-core/coreskd/src/test/unit_tests/`.
+When it runs, all unit tests from all files in this folder are executed. Additional files can be
+added to this folder if necessary. If adding a new file, copy the structure from one of the existing
+unit test files. Critically, `#include "catch.hpp"` must be present in the file for it to be
+compiled into `skunit_tests`. Beyond that, the hierarchy of, `TEST_CASE > SECTION > ASSERTION`
+should be followed to improve readability and tracing of errors.
+
+### Testing Changes
+
+If a change is made to the code, the test programs need to be rebuilt. In a WSL terminal enter:
+
+```shell
+cd
+cd splashkit-core/projects/cmake
+make
+```
+
+If any files were created or deleted, the CMake files need to be regenerated. In that case use:
+
+```shell
+cd
+cd splashkit-core/projects/cmake
+cmake -G "Unix Makefiles" .
+make
+```
+
+## Building the test project
+
+<Tabs syncKey="platform">
+<TabItem label="Linux/WSL">
+<Steps>
+
+1. Open a terminal and install prerequisites with these commands:
+
+   ```shell
+   sudo apt-get update
+   sudo apt-get upgrade -y
+   sudo apt-get install -y \
+   git build-essential cmake g++ libpng-dev libcurl4-openssl-dev libsdl2-dev \
+   libsdl2-mixer-dev libsdl2-gfx-dev libsdl2-image-dev libsdl2-net-dev libsdl2-ttf-dev \
+   libmikmod-dev libbz2-dev libflac-dev libvorbis-dev libwebp-dev libfreetype6-dev
+   ```
+
+2. Install the CMake Tools extension from the VS Code extension browser or
+   [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools).
+
+3. Configure the extension:  
+   Select `${workspaceFolder}/projects/cmake/CMakeLists.txt`  
+   ![Select CMake Lists](images/build-unit-tests/1-select-cmakelists.png)  
+   Select the Linux preset  
+   ![Select Linux preset](images/build-unit-tests/2-select-preset-linux.png)  
+   Select the Default configure preset  
+   ![Select Default preset](images/build-unit-tests/2-select-preset-default.png)  
+   In the CMake Tools extension click the button
+   ![Build target button](images/build-unit-tests/select-target.png) next to Build and select
+   all  
+   ![Select build target](images/build-unit-tests/3-target.png)  
+   Click the button ![Select Default preset](images/build-unit-tests/select-target.png) next to
+   Debug and select skunit_tests  
+   ![Select debug/launch target](images/build-unit-tests/4-debug-target.png)
+
+4. Build test project:  
+   From the command line:
+
+   ```shell
+   cd projects/cmake
+   cmake --preset Linux
+   cmake --build build/
+   ```
+
+   Or in VS Code:  
+   In the CMake Tools extension, click the Build button. The test project will also be built when
+   you refresh tests on the Testing tab of VS Code.  
+   ![Build tests](images/build-unit-tests/5-build.png)
+
+</Steps>
+</TabItem>
+<TabItem label="macOS">
+<Steps>
+
+1. Install the CMake Tools extension from the VS Code extension browser or
+   [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools).
+
+2. Configure the extension:  
+   Select `${workspaceFolder}/projects/cmake/CMakeLists.txt`  
+   ![Select CMake Lists](images/build-unit-tests/1-select-cmakelists.png)  
+   Select the macOS preset  
+   ![Select macOS preset](images/build-unit-tests/2-select-preset-mac.png)  
+   Select the Default configure preset  
+   ![Select Default preset](images/build-unit-tests/2-select-preset-default.png)  
+   In the CMake Tools extension click the button
+   ![Build target button](images/build-unit-tests/select-target.png) next to Build and select
+   all  
+   ![Select build target](images/build-unit-tests/3-target.png)  
+   Click the button ![Select Default preset](images/build-unit-tests/select-target.png) next to
+   Debug and select skunit_tests  
+   ![Select debug/launch target](images/build-unit-tests/4-debug-target.png)
+
+3. Build test project:  
+   From the command line:
+
+   ```shell
+   cd projects/cmake
+   cmake --preset macOS
+   cmake --build build/
+   ```
+
+   Or in VS Code:  
+   In the CMake Tools extension, click Build. The test project will also be built when you refresh
+   tests on the Testing tab of VS Code.  
+   ![Build tests](images/build-unit-tests/5-build.png)
+
+</Steps>
+</TabItem>
+<TabItem label="Windows">
+<Steps>
+
+1. Open the MINGW64 terminal and install prerequisites with these commands:
+
+   ```shell
+   pacman -Syu
+   pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-gdb mingw-w64-x86_64-cmake mingw-w64-x86_64-make
+   ```
+
+2. Install the CMake Tools extension from the VS Code extension browser or
+   [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools).
+
+3. Configure the extension:  
+   Select `${workspaceFolder}/projects/cmake/CMakeLists.txt`  
+   ![Select CMake Lists](images/build-unit-tests/1-select-cmakelists.png)  
+   Select the Windows preset  
+   ![Select Windows preset](images/build-unit-tests/2-select-preset-windows.png)  
+   Select the Default configure preset  
+   ![Select Default preset](images/build-unit-tests/2-select-preset-default.png)  
+   In the CMake Tools extension click the button
+   ![Build target button](images/build-unit-tests/select-target.png) next to Build and select
+   all  
+   ![Select build target](images/build-unit-tests/3-target.png)  
+   Click the button ![Select Default preset](images/build-unit-tests/select-target.png) next to
+   Debug and select skunit_tests  
+   ![Select debug/launch target](images/build-unit-tests/4-debug-target.png)
+
+4. Build test project:  
+   From the command line:
+
+   ```shell
+   cd projects/cmake
+   cmake --preset Windows
+   cmake --build build/
+   ```
+
+   Or in VS Code:  
+   In the CMake Tools extension, click Build. The test project will also be built when you refresh
+   tests on the Testing tab of VS Code.  
+   ![Build tests](images/build-unit-tests/5-build.png)
+
+</Steps>
+</TabItem>
+</Tabs>
