@@ -383,22 +383,22 @@ Trimester 2, 2025:
 - analytics-service.coffee
 - portfolio-welcome-step.coffee
 - group-member-contribution-assigner.coffee
-- migrate unit-dates-selector 
-- migrate achievement-custom-bar-chart 
-- migrate remove task-completion-box-plot 
-- fix-task-viewer-routing 
-- migrate portfolio-review-step 
-- migrate unit-ilo-edit-modal 
-- migrate runtime-service 
-- update frontend migration progress list 
-- remove alignment-bar-chart 
-- migrate group-member-list 
-- migrate recorder-service 
-- migrate-outcome-service 
-- migrate student-list 
-- migrate create-unit-modal 
-- migrate group-set-selector 
-- migrate confirmation-modal 
+- migrate unit-dates-selector
+- migrate achievement-custom-bar-chart
+- migrate remove task-completion-box-plot
+- fix-task-viewer-routing
+- migrate portfolio-review-step
+- migrate unit-ilo-edit-modal
+- migrate runtime-service
+- update frontend migration progress list
+- remove alignment-bar-chart
+- migrate group-member-list
+- migrate recorder-service
+- migrate-outcome-service
+- migrate student-list
+- migrate create-unit-modal
+- migrate group-set-selector
+- migrate confirmation-modal
 
 **Frontend components no longer in 9.x:**
 
@@ -412,18 +412,22 @@ Trimester 2, 2025:
 Extensive research is was done to identify the various types of color blindness and determine
 optimal color palettes to accommodate affected users. Given that OnTrack relies heavily on color to
 communicate task status, this accessibility feature is a high priority. The team is committed to
-ensuring a thoughtful and effective rollout that meets the needs of all users. Key achievements this trimester include:
+ensuring a thoughtful and effective rollout that meets the needs of all users. Key achievements this
+trimester include:
 
 - Completed research on color blindness types and their impact on UI design.
 - Developed initial color palettes tailored for different types of color vision deficiencies.
-- Developed a contrast-safe color palette with WCAG 2.2 compliant colors including success, error,  and warning variants with 4.5:1 contrast ratios.
-- Implemented shape differentiation for accessibility with distinct visual markers (circles for complete, star shapes for overdue, squares for pending)
-- Created a comprehensive style guide to ensure consistent implementation of color themes across the platform.
+- Developed a contrast-safe color palette with WCAG 2.2 compliant colors including success, error,
+  and warning variants with 4.5:1 contrast ratios.
+- Implemented shape differentiation for accessibility with distinct visual markers (circles for
+  complete, star shapes for overdue, squares for pending)
+- Created a comprehensive style guide to ensure consistent implementation of color themes across the
+  platform.
 - Created pattern overlay system using SVG backgrounds for color blind users.
-- Established comprehensive theme system including default, dark, high-contrast, and color-blind-safe themes
+- Established comprehensive theme system including default, dark, high-contrast, and
+  color-blind-safe themes
 - Implemented CSS custom properties for dynamic theme switching
 - Developed optimized color palettes for different types of color vision deficiencies
-
 
 #### 3. Security and Authentication
 
@@ -438,11 +442,16 @@ include:
 - Enabled OnTrack accounts with full password management in the database
 - Created a guide to setup and build Ontrack for Linux environments
 
-Unfortunately, the pentesting scheduled for mid-August was delayed due to unforeseen circumstances and various build errors. The team has rescheduled this critical assessment to ensure that all security measures are thoroughly evaluated and any vulnerabilities are promptly addressed. A thorough guide on building and troubleshooting OnTrack on Linux VMs has been created to allow this proceed smoothly.
+Unfortunately, the pentesting scheduled for mid-August was delayed due to unforeseen circumstances
+and various build errors. The team has rescheduled this critical assessment to ensure that all
+security measures are thoroughly evaluated and any vulnerabilities are promptly addressed. A
+thorough guide on building and troubleshooting OnTrack on Linux VMs has been created to allow this
+proceed smoothly.
 
 #### 4. Observer Role Creation
 
-The team has successfully enhanced multi-organisation support into OnTrack. Key achievements include:
+The team has successfully enhanced multi-organisation support into OnTrack. Key achievements
+include:
 
 - The Observer Role has been developed and deployed, enabling administrative oversight without
   direct intervention privileges.
@@ -452,7 +461,9 @@ The team has successfully enhanced multi-organisation support into OnTrack. Key 
 
 #### 5. Tutor Activity Tracking
 
-Backend development for Tutor Times is progressing well. Key achievements include:
+Backend development for Tutor Times is progressed well. Key achievements include:
+
+**Doubtfire-API (Backend)**
 
 - The database schema has been updated to introduce a Marking Session table, enabling accurate
   tracking of marking periods associated with tutors and units.
@@ -468,40 +479,54 @@ Next steps involve:
 - Implementing endpoints to retrieve Marking Sessions and Session Activities for enhanced
   visualization and analytics.
 
+**Doubtfire-Web (Frontend)**
+
+- Completed Tutor-Time Dashboard UI for tutors
+- UI contains npx charts visualization to visualise data
+- Dummy Data is being shown with appropriate Data Structures
+
 #### 6. Self-Enrolment Enhancements
 
-The student self-enrolment feature has been successfully implemented across both backend
-and frontend components, delivering a comprehensive solution that allows students to
-autonomously enroll in tutorials for specific tasks. Key achievements include:
+The student self-enrolment feature has been successfully implemented across both backend and
+frontend components, delivering a comprehensive solution that allows students to autonomously enroll
+in tutorials for specific tasks. Key achievements include:
 
 **Doubtfire-API (Backend)**
 
-*Database Schema Foundation*
+_Database Schema Foundation_
+
 - The database schema has been updated to support self-enrollment functionalities, including
   necessary tables and relationships to manage student enrollments effectively.
 
-*ActiveRecord Model Updates*
-- ActiveRecord models have been enhanced to encapsulate the logic required for
-  self-enrollment processes, ensuring data integrity and consistency.
+_ActiveRecord Model Updates_
 
-*API Endpoints Development*
-- Backend API endpoints have been developed to facilitate student self-enrollment, including
-  robust validation and error handling mechanisms to ensure data integrity and a smooth user
-  experience.
+- ActiveRecord models have been enhanced to encapsulate the logic required for self-enrollment
+  processes, ensuring data integrity and consistency.
 
-*Complete API Controller Implementation*
+_API Endpoints Development_
+
+- Backend API endpoints have been developed to facilitate student self-enrollment, including robust
+  validation and error handling mechanisms to ensure data integrity and a smooth user experience.
+
+_Complete API Controller Implementation_
+
 - The API controller has been fully implemented to handle self-enrollment requests, providing
   necessary CRUD operations and ensuring secure access to enrollment data.
 
 **Doubtfire-Web (Frontend)**
 
-*Administrative Interface*
-- The administrative interface has been updated to include self-enrollment management features, allowing staff to oversee and manage student enrollments effectively.
+_Administrative Interface_
 
-*Student Enrollment UI*
-- The student enrollment UI has been designed to provide a seamless experience for students enrolling in tutorials. It includes intuitive forms and real-time validation to enhance usability.
+- The administrative interface has been updated to include self-enrollment management features,
+  allowing staff to oversee and manage student enrollments effectively.
 
-*Testing and Validation*
+_Student Enrollment UI_
+
+- The student enrollment UI has been designed to provide a seamless experience for students
+  enrolling in tutorials. It includes intuitive forms and real-time validation to enhance usability.
+
+_Testing and Validation_
+
 - Comprehensive testing has been conducted to ensure the reliability and functionality of the
   self-enrollment feature, including unit tests, integration tests, and user acceptance testing.
 
@@ -518,7 +543,8 @@ email—function reliably for all extension requests.
 Key achievements this trimester include:
 
 - Completed the back-end and front-end integration.
-- Completed notification system to send alerts to both students and tutors once extension has been granted. (Email and in system)
+- Completed notification system to send alerts to both students and tutors once extension has been
+  granted. (Email and in system)
 
 #### 8. Courseflow
 
@@ -530,24 +556,34 @@ The features that have been implemented and reviewed in for CourseFlow this trim
 
 **Frontend (doubtfire-web)**
 
-- Refactored CourseFlow's front-end code base: maintainability and follow better architectural patterns for Angular components.
-- Enhanced the search functionality: enhancement to CourseFlow unit search including autocomplete of available units that dynamically updates as input updates.
-- Added the ability to mark unit as complete: Implemented functionality allowing users to mark units as completed, and unit cannot be modified once completed.
+- Refactored CourseFlow's front-end code base: maintainability and follow better architectural
+  patterns for Angular components.
+- Enhanced the search functionality: enhancement to CourseFlow unit search including autocomplete of
+  available units that dynamically updates as input updates.
+- Added the ability to mark unit as complete: Implemented functionality allowing users to mark units
+  as completed, and unit cannot be modified once completed.
 - Created an overlay component to display full details regarding a unit.
-- Added more metadata to the unit card: Enhanced unit cards with additional information such as credit points and level.
-- Created a component to display credit points achieved: Built a dedicated component to show accumulated credit points, helping users track their progress toward requirements.
-- Added options to overload units to a teaching period: Implemented functionality to allow scheduling units beyond normal capacity limits for specific teaching periods.
-- Added warning logic for unit requirements: Created validation and warning systems to alert users when unit selections conflict with prerequisites or requirement rules.
+- Added more metadata to the unit card: Enhanced unit cards with additional information such as
+  credit points and level.
+- Created a component to display credit points achieved: Built a dedicated component to show
+  accumulated credit points, helping users track their progress toward requirements.
+- Added options to overload units to a teaching period: Implemented functionality to allow
+  scheduling units beyond normal capacity limits for specific teaching periods.
+- Added warning logic for unit requirements: Created validation and warning systems to alert users
+  when unit selections conflict with prerequisites or requirement rules.
 
 **Backend (doubtfire-api)**
 
-- Wrote a rake script to create test data for CourseFlow, including course, course map, course map units, units… and their relationships for development and testing.
+- Created a rake script to create test data for CourseFlow, including course, course map, course map
+  units, and their relationships for development and testing.
 - Update unit model to host more details (including credit_points, prerequisites, corequisites).
-This trimester, two innovative proposals have been introduced to further enhance OnTrack:
+  This trimester, two innovative proposals have been introduced to further enhance OnTrack:
 
 #### 9. OnTrack Documentation Website
 
-Documentation efforts are progressed well this trimester. The team focused on consolidating and fixing inconsistencies across the OnTrack documentation, ensuring a unified and comprehensive resource for users. Key achievements include:
+Documentation efforts are progressed well this trimester. The team focused on consolidating and
+fixing inconsistencies across the OnTrack documentation, ensuring a unified and comprehensive
+resource for users. Key achievements include:
 
 - Created documentation for 8.0.x and 9.x branch setup issues.
 - Created Powershell script to pull tasks from planner board.
@@ -567,7 +603,8 @@ Documentation efforts are progressed well this trimester. The team focused on co
   boost user engagement through interactive and motivational elements.
 
 Both proposals have been currently developed and integrated into the Doubtfire-Astro repository,
-with ongoing expansion and refinement. These initiatives reflect the team’s commitment to continuous improvement and innovation.
+with ongoing expansion and refinement. These initiatives reflect the team’s commitment to continuous
+improvement and innovation.
 
 ### List of Completed Deliverables
 
@@ -617,7 +654,7 @@ with ongoing expansion and refinement. These initiatives reflect the team’s co
 | DUY NGUYEN                                                 | Main Contributor | Refactor CourseFlow code base for better components maintainence                                                         | [PR#385](https://github.com/thoth-tech/doubtfire-web/pull/385)                                                                                                                                                                                                                                                  |
 | DUY NGUYEN                                                 |                  | Create a component to display credit points achieved.                                                                    | [PR#407](https://github.com/thoth-tech/doubtfire-web/pull/407)                                                                                                                                                                                                                                                  |
 | EDWARD NGUYEN                                              | Reviewer         | Update unit model to host more details                                                                                   | [PR#71](https://github.com/thoth-tech/doubtfire-api/pull/71)                                                                                                                                                                                                                                                    |
-| EDWARD NGUYEN                                              | Main Contributor | Add ability to mark unit as complete (phase 4)                                                                           | [PR#386](https://github.com/thoth-tech/doubtfire-web/pull/386) ([PR#396]([PR#396](https://github.com/thoth-tech/doubtfire-web/pull/396)))                                                                                                                                                                       |
+| EDWARD NGUYEN                                              | Main Contributor | Add ability to mark unit as complete (phase 4)                                                                           | [PR#386](https://github.com/thoth-tech/doubtfire-web/pull/386) ([PR#396](<[PR#396](https://github.com/thoth-tech/doubtfire-web/pull/396)>))                                                                                                                                                                     |
 | EDWARD NGUYEN                                              |                  | Enrich the unit card itself to show more info                                                                            | [PR#407](https://github.com/thoth-tech/doubtfire-web/pull/407)                                                                                                                                                                                                                                                  |
 | EDWARD NGUYEN                                              |                  | Create test data for CourseFlow ( Course map, Course map units, Units)                                                   | [PR#70](https://github.com/thoth-tech/doubtfire-api/pull/70)                                                                                                                                                                                                                                                    |
 | EDWARD NGUYEN                                              | Main Contributor | Populate the overlay component for the detailed unit with content of the unit - this needs to include unit requirements. | [PR#215](https://github.com/thoth-tech/doubtfire-web/pull/215)                                                                                                                                                                                                                                                  |
@@ -761,7 +798,7 @@ with ongoing expansion and refinement. These initiatives reflect the team’s co
 | RASHI AGRAWAL                                              | Reviewer         | Integrate with backend                                                                                                   | [PR#403](https://github.com/thoth-tech/doubtfire-web/pull/403)                                                                                                                                                                                                                                                  |
 | RASHI AGRAWAL                                              | Main Contributor | Migrate unit-ilo-edit-modal.coffee                                                                                       | [PR#400](https://github.com/thoth-tech/doubtfire-web/pull/400)                                                                                                                                                                                                                                                  |
 | SAHIRU HESHAN WITHANAGE                                    |                  | Integrate with backend                                                                                                   | [PR#403](https://github.com/thoth-tech/doubtfire-web/pull/403)                                                                                                                                                                                                                                                  |
-| SAHIRU HESHAN WITHANAGE                                    | Reviewer         | Add ability to mark unit as complete (phase 4)                                                                           | [PR#386](https://github.com/thoth-tech/doubtfire-web/pull/386) ([PR#396]([PR#396](https://github.com/thoth-tech/doubtfire-web/pull/396)))                                                                                                                                                                       |
+| SAHIRU HESHAN WITHANAGE                                    | Reviewer         | Add ability to mark unit as complete (phase 4)                                                                           | [PR#386](https://github.com/thoth-tech/doubtfire-web/pull/386) ([PR#396](<[PR#396](https://github.com/thoth-tech/doubtfire-web/pull/396)>))                                                                                                                                                                     |
 | SAHIRU HESHAN WITHANAGE                                    |                  | Remove alignment-bar-chart.coffee                                                                                        | [PR#395](https://github.com/thoth-tech/doubtfire-web/pull/395)                                                                                                                                                                                                                                                  |
 | SAHIRU HESHAN WITHANAGE                                    | Reviewer         | Fix change_remotes.sh                                                                                                    | [PR#32](https://github.com/thoth-tech/doubtfire-deploy/pull/32)                                                                                                                                                                                                                                                 |
 | SAHIRU HESHAN WITHANAGE                                    |                  | Frontend Work: Student search and selection                                                                              | [PR#359](https://github.com/thoth-tech/doubtfire-web/pull/359)                                                                                                                                                                                                                                                  |
@@ -775,7 +812,7 @@ with ongoing expansion and refinement. These initiatives reflect the team’s co
 | SAMINDI SITUMYA RATNAYAKE MUDIYANSELAGE                    |                  | Backend- In-system notification system                                                                                   | [PR#69](https://github.com/thoth-tech/doubtfire-api/pull/69)                                                                                                                                                                                                                                                    |
 | SAMINDI SITUMYA RATNAYAKE MUDIYANSELAGE                    |                  | Frontend: Add new SGE page                                                                                               | [PR#394](https://github.com/thoth-tech/doubtfire-web/pull/394)                                                                                                                                                                                                                                                  |
 | SAMINDI SITUMYA RATNAYAKE MUDIYANSELAGE                    |                  | Frontend Work: Set up notification UI                                                                                    | [PR#353](https://github.com/thoth-tech/doubtfire-web/pull/353)                                                                                                                                                                                                                                                  |
-| SAMINDI SITUMYA RATNAYAKE MUDIYANSELAGE                    |                  | Add ability to mark unit as complete (phase 4)                                                                           | [PR#386](https://github.com/thoth-tech/doubtfire-web/pull/386) ([PR#396]([PR#396](https://github.com/thoth-tech/doubtfire-web/pull/396)))                                                                                                                                                                       |
+| SAMINDI SITUMYA RATNAYAKE MUDIYANSELAGE                    |                  | Add ability to mark unit as complete (phase 4)                                                                           | [PR#386](https://github.com/thoth-tech/doubtfire-web/pull/386) ([PR#396](<[PR#396](https://github.com/thoth-tech/doubtfire-web/pull/396)>))                                                                                                                                                                     |
 | TRIET LAM                                                  | Reviewer         | Enrich the unit card itself to show more info                                                                            | [PR#407](https://github.com/thoth-tech/doubtfire-web/pull/407)                                                                                                                                                                                                                                                  |
 | TRIET LAM                                                  |                  | Populate the content of the unit component tab with drop down menus to filter the units that get displayed.              | [PR#411](https://github.com/thoth-tech/doubtfire-web/pull/411)                                                                                                                                                                                                                                                  |
 | TRIET LAM                                                  | Main Contributor | Add progress tracking                                                                                                    | [PR#413](https://github.com/thoth-tech/doubtfire-web/pull/413)                                                                                                                                                                                                                                                  |
@@ -1007,9 +1044,10 @@ the deliverables are depending on the number of students joining/working on the 
 | Ayush Indapure             | Team Member            | Junior        |
 | Rabail Aamir               | Team Member            | Junior        |
 
-### Completed Deliverables 
+### Completed Deliverables
 
 #### SplashKit Expansion
+
 - The addition of a new Raspberry Pi function being the addition of remote ADC
 - Unit test coverage being a follow up of a project from last trimester
 - Five new unit tests for unit testing of the code
@@ -1023,9 +1061,11 @@ the deliverables are depending on the number of students joining/working on the 
 - 44 new Usage Examples PRs opened for splashkit functions, in review stages.
 - 8 existing tutorials on the website page have been reviewed, code tested, and improved.
 - 1 new tutorial on creating a Flappy Bird remake game from scratch published.
-- Added language switcher and zh-cn localization option to troubleshooting and setup SplashKit pages.
+- Added language switcher and zh-cn localization option to troubleshooting and setup SplashKit
+  pages.
 - Minor bugfixes on .config files
-- PRs opened for redesigns of the landing page and the Announcement page using Tailwind CSS, Preline, and existing libraries.
+- PRs opened for redesigns of the landing page and the Announcement page using Tailwind CSS,
+  Preline, and existing libraries.
 - Adds full Simplified Chinese (zh-CN) localization with an internationalization framework, language
   switching, and complete translated content pages for troubleshooting and guides.
 
@@ -1039,7 +1079,7 @@ the deliverables are depending on the number of students joining/working on the 
 - Added automatic generation of C# bindings based of `api.json` from SK-Translator
 - Added documentation for C# implementation
 - Added support for and guides for custom themes inside of the editor
-- Restructure modal.js to prevent XSS vulnerability 
+- Restructure modal.js to prevent XSS vulnerability
 
 #### SplashKit Arcade
 
@@ -1053,11 +1093,7 @@ the deliverables are depending on the number of students joining/working on the 
 
 #### SplashKit Website
 
-
-
 #### SplashKit Online
-
-
 
 #### SplashKit Arcade
 
@@ -1186,34 +1222,42 @@ the deliverables are depending on the number of students joining/working on the 
 | WEI ZHANG                               |                  | Consolidate Arcade Machine documentation to .md files in repo            | [PR#83](https://github.com/thoth-tech/arcade-machine/pull/83)                                                                                                                        |
 | WEI ZHANG                               | Reviewer         | Add Language Switcher and Chinese Localization to SplashKit Website      | [PR#582](https://github.com/thoth-tech/splashkit.io-starlight/pull/582)                                                                                                              |
 
-
 ### Roadmap
+
 #### SplashKit Expansion
+
 - Add more unit tests for functions that do not have them yet
-- Add the required SplashKit libraries to the existing NuGet package with a proper icon, description, and documentation of the packaging process.
-- Port the SplashKit framework to Rust, expanding its accessibility and allowing developers using Rust to take advantage of SplashKit’s features and capabilities.
+- Add the required SplashKit libraries to the existing NuGet package with a proper icon,
+  description, and documentation of the packaging process.
+- Port the SplashKit framework to Rust, expanding its accessibility and allowing developers using
+  Rust to take advantage of SplashKit’s features and capabilities.
 - Investigate and fix the issues with Pascal programs memory leaks after compilation with FPC.
-- Investigate different strategies to allow for unit testing specifically with graphics functionality
-- Revise and fix issues with Raspberry Pi code ensuring things are fixed and the RPi suite is expanded
+- Investigate different strategies to allow for unit testing specifically with graphics
+  functionality
+- Revise and fix issues with Raspberry Pi code ensuring things are fixed and the RPi suite is
+  expanded
 - The fix to the repeated suffixes issue found in some of the SplashKit functions
 
 #### SplashKit Website
 
-
-
 #### SplashKit Online
-- **Pipeline Upgrades**: One of the initivates started this trimester was the reworking of the file structure to support C# and the new file strcure. Work should be continued to optimise this and add support for a code checker. 
-- **Code Checker**: One of the initivates discussed with Hard Hat was a code checker to check code prior to deployment of games to SK online or to the arcade machine. This should be pursued so that students in future can more easily deploy games to the site.
-- **Improve C++ Support**: C++ has seen improvements this trimester, though more work needs to be done to find minor issues that are present such as missing header gaurds ect. Also consider updating the version of SplashKit used.
-- **Imporove C# Support**: While C# support has improved this trimester, more work needs to be done to implement classes such as Window that will allow for rendering of graphics.
-- **Game Upload**: Work should start on adding a easier way for students to add games to the project without having to rebuild the site.
 
-
+- **Pipeline Upgrades**: One of the initivates started this trimester was the reworking of the file
+  structure to support C# and the new file strcure. Work should be continued to optimise this and
+  add support for a code checker.
+- **Code Checker**: One of the initivates discussed with Hard Hat was a code checker to check code
+  prior to deployment of games to SK online or to the arcade machine. This should be pursued so that
+  students in future can more easily deploy games to the site.
+- **Improve C++ Support**: C++ has seen improvements this trimester, though more work needs to be
+  done to find minor issues that are present such as missing header gaurds ect. Also consider
+  updating the version of SplashKit used.
+- **Imporove C# Support**: While C# support has improved this trimester, more work needs to be done
+  to implement classes such as Window that will allow for rendering of graphics.
+- **Game Upload**: Work should start on adding a easier way for students to add games to the project
+  without having to rebuild the site.
 
 #### SplashKit Arcade
 
-
 ### Open Issues
-
 
 ---
