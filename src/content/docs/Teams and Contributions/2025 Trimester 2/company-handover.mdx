@@ -20,6 +20,8 @@ trimester, Thoth Tech will be running the two main products: OnTrack and SplashK
 
 ## Table of Contents
 
+## Table of Contents
+
 - [Leadership Team](#leadership-team)
   - [Company Board](#company-board)
   - [Product Mentors](#product-mentors)
@@ -29,9 +31,18 @@ trimester, Thoth Tech will be running the two main products: OnTrack and SplashK
   - [Goal 2: Strengthen, Elevate and Expand Thoth Tech’s Product Portfolio](#goal-2-strengthen-elevate-and-expand-thoth-techs-product-portfolio)
 - [Project 1 - OnTrack](#project-1---ontrack)
   - [Overview, Goals, and Objectives](#overview-goals-and-objectives)
+  - [User Manual](#user-manual)
   - [Aims for Trimester](#aims-for-trimester)
   - [Deliverables – T2 2025](#deliverables--t2-2025)
   - [Project Members](#project-members)
+  - [Completed Deliverables](#completed-deliverables)
+  - [Roadmap](#roadmap)
+  - [Open Issues](#open-issues)
+  - [Lessons Learned](#lessons-learned)
+  - [Product Development Life Cycle](#product-development-life-cycle)
+  - [Product Architecture](#product-architecture)
+  - [Source Code](#source-code)
+  - [Login Credentials](#login-credentials)
 - [Project 2 - SplashKit](#project-2---splashkit)
   - [Overview, Goals, and Objectives](#overview-goals-and-objectives-1)
   - [Aims for Trimester](#aims-for-trimester-1)
@@ -135,6 +146,52 @@ Other key goals include:
 
 Our objective is simple: leave OnTrack better than we found it and make the next team’s start
 easier.
+
+### User Manual
+
+This section provides all the essential tutorials and contribution guides to help new team members
+set up their local environment and begin contributing to OnTrack confidently.
+
+#### Tutorial Videos on Setting Up Your Local Development Environment
+
+- [T1 2025 Setup demo](https://drive.google.com/file/d/1Sg4A6UgFGbmmWJza8y8QjRzm2w64bVQx/view) by
+  Aditya Pratap Singh Tomar
+- [T3 2023 Setup demo](https://deakin365.sharepoint.com/:v:/s/ThothTech2/ESrgw0W_21pLn7kqS86WoJgBG71EPo7VPSp8AXt151JC2g?e=AZyu7I)
+  by Satika Jayawardena
+- [T2 2023 Setup demo](https://video.deakin.edu.au/media/t/1_6degiyrj) by Daniel Maddern
+- [T1 2024 Common setup error solutions](https://teams.microsoft.com/l/message/19:bd20175d09414f079490a2403f7fca74@thread.tacv2/1711021331051)
+  by Satika Jayawardena
+
+#### Contributing Guides
+
+- [T2 2025 Getting into OnTrack](https://teams.microsoft.com/l/message/19:bd20175d09414f079490a2403f7fca74@thread.tacv2/1752642834367?tenantId=d02378ec-1688-46d5-8540-1c28b5f470f6&groupId=0e15669c-3f66-49aa-b023-640fe1dda2e0&parentMessageId=1752642834367&teamName=Thoth%20Tech&channelName=OnTrack&createdTime=1752642834367)
+  by Ibitope Fatoki
+
+- [T2 2025 Guide on getting 9.x and 8.0.x branches to build on Windows](https://teams.microsoft.com/l/message/19:bd20175d09414f079490a2403f7fca74@thread.tacv2/1753169709373?tenantId=d02378ec-1688-46d5-8540-1c28b5f470f6&groupId=0e15669c-3f66-49aa-b023-640fe1dda2e0&parentMessageId=1753169709373&teamName=Thoth%20Tech&channelName=OnTrack&createdTime=1753169709373)
+  by Ibitope Fatoki
+
+- [T2 Introduction to Git (22/07/2025 5:00PM)](https://teams.microsoft.com/l/message/19:bd20175d09414f079490a2403f7fca74@thread.tacv2/1753110083358?tenantId=d02378ec-1688-46d5-8540-1c28b5f470f6&groupId=0e15669c-3f66-49aa-b023-640fe1dda2e0&parentMessageId=1753110083358&teamName=Thoth%20Tech&channelName=OnTrack&createdTime=1753110083358)
+  by Samindi Situmya Ratnayake Mudiyanselage
+
+- [T2 OnTrack: CourseFlow Onboard](https://teams.microsoft.com/l/message/19:bd20175d09414f079490a2403f7fca74@thread.tacv2/1753168985606?tenantId=d02378ec-1688-46d5-8540-1c28b5f470f6&groupId=0e15669c-3f66-49aa-b023-640fe1dda2e0&parentMessageId=1753168985606&teamName=Thoth%20Tech&channelName=OnTrack&createdTime=1753168985606)
+  by Duy Nguyen
+
+- [T2 Tutor Times Feature - Onboarding Session](https://teams.microsoft.com/l/message/19:bd20175d09414f079490a2403f7fca74@thread.tacv2/1752913427002?tenantId=d02378ec-1688-46d5-8540-1c28b5f470f6&groupId=0e15669c-3f66-49aa-b023-640fe1dda2e0&parentMessageId=1752913427002&teamName=Thoth%20Tech&channelName=OnTrack&createdTime=1752913427002)
+  by Martin John Dolores
+
+- [T2 Frontend Migrations Onboarding Session](https://teams.microsoft.com/l/message/19:bd20175d09414f079490a2403f7fca74@thread.tacv2/1752790053047?tenantId=d02378ec-1688-46d5-8540-1c28b5f470f6&groupId=0e15669c-3f66-49aa-b023-640fe1dda2e0&parentMessageId=1752790053047&teamName=Thoth%20Tech&channelName=OnTrack&createdTime=1752790053047)
+  by Jason Vellucci
+
+- [T2 Security Team Onboarding](https://teams.microsoft.com/l/meetingrecap?driveId=b%21wNZRMazkxU-_iU1WIFAdVEDpUnI6nVdAn54tc_HYybqigj_WBJmqSKNNXN1KqU9W&driveItemId=01ABUD5BTXHPZKGEMF2BCIPRTJUE3NEEVY&sitePath=https%3A%2F%2Fdeakin365-my.sharepoint.com%2F%3Av%3A%2Fg%2Fpersonal%2Fs223739207_deakin_edu_au%2FEXc78qMRhdBEh8ZpoTbSErgB58ArdEU0QfiU8WYC2nozdA&fileUrl=https%3A%2F%2Fdeakin365-my.sharepoint.com%2F%3Av%3A%2Fg%2Fpersonal%2Fs223739207_deakin_edu_au%2FEXc78qMRhdBEh8ZpoTbSErgB58ArdEU0QfiU8WYC2nozdA&threadId=19%3A22eef26b128f4cd5bd323b1e47dbd873%40thread.v2&callId=c225f45a-c452-4f1d-8dff-7b02983440b8&threadType=GroupChat&meetingType=Unknown&subType=RecapSharingLink_RecapChiclet)
+  by Ibitope Fatoki
+
+- [Doubtfire-deploy repository](https://github.com/thoth-tech/doubtfire-deploy/blob/development/CONTRIBUTING.md)
+
+- [OnTrack documentation](https://github.com/thoth-tech/documentation/tree/main/docs/OnTrack)
+
+- [ThothTech Documentation Website](https://main--strong-fairy-c1bde1.netlify.app/products/ontrack/example/)
+
+- [Doubfire technical documentation](https://github.com/thoth-tech/doubtfire-astro)
 
 ### Aims for Trimester
 
@@ -653,7 +710,7 @@ improvement and innovation.
 | DUY NGUYEN                                                 |                  | Migrate runtime.coffee                                                                                                   | [PR#398](https://github.com/thoth-tech/doubtfire-web/pull/398)                                                                                                                                                                                                                                                  |
 | DUY NGUYEN                                                 | Main Contributor | Add option to overload units to a teaching period                                                                        | [PR#407](https://github.com/thoth-tech/doubtfire-web/pull/407)                                                                                                                                                                                                                                                  |
 | DUY NGUYEN                                                 | Main Contributor | Create test data for CourseFlow ( Course map, Course map units, Units)                                                   | [PR#70](https://github.com/thoth-tech/doubtfire-api/pull/70)                                                                                                                                                                                                                                                    |
-| EDWARD NGUYEN                                              | Main Contributor | Add ability to mark unit as complete (phase 4)                                                                           | [PR#386](https://github.com/thoth-tech/doubtfire-web/pull/386) ([PR#396]([PR#396](https://github.com/thoth-tech/doubtfire-web/pull/396)))                                                                                                                                                                       |
+| EDWARD NGUYEN                                              | Main Contributor | Add ability to mark unit as complete (phase 4)                                                                           | [PR#386](https://github.com/thoth-tech/doubtfire-web/pull/386) ([PR#396](<[PR#396](https://github.com/thoth-tech/doubtfire-web/pull/396)>))                                                                                                                                                                     |
 | EDWARD NGUYEN                                              | Main Contributor | Add summary of skills component                                                                                          | [PR#396](https://github.com/thoth-tech/doubtfire-web/pull/396)                                                                                                                                                                                                                                                  |
 | EDWARD NGUYEN                                              | Main Contributor | Create a component to display credit points achieved.                                                                    | [PR#407](https://github.com/thoth-tech/doubtfire-web/pull/407)                                                                                                                                                                                                                                                  |
 | EDWARD NGUYEN                                              |                  | Remove alignment-bar-chart.coffee                                                                                        | [PR#395](https://github.com/thoth-tech/doubtfire-web/pull/395)                                                                                                                                                                                                                                                  |
@@ -804,14 +861,14 @@ improvement and innovation.
 | SAHIRU HESHAN WITHANAGE                                    |                  | Integrate with backend                                                                                                   | [PR#403](https://github.com/thoth-tech/doubtfire-web/pull/403)                                                                                                                                                                                                                                                  |
 | SAHIRU HESHAN WITHANAGE                                    |                  | Remove alignment-bar-chart.coffee                                                                                        | [PR#395](https://github.com/thoth-tech/doubtfire-web/pull/395)                                                                                                                                                                                                                                                  |
 | SAHIRU HESHAN WITHANAGE                                    | Reviewer         | Fix change_remotes.sh                                                                                                    | [PR#32](https://github.com/thoth-tech/doubtfire-deploy/pull/32)                                                                                                                                                                                                                                                 |
-| SAHIRU HESHAN WITHANAGE                                    | Reviewer         | Add ability to mark unit as complete (phase 4)                                                                           | [PR#386](https://github.com/thoth-tech/doubtfire-web/pull/386) ([PR#396]([PR#396](https://github.com/thoth-tech/doubtfire-web/pull/396)))                                                                                                                                                                       |
+| SAHIRU HESHAN WITHANAGE                                    | Reviewer         | Add ability to mark unit as complete (phase 4)                                                                           | [PR#386](https://github.com/thoth-tech/doubtfire-web/pull/386) ([PR#396](<[PR#396](https://github.com/thoth-tech/doubtfire-web/pull/396)>))                                                                                                                                                                     |
 | SAHIRU HESHAN WITHANAGE                                    |                  | Frontend Work: Student search and selection                                                                              | [PR#359](https://github.com/thoth-tech/doubtfire-web/pull/359)                                                                                                                                                                                                                                                  |
 | SAHIRU HESHAN WITHANAGE                                    |                  | Add summary of skills component                                                                                          | [PR#396](https://github.com/thoth-tech/doubtfire-web/pull/396)                                                                                                                                                                                                                                                  |
 | SAMINDI SITUMYA RATNAYAKE MUDIYANSELAGE                    |                  | Update documentation in doubtfire-astro for staff grant extension new APIs and FE components                             | [PR#40](https://github.com/thoth-tech/doubtfire-astro/pull/40)                                                                                                                                                                                                                                                  |
 | SAMINDI SITUMYA RATNAYAKE MUDIYANSELAGE                    |                  | Backend- In-system notification system                                                                                   | [PR#69](https://github.com/thoth-tech/doubtfire-api/pull/69)                                                                                                                                                                                                                                                    |
 | SAMINDI SITUMYA RATNAYAKE MUDIYANSELAGE                    |                  | Frontend Work: Set up notification UI                                                                                    | [PR#353](https://github.com/thoth-tech/doubtfire-web/pull/353)                                                                                                                                                                                                                                                  |
 | SAMINDI SITUMYA RATNAYAKE MUDIYANSELAGE                    | Reviewer         | Migrate utilService.coffee                                                                                               | [PR#383](https://github.com/thoth-tech/doubtfire-web/pull/383)                                                                                                                                                                                                                                                  |
-| SAMINDI SITUMYA RATNAYAKE MUDIYANSELAGE                    |                  | Add ability to mark unit as complete (phase 4)                                                                           | [PR#386](https://github.com/thoth-tech/doubtfire-web/pull/386) ([PR#396]([PR#396](https://github.com/thoth-tech/doubtfire-web/pull/396)))                                                                                                                                                                       |
+| SAMINDI SITUMYA RATNAYAKE MUDIYANSELAGE                    |                  | Add ability to mark unit as complete (phase 4)                                                                           | [PR#386](https://github.com/thoth-tech/doubtfire-web/pull/386) ([PR#396](<[PR#396](https://github.com/thoth-tech/doubtfire-web/pull/396)>))                                                                                                                                                                     |
 | SAMINDI SITUMYA RATNAYAKE MUDIYANSELAGE                    | Main Contributor | Integrate with backend                                                                                                   | [PR#403](https://github.com/thoth-tech/doubtfire-web/pull/403)                                                                                                                                                                                                                                                  |
 | SAMINDI SITUMYA RATNAYAKE MUDIYANSELAGE                    |                  | Web Security Audit: Cryptographic Failures                                                                               | [PR#45](https://github.com/thoth-tech/doubtfire-astro/pull/45)                                                                                                                                                                                                                                                  |
 | SAMINDI SITUMYA RATNAYAKE MUDIYANSELAGE                    |                  | Frontend: Add new SGE page                                                                                               | [PR#394](https://github.com/thoth-tech/doubtfire-web/pull/394)                                                                                                                                                                                                                                                  |
@@ -836,6 +893,308 @@ improvement and innovation.
 | WAEL ALAHMADI                                              | Reviewer         | Student Self-Enrolment - Tutorial Enrolment                                                                              | [PR#415](https://github.com/thoth-tech/doubtfire-web/pull/415)                                                                                                                                                                                                                                                  |
 | WAEL ALAHMADI                                              |                  | Enable OnTrack accounts with full password management in the database                                                    | [PR#78](https://github.com/thoth-tech/doubtfire-api/pull/78#issue-3426079408); [PR#56](https://github.com/thoth-tech/doubtfire-astro/pull/56); [PR#57](https://github.com/thoth-tech/doubtfire-astro/pull/57#issue-3411312937); [PR#419](https://github.com/thoth-tech/doubtfire-web/pull/419#issue-3426129001) |
 
+### Roadmap
+
+This roadmap outlines the strategic priorities for the next trimester, building on the progress made
+in T2 2025. Key areas of focus include completing the frontend migration, implementing new features,
+and addressing critical security evaluations.
+
+---
+
+#### 1. Continued Frontend Migration to Angular 17
+
+The migration from AngularJS and CoffeeScript remains a top priority. While significant progress was
+made in T2, the work is ongoing.
+
+- **Priority**: Complete the full migration of all legacy components to Angular 17 and TypeScript.
+- **Action**: Focus on migrating parent components whose child components have already been updated.
+- **Goal**: Achieve improved UI consistency, accessibility, and performance across the entire
+  platform.
+
+---
+
+#### 2. Security Enhancements and Penetration Testing
+
+Key vulnerabilities were patched in T2, but the formal penetration testing was delayed.
+
+- **Priority**: Conduct the rescheduled penetration test to thoroughly evaluate all security
+  measures.
+- **Action**: Address any new findings from the test promptly and continue to integrate security
+  testing into the CI/CD pipeline.
+- **Goal**: Begin formalizing prototypes for SSO (Single Sign-On) and mTLS integration for future
+  scalability.
+
+---
+
+#### 3. Full Implementation of Tutor Activity Tracking
+
+The backend schema and frontend UI for this feature are in place, but they need to be fully
+integrated and activated.
+
+- **Priority**: Connect the frontend dashboard to live backend data instead of the current dummy
+  data.
+- **Action**: Implement the `Session Tracker Service` to manage marking sessions and integrate it
+  across all related entities (User, Unit, Project, Task).
+- **Goal**: Deploy backend endpoints to retrieve `Marking Sessions` and `Session Activities` for
+  analytics and reporting.
+
+---
+
+#### 4. Deploying Accessibility and Color Blindness Features
+
+The foundational research and design for accessibility were completed in T2. The next step is full
+implementation and deployment.
+
+- **Priority**: Deploy the configurable color themes, including presets for various types of color
+  vision deficiencies like deuteranopia and protanopia.
+- **Action**: Integrate the theme selector into user profile settings and conduct user testing to
+  validate the effectiveness of the new themes.
+
+---
+
+#### 5. Expanding OnTrack Documentation
+
+Efforts to centralize documentation should continue to support new team members.
+
+- **Priority**: Create the "Getting Started" onboarding guide series that was planned in previous
+  trimesters.
+- **Action**: Finalize API reference pages for all new and refactored endpoints to ensure the
+  documentation is comprehensive and current.
+
+---
+
+#### 6. Long-Term Feature Development (Backlog)
+
+These items from previous roadmaps or new T2 proposals are still in the backlog for future
+development.
+
+- **Panopto Video Integration**: This feature, including phase 2 explorations, is fully scoped but
+  remains in the backlog for a future implementation.
+- **Performance Benchmarking**: Expand on the new initiative to use Google Lighthouse to
+  systematically test and improve platform speed and accessibility.
+- **Gamification**: Explore the feasibility of development of the gamification strategy proposed in
+  T2 to boost user engagement through interactive UI elements.
+
+### Open Issues
+
+This section flags persistent issues that may interfere with the future team's ability to work and
+provides advice on how these could be addressed. Despite steady progress on deliverables, several
+challenges remain that could impact the continuity and learning outcomes for the next cohort.
+
+---
+
+#### Skills Gap & Onboarding Challenges
+
+Many students join OnTrack to learn, but the steep learning curve for technologies like Angular,
+TypeScript, and legacy CoffeeScript can be a significant barrier.
+
+- Without structured technical onboarding, new members often spend the first 3–4 weeks trying to
+  understand the system, which delays their ability to contribute effectively.
+- There is often an implicit expectation that students are already proficient with the tech stack
+  (including Git, Docker, and Angular), which is not always the case and can lead to frustration.
+
+---
+
+#### Development Environment & Compatibility Issues
+
+Setting up the local development environment remains a significant hurdle, especially for students
+using Windows machines.
+
+- Docker image sizes are large, and performance differences compared to Mac or Linux systems can
+  create an uneven development experience.
+- Compatibility differences between the `8.0.x` and `9.x` branches can lead to frequent and
+  confusing build issues.
+- These issues had a direct impact this trimester, as the penetration testing scheduled for
+  mid-August was delayed partly due to "various build errors."
+
+---
+
+#### Fragmented Review and Contribution Workflow
+
+The process for reviewing Planner board tasks and GitHub pull requests can lack consistency.
+
+- Without clear ownership and review pathways, some completed work can sit idle in pull requests for
+  long periods, waiting for approvals. This can slow down overall project momentum.
+
+---
+
+#### Recommendations for Future Teams
+
+To mitigate these issues, the next team should consider the following:
+
+- **Introduce a structured onboarding program** that covers environment setup, Git workflows, and an
+  introduction to the core tech stack.
+- **Create and maintain a beginner-friendly setup guide**, especially for Windows environments.
+- **Communicate early and often with mentors** or sub-leads to get help and unblock technical issues
+  quickly.
+- **Leverage the resources** in the **[User Manual](#user-manual)** section, which contains setup
+  videos and contribution guides.
+
+### Lessons Learned
+
+Throughout the trimester, the OnTrack team gained valuable insights into collaboration, workflow
+management, and technical readiness. The following lessons are shared to help future teams adopt
+practices that support sustained progress and learning.
+
+---
+
+#### The Importance of Mentorship
+
+Mentors play a pivotal role in clarifying complex tasks and keeping the team aligned with project
+goals. Low attendance in mentor meetings can create knowledge gaps, leading to missed updates and
+slower progress.
+
+- **Key Takeaway**: Prioritize regular engagement with mentors to stay informed and unblock
+  technical or process-related issues early.
+
+---
+
+#### Effective Task Management
+
+Consistent use of the Planner board is essential for transparency and progress tracking.
+
+- When tasks are left un-updated, it can cause confusion around team progress and individual
+  responsibilities.
+- **Key Takeaway**: Familiarity with Planner, clear card ownership, and regular status updates are
+  crucial for maintaining momentum in collaborative work.
+
+---
+
+#### Technical Readiness and Continuous Learning
+
+A significant number of contributors can struggle with tasks due to limited experience with GitHub
+and the core tech stack. This can impact review cycles and slow down delivery.
+
+- **Key Takeaway**: Capstone projects require continuous upskilling. Proactively allocate time for
+  learning core technologies like Git, Angular, and TypeScript, especially when entering unfamiliar
+  domains. It is highly recommended that new members undergo early training.
+
+---
+
+#### Time Management and Self-Discipline
+
+Delayed deliverables are often linked to weak time management. Without consistent planning and
+progress tracking, it's difficult to meet sprint goals.
+
+- **Key Takeaway**: Adopt strategies like weekly planning, setting personal deadlines, and using
+  reminders to stay on track and contribute reliably.
+
+---
+
+#### Final Advice
+
+New team members may assume deep technical knowledge is required before contributing. However, what
+truly matters is **consistency, communication, and a willingness to learn**. Investing time early to
+understand the workflow, connect with mentors, and get comfortable with the tools will lead to
+strong contributions.
+
+### Product Development Life Cycle
+
+We continue to use Agile methodologies to deliver updates and new features for OnTrack. Our approach
+includes 2-week sprints focused on completing tasks, and weekly stand-up meetings to assess
+progress, share updates, discuss roadblocks, and assign new tasks via Teams Planner cards.
+
+---
+
+#### New Tasks
+
+- New tasks are assigned by the project mentor during weekly stand-up meetings.
+- Once assigned a task, be sure to assign yourself to the corresponding Teams Planner card and
+  attach your draft or completed pull request when you begin work.
+- If you have an idea for a new feature, schedule a meeting with the project mentor to discuss it.
+  Upon approval, a new card can be created in the Planner backlog.
+- For large features, it is recommended to first create a Spike document to research the benefits
+  and challenges, which can be committed to the documentation repository.
+
+---
+
+#### Definition of Done
+
+A task is considered complete once it has been fully tested, functions as expected, is documented in
+a well-organized pull request, has been peer-reviewed, and is approved by your mentor. The
+corresponding Teams Planner card must be updated, and communication with your reviewer and mentor
+should continue until your contribution is merged.
+
+---
+
+#### Task Review
+
+- Each pull request requires a mandatory peer review before a mentor can review it.
+- After creating a pull request, contact a teammate to review it and tag them as the reviewer in
+  both the Planner card and on GitHub.
+- As a reviewer, you must test the code by pulling the changes locally and reviewing the syntax,
+  logic, and output.
+- After the peer review is complete, notify the mentor for their final review and approval before
+  the pull request is submitted to the upstream repository.
+
+---
+
+#### Testing
+
+- For frontend changes, test the functionality in the browser and run specification tests as needed.
+- For backend changes, use browser interactions or tools like Postman to test API functionality.
+- In the pull request, include detailed instructions on how others can test your changes, and always
+  provide before-and-after screenshots to show the outcome.
+
+---
+
+#### Branching Strategy
+
+- When starting new work, fork all three `thoth-tech` repositories (`deploy`, `web`, and `api`) to
+  your personal GitHub profile.
+- Create a new branch from the `9.x` branch of the relevant repository.
+- Follow the **Branch Prefixes and Commit Message Format** in the official Contributing Guide when
+  naming branches and creating commits.
+
+### Product Architecture
+
+OnTrack is developed as a collaborative open-source project built on top of the Doubtfire-LMS
+ecosystem. It comprises four key components:
+
+- **Doubtfire-Web**: The frontend application responsible for user interface and interactions, built
+  using Angular.
+- **Doubtfire-API**: The backend service that handles business logic and communicates with the
+  database, built using Ruby on Rails.
+- **Database**: A structured relational database (e.g., MariaDB) that stores all persistent
+  application data.
+- **Doubtfire-Deploy**: Infrastructure scripts and configuration used to deploy OnTrack in a stable
+  and maintainable environment, primarily using Docker and associated CI/CD tools.
+
+OnTrack is maintained and enhanced by **ThothTech**, a student-led capstone development team at
+Deakin University. The project is **forked from the official Doubtfire-LMS repository**, which is
+managed by Company Directors and Mentors. The LMS environment represents the **production-grade
+implementation**, while ThothTech serves as the innovation space where new features and improvements
+are developed before potential upstream contribution.
+
+---
+
+#### Tech Stack
+
+- **Frontend**: Currently being migrated from AngularJS and CoffeeScript to Angular 17 and
+  TypeScript. The stack also includes HTML, SCSS, and Tailwind CSS.
+
+- **Backend**: Built on Ruby on Rails with the Grape Framework. It uses MariaDB as the database
+  engine, and Docker is used for deployment and local development.
+
+### Source Code
+
+The following are the relevant GitHub repositories for this project:
+
+- **Deployment**: [thoth-tech/doubtfire-deploy](https://github.com/thoth-tech/doubtfire-deploy)
+- **Frontend**: [thoth-tech/doubtfire-web](https://github.com/thoth-tech/doubtfire-web)
+- **Backend**: [thoth-tech/doubtfire-api](https://github.com/thoth-tech/doubtfire-api)
+- **OnTrack Documentation Website**:
+  [thoth-tech/doubtfire-astro](https://github.com/thoth-tech/doubtfire-astro)
+- **General Documentation**:
+  [OnTrack Documentation](https://github.com/thoth-tech/documentation/tree/main/docs/OnTrack)
+
+---
+
+### Login Credentials
+
+Refer to the "Working with Dev Containers" section of the
+[Contributing Guide](https://github.com/thoth-tech/doubtfire-deploy/blob/main/CONTRIBUTING.md) for
+authentication credentials for a locally deployed instance of OnTrack.
 
 ## Project 2 - SplashKit
 
@@ -1091,7 +1450,6 @@ the deliverables are depending on the number of students joining/working on the 
 
 - NA
 
-
 ### Team Members and Contributions
 
 | Name                                    | Role             | Task                                                                                | Attachments                                                                                                                                                                     |
@@ -1176,7 +1534,7 @@ the deliverables are depending on the number of students joining/working on the 
 | DANIEL CARROLL-LEONARD                  | Main Contributor | Unit tests - Camera                                                                 | [PR#123](https://github.com/thoth-tech/splashkit-core/pull/123)                                                                                                                 |
 | DANIEL CARROLL-LEONARD                  |                  | splashkit-core testing tutorial videos                                              |                                                                                                                                                                                 |
 | DANIEL CARROLL-LEONARD                  | Reviewer         | Screen Width - Graphics - Usage Example Creation                                    | [PR#594](https://github.com/thoth-tech/splashkit.io-starlight/pull/594)                                                                                                         |
-| DANIEL CARROLL-LEONARD                  |                  | Investigate functions with repeated suffixes                                        | [PR#121]([PR#121](https://github.com/thoth-tech/splashkit-core/pull/121)#pullrequestreview-3091201254); [PR#121](https://github.com/thoth-tech/splashkit-core/pull/121)         |
+| DANIEL CARROLL-LEONARD                  |                  | Investigate functions with repeated suffixes                                        | [PR#121](<[PR#121](https://github.com/thoth-tech/splashkit-core/pull/121)#pullrequestreview-3091201254>); [PR#121](https://github.com/thoth-tech/splashkit-core/pull/121)       |
 | DANIEL CARROLL-LEONARD                  |                  | Unit tests - bitmap_name                                                            | [PR#125](https://github.com/thoth-tech/splashkit-core/pull/125)                                                                                                                 |
 | DANIEL CARROLL-LEONARD                  | Reviewer         | Unit tests - json_read_number                                                       | [PR#122](https://github.com/thoth-tech/splashkit-core/pull/122)                                                                                                                 |
 | DANIEL CARROLL-LEONARD                  |                  | Review new motor and servo GPIO functions                                           | [PR#124](https://github.com/thoth-tech/splashkit-core/pull/124)                                                                                                                 |
@@ -1252,7 +1610,7 @@ the deliverables are depending on the number of students joining/working on the 
 | OLIVER ALEXANDER QUAIL                  | Reviewer         | Update/Continue Dynamic Camera Control Tutorial                                     | [PR#567](https://github.com/thoth-tech/splashkit.io-starlight/pull/567)                                                                                                         |
 | OLIVER ALEXANDER QUAIL                  | Reviewer         | Add themes menu                                                                     | [PR#132](https://github.com/thoth-tech/SplashkitOnline/pull/132)                                                                                                                |
 | OLIVER ALEXANDER QUAIL                  | Reviewer         | Option Rotate Bmp - Graphics - Usage Example Creation                               | [PR#603](https://github.com/thoth-tech/splashkit.io-starlight/pull/603)                                                                                                         |
-| OLIVER ALEXANDER QUAIL                  | Reviewer         | Investigate functions with repeated suffixes                                        | [PR#121]([PR#121](https://github.com/thoth-tech/splashkit-core/pull/121)#pullrequestreview-3091201254); [PR#121](https://github.com/thoth-tech/splashkit-core/pull/121)         |
+| OLIVER ALEXANDER QUAIL                  | Reviewer         | Investigate functions with repeated suffixes                                        | [PR#121](<[PR#121](https://github.com/thoth-tech/splashkit-core/pull/121)#pullrequestreview-3091201254>); [PR#121](https://github.com/thoth-tech/splashkit-core/pull/121)       |
 | OLIVER ALEXANDER QUAIL                  | Reviewer         | Mouse Wheel Scroll - Graphics - Usage Example Creation                              | [PR#632](https://github.com/thoth-tech/splashkit.io-starlight/pull/632)                                                                                                         |
 | OLIVER ALEXANDER QUAIL                  |                  | Update README.md to add C# setup instructions                                       | [PR#127](https://github.com/thoth-tech/SplashkitOnline/pull/127)                                                                                                                |
 | OLIVER ALEXANDER QUAIL                  | Main Contributor | Add guide for adding demos to SK Online                                             | [PR#131](https://github.com/thoth-tech/SplashkitOnline/pull/131)                                                                                                                |
@@ -1304,7 +1662,7 @@ the deliverables are depending on the number of students joining/working on the 
 | RUNQI LIU                               | Main Contributor | Tutorial Review/Update: Routing With Servers                                        | [PR#622](https://github.com/thoth-tech/documentation/pull/622)                                                                                                                  |
 | RUNQI LIU                               |                  | Consolidate Arcade Machine documentation to .md files in repo                       | [PR#83](https://github.com/thoth-tech/arcade-machine/pull/83)                                                                                                                   |
 | SAM STAJNKO                             | Reviewer         | Unit tests - hsb_color improvements                                                 | [PR#120](https://github.com/thoth-tech/splashkit-core/pull/120); [PR#128](https://github.com/thoth-tech/splashkit-core/pull/128)                                                |
-| SAM STAJNKO                             | Main Contributor | Investigate functions with repeated suffixes                                        | [PR#121]([PR#121](https://github.com/thoth-tech/splashkit-core/pull/121)#pullrequestreview-3091201254); [PR#121](https://github.com/thoth-tech/splashkit-core/pull/121)         |
+| SAM STAJNKO                             | Main Contributor | Investigate functions with repeated suffixes                                        | [PR#121](<[PR#121](https://github.com/thoth-tech/splashkit-core/pull/121)#pullrequestreview-3091201254>); [PR#121](https://github.com/thoth-tech/splashkit-core/pull/121)       |
 | SAM STAJNKO                             | Reviewer         | Unit tests - hsb_color                                                              | [PR#120](https://github.com/thoth-tech/splashkit-core/pull/120)/files/d7e6a3ffc8453720cff2ceebb12346b0d54cf277; [PR#120](https://github.com/thoth-tech/splashkit-core/pull/120) |
 | SAM STAJNKO                             | Reviewer         | Fix CPP in new file structure                                                       | [PR#128](https://github.com/thoth-tech/SplashkitOnline/pull/128)                                                                                                                |
 | SAM STAJNKO                             | Main Contributor | Unit tests - bitmap_name                                                            | [PR#125](https://github.com/thoth-tech/splashkit-core/pull/125)                                                                                                                 |
@@ -1357,7 +1715,6 @@ the deliverables are depending on the number of students joining/working on the 
 | WEI ZHANG                               |                  | Tetriz game development                                                             | [PR#243](https://github.com/thoth-tech/arcade-games/pull/243)                                                                                                                   |
 | WEI ZHANG                               |                  | Tetriz game development                                                             | [PR#243](https://github.com/thoth-tech/arcade-games/pull/243)                                                                                                                   |
 | WEI ZHANG                               |                  | Add Language Switcher and Chinese Localization to SplashKit Website                 | [PR#582](https://github.com/thoth-tech/splashkit.io-starlight/pull/582)                                                                                                         |
-
 
 ### Roadmap
 
