@@ -1,0 +1,12 @@
+{
+  "name": "Astro Starlight Dev",
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "astro-dev",
+  "workspaceFolder": "/site",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/site,type=bind",
+  "forwardPorts": [4321],
+  "postStartCommand": "npm run dev",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  }
+}

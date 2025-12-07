@@ -1,10 +1,20 @@
-FROM node:lts-alpine
-ENV NODE_ENV=production
-WORKDIR /usr/src/app
-COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
-RUN npm install --production --silent && mv node_modules ../
-COPY . .
+FROM node:iron-trixie-slim
+
+WORKDIR /site
+
+COPY package*.json /site/
+
+RUN apt-get update && apt-get upgrade
+RUN apt-get install git curl -y
+
+RUN npm install
+RUN npm run build
+
+ENV HOST=0.0.0.0
+ENV PORT=4321
+
+# Expose the dev server port
 EXPOSE 4321
-RUN chown -R node /usr/src/app
-USER node
-CMD ["npm", "start"]
+
+# Start the dev server
+CMD ["npm", "run", "dev"]
