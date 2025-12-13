@@ -5,7 +5,7 @@ title: OnTrack Development Setup Guide - 2025T3
 OnTrack Development Setup Guide - 2025T3  
 Step-by-Step Tutorial
 
-## 2. INSTALLING DOCKER DESKTOP
+## 1. INSTALLING DOCKER DESKTOP
 
 Docker Desktop is essential for running the OnTrack development container.
 
@@ -26,7 +26,7 @@ docker --version
 
 IMPORTANT: Keep Docker Desktop running throughout the development process.
 
-## 3. FORKING THE REQUIRED REPOSITORIES
+## 2. FORKING THE REQUIRED REPOSITORIES
 
 OnTrack consists of three main repositories that need to be forked from Doubtfire LMS:
 
@@ -65,7 +65,7 @@ https://github.com/YOUR_USERNAME/doubtfire-deploy
 https://github.com/YOUR_USERNAME/doubtfire-api
 https://github.com/YOUR_USERNAME/doubtfire-web
 
-## 4. PULLING THE DOCKER IMAGE
+## 3. PULLING THE DOCKER IMAGE
 
 Before starting development, pull the required Docker image from Docker Hub.
 The Docker image contains all dependencies for OnTrack development.
@@ -93,7 +93,7 @@ Where to find the image version:
 - Look under 'services' > 'image'
 - The format is: lmsdoubtfire/doubtfire-dev-container:[version]
 
-## 5. CLONING REPOSITORIES LOCALLY
+## 4. CLONING REPOSITORIES LOCALLY
 
 Now clone your forked repositories to your local machine.
 
@@ -131,7 +131,7 @@ doubtfire-deploy/
 ├── doubtfire-web/
 └── doubtfire-lti/ (optional)
 
-## 6. SETTING UP GIT REMOTES
+## 5. SETTING UP GIT REMOTES
 
 Git remotes allow you to sync with both your fork (origin) and the ThothTech repository
 (upstream).
@@ -181,7 +181,7 @@ git remote -v
 - Return to parent directory:
 cd ..
 
-## 7. SWITCHING TO THE CORRECT BRANCH
+## 6. SWITCHING TO THE CORRECT BRANCH
 
 IMPORTANT: You must work on the 10.0.x branch, not the main or development branch.
 
@@ -232,7 +232,7 @@ cd ..
 - Fetch all latest changes (optional but recommended):
 git fetch
 
-## 8. OPENING IN VS CODE
+## 7. OPENING IN VS CODE
 
 Now open the doubtfire-deploy directory in VS Code to start the development container.
 
@@ -245,7 +245,7 @@ code .
 - File > Open Folder
 - Navigate to and select the doubtfire-deploy folder
 
-## 9. STARTING THE DEVELOPMENT CONTAINER
+## 8. STARTING THE DEVELOPMENT CONTAINER
 
 The development container runs all OnTrack services inside Docker.
 
@@ -259,7 +259,7 @@ Manual Method:
 - Type: "Dev Containers: Reopen in Container"
 - Select this option
 
-## 10. ACCESSING THE APPLICATION
+## 9. ACCESSING THE APPLICATION
 
 Once the container is running, OnTrack will be accessible via your web browser.
 
@@ -271,7 +271,7 @@ Default admin credentials:
 - Username: admin
 - Password: password
 
-## 11. TROUBLESHOOTING
+## 10. TROUBLESHOOTING
 
 Issue: Docker Desktop not running  
 Solution:
