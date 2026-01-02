@@ -1,5 +1,6 @@
 ---
 title: "NuGet Package Guide"
+description: "Guide to building and testing the SplashKit NuGet package for .NET"
 ---
 
 import { FileTree, Steps } from "@astrojs/starlight/components";
@@ -18,13 +19,13 @@ The SplashKit NuGet package has two primary purposes:
   Mac users to create and run SplashKit projects in C# without installing the libraries separately
   via SplashKit Manager (SKM).
 
-## Building the Package
-
 :::note
 
-Ensure [.NET SDK](https://dotnet.microsoft.com/en-us/download) is installed.
+**Prerequisite:** Ensure [.NET SDK](https://dotnet.microsoft.com/en-us/download) is installed.
 
 :::
+
+## Building the Package
 
 <Steps>
 
@@ -34,6 +35,13 @@ Ensure [.NET SDK](https://dotnet.microsoft.com/en-us/download) is installed.
    should be placed in `/tools/scripts/nuget-pkg/Libraries/win64` and
    `/tools/scripts/nuget-pkg/Libraries/macos` respectively. This step can be automated via the use
    of the bash script found at `/tools/scripts/nuget-pkg/download-libraries.sh`.
+
+   :::note
+
+   SKM does not include pre-compiled libraries for Linux. It instead uses a script to install
+   dependencies and builds based on the detected distro.
+
+   :::
 
 2. #### Open the NuGet package directory
 
@@ -98,6 +106,13 @@ The provided tests are translations of the SplashKit core integration tests. The
 individually from their respective folders, but are best launched using the test runner located in
 the `Main` directory.
 
+:::note
+
+For more information on SplashKit core integration tests, see
+[here](https://thoth-tech.netlify.app/products/splashkit/documentation/splashkit-expansion/#building-the-test-programs).
+
+:::
+
 ### Running the Provided Tests
 
 <Steps>
@@ -145,6 +160,14 @@ the `Main` directory.
 5. #### Select test
 
    Input a number to build and run the corresponding test.
+
+   :::caution
+
+   **Known issue:** The included graphics test currently produces inconsistent results in a
+   MSYS2/Windows environment. This behaviour is consistent with SplashKit installed via SKM and is
+   being investigated.
+
+   :::
 
 6. #### Re-run as necessary
    To ensure the package is fully functional, the tests should be re-run to cover each combination
