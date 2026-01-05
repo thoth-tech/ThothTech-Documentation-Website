@@ -1,0 +1,250 @@
+---
+title: OnTrack Development Setup Guide - 2025T3
+---
+
+## Before You Begin
+
+Before starting the setup, ensure the following are installed and ready:
+
+- Visual Studio Code (VS Code)
+- Git
+- A GitHub account (used to fork the repositories)
+
+If you have attempted the setup previously and encountered errors. It is recommended to restart
+Docker Desktop Follow this guide from the beginning to avoid configuration issues.
+
+## 1. INSTALLING DOCKER DESKTOP
+
+Docker Desktop is essential for running the OnTrack development container.
+
+Steps:
+
+- Download Docker Desktop from `docker.com`
+
+- For Windows users:
+- Docker Desktop installation includes Windows Subsystem for Linux (`WSL2`)
+- If `WSL2` isn't automatically installed, follow the setup wizard
+- Docker Desktop installs WSL (aka whistle) as part of the process
+
+- Complete the installation and restart your computer if prompted
+
+- Start Docker Desktop and ensure it is running before proceeding
+
+- Verify installation by opening a terminal and running:  
+  `docker --version`
+
+IMPORTANT: Keep Docker Desktop running throughout the development process.
+
+## 2. FORKING THE REQUIRED REPOSITORIES
+
+OnTrack consists of three main repositories that need to be forked from Doubtfire LMS:
+
+### Required Repositories
+
+OnTrack consists of three main repositories that need to be forked from Doubtfire LMS:
+
+1. `doubtfire-deploy`
+
+   - Contains `docker-compose` configuration
+   - Main deployment setup
+
+2. `doubtfire-api`
+
+   - Backend API (Ruby on Rails)
+   - Contains the Ruby application code
+
+3. `doubtfire-web`
+   - Frontend application (Angular)
+   - Contains the user interface
+
+### Optional (for testing)
+
+4. `doubtfire-lti`
+   - Used for LTI integration testing
+
+How to Fork:
+
+- Navigate to the Thoth Tech GitHub organisation:  
+  `https://github.com/thoth-tech/`
+
+- For each repository (`deploy`, `api`, `web`): a. Go to the repository page  
+  b. Ensure you're on the `development` branch initially  
+  c. Click the **Fork** button in the top-right  
+  d. Keep all default settings  
+  e. **Uncheck** “Copy the main branch only” if shown  
+  f. Click **Create fork**
+
+Your forked repositories will appear at:
+
+- `https://github.com/YOUR_USERNAME/doubtfire-deploy`
+- `https://github.com/YOUR_USERNAME/doubtfire-api`
+- `https://github.com/YOUR_USERNAME/doubtfire-web`
+
+## 3. PULLING THE DOCKER IMAGE
+
+Before starting development, pull the required Docker image from Docker Hub.  
+The Docker image contains all dependencies for OnTrack development.
+
+Steps:
+
+- Open Docker Desktop terminal (recommended for Windows users)
+- In Docker Desktop, click the terminal icon at the bottom
+
+- Run the following command:  
+  `docker pull lmsdoubtfire/formatif-dev-container:10.0.0-14`
+
+Note:
+
+- The version number (`10.0.0-14`) comes from the `docker-compose.yaml`.
+- File in the `doubtfire-deploy` repository.
+
+- This will download all dependencies and may take several minutes
+
+- Verify the image was pulled by running:  
+  `docker images`  
+  You should see `lmsdoubtfire/doubtfire-dev-container:10.0.0-14`
+
+Where to find the image version:
+
+- Open `doubtfire-deploy/docker-compose.yaml`
+- Look under `services` > `image`
+- The format is: `lmsdoubtfire/doubtfire-dev-container:[version]`
+
+## 4. CLONING REPOSITORIES LOCALLY
+
+Now clone your forked repositories to your local machine.
+
+Steps:
+
+- Open your terminal (PowerShell on Windows, Terminal on macOS/Linux)
+
+- Navigate to your preferred directory: `cd ~`  
+  or  
+  `cd C:\Users\YOUR_USERNAME\Documents\Projects`
+
+- Clone `doubtfire-deploy` first: `git clone https://github.com/YOUR_USERNAME/doubtfire-deploy.git`
+
+- Navigate into the directory: `cd doubtfire-deploy`
+
+- Clone the remaining repositories: `git clone https://github.com/YOUR_USERNAME/doubtfire-api.git`  
+  `git clone https://github.com/YOUR_USERNAME/doubtfire-web.git`
+
+- (Optional) Clone `doubtfire-lti`: `git clone https://github.com/YOUR_USERNAME/doubtfire-lti.git`
+
+You should now have: `doubtfire-deploy/`  
+`├── doubtfire-api/`  
+`├── doubtfire-web/`  
+`└── doubtfire-lti/ (optional)`
+
+## 5. SETTING UP GIT REMOTES
+
+Git remotes allow you to sync with both your fork (`origin`) and the ThothTech repository
+(`upstream`).
+
+Understanding remotes:
+
+- `origin`: your forked repository on GitHub
+- `upstream`: ThothTech’s repository
+
+Steps for `doubtfire-deploy`:
+
+- Check current remotes:  
+  `git remote -v`
+
+- Add ThothTech as upstream:  
+  `git remote add upstream https://github.com/thothtech/doubtfire-deploy.git`
+
+- Verify:  
+  `git remote -v`
+
+Repeat the same steps for:
+
+- `doubtfire-api`
+- `doubtfire-web`
+
+## 6. SWITCHING TO THE CORRECT BRANCH
+
+IMPORTANT: You must work on the `10.0.x` branch, not `main` or `development`.
+
+For each repository:
+
+- Check current branch: `git branch`
+- Switch branch: `git checkout 10.0.x`
+- Pull latest changes: `git pull`
+- Verify: `git status`
+
+(Optional but recommended):  
+`git fetch`
+
+## 7. OPENING IN VS CODE
+
+Now open the `doubtfire-deploy` directory in VS Code.
+
+Steps:
+
+- From the `doubtfire-deploy` directory, run:  
+  `code .`
+
+Alternatively:
+
+- Open VS Code manually
+- Select **File > Open Folder**
+- Choose the `doubtfire-deploy` folder
+
+## 8. STARTING THE DEVELOPMENT CONTAINER
+
+The development container runs all OnTrack services inside Docker.
+
+Automatic method:
+
+- VS Code will detect the `.devcontainer` configuration
+- A popup will appear saying **“Reopen in Container”**
+- Click **Reopen in Container**
+
+Manual method:
+
+- Press `Ctrl+Shift+P` (`Cmd+Shift+P` on macOS)
+- Type `Dev Containers: Reopen in Container`
+- Select the option
+
+## 9. ACCESSING THE APPLICATION
+
+Once the container is running, OnTrack will be accessible via your browser.
+
+Ports:
+
+- `localhost:4200` – OnTrack frontend (Angular)
+- `localhost:3000` – OnTrack API (Ruby on Rails)
+
+Default admin credentials:
+
+- Username: `admin`
+- Password: `password`
+
+## 10. TROUBLESHOOTING
+
+Issue: Docker Desktop not running  
+Solution:
+
+- Open Docker Desktop
+- Wait for it to fully start
+- Reopen the container in VS Code
+
+Issue: Wrong branch  
+Solution:
+
+- Run `git checkout 10.0.x`
+
+Issue: CSS not loading  
+Solution:
+
+- Wait a few minutes
+- Refresh the page
+
+## CONCLUSION
+
+You have now successfully set up the OnTrack development environment.
+
+Document Version: 2025T3  
+Last Updated: November 2025  
+Author: Jayam Patel
