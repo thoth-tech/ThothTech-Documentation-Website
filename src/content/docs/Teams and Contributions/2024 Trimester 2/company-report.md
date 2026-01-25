@@ -108,18 +108,15 @@ trimester:
 
 1. Company presentation in the first junior lecture – Introduce the company, its projects, and
    required skill sets for potential junior students
-
    - Student leads must prepare and organise a PowerPoint presentation representing each of their
      projects during Week 0
 
 2. Host first company-wide meeting and onboard students – Provide a more specific overview of
    company and project goals, meeting schedules, and expectations for the trimester
-
    - Team building sessions may also be organised to build rapport across teams
 
 3. Weekly company leadership team meeting – Report on project progress and concerns to company
    stakeholders
-
    - Date and time to be decided by members in the first week according to availability
 
 4. Complete company tasks: progress, handover, and showcase reports and videos
@@ -170,7 +167,6 @@ Contributing Guides:
 This trimester, the following key deliverables were completed:
 
 - Bug Fixes and Urgent Enhancements
-
   - Chat Markdown Rendering Bug: Successfully fixed an issue where markdown was not rendering
     properly in chat, enhancing the user experience for students and staff.
   - Documentation Enhancements: Completed and merged documentation updates for both general and
@@ -183,7 +179,6 @@ This trimester, the following key deliverables were completed:
   unit-ilo-edit-modal. Additionally, enhancements were made to PDF handling and user interface
   elements like the grade-task-modal and grade-icon components, contributing to the ongoing frontend
   migration and user interface improvement objectives.
-
   - Ongoing Frontend Migration: The migration of legacy CoffeeScript components to
     TypeScript/Angular continues, with files such as timeout.coffee and grade-task-modal.coffee
     currently under peer review. This aligns with our aim to complete at least 10% of the existing
@@ -193,7 +188,6 @@ This trimester, the following key deliverables were completed:
     under review.
 
 - CourseFlow:
-
   - CourseMap Base Page Development: Developed the base page for CourseMap, laying the groundwork
     for further enhancements and integrations planned for the CourseFlow component.
   - Backend Requirements Implementation: Completed backend requirements for several critical

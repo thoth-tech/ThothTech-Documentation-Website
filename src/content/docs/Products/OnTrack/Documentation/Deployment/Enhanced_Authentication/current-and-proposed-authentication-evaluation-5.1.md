@@ -12,8 +12,8 @@ title: Review of Current and Proposed Authentication Solutions
 [Proposed Authentication Enhancements](#proposed-authentication-enhancements)
 
 - [The Proposed Authentication Mechanism](#the-proposed-authentication-mechanism)
-- [Advancements of the Previous Authentication Mechanisms and how it Addresses Issues of the
-  Old Method]
+- [Advancements of the Previous Authentication Mechanisms and how it Addresses Issues of the Old
+  Method]
   (#advancements-of-the-previous-authentication-mechanisms-and-how-it-addresses-issues-of-the-old-method)
 - [Potential Issues and Concerns that must be Considered](#potential-issues-and-concerns-that-must-be-considered)
 

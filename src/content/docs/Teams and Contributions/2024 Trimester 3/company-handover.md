@@ -95,7 +95,6 @@ trimester:
 1. **Company Presentation in the First Junior Lecture**  
    Introduce the company, its projects, and the required skill sets to inspire and recruit potential
    junior students.
-
    - **Presentation Preparation**: Student leads must prepare and organise a PowerPoint presentation
      that effectively represents each of their projects during Week 0.
    - **Aligning with Goals**: Clearly articulate how each project aligns with Thoth Tech's goals,
@@ -115,7 +114,6 @@ trimester:
 2. **Host First Company-Wide Meeting and Onboard Students**  
    Provide a detailed overview of company and project goals, meeting schedules, and expectations for
    the trimester through a structured and inclusive onboarding process.
-
    - **Multiple Onboarding Sessions**: Organise several onboarding sessions to ensure the widest
      possible audience is captured, accommodating different learning styles, time zones, and
      availability. This approach ensures that all junior students, regardless of their
@@ -136,7 +134,6 @@ trimester:
 3. **Weekly Company Leadership Team Meetings**  
    Facilitate regular meetings to report on project progress and address concerns with company
    stakeholders.
-
    - **Scheduling**: Date and time to be decided by members in the first week according to
      availability.
    - **Rotating Leadership**: Each week, a different member should take the lead in directing the
@@ -151,7 +148,6 @@ trimester:
 4. **Project Mentorship and Guidance**  
    Actively support project teams by providing leadership, technical expertise, and problem-solving
    guidance to peers and junior team members alike.
-
    - **Mentor Peers and Juniors**: Provide mentorship to both peers and junior team members,
      recognising that even senior contributors may require guidance and support to meet their
      objectives effectively.
@@ -165,7 +161,6 @@ trimester:
 5. **Communication and Collaboration**  
    Maintain clear and open communication across teams to align project goals, foster innovation, and
    enhance overall company contributions.
-
    - **Promote Cross-Team Collaboration**: Actively encourage collaboration between teams,
      recognising that greater collaboration has historically helped overcome creativity blocks and
      inspired more innovative and exciting contributions across the company.
@@ -184,7 +179,6 @@ trimester:
 
 6. **Complete Company Deliverables: Progress, Handover, and Showcase Reports and Videos**  
    Ensure timely and high-quality submissions of all required deliverables.
-
    - **Team Collaboration**: Collaborate with project teams to gather insights, ensuring all
      deliverables include comprehensive updates that accurately reflect the progress and
      contributions of the entire company.
@@ -199,7 +193,6 @@ trimester:
 7. **Represent the Company in Leadership Meetings**  
    Advocate for the company's needs and ensure alignment with the broader goals of the capstone
    program.
-
    - **Present Team Updates**: Present the company's progress, challenges, and successes in
      program-level leadership meetings, ensuring a clear and accurate representation of team
      activities.
@@ -212,7 +205,6 @@ trimester:
 
 8. **Encourage Innovation and Best Practices**  
    Promote a culture of innovation, inclusivity, and continuous improvement within the company.
-
    - **Leverage Evidence-Based Decision-Making**: Use the leadership team as a platform to analyse
      data, feedback, and outcomes to make informed and evidence-based choices that drive project
      success.
@@ -226,7 +218,6 @@ trimester:
 9. **Foster Team Morale and Collaboration**  
     Actively support team morale and address interpersonal challenges to maintain a cohesive and
    motivated team environment.
-
    - **Celebrate Achievements**: Recognise and celebrate individual and team accomplishments across
      the company to boost morale and reinforce a sense of achievement.
    - **Promote Inclusivity**: Ensure that all voices are heard and valued, creating an inclusive
@@ -662,14 +653,12 @@ repositories for the relevant teams.
   advanced geometry operations.
 
 - **Collision Classification and Resolution Functions**:
-
   - **`calculate_collision_direction`**: Classifies collision direction between objects.
   - **`resolve_collision`**: Resolves overlap without altering velocities, supporting AABB and pixel
     collisions.
 
 - **Additional Intersection Functions**:  
   Introduced functions for collision detection between different shape pairs:
-
   - `circle_quad_intersect`, `rectangle_circle_intersect`, `triangle_quad_intersect`.
 
 - **Bug Fixes**:
@@ -747,12 +736,10 @@ repositories for the relevant teams.
 ##### Input Validation and Conversion Functions
 
 - **New Input Validation Functions**:
-
   - `is_binary`, `is_hex`, `is_octal` for validating number formats.
 
 - **New Conversion Functions**:  
   Added conversion functions to handle various numeric and encoding formats:
-
   - `dec_to_bin`, `bin_to_dec`, `hex_to_bin`, `bin_to_hex`, `oct_to_dec`, `dec_to_oct`, `hex_to_ct`,
     `ct_to_hex`, `base64_encode`, `base64_decode`.
 
@@ -763,7 +750,6 @@ repositories for the relevant teams.
 ##### Networking and Address Functions
 
 - **IPv4 Address Validation**:
-
   - Added a new function `is_valid_ipv4` to validate IPv4 addresses using regex.
 
 - **MAC Address Conversion**:
@@ -773,65 +759,53 @@ repositories for the relevant teams.
 #### SplashKit Website & Tutorials
 
 - **Usage Example Generation Script Fixes**:
-
   - Resolved bugs in the usage example generation script, resulting in a more efficient development
     process.
 
 - **Expanded Usage Examples**:
-
   - Significantly expanded usage examples across various categories, enhancing the site's quality.
     Additions include comprehensive examples for Graphics and Geometry functions, along with
     completed examples for Physics, Utilities, and Terminal functions.
 
 - **API Documentation Linkage**:
-
   - Linked API documentation pages to their corresponding usage examples, improving user experience
     and site navigation.
   - Seamlessly linked function in the API documentation pages to their use cases in tutorials anad
     guides for easier navigation across resources.
 
 - **Documentation Overhaul**:
-
   - Overhauled the SplashKit documentation pages with a reorganized structure and new usage example
     guides to enhance accessibility and usability.
 
 - **Enum Syntax Support Across Multiple Languages**:
-
   - Added support for displaying enum syntax across multiple languages on the website, improving
     accessibility for diverse users.
 
 - **Updated README Files**:
-
   - Updated multiple README files with additional information and a more structured format to
     improve clarity.
 
 - **SplashKit Blog**:
-
   - Introduced the SplashKit Blog as a proof of concept to centralize updates and news, enhancing
     accessibility for users.
 
 - **Updated Installation Guides**:
-
   - Updated installation guides to streamline the process and added support for multiple Linux
     distributions. Expanded VS Code installation guides now include Python-specific extensions.
 
 - **Python Developer Tools**:
-
   - Added Python tools to language-specific pages for all operating systems, broadening support for
     Python developers.
 
 - **Linux Compatibility Fixes**:
-
   - Addressed a Linux bash/zsh compatibility issue on the troubleshooting page, improving overall
     flow and usability.
 
 - **Community Engagement Tools**:
-
   - Established a blog and contributor resources to encourage community feedback and tutorial
     contributions.
 
 - **SplashKit Online Integration**:
-
   - Integrated SplashKit Online into the Usage Examples pages.
   - A dedicated SplashKit Online feature page has also been added to allow users to directly
     interact with SplashKit Online.
@@ -839,13 +813,11 @@ repositories for the relevant teams.
     and future tutorial pages.
 
 - **Custom Accordion Button**:
-
   - Added a custom accordion button that allows users to add their own content as a slot. Users can
     also apply custom styling to both the button and its content, offering greater flexibility and
     control over the presentation.
 
 - **SplashKit Physics Tutorial Series Enhancements**:
-
   - Reviewed and adjusted existing physics tutorials to improve clarity, update content, and ensure
     alignment with project standards.
   - Introduced 3 new raycasting tutorials:
@@ -856,7 +828,6 @@ repositories for the relevant teams.
     Online functionality.
 
 - **SplashKit vs No SplashKit Comparison Programs In Support of _Beyond SplashKit_ Initiative**:
-
   - Added various programs to compare SplashKit versus No SplashKit versions including Math,
     Cryptography, Graphics, and Audio.
     - The SplashKit versions demonstrate the abstraction provided by the SDK to simplify complexity
@@ -868,12 +839,10 @@ repositories for the relevant teams.
       SplashKit files:
 
 - **Algolia DocSearch Integration**:
-
   - Integrated Algolia DocSearch into the SplashKit website for improved search functionality with
     custom ranking and new features to save recent and favorite results.
 
 - **Colour Generation and Selection Tools**:
-
   - **Colour Generator**: A tool for visualising and generating precise RGB(A) and HSB colour
     values, with real-time visual feedback. The tool also provides corresponding SplashKit functions
     in C++, C#, and Python for easy integration.
@@ -881,7 +850,6 @@ repositories for the relevant teams.
     users to select colours and see how to implement them in their projects.
 
 - **Create New Troubleshooting Page for MacOS: zshrc Issue**:
-
   - Addressed the ModuleNotFoundError issue by guiding users to update their .zshrc file to properly
     link to the Homebrew-installed Python version.
 
@@ -892,32 +860,26 @@ repositories for the relevant teams.
 #### SplashKit Online
 
 - **Notification System Updates**:
-
   - Resolved visibility issues with compilation and runtime alerts, improving user experience by
     ensuring notifications remain visible throughout processes.
 
 - **SplashKit Submodule Sync**:
-
   - Synced SplashKit Online's submodule reference with the latest version of SplashKit, ensuring
     compatibility with the most recent features and bug fixes.
 
 - **Action Queues Implementation**:
-
   - Implemented action queues to address concurrency issues, enabling synchronous execution of
     actions and enhancing stability within the IDE.
 
 - **Project Loading via URL**:
-
   - Enabled users to load project zip files directly via a URL, simplifying project loading and
     improving ease of use for developers.
 
 - **SplashKit Online IDE Integration**:
-
   - Integrated the SplashKit Online IDE into the main website, providing seamless access and
     interaction with the library directly from the site.
 
 - **Load Time Improvements**:
-
   - Optimized loading times by storing pre-decompressed versions of assets, improving performance
     and user experience during project loading.
 
@@ -1368,14 +1330,12 @@ repositories for the relevant teams.
 #### Game Development
 
 - **Establish Standardised Implementation Patterns**:
-
   - Enforce the decoupling of data/functionality and state/render patterns to improve modularity and
     maintainability.
   - Develop and document a prescribed implementation pattern to ensure consistency and quality
     across all projects.
 
 - **Develop a "10 Minute Game"**:
-
   - Collaboratively plan and execute the development of a simple game (e.g., idle game, tower
     defence, or survivor.io-like).
   - Prioritise implementing core game mechanics in the first sprint to establish a functional
@@ -1387,19 +1347,16 @@ repositories for the relevant teams.
     the core game types.
 
 - **Iterate on Prescribed Patterns**:
-
   - Adjust and refine the implementation pattern based on student feedback and practical
     experiences.
 
 - **Generate Development Artifacts**:
-
   - Create comprehensive documentation on the implementation of discrete game systems, including:
     - Terrain generation systems (e.g., IDW, random walk, noise-based techniques).
     - 2D light marching.
     - Threaded state update and render patterns.
 
 - **Improve Documentation**:
-
   - Address the lack of adequate documentation for existing games to significantly reduce onboarding
     time for new contributors.
   - For completed games, create:
@@ -1410,7 +1367,6 @@ repositories for the relevant teams.
     reflect current focus areas and ensuring all documentation is easy to find and navigate.
 
 - **Complete Core Functionality of Incomplete Games**:
-
   - Focus on finishing key core functionalities for games currently in development (e.g., _Sky
     Surge_, _Single Combat_).
 
@@ -1421,28 +1377,23 @@ repositories for the relevant teams.
 #### Arcade Machine
 
 - **Consolidate Documentation**:
-
   - Centralise all documentation in a single location or repository to improve accessibility and
     ensure consistency across projects.
 
 - **Add Additional Modes to the Arcade Machine Software**:
-
   - **Kiosk Mode**: Display only published games, making it ideal for showcasing at events or
     exhibitions.
   - **Normal Mode**: Show both published and test games, catering to developers and testers.
 
 - **Implement Voting System**:
-
   - Integrate a voting system to give greater significance to the star ranking currently available
     on the machines, enhancing user engagement and feedback mechanisms.
 
 - **Correct C# Compatibility for ARM**:
-
   - Address the issue of .NET not running correctly in the emulated Raspberry Pi environment used
     for C++ games, ensuring seamless compatibility for C# games.
 
 - **Implement Versioning for Compiled Games**:
-
   - Introduce versioning to manage updates effectively, reducing potential issues with game
     compatibility and ensuring a smooth update process.
 
