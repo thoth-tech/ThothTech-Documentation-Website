@@ -453,3 +453,37 @@ process:
 Navigating to `localhost:3000` should now show you the Rails page, but if it
 does not, use your troubleshooting prowess to try and understand what has gone
 wrong.
+
+## Web rebase
+
+The second example in this documentation will be rebasing a Web branch.
+
+### Conflicts
+
+#### `doubtfire.states.ts`
+
+Ensure any imports you add to this file are found in the `10.0.x` branch.
+Follow each of the imports in this file to the corresponding subdirectory
+and file within the `src/app/` directory.
+
+Likewise, ensure any exports from this file are:
+
+1) Defined in the file as constants, and
+2) Listed in the exports at the bottom of the file.
+
+#### `doubtfire-angularjs.module.ts`,
+
+This file links to each of the javascript files that will be compiled from
+`.coffee` files that exist within the `/src/app` directory. These represent
+_unmigrated components_ that have not yet made the jump from AngularJS to
+Angular17. Any migrated components that do not exist in `10.0.x` will need
+to be removed from this file.
+
+#### `doubtfire-angular.module.ts`
+
+This file links to new Angular components. If lines are added or removed from
+here, make sure the components reflect a similar reality in `10.0.x`.
+
+For the most part, the best idea is to keep any new lines for this file. If
+there are problems later introduced by having any specific line, those may
+require deeper analysis and commenting.
