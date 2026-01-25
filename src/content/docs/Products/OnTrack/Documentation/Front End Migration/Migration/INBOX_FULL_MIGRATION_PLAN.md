@@ -1,9 +1,14 @@
+---
+title: Full Angular Migration Plan - Inbox Component
+description: Complete migration plan for inbox component including parent dependency chain
+---
+
 # Full Angular Migration Plan: Inbox Component
 
 **Date:** January 14, 2026  
-**By:** Husainuddin Mohammed, 223380186
+**By:** Husainuddin Mohammed, 223380186  
 **Task:** Complete full Angular migration for units/tasks/inbox  
-**Approach:** Bottom-up migration (parents first, then child)
+**Approach:** Bottom-up migration (parents first, then child)  
 **Task Location:** Teams Thoth Tech group → OnTrack in main channels → OnTrack Planner Board (top) → Filter by 'Frontend - Angular/Tailwind/Typescript' tag → Task: T3 2025: Investigate partial migration - tasks\inbox\inbox.coffee
 
 ---
