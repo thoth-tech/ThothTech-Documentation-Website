@@ -4,7 +4,7 @@ WORKDIR /site
 
 COPY package*.json /site/
 
-RUN apt-get update && apt-get upgrade
+RUN apt-get update && apt-get upgrade -y
 RUN apt-get install git curl -y
 
 RUN npm install

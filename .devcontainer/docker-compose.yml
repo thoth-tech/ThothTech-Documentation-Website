@@ -1,5 +1,5 @@
 services:
-  astro-dev:
+  thoth-astro-dev:
     build:
       context: ../
       dockerfile: Dockerfile
@@ -7,6 +7,6 @@ services:
       - "4321:4321"
     volumes:
       - ..:/site
-      - astro-node_modules:/site/node_modules
+      - thoth-astro-node_modules:/site/node_modules
 volumes:
-  astro-node_modules:
+  thoth-astro-node_modules:
