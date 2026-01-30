@@ -7,76 +7,101 @@ description: Investigation report for the inbox component migration from Angular
 
 **Date:** January 08, 2026  
 **By:** Husainuddin Mohammed, 223380186  
-**Task:** Complete full Angular migration for units/tasks/inbox  
-**Approach:** Bottom-up migration (parents first, then child)  
-**Task Location:** Teams Thoth Tech group → OnTrack in main channels → OnTrack Planner Board (top) → Filter by 'Frontend - Angular/Tailwind/Typescript' tag → Task: T3 2025: Investigate partial migration - tasks\inbox\inbox.coffee
-
-## Current Status (as of Jan 8, 2026)
-
-### What Exists:
-- ✅ New Angular component files (`inbox.component.ts`, `.html`, `.scss`, `.spec.ts`)
-- ✅ Old AngularJS files (`inbox.coffee`, `inbox.tpl.html`, `inbox.scss`)
-- ⚠️ **Both routing systems are present and conflicting**
-
-### Issue Identified:
-The Angular component (`InboxComponent`) was created but **depends on data from AngularJS parent scopes**:
-- Expects `@Input() unit: Unit`
-- Expects `@Input() unitRole: UnitRole`  
-- Expects `@Input() taskData: { source, selectedTask, taskKey, onSelectedTaskChange, taskDefMode }`
-
-These are currently provided by:
-- Parent state `units/index` (provides `unit`, `unitRole`)
-- Parent state `units/tasks` (provides `taskData` object with callbacks)
-
-### The Problem:
-Creating a standalone Angular route requires either:
-1. **Option A:** Keep AngularJS parent states and make inbox a hybrid child
-2. **Option B:** Refactor component to fetch its own data (like Portfolios/Rollover do)
-
-### Current App Behavior:
-- The AngularJS route is still active (registered in `inbox.coffee`)
-- The app loads `inbox.tpl.html` which renders `<f-inbox>` component
-- The component receives data from AngularJS parent scope
-
-### What Was Done Today (08/01/2026):
-- Added `InboxState` to `doubtfire.states.ts` (creates routing conflict)
-- This new state doesn't provide required inputs → component won't work
-
-## My Recommendations:
-
-### Option 1: Complete Hybrid Migration (Simpler)
-1. Keep Angular state as child of AngularJS `units/tasks` parent
-2. Remove only: `inbox.coffee` registration
-3. Keep: AngularJS parent states intact
-4. Test thoroughly
-
-### Option 2: Full Angular Migration (Proper, but more work)
-1. Refactor `InboxComponent` to not require parent scope inputs
-2. Add resolvers to fetch `unit`, `unitRole`, `taskData` in the state
-3. Handle `taskData` callbacks differently (use services instead of scope)
-4. Remove all AngularJS files
-
-## Files to Eventually Remove:
-- `src/app/units/states/tasks/inbox/inbox.coffee`
-- `src/app/units/states/tasks/inbox/inbox.tpl.html`
-- `src/app/units/states/tasks/inbox/inbox.scss` (old one, keep inbox.component.scss)
-- Remove `'doubtfire.units.states.tasks.inbox'` from `tasks.coffee` module deps
-
-## Questions for Project Lead:
-1. Should we do hybrid migration (keep AngularJS parents) or full Angular?
-2. Is refactoring the component in scope for this task?
-3. How much time is allocated for this migration?
+**Task:** Investigate inbox component migration from AngularJS to Angular
 
 ---
 
-## Summary of Approaches
+## What I Found
 
-### Hybrid Approach
-Keep the AngularJS parent states and only migrate the inbox child route. 
-The component still gets data through scope inheritance. Less work but not a complete migration - we'd need to 
-revisit this later when the parents are migrated.
+The inbox component has already been migrated to Angular (`InboxComponent`), but it can't work standalone because it depends on data from two AngularJS parent states.
 
-### Full Angular Approach  
-Completely remove AngularJS dependencies by refactoring the component to fetch its own data. 
-This is the proper solution but requires migrating the parent states first (units/index and units/tasks), 
-which haven't been migrated yet. More work and currently blocked by dependencies.
+**Component dependency diagram:**
+```
+units/index (AngularJS parent)
+    ↓ provides: unit, unitRole
+units/tasks (AngularJS parent)
+    ↓ provides: taskData
+inbox (Angular component - already exists)
+    ↓ needs all the above data
+```
+
+The Angular component exists, but the parents feeding it data are still AngularJS.
+
+---
+
+## Current State
+
+**What works:**
+- Angular InboxComponent exists (`.component.ts`, `.html`, `.scss`)
+- Old AngularJS files still present (`.coffee`, `.tpl.html`)
+- App loads via AngularJS route → renders Angular component with scope data
+
+**What doesn't work:**
+- Can't create standalone Angular route
+- Component expects `@Input()` data that comes from AngularJS parent scopes
+- Creating Angular state without parents causes component to break
+
+---
+
+## The Problem
+
+InboxComponent requires these inputs:
+- `unit: Unit` (from units/index parent)
+- `unitRole: UnitRole` (from units/index parent)
+- `taskData` object (from units/tasks parent)
+
+Without the parent data, the component has nothing to display.
+
+---
+
+## Two Approaches
+
+### Approach 1: Keep Parents (Partial Migration)
+**What:** Keep AngularJS parents, only migrate inbox routing
+**Pros:** Quick, minimal changes
+**Cons:** Still dependent on AngularJS, need to revisit later
+**Files to remove:** Just `inbox.coffee` and `.tpl.html`
+
+### Approach 2: Migrate Everything (Complete Migration)
+**What:** Migrate both parent states first, then inbox
+**Pros:** Clean, fully Angular, no AngularJS dependencies
+**Cons:** More work, needs parent migration first
+**Files to remove:** All inbox AngularJS files after parents done
+
+---
+
+## Recommended Path
+
+**Approach 2** is the right solution. Here's why:
+
+Both parent states (`units/index` and `units/tasks`) need migration anyway. If we do partial migration now, we'll have to come back and redo work later when parents are migrated.
+
+**Migration order:**
+1. Migrate units/index parent
+2. Migrate units/tasks parent  
+3. Clean up inbox (just delete old files)
+
+This is detailed in the full migration plan document.
+
+---
+
+## Current Files
+
+**Angular (keep):**
+- `inbox.component.ts`
+- `inbox.component.html`
+- `inbox.component.scss`
+- `inbox.component.spec.ts`
+
+**AngularJS (delete after parent migration):**
+- `inbox.coffee`
+- `inbox.tpl.html`
+- `inbox.scss` (old version)
+
+---
+
+## Key Insight
+
+The inbox isn't really blocked by its own complexity - it's blocked by parent dependencies. Once parents are migrated to Angular, finishing inbox is just cleanup (delete old files).
+
+The real work is in the parent migrations, which is covered in the full migration plan.
