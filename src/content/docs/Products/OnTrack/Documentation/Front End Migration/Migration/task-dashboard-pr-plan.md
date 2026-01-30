@@ -1,163 +1,143 @@
 ---
 title: Task-Dashboard Migration PR Plan
-description: Detailed plan for completing the task-dashboard migration in 5 separate PRs
+description: Plan for completing the task-dashboard migration
 ---
 
 # Task-Dashboard Migration - PR Plan
 
 **Created:** January 19, 2026  
-**Created by:** Husainuddin Mohammed, 223380186  
-**Based on:** Investigation findings  
-**Location:** Teams Thoth Tech group → OnTrack in main channels → OnTrack Planner Board (top) → Filter by 'Frontend - Angular/Tailwind/Typescript' tag → Task: 'T3 2025: Investigate partial migration - task-dashboard.coffee'
+**Created by:** Husainuddin Mohammed, 223380186
 
 ---
 
-## Overview
+## Approach: 2 PRs
 
-This plan breaks down the task-dashboard migration completion into 5 separate PRs. Each PR is small, testable, and can be reviewed independently.
+After analyzing the code dependencies, I'm proposing 2 PRs instead of splitting this into many small ones.
 
 ---
 
-## PR 1: Investigation & Documentation
+## PR 1: Investigation & Documentation 
 
-**Branch:** `investigate/task-dashboard-migration` ✅ (CURRENT)  
-**Dependencies:** None  
+**Branch:** `investigate/task-dashboard-migration` (CURRENT)  
 **Status:** Complete
 
-**What:**
-- Document current state
-- Create investigation report
-- Create this PR plan
+Documents the current state and migration plan for next cohort.
 
 **Files:**
 - `task-dashboard-investigation.md`
 - `task-dashboard-pr-plan.md`
 
-**Changes:** Documentation only, no code changes
-
 ---
 
-## PR 2: Update dashboard template to use Angular components
+## PR 2: Complete Migration
 
-**Branch:** `migrate/dashboard-angular-components`  
-**Dependencies:** None (can start after PR 1)  
+**Branch:** `migrate/complete-task-dashboard`  
 **Status:** Not Started
 
-**What:**
-Update the AngularJS template to use new Angular component tags
+**Changes needed:**
 
-**Changes:**
-- `dashboard.tpl.html`:
-  - Change `<task-dashboard>` to `<f-task-dashboard>`
-  - Change `<student-task-list>` to `<f-student-task-list>`
-  - Change `<progress-dashboard>` to `<f-progress-dashboard>`
+1. **Update template** (`dashboard.tpl.html`):
+   ```diff
+   - <task-dashboard task="taskData.selectedTask"></task-dashboard>
+   + <f-task-dashboard [task]="taskData.selectedTask"></f-task-dashboard>
+   ```
 
-**Testing:**
-- Load dashboard and verify it works
-- Select different tasks
-- Check all cards display correctly
+2. **Update state** (`doubtfire.states.ts`):
+   - Register Angular component route
+   - Remove old AngularJS state
 
----
+3. **Clean up module** (`doubtfire-angularjs.module.ts`):
+   - Remove imports for 9 old files
 
-## PR 3: Migrate dashboard state to Angular
+4. **Delete old files** (9 total):
+   - task-dashboard: `.coffee`, `.tpl.html`, `.scss`
+   - student-task-list: `.coffee`, `.tpl.html`, `.scss`
+   - dashboard: `.coffee`, `.tpl.html`
+   - `directives.coffee`
 
-**Branch:** `migrate/dashboard-state`  
-**Dependencies:** ⚠️ Requires PR 2 merged  
-**Status:** Not Started
-
-**What:**
-Fully migrate the dashboard state from AngularJS to Angular routing
-
-**Changes:**
-- Update `doubtfire.states.ts` - register Angular dashboard route
-- Remove old AngularJS state registration
-- Verify `project-dashboard.component.ts` handles routing
-
-**Testing:**
-- Navigate to dashboard from different routes
-- Direct URL navigation
-- Browser back/forward buttons
-- Page refresh while on dashboard
+5. **Update docs** (`README.md`):
+   - Mark completed: dashboard.coffee, directives.coffee, task-dashboard.coffee
 
 ---
 
-## PR 4: Delete old AngularJS files
-
-**Branch:** `cleanup/remove-old-dashboard-files`  
-**Dependencies:** ⚠️ Requires PR 3 merged  
-**Status:** Not Started
-
-**What:**
-Remove all old AngularJS files that are no longer needed
-
-**Files to delete:**
-- `task-dashboard.coffee`
-- `task-dashboard.tpl.html`
-- `task-dashboard.scss`
-- `student-task-list.coffee`
-- `student-task-list.tpl.html`
-- `student-task-list.scss`
-- `dashboard.coffee`
-- `dashboard.tpl.html`
-- `directives.coffee`
-
-**Files to update:**
-- `doubtfire-angularjs.module.ts` - remove imports of deleted files
-
-**Testing:**
-- Full dashboard regression test
-- Check console for errors
-- Verify build succeeds
-
----
-
-## PR 5: Update README
-
-**Branch:** `docs/update-migration-checklist`  
-**Dependencies:** ⚠️ Requires PR 4 merged  
-**Status:** Not Started
-
-**What:**
-Update README migration progress
-
-**Changes to README.md:**
-- Change `- [ ]` to `- [x]` for:
-  - `dashboard.coffee`
-  - `directives.coffee`
-  - `task-dashboard.coffee`
-
----
-
-## Timeline
+## Why These Changes Must Be Together
 
 ```
-PR 1 (Docs) → Can merge immediately
-   ↓
-PR 2 (Template) → Can start after PR 1
-   ↓
-PR 3 (State) → Needs PR 2 merged first
-   ↓
-PR 4 (Cleanup) → Needs PR 3 merged first
-   ↓
-PR 5 (README) → Needs PR 4 merged first
+Change 1: Update template to <f-task-dashboard>
+    ↓
+    └─→ If we stop here, state registration still points to old directive
+        Result: Routing fails ✗
+
+Change 2: Update state registration
+    ↓
+    └─→ If we stop here, module still imports old files
+        Result: Build warnings ✗
+
+Change 3: Remove old imports
+    ↓
+    └─→ If we stop here, old files still exist but aren't used
+        Result: Confusing codebase ✗
+
+Change 4: Delete old files
+    ✓ Complete migration
 ```
 
----
-
-## Testing Checklist (for each PR)
-
-- [ ] Dashboard loads without errors
-- [ ] Can select tasks
-- [ ] All cards display correctly
-- [ ] Navigation works
-- [ ] Browser console clean
-- [ ] Build succeeds
+**These are interdependent, not independent tasks.** Splitting them creates broken intermediate states that don't work or make sense.
 
 ---
 
-## Notes
+## Dependency Flow
 
-- Each PR is small and reversible
-- Low risk approach
-- Can stop at any point if issues arise
-- Most work already done by previous developer
+```
+Current State:
+  dashboard.tpl.html → <task-dashboard> → AngularJS directive
+                                              ↓
+                                         Old .coffee files
+                                              ↓
+                                         Works but outdated
+
+Target State:
+  dashboard.tpl.html → <f-task-dashboard> → Angular component
+                                                ↓
+                                           7 card components
+                                                ↓
+                                           Old files deleted ✓
+```
+
+**Risk if split:** Each intermediate step leaves the codebase in a half-migrated state.
+
+---
+
+## Testing Plan
+
+**Navigation testing:**
+- Direct URL: `/projects/123/dashboard`
+- From project list → dashboard
+- Dashboard → select task → back to dashboard
+- Browser refresh while on dashboard
+- Back/forward buttons
+
+**Functionality testing:**
+- All 7 card components render
+- Task switching works
+- Data loads correctly
+- Console has no errors
+
+**Build testing:**
+- Build succeeds
+- No import errors
+- No missing file errors
+
+---
+
+## Rollback Strategy
+
+If issues arise, revert the single PR. Old files remain in git history and can be restored quickly.
+
+**Why atomic changes matter:** One revert fixes everything vs. figuring out which of 5 PRs to revert.
+
+---
+
+## Key Insight for Next Cohort
+
+Search the codebase for `<task-dashboard>` before starting - make sure dashboard.tpl.html is the only place using the old tag. Update module imports before deleting files to avoid build failures.
