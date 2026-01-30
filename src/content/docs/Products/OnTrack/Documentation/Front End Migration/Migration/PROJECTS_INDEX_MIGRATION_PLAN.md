@@ -52,13 +52,14 @@ matches the legacy implementation.
 
 ## Child State Verification Matrix
 
-| Child State | Project | Unit | Role | Verified |
-|------------|---------|------|------|----------|
-| dashboard  | Yes     | Yes  | Yes  | ⬜ |
-| tutorials  | Yes     | Yes  | Yes  | ⬜ |
-| portfolio  | Yes     | Yes  | Yes  | ⬜ |
-| groups     | Yes     | Yes  | Yes  | ⬜ |
-| outcomes   | Yes     | Yes  | Yes  | ⬜ |
+## Child State Verification Checklist
+
+- [ ] **dashboard** — Project: Yes, Unit: Yes, Role: Yes
+- [ ] **tutorials** — Project: Yes, Unit: Yes, Role: Yes
+- [ ] **portfolio** — Project: Yes, Unit: Yes, Role: Yes
+- [ ] **groups**    — Project: Yes, Unit: Yes, Role: Yes
+- [ ] **outcomes**  — Project: Yes, Unit: Yes, Role: Yes
+
 
 ## Testing Checklist
 
