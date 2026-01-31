@@ -12,8 +12,9 @@ Area: Projects module – index (parent) state
 ## Objective
 
 Finalise the migration of the `projects/index` parent state by validating the
-existing Angular implementation and safely removing legacy AngularJS files. This
-plan applies only to the parent state. Child state migrations are out of scope.
+existing Angular implementation and safely removing legacy AngularJS files.
+This plan applies only to the parent state. Child state migrations are out of
+scope.
 
 ## Current Status
 
@@ -50,32 +51,32 @@ Re-test all child routes, confirm there are no duplicate route registrations,
 verify that subscriptions are cleaned up correctly, and confirm that behaviour
 matches the legacy implementation.
 
-
-
 ## Child State Verification Checklist
 
 - [x] **dashboard** — Project: Yes, Unit: Yes, Role: Yes
 - [x] **tutorials** — Project: Yes, Unit: Yes, Role: Yes
 - [x] **portfolio** — Project: Yes, Unit: Yes, Role: Yes
-- [x] **groups**    — Project: Yes, Unit: Yes, Role: Yes
-- [x] **outcomes**  — Project: Yes, Unit: Yes, Role: Yes
-
+- [x] **groups** — Project: Yes, Unit: Yes, Role: Yes
+- [x] **outcomes** — Project: Yes, Unit: Yes, Role: Yes
 
 ## Testing Checklist
 
-Routing:
+### Routing
+
 - Valid project loads
 - Invalid project redirects safely
 - Deep linking works
 - Page refresh works
 
-Context:
+### Context
+
 - `project` available to child states
 - `unit` available to child states
 - `unitRole` available to child states
 - Global view context set correctly
 
-Stability:
+### Stability
+
 - No console errors
 - No routing conflicts
 - No memory leaks
