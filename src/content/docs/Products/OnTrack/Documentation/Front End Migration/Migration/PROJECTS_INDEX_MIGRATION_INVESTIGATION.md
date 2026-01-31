@@ -5,22 +5,21 @@ description: Investigation of the projects/index parent state migration from Ang
 
 # Projects Index Migration Investigation
 
-Date: January 27, 2026  
-Author: Jeffy Sam  
+Date: January 27, 2026\
+Author: Jeffy Sam\
 Area: Projects module – index (parent) state
 
 ## Purpose
 
 This document investigates the current state of the projects/index parent state
 migration from AngularJS to Angular. The goal is to confirm what has already
-been migrated, identify what remains incomplete, and assess whether the state
-is safe to finalise without breaking dependent child states.
+been migrated, identify what remains incomplete, and assess whether the state is
+safe to finalise without breaking dependent child states.
 
 ## Current State of the Migration
 
-The Angular implementation of the projects/index parent state already exists
-and is functionally complete. The following Angular files are present and
-active:
+The Angular implementation of the projects/index parent state already exists and
+is functionally complete. The following Angular files are present and active:
 
 - index.component.ts
 - index.component.html
@@ -39,8 +38,8 @@ the following files:
 - index.coffee
 - index.tpl.html (if present)
 
-As long as these legacy files remain, both AngularJS and Angular
-implementations may coexist.
+As long as these legacy files remain, both AngularJS and Angular implementations
+may coexist.
 
 ## Responsibilities of the Parent State
 
