@@ -34,9 +34,9 @@ The Units module forms a **three-level routing hierarchy**:
 units (module root)
 └─ units/index (abstract parent)
 ├─ units/tasks (intermediate parent)
-│ ├─ inbox
-│ ├─ definition
-│ └─ viewer
+│ └─ inbox
+├─ definition
+├─ viewer
 ├─ admin
 ├─ groups
 ├─ students/list
