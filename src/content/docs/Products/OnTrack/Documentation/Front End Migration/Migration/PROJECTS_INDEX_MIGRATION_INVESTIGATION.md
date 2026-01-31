@@ -44,20 +44,28 @@ may coexist.
 ## Responsibilities of the Parent State
 
 The `projects/index` parent state provides shared context for all project-related
-child states. Its responsibilities include loading the project using the route
-`projectId`, resolving the associated unit, resolving the current user’s role,
-setting the global application view context to `PROJECT`, and exposing `project`,
-`unit`, and `unitRole` to child states.
+child states. Its responsibilities include:
+
+- Loading the project using the route `projectId`
+- Resolving the associated unit
+- Resolving the current user’s role
+- Setting the global application view context to `PROJECT`
+- Exposing `project`, `unit`, and `unitRole` to child states
 
 These responsibilities are fully implemented in the Angular version and mirror
 the legacy behaviour.
 
 ## AngularJS vs Angular Behaviour
 
-The Angular implementation preserves all functional behaviour while introducing
-explicit lifecycle management, explicit subscription cleanup, strong typing via
-TypeScript, observable-based route parameter handling, and reduced reliance on
-implicit scope inheritance. No functional differences have been identified.
+The Angular implementation preserves all functional behaviour while introducing:
+
+- Explicit lifecycle management
+- Explicit subscription cleanup
+- Strong typing via TypeScript
+- Observable-based route parameter handling
+- Reduced reliance on implicit scope inheritance
+
+No functional differences have been identified.
 
 ## Dependent Child States
 
@@ -86,7 +94,7 @@ Before legacy files can be safely removed, the following must be verified:
 
 ## Files in Scope
 
-Angular files currently in use:
+### Angular files currently in use
 
 - `index.component.ts`
 - `index.component.html`
@@ -94,7 +102,7 @@ Angular files currently in use:
 - `index.state.ts`
 - `index.module.ts`
 
-Legacy files pending removal:
+### Legacy files pending removal
 
 - `index.coffee`
 - `index.tpl.html`
