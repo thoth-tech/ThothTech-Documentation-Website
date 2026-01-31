@@ -50,15 +50,15 @@ Re-test all child routes, confirm there are no duplicate route registrations,
 verify that subscriptions are cleaned up correctly, and confirm that behaviour
 matches the legacy implementation.
 
-## Child State Verification Matrix
+
 
 ## Child State Verification Checklist
 
-- [ ] **dashboard** — Project: Yes, Unit: Yes, Role: Yes
-- [ ] **tutorials** — Project: Yes, Unit: Yes, Role: Yes
-- [ ] **portfolio** — Project: Yes, Unit: Yes, Role: Yes
-- [ ] **groups**    — Project: Yes, Unit: Yes, Role: Yes
-- [ ] **outcomes**  — Project: Yes, Unit: Yes, Role: Yes
+- [x] **dashboard** — Project: Yes, Unit: Yes, Role: Yes
+- [x] **tutorials** — Project: Yes, Unit: Yes, Role: Yes
+- [x] **portfolio** — Project: Yes, Unit: Yes, Role: Yes
+- [x] **groups**    — Project: Yes, Unit: Yes, Role: Yes
+- [x] **outcomes**  — Project: Yes, Unit: Yes, Role: Yes
 
 
 ## Testing Checklist
