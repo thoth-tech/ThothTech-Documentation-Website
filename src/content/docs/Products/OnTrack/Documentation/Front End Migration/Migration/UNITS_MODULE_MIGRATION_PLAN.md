@@ -31,28 +31,20 @@ The goal is parity with the existing implementation.
 
 The Units module forms a **three-level routing hierarchy**:
 
-import { FileTree } from '@astrojs/starlight/components';
 
-<FileTree>
-  <FileTree.Item>
-    units (module root)
-    <FileTree.Item>
-      units/index (abstract parent)
-      <FileTree.Item>
-        units/tasks (intermediate parent)
-        <FileTree.Item>inbox</FileTree.Item>
-        <FileTree.Item>definition</FileTree.Item>
-        <FileTree.Item>viewer</FileTree.Item>
-      </FileTree.Item>
-      <FileTree.Item>admin</FileTree.Item>
-      <FileTree.Item>groups</FileTree.Item>
-      <FileTree.Item>students/list</FileTree.Item>
-      <FileTree.Item>students/portfolios</FileTree.Item>
-      <FileTree.Item>analytics</FileTree.Item>
-      <FileTree.Item>rollover</FileTree.Item>
-    </FileTree.Item>
-  </FileTree.Item>
-</FileTree>
+
+units (module root)
+└─ units/index (abstract parent)
+   ├─ units/tasks (intermediate parent)
+   │  ├─ inbox
+   │  ├─ definition
+   │  └─ viewer
+   ├─ admin
+   ├─ groups
+   ├─ students/list
+   ├─ students/portfolios
+   ├─ analytics
+   └─ rollover
 
 
 
