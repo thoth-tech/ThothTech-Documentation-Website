@@ -31,18 +31,21 @@ The goal is parity with the existing implementation.
 
 The Units module forms a **three-level routing hierarchy**:
 
+
 units (module root)
 └─ units/index (abstract parent)
-├─ units/tasks (intermediate parent)
-│ └─ inbox
-├─ definition
-├─ viewer
-├─ admin
-├─ groups
-├─ students/list
-├─ students/portfolios
-├─ analytics
-└─ rollover
+   ├─ units/tasks (intermediate parent)
+   │ └─ inbox
+   ├─ definition
+   ├─ viewer
+   ├─ admin
+   ├─ groups
+   ├─ students/list
+   ├─ students/portfolios
+   ├─ analytics
+   └─ rollover
+
+
 
 Because child states inherit context from their parents, **migration must proceed top-down**.
 
