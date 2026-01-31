@@ -9,7 +9,6 @@ title: Troubleshooting Doubtfire Setup
    > You need to change “docker compose” of file run-full.sh in doubtfire-deploy/development
 
 2. doubtfire-web doesn’t compile successfully:
-
    - Open terminal
    - Head to folder doubtfire-deploy/development by cd
    - Run this in 1 line:
@@ -20,7 +19,6 @@ title: Troubleshooting Doubtfire Setup
    ```
 
 3. doubtfire-api don’t run and exit with code 0/1.
-
    - Open terminal
    - Head to folder doubtfire-deploy/development by cd
    - Run this in 1 line:

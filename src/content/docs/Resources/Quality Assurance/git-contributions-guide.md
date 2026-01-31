@@ -181,7 +181,6 @@ message writing.
 ### Additional Guidelines
 
 - **Use the imperative mood in your commit message subject line**:
-
   - "Fix a bug" and **not** "Fixed a bug"
   - "Change the behavior of Y" and **not** "Changed the behavior of Y"
   - "Add new API methods" and **not** "Added new API methods"
@@ -275,7 +274,6 @@ By following these guidelines, we maintain code quality and foster collaboration
 ### Start a New Piece of Work
 
 1. **Sync Repository and Set Up Your Branch**:
-
    - Ensure your local repository is up-to-date by pulling the latest changes from the remote
      repository.
    - Create a new branch for your feature or task. Follow the
@@ -297,7 +295,6 @@ By following these guidelines, we maintain code quality and foster collaboration
 - `git checkout -b <branch-name>`: Create and switch to a new branch for your work.
 
 2. **Make Changes, Commit, and Push**:
-
    - **Make Changes**: Implement your feature or fix in the new branch. Ensure your changes are
      tested and meet the project requirements.
 
@@ -316,7 +313,6 @@ By following these guidelines, we maintain code quality and foster collaboration
   before committing.
 - `git commit -m "feat(<scope>): <short summary>"`: Commits your changes with a message that briefly
   describes the update. The `<scope>` is optional and indicates the part of the project affected.
-
   - **Push to Origin**: Push your branch to the remote repository. This makes your changes available
     for review and integration.
 
@@ -382,7 +378,6 @@ By following these guidelines, we maintain code quality and foster collaboration
 
    If there are merge conflicts between your branch and the `main` branch, Git will notify you.
    Follow these steps to resolve them:
-
    - **Identify Conflicts**: Conflicted files will be marked with conflict markers (`<<<<<<`,
      `======`, `>>>>>>`) within the files.
    - **Open the Conflicted Files**: Use your code editor to open each conflicted file. Review the
@@ -448,7 +443,6 @@ remote repository, reducing the likelihood of conflicts when you push your own c
 
    If there are merge conflicts between your branch and the `main` branch, Git will notify you.
    Follow these steps to resolve them:
-
    - **Identify Conflicts**: Conflicted files will be marked with conflict markers (`<<<<<<`,
      `======`, `>>>>>>`) within the files.
    - **Open the Conflicted Files**: Use your code editor to open each conflicted file. Review the
