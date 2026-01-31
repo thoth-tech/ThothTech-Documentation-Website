@@ -10,7 +10,6 @@ draft: true
 
 import { Tabs, TabItem } from "@astrojs/starlight/components";
 import { FileTree } from "@astrojs/starlight/components";
-import { Steps } from "@astrojs/starlight/components";
 
 This guide explains how to add a missing language to an existing usage example for the Splashkit
 website.
@@ -26,8 +25,6 @@ When updating an existing usage example with a missing language, your contributi
 ## Updating Usage Examples with Missing Languages
 
 ---
-
-<Steps>
 
 1. ### Reviewing Existing Examples
 
@@ -155,26 +152,26 @@ When updating an existing usage example with a missing language, your contributi
    Add the new files to the `usage-example` folder under the appropriate function category,
    following the existing file structure:
 
-   <FileTree>
-   - public
-     - usage-example
-       - terminal
-         - write_line-1-example-top-level.cs
-         - write_line-1-example-oop.cs
+<FileTree>
 
-   </FileTree>
+- public
+  - usage-example
+    - terminal
+      - write_line-1-example-top-level.cs
+      - write_line-1-example-oop.cs
 
-   For detailed naming and placement rules, refer to [CONTRIBUTING.md] the `CONTRIBUTING.mdx` file
-   which can be found in the SplashKit Startlight. Repo at:
+</FileTree>
 
-   <FileTree>
-   - public
-     - usage-examples
-       - CONTRIBUTING.mdx
+For detailed naming and placement rules, refer to [CONTRIBUTING.md] the `CONTRIBUTING.mdx` file
+which can be found in the SplashKit Startlight. Repo at:
 
-   </FileTree>
+<FileTree>
 
-</Steps>
+- public
+  - usage-examples
+    - CONTRIBUTING.mdx
+
+</FileTree>
 
 ### Next Steps
 

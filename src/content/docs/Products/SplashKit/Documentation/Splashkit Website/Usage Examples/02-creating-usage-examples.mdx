@@ -6,7 +6,6 @@ sidebar:
 ---
 
 import { Tabs, TabItem } from "@astrojs/starlight/components";
-import { Steps } from "@astrojs/starlight/components";
 import { FileTree } from "@astrojs/starlight/components";
 
 This guide explains how to create a usage example for the Splashkit website.
@@ -31,8 +30,6 @@ An initial usage example includes 6 files:
 - Python version
 - Descriptive title for the example, in a text file
 - Screenshot of the output
-
-<Steps>
 
 1. ### Choosing a Function
 
@@ -127,86 +124,84 @@ An initial usage example includes 6 files:
 
    Now that you're done, you should have the following 6 files when completing an initial usage
    example PR:
-   - txt file
-   - C++ file
-   - python file
-   - C# (top-level statements) file
-   - C# (OOP) file
-   - Screenshot of the output
 
-   Now you'll need to rename these before adding them to the Splashkit Starlight.io repo.
+<FileTree>
+  - txt file - C++ file - python file - C# (top-level statements) file - C# (OOP) file - Screenshot
+  of the output
+</FileTree>
 
-   #### Example
+Now you'll need to rename these before adding them to the Splashkit Starlight.io repo.
 
-   Say you've created a `write_line` program. Rename the files as follows:
+#### Example
 
-   ```plaintext
-   write_line-1-example-oop.cs
-   write_line-1-example-top-level.cs
-   write_line-1-example.cpp
-   write_line-1-example.png or .gif
-   write_line-1-example.py
-   write_line-1-example.txt
-   ```
+Say you've created a `write_line` program. Rename the files as follows:
 
-   In a separate pull request, to add to existing examples:
+```plaintext
+write_line-1-example-oop.cs
+write_line-1-example-top-level.cs
+write_line-1-example.cpp
+write_line-1-example.png or .gif
+write_line-1-example.py
+write_line-1-example.txt
+```
 
-   ```plaintext
-   write_line-1-hello-world-beyond.cpp
-   ```
+In a separate pull request, to add to existing examples:
 
-   Now you can add these files to the Splashkit Starlight.io repo. If when you add them you find
-   there is already some files of a usage example using this same function, then you should
-   increment the number in the file name by 1. Furthermore, it is important that you use the
-   function's unique global name for the files names _(This only applies for functions that are
-   overloaded.)_
+```plaintext
+write_line-1-hello-world-beyond.cpp
+```
 
-   Now that your files are named, add all of your files to the `usage-examples` folder under the
-   appropriate function category (e.g., `terminal/`). The location in the Statlight.io repo is:
+Now you can add these files to the Splashkit Starlight.io repo. If when you add them you find there
+is already some files of a usage example using this same function, then you should increment the
+number in the file name by 1. Furthermore, it is important that you use the function's unique global
+name for the files names _(This only applies for functions that are overloaded.)_
 
-   <FileTree>
-   - public
-     - usage-example-files
-       - animations/
-       - audio/
-       - camera/
-       - color/
-       - geometry/
-       - graphics/
-       - input/
-       - interface/
-       - json/
-       - logging/
-       - networking/
-       - physics/
-       - rasberry/
-       - resources_bundles/
-       - resources/
-       - sprites/
-       - terminal/
-         - write_line-1-example-oop.cs
-         - write_line-1-example-top-level.cs
-         - write_line-1-example.cpp
-         - write_line-1-example.png
-         - write_line-1-example.py
-         - write_line-1-example.txt
-       - timers/
-       - utilities/
-       - windows/
+Now that your files are named, add all of your files to the `usage-examples` folder under the
+appropriate function category (e.g., `terminal/`). The location in the Statlight.io repo is:
 
-   </FileTree>
+<FileTree>
 
-   For more information regarding the proper file naming and placement can be found within the repo
-   in the `CONTRIBUTING.mdx`. The location of the file can be found here:
+- public
+  - usage-example-files
+    - animations/
+    - audio/
+    - camera/
+    - color/
+    - geometry/
+    - graphics/
+    - input/
+    - interface/
+    - json/
+    - logging/
+    - networking/
+    - physics/
+    - rasberry/
+    - resources_bundles/
+    - resources/
+    - sprites/
+    - terminal/
+      - write_line-1-example-oop.cs
+      - write_line-1-example-top-level.cs
+      - write_line-1-example.cpp
+      - write_line-1-example.png
+      - write_line-1-example.py
+      - write_line-1-example.txt
+    - timers/
+    - utilities/
+    - windows/
 
-   <FileTree>
-   - public
-     - usage-examples
-       - CONTRIBUTING.mdx
+</FileTree>
 
-   </FileTree>
+For more information regarding the proper file naming and placement can be found within the repo in
+the `CONTRIBUTING.mdx`. The location of the file can be found here:
 
-</Steps>
+<FileTree>
+
+- public
+  - usage-examples
+    - CONTRIBUTING.mdx
+
+</FileTree>
 
 ## Next Steps
 
