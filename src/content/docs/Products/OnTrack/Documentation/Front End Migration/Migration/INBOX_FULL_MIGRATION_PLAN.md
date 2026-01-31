@@ -127,3 +127,4 @@ Each PR needs to verify:
 ## Key Principle
 
 **Bottom-up migration:** Start at the root (units/index), work down to the child (inbox). Each PR is independently testable and valuable even if later ones are delayed.
+
