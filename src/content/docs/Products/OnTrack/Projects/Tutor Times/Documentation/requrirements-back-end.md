@@ -9,9 +9,10 @@ title: Backend Requirements Document
 1. [Introduction](#1-introduction) 1.1 [Purpose](#11-purpose) 1.2 [Scope] (#12-scope) 1.3
    [Intended Audience](#13-intended-audience)
 
-2. [Functional Requirements](#2-functional-requirements) 2.1 [Data Storage] (#21-data-storage) 2.2 [API Endpoints](#22-api-endpoints)
-   2.3 [Authentication and Authorisation](#23-authentication-and-authorisation) 2.4 [Background Jobs/Triggers](#24-background-jobstriggers)
-   2.5 [Data Schema](#25-data-schema)
+2. [Functional Requirements](#2-functional-requirements) 2.1 [Data Storage] (#21-data-storage) 2.2
+   [API Endpoints](#22-api-endpoints) 2.3
+   [Authentication and Authorisation](#23-authentication-and-authorisation) 2.4
+   [Background Jobs/Triggers](#24-background-jobstriggers) 2.5 [Data Schema](#25-data-schema)
 
 3. [Non-Functional Requirements](#3-non-functional-requirements) 3.1 [Performance](#31-performance)
    3.2 [Security](#32-security) 3.3 [Compatibility](#33-compatibility)
@@ -23,7 +24,8 @@ title: Backend Requirements Document
    [Relationships](#52-relationships) 5.3
    [Data Integrity Constraints](#53-data-integrity-constraints)
 
-6. [Testing Requirements](#6-testing-requirements) 6.1 [Unit Testing] (#61-unit-testing) 6.2 [Integration Testing](#62-integration-testing)
+6. [Testing Requirements](#6-testing-requirements) 6.1 [Unit Testing] (#61-unit-testing) 6.2
+   [Integration Testing](#62-integration-testing)
 
 ## 1. Introduction
 
