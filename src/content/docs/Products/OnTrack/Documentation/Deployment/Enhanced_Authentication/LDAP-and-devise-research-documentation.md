@@ -249,11 +249,14 @@ a broad overview will be sufficient for now.
 
 [3] heartcombo (n.d.) Devise [GitHub repository]. Available: <https://github.com/heartcombo/devise>
 
-[4] C. Schiewek (2020, Jul. 24). Devise LDAP Authenticatable [GitHub repository]. Available: <https://github.com/cschiewek/devise_ldap_authenticatable>
+[4] C. Schiewek (2020, Jul. 24). Devise LDAP Authenticatable [GitHub repository]. Available:
+<https://github.com/cschiewek/devise_ldap_authenticatable>
 
-[5] L. D. Hurley (n.d.). Devise Token Auth [GitHub repository]. Available: <https://github.com/lynndylanhurley/devise_token_auth>
+[5] L. D. Hurley (n.d.). Devise Token Auth [GitHub repository]. Available:
+<https://github.com/lynndylanhurley/devise_token_auth>
 
-[6] J. P. Riethmacher (n.d). Angular Token [GitHub repository]. Available: <https://github.com/neroniaky/angular-token>
+[6] J. P. Riethmacher (n.d). Angular Token [GitHub repository]. Available:
+<https://github.com/neroniaky/angular-token>
 
 ---
 

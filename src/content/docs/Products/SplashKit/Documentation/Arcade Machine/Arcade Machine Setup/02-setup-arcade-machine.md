@@ -44,7 +44,6 @@ and one to wpa_supplicant:
 
 1. Modify /etc/network/interfaces to bring the wlan0 interface up automatically, use DHCP and read
    from the wpa_supplicant config
-
    - From the console open the interfaces file:
 
      ```shell
@@ -63,7 +62,6 @@ and one to wpa_supplicant:
    - Press Ctrl+X to exit and press **y** when prompted to save your changes
 
 2. Modify the wpa_supplicant with the custom eduroam config
-
    - From the console open the wpa_supplicant config file:
 
      ```shell
@@ -96,7 +94,6 @@ and one to wpa_supplicant:
    - Press Ctrl+X to exit and press **y** when prompted to save your changes.
 
 3. Reboot and test network connectivity
-
    - Reboot the Raspberry Pi by issuing the below command:
 
      ```shell
@@ -122,7 +119,6 @@ and one to wpa_supplicant:
 
 - You can refer to [this page](https://learn.microsoft.com/en-us/dotnet/iot/deployment) but these
   are the core commands:
-
   1. Run this install script
 
      ```shell
@@ -252,7 +248,6 @@ and one to wpa_supplicant:
    ```
 
 2. First time setup you will need to configure the controller
-
    1. Hold Down any key to start
 
       ![EmulationStation Configure Input Screen](/docs/Splashkit/Applications/Arcade%20Machines/Arcade%20Machine%20Setup/Images/ConfigureInput.png)
@@ -260,7 +255,6 @@ and one to wpa_supplicant:
    2. Press any key to configure input
 
       Recommend the Following for the Arcade Machine the rest can be skipped
-
       - up = up arrow
       - down = down arrow
       - left = left arrow
