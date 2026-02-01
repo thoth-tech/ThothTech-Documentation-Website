@@ -20,6 +20,7 @@ trying to keep things more up to date going forward.
 ---
 
 1. Testing new branch
+
    - We have a special request from our director Andrew that we need to execute some on testing the
      doubtfire-web(quality/entity-service-to-npm) branch with
      doubtfire-api(refactor/entity-service-backend), write up some test scripts for people to run to

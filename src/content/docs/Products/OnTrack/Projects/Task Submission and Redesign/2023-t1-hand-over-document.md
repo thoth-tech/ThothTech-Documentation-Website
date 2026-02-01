@@ -43,22 +43,27 @@ check the markdown docment in
 ### Documentation Oriented
 
 - [x] Update the project epic (make it relevant to T1/2023).
+
   - A modification to a markdown document in
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/tree/main/docs/OnTrack/Task%20Submission%20%26%20Redesign).
 
 - [x] Update the document that outlines the deliverable items of the project.
+
   - A markdown document in
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/blob/main/docs/OnTrack/Task%20Submission%20%26%20Redesign/Deliverables.md).
 
 - [x] Create a T1/2023 hand-over document.
+
   - A markdown document in
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/tree/main/docs/OnTrack/Task%20Submission%20%26%20Redesign).
 
 - [x] Update the project Index (make it relevant to T1/2023).
+
   - A modification to a markdown document in
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/tree/main/docs/OnTrack/Task%20Submission%20%26%20Redesign).
 
 - [x] Update the project Onboarding (make it relevant to T1/2023).
+
   - A modification to a markdown document in
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/tree/main/docs/OnTrack/Task%20Submission%20%26%20Redesign).
 
@@ -71,6 +76,7 @@ check the markdown docment in
 #### Design
 
 - [x] Create frame-by-frame flows of tutors using the primary design.
+
   - Multiple images and a video showcase, as output from [Figma] <https://www.figma.com/>,in
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/tree/main/docs/OnTrack/Task%20Submission%20%26%20Redesign/design_images),
 
@@ -79,6 +85,7 @@ check the markdown docment in
     into tasks regarding specific flows for showing the use of specific features.
 
 - [x] Create `TaskSubmissionEnhancement` new Features to the student-view design.
+
   - Multiple images and a video showcase in
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/tree/main/docs/OnTrack/Task%20Submission%20%26%20Redesign/design_images),
     as output from [Figma](https://www.figma.com/).
@@ -96,10 +103,12 @@ check the markdown docment in
 ### Cyber-security Oriented
 
 - [x] Create a document that outlines the cybersecurity concerns of the current changes.
+
   - A markdown document in
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/tree/main/docs/OnTrack/Task%20Submission%20%26%20Redesign).
 
 - [x] Create a document that introduce administrators to potential cyber security threats or issues.
+
   - A markdown document (or multiple) in
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/tree/main/docs/OnTrack/Task%20Submission%20%26%20Redesign).
 

@@ -33,10 +33,12 @@ The following items will be completed to verify that the project scope has been 
 ### Purely Documentation Oriented
 
 - [x] Modify the project epic and other related documents (make it relevant to T1/2023).
+
   - A modification to a markdown document in
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/tree/main/docs/OnTrack/Task%20Submission%20%26%20Redesign).
 
 - [x] Update the document that outlines the deliverable items of the project.
+
   - A markdown document in
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/tree/main/docs/OnTrack/Task%20Submission%20%26%20Redesign).
 
@@ -49,6 +51,7 @@ The following items will be completed to verify that the project scope has been 
 #### Design
 
 - [x] Create frame-by-frame flows of tutors using the primary design.
+
   - Multiple images and a video showcase, as output from [Figma](https://www.figma.com/), in
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/tree/main/docs/OnTrack/Task%20Submission%20%26%20Redesign/design_images),
 
@@ -57,6 +60,7 @@ The following items will be completed to verify that the project scope has been 
     into tasks regarding specific flows for showing the use of specific features.
 
 - [x] Create `TaskSubmissionEnhancement` new Features to the student-view design.
+
   - Multiple images and a video showcase in
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/tree/main/docs/OnTrack/Task%20Submission%20%26%20Redesign/design_images),
     as output from [Figma](https://www.figma.com/).
@@ -69,6 +73,7 @@ The following items will be completed to verify that the project scope has been 
 #### `TaskSubmissionEnhancement`
 
 - [x] Create a prototype of `TaskSubmissionEnhancement` Component of the Ontrack platform that adds:
+
   - The ability to submit files regardless of the task state.
   - The ability to submit individual task files.
   - The ability to submit optional additional files outside of the task requirements.
@@ -79,10 +84,12 @@ The following items will be completed to verify that the project scope has been 
 ### Cyber-security Oriented
 
 - [x] Create a document that outlines the cybersecurity concerns of the current changes.
+
   - A markdown document in
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/tree/main/docs/OnTrack/Task%20Submission%20%26%20Redesign).
 
 - [x] Create a document that introduce administrators to potential cyber security threats or issues.
+
   - A markdown document (or multiple) in
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/tree/main/docs/OnTrack/Task%20Submission%20%26%20Redesign).
 

@@ -64,8 +64,8 @@ This describes a _persona + need + purpose_.
   role or job title; it includes understanding who they are, how they work, think, and feel.
 - **[wants to]** – Describes the user's _intent_ (what they want to achieve) rather than the feature
   itself. Avoid detailing implementation specifics here.
-- **[so that]** – Explains the motivation behind the user's desire and the overall benefit from
-  achieving it.
+- **[so that]** – Explains the motivation behind the user's desire and the overall benefit from achieving
+  it.
 
 User stories use non-technical language to provide context and an understanding of what needs to be
 built and why. They focus on user needs, are discrete, and manageable for team members in an Agile
