@@ -27,23 +27,27 @@ units/tasks/inbox/inbox.coffee (Child)
     Uses: unit, unitRole, taskData
 ```
 
-**The problem:** Inbox component needs data from two AngularJS parent states. Can't fully migrate inbox until parents are migrated.
+**The problem:** Inbox component needs data from two AngularJS parent states. Can't fully migrate
+inbox until parents are migrated.
 
 ---
 
 ## What Each Parent Provides
 
 **Parent 1 (units/index.coffee):**
+
 - Loads unit object from API
 - Resolves user's role for this unit
 - Handles permissions and redirects
 
 **Parent 2 (units/tasks/tasks.coffee):**
+
 - Creates taskData object structure
 - Manages task selection logic
 - Syncs URL with selected task
 
 **Child (inbox.coffee):**
+
 - Sets task source function
 - Renders Angular InboxComponent
 - Already migrated to Angular - just needs parent cleanup
@@ -53,11 +57,14 @@ units/tasks/inbox/inbox.coffee (Child)
 ## Migration Order: 3 PRs
 
 ### PR 1: Migrate units/index (START HERE)
+
 **Status:** Already started - https://github.com/thoth-tech/doubtfire-web/pull/435
 
-Migrate the root parent first. Replace AngularJS state with Angular resolvers that provide unit and unitRole data.
+Migrate the root parent first. Replace AngularJS state with Angular resolvers that provide unit and
+unitRole data.
 
 **Files to change:**
+
 - Create Angular state in `doubtfire.states.ts`
 - Add resolvers for unit and unitRole
 - Delete `units/states/index/index.coffee`
@@ -71,6 +78,7 @@ Migrate the root parent first. Replace AngularJS state with Angular resolvers th
 Replace AngularJS state with Angular equivalent that manages taskData object.
 
 **Files to change:**
+
 - Create state or service for taskData management
 - Update `doubtfire.states.ts`
 - Delete `units/states/tasks/tasks.coffee`
@@ -84,6 +92,7 @@ Replace AngularJS state with Angular equivalent that manages taskData object.
 Remove remaining AngularJS files now that parents provide data through Angular.
 
 **Files to delete:**
+
 - `units/states/tasks/inbox/inbox.coffee`
 - `units/states/tasks/inbox/inbox.tpl.html`
 
@@ -116,6 +125,7 @@ After PR 3:
 ## Testing Strategy
 
 Each PR needs to verify:
+
 - Unit loads correctly with proper permissions
 - Task selection and navigation works
 - URL syncing functions properly
@@ -126,5 +136,5 @@ Each PR needs to verify:
 
 ## Key Principle
 
-**Bottom-up migration:** Start at the root (units/index), work down to the child (inbox). Each PR is independently testable and valuable even if later ones are delayed.
-
+**Bottom-up migration:** Start at the root (units/index), work down to the child (inbox). Each PR is
+independently testable and valuable even if later ones are delayed.
