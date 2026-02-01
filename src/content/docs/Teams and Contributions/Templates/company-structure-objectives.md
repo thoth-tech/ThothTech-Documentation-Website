@@ -19,7 +19,6 @@ Outline the membership of the leadership team for this trimester.
 - Who is the acting director?
 
 - Which students are on the leadership team?
-
   - What are their roles – team leads, tech leads, etc.
 
 ## Trimester Goals and Objectives
