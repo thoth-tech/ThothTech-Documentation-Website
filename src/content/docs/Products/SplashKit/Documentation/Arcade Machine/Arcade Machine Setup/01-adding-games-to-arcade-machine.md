@@ -135,7 +135,6 @@ cp ~/.splaskkit/lib/linux/libsplashkit.so ~/GamesSource/MyGame/bin/Debug/netcore
 ```
 
 7. Test Your game is running correctly (optional)
-
    - change into the publish directory
    - If you are using a Resources folder copy that into the Publish directory
      `cp -r ~/GamesSource/MyGame/Resources ~/GamesSource/MyGame/bin/Debug/netcoreapp7.0/publish`

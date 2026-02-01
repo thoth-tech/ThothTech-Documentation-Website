@@ -295,7 +295,6 @@ end of trimester 3.
 #### Courseflow Description of Progress
 
 1. **CourseFlow Software Design Document**
-
    - Analysed previous work done for CourseFlow.
    - Re-designed CourseFlow based on analysis and re-established requirements and created a software
      design document.
@@ -305,7 +304,6 @@ end of trimester 3.
      this new update.
 
 2. **University of Melbourne Course Planner Research Document**
-
    - Explored the UoM course planner to look at their features.
    - Analysed data retrieved to see how it is structured for inspiration in CourseFlow's data
      modelling.
@@ -337,14 +335,12 @@ projects and tasks stated below are what we aim to work on this trimester.
 #### SplashKit Arcade
 
 - Create an automated game download system for Arcade Machines
-
   - The proposed system will use the Arcade-games Repo to check for updates in the game version and
     download the latest version
   - Games should have a Publish tag or similar to be loaded to the main menu.
   - Have a secondary game menu for test games/non-published.
 
 - Updates to Arcade Menu
-
   - Presently the Arcade machine uses Emulation Station forked from the RetorPI project version.
     <https://github.com/thoth-tech/ArcadeMenu>
   - Create a new system for test games
@@ -356,7 +352,6 @@ projects and tasks stated below are what we aim to work on this trimester.
   - Via script or other method have games exit after 10 min's if there's been no key Input
 
 - Stretch Goals/Interesting ideas
-
   - Consider a local Test Mode – Arcade Switches to AP mode displays connection info (random
     password) and has a web server student can drop new game build on and tests. The machine Would
     delete the game and reset after a period of time.
@@ -365,7 +360,6 @@ projects and tasks stated below are what we aim to work on this trimester.
   - Implement a voting system on the Arcade Machine to give meaning to the star ranking.
 
   - Arcade Games – GitHub Actions
-
     - Correct C# for Arm (this should be done; see [trello card](https://trello.com/c/qeYlMImY) for
       Status)
       - Dotnet does not run correctly in the Emulated PI environment used for C++ games. New Action
@@ -396,7 +390,6 @@ projects and tasks stated below are what we aim to work on this trimester.
 #### Splashkit Expansion
 
 - Priority Items Deployment Packages
-
   - Debian Package.
   - Nuget Package.
   - Brew Package.
@@ -404,18 +397,15 @@ projects and tasks stated below are what we aim to work on this trimester.
 - Check for Further Functions from [Swin games](https://github.com/macite/swingame)to port into
   splashkit.
 - Fix Python Compatibility
-
   - Python can no longer be used to code games with SplashKit. Previous research indicates a change
     with v3.8; see
     [here](https://github.com/thoth-tech/documentation/blob/main/docs/Splashkit/Extensions/Python%20Compatibality/Research%20%26%20Findings/Python%20Changelog.md).
 
 - Look at Adding AI function to SplashKit
-
   - Can look at LLMs like ChatGPT
   - Similar Functions to <https://scikit-learn.org/>
 
 - Dev Container Mac
-
   - As most SplashKit Programs have a visual component and not browser-based based, we need a way to
     view the program's window output. This is normally accomplished by xserver forwarding and sound
     via pulse audio.
@@ -424,7 +414,6 @@ projects and tasks stated below are what we aim to work on this trimester.
     SplashKit. Further investigation is needed.
 
 - SplashKit.io
-
   - Publish Astro Starlight site
     - The Aim will be to convert Splashkit.io to our new webpage platform.
     - Advise getting a subdomain like new.splashkit.io (or similar) setup for testing, and
@@ -434,7 +423,6 @@ projects and tasks stated below are what we aim to work on this trimester.
     added to SplashKit. This should be investigated and replicated in the new site.
 
 - Game Engine
-
   - Project Setup: Create a streamlined project setup process for easier onboarding and development.
   - Camera System: Implement a flexible and efficient camera system to handle different views and
     perspectives.
@@ -455,7 +443,6 @@ projects and tasks stated below are what we aim to work on this trimester.
 #### Backlog
 
 - Game Development
-
   - High Level Design
   - Complete Demo Game
   - 8. Creating a 2D "Metroidvania" Game - Enemies and Combat
@@ -464,7 +451,6 @@ projects and tasks stated below are what we aim to work on this trimester.
   - 7. Creating a 2D "Metroidvania" Game - Camera Movement, Parallax and Depth
 
 - Tutorials and Documentation
-
   - Understanding SplashKit Manager - (SKM) Shell Commands - Tutorial
   - Project Structure and Initialization
 

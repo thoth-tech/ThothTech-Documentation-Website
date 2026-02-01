@@ -20,7 +20,6 @@ trying to keep things more up to date going forward.
 ---
 
 1. Testing new branch
-
    - We have a special request from our director Andrew that we need to execute some on testing the
      doubtfire-web(quality/entity-service-to-npm) branch with
      doubtfire-api(refactor/entity-service-backend), write up some test scripts for people to run to
@@ -30,7 +29,6 @@ trying to keep things more up to date going forward.
      and report to director
 
 2. Components Migration
-
    - There is **168 components** waiting to be migrated, in T3/2022, I hope we can continue the work
      that we left in previous trimester and assign some simple components for Juniors. Delivery lead
      should involve continuing the ongoing components, seniors should continue his work from
