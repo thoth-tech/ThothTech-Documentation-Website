@@ -7,7 +7,7 @@ Date of Testing: [20/08/2023]
 
 ## Executive Summary
 
-This report outlines the findings from the testing of the Asteroids,The testing process aimed to
+This report outlines the findings from the testing of the Asteroids. The testing process aimed to
 identify and address potential issues affecting gameplay, graphics, performance, user interface, and
 overall user experience. One significant issue identified is the excessive speed of meteorites,
 which has a notable impact on the game's difficulty and player engagement.

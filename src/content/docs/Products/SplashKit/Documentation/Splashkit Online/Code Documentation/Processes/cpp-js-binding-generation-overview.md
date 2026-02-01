@@ -17,7 +17,7 @@ We originally used the WebIDL Binder tool to accomplish this, but it had several
 - It did not support arrays of arrays (e.g `matrix_2d` could not be represented)
 - It would allocate memory for structs on the C++ side using malloc and only provide a pointer on
   the JavaScript side. As JavaScript has no concept of a destructor, this completely ruined value
-  semantics and required manual freeing of even basic SplashKit types, such as color.
+  semantics and required manual freeing of even basic SplashKit types, such as colour.
 - It would return struct types via a pointer to a singleton for that function. Therefore the
   following code:
   ```javascript

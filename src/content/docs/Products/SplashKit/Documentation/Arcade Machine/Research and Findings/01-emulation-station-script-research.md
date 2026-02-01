@@ -29,10 +29,10 @@ opened game.
 
 ### Test Hello World Script
 
-Below is a test script that will create a file containing the words HELLO WORLD, the #! /bin/bash
-line gives the script elevated permissions.
+Below is a test script that will create a file containing the words HELLO WORLD, the `#!/bin/bash`
+line, known as a "shebang", gives the script elevated permissions.
 
-```bash
+```shell
 #!/bin/bash
 
 FILE="YOUR-FILEPATH-HERE"
@@ -44,10 +44,10 @@ echo after
 
 ## Useful Links
 
-<https://unix.stackexchange.com/questions/94322/is-it-possible-for-a-daemon-i-e-background-process-to-look-for-key-presses-fr>  
+<https://unix.stackexchange.com/questions/94322/is-it-possible-for-a-daemon-i-e-background-process-to-look-for-key-presses-fr>
 This
 is a stack exchange question looking into detecting inputs on a linux/unix device. The answers talk
 about the file paths for devices and gives a sample code using C.
 
-<https://retropie.org.uk/forum/topic/26927/emulation-game-start-scripts-folder>  
+<https://retropie.org.uk/forum/topic/26927/emulation-game-start-scripts-folder>
 A forum post asking about some issues regarding a game-start script.

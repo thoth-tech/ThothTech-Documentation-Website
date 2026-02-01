@@ -7,10 +7,6 @@ google-api-client gem, challenges encountered, and a proposal for a new approach
 google-authenticator library available here the goal is to establish a secure, robust, and efficient
 authentication system within a Ruby on Rails application.
 
-<!-- TODO: Fix Alt Text below and missing image -->
-
-<!-- ![](Aspose.Words.c43d72fd-87a7-4c94-8fb6-36b8e9a45b16.001.png) -->
-
 ## What Was Tried and Why It Didn't Work
 
 ### Previous Implementation Steps
@@ -29,10 +25,6 @@ authentication system within a Ruby on Rails application.
    - **Session Management:** Temporary tokens generated lacked proper integration with the
      application's session flow.
 
-     <!-- TODO: Fix Alt Text below and missing image -->
-
-     <!-- ![](Aspose.Words.c43d72fd-87a7-4c94-8fb6-36b8e9a45b16.002.png) -->
-
 ## Proposed Approach: Using google-authenticator
 
 The [Google-authenticator](https://github.com/jaredonline/google-authenticator) library offers a
@@ -44,10 +36,6 @@ token validation and user data retrieval.
 - Simplified integration of Google authentication.
 - Minimal configuration with a focus on token validation and secure user onboarding.
 - Lightweight and developer-friendly, reducing overhead.
-
-<!-- TODO: Fix Alt Text below and missing image -->
-
-<!-- ![](Aspose.Words.c43d72fd-87a7-4c94-8fb6-36b8e9a45b16.003.png) -->
 
 ### Implementation Plan Using google-authenticator
 
@@ -62,63 +50,52 @@ token validation and user data retrieval.
    Run bundle install to install the gem.
 
 2. **Environment Setup**
-   <!-- TODO: Fix strange formatting to use proper snippet format (as above) -->
 
-   Set up environment variables for secure management of credentials: **export
-   GOOGLE_CLIENT_ID="your-client-id"**
+   Set up environment variables for secure management of credentials:
 
-   **export GOOGLE_CLIENT_SECRET="your-client -secret"**
+   ```shell
+   export GOOGLE_CLIENT_ID="your-client-id"
+   export GOOGLE_CLIENT_SECRET="your-client -secret"
+   ```
 
 3. **Refactor authentication_api.rb**
-   <!-- TODO: Fix strange formatting to use proper snippet format (as above) -->
 
    Update the authentication_api.rb file to use the new library:
 
-   **desc 'Google authentication'**
+   ```ruby
+   desc 'Google authentication'
 
-   **params do**
+   params do
+     requires :id_token, type: String, desc: 'Google ID token'
+   end
 
-   ``**requires :id_token, type: String, desc: 'Google ID token' end**
+   post '/auth/google' do
 
-   **post '/auth/google' do**
+     # Initialize the GoogleAuthenticator
+     authenticator = GoogleAuthenticator.new(
+       client_id: ENV['GOOGLE_CLIENT_ID'],
+       client_secret: ENV['GOOGLE_CLIENT_SECRET']
+     )
 
-   **# Initialize the GoogleAuthenticator**
+     idinfo = authenticator.verify(params[:id\_token])
+     error!({ error: 'Invalid Google ID token.' }, 401) unless idinfo
 
-   ``**authenticator = GoogleAuthenticator.new(**
+     email = idinfo['email']
+     logger.info "Authenticate #{email} from #{request.ip}"
+     user = User.find_or_create_by(email: email) do |new_user|
+       new_user.first_name = idinfo['given_name'] || 'First'
+       new_user.last_name = idinfo['family_name'] || 'Last'
+       new_user.username = email.split('@').first
+       new_user.role_id = Role.student.id
 
-   ``**client_id: ENV['GOOGLE\_CLIENT\_ID'],**
+     end
 
-   ``**client_secret: ENV['GOOGLE\_CLIENT\_SECRET']**
+     onetime_token = user.generate_temporary_authentication_token!
+     present :user, user, with: Entities::UserEntity
+     present :auth_token, onetime_token.authentication_token
+   end
 
-   ``**)**
-
-   ``**idinfo = authenticator.verify(params[:id\_token])**
-
-   ``**error!({ error: 'Invalid Google ID token.' }, 401) unless idinfo**
-
-   ``**email = idinfo['email']**
-
-   ``**logger.info "Authenticate #{email} from #{request.ip}"**
-
-   ``**user = User.find_or_create_by(email: email) do |new_user| new_user.first_name =
-   idinfo['given\_name'] || 'First'**
-
-   ``**new_user.last_name = idinfo['family\_name'] || 'Last'**
-
-   ``**new_user.username = email.split('@').first**
-
-   ``**new_user.role_id = Role.student.id**
-
-   ``**end**
-
-   ``**onetime_token = user.generate_temporary_authentication_token!**
-
-   ``**present :user, user, with: Entities::UserEntity**
-
-   ``**present :auth_token, onetime_token.authentication_token**
-
-   **end**
-
+   ```
 4. **Testing**
 
    Conduct functional and security testing for the updated implementation:
