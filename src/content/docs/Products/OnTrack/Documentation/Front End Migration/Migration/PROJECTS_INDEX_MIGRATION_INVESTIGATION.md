@@ -11,15 +11,15 @@ Area: Projects module – index (parent) state
 
 ## Purpose
 
-This document investigates the current state of the projects/index parent state
-migration from AngularJS to Angular. The goal is to confirm what has already
-been migrated, identify what remains incomplete, and assess whether the state is
-safe to finalise without breaking dependent child states.
+This document investigates the current state of the projects/index parent state migration from
+AngularJS to Angular. The goal is to confirm what has already been migrated, identify what remains
+incomplete, and assess whether the state is safe to finalise without breaking dependent child
+states.
 
 ## Current State of the Migration
 
-The Angular implementation of the projects/index parent state already exists and
-is functionally complete. The following Angular files are present and active:
+The Angular implementation of the projects/index parent state already exists and is functionally
+complete. The following Angular files are present and active:
 
 - index.component.ts
 - index.component.html
@@ -27,24 +27,21 @@ is functionally complete. The following Angular files are present and active:
 - index.state.ts
 - index.module.ts
 
-The Angular parent state handles route parameter extraction, project loading,
-unit resolution, user role resolution, global view state configuration, and
-explicit lifecycle cleanup. No runtime or console errors are observed when the
-Angular implementation is active.
+The Angular parent state handles route parameter extraction, project loading, unit resolution, user
+role resolution, global view state configuration, and explicit lifecycle cleanup. No runtime or
+console errors are observed when the Angular implementation is active.
 
-The legacy AngularJS implementation still exists in the repository and includes
-the following files:
+The legacy AngularJS implementation still exists in the repository and includes the following files:
 
 - index.coffee
 - index.tpl.html (if present)
 
-As long as these legacy files remain, both AngularJS and Angular implementations
-may coexist.
+As long as these legacy files remain, both AngularJS and Angular implementations may coexist.
 
 ## Responsibilities of the Parent State
 
-The projects/index parent state provides shared context for all project-related
-child states. Its responsibilities include:
+The projects/index parent state provides shared context for all project-related child states. Its
+responsibilities include:
 
 - Loading the project using the route projectId
 - Resolving the associated unit
@@ -52,8 +49,7 @@ child states. Its responsibilities include:
 - Setting the global application view context to PROJECT
 - Exposing project, unit, and unitRole to child states
 
-These responsibilities are fully implemented in the Angular version and mirror
-the legacy behaviour.
+These responsibilities are fully implemented in the Angular version and mirror the legacy behaviour.
 
 ## AngularJS vs Angular Behaviour
 
@@ -69,8 +65,7 @@ No functional differences have been identified.
 
 ## Dependent Child States
 
-The following child states depend on the projects/index parent state for shared
-context:
+The following child states depend on the projects/index parent state for shared context:
 
 - projects/dashboard
 - projects/tutorials
@@ -109,7 +104,6 @@ Legacy files pending removal:
 
 ## Conclusion
 
-The Angular implementation of the projects/index parent state is functionally
-complete. The migration is currently pending verification and cleanup. Once
-verified, the legacy AngularJS files can be removed and the parent state can be
-considered fully migrated.
+The Angular implementation of the projects/index parent state is functionally complete. The
+migration is currently pending verification and cleanup. Once verified, the legacy AngularJS files
+can be removed and the parent state can be considered fully migrated.
