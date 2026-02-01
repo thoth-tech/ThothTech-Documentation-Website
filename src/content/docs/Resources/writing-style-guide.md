@@ -294,8 +294,7 @@ the reader's skill level, and define technical terms clearly.
 
 #### Example
 
-> **Revision Date:** July 2024
-> **Version ID:** 1.0.0
+> **Revision Date:** July 2024 **Version ID:** 1.0.0
 
 ---
 

@@ -55,8 +55,8 @@ unplayable.
 because of the movement of two players when playing. This ensures the core gameplay and fun of the
 game.
 
-- Improved Dual-Screen Mode: Modify the game's screen behaviour to split into two distinct views when
-  two players move in opposite directions. This would allow each player to move independently
+- Improved Dual-Screen Mode: Modify the game's screen behaviour to split into two distinct views
+  when two players move in opposite directions. This would allow each player to move independently
   without affecting the other's gameplay. However, this solution may require significant technical
   adjustments and testing.
 - Player Respawning Mechanism: Implement a respawning mechanism that triggers when a player moves
@@ -71,10 +71,10 @@ game.
 To address this issue and provide a seamless multiplayer experience, the following potential
 solutions are recommended:
 
-- When the player reaches full health, he cannot pick up heart-shaped
-  items to increase health, but can instead increase score.
-- The colour of the cockroach shaped monster is too dim, and the dark background
-  is easy to cause the player to lose sight of it.
+- When the player reaches full health, he cannot pick up heart-shaped items to increase health, but
+  can instead increase score.
+- The colour of the cockroach shaped monster is too dim, and the dark background is easy to cause
+  the player to lose sight of it.
 - The jump rate is too fast, making the player's countermeasures against the monsters too difficult.
 
 ## Conclusion

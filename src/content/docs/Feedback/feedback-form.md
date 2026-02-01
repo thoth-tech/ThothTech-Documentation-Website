@@ -15,9 +15,9 @@ suits your preference:
 
 ### Option 1: Fill Out Our Online Form
 
-Open an issue in our [GitHub repository](
-https://github.com/thoth-tech/ThothTech-Documentation-Website/issues).
-It only takes a few minutes and helps us understand your perspective.
+Open an issue in our
+[GitHub repository](https://github.com/thoth-tech/ThothTech-Documentation-Website/issues). It only
+takes a few minutes and helps us understand your perspective.
 
 ### Option 2: Contact Your Team Leader or Senior Students
 

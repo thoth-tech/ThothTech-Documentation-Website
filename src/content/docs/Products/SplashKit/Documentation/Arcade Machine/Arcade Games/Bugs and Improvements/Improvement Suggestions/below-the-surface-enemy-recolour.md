@@ -4,8 +4,8 @@ title: Below the Surface Enemy Colours
 
 ## Improvement Suggestion Description
 
-The colour scheme of the cockroach enemy should be changed to a brighter colour. The colour scheme of
-the giant rat final boss should also be reconsidered.
+The colour scheme of the cockroach enemy should be changed to a brighter colour. The colour scheme
+of the giant rat final boss should also be reconsidered.
 
 ## Reasoning
 

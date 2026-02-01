@@ -92,9 +92,8 @@ This video summarises the accomplishments made at Thoth Tech for Trimester 3 202
 The following are the key responsibilities of the company student leadership team throughout the
 trimester:
 
-1. **Company Presentation in the First Junior Lecture**
-   Introduce the company, its projects, and the required skill sets to inspire and recruit potential
-   junior students.
+1. **Company Presentation in the First Junior Lecture** Introduce the company, its projects, and the
+   required skill sets to inspire and recruit potential junior students.
    - **Presentation Preparation**: Student leads must prepare and organise a PowerPoint presentation
      that effectively represents each of their projects during Week 0.
    - **Aligning with Goals**: Clearly articulate how each project aligns with Thoth Tech's goals,
@@ -111,9 +110,9 @@ trimester:
      both professional and approachable, to ensure students feel welcomed and excited about the
      opportunity to join the company.
 
-2. **Host First Company-Wide Meeting and Onboard Students**
-   Provide a detailed overview of company and project goals, meeting schedules, and expectations for
-   the trimester through a structured and inclusive onboarding process.
+2. **Host First Company-Wide Meeting and Onboard Students** Provide a detailed overview of company
+   and project goals, meeting schedules, and expectations for the trimester through a structured and
+   inclusive onboarding process.
    - **Multiple Onboarding Sessions**: Organise several onboarding sessions to ensure the widest
      possible audience is captured, accommodating different learning styles, time zones, and
      availability. This approach ensures that all junior students, regardless of their
@@ -131,9 +130,8 @@ trimester:
    - **Foster Team Building**: Build rapport among team members and establish a positive and
      collaborative company culture from the start.
 
-3. **Weekly Company Leadership Team Meetings**
-   Facilitate regular meetings to report on project progress and address concerns with company
-   stakeholders.
+3. **Weekly Company Leadership Team Meetings** Facilitate regular meetings to report on project
+   progress and address concerns with company stakeholders.
    - **Scheduling**: Date and time to be decided by members in the first week according to
      availability.
    - **Rotating Leadership**: Each week, a different member should take the lead in directing the
@@ -145,9 +143,8 @@ trimester:
    - **Productivity Focus**: Make meetings productive by assigning clear action items and deadlines,
      and ensuring all follow-ups are tracked and reviewed in subsequent sessions.
 
-4. **Project Mentorship and Guidance**
-   Actively support project teams by providing leadership, technical expertise, and problem-solving
-   guidance to peers and junior team members alike.
+4. **Project Mentorship and Guidance** Actively support project teams by providing leadership,
+   technical expertise, and problem-solving guidance to peers and junior team members alike.
    - **Mentor Peers and Juniors**: Provide mentorship to both peers and junior team members,
      recognising that even senior contributors may require guidance and support to meet their
      objectives effectively.
@@ -158,9 +155,8 @@ trimester:
    - **Promote Collaboration**: Encourage cross-team collaboration by sharing insights, fostering
      knowledge exchange, and aligning project efforts with the overall vision of the company.
 
-5. **Communication and Collaboration**
-   Maintain clear and open communication across teams to align project goals, foster innovation, and
-   enhance overall company contributions.
+5. **Communication and Collaboration** Maintain clear and open communication across teams to align
+   project goals, foster innovation, and enhance overall company contributions.
    - **Promote Cross-Team Collaboration**: Actively encourage collaboration between teams,
      recognising that greater collaboration has historically helped overcome creativity blocks and
      inspired more innovative and exciting contributions across the company.
@@ -177,8 +173,8 @@ trimester:
      communicating key messages, updates, and announcements to the entire company through the main
      Thoth Tech channel. This ensures consistent and clear communication across all teams.
 
-6. **Complete Company Deliverables: Progress, Handover, and Showcase Reports and Videos**
-   Ensure timely and high-quality submissions of all required deliverables.
+6. **Complete Company Deliverables: Progress, Handover, and Showcase Reports and Videos** Ensure
+   timely and high-quality submissions of all required deliverables.
    - **Team Collaboration**: Collaborate with project teams to gather insights, ensuring all
      deliverables include comprehensive updates that accurately reflect the progress and
      contributions of the entire company.
@@ -190,9 +186,8 @@ trimester:
      behalf of the company, with appropriate communications made on Teams to ensure transparency and
      accountability.
 
-7. **Represent the Company in Leadership Meetings**
-   Advocate for the company's needs and ensure alignment with the broader goals of the capstone
-   program.
+7. **Represent the Company in Leadership Meetings** Advocate for the company's needs and ensure
+   alignment with the broader goals of the capstone program.
    - **Present Team Updates**: Present the company's progress, challenges, and successes in
      program-level leadership meetings, ensuring a clear and accurate representation of team
      activities.
@@ -203,8 +198,8 @@ trimester:
    - **Build Relationships**: Foster strong relationships with stakeholders and mentors to secure
      support and resources for company objectives.
 
-8. **Encourage Innovation and Best Practices**
-   Promote a culture of innovation, inclusivity, and continuous improvement within the company.
+8. **Encourage Innovation and Best Practices** Promote a culture of innovation, inclusivity, and
+   continuous improvement within the company.
    - **Leverage Evidence-Based Decision-Making**: Use the leadership team as a platform to analyse
      data, feedback, and outcomes to make informed and evidence-based choices that drive project
      success.
@@ -215,9 +210,8 @@ trimester:
    - **Foster Inclusivity**: Promote an environment where all team members feel empowered to
      participate and contribute, ensuring diverse perspectives are considered in decision-making.
 
-9. **Foster Team Morale and Collaboration**
-    Actively support team morale and address interpersonal challenges to maintain a cohesive and
-   motivated team environment.
+9. **Foster Team Morale and Collaboration** Actively support team morale and address interpersonal
+   challenges to maintain a cohesive and motivated team environment.
    - **Celebrate Achievements**: Recognise and celebrate individual and team accomplishments across
      the company to boost morale and reinforce a sense of achievement.
    - **Promote Inclusivity**: Ensure that all voices are heard and valued, creating an inclusive
@@ -641,24 +635,22 @@ repositories for the relevant teams.
 
 ##### Ray-Tracing and Collision Functions
 
-- **Bitmap and Sprite Ray Collision Functions**:
-  Enabled advanced ray-tracing in 2D and 3D environments with bitmap-ray and sprite-ray collision
-  detection for more complex visual effects.
-- **Ray Intersection Functions for Primitive Shapes**:
-  Added ray intersection functions for rectangles, circles, triangles, and quads, providing detailed
-  intersection data or Boolean results for ease of use.
+- **Bitmap and Sprite Ray Collision Functions**: Enabled advanced ray-tracing in 2D and 3D
+  environments with bitmap-ray and sprite-ray collision detection for more complex visual effects.
+- **Ray Intersection Functions for Primitive Shapes**: Added ray intersection functions for
+  rectangles, circles, triangles, and quads, providing detailed intersection data or Boolean results
+  for ease of use.
 
-- **New Function - `quad_from`**:
-  Developed `quad_from` to construct a quad around a segment with a specified width, supporting
-  advanced geometry operations.
+- **New Function - `quad_from`**: Developed `quad_from` to construct a quad around a segment with a
+  specified width, supporting advanced geometry operations.
 
 - **Collision Classification and Resolution Functions**:
   - **`calculate_collision_direction`**: Classifies collision direction between objects.
   - **`resolve_collision`**: Resolves overlap without altering velocities, supporting AABB and pixel
     collisions.
 
-- **Additional Intersection Functions**:
-  Introduced functions for collision detection between different shape pairs:
+- **Additional Intersection Functions**: Introduced functions for collision detection between
+  different shape pairs:
   - `circle_quad_intersect`, `rectangle_circle_intersect`, `triangle_quad_intersect`.
 
 - **Bug Fixes**:
@@ -668,65 +660,55 @@ repositories for the relevant teams.
 
 ##### Particle System
 
-- **Dynamic Particle Emission**:
-  Emit particles from a circular area, supporting both continuous and burst emission modes for
-  diverse effects. Add randomness to particle size, speed, and direction for natural, less uniform
-  effects, enhancing realism in particle-based simulations.
+- **Dynamic Particle Emission**: Emit particles from a circular area, supporting both continuous and
+  burst emission modes for diverse effects. Add randomness to particle size, speed, and direction
+  for natural, less uniform effects, enhancing realism in particle-based simulations.
 
-- **Lifespan and Removal Management**:
-  Configure individual particle lifespans in milliseconds. Automatically removes expired particles
-  to ensure memory optimization. Detect and remove particles that move off-screen, maintaining
-  performance without manual intervention.
+- **Lifespan and Removal Management**: Configure individual particle lifespans in milliseconds.
+  Automatically removes expired particles to ensure memory optimization. Detect and remove particles
+  that move off-screen, maintaining performance without manual intervention.
 
-- **Customizable Particle Appearance**:
-  Define static or varying particle sizes and colours, including support for gradient transitions
-  over the particle’s lifetime. Smoothly fade particle opacity over time, creating elegant effects
-  like smoke dispersal or spark dimming. Specify particle rendering order to prevent visual
-  interference with UI or background elements.
+- **Customizable Particle Appearance**: Define static or varying particle sizes and colours,
+  including support for gradient transitions over the particle’s lifetime. Smoothly fade particle
+  opacity over time, creating elegant effects like smoke dispersal or spark dimming. Specify
+  particle rendering order to prevent visual interference with UI or background elements.
 
-- **Motion and Dynamics**:
-  Control particle speed and direction using an adjustable emission angle range. Simulate gravity or
-  deceleration for lifelike motion dynamics, such as falling leaves or drifting snow.
+- **Motion and Dynamics**: Control particle speed and direction using an adjustable emission angle
+  range. Simulate gravity or deceleration for lifelike motion dynamics, such as falling leaves or
+  drifting snow.
 
-- **Emitter and System Management**:
-  Dynamically reposition emitters, supporting static or relative positioning for moving objects
-  (e.g., following a character). Manage multiple independent particle systems simultaneously, each
-  with unique configurations and behaviors. Optimize performance by updating all particles in a
-  system collectively.
+- **Emitter and System Management**: Dynamically reposition emitters, supporting static or relative
+  positioning for moving objects (e.g., following a character). Manage multiple independent particle
+  systems simultaneously, each with unique configurations and behaviors. Optimize performance by
+  updating all particles in a system collectively.
 
-- **Bug Fixes**:
-  Resolved issues with **particle lifespan exceeding bounds**, ensuring consistent removal at the
-  correct time. Fixed **off-screen particle cleanup** to prevent memory leaks. Addressed visual
-  glitches related to overlapping particles in layered rendering.
+- **Bug Fixes**: Resolved issues with **particle lifespan exceeding bounds**, ensuring consistent
+  removal at the correct time. Fixed **off-screen particle cleanup** to prevent memory leaks.
+  Addressed visual glitches related to overlapping particles in layered rendering.
 
 ##### Code Quality and Performance Enhancements
 
-- **Extensive Function Overloads**:
-  Developed 24 overloads for `calculate_collision_direction` and `resolve_collision` to ensure
-  compatibility across all shape combinations.
+- **Extensive Function Overloads**: Developed 24 overloads for `calculate_collision_direction` and
+  `resolve_collision` to ensure compatibility across all shape combinations.
 - **Precision Updates and Bug Fixes**:
   - Updated sprite, geometry, and point methods for better precision (using `double` instead of
     `float`).
   - Fixed bugs in sprite collision and geometry functions, ensuring correct calculations at edges
     and corners.
   - Fixed a bug in Python for `replace_all` due to the parameter name.
-- **Code Duplication Reduction**:
-  Minimized redundant code using void pointers and downcasting techniques, improving code
-  maintainability despite added complexity.
+- **Code Duplication Reduction**: Minimized redundant code using void pointers and downcasting
+  techniques, improving code maintainability despite added complexity.
 
-- **Proposed Refactor for OOP Approach**:
-  Suggested refactoring SplashKit to adopt an OOP approach for better code structure, improving
-  debugging and maintainability.
+- **Proposed Refactor for OOP Approach**: Suggested refactoring SplashKit to adopt an OOP approach
+  for better code structure, improving debugging and maintainability.
 
 ##### Testing and Documentation
 
-- **Comprehensive Unit Tests**:
-  Developed unit tests for sprites and geometry methods, ensuring the robustness and reliability of
-  core functions.
+- **Comprehensive Unit Tests**: Developed unit tests for sprites and geometry methods, ensuring the
+  robustness and reliability of core functions.
 
-- **Updated Geometry Methods**:
-  Added and refined unit tests for geometry functions, addressing precision issues and improving
-  documentation clarity.
+- **Updated Geometry Methods**: Added and refined unit tests for geometry functions, addressing
+  precision issues and improving documentation clarity.
 
 - **Documentation Overhaul**:
   - Improved clarity of method descriptions, especially for edge cases (e.g.,
@@ -738,13 +720,12 @@ repositories for the relevant teams.
 - **New Input Validation Functions**:
   - `is_binary`, `is_hex`, `is_octal` for validating number formats.
 
-- **New Conversion Functions**:
-  Added conversion functions to handle various numeric and encoding formats:
+- **New Conversion Functions**: Added conversion functions to handle various numeric and encoding
+  formats:
   - `dec_to_bin`, `bin_to_dec`, `hex_to_bin`, `bin_to_hex`, `oct_to_dec`, `dec_to_oct`, `hex_to_ct`,
     `ct_to_hex`, `base64_encode`, `base64_decode`.
 
-- **Mathematical Functions**:
-  Introduced foundational mathematical functions:
+- **Mathematical Functions**: Introduced foundational mathematical functions:
   - `calculate_square_root`, `is_prime_number`, `greatest_common_divisor`, `least_common_multiple`.
 
 ##### Networking and Address Functions
@@ -927,7 +908,7 @@ repositories for the relevant teams.
 | Brianna Laird                          | Reviewer         | Draw Line on Window - Graphics - Usage Example Creation           | <https://github.com/thoth-tech/splashkit.io-starlight/pull/235>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Brianna Laird                          | Reviewer         | Language Update - Basic Blue Circle Usage Example                 | <https://github.com/thoth-tech/splashkit.io-starlight/pull/243>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Brianna Laird                          | Reviewer         | Language Update - Basic Blue Ellipse Usage Example                | <https://github.com/thoth-tech/splashkit.io-starlight/pull/245>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Brianna Laird                          | Reviewer         | Language Update - Clear screen Background Colour Usage Example     | <https://github.com/thoth-tech/splashkit.io-starlight/pull/244>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Brianna Laird                          | Reviewer         | Language Update - Clear screen Background Colour Usage Example    | <https://github.com/thoth-tech/splashkit.io-starlight/pull/244>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Brianna Laird                          | Reviewer         | Language Update - Drawing a Player Sprite Usage Example           | <https://github.com/thoth-tech/splashkit.io-starlight/pull/233>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Brianna Laird                          | Reviewer         | Language Update - Hex to Dec Converter Usage Example              | <https://github.com/thoth-tech/splashkit.io-starlight/pull/304>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Brianna Laird                          | Reviewer         | Language Update - Ipv4 to Dec Converter Usage Example             | <https://github.com/thoth-tech/splashkit.io-starlight/pull/303>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
@@ -984,7 +965,7 @@ repositories for the relevant teams.
 | Ethan Rin                              | Main Contributor | Fill Ellipse - Graphics - Usage Example Creation                  | <https://github.com/thoth-tech/splashkit.io-starlight/pull/249>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Ethan Rin                              | Main Contributor | Improve Search Functionality                                      | <https://github.com/thoth-tech/splashkit.io-starlight/pull/342>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Ethan Rin                              | Reviewer         | Language Update - Basic Blue Circle Usage Example                 | <https://github.com/thoth-tech/splashkit.io-starlight/pull/243>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Ethan Rin                              | Reviewer         | Language Update - Clear screen Background Colour Usage Example     | <https://github.com/thoth-tech/splashkit.io-starlight/pull/244>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Ethan Rin                              | Reviewer         | Language Update - Clear screen Background Colour Usage Example    | <https://github.com/thoth-tech/splashkit.io-starlight/pull/244>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Ethan Rin                              | Reviewer         | Fill Triangle - Graphics - Usage Example Creation                 | <https://github.com/thoth-tech/splashkit.io-starlight/pull/314>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Ethan Rin                              | Reviewer         | Usage Examples for JSON - Part 1                                  | <https://github.com/thoth-tech/splashkit.io-starlight/pull/331>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Ethan Rin                              | Reviewer         | Usage Examples for JSON - Part 2                                  | <https://github.com/thoth-tech/splashkit.io-starlight/pull/332>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
@@ -1001,7 +982,7 @@ repositories for the relevant teams.
 | Ethan Rin                              | Reviewer         | Line related functions - Geometry - Usage Example Creation        | <https://github.com/thoth-tech/splashkit.io-starlight/pull/329>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Ethan Rin                              | Reviewer         | Point on Line - Geometry - Usage Example Creation                 | <https://github.com/thoth-tech/splashkit.io-starlight/pull/280>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Ethan Rin                              | Reviewer         | Random bitmap point - Geometry - Usage Example Creation           | <https://github.com/thoth-tech/splashkit.io-starlight/pull/265>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Ethan Rin                              | Reviewer         | Add SplashKit Colour Guide                                         | <https://github.com/thoth-tech/splashkit.io-starlight/pull/343>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Ethan Rin                              | Reviewer         | Add SplashKit Colour Guide                                        | <https://github.com/thoth-tech/splashkit.io-starlight/pull/343>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Ethan Rin                              | Reviewer         | Configure the website to display enum languages                   | <https://github.com/thoth-tech/splashkit.io-starlight/pull/268>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Ethan Rin                              | Reviewer         | Fill Rectangle on Bitmap - Graphics - Usage Example Creation      | <https://github.com/thoth-tech/splashkit.io-starlight/pull/267>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Hangyu Li                              | Main Contributor | Draw Circle on Window - Graphics - Usage Example Creation         | <https://github.com/thoth-tech/splashkit.io-starlight/pull/257>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
@@ -1149,7 +1130,7 @@ repositories for the relevant teams.
 | Prasanna Pradeep Kumara Silva Singhara | Main Contributor | Add "End Program" Function                                        | <https://github.com/thoth-tech/SplashkitOnline/pull/98>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | Prasanna Pradeep Kumara Silva Singhara | Main Contributor | Load project from URL GET parameter                               | <https://github.com/thoth-tech/SplashkitOnline/pull/98>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | Prasanna Pradeep Kumara Silva Singhara | Main Contributor | update fav icon and Nav bar                                       | <https://github.com/thoth-tech/SplashkitOnline/pull/110>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Rachel Mei Alonzo Chu                  | Main Contributor | Language Update - Clear screen Background Colour Usage Example     | <https://github.com/thoth-tech/splashkit.io-starlight/pull/244>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Rachel Mei Alonzo Chu                  | Main Contributor | Language Update - Clear screen Background Colour Usage Example    | <https://github.com/thoth-tech/splashkit.io-starlight/pull/244>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Rachel Mei Alonzo Chu                  | Main Contributor | Add nested tab for Beyond SplashKit                               | <https://github.com/thoth-tech/splashkit.io-starlight/pull/339>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Rachel Mei Alonzo Chu                  | Main Contributor | Closest point on Circle - Geometry - Usage Example Creation       | <https://github.com/thoth-tech/splashkit.io-starlight/pull/322>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Rachel Mei Alonzo Chu                  | Main Contributor | Fill Circle on Window - Graphics - Usage Example Creation         | <https://github.com/thoth-tech/splashkit.io-starlight/pull/254>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
@@ -1184,7 +1165,7 @@ repositories for the relevant teams.
 | Shaun Ratcliff                         | Main Contributor | SplashKit Website Blog                                            | <https://github.com/thoth-tech/splashkit.io-starlight/pull/252>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Shaun Ratcliff                         | Main Contributor | Tutorial Data Analytics                                           | <https://github.com/thoth-tech/splashkit.io-starlight/pull/251>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Shaun Ratcliff                         | Main Contributor | Add Matrix Operations Physics Usage Examples                      | <https://github.com/thoth-tech/splashkit.io-starlight/pull/285>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Shaun Ratcliff                         | Main Contributor | Add SplashKit Colour Guide                                         | <https://github.com/thoth-tech/splashkit.io-starlight/pull/343>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Shaun Ratcliff                         | Main Contributor | Add SplashKit Colour Guide                                        | <https://github.com/thoth-tech/splashkit.io-starlight/pull/343>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Shaun Ratcliff                         | Main Contributor | Add Sprite Collisions Physics Usage Examples                      | <https://github.com/thoth-tech/splashkit.io-starlight/pull/284>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Shaun Ratcliff                         | Main Contributor | Onboarding Hub - Add SplashKit Information                        | <https://github.com/thoth-tech/ThothTech-Documentation-Website/pull/99>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | Shaun Ratcliff                         | Reviewer         | Language Update - Printing Integers Usage Example                 | <https://github.com/thoth-tech/splashkit.io-starlight/pull/213><br><https://github.com/thoth-tech/splashkit.io-starlight/pull/225>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |

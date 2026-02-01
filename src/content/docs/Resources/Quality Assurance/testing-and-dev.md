@@ -38,8 +38,8 @@ you begin_?
 - Document your purpose and requirements within your
   [Software Requirements Specification](#software-requirements-specification-document) document.
 - Plan your testing by defining your Test Strategy and Test Plan:
-  - Using your specifications, outline the expected behaviour for different use case scenarios; these
-    will be tested in your [Test Plan](#making-a-test-plan).
+  - Using your specifications, outline the expected behaviour for different use case scenarios;
+    these will be tested in your [Test Plan](#making-a-test-plan).
   - Determine _how_ you will test your scenarios and describe this in your
     [Test Strategy](#test-strategy).
 
