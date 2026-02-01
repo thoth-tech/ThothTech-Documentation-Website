@@ -115,6 +115,7 @@ You need a terminal that supports shell scripts (on Windows, you need WSL2, Msys
   the features are user-friendly.
 
   ![the second proposed design](/iteration-3-design-2.png)
+
   - Examine
     [the second design's prototype](https://www.figma.com/proto/XmKxWQ43MwrD6Red1DvYq6/Wire-Frame-Designs?node-id=478%3A4466&scaling=min-zoom&page-id=476%3A4327&starting-point-node-id=478%3A4466).
 

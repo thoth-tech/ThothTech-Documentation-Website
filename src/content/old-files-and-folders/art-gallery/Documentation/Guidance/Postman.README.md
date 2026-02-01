@@ -72,6 +72,7 @@ Follow these steps to create your own collection within the Postman workspace:
    here by selecting 'Create Workspace'.
 
 3. **Create a Collection**:
+
    - Click the 'New' button within the workspace.
    - Choose 'Collection' as the type.
    - Give your collection a descriptive name and an optional description to explain its purpose.
@@ -80,20 +81,24 @@ Follow these steps to create your own collection within the Postman workspace:
      as an example.
 
 4. **Add Requests**:
+
    - Within your newly created collection, click the 'Add Request' button.
    - Provide a name for your request and specify the HTTP method and URL.
    - Configure any headers, parameters, and request body as needed.
 
 5. **Save and Organise**:
+
    - Be sure to save each request by clicking 'Save', or `ctrl+s`.
    - You can organise your collection by creating folders within it. This is helpful for grouping
      related requests. Please see the Art Gallery's workspace and collection as an example.
 
 6. **Manual Testing**:
+
    - Use the 'Send' button within a request to test it against the designated API endpoint.
    - View the response to ensure everything is working as expected.
 
 7. **Automated Testing**:
+
    - If you have set up automated testing, simply run the collection to initiate these tests.
    - View the responses/test summaries to ensure everything is working as expected.
 

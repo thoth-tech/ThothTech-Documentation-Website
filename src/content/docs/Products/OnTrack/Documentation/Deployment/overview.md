@@ -50,9 +50,8 @@ deployment.
 
 Prior to deploying to GCP, we ran several tests locally (localhost) on our own workstations to
 determine the configuration changes required deploy Doubtfire successfully. On our individual
-workstations, we cloned the [Doubtfire-deploy-GCP repository]
-<https://github.com/thoth-tech/doubtfire-deploy-GCP> and modified the necessary files. We then used
-docker compose and Docker to run and deploy containers.
+workstations, we cloned the [Doubtfire-deploy-GCP repository] <https://github.com/thoth-tech/doubtfire-deploy-GCP>
+and modified the necessary files. We then used docker compose and Docker to run and deploy containers.
 
 ![doubtfire-localhost-compose](/doubtfire-localhost-compose.png "docker compose output")
 
