@@ -141,4 +141,3 @@ If issues arise, revert the single PR. Old files remain in git history and can b
 ## Key Insight for Next Cohort
 
 Search the codebase for `<task-dashboard>` before starting - make sure dashboard.tpl.html is the only place using the old tag. Update module imports before deleting files to avoid build failures.
-
