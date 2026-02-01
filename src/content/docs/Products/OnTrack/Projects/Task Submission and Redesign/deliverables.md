@@ -33,12 +33,10 @@ encouraged to contribute ideas for deliverable items, as informed by their CLOs.
 ### Purely Documentation Oriented
 
 - [x] Modify the project epic (make it relevant to T1/2023).
-
   - A modification to a markdown document in
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/).
 
 - [x] Modify/Update a document that outlines the deliverable items of the project.
-
   - A markdown document in [thoth-tech/documentation](https://github.com/thoth-tech/documentation/).
 
 - [x] Create a T1/2023 hand-over document.
@@ -49,7 +47,6 @@ encouraged to contribute ideas for deliverable items, as informed by their CLOs.
 #### Design
 
 - [ ] Create frame-by-frame flows of tutors performing current and new features.
-
   - Multiple images and a video showcase, as output from [Figma](https://www.figma.com/), in
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/), as output from
     [Figma](https://www.figma.com/).
@@ -57,7 +54,6 @@ encouraged to contribute ideas for deliverable items, as informed by their CLOs.
   - Pre-requisite: A single, primary design must be selected for this to be followed through with.
 
 - [ ] Create frame-by-frame flows of students performing current and new features.
-
   - Multiple images, as output from [Figma](https://www.figma.com/), in
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/).
 
@@ -68,7 +64,6 @@ encouraged to contribute ideas for deliverable items, as informed by their CLOs.
     into tasks regarding specific flows for showing the use of specific features.
 
 - [ ] Complete the tutor-view design on [Figma](https://www.figma.com/).
-
   - An image, as output from [Figma](https://www.figma.com/), in
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/).
 
@@ -78,7 +73,6 @@ encouraged to contribute ideas for deliverable items, as informed by their CLOs.
     usability and smart default problems obtained from the construction of the flows, are fixed.
 
 - [x] Complete the student-view design on [Figma](https://www.figma.com/).
-
   - An image, as output from [Figma](https://www.figma.com/), in
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/)
 
@@ -89,22 +83,18 @@ encouraged to contribute ideas for deliverable items, as informed by their CLOs.
 
 - [ ] Create new `TaskSubmissionEnhancement` Features to the student-view
       [Figma](https://www.figma.com/) design.
-
   - An image and video showcase, as output from [Figma](https://www.figma.com/), in
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/).
 
 - [ ] Create an administrator-view [Figma](https://www.figma.com/) design.
-
   - An image, as output from [Figma](https://www.figma.com/), in
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/).
 
 - [ ] Create a convenor-view [Figma](https://www.figma.com/) design.
-
   - An image, as output from [Figma](https://www.figma.com/), in
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/).
 
 - [ ] Create frame-by-frame flows of administrators performing current and new features.
-
   - Multiple images, as output from [Figma](https://www.figma.com/), in
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/).
   - Pre-requisite: The administrator-view deliverable item from this deliverable document must be
@@ -114,7 +104,6 @@ encouraged to contribute ideas for deliverable items, as informed by their CLOs.
     showing the use of specific features.
 
 - [ ] Create frame-by-frame flows of convenors performing current and new features.
-
   - Multiple images, as output from [Figma](https://www.figma.com/), in
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/).
 
@@ -137,7 +126,6 @@ encouraged to contribute ideas for deliverable items, as informed by their CLOs.
 
 - [x] Create design propositions on how the `ChatHistoryDisplayer` integrates with the OnTrack
       platform.
-
   - An image file in [thoth-tech/documentation](https://github.com/thoth-tech/documentation/).
 
 #### `ChatHistoryDisplayer`
@@ -152,11 +140,9 @@ encouraged to contribute ideas for deliverable items, as informed by their CLOs.
 
 - [x] Add functionality to `chathistorydisplayer-api`: create project directories in user
       directories.
-
   - Additional information: Project directories must be initialised as git repositories.
 
 - [x] Add functionality to `chathistorydisplayer-api`: write file from JSON payload.
-
   - Additional information: Pertains to text files.
 
 - [x] Add functionality to `chathistorydisplayer-api`: API end-point that retrieves the last
@@ -179,7 +165,6 @@ encouraged to contribute ideas for deliverable items, as informed by their CLOs.
 #### `Doubtfire`
 
 - [ ] Modify OnTrack to serve raw files, where appropriate.
-
   - Additional information: This contributes towards the integration of the
     `chathistorydisplayer-api` into the OnTrack platform, as the OnTrack platform needs PDF
     processing removed and separate handling for different classes of files (text files and PDFs
@@ -193,20 +178,16 @@ encouraged to contribute ideas for deliverable items, as informed by their CLOs.
 ### Cyber-security Oriented
 
 - [ ] Create a document that outlines the cyber-security protocols for project group members.
-
   - A markdown document in [thoth-tech/documentation](https://github.com/thoth-tech/documentation/).
 
 - [ ] Create a document, or documents, that introduce OnTrack administrators to potential
       cyber-security threats or issues.
-
   - A markdown document (or multiple) in
     [thoth-tech/documentation](https://github.com/thoth-tech/documentation/).
 
 - [ ] Create a document outlining the security concerns of propositional changes (or current enacted
       changes).
-
   - A markdown document in [thoth-tech/documentation](https://github.com/thoth-tech/documentation/).
 
 - [ ] Create a document that surveys group member compliance with security protocols.
-
   - A markdown document in [thoth-tech/documentation](https://github.com/thoth-tech/documentation/).

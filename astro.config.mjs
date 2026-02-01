@@ -5,6 +5,19 @@ import partytown from '@astrojs/partytown';
 
 // https://astro.build/config
 export default defineConfig({
+
+  server: {
+    host: true
+  },
+  vite: {
+    server: {
+      watch: {
+        usePolling: true,
+        interval: 60
+      }
+    }
+  },
+
   integrations: [
     partytown({
       config: {

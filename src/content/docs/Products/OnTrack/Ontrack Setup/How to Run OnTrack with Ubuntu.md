@@ -61,7 +61,6 @@ folder.
 ## 5. Partitioning
 
 1. Create the root partition:
-
    - Use as: Ext4 journaling file system.
    - Mount point: /
    - Tick the box to format.
