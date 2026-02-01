@@ -1,6 +1,7 @@
 ---
 title: Task-Dashboard Migration Investigation
-description: Investigation report for completing the task-dashboard migration from AngularJS to Angular
+description:
+  Investigation report for completing the task-dashboard migration from AngularJS to Angular
 ---
 
 # Task-Dashboard Migration Investigation
@@ -13,7 +14,9 @@ description: Investigation report for completing the task-dashboard migration fr
 
 ## What I Found
 
-The task-dashboard migration is about 80% done. The Angular components exist and work (I can see them running in `inbox.component.html`), but the main dashboard view still loads the old AngularJS directives. We have two parallel systems running.
+The task-dashboard migration is about 80% done. The Angular components exist and work (I can see
+them running in `inbox.component.html`), but the main dashboard view still loads the old AngularJS
+directives. We have two parallel systems running.
 
 ---
 
@@ -22,7 +25,7 @@ The task-dashboard migration is about 80% done. The Angular components exist and
 I went through the code and found these 7 card components that got migrated:
 
 1. TaskDescriptionCardComponent
-2. TaskDueDateCardComponent  
+2. TaskDueDateCardComponent
 3. TaskResourcesCardComponent
 4. TaskSubmissionCardComponent
 5. TaskCommentsCardComponent
@@ -36,20 +39,24 @@ All work fine - just need to finish switching the main dashboard over to use the
 ## What Needs to Change
 
 **Template update:**
-- `dashboard.tpl.html` still uses `<task-dashboard>` 
+
+- `dashboard.tpl.html` still uses `<task-dashboard>`
 - Needs to change to `<f-task-dashboard>`
 
 **State registration:**
+
 - Old AngularJS state in `doubtfire.states.ts` needs updating
 - Should register Angular component route instead
 
 **Module cleanup:**
+
 - `doubtfire-angularjs.module.ts` still imports 9 old .coffee files
 - Can remove these imports and delete the files
 
 **Files to delete (9 total):**
+
 - task-dashboard: `.coffee`, `.tpl.html`, `.scss`
-- student-task-list: `.coffee`, `.tpl.html`, `.scss`  
+- student-task-list: `.coffee`, `.tpl.html`, `.scss`
 - dashboard: `.coffee`, `.tpl.html`
 - `directives.coffee`
 
@@ -57,13 +64,16 @@ All work fine - just need to finish switching the main dashboard over to use the
 
 ## Why It's Tricky
 
-These changes need to happen together. If I update the template but not the state registration, routing breaks. If I delete files before updating the template, the dashboard stops loading. Can't split this into many small PRs - it's one atomic change.
+These changes need to happen together. If I update the template but not the state registration,
+routing breaks. If I delete files before updating the template, the dashboard stops loading. Can't
+split this into many small PRs - it's one atomic change.
 
 ---
 
 ## Current vs Target State
 
 **Right now:**
+
 ```
 dashboard.tpl.html  →  <task-dashboard>  →  AngularJS system (old)
 inbox.component.html  →  <f-task-dashboard>  →  Angular system (new)
@@ -72,6 +82,7 @@ inbox.component.html  →  <f-task-dashboard>  →  Angular system (new)
 ```
 
 **After migration:**
+
 ```
 dashboard.tpl.html  →  <f-task-dashboard>  ↘
                                             Angular system (unified)
@@ -103,9 +114,11 @@ Step 4: Delete old files
 
 ## Risk Level: Low
 
-The Angular components already work. This is just switching which template system renders them. If something breaks, we can revert quickly since the old files are still in git history.
+The Angular components already work. This is just switching which template system renders them. If
+something breaks, we can revert quickly since the old files are still in git history.
 
-Main risk: making sure no other files reference `<task-dashboard>` besides the main dashboard template.
+Main risk: making sure no other files reference `<task-dashboard>` besides the main dashboard
+template.
 
 ---
 
@@ -124,12 +137,15 @@ Main risk: making sure no other files reference `<task-dashboard>` besides the m
 ## What Could Go Wrong
 
 **Scenario 1:** Another file uses old tags we missed
+
 - Fix: Search codebase for `<task-dashboard>` before starting
 
-**Scenario 2:** Delete files before updating imports  
+**Scenario 2:** Delete files before updating imports
+
 - Fix: Remove imports first, then delete files
 
 **Scenario 3:** Update state before template
+
 - Fix: Always update template first
 
 ---

@@ -12,11 +12,12 @@ description: Plan for completing the task-dashboard migration
 
 ## Approach: 2 PRs
 
-After analyzing the code dependencies, I'm proposing 2 PRs instead of splitting this into many small ones.
+After analyzing the code dependencies, I'm proposing 2 PRs instead of splitting this into many small
+ones.
 
 ---
 
-## PR 1: Investigation & Documentation 
+## PR 1: Investigation & Documentation
 
 **Branch:** `investigate/task-dashboard-migration` (CURRENT)  
 **Status:** Complete
@@ -24,6 +25,7 @@ After analyzing the code dependencies, I'm proposing 2 PRs instead of splitting 
 Documents the current state and migration plan for next cohort.
 
 **Files:**
+
 - `task-dashboard-investigation.md`
 - `task-dashboard-pr-plan.md`
 
@@ -37,6 +39,7 @@ Documents the current state and migration plan for next cohort.
 **Changes needed:**
 
 1. **Update template** (`dashboard.tpl.html`):
+
    ```diff
    - <task-dashboard task="taskData.selectedTask"></task-dashboard>
    + <f-task-dashboard [task]="taskData.selectedTask"></f-task-dashboard>
@@ -82,7 +85,8 @@ Change 4: Delete old files
     ✓ Complete migration
 ```
 
-**These are interdependent, not independent tasks.** Splitting them creates broken intermediate states that don't work or make sense.
+**These are interdependent, not independent tasks.** Splitting them creates broken intermediate
+states that don't work or make sense.
 
 ---
 
@@ -111,6 +115,7 @@ Target State:
 ## Testing Plan
 
 **Navigation testing:**
+
 - Direct URL: `/projects/123/dashboard`
 - From project list → dashboard
 - Dashboard → select task → back to dashboard
@@ -118,12 +123,14 @@ Target State:
 - Back/forward buttons
 
 **Functionality testing:**
+
 - All 7 card components render
 - Task switching works
 - Data loads correctly
 - Console has no errors
 
 **Build testing:**
+
 - Build succeeds
 - No import errors
 - No missing file errors
@@ -134,10 +141,12 @@ Target State:
 
 If issues arise, revert the single PR. Old files remain in git history and can be restored quickly.
 
-**Why atomic changes matter:** One revert fixes everything vs. figuring out which of 5 PRs to revert.
+**Why atomic changes matter:** One revert fixes everything vs. figuring out which of 5 PRs to
+revert.
 
 ---
 
 ## Key Insight for Next Cohort
 
-Search the codebase for `<task-dashboard>` before starting - make sure dashboard.tpl.html is the only place using the old tag. Update module imports before deleting files to avoid build failures.
+Search the codebase for `<task-dashboard>` before starting - make sure dashboard.tpl.html is the
+only place using the old tag. Update module imports before deleting files to avoid build failures.
