@@ -22,16 +22,20 @@ OAuth2 Authorization Code flow to retrieve the tokens required for API calls.
 ## Step 1: Create an API Client on Panopto
 
 1. Navigate to the Panopto website:
+
    - Panopto Login:
      [https://deakin.au.panopto.com/Panopto/Pages/Home.aspx](https://deakin.au.panopto.com/Panopto/Pages/Home.aspx)
 
 2. Access User Settings:
+
    - Click on the User Settings icon (usually in the top-right corner).
 
 3. Create a New API Client:
+
    - Under the API Client section, click "Create New Client".
 
 4. Configure the API Client:
+
    - Set a name for the client (e.g., "OnTrack Integration Client" or "Doubtfire Integration
      Client").
    - Choose "Server-side Application" as the client type since the integration is backend-based.
@@ -52,6 +56,7 @@ CLIENT_SECRET=your_panopto_client_secret
 ## Step 2: Configure Allowed URLs and Redirect URI
 
 1. Set CORS (Cross-Origin Resource Sharing):
+
    - In the Allowed URL section of the API Client configuration, set CORS to `https://localhost` for
      local development.
 
@@ -107,6 +112,7 @@ included, you can use it to obtain new access tokens without user re-authorizati
 ## Step 4: Integrating with OnTrack (or Your Backend)
 
 1. **Store Credentials Securely:**
+
    - Create an `.env` file (for local development):
 
      ```plaintext
@@ -118,6 +124,7 @@ included, you can use it to obtain new access tokens without user re-authorizati
    - Load these environment variables in your backend application.
 
 2. **Authorization Flow Integration:**
+
    - Your backend can present a link to the authorization URL. The user clicks it to start the
      process.
    - After granting access, the backend receives the authorization code at the redirect URI.

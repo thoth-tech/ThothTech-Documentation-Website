@@ -16,12 +16,14 @@ authentication system within a Ruby on Rails application.
 ### Previous Implementation Steps
 
 1. **Setup Using google-api-client:**
+
    - Integrated the gem to handle Google OAuth 2.0.
    - Created an endpoint in authentication_api.rb for Google authentication (/auth/google).
    - Configured token verification using Google::Apis::Oauth2V2::Oauth2Service.
    - Generated temporary tokens for authenticated users.
 
 2. **Challenges Identified:**
+
    - **Token Validation Failures:** Issues with API key configuration and scope validation caused
      intermittent failures.
    - **Complexity in Library Usage:** The google-api-client gem required extensive configuration and
@@ -122,6 +124,7 @@ token validation and user data retrieval.
 4. **Testing**
 
    Conduct functional and security testing for the updated implementation:
+
    - Validate token-based authentication using Google accounts.
    - Test various scenarios such as invalid tokens and token expiration.
    - Simulate edge cases like incorrect client credentials.
