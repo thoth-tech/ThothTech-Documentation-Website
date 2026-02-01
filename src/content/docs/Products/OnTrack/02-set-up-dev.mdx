@@ -190,9 +190,11 @@ The `*` symbol next to `development` confirms you are on the correct branch.
 ### Step 16: Check Current Remote Settings
 
 - Use the following command to view the current remote settings:
+
   ```bash
   git remote -v
   ```
+
   - You should see `origin` pointing to the forked repository.
 
 ---
@@ -209,9 +211,11 @@ The `*` symbol next to `development` confirms you are on the correct branch.
 ### Step 18: Verify the Upstream Remote
 
 - Run the following command again to confirm the upstream remote is configured correctly:
+
   ```bash
   git remote -v
   ```
+
   - Ensure both `origin` and `upstream` are set properly.
 
 ---
@@ -221,9 +225,11 @@ The `*` symbol next to `development` confirms you are on the correct branch.
 ### Step 19: Update the Origin Remote URL
 
 - Update the `origin` to point to your forked repository:
+
   ```bash
   git remote set-url origin https://github.com/aditya993388/doubtfire-web.git
   ```
+
   - This ensures that all your changes and pushes will go to your forked repository.
 
 ---
@@ -233,9 +239,11 @@ The `*` symbol next to `development` confirms you are on the correct branch.
 ### Step 20: Verify Updated Remote URLs
 
 - Run the following command to check the updated remote settings:
+
   ```bash
   git remote -v
   ```
+
   - Verify the following:
     - **Origin**: Points to your forked repository
       (`https://github.com/aditya993388/doubtfire-web.git`).
@@ -253,18 +261,22 @@ The `*` symbol next to `development` confirms you are on the correct branch.
   git switch development
   ```
 - Verify the branch by using:
+
   ```bash
   git branch
   ```
+
   - The `*` symbol next to `development` confirms you are on the correct branch.
 
 ### Step 22: Pull the Latest Updates for `doubtfire-web`
 
 - After switching to the `development` branch, pull the latest updates from the repository to ensure
   you have the most recent changes:
+
   ```bash
   git pull
   ```
+
   - This fetches and merges all updates from the `origin/development` branch.
 
 ---
@@ -287,9 +299,11 @@ The `*` symbol next to `development` confirms you are on the correct branch.
   git remote set-url origin https://github.com/aditya993388/doubtfire-deploy.git
   ```
 - Verify the changes by running:
+
   ```bash
   git remote -v
   ```
+
   - Ensure the `origin` now points to the correct URL with the `.git` extension.
 
 ---
@@ -299,19 +313,25 @@ The `*` symbol next to `development` confirms you are on the correct branch.
 ### Step 24: Perform a Git Pull and Configure Remotes for `doubtfire-api`
 
 - Ensure the `doubtfire-deploy` repository is up-to-date by running:
+
   ```bash
   git pull
   ```
+
   - If it is already up to date, proceed.
+
 - Navigate to the `doubtfire-api` sub-repository:
   ```bash
   cd doubtfire-api
   ```
 - Check the current remote URLs with:
+
   ```bash
   git remote -v
   ```
+
   - At this stage, only the `origin` remote is configured.
+
 - Update the `origin` to point to your version of the `doubtfire-api` repository:
   ```bash
   git remote set-url origin https://github.com/aditya993388/doubtfire-api.git
@@ -321,9 +341,11 @@ The `*` symbol next to `development` confirms you are on the correct branch.
   git remote add upstream https://github.com/thoth-tech/doubtfire-api.git
   ```
 - Verify that both `origin` and `upstream` are correctly configured:
+
   ```bash
   git remote -v
   ```
+
   - Ensure `origin` points to your repository and `upstream` points to Thoth-Tech's repository.
 
 ---
@@ -386,11 +408,14 @@ The `*` symbol next to `development` confirms you are on the correct branch.
 ### Step 29: Run the Frontend
 
 - Run the frontend with npm: Open a terminal in the `doubtfire-web` directory and run:
+
   ```bash
   npm start
   ```
+
   - This will build and run the frontend application. If successful, it will host the application
     locally on port `4200`. ![Step 29](images/confirmation.PNG)
+
 - Confirmation Notification: Once the frontend is running, you will see a notification in the
   bottom-right corner of your Visual Studio Code window indicating that the application is available
   on `localhost:4200`.
@@ -437,14 +462,12 @@ The `*` symbol next to `development` confirms you are on the correct branch.
 ### Step 32: Exploring the Dashboard
 
 - After logging in, you’ll be directed to the dashboard showing **Enrolled Units**. Examples:
-
   - Introduction to Programming
   - Object-Oriented Programming
   - Artificial Intelligence for Games
   - Game Programming
 
 - Interact with the dashboard by:
-
   - Clicking on any enrolled unit to view details such as assignments and grades.
   - Using the "Select Unit" dropdown in the top-left corner to switch between units.
 

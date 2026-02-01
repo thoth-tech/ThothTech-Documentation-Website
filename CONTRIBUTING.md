@@ -155,7 +155,6 @@ syllables per word. For more information, see
    ```
 
 1. Install [`vale`](https://github.com/errata-ai/vale/releases). To install for:
-
    - macOS using `brew`, run: `brew install vale`.
    - Linux, use your distribution's package manager or a
      [released binary](https://github.com/errata-ai/vale/releases).

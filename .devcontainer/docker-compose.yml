@@ -1,0 +1,15 @@
+services:
+  thoth-astro-dev:
+    build:
+      context: ../
+      dockerfile: Dockerfile
+    ports:
+      - "4321:4321"
+    volumes:
+      - ..:/site
+      - thoth-astro-node_modules:/site/node_modules
+    tty: true
+    stdin_open: true
+    command: sleep infinity
+volumes:
+  thoth-astro-node_modules:
