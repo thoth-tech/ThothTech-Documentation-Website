@@ -21,6 +21,7 @@ complete this, as well as projected timelines and useful tutorials.
 - Splitting base images makes build and run more efficient
 - Initial base image uses .NET sdk -> this builds binaries
 - In Dockerfile:
+
   - `FROM [mcr.microsoft.com/dotnet/sdk:6-0-focal](http://mcr.microsoft.com/dotnet/sdk:6-0-focal) as BUILD`
   - Set working directory (`WORKDIR /source`)
   - Copy everything from current working directory into that new /source (`COPY . .`)

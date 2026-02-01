@@ -225,6 +225,7 @@ img.ontrack {
 
 /* Better table styling */
 .sl-markdown-content table {
+  max-width: max-content;   /*  added per review */
   /* width: fit-content; */
   width: auto;
   border-radius: 0.5rem;
@@ -240,6 +241,8 @@ img.ontrack {
   th {
     border-right: 1px solid var(--sl-color-gray-5);
   }
+}
+
 
   td:first-child,
   th:first-child {

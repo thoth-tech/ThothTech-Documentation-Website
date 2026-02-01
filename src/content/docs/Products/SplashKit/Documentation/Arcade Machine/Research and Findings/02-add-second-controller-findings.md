@@ -24,12 +24,15 @@ can control menus.
   configures two controllers to the arcade machine, both players will be able to interact with menus
   independent of each other. This has been tested locally with me using a PlayStation 4 &
   PlayStation 5 controller connected via USB.
+
   - It is also possible to use one keyboard and one controller, and have each device represent input
     for each player
 
 - RetroPie & EmulationStation handle input differently.
+
   - Emulationstation configs do not discriminate between player 1 and player 2 (or any number of
     players). Rather the config is just a series of buttons mapped to inputs.
+
     - Config file: `/home/$username/.emulationstation/es_input.cfg`
 
   - RetroPie **does** discriminate between players. Inputs are named player1_up, player1_down etc.
