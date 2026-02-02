@@ -3,7 +3,9 @@ name: CI
 on:
   pull_request:
   push:
-    branches: [main]
+    branches:
+    - main
+    - development
 
 jobs:
   build:
@@ -23,7 +25,9 @@ jobs:
         run: npm run format:check
       - name: Vale
         run: |
-          sudo apt update
-          sudo apt install snapd
-          sudo snap install vale --edge
+          curl -L -o vale.tar.gz "https://github.com/errata-ai/vale/releases/download/v3.13.0/vale_3.13.0_Linux_64-bit.tar.gz"
+          tar -xzf vale.tar.gz
+          sudo mv vale /usr/local/bin/vale
+          rm vale.tar.gz
+          vale --version
           npm run prose:check

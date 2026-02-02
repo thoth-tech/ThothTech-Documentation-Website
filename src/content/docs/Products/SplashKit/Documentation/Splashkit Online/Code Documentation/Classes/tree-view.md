@@ -73,7 +73,7 @@ The events can be listened to by attaching with `addEventListener(event, callbac
   - `FS` - the filesystem(s) the change occurred in.
   - `accept` - a function that can be called to announce that the change was successful -
     **currently unused**.
-- `folderUploadRequest` - The 'add file' button was clicked on on a directory. Members:
+- `folderUploadRequest` - The 'add file' button was clicked on a directory. Members:
   - `treeView` - the TreeView object
   - `path` - path to the directory
   - `FS` - the filesystem(s) the directory exists in.

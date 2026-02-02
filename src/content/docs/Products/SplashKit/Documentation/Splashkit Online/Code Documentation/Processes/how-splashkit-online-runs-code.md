@@ -739,7 +739,7 @@ EventListener.handleEvent*@http://localhost:8000/executionEnvironment_Internal.j
 ```
 
 We can see on each line, the function, filename, line number, and even column number! The problem,
-is that `stack` is actually non-standardized JavaScript, and so each browser implements it slightly
+is that `stack` is actually non-standardised JavaScript, and so each browser implements it slightly
 differently. Additionally, we still have to actually parse (read) the string, to get all the
 information out of it. This is the job that `parseErrorStack` performs.
 

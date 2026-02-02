@@ -12,7 +12,7 @@ a live document and ensures consistency across all Thoth Tech communications.
 1. **Know Your Audience**: Tailor your writing to the intended audience's knowledge level and
    expectations.
 2. **Know Your Purpose**: Understand the intention behind your writing.
-3. **Structure Your Writing**: Organize content logically and coherently.
+3. **Structure Your Writing**: Organise content logically and coherently.
 4. **Keep It Simple**: Use clear and straightforward language.
 5. **Review and Edit**: Always proofread for clarity, accuracy, and consistency.
 
@@ -294,8 +294,7 @@ the reader's skill level, and define technical terms clearly.
 
 #### Example
 
-> **Revision Date:** July 2024  
-> **Version ID:** 1.0.0
+> **Revision Date:** July 2024 **Version ID:** 1.0.0
 
 ---
 

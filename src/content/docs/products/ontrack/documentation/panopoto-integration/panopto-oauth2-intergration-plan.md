@@ -8,7 +8,7 @@ title: Panopto OAuth2 Integration Guide (Updated)
 
 This guide provides a detailed, step-by-step process to integrate Panopto’s OAuth2-based
 authentication into your backend application (e.g., OnTrack or Doubtfire-API). It covers creating an
-API client on Panopto, configuring OAuth2 settings, obtaining authorization codes, exchanging them
+API client on Panopto, configuring OAuth2 settings, obtaining authorisation codes, exchanging them
 for access tokens, and integrating the process into your application’s workflow. Technical
 improvements, corrections, and additional recommendations based on best practices have been
 included.
@@ -17,7 +17,7 @@ included.
 
 To upload videos to a user's personal Panopto instance, we need to authenticate using OAuth2. This
 involves creating an API client on Panopto, configuring redirect URIs and CORS, then performing the
-OAuth2 Authorization Code flow to retrieve the tokens required for API calls.
+OAuth2 Authorisation Code flow to retrieve the tokens required for API calls.
 
 ## Step 1: Create an API Client on Panopto
 
@@ -62,9 +62,9 @@ CLIENT_SECRET=your_panopto_client_secret
 
 ## Step 3: Exchange the Code for an Access Token
 
-Once the API client is set up, the next step is to perform the OAuth2 Authorization Code flow:
+Once the API client is set up, the next step is to perform the OAuth2 Authorisation Code flow:
 
-### Obtain the Authorization Code
+### Obtain the Authorisation Code
 
 Replace `YOUR_CLIENT_ID` and `YOUR_PORT` as needed:
 
@@ -80,12 +80,12 @@ https://deakin.au.panopto.com/Panopto/oauth2/connect/authorize?client_id=YOUR_CL
    http://localhost:9127/redirect?code=AUTHORIZATION_CODE
    ```
 
-### Exchange Authorization Code for Access Token
+### Exchange Authorisation Code for Access Token
 
 Use the code to request an access token. Note the correction in `grant_type` spelling
 (`authorization_code`):
 
-```bash
+```shell
 curl -X POST "https://deakin.au.panopto.com/Panopto/oauth2/connect/token"   -H "Content-Type: application/x-www-form-urlencoded"   -d "grant_type=authorization_code"   -d "code=YOUR_AUTHORIZATION_CODE"   -d "redirect_uri=http://localhost:9127/redirect"   -d "client_id=YOUR_CLIENT_ID"   -d "client_secret=YOUR_CLIENT_SECRET"
 ```
 
@@ -102,7 +102,7 @@ curl -X POST "https://deakin.au.panopto.com/Panopto/oauth2/connect/token"   -H "
 ```
 
 This `access_token` can be used to call Panopto’s API for video uploads. If a `refresh_token` is
-included, you can use it to obtain new access tokens without user re-authorization.
+included, you can use it to obtain new access tokens without user re-authorisation.
 
 ## Step 4: Integrating with OnTrack (or Your Backend)
 
@@ -117,10 +117,10 @@ included, you can use it to obtain new access tokens without user re-authorizati
 
    - Load these environment variables in your backend application.
 
-2. **Authorization Flow Integration:**
-   - Your backend can present a link to the authorization URL. The user clicks it to start the
+2. **Authorisation Flow Integration:**
+   - Your backend can present a link to the authorisation URL. The user clicks it to start the
      process.
-   - After granting access, the backend receives the authorization code at the redirect URI.
+   - After granting access, the backend receives the authorisation code at the redirect URI.
    - The backend exchanges the code for an access token automatically.
 
 3. **Video Upload:**

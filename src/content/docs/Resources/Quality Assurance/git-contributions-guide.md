@@ -23,7 +23,7 @@ To begin working on your project, follow these steps:
 
 - **Clone the Repository**: Clone your project's relevant Thoth Tech repository to your local
   machine:
-  ```bash
+  ```shell
   git clone <repository-url>
   ```
 - **Navigate to the created project folder**. You will be on the default branch (main/master).
@@ -33,7 +33,7 @@ To begin working on your project, follow these steps:
 - **Update Your Local Copy**: Ensure you are on the main/master branch and pull the latest changes
   from the origin:
 
-  ```bash
+  ```shell
   git checkout main
   git pull origin main
   ```
@@ -43,7 +43,7 @@ _Then:_
 - **Create a New Branch:** Create a new branch for your changes as per the
   [Branching Guidelines](#branching-guidelines):
 
-  ```bash
+  ```shell
   git checkout -b <branch-name>
   ```
 
@@ -51,14 +51,14 @@ _Then:_
 - **Commit Your Changes:** Commit your changes using the format provided in the
   [Commit Guidelines](#commit-guidelines).
 
-  ```bash
+  ```shell
   git add .
   git commit -m "Descriptive commit message"
   ```
 
 - **Push Your Branch:** Push your branch to the origin.
 
-  ```bash
+  ```shell
   git push origin <branch-name>
   ```
 
@@ -115,7 +115,7 @@ named: `feature/voice-verification-1.2-store-voice-input`.
 
 This branch can be created and checked out using the git command:
 
-```bash
+```shell
 git checkout -b feature/voice-verification-1.2-store-voice-input
 ```
 
@@ -182,7 +182,7 @@ message writing.
 
 - **Use the imperative mood in your commit message subject line**:
   - "Fix a bug" and **not** "Fixed a bug"
-  - "Change the behavior of Y" and **not** "Changed the behavior of Y"
+  - "Change the behaviour of Y" and **not** "Changed the behaviour of Y"
   - "Add new API methods" and **not** "Added new API methods"
 
 - **Keep the subject line (top line) concise**; keep it **within 50 characters**.
@@ -281,7 +281,7 @@ By following these guidelines, we maintain code quality and foster collaboration
      on a feature for voice verification, your branch might be named
      `feature/voice-verification-1.2-store-voice-input`.
 
-   ```bash
+   ```shell
    git checkout main
    git pull origin main
    git checkout -b feature/voice-verification-1.2-store-voice-input
@@ -302,7 +302,7 @@ By following these guidelines, we maintain code quality and foster collaboration
      [commit guidelines](#commit-guidelines). This helps maintain a clear and organised commit
      history.
 
-     ```bash
+     ```shell
      git add .
      git commit -m "feat(<scope>): <short summary>"
      ```
@@ -316,7 +316,7 @@ By following these guidelines, we maintain code quality and foster collaboration
   - **Push to Origin**: Push your branch to the remote repository. This makes your changes available
     for review and integration.
 
-    ```bash
+    ```shell
     git push -u origin feature/voice-verification-1.2-store-voice-input
     ```
 
@@ -344,7 +344,7 @@ By following these guidelines, we maintain code quality and foster collaboration
 1. **Switch to the Existing Branch**: If the branch already exists in the remote repository, switch
    to it using the following command:
 
-   ```bash
+   ```shell
    git checkout feature/voice-verification-1.2-store-voice-input
    ```
 
@@ -356,14 +356,14 @@ By following these guidelines, we maintain code quality and foster collaboration
 - If the branch does not exist in your local repository but does exist remotely, you can create a
   local copy with:
 
-  ```bash
+  ```shell
   git checkout -b feature/voice-verification-1.2-store-voice-input origin/feature/voice-verification-1.2-store-voice-input
   ```
 
 2. **Pull in Any New Code from the Default Branch**: Update your local branch with the latest
    changes from the default branch (main) using the following command:
 
-   ```bash
+   ```shell
    git pull origin main
    ```
 
@@ -388,13 +388,13 @@ By following these guidelines, we maintain code quality and foster collaboration
 
    - **Mark as Resolved**: After resolving conflicts, mark the files as resolved:
 
-     ```bash
+     ```shell
      git add <file-name>
      ```
 
    - **Commit the Merge**: Commit the resolved merge:
 
-     ```bash
+     ```shell
      git commit -m "Resolve merge conflicts"
      ```
 
@@ -428,7 +428,7 @@ allow developers to work separately. However, if you must collaborate on a featu
    Before starting your work, ensure you have the latest updates from the remote branch to avoid
    conflicts and work with the most recent changes.
 
-   ```bash
+   ```shell
    git pull origin feature/voice-verification-1.2-store-voice-input
    ```
 
@@ -453,13 +453,13 @@ remote repository, reducing the likelihood of conflicts when you push your own c
 
    - **Mark as Resolved**: After resolving conflicts, mark the files as resolved:
 
-     ```bash
+     ```shell
      git add <file-name>
      ```
 
    - **Commit the Merge**: Commit the resolved merge:
 
-     ```bash
+     ```shell
      git commit -m "Resolve merge conflicts"
      ```
 
