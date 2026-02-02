@@ -2,44 +2,6 @@
 title: Frontend Requirements Document
 ---
 
-## Project Overview
-
-## Table of Contents
-
-[1. Introduction](#1-introduction)
-
-- [1.1 Purpose]
-- [1.2 Scope]
-- [1.3 Intended Audience]
-
-[2. Functional Requirements]
-
-- [2.1 Tutor's Marking Progress Page]
-- [2.2 User Interface]
-- [2.3 Timer/Stopwatch Feature]
-- [2.4 Manual Time Input]
-- [2.5 Notification System]
-
-[3. Non-Functional Requirements](#3-non-functional-requirements)
-
-- [3.1 Performance]
-- [3.2 Usability]
-- [3.3 Compatibility]
-- [3.4 Security]
-
-[4. User Stories](#4-user-stories)
-
-- [4.1 User Story 1]
-- [4.2 User Story 2]
-- [4.3 User Story 3]
-
-[5. Design Mockups](#5-design-mockups)
-
-[6. Testing Requirements](#6-testing-requirements)
-
-- [6.1 Unit Testing]
-- [6.2 User Acceptance Testing]
-
 ## 1. Introduction
 
 ### 1.1 Purpose

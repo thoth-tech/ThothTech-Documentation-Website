@@ -6,19 +6,21 @@ title: Backend Design Document for "Tutor Times" Feature in OnTrack
 
 ### 1.1 Purpose
 
-This document outlines the design of the backend for the "Tutor Times" feature in OnTrack (formerly
-known as Doubtfire). The purpose is to establish the architectural and functional aspects of the
-backend necessary to support efficient time tracking and management for tutors.
+This document outlines the architectural design of the backend session tracking for the "Tutor
+Times" feature in OnTrack (formerly known as Doubtfire). The purpose is to establish the
+architectural and functional aspects of the backend necessary to support efficient time tracking and
+management for tutors.
 
 ### 1.2 Scope
 
 The scope of this design document covers the following aspects of the backend development for the
 "Tutor Times" feature:
 
+- Automated Session Tracking (`SessionTracker`)
 - Data Models and Schema
 - API Endpoints
 - Authentication and Authorisation
-- Background Jobs/Triggers
+- Background Jobs/Triggers (Assessment/Comment hooks)
 - Data Integrity Constraints
 - Performance Optimization
 - Security Measures
@@ -31,21 +33,29 @@ in the implementation of the "Tutor Times" feature.
 
 ## 2. Architecture and Data Models
 
-- A link for UML diagrams will be provided here in future to illustrate the architecture and data
-  models for the "Tutor Times" feature.
+[UML Diagram - Tutor Time](https://lucid.app/lucidchart/3f089d75-d16d-4930-8b12-f0a4890e3f74/edit?invitationId=inv_e9f40e2f-ff8e-4011-9957-ecef3cd44ef0)
 
 ### 2.1 Data Storage
 
-- Create a new database table named `tutor_times` or modify an existing one to store marking time
-  data for tutors and students.
-- Define fields such as `tutor_id`, `student_id`, `task_id`, `start_time`, and `end_time` to record
-  marking session details.
+- Creates the database table named `marking_sessions` or modify the existing one to store marking
+  time data for tutors and students.<br><br>
+- Defined fields: <br> t.bigint `user_id`, null: false<br> t.bigint `unit_id`, null: false<br>
+  t.string `ip_address`<br> t.datetime `start_time`<br> t.datetime `end_time`<br> t.integer
+  `duration_minutes`, default: 0<br> t.boolean `during_tutorial`<br> t.datetime `created_at`, null:
+  false<br> t.datetime `updated_at`, null: false<br> t.index ["unit_id"], name:
+  `index_marking_sessions_on_unit_id`<br> t.index ["user_id", "unit_id", "ip_address",
+  "updated_at"], name: `index_marking_sessions_on_user_unit_ip_and_time`<br> t.index ["user_id"],
+  name: `index_marking_sessions_on_user_id`<br><br>
+- **session_activities**: Logs individual actions (`action`, `project_id`, `task_id`) linked to a
+  session.
 
 ### 2.2 Data Schema
 
-- Define a comprehensive data schema that includes relationships between tables to support the
-  required functionality.
-- Ensure that the schema accommodates storing marking time data at both the student and task levels.
+The backend implements a **15-minute inactivity threshold**.
+
+- **New Session:** Created if no active session exists within the threshold.
+- **Extended Session:** If an activity occurs within 15 minutes of the last one, the `end_time` is
+  pushed forward.
 
 ### 2.3 Database Relationships
 
@@ -57,88 +67,90 @@ in the implementation of the "Tutor Times" feature.
 
 ### 3.1 API Endpoints
 
-- Develop a set of RESTful API endpoints to interact with marking time data.
+- Developed API endpoints
+  - `GET /api/units/:unit_id/marking_sessions`: Retrieves sessions. Supports `start_date`,
+    `end_date`, and `timezone` params.
+  - `PUT /api/projects/:id/task_def_id/:id`: Implicitly triggers the `SessionTracker` when an
+    assessment is saved.
 - Implement the following endpoints:
-  - `POST /api/tutor-times`: Create a new marking session record.
-  - `GET /api/tutor-times/:id`: Retrieve a specific marking session record.
   - `GET /api/tutor-times/tutor/:tutor_id`: Retrieve all marking session records for a specific
     tutor.
   - `GET /api/tutor-times/student/:student_id`: Retrieve all marking session records for a specific
     student.
-  - `PUT /api/tutor-times/:id`: Update an existing marking session record.
   - `DELETE /api/tutor-times/:id`: Delete a marking session record.
 
 ### 3.2 Authentication and Authorisation
 
-- Implement user authentication and authorisation to secure access to marking time data.
-- Ensure that only authorised users (tutors and unit chairs) can perform CRUD operations on marking
-  session records.
+#### Implemented user authentication and authorisation to secure access to marking time data.
+
+- Tutors: Authorized to view only their own marking_sessions within a specific unit.
+
+#### Implement the following user authentication and authorisation to secure access to marking time data.
+
+- Role-Based Access Control (RBAC): Leverages existing OnTrack roles.
+  - Convenors (Unit Chairs): Authorized to view all marking_sessions associated with their unit.
+- Session Tracking Authorization: Only users with Role.admin, Role.convenor, or Role.tutor trigger
+  the SessionTracker upon activity.
 
 ## 4. Background Jobs/Triggers
 
-### 4.1 Calculation of Marking Time Totals
+### 4.1 Automated Session Updates (Passive Triggers)
 
-- Develop background jobs or database triggers to calculate and update total marking time for each
-  tutor and student.
-- The system should automatically update marking time totals when new marking session records are
-  added or modified.
+- **Activity Hooks:** The system does not use a standalone timer. Instead, it hooks into existing
+  API write actions.
+
+- **Duration Persistence:** To optimize frontend performance, duration_minutes is calculated and
+  persisted in the database at the moment a session is updated, rather than being calculated
+  on-the-fly during GET requests.
 
 ## 5. Data Integrity and Validation
 
-### 5.1 Data Integrity Constraints
+### 5.1 Technical Logic Constraints
 
-- Implement data integrity constraints to ensure the accuracy and consistency of data.
-- Enforce rules such as referential integrity and data type validation to maintain data quality.
+- **Session Duration Calculation:** Duration is calculated using integer truncation: ((end_time -
+  start_time) / 60).to_i.
+- **Sticky Threshold:** Validated via end_time > 15.minutes.ago.
+- **Validation Rules:** end_time must always be greater than or equal to start_time.
 
 ## 6. Non-Functional Requirements
 
 ### 6.1 Performance Optimization
 
-- Optimize database queries and operations to ensure fast data retrieval, even as the volume of
-  marking time records grows.
-- Implement caching mechanisms to reduce query load and enhance system performance.
+- Database indexes are implemented on `unit_id` and a composite index on
+  `[user_id, unit_id, ip_address, updated_at]` to ensure rapid session lookups during high-frequency
+  marking.
 
-### 6.2 Security Measures
+### 6.2 Security
 
-- Implement necessary security measures to protect marking time data and prevent unauthorized
-  access.
-- Use encryption to secure sensitive data, such as user credentials.
-
-### 6.3 Compatibility
-
-- Ensure compatibility with the frontend and other system components.
-- Verify that the API endpoints work seamlessly with modern web browsers and other clients.
+- User IP addresses are logged to identify potential session sharing or unauthorized access.
 
 ## 7. Testing Strategy
 
-### 7.1 Unit Testing
+### 7.1 Unit Testing (`Minitest`)
 
-- Develop comprehensive unit tests for API endpoints, database interactions, and background jobs to
-  ensure the correctness and reliability of backend components.
+- **Memory Synchronization:** Tests must use `.reload` on model objects after API calls to
+  synchronize stale Ruby variables with updated database records.
+- **Time Travel:** Tests utilize `ActiveSupport::Testing::TimeHelpers` (`travel_to`) to simulate
+  session gaps and threshold timeouts.
+- **Consistency:** All tests must use `.in_time_zone` to avoid 1-second drifts common with
+  `.to_time`.
 
-### 7.2 Integration Testing
+## 8. Roadmap & Open Issues
 
-- Perform integration testing to verify the seamless integration of backend components with the
-  frontend and other system modules.
+### 8.1 Suggested Improvements
 
-## 8. Deployment Plan
-
-### 8.1 Deployment Environment
-
-- Deploy the backend of the "Tutor Times" feature to the production environment of OnTrack.
-
-### 8.2 Deployment Process
-
-- Follow a systematic deployment process to release backend updates, including version control and
-  continuous integration practices.
+- **Minimum Duration Floor:** Implement a 5-minute floor for single-action sessions to prevent `0`
+  minute durations caused by integer truncation.
+- **Dirty Checking:** Update `SessionTracker` to only increment assessment counts if
+  `task.saved_change_to_status?` is true.
+- **Heartbeat Signal:** (Frontend/API) Add a heartbeat to track reading and typing time before a
+  "Save" is clicked.
 
 ## 9. Conclusion
 
-This design document provides a detailed plan for the backend implementation of the "Tutor Times"
-feature in OnTrack. It covers the architectural aspects, data models, API design, security measures,
-testing strategies, and deployment plans. By following this design, we ensure the reliable and
-efficient operation of the "Tutor Times" feature, enhancing the user experience for tutors and
-students.
+The backend for "Tutor Times" provides a robust, passive tracking mechanism. By leveraging existing
+assessment hooks, it captures workload data without manual tutor intervention, while the
+`SessionActivity` schema provides a foundation for granular task-level analytics.
 
 ## 10. Appendices
 
