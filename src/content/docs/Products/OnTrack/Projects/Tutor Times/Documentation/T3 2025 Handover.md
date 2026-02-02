@@ -14,7 +14,8 @@ development.
 The following architecture has been implemented and verified in the 10.0.x branch:
 
 - **Tracking Mode:** Automated / "Sticky Session" Logic.
-- _Behavior:_ Sessions are automatically created and extended to group user activity into continuous blocks.
+- _Behavior:_ Sessions are automatically created and extended to group user activity into continuous
+  blocks.
 - _Threshold:_ A 15-minute inactivity window determines when a session closes.
 
 - **Manual Timer:** Deprecated and removed from the UI to reduce tutor cognitive load.
