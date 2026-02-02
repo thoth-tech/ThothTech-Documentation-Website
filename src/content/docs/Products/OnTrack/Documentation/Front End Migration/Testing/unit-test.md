@@ -2,7 +2,7 @@
 title: Unit Test
 ---
 
-```js
+```javascript
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NotFoundComponent } from './not-found.component';
@@ -36,7 +36,7 @@ npm install
 npm test
 ```
 
-![unit test terminal output](./images/unit_test_terminal_output.png)
+![unit test terminal output](/src/assets/migration-unit-test/unit_test_terminal_output.png)
 
 ```shell
 git add .

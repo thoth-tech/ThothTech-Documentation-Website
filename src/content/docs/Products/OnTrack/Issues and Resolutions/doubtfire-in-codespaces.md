@@ -71,7 +71,7 @@ The front-end seemed to run fine, but the back-end was not working as expected. 
 was not running, and the database was not connected. The following error was displayed in the
 terminal:
 
-```bash
+```shell
 ERROR: ActionDispatch::HostAuthorization::DefaultResponseApp Blocked host: <github codespace host name>
 ```
 

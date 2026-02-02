@@ -19,7 +19,7 @@ the same process.
 
 Research for this spike was conducted by reviewing Sidekiq's official documentation, community
 forums, and GitHub issues. Additionally, a prototype was created in a development environment to
-test the integration points and monitor the behavior of Sidekiq within the context of our
+test the integration points and monitor the behaviour of Sidekiq within the context of our
 application.
 
 ## Findings

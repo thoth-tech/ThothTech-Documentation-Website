@@ -1,15 +1,15 @@
 ---
-title: Below the Surface Enemy Colors
+title: Below the Surface Enemy Colours
 ---
 
 ## Improvement Suggestion Description
 
-The color scheme of the cockroach enemy should be changed to a brighter colour. The colour scheme of
-the giant rat final boss should also be reconsidered.
+The colour scheme of the cockroach enemy should be changed to a brighter colour. The colour scheme
+of the giant rat final boss should also be reconsidered.
 
 ## Reasoning
 
-Currently, the cockroach emeny has a dark brown color scheme, which makes it difficult to identify
+Currently, the cockroach emeny has a dark brown colour scheme, which makes it difficult to identify
 because the background is a combination of a dark grey bottom half and a somewhat lighter shad of
 grey for the top half. The dark brown colour of the cockroach has very little contrast with the dark
 grey of the background and is thus extremely difficult to spot.

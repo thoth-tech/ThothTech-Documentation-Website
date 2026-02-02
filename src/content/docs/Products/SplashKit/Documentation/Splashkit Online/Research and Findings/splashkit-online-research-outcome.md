@@ -103,7 +103,7 @@ different_render()
   C++ string (not a primitive), and also returns something other than a primitive. Methods involving
   manual allocation were investigated, but instead the two binding implementations Embind and WebIDL
   Binder seemed more promising.
-- Embind bindings for color and a few functions were created. They look as follows:
+- Embind bindings for colour and a few functions were created. They look as follows:
 
 ```
 EMSCRIPTEN_BINDINGS(color) {
