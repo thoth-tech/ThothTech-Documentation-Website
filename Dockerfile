@@ -1,4 +1,4 @@
-FROM node:iron-trixie-slim
+FROM node:24-trixie-slim
 
 WORKDIR /site
 
@@ -7,7 +7,7 @@ COPY package*.json /site/
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install git curl -y
 
-RUN npm install
+# RUN npm install
 
 # Install Vale
 RUN set -eux; \
