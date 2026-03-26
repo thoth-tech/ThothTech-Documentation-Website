@@ -117,6 +117,14 @@ export default defineConfig({
               autogenerate: { directory: "Resources/Quality Assurance" },
             },
             {
+              label: "Writing Style Guide",
+              link: "/resources/writing-style-guide"
+            },
+            {
+              label: "Documenting for Thoth Tech",
+              link: "/resources/documenting-for-thoth-tech"
+            },
+            {
               label: "Frequently Asked Questions (FAQ)",
               link: "/resources/faq"
             },
