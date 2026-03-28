@@ -27,7 +27,7 @@ requests.
 - [Contributing to Repositories: How To](/resources/quality-assurance/git-contributions-guide#contributing-to-repositories-how-to)
 - [Branching Guidelines](/resources/quality-assurance/git-contributions-guide#branching-guidelines)
 - [Commit Guidelines](/resources/quality-assurance/git-contributions-guide#commit-guidelines)
-- [Commit Message Format](/resources/quality-assurance/git-contributions-guide#message-format)
+- [Commit Message Guidelines](/resources/quality-assurance/git-contributions-guide#commit-message-guidelines)
 - [Code Review Guidelines](/resources/quality-assurance/git-contributions-guide#code-review-guidelines)
 - [Git Workflow Summary](/resources/quality-assurance/git-contributions-guide#git-workflow-summary)
 
@@ -45,8 +45,9 @@ development process.
 - [Epics and User Stories](/resources/quality-assurance/testing-and-dev#epics-and-user-stories)
 - [Software Requirements Specification Document](/resources/quality-assurance/testing-and-dev#software-requirements-specification-document)
 - [Testing and Development](/resources/quality-assurance/testing-and-dev#testing-and-development)
-  - [Test Strategy](/resources/quality-assurance/testing-and-dev#test-strategy)
+  - [Testing Templates](/resources/quality-assurance/testing-and-dev#testing-templates)
   - [Test Plans](/resources/quality-assurance/testing-and-dev#making-a-test-plan)
+  - [Test Strategy](/resources/quality-assurance/testing-and-dev#test-strategy)
   - [Testing Tools](/resources/quality-assurance/testing-and-dev#testing-tools)
   - [Test Driven Development](/resources/quality-assurance/testing-and-dev#test-driven-development)
-  - [Testing Templates](/resources/quality-assurance/testing-and-dev#testing-templates)
+
