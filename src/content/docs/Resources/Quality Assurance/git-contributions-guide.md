@@ -9,6 +9,7 @@ sidebar:
 - [Contributing to Repositories: How To](#contributing-to-repositories-how-to)
 - [Branching Guidelines](#branching-guidelines)
 - [Commit Guidelines](#commit-guidelines)
+- [Commit Message Guidelines](#commit-message-guidelines)
 - [Code Review Guidelines](#code-review-guidelines)
 - [Git Workflow Summary](#git-workflow-summary)
 
