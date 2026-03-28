@@ -16,13 +16,13 @@ sidebar:
 
 ### 1.5 Definitions and Acronyms
 
-## Overall Description
+## 2. Overall Description
 
 ### 2.1 User Needs
 
 ### 2.2 Assumptions and Dependencies
 
-## System Features and Requirements
+## 3. System Features and Requirements
 
 ### 3.1 Functional Requirements
 
