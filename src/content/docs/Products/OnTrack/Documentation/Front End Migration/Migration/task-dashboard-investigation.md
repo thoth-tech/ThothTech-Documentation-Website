@@ -6,8 +6,8 @@ description:
 
 # Task-Dashboard Migration Investigation
 
-**Date:** January 19, 2026  
-**Investigator:** Husainuddin Mohammed, 223380186  
+**Date:** January 19, 2026
+**Investigator:** Husainuddin Mohammed, 223380186
 **Branch:** `investigate/task-dashboard-migration`
 
 ---
@@ -107,7 +107,7 @@ Step 3: Remove old file imports      } together
 Step 4: Delete old files
 ```
 
-**Can't do Step 4 before Steps 1-3** → Dashboard won't load  
+**Can't do Step 4 before Steps 1-3** → Dashboard won't load
 **Can't do Step 2 before Step 1** → Router looks for wrong component
 
 ---
@@ -152,7 +152,7 @@ template.
 
 ## Time Estimate
 
-4-6 hours for someone who knows the codebase.  
+4-6 hours for someone who knows the codebase.
 8-12 hours if you're new to it.
 
 Most of the time will be testing different navigation paths.

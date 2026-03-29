@@ -5,8 +5,8 @@ description: Investigation report for the inbox component migration from Angular
 
 # Inbox Migration Investigation Report
 
-**Date:** January 08, 2026  
-**By:** Husainuddin Mohammed, 223380186  
+**Date:** January 08, 2026
+**By:** Husainuddin Mohammed, 223380186
 **Task:** Investigate inbox component migration from AngularJS to Angular
 
 ---

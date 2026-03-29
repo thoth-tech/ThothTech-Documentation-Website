@@ -5,8 +5,8 @@ description: Complete migration plan for inbox component including parent depend
 
 # Full Angular Migration Plan: Inbox Component
 
-**Date:** January 14, 2026  
-**By:** Husainuddin Mohammed, 223380186  
+**Date:** January 14, 2026
+**By:** Husainuddin Mohammed, 223380186
 **Task:** Complete full Angular migration for units/tasks/inbox
 
 ---

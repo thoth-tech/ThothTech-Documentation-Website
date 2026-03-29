@@ -40,9 +40,9 @@ The AI‑based Effort Prediction feature is designed to support students and sta
 - Container connectivity validation (Rails to TorchServe).
 
 ### Model Training and Validation
-- **Training:** Regression models will be trained on labelled effort data to capture workload patterns.  
-- **Validation:** Accuracy of predictions will be validated against held‑out test data.  
-- **Outcome:** Ensures the model generalises well to unseen inputs and provides reliable effort estimates.  
+- **Training:** Regression models will be trained on labelled effort data to capture workload patterns.
+- **Validation:** Accuracy of predictions will be validated against held‑out test data.
+- **Outcome:** Ensures the model generalises well to unseen inputs and provides reliable effort estimates.
 
 ### Peer Review Testing
 - Validate Dockerfile changes.

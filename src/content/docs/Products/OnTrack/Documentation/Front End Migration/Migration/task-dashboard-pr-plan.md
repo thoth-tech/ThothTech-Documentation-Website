@@ -5,7 +5,7 @@ description: Plan for completing the task-dashboard migration
 
 # Task-Dashboard Migration - PR Plan
 
-**Created:** January 19, 2026  
+**Created:** January 19, 2026
 **Created by:** Husainuddin Mohammed, 223380186
 
 ---
@@ -19,7 +19,7 @@ ones.
 
 ## PR 1: Investigation & Documentation
 
-**Branch:** `investigate/task-dashboard-migration` (CURRENT)  
+**Branch:** `investigate/task-dashboard-migration` (CURRENT)
 **Status:** Complete
 
 Documents the current state and migration plan for next cohort.
@@ -33,7 +33,7 @@ Documents the current state and migration plan for next cohort.
 
 ## PR 2: Complete Migration
 
-**Branch:** `migrate/complete-task-dashboard`  
+**Branch:** `migrate/complete-task-dashboard`
 **Status:** Not Started
 
 **Changes needed:**
