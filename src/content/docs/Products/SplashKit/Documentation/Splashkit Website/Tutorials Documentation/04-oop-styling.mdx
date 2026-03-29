@@ -1,6 +1,7 @@
 ---
 title: Converting Between Top-Level Statements and OOP Styling in C#
-description: Learn how to add object-oriented programming (OOP) to the SplashKit tutorials.
+description:
+  Learn how to add object-oriented programming (OOP) to the SplashKit tutorials.
 sidebar:
   label: C# OOP Styling
   hidden: true
@@ -9,9 +10,9 @@ sidebar:
 import { Tabs, TabItem } from "@astrojs/starlight/components";
 import { Steps } from "@astrojs/starlight/components";
 
-This guide explains how to convert between top-level statements and object-oriented programming
-(OOP) styles in C# for SplashKit tutorials. This guide is good to refer to when you need to convert
-code between the two styles.
+This guide explains how to convert between top-level statements and
+object-oriented programming (OOP) styles in C# for SplashKit tutorials. This
+guide is good to refer to when you need to convert code between the two styles.
 
 ## C# Tabs
 
@@ -19,16 +20,16 @@ code between the two styles.
 
 **Top-Level Statements**:
 
-- Top-level statements allow you to write C# code without explicitly defining a class or `Main`
-  method.
-- Uses the directive: `using static SplashKitSDK.SplashKit;`, so SplashKit functions are called
-  directly, such as `WriteLine("Hello!");`.
+- Top-level statements allow you to write C# code without explicitly defining a
+  class or `Main` method.
+- Uses the directive: `using static SplashKitSDK.SplashKit;`, so SplashKit
+  functions are called directly, such as `WriteLine("Hello!");`.
 
 **Object-Oriented Programming (OOP)**:
 
 - OOP-style C# code requires defining a `Main` method inside a class.
-- Uses `using SplashKitSDK;`, meaning all SplashKit commands are prefixed with `SplashKit.` (e.g.,
-  `SplashKit.WriteLine("Hello!");`).
+- Uses `using SplashKitSDK;`, meaning all SplashKit commands are prefixed with
+  `SplashKit.` (e.g., `SplashKit.WriteLine("Hello!");`).
 
 ### Converting from Top-Level Statements to OOP
 

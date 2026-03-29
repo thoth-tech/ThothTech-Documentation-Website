@@ -6,7 +6,8 @@ title: Troubleshooting Doubtfire Setup
 
 1. docker: 'compose' is not a docker command. See 'docker --help'
 
-   > You need to change “docker compose” of file run-full.sh in doubtfire-deploy/development
+   > You need to change “docker compose” of file run-full.sh in
+   > doubtfire-deploy/development
 
 2. doubtfire-web doesn’t compile successfully:
    - Open terminal
@@ -32,6 +33,7 @@ title: Troubleshooting Doubtfire Setup
 
 ## 4. Give Up
 
-Still cannot deploy it? Maybe it’s time to give up, you can just use Burp Suite and pentest online
-on my VPS: <http://208.87.135.57:4200/> **IMPORTANT**: don’t scan with BurpSuite you guys won’t find
-anything anyway because of the anchor tag.
+Still cannot deploy it? Maybe it’s time to give up, you can just use Burp Suite
+and pentest online on my VPS: <http://208.87.135.57:4200/> **IMPORTANT**: don’t
+scan with BurpSuite you guys won’t find anything anyway because of the anchor
+tag.

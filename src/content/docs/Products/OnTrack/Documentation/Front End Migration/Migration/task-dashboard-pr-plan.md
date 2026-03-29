@@ -12,8 +12,8 @@ description: Plan for completing the task-dashboard migration
 
 ## Approach: 2 PRs
 
-After analyzing the code dependencies, I'm proposing 2 PRs instead of splitting this into many small
-ones.
+After analyzing the code dependencies, I'm proposing 2 PRs instead of splitting
+this into many small ones.
 
 ---
 
@@ -85,8 +85,8 @@ Change 4: Delete old files
     ✓ Complete migration
 ```
 
-**These are interdependent, not independent tasks.** Splitting them creates broken intermediate
-states that don't work or make sense.
+**These are interdependent, not independent tasks.** Splitting them creates
+broken intermediate states that don't work or make sense.
 
 ---
 
@@ -108,7 +108,8 @@ Target State:
                                            Old files deleted ✓
 ```
 
-**Risk if split:** Each intermediate step leaves the codebase in a half-migrated state.
+**Risk if split:** Each intermediate step leaves the codebase in a half-migrated
+state.
 
 ---
 
@@ -139,14 +140,16 @@ Target State:
 
 ## Rollback Strategy
 
-If issues arise, revert the single PR. Old files remain in git history and can be restored quickly.
+If issues arise, revert the single PR. Old files remain in git history and can
+be restored quickly.
 
-**Why atomic changes matter:** One revert fixes everything vs. figuring out which of 5 PRs to
-revert.
+**Why atomic changes matter:** One revert fixes everything vs. figuring out
+which of 5 PRs to revert.
 
 ---
 
 ## Key Insight for Next Cohort
 
-Search the codebase for `<task-dashboard>` before starting - make sure dashboard.tpl.html is the
-only place using the old tag. Update module imports before deleting files to avoid build failures.
+Search the codebase for `<task-dashboard>` before starting - make sure
+dashboard.tpl.html is the only place using the old tag. Update module imports
+before deleting files to avoid build failures.

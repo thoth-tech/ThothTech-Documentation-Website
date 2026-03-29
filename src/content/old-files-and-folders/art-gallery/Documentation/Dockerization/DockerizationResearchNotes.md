@@ -6,9 +6,10 @@ title: Preliminary Research
 
 ### Preamble
 
-The goal of this research is to better understand how to fully dockerize a .NET minimal web api,
-with a Vue based front end. The research will include an in-depth look into how we can begin to
-complete this, as well as projected timelines and useful tutorials.
+The goal of this research is to better understand how to fully dockerize a .NET
+minimal web api, with a Vue based front end. The research will include an
+in-depth look into how we can begin to complete this, as well as projected
+timelines and useful tutorials.
 
 ### General
 
@@ -23,8 +24,10 @@ complete this, as well as projected timelines and useful tutorials.
 - In Dockerfile:
   - `FROM [mcr.microsoft.com/dotnet/sdk:6-0-focal](http://mcr.microsoft.com/dotnet/sdk:6-0-focal) as BUILD`
   - Set working directory (`WORKDIR /source`)
-  - Copy everything from current working directory into that new /source (`COPY . .`)
-  - Restore project dependencies (`RUN dotnet restore "\*.csproj" --disable-parallel`)
+  - Copy everything from current working directory into that new /source
+    (`COPY . .`)
+  - Restore project dependencies
+    (`RUN dotnet restore "\*.csproj" --disable-parallel`)
   - Publish artefacts to output directory
     (`RUN dotnet publish "\*.csproj" -c release -o /app --no-restore`)
 
@@ -33,14 +36,15 @@ complete this, as well as projected timelines and useful tutorials.
 - In Dockerfile:
   - `FROM [mcr.microsoft.com/dotnet/aspnet:6-0-focal](http://mcr.microsoft.com/dotnet/sdk:6-0-focal)`
   - Create new working directory (`WORKDIR /app`)
-  - Copy output from build into current working directory (`COPY --from=build /app ./`)
+  - Copy output from build into current working directory
+    (`COPY --from=build /app ./`)
   - Expose port (`EXPOSE 5000`)
   - Define entrypoint (`ENTRYPOINT ["dotnet", "ProjName.dll"]`)
 
 **To build container:**
 
-`docker build --rm -t productive-dev/proj-name:latest .` ^^ must be run inside root directory of
-project
+`docker build --rm -t productive-dev/proj-name:latest .` ^^ must be run inside
+root directory of project
 
 `docker image ls -> lists built images (use to check if built)`
 
@@ -55,29 +59,33 @@ ASPNETCORE_URLS=<https://+:5000> productive-dev/proj-name
 
 `docker container stop <first 3 digits from container id>`
 
-**Docker-compose.yml file will be required to run database and backend at the same time**
-<https://www.youtube.com/watch?v=9ZEbJT36-Uk>
+**Docker-compose.yml file will be required to run database and backend at the
+same time** <https://www.youtube.com/watch?v=9ZEbJT36-Uk>
 
-- `docker-compose up` and `docker-compose up --build` to run containers from .yml file
+- `docker-compose up` and `docker-compose up --build` to run containers from
+  .yml file
 - Link containers using bridge network
 - Specify each service: postgreSQL image and image build from Dockerfile
 - Automatically dump .sql file into db on first build by mounting .sql scrip to
   `docker-entrypoint-initdb.d`
-- change db connection string in api to match docker-compose, Server=host.docker.local
+- change db connection string in api to match docker-compose,
+  Server=host.docker.local
 
 ### Frontend (Vue) (weeks 7-10)
 
 - In Dockerfile:
-  - Choose base image for your Vue application. In this case, we'll use node:14.18.0-alpine3.14,
-    which is a lightweight version of Node.js (`FROM node:14.18.0-alpine3.14`)
+  - Choose base image for your Vue application. In this case, we'll use
+    node:14.18.0-alpine3.14, which is a lightweight version of Node.js
+    (`FROM node:14.18.0-alpine3.14`)
   - Set the working directory to /app (`WORKDIR /app`)
   - Install dependencies: Install the @vue/cli globally using the RUN command
     (`RUN npm install -g @vue/cli`)
-  - Copy the package.json and package-lock.json files: Copy the package.json and package-lock.json
-    files to the working directory using the COPY command (`COPY package*.json ./`)
-  - Run npm install to install the dependencies for our application. We need to use
-    --legacy-peer-deps flag to work around any potential issues with peer dependencies
-    (`RUN npm install --legacy-peer-deps`)
+  - Copy the package.json and package-lock.json files: Copy the package.json and
+    package-lock.json files to the working directory using the COPY command
+    (`COPY package*.json ./`)
+  - Run npm install to install the dependencies for our application. We need to
+    use --legacy-peer-deps flag to work around any potential issues with peer
+    dependencies (`RUN npm install --legacy-peer-deps`)
   - Copy the rest of the source code to the working directory (`COPY . ./`)
   - Run npm run build to build the application (`RUN npm run build`)
   - Expose port 80 (HTTP) (`EXPOSE 80`)
@@ -87,7 +95,8 @@ ASPNETCORE_URLS=<https://+:5000> productive-dev/proj-name
 **Integrating with backend:**
 
 - Create dockr-compose.yml in root directory and add frontend service
-- Ensure `context` to locate Dockerfile in nested directories for backend/frontend
+- Ensure `context` to locate Dockerfile in nested directories for
+  backend/frontend
 - `docker-compose up --build` to build and tun containers
 - Repos will need to be re-structured as follows:
 
@@ -127,10 +136,10 @@ ASPNETCORE_URLS=<https://+:5000> productive-dev/proj-name
   └── docker-compose.yml
 ```
 
-- There will also be additional docker-copmose.yml files to run each side of the application in
-  isolation, ie. running just the backend containers or just the frontend container. This will help
-  development teams quickly test their individual contributions. The updated directory tree is as
-  follows:
+- There will also be additional docker-copmose.yml files to run each side of the
+  application in isolation, ie. running just the backend containers or just the
+  frontend container. This will help development teams quickly test their
+  individual contributions. The updated directory tree is as follows:
 
 ```plaintext
   ├── art-gallery-backend
@@ -170,8 +179,8 @@ ASPNETCORE_URLS=<https://+:5000> productive-dev/proj-name
   └── docker-compose.yml
 ```
 
-- The final production environment will contain production copies of each docker file, as shown
-  here:
+- The final production environment will contain production copies of each docker
+  file, as shown here:
 
 ```plaintext
   ├── art-gallery-backend
@@ -230,6 +239,7 @@ ASPNETCORE_URLS=<https://+:5000> productive-dev/proj-name
 
 ### Documentation (weeks 10+)
 
-Documentation detailing how users can install docker and run containers will be packaged inside the
-Art Gallery repo. This documentation will specify build and run commands as well as how each
-container can interact with each other. As well as what each command actually does.
+Documentation detailing how users can install docker and run containers will be
+packaged inside the Art Gallery repo. This documentation will specify build and
+run commands as well as how each container can interact with each other. As well
+as what each command actually does.

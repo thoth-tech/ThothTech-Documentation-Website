@@ -14,21 +14,23 @@ title: Docker Setup Tutorial
 
 1. Fork **doubtfire-deploy:development**, **doubtfire-api:development**, and
    **doubtfire-web:development** from <https://github.com/doubtfire-lms>
-2. Clone your doubtfire-deploy. Make sure to fetch submodules to get the subprojects.
+2. Clone your doubtfire-deploy. Make sure to fetch submodules to get the
+   subprojects.
 
    ```console
    git clone -b development --recurse-submodules https://github.com/[your_github_username]/doubtfire-deploy
    ```
 
-3. Change directory to doubtfire-deploy by using: cd doubtfire-deploy. Open a Terminal that supports
-   sh scripts (on Windows, you will need WSL, Msys2, or Cygwin). Run the following command to set
-   your fork as the remote.
+3. Change directory to doubtfire-deploy by using: cd doubtfire-deploy. Open a
+   Terminal that supports sh scripts (on Windows, you will need WSL, Msys2, or
+   Cygwin). Run the following command to set your fork as the remote.
 
    ```console
    bash ./change_remotes.sh
    ```
 
-4. Change into the development directory and use Docker Compose to setup the database.
+4. Change into the development directory and use Docker Compose to setup the
+   database.
 
    ```console
    cd development
@@ -37,8 +39,8 @@ title: Docker Setup Tutorial
    environment:set RAILS_ENV=development && bundle exec rake db:populate"
    ```
 
-5. Change into the development directory and use Docker Compose to setup the database. Run in the
-   development folder
+5. Change into the development directory and use Docker Compose to setup the
+   database. Run in the development folder
 
    ```console
    docker compose up -d

@@ -7,9 +7,10 @@ sidebar:
 
 import { FileTree } from "@astrojs/starlight/components";
 
-For the [splashkit.io](https://splashkit.io/) website, JSON files are now used to list all the
-functions used in the guides pages, to link them in to the API documentation pages for SplashKit
-users to see if a function has been demonstrated in any of the guides.
+For the [splashkit.io](https://splashkit.io/) website, JSON files are now used
+to list all the functions used in the guides pages, to link them in to the API
+documentation pages for SplashKit users to see if a function has been
+demonstrated in any of the guides.
 
 Here is information about how this is set up:
 
@@ -45,14 +46,16 @@ Here is information about how this is set up:
 
 </FileTree>
 
-When creating a folder for a new category, it can be placed within the guides folder. The JSON file
-for a certain category should be the folder's name in lowercase.
+When creating a folder for a new category, it can be placed within the guides
+folder. The JSON file for a certain category should be the folder's name in
+lowercase.
 
 ### Content
 
-Each guides' entry need to contain a name, an array of the functions used, and the url to the guide
-page. It is important to use the function's **unique_global_name** to ensure the correct function is
-linked on the documentation site. Each new addition can be added consecutively using the curly
+Each guides' entry need to contain a name, an array of the functions used, and
+the url to the guide page. It is important to use the function's
+**unique_global_name** to ensure the correct function is linked on the
+documentation site. Each new addition can be added consecutively using the curly
 brackets.
 
 ```json

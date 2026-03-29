@@ -6,10 +6,11 @@ import { FileTree, Steps, Tabs, TabItem } from "@astrojs/starlight/components";
 
 ## Introduction
 
-SplashKit uses [Catch2 2.x](https://github.com/catchorg/Catch2/tree/v2.x) as a framework for unit
-tests.
+SplashKit uses [Catch2 2.x](https://github.com/catchorg/Catch2/tree/v2.x) as a
+framework for unit tests.
 
-Tests are written in C++ with the aid of macros from Catch2. Test files are located at:
+Tests are written in C++ with the aid of macros from Catch2. Test files are
+located at:
 
 <FileTree>
 
@@ -21,12 +22,13 @@ Tests are written in C++ with the aid of macros from Catch2. Test files are loca
 
 </FileTree>
 
-`unit_test_main.cpp` is the entry point for all unit tests. You do not need to modify this to write
-your own tests or update existing ones.
+`unit_test_main.cpp` is the entry point for all unit tests. You do not need to
+modify this to write your own tests or update existing ones.
 
-The `unit_test_<name>.cpp` files contain tests for related parts of SplashKit. For example,
-`unit_test_utilities.cpp` has tests for SplashKit's utility functions. A test file must include the
-Catch2 header file along with any other includes required:
+The `unit_test_<name>.cpp` files contain tests for related parts of SplashKit.
+For example, `unit_test_utilities.cpp` has tests for SplashKit's utility
+functions. A test file must include the Catch2 header file along with any other
+includes required:
 
 ```cpp
 #include "catch.hpp"
@@ -34,7 +36,8 @@ Catch2 header file along with any other includes required:
 
 ## Writing a Unit Test
 
-At a minimum, a unit test consists of a `TEST_CASE` and an assertion (usually `REQUIRE`):
+At a minimum, a unit test consists of a `TEST_CASE` and an assertion (usually
+`REQUIRE`):
 
 ```cpp
 TEST_CASE("gets the number of milliseconds that have passed since the program was started", "[current_ticks]")
@@ -44,13 +47,14 @@ TEST_CASE("gets the number of milliseconds that have passed since the program wa
 }
 ```
 
-`TEST_CASE(name, [,tags])` defines a test case with the given name and, optionally, one or more
-tags.
+`TEST_CASE(name, [,tags])` defines a test case with the given name and,
+optionally, one or more tags.
 
-`REQUIRE` evaluates an expression and aborts the test as a failure if the result is false.
-`REQUIRE_FALSE` is similar but fails if the expression evaluates true. There are
-[other assertion macros](https://github.com/catchorg/Catch2/blob/v2.x/docs/assertions.md#top) but
-these are the most common.
+`REQUIRE` evaluates an expression and aborts the test as a failure if the result
+is false. `REQUIRE_FALSE` is similar but fails if the expression evaluates true.
+There are
+[other assertion macros](https://github.com/catchorg/Catch2/blob/v2.x/docs/assertions.md#top)
+but these are the most common.
 
 A test may contain multiple assertions:
 
@@ -63,8 +67,9 @@ TEST_CASE("random number float between 0 and 1 is generated", "[rnd]")
 }
 ```
 
-You may write tests that have some common steps, such as defining a variable. You can define one or
-more `SECTION(name)` inside a `TEST_CASE`. The `TEST_CASE` is run from the start for each `SECTION`.
+You may write tests that have some common steps, such as defining a variable.
+You can define one or more `SECTION(name)` inside a `TEST_CASE`. The `TEST_CASE`
+is run from the start for each `SECTION`.
 
 ```cpp
 TEST_CASE("return a SplashKit resource of resource_kind with name filename as a string", "[file_as_string]")
@@ -93,8 +98,8 @@ TEST_CASE("return a SplashKit resource of resource_kind with name filename as a 
 }
 ```
 
-This test has three `SECTION`s, so the `TEST_CASE` will run three times. Each time, the `RESOURCE`
-and `RESOURCE_PATH` variables will be defined.
+This test has three `SECTION`s, so the `TEST_CASE` will run three times. Each
+time, the `RESOURCE` and `RESOURCE_PATH` variables will be defined.
 
 ## Building the test project
 
@@ -124,10 +129,11 @@ and `RESOURCE_PATH` variables will be defined.
    Select the Default configure preset  
    ![Select Default preset](images/build-unit-tests/2-select-preset-default.png)  
    In the CMake Tools extension click the button
-   ![Build target button](images/build-unit-tests/select-target.png) next to Build and select
-   skunit_tests  
+   ![Build target button](images/build-unit-tests/select-target.png) next to
+   Build and select skunit_tests  
    ![Select build target](images/build-unit-tests/3-target-unit-tests.png)  
-   Click the button ![Select Default preset](images/build-unit-tests/select-target.png) next to
+   Click the button
+   ![Select Default preset](images/build-unit-tests/select-target.png) next to
    Debug and select skunit_tests  
    ![Select debug/launch target](images/build-unit-tests/4-debug-target.png)
 
@@ -141,8 +147,8 @@ and `RESOURCE_PATH` variables will be defined.
    ```
 
    Or in VS Code:  
-   In the CMake Tools extension, click the Build button. The test project will also be built when
-   you refresh tests on the Testing tab of VS Code.  
+   In the CMake Tools extension, click the Build button. The test project will
+   also be built when you refresh tests on the Testing tab of VS Code.  
    ![Build tests](images/build-unit-tests/5-build.png)
 
 </Steps>
@@ -161,10 +167,11 @@ and `RESOURCE_PATH` variables will be defined.
    Select the Default configure preset  
    ![Select Default preset](images/build-unit-tests/2-select-preset-default.png)  
    In the CMake Tools extension click the button
-   ![Build target button](images/build-unit-tests/select-target.png) next to Build and select
-   skunit_tests  
+   ![Build target button](images/build-unit-tests/select-target.png) next to
+   Build and select skunit_tests  
    ![Select build target](images/build-unit-tests/3-target-unit-tests.png)  
-   Click the button ![Select Default preset](images/build-unit-tests/select-target.png) next to
+   Click the button
+   ![Select Default preset](images/build-unit-tests/select-target.png) next to
    Debug and select skunit_tests  
    ![Select debug/launch target](images/build-unit-tests/4-debug-target.png)
 
@@ -178,8 +185,8 @@ and `RESOURCE_PATH` variables will be defined.
    ```
 
    Or in VS Code:  
-   In the CMake Tools extension, click Build. The test project will also be built when you refresh
-   tests on the Testing tab of VS Code.  
+   In the CMake Tools extension, click Build. The test project will also be
+   built when you refresh tests on the Testing tab of VS Code.  
    ![Build tests](images/build-unit-tests/5-build.png)
 
 </Steps>
@@ -205,10 +212,11 @@ and `RESOURCE_PATH` variables will be defined.
    Select the Default configure preset  
    ![Select Default preset](images/build-unit-tests/2-select-preset-default.png)  
    In the CMake Tools extension click the button
-   ![Build target button](images/build-unit-tests/select-target.png) next to Build and select
-   skunit_tests  
+   ![Build target button](images/build-unit-tests/select-target.png) next to
+   Build and select skunit_tests  
    ![Select build target](images/build-unit-tests/3-target-unit-tests.png)  
-   Click the button ![Select Default preset](images/build-unit-tests/select-target.png) next to
+   Click the button
+   ![Select Default preset](images/build-unit-tests/select-target.png) next to
    Debug and select skunit_tests  
    ![Select debug/launch target](images/build-unit-tests/4-debug-target.png)
 
@@ -222,8 +230,8 @@ and `RESOURCE_PATH` variables will be defined.
    ```
 
    Or in VS Code:  
-   In the CMake Tools extension, click Build. The test project will also be built when you refresh
-   tests on the Testing tab of VS Code.  
+   In the CMake Tools extension, click Build. The test project will also be
+   built when you refresh tests on the Testing tab of VS Code.  
    ![Build tests](images/build-unit-tests/5-build.png)
 
 </Steps>
@@ -237,16 +245,17 @@ and `RESOURCE_PATH` variables will be defined.
 <Tabs syncKey="platform">
 <TabItem label="Linux/WSL">
 
-- It's a good idea to run the unit tests in a random order so that you can confirm that they run
-  indepedently of one another:
+- It's a good idea to run the unit tests in a random order so that you can
+  confirm that they run indepedently of one another:
 
   ```shell
   cd ../../bin
   ./skunit_tests --order rand
   ```
 
-  By default, this will only show reports for failed tests. To show reports for successful tests as
-  well, use the option `--success`. More command line options can be found in
+  By default, this will only show reports for failed tests. To show reports for
+  successful tests as well, use the option `--success`. More command line
+  options can be found in
   [Catch2's documentation](https://github.com/catchorg/Catch2/blob/v2.x/docs/command-line.md).
 
 - If you want to run a specific test, or group of tests, you can do so:
@@ -255,22 +264,23 @@ and `RESOURCE_PATH` variables will be defined.
   ./skunit_tests <test spec>
   ```
 
-  The `test spec` can be a test name or tags and supports wildcards. For example, `*string*` would
-  run all of the tests with "string" in the name.
+  The `test spec` can be a test name or tags and supports wildcards. For
+  example, `*string*` would run all of the tests with "string" in the name.
 
 </TabItem>
 <TabItem label="macOS">
 
-- It's a good idea to run the unit tests in a random order so that you can confirm that they run
-  indepedently of one another:
+- It's a good idea to run the unit tests in a random order so that you can
+  confirm that they run indepedently of one another:
 
   ```shell
   cd ../../bin
   ./skunit_tests --order rand
   ```
 
-  By default, this will only show reports for failed tests. To show reports for successful tests as
-  well, use the option `--success`. More command line options can be found in
+  By default, this will only show reports for failed tests. To show reports for
+  successful tests as well, use the option `--success`. More command line
+  options can be found in
   [Catch2's documentation](https://github.com/catchorg/Catch2/blob/v2.x/docs/command-line.md).
 
 - If you want to run a specific test, or group of tests, you can do so:
@@ -279,22 +289,23 @@ and `RESOURCE_PATH` variables will be defined.
   ./skunit_tests <test spec>
   ```
 
-  The `test spec` can be a test name or tags and supports wildcards. For example, `*string*` would
-  run all of the tests with "string" in the name.
+  The `test spec` can be a test name or tags and supports wildcards. For
+  example, `*string*` would run all of the tests with "string" in the name.
 
 </TabItem>
 <TabItem label="Windows">
 
-- It's a good idea to run the unit tests in a random order so that you can confirm that they run
-  indepedently of one another:
+- It's a good idea to run the unit tests in a random order so that you can
+  confirm that they run indepedently of one another:
 
   ```shell
   cd ../../bin
   ./skunit_tests.exe --order rand
   ```
 
-  By default, this will only show reports for failed tests. To show reports for successful tests as
-  well, use the option `--success`. More command line options can be found in
+  By default, this will only show reports for failed tests. To show reports for
+  successful tests as well, use the option `--success`. More command line
+  options can be found in
   [Catch2's documentation](https://github.com/catchorg/Catch2/blob/v2.x/docs/command-line.md).
 
 - If you want to run a specific test, or group of tests, you can do so:
@@ -303,8 +314,8 @@ and `RESOURCE_PATH` variables will be defined.
   ./skunit_tests.exe <test spec>
   ```
 
-  The `test spec` can be a test name or tags and supports wildcards. For example, `*string*` would
-  run all of the tests with "string" in the name.
+  The `test spec` can be a test name or tags and supports wildcards. For
+  example, `*string*` would run all of the tests with "string" in the name.
 
 </TabItem>
 </Tabs>
@@ -315,8 +326,8 @@ You can run tests from the Testing tab in VS Code
 ![Testing tab](images/run-unit-tests/1-testing-tab.png)
 
 - Running all tests:  
-  Click Run Tests. Each test will be run and the status of each can be seen in the test list after a
-  test runs.  
+  Click Run Tests. Each test will be run and the status of each can be seen in
+  the test list after a test runs.  
   ![Run Tests](images/run-unit-tests/2-run-tests.png)
 - Running a specific test:  
   Click Run Test next to any test on the test list to run it  

@@ -6,18 +6,20 @@ title: Panopto OAuth2 Integration Guide (Updated)
 
 ## Overview
 
-This guide provides a detailed, step-by-step process to integrate Panopto’s OAuth2-based
-authentication into your backend application (e.g., OnTrack or Doubtfire-API). It covers creating an
-API client on Panopto, configuring OAuth2 settings, obtaining authorisation codes, exchanging them
-for access tokens, and integrating the process into your application’s workflow. Technical
-improvements, corrections, and additional recommendations based on best practices have been
-included.
+This guide provides a detailed, step-by-step process to integrate Panopto’s
+OAuth2-based authentication into your backend application (e.g., OnTrack or
+Doubtfire-API). It covers creating an API client on Panopto, configuring OAuth2
+settings, obtaining authorisation codes, exchanging them for access tokens, and
+integrating the process into your application’s workflow. Technical
+improvements, corrections, and additional recommendations based on best
+practices have been included.
 
 ## OAuth2 Panopto API Client Setup
 
-To upload videos to a user's personal Panopto instance, we need to authenticate using OAuth2. This
-involves creating an API client on Panopto, configuring redirect URIs and CORS, then performing the
-OAuth2 Authorisation Code flow to retrieve the tokens required for API calls.
+To upload videos to a user's personal Panopto instance, we need to authenticate
+using OAuth2. This involves creating an API client on Panopto, configuring
+redirect URIs and CORS, then performing the OAuth2 Authorisation Code flow to
+retrieve the tokens required for API calls.
 
 ## Step 1: Create an API Client on Panopto
 
@@ -32,13 +34,16 @@ OAuth2 Authorisation Code flow to retrieve the tokens required for API calls.
    - Under the API Client section, click "Create New Client".
 
 4. Configure the API Client:
-   - Set a name for the client (e.g., "OnTrack Integration Client" or "Doubtfire Integration
-     Client").
-   - Choose "Server-side Application" as the client type since the integration is backend-based.
+   - Set a name for the client (e.g., "OnTrack Integration Client" or "Doubtfire
+     Integration Client").
+   - Choose "Server-side Application" as the client type since the integration
+     is backend-based.
 
 5. Save Your Credentials:
-   - Note down your Client ID and Client Secret. These will be used to authenticate requests.
-   - Store them securely (e.g., environment variables). Do not commit these to version control.
+   - Note down your Client ID and Client Secret. These will be used to
+     authenticate requests.
+   - Store them securely (e.g., environment variables). Do not commit these to
+     version control.
 
 **Example:**
 
@@ -52,17 +57,19 @@ CLIENT_SECRET=your_panopto_client_secret
 ## Step 2: Configure Allowed URLs and Redirect URI
 
 1. Set CORS (Cross-Origin Resource Sharing):
-   - In the Allowed URL section of the API Client configuration, set CORS to `https://localhost` for
-     local development.
+   - In the Allowed URL section of the API Client configuration, set CORS to
+     `https://localhost` for local development.
 
 2. Set Redirect URI:
    - Set the Redirect URI to `http://localhost:9127/redirect`.
-   - The port number (9127) is arbitrary and used for local testing. It must match the
-     `redirect_uri` parameter in your application’s OAuth flow exactly.
+   - The port number (9127) is arbitrary and used for local testing. It must
+     match the `redirect_uri` parameter in your application’s OAuth flow
+     exactly.
 
 ## Step 3: Exchange the Code for an Access Token
 
-Once the API client is set up, the next step is to perform the OAuth2 Authorisation Code flow:
+Once the API client is set up, the next step is to perform the OAuth2
+Authorisation Code flow:
 
 ### Obtain the Authorisation Code
 
@@ -82,8 +89,8 @@ https://deakin.au.panopto.com/Panopto/oauth2/connect/authorize?client_id=YOUR_CL
 
 ### Exchange Authorisation Code for Access Token
 
-Use the code to request an access token. Note the correction in `grant_type` spelling
-(`authorization_code`):
+Use the code to request an access token. Note the correction in `grant_type`
+spelling (`authorization_code`):
 
 ```shell
 curl -X POST "https://deakin.au.panopto.com/Panopto/oauth2/connect/token"   -H "Content-Type: application/x-www-form-urlencoded"   -d "grant_type=authorization_code"   -d "code=YOUR_AUTHORIZATION_CODE"   -d "redirect_uri=http://localhost:9127/redirect"   -d "client_id=YOUR_CLIENT_ID"   -d "client_secret=YOUR_CLIENT_SECRET"
@@ -101,8 +108,9 @@ curl -X POST "https://deakin.au.panopto.com/Panopto/oauth2/connect/token"   -H "
 }
 ```
 
-This `access_token` can be used to call Panopto’s API for video uploads. If a `refresh_token` is
-included, you can use it to obtain new access tokens without user re-authorisation.
+This `access_token` can be used to call Panopto’s API for video uploads. If a
+`refresh_token` is included, you can use it to obtain new access tokens without
+user re-authorisation.
 
 ## Step 4: Integrating with OnTrack (or Your Backend)
 
@@ -118,40 +126,46 @@ included, you can use it to obtain new access tokens without user re-authorisati
    - Load these environment variables in your backend application.
 
 2. **Authorisation Flow Integration:**
-   - Your backend can present a link to the authorisation URL. The user clicks it to start the
-     process.
-   - After granting access, the backend receives the authorisation code at the redirect URI.
+   - Your backend can present a link to the authorisation URL. The user clicks
+     it to start the process.
+   - After granting access, the backend receives the authorisation code at the
+     redirect URI.
    - The backend exchanges the code for an access token automatically.
 
 3. **Video Upload:**
-   - With a valid access token, your backend can call Panopto’s upload APIs to programmatically
-     upload videos to the user’s personal Panopto instance.
+   - With a valid access token, your backend can call Panopto’s upload APIs to
+     programmatically upload videos to the user’s personal Panopto instance.
 
 ## Recommendations and Updates
 
 - **Security:**
   - Use HTTPS in production for all communications.
   - Do not log sensitive tokens (e.g., access tokens or refresh tokens).
-  - Store secrets securely using a tool like AWS Secrets Manager or HashiCorp Vault.
+  - Store secrets securely using a tool like AWS Secrets Manager or HashiCorp
+    Vault.
 - **Scalability:**
-  - Use a shared token storage mechanism (e.g., a database) if running multiple instances of your
-    backend behind a load balancer.
+  - Use a shared token storage mechanism (e.g., a database) if running multiple
+    instances of your backend behind a load balancer.
 - **Error Handling:**
   - Implement retry logic with exponential backoff for transient failures.
-  - Log errors but ensure no sensitive information (e.g., client secret) is exposed.
+  - Log errors but ensure no sensitive information (e.g., client secret) is
+    exposed.
 - **Version Control:**
   - Ensure Panopto API versions are checked periodically for updates.
-  - Test all API changes in a staging environment before deploying them to production.
+  - Test all API changes in a staging environment before deploying them to
+    production.
 
 ## References
 
-- Panopto Documentation: [https://support.panopto.com/s/docs](https://support.panopto.com/s/docs)
+- Panopto Documentation:
+  [https://support.panopto.com/s/docs](https://support.panopto.com/s/docs)
 - OAuth2 Specification: [https://oauth.net/2/](https://oauth.net/2/)
 - Secret Management: Consider [HashiCorp Vault](https://www.vaultproject.io/) or
   [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/) for production.
 
 ---
 
-By following these steps and best practices, you can seamlessly integrate Panopto’s OAuth2
-authentication flow into your backend (e.g., OnTrack or Doubtfire-API), ensuring a smooth and secure
-process for uploading videos to a user’s Panopto instance.
+By following these steps and best practices, you can seamlessly integrate
+Panopto’s OAuth2 authentication flow into your backend (e.g., OnTrack or
+Doubtfire-API), ensuring a smooth and secure process for uploading videos to a
+user’s Panopto instance.

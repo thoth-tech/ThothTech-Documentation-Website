@@ -12,15 +12,16 @@ sidebar:
 
 ## [Why/What is Quality Assurance?](#whywhat-is-quality-assurance)
 
-Quality Assurance (QA) is a procedure designed to ensure the quality of software products or
-services delivered by an organisation. It focuses on enhancing the software development process to
-meet the defined quality standards effectively.
+Quality Assurance (QA) is a procedure designed to ensure the quality of software
+products or services delivered by an organisation. It focuses on enhancing the
+software development process to meet the defined quality standards effectively.
 
 ## [Git Contribution Guide](#git-contribution-guide)
 
-The [Git Contributions Guide](/resources/quality-assurance/git-contributions-guide) outlines the
-processes for git workflows, including branching, commit formatting guidelines, and draft pull
-requests.
+The
+[Git Contributions Guide](/resources/quality-assurance/git-contributions-guide)
+outlines the processes for git workflows, including branching, commit formatting
+guidelines, and draft pull requests.
 
 ### Key Areas Covered
 
@@ -33,11 +34,13 @@ requests.
 
 ## [Software Development and Testing](#software-development-and-testing)
 
-The [Testing and Development Processes Document](/resources/quality-assurance/testing-and-dev)
-offers information and resources related to software conception, development, and documentation. It
-covers Test Driven Development (TDD) and feature development using this approach. Reviewing this
-document before starting your coding tasks is recommended as it integrates testing into the
-development process.
+The
+[Testing and Development Processes Document](/resources/quality-assurance/testing-and-dev)
+offers information and resources related to software conception, development,
+and documentation. It covers Test Driven Development (TDD) and feature
+development using this approach. Reviewing this document before starting your
+coding tasks is recommended as it integrates testing into the development
+process.
 
 ### Key Areas Covered
 

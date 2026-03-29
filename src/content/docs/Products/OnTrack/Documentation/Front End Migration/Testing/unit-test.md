@@ -29,7 +29,8 @@ describe('NotFoundComponent', () => {
 });
 ```
 
-_Replace the (NotFoundComponent) component name with your choosen compoent name._
+_Replace the (NotFoundComponent) component name with your choosen compoent
+name._
 
 ```shell
 npm install

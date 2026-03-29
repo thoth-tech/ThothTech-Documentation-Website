@@ -8,7 +8,8 @@ Company: Thoth Tech
 
 ## Introduction
 
-This Document outlines the flow of the new feature 'incorporate Content' into Ontrack.
+This Document outlines the flow of the new feature 'incorporate Content' into
+Ontrack.
 
 ## Use Case Diagram
 

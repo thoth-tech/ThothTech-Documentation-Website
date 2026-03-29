@@ -1,22 +1,23 @@
 ---
 title: Tutorial Proposal Template
-description: Use this template to create a proposal for a new SplashKit tutorial.
+description:
+  Use this template to create a proposal for a new SplashKit tutorial.
 sidebar:
   label: Tutorial Proposal Template
 ---
 
 ## Introduction
 
-Provide a brief introduction to the tutorial, explaining what the tutorial will cover and what the
-reader will learn from it.
+Provide a brief introduction to the tutorial, explaining what the tutorial will
+cover and what the reader will learn from it.
 
 ## Tutorial Details
 
 ### Tutorial Structure
 
-Explain the basic structure you plan to use for the tutorial. (Whole code first then explain
-snippets? Or introduce code "as-you-go" style? Background information at the top or throughout the
-tutorial? etc.)
+Explain the basic structure you plan to use for the tutorial. (Whole code first
+then explain snippets? Or introduce code "as-you-go" style? Background
+information at the top or throughout the tutorial? etc.)
 
 ### Level of Difficulty
 
@@ -34,6 +35,6 @@ List the main SplashKit functions that will be included in the tutorial
 
 ## Conclusion
 
-Summarise the importance of the tutorial and how it will benefit the readers. Reiterate the main
-points covered in the tutorial and explain how readers can apply this new knowledge in their own
-projects.
+Summarise the importance of the tutorial and how it will benefit the readers.
+Reiterate the main points covered in the tutorial and explain how readers can
+apply this new knowledge in their own projects.

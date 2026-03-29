@@ -1,6 +1,7 @@
 ---
 title: Tutorial Style Guide
-description: Use this guide to ensure your SplashKit tutorial is formatted correctly.
+description:
+  Use this guide to ensure your SplashKit tutorial is formatted correctly.
 sidebar:
   label: Tutorial Style Guide
 ---
@@ -31,8 +32,8 @@ Always keep a blank line between headings and other text.
 
 ### Subheadings
 
-For subheadings that you want to see in the RHS sidebar/panel on splashkit.io, use `### Subheading`.
-Subheadings lower than this will not be shown.
+For subheadings that you want to see in the RHS sidebar/panel on splashkit.io,
+use `### Subheading`. Subheadings lower than this will not be shown.
 
 Do not use bolded lines for headings/subheadings.
 
@@ -44,8 +45,8 @@ Do not use any "raw" links. Links must always use the following format:
 [Text to show for link](URL link)
 ```
 
-Make sure to link your headings within the same file if these are mentioned, using the following
-format:
+Make sure to link your headings within the same file if these are mentioned,
+using the following format:
 
 ```mdx
 [Heading text](#link-to-heading)
@@ -61,12 +62,14 @@ Use the following format for all images:
 ![Alt text](link to image)
 ```
 
-For the **Alt text** part above: Briefly explain what the image is showing. This is important for
-accessibility.
+For the **Alt text** part above: Briefly explain what the image is showing. This
+is important for accessibility.
 
-For the **link to image** part above: If you are linking an image resource that you have downloaded,
-this will need to be put into an **images** folder in the same place as the tutorial.  
-For example, with the **skbox.png** image in the images folder here, you would use:
+For the **link to image** part above: If you are linking an image resource that
+you have downloaded, this will need to be put into an **images** folder in the
+same place as the tutorial.  
+For example, with the **skbox.png** image in the images folder here, you would
+use:
 
 ```mdx
 ![Image of SplashKit box logo](./images/skbox.png)
@@ -82,8 +85,8 @@ Always keep a blank line between lists and other text.
 
 ## Code Blocks
 
-Use fenced code blocks for any code snippets or terminal commands, to make it easier for the reader
-to copy.
+Use fenced code blocks for any code snippets or terminal commands, to make it
+easier for the reader to copy.
 
 Always include a language with the fenced code blocks.
 
@@ -167,11 +170,11 @@ delay(5000)
 close_all_windows()
 ```
 
-For any blocks that are not code, you can use `plaintext` for the language. For terminal commands,
-use `shell` for the language.
+For any blocks that are not code, you can use `plaintext` for the language. For
+terminal commands, use `shell` for the language.
 
-If your guide is only using 1 language (and not using at least both C# and C++), make sure to
-include the language used in the title.
+If your guide is only using 1 language (and not using at least both C# and C++),
+make sure to include the language used in the title.
 
 ### Multiple Code Languages
 
@@ -386,12 +389,13 @@ write_line(name + "'s quest is: " + quest)
 
 ## Callouts (Asides)
 
-Use callouts (also known as [Asides](https://starlight.astro.build/guides/components/#asides)) to
-highlight tips or important notes.
+Use callouts (also known as
+[Asides](https://starlight.astro.build/guides/components/#asides)) to highlight
+tips or important notes.
 
 :::tip[Make the page interesting]
 
-These can help to direct the reader to any extra info, and help to add more colour to your tutorial
-guide.
+These can help to direct the reader to any extra info, and help to add more
+colour to your tutorial guide.
 
 :::

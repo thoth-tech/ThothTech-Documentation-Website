@@ -6,15 +6,16 @@ title: CI/CD Mock Pipeline
 
 ## Introduction
 
-This document contains a step-by-step guide on CI/CD Pipeline integration within the processes of
-the online Art Gallery application. It will go over steps to setup tests for both CI and CD in order
-to ensure all commits to the GitHub repository and changes to Google Cloud Platform (GCP) meet
-requirements set.
+This document contains a step-by-step guide on CI/CD Pipeline integration within
+the processes of the online Art Gallery application. It will go over steps to
+setup tests for both CI and CD in order to ensure all commits to the GitHub
+repository and changes to Google Cloud Platform (GCP) meet requirements set.
 
 ## CI Tests
 
-Tests will need to be included in the **art-gallery/.github/workflows/ci.yml** file. To add tests
-the defined environments have to be added under the “steps” line in the yml file.
+Tests will need to be included in the **art-gallery/.github/workflows/ci.yml**
+file. To add tests the defined environments have to be added under the “steps”
+line in the yml file.
 
 `name: CI`
 
@@ -68,14 +69,15 @@ the defined environments have to be added under the “steps” line in the yml 
 
 `npm run prose:check `
 
-The current file contains checks on formatting mostly with a Linter being setup for whitespace
-identification and Prettier support for formatting style of all commits. These tests are performed
-on both pull and push requests in the repository. It also sets up Node.js and, Vale for prose
-checks.
+The current file contains checks on formatting mostly with a Linter being setup
+for whitespace identification and Prettier support for formatting style of all
+commits. These tests are performed on both pull and push requests in the
+repository. It also sets up Node.js and, Vale for prose checks.
 
 ## Additional Tests
 
-Testing and building a Docker image and tagging with timestamp and date for traceability:
+Testing and building a Docker image and tagging with timestamp and date for
+traceability:
 
 `- name: Build the Docker image`
 
@@ -117,9 +119,10 @@ Security and code formatting issues with ESLint for JavaScript applications:
 
 ## CD Tests
 
-A new cd YAML file can be created in the workflows path with all information related to deploying
-code on commits which affect the running of the application. An extremely helpful video on editing
-and setting up this file can be found at this link:
+A new cd YAML file can be created in the workflows path with all information
+related to deploying code on commits which affect the running of the
+application. An extremely helpful video on editing and setting up this file can
+be found at this link:
 [https://www.youtube.com/watch?v=DMCi7WWTtX0](https://www.youtube.com/watch?v=DMCi7WWTtX0)
 
 The file itself can be found as a template within GitHub on the actions page:
@@ -238,5 +241,5 @@ The file itself can be found as a template within GitHub on the actions page:
 
 `run: echo ${{ steps.deploy.outputs.url }}`
 
-This code can be edited for both use of credentials and authentication thus, can be adjusted for
-preferred use.
+This code can be edited for both use of credentials and authentication thus, can
+be adjusted for preferred use.

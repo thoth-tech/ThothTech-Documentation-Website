@@ -57,20 +57,24 @@ description: 11.2P Task, T2 2024
 
 ## Executive Summary
 
-Thoth Tech is an education-focused technology company located in Melbourne, Australia. Thoth Tech’s
-mission is to build, operate, and deploy tools that enhance education outcomes by empowering
-students, connecting them with tutors, and facilitating personalised learning experiences.
+Thoth Tech is an education-focused technology company located in Melbourne,
+Australia. Thoth Tech’s mission is to build, operate, and deploy tools that
+enhance education outcomes by empowering students, connecting them with tutors,
+and facilitating personalised learning experiences.
 
-We value excellence and collaboration. We strive to deliver all our products in exceptional quality,
-making sure it is sustainable in the long run. We continuously meet this goal while empowering our
-people through established frameworks and a safe and supportive learning environment.
+We value excellence and collaboration. We strive to deliver all our products in
+exceptional quality, making sure it is sustainable in the long run. We
+continuously meet this goal while empowering our people through established
+frameworks and a safe and supportive learning environment.
 
-In Trimester 2, 2024, Thoth Tech ran its two main products: OnTrack, and SplashKit. This report will
-outline the company structure, projects, and accomplishments for this trimester.
+In Trimester 2, 2024, Thoth Tech ran its two main products: OnTrack, and
+SplashKit. This report will outline the company structure, projects, and
+accomplishments for this trimester.
 
 ## Showcase Video
 
-This video summarises the accomplishments made at Thoth Tech for Trimester 2, 2024:
+This video summarises the accomplishments made at Thoth Tech for Trimester 2,
+2024:
 [Thoth Tech Company Showcase Video](https://deakin.au.panopto.com/Panopto/Pages/Viewer.aspx?id=b69ee4c8-1567-41bc-95be-b1fa001266ad)
 
 ## Leadership Team
@@ -103,29 +107,32 @@ This video summarises the accomplishments made at Thoth Tech for Trimester 2, 20
 
 ### Leadership Responsibilities
 
-The following are the key responsibilities of the company student leadership team throughout the
-trimester:
+The following are the key responsibilities of the company student leadership
+team throughout the trimester:
 
-1. Company presentation in the first junior lecture – Introduce the company, its projects, and
-   required skill sets for potential junior students
-   - Student leads must prepare and organise a PowerPoint presentation representing each of their
-     projects during Week 0
+1. Company presentation in the first junior lecture – Introduce the company, its
+   projects, and required skill sets for potential junior students
+   - Student leads must prepare and organise a PowerPoint presentation
+     representing each of their projects during Week 0
 
-2. Host first company-wide meeting and onboard students – Provide a more specific overview of
-   company and project goals, meeting schedules, and expectations for the trimester
+2. Host first company-wide meeting and onboard students – Provide a more
+   specific overview of company and project goals, meeting schedules, and
+   expectations for the trimester
    - Team building sessions may also be organised to build rapport across teams
 
-3. Weekly company leadership team meeting – Report on project progress and concerns to company
-   stakeholders
-   - Date and time to be decided by members in the first week according to availability
+3. Weekly company leadership team meeting – Report on project progress and
+   concerns to company stakeholders
+   - Date and time to be decided by members in the first week according to
+     availability
 
 4. Complete company tasks: progress, handover, and showcase reports and videos
-   - These reports must be submitted by 1 senior and 1 junior on behalf of the company and
-     appropriate communications must be made on Teams
+   - These reports must be submitted by 1 senior and 1 junior on behalf of the
+     company and appropriate communications must be made on Teams
 
-All past company reports, showcase videos, and relevant assets can be found here:
-[Company Documents & Videos](https://deakin365.sharepoint.com/sites/ThothTech2) &
-[Thoth Tech Documentation Website](https://thoth-tech.netlify.app)
+All past company reports, showcase videos, and relevant assets can be found
+here:
+[Company Documents & Videos](https://deakin365.sharepoint.com/sites/ThothTech2)
+& [Thoth Tech Documentation Website](https://thoth-tech.netlify.app)
 
 ## Company Structure
 
@@ -135,12 +142,14 @@ All past company reports, showcase videos, and relevant assets can be found here
 
 ### Project Overview
 
-OnTrack, also known as Doubtfire, is an innovative Learning Management System (LMS) tailored for
-skill-based course delivery. This platform facilitates the connection between tutors and students,
-primarily at Deakin University and other global institutions. The overarching goal of OnTrack is to
-enhance the educational experience by providing a structured, efficient, and interactive learning
-environment. This system aims to improve student engagement, learning outcomes, and the overall
-teaching and learning process, benefiting both students and educational staff.
+OnTrack, also known as Doubtfire, is an innovative Learning Management System
+(LMS) tailored for skill-based course delivery. This platform facilitates the
+connection between tutors and students, primarily at Deakin University and other
+global institutions. The overarching goal of OnTrack is to enhance the
+educational experience by providing a structured, efficient, and interactive
+learning environment. This system aims to improve student engagement, learning
+outcomes, and the overall teaching and learning process, benefiting both
+students and educational staff.
 
 ### User Manual
 
@@ -149,7 +158,8 @@ Tutorial videos on setting up your local development environment:
 - [T3 2023 Setup demo](https://deakin365.sharepoint.com/:v:/s/ThothTech2/ESrgw0W_21pLn7kqS86WoJgBG71EPo7VPSp8AXt151JC2g?e=AZyu7I)
   by Satika Jayawardena
 
-- [T2 2023 Setup demo](https://video.deakin.edu.au/media/t/1_6degiyrj) by Daniel Maddern
+- [T2 2023 Setup demo](https://video.deakin.edu.au/media/t/1_6degiyrj) by Daniel
+  Maddern
 
 - [T1 2024 Common setup error solutions](https://teams.microsoft.com/l/message/19:bd20175d09414f079490a2403f7fca74@thread.tacv2/1711021331051)
   by Satika Jayawardena
@@ -167,52 +177,63 @@ Contributing Guides:
 This trimester, the following key deliverables were completed:
 
 - Bug Fixes and Urgent Enhancements
-  - Chat Markdown Rendering Bug: Successfully fixed an issue where markdown was not rendering
-    properly in chat, enhancing the user experience for students and staff.
-  - Documentation Enhancements: Completed and merged documentation updates for both general and
-    specific API pages. This includes contributions from team members on various entities such as
-    requirement sets and course entities, directly supporting the goal of comprehensive
-    documentation for OnTrack's evolving features.
+  - Chat Markdown Rendering Bug: Successfully fixed an issue where markdown was
+    not rendering properly in chat, enhancing the user experience for students
+    and staff.
+  - Documentation Enhancements: Completed and merged documentation updates for
+    both general and specific API pages. This includes contributions from team
+    members on various entities such as requirement sets and course entities,
+    directly supporting the goal of comprehensive documentation for OnTrack's
+    evolving features.
 
-- Frontend Enhancements and Component Migrations: Several components have been successfully migrated
-  to Angular 17 and TypeScript, including the comments-modal, group set manager, and
-  unit-ilo-edit-modal. Additionally, enhancements were made to PDF handling and user interface
-  elements like the grade-task-modal and grade-icon components, contributing to the ongoing frontend
-  migration and user interface improvement objectives.
-  - Ongoing Frontend Migration: The migration of legacy CoffeeScript components to
-    TypeScript/Angular continues, with files such as timeout.coffee and grade-task-modal.coffee
-    currently under peer review. This aligns with our aim to complete at least 10% of the existing
-    frontend migration backlog this trimester.
-  - Overlay Component Creation: Developed a new overlay component to provide additional information
-    about units to users, enhancing the user interface and experience. This feature is currently
-    under review.
+- Frontend Enhancements and Component Migrations: Several components have been
+  successfully migrated to Angular 17 and TypeScript, including the
+  comments-modal, group set manager, and unit-ilo-edit-modal. Additionally,
+  enhancements were made to PDF handling and user interface elements like the
+  grade-task-modal and grade-icon components, contributing to the ongoing
+  frontend migration and user interface improvement objectives.
+  - Ongoing Frontend Migration: The migration of legacy CoffeeScript components
+    to TypeScript/Angular continues, with files such as timeout.coffee and
+    grade-task-modal.coffee currently under peer review. This aligns with our
+    aim to complete at least 10% of the existing frontend migration backlog this
+    trimester.
+  - Overlay Component Creation: Developed a new overlay component to provide
+    additional information about units to users, enhancing the user interface
+    and experience. This feature is currently under review.
 
 - CourseFlow:
-  - CourseMap Base Page Development: Developed the base page for CourseMap, laying the groundwork
-    for further enhancements and integrations planned for the CourseFlow component.
-  - Backend Requirements Implementation: Completed backend requirements for several critical
-    entities, including the requirement set, course, and course map unit entities. These efforts are
-    part of the overarching aim to enhance CourseFlow functionality and ensure robust backend
-    support for new and existing features.
-  - CourseFlow Enhancements: Several enhancements are under review, including adding authentication
-    to endpoints and integrating new UI elements. These efforts are part of the continued
-    development of the CourseFlow API and its related functionalities.
+  - CourseMap Base Page Development: Developed the base page for CourseMap,
+    laying the groundwork for further enhancements and integrations planned for
+    the CourseFlow component.
+  - Backend Requirements Implementation: Completed backend requirements for
+    several critical entities, including the requirement set, course, and course
+    map unit entities. These efforts are part of the overarching aim to enhance
+    CourseFlow functionality and ensure robust backend support for new and
+    existing features.
+  - CourseFlow Enhancements: Several enhancements are under review, including
+    adding authentication to endpoints and integrating new UI elements. These
+    efforts are part of the continued development of the CourseFlow API and its
+    related functionalities.
 
-- JPLAG - jplag software plagiarism has been implemented as a containerised batch process. Frontend
-  and backend additions have been made to allow plagiarism report downloads.
-- Dev Container Image Downsizing - LaTex and MariaDB have been moved into their own containers;
-  reducing rebuild time of the main container significantly
-- Nginx - an nginx container has been created to utilise reverse proxying, allowing localhost:4200
-  and localhost:3000 to be accessed at localhost/ and localhost/api
+- JPLAG - jplag software plagiarism has been implemented as a containerised
+  batch process. Frontend and backend additions have been made to allow
+  plagiarism report downloads.
+- Dev Container Image Downsizing - LaTex and MariaDB have been moved into their
+  own containers; reducing rebuild time of the main container significantly
+- Nginx - an nginx container has been created to utilise reverse proxying,
+  allowing localhost:4200 and localhost:3000 to be accessed at localhost/ and
+  localhost/api
 
 - Ongoing and Pending Tasks:
-  - Group Set Manager Migration: The migration of the group set manager component to the latest
-    framework is in progress.
-  - Unit Group Set Editor Migration: The migration of the unit-group-set-editor.coffee file
-    continues to move forward, aligning with our frontend migration goals.
-  - Tasks in Peer Review: Detailed documentation and API operations for units and task definitions,
-    along with the migration of several legacy components, are currently under peer review. This
-    work supports the ongoing documentation efforts and frontend migration initiatives.
+  - Group Set Manager Migration: The migration of the group set manager
+    component to the latest framework is in progress.
+  - Unit Group Set Editor Migration: The migration of the
+    unit-group-set-editor.coffee file continues to move forward, aligning with
+    our frontend migration goals.
+  - Tasks in Peer Review: Detailed documentation and API operations for units
+    and task definitions, along with the migration of several legacy components,
+    are currently under peer review. This work supports the ongoing
+    documentation efforts and frontend migration initiatives.
 
 #### List Of All Complete Deliverables
 
@@ -342,15 +363,16 @@ This trimester, the following key deliverables were completed:
 
 ### Roadmap
 
-The following are areas of OnTrack students may choose to work on in Trimester 3, 2024:
+The following are areas of OnTrack students may choose to work on in Trimester
+3, 2024:
 
 - Frontend Migrations – Angular.js and CoffeeScript to Angular and TypeScript
 - Urgent Enhancements, Improvements, and Bugs
 - Documentation Website – Enhance and add missing endpoint documentation
 - Peer reviews for previous pull requests and contributions
 - Features in development:
-  - Tutor Feedback Enhancement – feedback_api will require further development to support
-    "criterion" or options
+  - Tutor Feedback Enhancement – feedback_api will require further development
+    to support "criterion" or options
   - CourseFlow – remaining backend entities and frontend
   - Incorporate Multiple Organizations on Single OnTrack Server
   - Authentication Module
@@ -361,98 +383,112 @@ The following are areas of OnTrack students may choose to work on in Trimester 3
 
 ### Open Issues
 
-These are some of the common challenges we have faced in Trimester 2, 2024 and may continue to face
-in the future:
+These are some of the common challenges we have faced in Trimester 2, 2024 and
+may continue to face in the future:
 
-1. Knowledge gap in using Git and GitHub – Team members are required to upskill in Git before
-   starting on their assigned tasks as this is the primary tool used within the team to manage code
-   and contributions. The Git and GitHub training website and demo videos attached in this document
-   are some of the great resources available in capstone for this purpose.
+1. Knowledge gap in using Git and GitHub – Team members are required to upskill
+   in Git before starting on their assigned tasks as this is the primary tool
+   used within the team to manage code and contributions. The Git and GitHub
+   training website and demo videos attached in this document are some of the
+   great resources available in capstone for this purpose.
 
-2. Unsatisfactory pull request reviews – Reviews must not be made through generational AI tools or
-   just indicate how many commits have been made and what has changed. Instead, it must evaluate the
-   syntax, logic, and output of the code. Please refer to section Task Review for more details and
-   this past review for an example of a correct pull request review.
+2. Unsatisfactory pull request reviews – Reviews must not be made through
+   generational AI tools or just indicate how many commits have been made and
+   what has changed. Instead, it must evaluate the syntax, logic, and output of
+   the code. Please refer to section Task Review for more details and this past
+   review for an example of a correct pull request review.
 
 ### Lessons Learned
 
-This trimester, the traditional weekly Help Hub sessions, typically held on Thursdays and led by
-senior team members, experienced a noticeable decrease in attendance.
+This trimester, the traditional weekly Help Hub sessions, typically held on
+Thursdays and led by senior team members, experienced a noticeable decrease in
+attendance.
 
-To adapt, student leads focused on driving engagement and addressing queries through the OnTrack
-public Teams channel, encouraging team members to share their experiences and solutions.
+To adapt, student leads focused on driving engagement and addressing queries
+through the OnTrack public Teams channel, encouraging team members to share
+their experiences and solutions.
 
-While this approach has been effective for accommodating team members' diverse schedules, we
-recommend exploring new ways to host Help Hub sessions alongside asynchronous Teams posts. Offering
-multiple formats for assistance could provide additional opportunities for leadership development.
+While this approach has been effective for accommodating team members' diverse
+schedules, we recommend exploring new ways to host Help Hub sessions alongside
+asynchronous Teams posts. Offering multiple formats for assistance could provide
+additional opportunities for leadership development.
 
-Future student leads may consider using polls or forms to determine the most suitable time for
-sessions based on team availability. Additionally, offering a variety of session formats could help
-not only resolve existing problems but also guide team members in making contributions to specific
-areas.
+Future student leads may consider using polls or forms to determine the most
+suitable time for sessions based on team availability. Additionally, offering a
+variety of session formats could help not only resolve existing problems but
+also guide team members in making contributions to specific areas.
 
 ### Product Development Life Cycle
 
-We continue to use Agile methodologies to deliver updates and new features for OnTrack.
+We continue to use Agile methodologies to deliver updates and new features for
+OnTrack.
 
-Our approach includes 2-week sprints focused on completing tasks, and weekly stand-up meetings to
-assess progress, share updates, discuss roadblocks, and assign new tasks via Teams Planner cards.
+Our approach includes 2-week sprints focused on completing tasks, and weekly
+stand-up meetings to assess progress, share updates, discuss roadblocks, and
+assign new tasks via Teams Planner cards.
 
 #### New Tasks
 
-New tasks are assigned by the project mentor during the weekly stand-up meetings. Once you are
-assigned a task, be sure to assign yourself to the corresponding Teams Planner card and attach your
-draft or completed pull request when you begin work.
+New tasks are assigned by the project mentor during the weekly stand-up
+meetings. Once you are assigned a task, be sure to assign yourself to the
+corresponding Teams Planner card and attach your draft or completed pull request
+when you begin work.
 
-If you have an idea for a new feature or enhancement, schedule a meeting with the project mentor to
-discuss it. Upon approval, create a new card or backlog column in Teams Planner to track the task.
-If the feature is large, start researching the benefits and challenges, and create a Spike document,
-which can be committed to the documentation repository. Spike templates are available in the
-documentation repository.
+If you have an idea for a new feature or enhancement, schedule a meeting with
+the project mentor to discuss it. Upon approval, create a new card or backlog
+column in Teams Planner to track the task. If the feature is large, start
+researching the benefits and challenges, and create a Spike document, which can
+be committed to the documentation repository. Spike templates are available in
+the documentation repository.
 
 #### Definition of Done
 
-A task is considered complete once it has been fully tested, functions as expected, and is
-documented in a well-organized pull request.
+A task is considered complete once it has been fully tested, functions as
+expected, and is documented in a well-organized pull request.
 
-The task must also undergo peer review and be approved by your mentor. Ensure that the corresponding
-Teams Planner card is updated, and keep in communication with your reviewer and mentor until your
-contribution is merged into the upstream doubtfire-lms repository.
+The task must also undergo peer review and be approved by your mentor. Ensure
+that the corresponding Teams Planner card is updated, and keep in communication
+with your reviewer and mentor until your contribution is merged into the
+upstream doubtfire-lms repository.
 
 #### Task Review
 
-Each pull request requires a mandatory peer review before a mentor review. After creating the pull
-request, contact a teammate to review it.
+Each pull request requires a mandatory peer review before a mentor review. After
+creating the pull request, contact a teammate to review it.
 
-Tag them as the reviewer in both the Teams Planner card and the GitHub pull request. As a reviewer,
-ensure that you test the code by pulling the changes locally and reviewing the syntax, logic, and
-output.
+Tag them as the reviewer in both the Teams Planner card and the GitHub pull
+request. As a reviewer, ensure that you test the code by pulling the changes
+locally and reviewing the syntax, logic, and output.
 
-If any changes are needed, update the contribution and notify the reviewer. Once the updates are
-made, the pull request will be automatically updated.
+If any changes are needed, update the contribution and notify the reviewer. Once
+the updates are made, the pull request will be automatically updated.
 
-After the peer review is complete, notify the mentor for their review. Once approved, you can submit
-the pull request to the upstream repository for the final review.
+After the peer review is complete, notify the mentor for their review. Once
+approved, you can submit the pull request to the upstream repository for the
+final review.
 
 #### Testing
 
-For frontend changes, test the functionality in the browser or run specification tests as needed.
-For backend changes, use browser interactions or tools like Postman to test functionality.
-Additionally, GitHub CI Actions will run tests automatically when changes are pushed.
+For frontend changes, test the functionality in the browser or run specification
+tests as needed. For backend changes, use browser interactions or tools like
+Postman to test functionality. Additionally, GitHub CI Actions will run tests
+automatically when changes are pushed.
 
-In the pull request template, include detailed instructions on how others can test your changes.
-Always provide before-and-after screenshots to show the outcome of your modifications.
+In the pull request template, include detailed instructions on how others can
+test your changes. Always provide before-and-after screenshots to show the
+outcome of your modifications.
 
 #### Branching Strategy
 
-When starting a new contribution, fork all three thoth-tech repositories (deploy, web, and API) to
-your GitHub profile.
+When starting a new contribution, fork all three thoth-tech repositories
+(deploy, web, and API) to your GitHub profile.
 
-Create a new branch from the development branch of the relevant repository. For example, for
-frontend migrations, you would create a branch from the doubtfire-web development branch.
+Create a new branch from the development branch of the relevant repository. For
+example, for frontend migrations, you would create a branch from the
+doubtfire-web development branch.
 
-Follow the Branch Prefixes and Commit Message Format in the Contributing Guide when naming branches
-and creating commits.
+Follow the Branch Prefixes and Commit Message Format in the Contributing Guide
+when naming branches and creating commits.
 
 ### Product Architecture
 
@@ -461,14 +497,15 @@ OnTrack is built using four main components:
 1. Frontend Client: Responsible for user interactions.
 2. Backend API: Handles requests and serves data.
 3. Database: Stores application data.
-4. Deployment Infrastructure: Ensures that OnTrack is properly deployed and maintained
+4. Deployment Infrastructure: Ensures that OnTrack is properly deployed and
+   maintained
 
 #### Tech Stack
 
-- Frontend: Currently being migrated from AngularJS and CoffeeScript to Angular 17 and TypeScript.
-  The stack also includes HTML, SCSS, and Tailwind CSS.
-- Backend: Built on Ruby on Rails with the Grape Framework. It uses MariaDB as the database engine.
-  Docker is used for deployment and local development.
+- Frontend: Currently being migrated from AngularJS and CoffeeScript to Angular
+  17 and TypeScript. The stack also includes HTML, SCSS, and Tailwind CSS.
+- Backend: Built on Ruby on Rails with the Grape Framework. It uses MariaDB as
+  the database engine. Docker is used for deployment and local development.
 
 ### Source Code
 
@@ -477,25 +514,28 @@ The following are the relevant GitHub repositories to this project:
 1. Deployment - <https://github.com/thoth-tech/doubtfire-deploy>
 2. Frontend - <https://github.com/thoth-tech/doubtfire-web>
 3. Backend - <https://github.com/thoth-tech/doubtfire-api>
-4. OnTrack Documentation Website - <https://github.com/thoth-tech/doubtfire-astro>
-5. Documentation (OnTrack feature documentation, frontend migration component reviews, etc.) -
+4. OnTrack Documentation Website -
+   <https://github.com/thoth-tech/doubtfire-astro>
+5. Documentation (OnTrack feature documentation, frontend migration component
+   reviews, etc.) -
    <https://github.com/thoth-tech/documentation/tree/main/docs/OnTrack>
 6. Templates (Spikes, component reviews) -
    <https://github.com/thoth-tech/documentation/tree/main/docs/Templates>
 7. CourseFlow documentation -
    <https://github.com/thoth-tech/ThothTech-Documentation-Website/tree/main/src/content/docs/products/courseflow>
-   Note: Any pull requests must first be made to the thoth-tech forks of the repositories, not the
-   upstream doubtfire-lms ones.
+   Note: Any pull requests must first be made to the thoth-tech forks of the
+   repositories, not the upstream doubtfire-lms ones.
 
 ### Login Credentials
 
 Refer to the Working with Dev Containers section of the
-[Contributing Guide](https://github.com/thoth-tech/doubtfire-deploy/blob/main/CONTRIBUTING.md) for
-authentication credentials for locally deployed OnTrack.
+[Contributing Guide](https://github.com/thoth-tech/doubtfire-deploy/blob/main/CONTRIBUTING.md)
+for authentication credentials for locally deployed OnTrack.
 
 ### Showcase Video
 
-The videos in this folder summarise our accomplishments this trimester in OnTrack:
+The videos in this folder summarise our accomplishments this trimester in
+OnTrack:
 
 - [Showcase Videos](https://deakin365.sharepoint.com/:f:/r/sites/ThothTech2/Shared%20Documents/General/Company%20Documents%20%26%20Videos/2024%20T2/Showcase%20Video?csf=1&web=1&e=ezMp06)
 
@@ -503,49 +543,52 @@ The videos in this folder summarise our accomplishments this trimester in OnTrac
 
 ### Project Overview
 
-SplashKit is a user-friendly programming framework designed for creating 2D games, primarily to help
-students learn introductory programming through game development. The framework is mainly written in
-C++, but it supports multiple languages, including C#, Python, Pascal, and JavaScript.
+SplashKit is a user-friendly programming framework designed for creating 2D
+games, primarily to help students learn introductory programming through game
+development. The framework is mainly written in C++, but it supports multiple
+languages, including C#, Python, Pascal, and JavaScript.
 
 ### Projects
 
 #### Arcade Machines
 
-The university has acquired four arcade machines equipped with Raspberry Pi 3B+ units, designed to
-showcase games developed with SplashKit. The short-term goal is to prepare these platforms for
-students to display their SplashKit creations. The medium-term goal is to streamline the process for
-first-year students to easily upload and test their games.
+The university has acquired four arcade machines equipped with Raspberry Pi 3B+
+units, designed to showcase games developed with SplashKit. The short-term goal
+is to prepare these platforms for students to display their SplashKit creations.
+The medium-term goal is to streamline the process for first-year students to
+easily upload and test their games.
 
 #### Game Development
 
-The Game Development team is dedicated to creating and enhancing games that run on the arcade
-machines. Their mission is to demonstrate SplashKit’s capabilities and inspire students by
-showcasing what can be achieved with the framework.
+The Game Development team is dedicated to creating and enhancing games that run
+on the arcade machines. Their mission is to demonstrate SplashKit’s capabilities
+and inspire students by showcasing what can be achieved with the framework.
 
 #### SplashKit Website
 
-Powered by the Starlight framework, the revamped SplashKit website aims to offer an enriched and
-user-friendly experience for developers and learners. It will host existing tutorials and guides,
-providing a central hub for exploring and learning about SplashKit.
+Powered by the Starlight framework, the revamped SplashKit website aims to offer
+an enriched and user-friendly experience for developers and learners. It will
+host existing tutorials and guides, providing a central hub for exploring and
+learning about SplashKit.
 
 #### SplashKit Tutorials
 
-The SplashKit Website will feature tutorials aimed at helping students learn and explore SplashKit’s
-functionality. The focus is on developing smaller, high-quality tutorials across C++, C#, and
-Python, rather than extensive series.
+The SplashKit Website will feature tutorials aimed at helping students learn and
+explore SplashKit’s functionality. The focus is on developing smaller,
+high-quality tutorials across C++, C#, and Python, rather than extensive series.
 
 #### SplashKit Expansion
 
-The Expansion team is responsible for maintaining and enhancing the SplashKit core. This includes
-bug fixes, feature improvements, and refining installation and usage workflows through package
-creation and addressing installation issues.
+The Expansion team is responsible for maintaining and enhancing the SplashKit
+core. This includes bug fixes, feature improvements, and refining installation
+and usage workflows through package creation and addressing installation issues.
 
 #### SplashKit Online
 
-SplashKit Online is developing a web-based IDE that allows students to write and run code directly
-in their browsers. Initially launched as a prototype in 2023, the 2024 goal is to mature this tool
-into a comprehensive product, including C# support and an embeddable version for the SplashKit
-website.
+SplashKit Online is developing a web-based IDE that allows students to write and
+run code directly in their browsers. Initially launched as a prototype in 2023,
+the 2024 goal is to mature this tool into a comprehensive product, including C#
+support and an embeddable version for the SplashKit website.
 
 ### User Manual
 
@@ -588,22 +631,26 @@ This trimester, the following deliverables were completed:
   - Added additional controls to the arcade menu
   - Defined the process for uploading games to the arcade machine
   - Fixed broken links in Arcade Build documentation
-  - Developed Game Packaging tool, [flipper](https://github.com/thoth-tech/flipper)
+  - Developed Game Packaging tool,
+    [flipper](https://github.com/thoth-tech/flipper)
 
 #### SplashKit Expansion
 
 - General Improvements
-  - Fixed bugs relating to vectors, random number generation, moving sprites and replacing text.
+  - Fixed bugs relating to vectors, random number generation, moving sprites and
+    replacing text.
   - Renamed 'label' parameter to fix Pascal support
   - Investigate and identified missing functionality from SwinGame
   - Tested Python compatibility
-  - Implemented insertion of XML comments into SplashKit.cs during translation process
+  - Implemented insertion of XML comments into SplashKit.cs during translation
+    process
 - New Features
   - Completed development of Remote GPIO Control methods
   - Created Circle-Triangle Collision detection methods
   - Created base64 image decoding function
   - Created SplashKit Splashscreen function
-  - Added unit tests for networking, utility functions, bitmaps, sound effects, and music.
+  - Added unit tests for networking, utility functions, bitmaps, sound effects,
+    and music.
 
 #### SplashKit Website
 
@@ -621,8 +668,8 @@ This trimester, the following deliverables were completed:
 #### SplashKit Tutorials
 
 - New Tutorials
-  - Developed 2D Vectors tutorial series covering topics such as vector magnitude, collisions and
-    gravity
+  - Developed 2D Vectors tutorial series covering topics such as vector
+    magnitude, collisions and gravity
 - Tutorial Updates
   - Created documentation detailing tutorial review process
   - Developed Onboarding process for the tutorial team
@@ -634,7 +681,8 @@ This trimester, the following deliverables were completed:
   - Add Python Code Blocks to Tutorials
     - "Using Mouse Inputs" guide
 - Created various usage examples
-  - `fill_triangle`, `fill_circle`, `create_sprite`, `draw_sprite`,`clear_screen` and more
+  - `fill_triangle`, `fill_circle`, `create_sprite`,
+    `draw_sprite`,`clear_screen` and more
 - Completed various tutorial reviews
   - "Getting started with servers" guide
   - "How to make a RESTful API call" guide
@@ -655,7 +703,8 @@ This trimester, the following deliverables were completed:
   - Developed Onboarding guide for the Game Development team
   - Addressed issue that compiled .exe files are platform-specific.
   - Fixed gameplay issues in Below the Surface and Venture Adventure
-  - Created programming plan for the Bee Game project, outlining core mechanics and class structures
+  - Created programming plan for the Bee Game project, outlining core mechanics
+    and class structures
 
 #### List Of All Complete Deliverables
 
@@ -944,12 +993,13 @@ This trimester, the following deliverables were completed:
 - Add additional modes to the Arcade Machine software
   - Kiosk Mode: Show only published games, ideal for events
   - Normal Mode: Display both published and test games
-- Implement Voting System: Integrate a voting system to give significance to the star ranking
-  currently available on the machines
-- Correct the C# compatibility for ARM, as .NET currently does not run correctly in the emulated PI
-  environment used for C++ games
+- Implement Voting System: Integrate a voting system to give significance to the
+  star ranking currently available on the machines
+- Correct the C# compatibility for ARM, as .NET currently does not run correctly
+  in the emulated PI environment used for C++ games
 - Implement versioning for compiled games to manage updates effectively
-- Continue development of [flipper](https://github.com/thoth-tech/flipper) Game Packaging Tool
+- Continue development of [flipper](https://github.com/thoth-tech/flipper) Game
+  Packaging Tool
 
 #### SplashKit.io Website
 
@@ -957,50 +1007,56 @@ This trimester, the following deliverables were completed:
   - Improve API Reference
     - Continue to add usage examples for SplashKit API
     - Integrate live demo's to provide interactive examples
-    - Add mechanism for the user to globally switch between programming languages in the API
-      reference
+    - Add mechanism for the user to globally switch between programming
+      languages in the API reference
     - Produce concise videos to support the documentation
-    - Enhance documentation with more interactive and user-friendly documentation elements
+    - Enhance documentation with more interactive and user-friendly
+      documentation elements
   - Contributor Resources
     - Develop resources to support community contributions
     - Including detailed guides, best practices and an interactive forum
 - Thoth Tech Documentation Website
   - Improve Onboarding Hub
     - Continue to expand and refine the Onboarding hub
-    - Create relevant guides, checklists and tutorials for all stages of the project documentation
-      and development lifecycle
+    - Create relevant guides, checklists and tutorials for all stages of the
+      project documentation and development lifecycle
     - Develop detailed Onboarding paths to guide new students
-    - Implement a comprehensive upskilling section, containing curated learning materials
+    - Implement a comprehensive upskilling section, containing curated learning
+      materials
 
 #### SplashKit Tutorials
 
 - Continue Reviewing Current Tutorials:
-  - Compile and Run Tutorial Code: Ensure all example code works correctly, fixing any issues (e.g.,
-    SplashKit Camera). Ensure they all use top level statements for C#, and include C++ and python
-    code.
+  - Compile and Run Tutorial Code: Ensure all example code works correctly,
+    fixing any issues (e.g., SplashKit Camera). Ensure they all use top level
+    statements for C#, and include C++ and python code.
   - Proof-read Content: Verify that the wording is clear and comprehensible.
-  - Add Python Code Tabs: Include Python code examples in any tutorials currently missing them.
+  - Add Python Code Tabs: Include Python code examples in any tutorials
+    currently missing them.
 - Expand and Update Tutorials:
-  - Plan and develop new tutorials to cover the full range of SplashKit functionality.
-  - Develop a wide range of tutorials that cover all aspects of game development using SplashKit,
-    including advanced game mechanics, AI, physics, and more
+  - Plan and develop new tutorials to cover the full range of SplashKit
+    functionality.
+  - Develop a wide range of tutorials that cover all aspects of game development
+    using SplashKit, including advanced game mechanics, AI, physics, and more
   - Continuously update existing tutorials to reflect changes in SplashKit.
-  - Develop advanced tutorials to cover more complex topics and advanced functionalities of
-    SplashKit.
+  - Develop advanced tutorials to cover more complex topics and advanced
+    functionalities of SplashKit.
 - Interactive Tutorial Platform
-  - Develop an interactive platform where users can follow tutorials and write code directly within
-    their browser, with real-time feedback and code execution
+  - Develop an interactive platform where users can follow tutorials and write
+    code directly within their browser, with real-time feedback and code
+    execution
 - Create Introductory Level Games:
-  - Write short, introductory-level games using procedural C++/C#, with accompanying tutorials aimed
-    at SIT102 level beginner skills.
-  - Link to content on Programmers Guide to promote the use of pre-existing material.
+  - Write short, introductory-level games using procedural C++/C#, with
+    accompanying tutorials aimed at SIT102 level beginner skills.
+  - Link to content on Programmers Guide to promote the use of pre-existing
+    material.
 - Create SplashKit Online IDE Tutorial:
   - Develop a tutorial series on creating a game using the SplashKit Online IDE.
 - Community Engagement and Feedback:
-  - Establish a system for receiving and incorporating feedback from the community to continuously
-    improve tutorials.
-  - Encourage contributions from the community and maintain a high standard for tutorial
-    submissions.
+  - Establish a system for receiving and incorporating feedback from the
+    community to continuously improve tutorials.
+  - Encourage contributions from the community and maintain a high standard for
+    tutorial submissions.
 
 #### SplashKit Expansion
 
@@ -1008,160 +1064,189 @@ This trimester, the following deliverables were completed:
   [See here](https://github.com/thoth-tech/documentation/tree/main/docs/Splashkit/DevEnviroment/Windows_DevContainer)
   for more details.
 - Deployment Packages:
-  - Brew Package: Finalise and fix existing Brew packages to ensure smooth installation and usage.
+  - Brew Package: Finalise and fix existing Brew packages to ensure smooth
+    installation and usage.
 - Test and Fix SplashKit Functionality:
   - Identify and resolve bugs in SplashKit functionality
   - Investigate bug regarding drawing text to second window. See
-    [Issue #177](https://github.com/splashkit/splashkit-core/issues/177) for more information.
+    [Issue #177](https://github.com/splashkit/splashkit-core/issues/177) for
+    more information.
   - Investigate and implement Pascal compilation fix. See
-    [Issue #151](https://github.com/splashkit/splashkit-core/issues/151) and relevant Planner card
-    for more information.
-    - Fix handling of negative enums in SplashKit Translator (this should be done; see Planner card
-      for status)
+    [Issue #151](https://github.com/splashkit/splashkit-core/issues/151) and
+    relevant Planner card for more information.
+    - Fix handling of negative enums in SplashKit Translator (this should be
+      done; see Planner card for status)
 - Port SwinGame Functions to SplashKit:
   - Review and port missing functions from SwinGames into SplashKit.
 - Investigate MinGW Compatibility
-  - There have been issues with using SplashKit in MinGW, this needs to be investigated.
+  - There have been issues with using SplashKit in MinGW, this needs to be
+    investigated.
 - Improve Raspberry Pi Functionality:
-  - Improve GPIO Error Handling (this should be done; see Planner card for status)
-  - Implement support for the Raspberry Pi 5, as current support only extends to Raspberry Pi 4B+.
+  - Improve GPIO Error Handling (this should be done; see Planner card for
+    status)
+  - Implement support for the Raspberry Pi 5, as current support only extends to
+    Raspberry Pi 4B+.
 - Further Integration Testing
   - Conduct detailed testing and bug fixing of SplashKit functionality.
-  - Ensure both procedural and OOP versions of each function are thoroughly tested and reliable.
+  - Ensure both procedural and OOP versions of each function are thoroughly
+    tested and reliable.
 - Comprehensive Testing and Bug Fixing:
-  - Develop a comprehensive automated test suite to regularly test SplashKit functionality and
-    quickly identify and resolve new bugs. This ensures the framework remains stable and reliable as
-    new features are added and updates are made.
+  - Develop a comprehensive automated test suite to regularly test SplashKit
+    functionality and quickly identify and resolve new bugs. This ensures the
+    framework remains stable and reliable as new features are added and updates
+    are made.
     - Implement unit tests for functions without them
     - Add tests for translator targets C#, Python and Pascal.
-      - Alternatively, investigate the difficulty of creating a translator module to automatically
-        translate the existing C++ tests into the translator target languages
+      - Alternatively, investigate the difficulty of creating a translator
+        module to automatically translate the existing C++ tests into the
+        translator target languages
 
 #### SplashKit Online
 
 - Embed Lite Version into SplashKit Website:
-  - Develop and implement a "lite" version of SplashKit Online for embedding in the SplashKit
-    website to demonstrate code snippets and showcase functionalities.
+  - Develop and implement a "lite" version of SplashKit Online for embedding in
+    the SplashKit website to demonstrate code snippets and showcase
+    functionalities.
   - Focus on interface changes to integrate seamlessly with the website.
   - Improve loading times and caching to ensure smooth performance.
 - Improve Project Management
-  - Project Handling: Add functionality for users to create, load, save, and delete projects within
-    the browser, managing multiple projects with unique names.
-  - Version Control: Integrate version control to track changes and revert to previous states as
-    needed.
-  - Export Project Builds: Enable exporting project builds as executables for C++ projects or single
-    HTML files for JavaScript projects for better portability and sharing.
+  - Project Handling: Add functionality for users to create, load, save, and
+    delete projects within the browser, managing multiple projects with unique
+    names.
+  - Version Control: Integrate version control to track changes and revert to
+    previous states as needed.
+  - Export Project Builds: Enable exporting project builds as executables for
+    C++ projects or single HTML files for JavaScript projects for better
+    portability and sharing.
 - Improve SplashKit Online Interface:
-  - Code Editing and REPL Functionality: Implement auto-complete for variable parameters, add
-    breakpoints, and create variable watch windows to improve coding and debugging.
+  - Code Editing and REPL Functionality: Implement auto-complete for variable
+    parameters, add breakpoints, and create variable watch windows to improve
+    coding and debugging.
 - Extended Language Support:
-  - C# Support: Continue to explore and add support for C# to broaden language options.
-  - Python Support: Investigate and add support for Python to accommodate additional user needs.
+  - C# Support: Continue to explore and add support for C# to broaden language
+    options.
+  - Python Support: Investigate and add support for Python to accommodate
+    additional user needs.
 - Advanced Project Features:
-  - Integrated Code Snippets: Develop functionality for users to save and reuse code snippets within
-    their projects.
-  - Collaborative Features: Consider implementing collaborative features for simultaneous project
-    work among multiple users.
+  - Integrated Code Snippets: Develop functionality for users to save and reuse
+    code snippets within their projects.
+  - Collaborative Features: Consider implementing collaborative features for
+    simultaneous project work among multiple users.
 
 #### Game Development
 
 - Establish Standardised Implementation Patterns:
-  - Enforce decoupling of data/functionality and decoupling of state/render patterns.
-  - Develop a prescribed implementation pattern to ensure consistency and quality across projects.
+  - Enforce decoupling of data/functionality and decoupling of state/render
+    patterns.
+  - Develop a prescribed implementation pattern to ensure consistency and
+    quality across projects.
 - Develop a "10 Minute Game":
-  - Collaboratively plan and execute the development of a simple game (e.g., idle game, tower
-    defence, survivor.io-like).
+  - Collaboratively plan and execute the development of a simple game (e.g.,
+    idle game, tower defence, survivor.io-like).
   - Ensure core game mechanics are implemented in the first sprint.
-  - Focus the latter half of the trimester on improving visual representation, adding "juice," and
-    implementing variations of core game elements (e.g., enemies, powerups, weapons).
-  - This approach ensures that core functionality is completed within a single trimester, with
-    additional features developed against a standardised interface that integrates with the core
-    game types.
+  - Focus the latter half of the trimester on improving visual representation,
+    adding "juice," and implementing variations of core game elements (e.g.,
+    enemies, powerups, weapons).
+  - This approach ensures that core functionality is completed within a single
+    trimester, with additional features developed against a standardised
+    interface that integrates with the core game types.
 - Iterate on Prescribed Patterns:
-  - Adjust and refine the implementation pattern based on student feedback and experiences.
+  - Adjust and refine the implementation pattern based on student feedback and
+    experiences.
 - Generate Development Artifacts:
-  - Create documentation covering the implementation of discrete game systems (e.g., terrain
-    generation systems using IDW/random walk/noise, 2D light marching, threaded state update and
-    render patterns).
+  - Create documentation covering the implementation of discrete game systems
+    (e.g., terrain generation systems using IDW/random walk/noise, 2D light
+    marching, threaded state update and render patterns).
 - Improve Documentation:
-  - Existing games often lack adequate documentation. Good documentation can significantly increase
-    onboarding speed for new contributors.
-  - For completed games, create UML diagrams, overviews of gameplay mechanics, and guides for
-    creating levels in each game’s format.
-  - Address the discoverability of existing documentation and resources. Update README files to
-    reflect the current focus of work and ensure existing documentation is easy to find.
+  - Existing games often lack adequate documentation. Good documentation can
+    significantly increase onboarding speed for new contributors.
+  - For completed games, create UML diagrams, overviews of gameplay mechanics,
+    and guides for creating levels in each game’s format.
+  - Address the discoverability of existing documentation and resources. Update
+    README files to reflect the current focus of work and ensure existing
+    documentation is easy to find.
 - Complete Core Functionality of Incomplete Games:
-  - Focus on finishing significant core functionalities in games that are currently incomplete
-    (e.g., Sky Surge, Single Combat).
+  - Focus on finishing significant core functionalities in games that are
+    currently incomplete (e.g., Sky Surge, Single Combat).
 - Extend Gameplay and Functionality of Completed Games:
-  - Enhance and expand the gameplay and features of games that are already completed, ensuring they
-    continue to engage and challenge players.
+  - Enhance and expand the gameplay and features of games that are already
+    completed, ensuring they continue to engage and challenge players.
 
 ### Open Issues
 
-The SplashKit team has faced several challenges over Trimester 2, 2024. These are detailed below:
+The SplashKit team has faced several challenges over Trimester 2, 2024. These
+are detailed below:
 
 - Lack of Communication Between Project Groups
-  - While individual communication channels, threads, and chats exist for each project, there is a
-    notable absence of overarching organisation. The lack of regular meetings between teams or with
-    the entire company has led to confusion, poor coordination, and duplicated efforts. In some
-    cases, tasks were reassigned or duplicated by different team members without clear
-    communication, causing disruptions in workflow. This decentralised communication structure has
-    hindered collaboration across projects and created barriers to progress.
+  - While individual communication channels, threads, and chats exist for each
+    project, there is a notable absence of overarching organisation. The lack of
+    regular meetings between teams or with the entire company has led to
+    confusion, poor coordination, and duplicated efforts. In some cases, tasks
+    were reassigned or duplicated by different team members without clear
+    communication, causing disruptions in workflow. This decentralised
+    communication structure has hindered collaboration across projects and
+    created barriers to progress.
 - Insufficient Onboarding Information and Lack of Codebase Exploration
-  - A recurring issue was the lack of exploration of the existing codebase by team members, both in
-    terms of finished and unfinished work. As a result, students often replicated previous efforts
-    instead of building on them, such as recreating Git contribution guides or developer environment
-    setup guides unnecessarily. This issue stems from insufficient documentation practices and a
-    lack of familiarity with existing resources, causing inefficiencies and wasted effort.
+  - A recurring issue was the lack of exploration of the existing codebase by
+    team members, both in terms of finished and unfinished work. As a result,
+    students often replicated previous efforts instead of building on them, such
+    as recreating Git contribution guides or developer environment setup guides
+    unnecessarily. This issue stems from insufficient documentation practices
+    and a lack of familiarity with existing resources, causing inefficiencies
+    and wasted effort.
 - Team Members Performing Duplicate Work
-  - The combination of communication gaps and poor documentation has directly led to duplicated
-    work. Without a clear mechanism to track or share ongoing progress across teams, individuals
-    have inadvertently recreated work completed by others. This redundancy has slowed down
-    development and caused unnecessary strain on resources.
+  - The combination of communication gaps and poor documentation has directly
+    led to duplicated work. Without a clear mechanism to track or share ongoing
+    progress across teams, individuals have inadvertently recreated work
+    completed by others. This redundancy has slowed down development and caused
+    unnecessary strain on resources.
 
-A possible solution to these issues would be the implementation of regular cross-team meetings and
-company-wide updates. These would provide a clearer understanding of each team’s progress,
-facilitate better collaboration, and reduce duplicated efforts. Additionally, enhancing overall
-documentation and establishing more robust processes for tracking work across projects would help
+A possible solution to these issues would be the implementation of regular
+cross-team meetings and company-wide updates. These would provide a clearer
+understanding of each team’s progress, facilitate better collaboration, and
+reduce duplicated efforts. Additionally, enhancing overall documentation and
+establishing more robust processes for tracking work across projects would help
 ensure that past work is utilised effectively moving forward.
 
 ### Product Development Life Cycle
 
 #### New Tasks
 
-In SplashKit it is up to individuals to assign themselves to cards – generally speaking, it is fine
-to assign oneself to any card unless otherwise noted. New cards are created by discussing the
-problem with mentors, either during stand-ups or directly – if approved, the mentor will create the
-card and you can assign yourself to it.
+In SplashKit it is up to individuals to assign themselves to cards – generally
+speaking, it is fine to assign oneself to any card unless otherwise noted. New
+cards are created by discussing the problem with mentors, either during
+stand-ups or directly – if approved, the mentor will create the card and you can
+assign yourself to it.
 
 #### Definition of Done
 
-A task is only considered fully done once it has been completed, submitted as a pull request, and
-reviewed by two other students who approve it (see below). Once a mentor reviews it, it may be
-considered fully complete, or potentially moved back to doing if unsatisfactory.
+A task is only considered fully done once it has been completed, submitted as a
+pull request, and reviewed by two other students who approve it (see below).
+Once a mentor reviews it, it may be considered fully complete, or potentially
+moved back to doing if unsatisfactory.
 
 #### Task Review
 
-Two mandatory peer reviews must be completed before the mentor review. Once the pull request is
-made, contact a teammate for a review and upon agreement, tag this teammate under the Teams Planner
-card and GitHub pull request as the reviewer. Make sure to review and test the code syntax, logic,
-and output through pulling the changes unto your local machine if you are the reviewer. If the
-reviewer requests any changes, update the contribution, and notify the reviewer. Once the changes
-are committed and pushed, it will automatically update the pull request; thus, there is no need to
-make another pull request.
+Two mandatory peer reviews must be completed before the mentor review. Once the
+pull request is made, contact a teammate for a review and upon agreement, tag
+this teammate under the Teams Planner card and GitHub pull request as the
+reviewer. Make sure to review and test the code syntax, logic, and output
+through pulling the changes unto your local machine if you are the reviewer. If
+the reviewer requests any changes, update the contribution, and notify the
+reviewer. Once the changes are committed and pushed, it will automatically
+update the pull request; thus, there is no need to make another pull request.
 [Watch this tutorial video by Satika Jayawardena](https://deakin365.sharepoint.com/:v:/r/sites/ThothTech2/Shared%20Documents/OnTrack/Demo%20videos/pull-request-demo.mov?csf=1&web=1&e=a6p1gg&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 from the OnTrack team on creating and reviewing someone else’s pull request.
 
-Once the peer review is complete and your contribution was deemed correct by your teammate, the pull
-request may be moved into the Mentor Review column – in time, a mentor will review the work, and if
-it is deemed satisfactory it will be considered complete and moved into the current sprint’s
-Complete column.
+Once the peer review is complete and your contribution was deemed correct by
+your teammate, the pull request may be moved into the Mentor Review column – in
+time, a mentor will review the work, and if it is deemed satisfactory it will be
+considered complete and moved into the current sprint’s Complete column.
 
 #### Testing
 
-Testing strategies depend on the project – please see each project’s onboarding information for more
-details.
+Testing strategies depend on the project – please see each project’s onboarding
+information for more details.
 
 #### Branching Strategy
 
@@ -1173,43 +1258,50 @@ for guidelines on creating Git branches and commits for contributions.
 
 #### SplashKit.io Website
 
-The SplashKit.io website is the primary portal for developers and learners, offering a modern,
-responsive interface built with Starlight (Astro), React, SolidJS, Tailwind CSS, Node.js, and
-Docker. It provides users with access to API documentation, installation guides, and tutorials,
-making it essential for anyone looking to learn or expand their knowledge of SplashKit. This website
-supports external developers, especially beginners, in using SplashKit for 2D game development and
-interactive applications.
+The SplashKit.io website is the primary portal for developers and learners,
+offering a modern, responsive interface built with Starlight (Astro), React,
+SolidJS, Tailwind CSS, Node.js, and Docker. It provides users with access to API
+documentation, installation guides, and tutorials, making it essential for
+anyone looking to learn or expand their knowledge of SplashKit. This website
+supports external developers, especially beginners, in using SplashKit for 2D
+game development and interactive applications.
 
 #### SplashKit SDK
 
-The SplashKit SDK is a versatile toolkit designed to simplify 2D game development and interactive
-application creation. It is primarily built using C++, SDL, and OpenGL, and is managed through CMake
-and Clang/LLVM. The SDK supports cross-platform development on Windows, macOS, Linux, and Raspberry
-Pi, allowing developers to create applications that run on multiple platforms using a single
-codebase. Additionally, the SDK includes automated translation into C#, Python, and Pascal.
+The SplashKit SDK is a versatile toolkit designed to simplify 2D game
+development and interactive application creation. It is primarily built using
+C++, SDL, and OpenGL, and is managed through CMake and Clang/LLVM. The SDK
+supports cross-platform development on Windows, macOS, Linux, and Raspberry Pi,
+allowing developers to create applications that run on multiple platforms using
+a single codebase. Additionally, the SDK includes automated translation into C#,
+Python, and Pascal.
 
 #### SplashKit Online
 
-SplashKit Online is a web-based Integrated Development Environment (IDE) that enables users to
-write, compile, and run SplashKit projects directly in their browsers. It supports JavaScript and
-experimental C++ through WebAssembly (WASM) via Emscripten. The platform uses Node/NPM for
-dependency management and test server operation. SplashKit Online aims to make it easy for
-developers, particularly beginners, to get started with SplashKit without needing to install any
-software.
+SplashKit Online is a web-based Integrated Development Environment (IDE) that
+enables users to write, compile, and run SplashKit projects directly in their
+browsers. It supports JavaScript and experimental C++ through WebAssembly (WASM)
+via Emscripten. The platform uses Node/NPM for dependency management and test
+server operation. SplashKit Online aims to make it easy for developers,
+particularly beginners, to get started with SplashKit without needing to install
+any software.
 
 #### Arcade Machine
 
-The SplashKit-powered arcade machines, developed in collaboration with Deakin University, run on
-Raspberry Pi using emulationstation and retropie. These machines allow students and developers to
-upload and test games developed with SplashKit in a real-world arcade setting. The machines offer a
-hands-on experience where games can be played and evaluated using physical arcade hardware.
+The SplashKit-powered arcade machines, developed in collaboration with Deakin
+University, run on Raspberry Pi using emulationstation and retropie. These
+machines allow students and developers to upload and test games developed with
+SplashKit in a real-world arcade setting. The machines offer a hands-on
+experience where games can be played and evaluated using physical arcade
+hardware.
 
 #### Game Development
 
-The Game Development team produces games that showcase SplashKit's capabilities. These games are
-typically built using C++ or C# and adhere to industry-standard game design practices. The games
-serve as examples of what can be achieved using SplashKit, demonstrating various features of the
-SDK, including graphics, input handling, and audio management.
+The Game Development team produces games that showcase SplashKit's capabilities.
+These games are typically built using C++ or C# and adhere to industry-standard
+game design practices. The games serve as examples of what can be achieved using
+SplashKit, demonstrating various features of the SDK, including graphics, input
+handling, and audio management.
 
 ### Source Code
 
@@ -1228,6 +1320,7 @@ SDK, including graphics, input handling, and audio management.
 
 ### Showcase Video
 
-The videos in the following folder summarise our efforts this trimester in SplashKit:
+The videos in the following folder summarise our efforts this trimester in
+SplashKit:
 
 - [Showcase Videos](https://deakin365.sharepoint.com/:f:/r/sites/ThothTech2/Shared%20Documents/General/Company%20Documents%20%26%20Videos/2024%20T2/Showcase%20Video?csf=1&web=1&e=ezMp06)

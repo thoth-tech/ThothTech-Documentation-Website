@@ -1,28 +1,31 @@
 ---
 title: API Support Tests
 description:
-  The results of running tests to check support for parts of the SplashKit API, across the two
-  currently supported languages.
+  The results of running tests to check support for parts of the SplashKit API,
+  across the two currently supported languages.
 ---
 
 # Report on SplashKit API functionality in SplashKit Online
 
 ### Overview
 
-While much of the SplashKit API already works in browsers thanks to Emscripten, there are still
-areas of functionality that do not. This report will outline what is working, what isn't, and the
-general reason why.
+While much of the SplashKit API already works in browsers thanks to Emscripten,
+there are still areas of functionality that do not. This report will outline
+what is working, what isn't, and the general reason why.
 
 ### SplashKit Tests
 
-It was decided that the most efficient way to test SplashKit's functionality was to use the existing
-suite of tests that exist inside `splashkit-core`. To test the JavaScript language backend, these
-tests had to be converted. To assist with this, a small C++ to JavaScript conversion utility was
-written; the result of this was then patched up manually. For C++, a few of the tests had to be
-slightly modified, but all in all are practically identical to their original source.
+It was decided that the most efficient way to test SplashKit's functionality was
+to use the existing suite of tests that exist inside `splashkit-core`. To test
+the JavaScript language backend, these tests had to be converted. To assist with
+this, a small C++ to JavaScript conversion utility was written; the result of
+this was then patched up manually. For C++, a few of the tests had to be
+slightly modified, but all in all are practically identical to their original
+source.
 
-The project file containing these tests will be added to the SplashKit Online DemoProjects folder
-for reproducibility. Here are the results grouped by API category.
+The project file containing these tests will be added to the SplashKit Online
+DemoProjects folder for reproducibility. Here are the results grouped by API
+category.
 
 | Field            | JavaScript        | C++               | Details                                                                                                                                                                                                                                                                  |
 | ---------------- | ----------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -46,8 +49,8 @@ for reproducibility. Here are the results grouped by API category.
 | Utilities        | Near Full Support | Full Support      | [Display Dialog](https://splashkit.io/api/utilities/#display-dialog) does not work in JavaScript backend, as it enters a busy loop that freezes the page.                                                                                                                |
 | Windows          | Partial Support   | Partial Support   | No support for multiple windows, or for moving the window. No way to close the current window.                                                                                                                                                                           |
 
-And here are the results specific to each test - some tests test multiple things unfortunately, so
-some of these results aren't very helpful.
+And here are the results specific to each test - some tests test multiple things
+unfortunately, so some of these results aren't very helpful.
 
 | Test                | JavaScript       | C++                | Details                                                                                                                                                                                                         |
 | ------------------- | ---------------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

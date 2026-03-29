@@ -12,7 +12,8 @@ title: Project Documentation Template
 
 ## **Scope**
 
-\<\<Add a quick summary of the purpose of this project and the scope of the project\>\>
+\<\<Add a quick summary of the purpose of this project and the scope of the
+project\>\>
 
 ## **Outcomes**
 
@@ -20,8 +21,8 @@ title: Project Documentation Template
 
 ## **Delivery**
 
-\<\<Add here how you will achieve the project and any planning or research you have done, include
-screenshots where needed\>\>
+\<\<Add here how you will achieve the project and any planning or research you
+have done, include screenshots where needed\>\>
 
 \<\< Also include Delivery times for stages of the project\>\>
 
@@ -33,4 +34,5 @@ Delivery Lead Signature:
 Team Member Signature:
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-Client Signature: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Client Signature:
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
