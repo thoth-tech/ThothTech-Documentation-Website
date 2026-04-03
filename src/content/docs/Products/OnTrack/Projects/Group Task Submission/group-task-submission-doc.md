@@ -1,5 +1,5 @@
 ---
-title: Design a way to improve the group Task submission - Document
+title: Design a way to improve the group Task submission - Documen
 ---
 
 ## Solution 1: Selecting Students Who Can Submit

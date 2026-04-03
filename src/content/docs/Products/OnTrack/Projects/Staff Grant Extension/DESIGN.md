@@ -1,5 +1,5 @@
 ---
-title: Design Document:OnTrack - Staff Grant Extension Feature
+title: Design Document:OnTrack - Staff Grant Extension Featur
 ---
 
 ## 1-Introduction
