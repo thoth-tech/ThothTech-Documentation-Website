@@ -1,7 +1,7 @@
 {
-  "name": "starlight-documentation-website",
+  "name": "doubtfire-astro-website",
   "type": "module",
-  "version": "0.0.1",
+  "version": "2.0.0",
   "scripts": {
     "dev": "astro dev --port 4321",
     "start": "astro dev --port 4321",
@@ -14,10 +14,10 @@
     "lint": "npm run format:check && npm run prose:check"
   },
   "dependencies": {
-    "@astrojs/netlify": "^3.0.0",
-    "@astrojs/partytown": "^2.1.2",
-    "@astrojs/starlight": "^0.28.6",
-    "astro": "^4.16.18",
+    "@astrojs/netlify": "^7.0.4",
+    "@astrojs/partytown": "^2.1.5",
+    "@astrojs/starlight": "^0.38.2",
+    "astro": "^6.0.8",
     "sharp": "^0.32.3",
     "starlight": "^0.3.9",
     "starlight-blog": "^0.4.0",
