@@ -2,8 +2,8 @@
 title: Review of OnTrack folder in GitHub Document
 ---
 
-This document reviews the folders within OnTrack repository and determines which folders fall under
-what categories.
+This document reviews the folders within OnTrack repository and determines which
+folders fall under what categories.
 
 | **Projects**                                   | **Documentation**                                                     |
 | ---------------------------------------------- | --------------------------------------------------------------------- |

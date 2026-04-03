@@ -1,8 +1,8 @@
 ---
 title: "Suggested Improvement: Adding OOP Principles to Shape Types"
 description:
-  This page is about adding OOP principles to SplashKit's Shape types to simplify the collision
-  classification and resolution functions
+  This page is about adding OOP principles to SplashKit's Shape types to
+  simplify the collision classification and resolution functions
 sidebar:
   label: "Suggested Improvement for Shape Types"
 ---
@@ -10,24 +10,28 @@ sidebar:
 ## Description
 
 This document outlines the refactoring of a previous PR:
-[Pull Request 83](https://github.com/thoth-tech/splashkit-core/pull/83). The goal was to eliminate
-the need for void and function pointers by having sprites, rectangles, circles, triangles and quads
-inherit from the abstract class shape. Unfortunately, I was unable to get the program to compile. I
-am fairly certain that it is due to circular dependencies.
+[Pull Request 83](https://github.com/thoth-tech/splashkit-core/pull/83). The
+goal was to eliminate the need for void and function pointers by having sprites,
+rectangles, circles, triangles and quads inherit from the abstract class shape.
+Unfortunately, I was unable to get the program to compile. I am fairly certain
+that it is due to circular dependencies.
 
-The major issue is that `_sprite_data` is abstracted entirely from students by being declared in
-`sprite.cpp`. However, moving `_sprite_data` from `sprites.cpp` to `sprites.h` leads to circular
-dependencies between `collision.h`, `types.h`, `sprites.h` and `backend_types.h`.
+The major issue is that `_sprite_data` is abstracted entirely from students by
+being declared in `sprite.cpp`. However, moving `_sprite_data` from
+`sprites.cpp` to `sprites.h` leads to circular dependencies between
+`collision.h`, `types.h`, `sprites.h` and `backend_types.h`.
 
-I am sure that the compilation errors could be resolved, however it would be a difficult process. My
-plan would be to split larger header files such as `types.h` into smaller files for each struct.
-There would be then be a `rectangle.h`, `circle.h` and so on.
+I am sure that the compilation errors could be resolved, however it would be a
+difficult process. My plan would be to split larger header files such as
+`types.h` into smaller files for each struct. There would be then be a
+`rectangle.h`, `circle.h` and so on.
 
-Similarly, `backend_types.h` would be split into many smaller header files for each enum. This would
-allow for fine-grain control of includes which will make diagnosing and rectifying the circular
-dependencies easier.
+Similarly, `backend_types.h` would be split into many smaller header files for
+each enum. This would allow for fine-grain control of includes which will make
+diagnosing and rectifying the circular dependencies easier.
 
-By moving to an OOP approach, the code can be more understood, debugged and maintained.
+By moving to an OOP approach, the code can be more understood, debugged and
+maintained.
 
 ## Code
 

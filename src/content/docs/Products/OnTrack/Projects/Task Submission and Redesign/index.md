@@ -8,7 +8,8 @@ A document created to reflect what has been so far accomplished in the project.
 
 ## [T1, 2023 Project Scope Sign Off Document](/products/ontrack/projects/task-submission-and-redesign/project-scope-signoff-document)
 
-A document created to reflect the scope of the project and its deliverables for T1 / 2023.
+A document created to reflect the scope of the project and its deliverables for
+T1 / 2023.
 
 ## [T2, 2022 Hand-over Document](/products/ontrack/projects/task-submission-and-redesign/2022-t3-hand-over-document)
 
@@ -16,8 +17,8 @@ A document created to be the first document read on the project.
 
 ## [Project On-boarding](/products/ontrack/projects/task-submission-and-redesign/project-on-boarding)
 
-A document created to assist with the on-boarding process of new contributors to the Task View and
-Submission Redesign project.
+A document created to assist with the on-boarding process of new contributors to
+the Task View and Submission Redesign project.
 
 ## [View Task and Submission Redesign Epic](/products/ontrack/projects/task-submission-and-redesign/epic)
 

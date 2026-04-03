@@ -1,16 +1,18 @@
 ---
 title: Tutorials List
-description: A compilation of SplashKit tutorials with recommendations for improvement.
+description:
+  A compilation of SplashKit tutorials with recommendations for improvement.
 sidebar:
   hidden: true
 ---
 
-On this page is a compilation of SplashKit tutorials and tutorial proposals. Areas of potential
-improvement have been marked.
+On this page is a compilation of SplashKit tutorials and tutorial proposals.
+Areas of potential improvement have been marked.
 
-The tutorials have been layed out in categories that seem reasonable for further development. There
-is a need for both tutorials that focus on specific areas (such as sprites, or audio), along with
-tutorials that bring these concepts together cohesively (like the Metroidvania series).
+The tutorials have been layed out in categories that seem reasonable for further
+development. There is a need for both tutorials that focus on specific areas
+(such as sprites, or audio), along with tutorials that bring these concepts
+together cohesively (like the Metroidvania series).
 
 ## Current Tutorials
 
@@ -34,14 +36,15 @@ tutorials that bring these concepts together cohesively (like the Metroidvania s
 - Repo Links:
   [_splashkit.io_](https://github.com/splashkit/splashkit.io/tree/develop/source/articles/guides/2018-05-30-get-started-drawing.html.md.erb)
   [_splashkit.io-starlight_](https://github.com/thoth-tech/splashkit.io-starlight/blob/master/src/content/docs/guides/Starter/get-started-drawing.mdx)
-- Website Links: [_Live_](https://splashkit.io/guides/starter/get-started-drawing/)
+- Website Links:
+  [_Live_](https://splashkit.io/guides/starter/get-started-drawing/)
 
 #### _Understanding Double Buffering_
 
 - Overview: An explanation of double buffering.
 - Status: Needs Improvement/Checking
-  - Explaining that without double buffering, the in-between states while drawing could end up
-    visible to the user would be good.
+  - Explaining that without double buffering, the in-between states while
+    drawing could end up visible to the user would be good.
 - Repo Links:
   [_splashkit.io_](https://github.com/splashkit/splashkit.io/tree/develop/source/articles/guides/2018-05-30-basic-drawing.html.md.erb)
   [_splashkit.io-starlight_](https://github.com/thoth-tech/splashkit.io-starlight/blob/master/src/content/docs/guides/Starter/double-buffering.mdx)
@@ -72,7 +75,8 @@ tutorials that bring these concepts together cohesively (like the Metroidvania s
 - Repo Links:
   [_documentation_](https://github.com/thoth-tech/documentation/blob/main/docs/Splashkit/Applications/Tutorials%20and%20Research/Tutorial%20Proposals/Tutorial%20Markdowns/Getting%20Started%20With%20SplashKit%20-%20C%23-C%2B%2B/Getting%20Started%20With%20Splashkit%20-%20C%23-C%2B%2B.md)
   [_splashkit.io-starlight_](https://github.com/thoth-tech/splashkit.io-starlight/blob/master/src/content/docs/guides/Starter/Getting%20Started%20With%20Splashkit.md)
-- Website Links: [_Live_](https://splashkit.io/guides/starter/getting-started-with-splashkit/)
+- Website Links:
+  [_Live_](https://splashkit.io/guides/starter/getting-started-with-splashkit/)
 
 ---
 
@@ -114,32 +118,35 @@ tutorials that bring these concepts together cohesively (like the Metroidvania s
 
 #### _Sprite Layering tutorial C++_
 
-- Overview: Explanation of what sprite layering is with code and video of result.
+- Overview: Explanation of what sprite layering is with code and video of
+  result.
 - Status: Completed
 - Repo Links:
   [_SplashKit-Tutorial_](<https://github.com/thoth-tech/SplashKit-Tutorial/blob/main/Tutorials/Sprite%20Layering%20Tutorial%20(C%2B%2B)/Sprite%20Layering%20Tutorial.md>)
   [_splashkit.io-starlight_](https://github.com/thoth-tech/splashkit.io-starlight/blob/master/src/content/docs/guides/Sprites/Sprite%20Layering%20Tutorial.md)
-- Website Links: [_Live_](https://splashkit.io/guides/sprites/sprite-layering-tutorial/)
+- Website Links:
+  [_Live_](https://splashkit.io/guides/sprites/sprite-layering-tutorial/)
 
 #### _Getting Started With Sprites in Splashkit - C#_
 
 - Overview: Explanation of what sprites are in SplashKit.
 - Status: Needs Improvement/Checking
-  - Is quite good! One thing that might make it better is to just improve the explanation of what a
-    sprite is, since a sprite isn't really a bitmap, it's closer to an instantiation of a bitmap (as
-    mentioned later on in it).
+  - Is quite good! One thing that might make it better is to just improve the
+    explanation of what a sprite is, since a sprite isn't really a bitmap, it's
+    closer to an instantiation of a bitmap (as mentioned later on in it).
 - Repo Links:
   [_SplashKit-Tutorial_](https://github.com/thoth-tech/SplashKit-Tutorial/blob/main/Tutorials/Tutorial%20Markdowns/Getting%20Started%20With%20Sprites%20in%20Splashkit%20Tutorial%20-%20C%23/Getting%20Started%20With%20Sprites%20in%20Splashkit%20Tutorial%20-%20CSharp.md)
   [_splashkit.io-starlight_](https://github.com/thoth-tech/splashkit.io-starlight/blob/master/src/content/docs/guides/Sprites/Getting%20Started%20With%20Sprites%20csharp.md)
 - Proposal Repo Links:
   [_SplashKit-Tutorial_](https://github.com/thoth-tech/SplashKit-Tutorial/blob/main/Tutorial%20Proposals/Getting%20Started%20With%20Sprites%20in%20Splashkit%20Outline%20-%20C%23.md)
   [_documentation_](https://github.com/thoth-tech/documentation/blob/main/docs/Splashkit/Applications/Tutorials%20and%20Research/Tutorial%20Proposals/Getting%20Started%20With%20Sprites%20in%20Splashkit%20Outline%20-%20C%23.md)
-- Website Links: [_Live_](https://splashkit.io/guides/sprites/getting-started-with-sprites-csharp/)
+- Website Links:
+  [_Live_](https://splashkit.io/guides/sprites/getting-started-with-sprites-csharp/)
 
 #### _Getting Started With Sprite layering in Splashkit - C#_
 
-- Overview: Explanation of what sprite layering is with code and video of result. Slightly more
-  technical than 'Sprite Layering tutorial C++'.
+- Overview: Explanation of what sprite layering is with code and video of
+  result. Slightly more technical than 'Sprite Layering tutorial C++'.
 - Status: Completed
 - Repo Links:
   [_documentation_](https://github.com/thoth-tech/documentation/blob/main/docs/Splashkit/Applications/Tutorials%20and%20Research/Tutorial%20Proposals/Tutorial%20Markdowns/Getting%20Started%20With%20Sprite%20Layering%20in%20Splashkit%20Tutorial%20-%20C%23/Sprite%20layering%20in%20Splashkit%20Tutorial%20-%20C%23.md)
@@ -176,12 +183,13 @@ tutorials that bring these concepts together cohesively (like the Metroidvania s
 
 - Overview: A guide on playing sound effects and music.
 - Status: Needs improvement
-  - A bit bare-bones. See the proposal 'Introduction to Splashkit Audio and Music Functions' for
-    perhaps a good replacement.
+  - A bit bare-bones. See the proposal 'Introduction to Splashkit Audio and
+    Music Functions' for perhaps a good replacement.
 - Repo Links:
   [_splashkit.io_](https://github.com/splashkit/splashkit.io/tree/develop/source/articles/guides/2018-06-10-about-audio.html.md.erb)
   [_splashkit.io-starlight_](https://github.com/thoth-tech/splashkit.io-starlight/blob/master/src/content/docs/guides/Audio/GettingStartedAudio.mdx)
-- Website Links: [_Live_](https://splashkit.io/guides/audio/gettingstartedaudio/)
+- Website Links:
+  [_Live_](https://splashkit.io/guides/audio/gettingstartedaudio/)
 
 ---
 
@@ -194,12 +202,13 @@ tutorials that bring these concepts together cohesively (like the Metroidvania s
 - Repo Links:
   [_splashkit.io_](https://github.com/splashkit/splashkit.io/tree/develop/source/articles/guides/2018-05-29-animation.html.md.erb)
   [_splashkit.io-starlight_](https://github.com/thoth-tech/splashkit.io-starlight/blob/master/src/content/docs/guides/Animations/Using%20Animation.mdx)
-- Website Links: [_Live_](https://splashkit.io/guides/animations/using-animation/)
+- Website Links:
+  [_Live_](https://splashkit.io/guides/animations/using-animation/)
 
 #### _Sprite Animation_
 
-- Overview: Builds upon the "Using Animations", cover similar functionality (animations, movement,
-  etc)
+- Overview: Builds upon the "Using Animations", cover similar functionality
+  (animations, movement, etc)
 - Status: Completed
 - Repo Links:
   [_SplashKit-Tutorial_](https://github.com/thoth-tech/SplashKit-Tutorial/blob/main/Tutorials/Sprite%20Animation%20Tutorial/Sprite%20Animation%20Tutorial.md)
@@ -210,9 +219,9 @@ tutorials that bring these concepts together cohesively (like the Metroidvania s
 
 :::note[Thoughts]
 
-While these tutorials are quite good, they feel very disconnected from the rest of SplashKit.
-Wouldn't creating a (very simple) multiplayer game have been a better subject? I don't think anyone
-is going to make a website using SplashKit.
+While these tutorials are quite good, they feel very disconnected from the rest
+of SplashKit. Wouldn't creating a (very simple) multiplayer game have been a
+better subject? I don't think anyone is going to make a website using SplashKit.
 
 :::
 
@@ -223,16 +232,19 @@ is going to make a website using SplashKit.
 - Repo Links:
   [_splashkit.io_](https://github.com/splashkit/splashkit.io/tree/develop/source/articles/guides/2018-07-14-getting-started-with-servers.html.md.erb)
   [_splashkit.io-starlight_](https://github.com/thoth-tech/splashkit.io-starlight/blob/master/src/content/docs/guides/Networking/getting-started-with-servers.mdx)
-- Website Links: [_Live_](https://splashkit.io/guides/networking/getting-started-with-servers/)
+- Website Links:
+  [_Live_](https://splashkit.io/guides/networking/getting-started-with-servers/)
 
 #### _Routing With Servers_
 
-- Overview: A continuation of the previous tutorial, serving different pages to different routes.
+- Overview: A continuation of the previous tutorial, serving different pages to
+  different routes.
 - Status: Completed
 - Repo Links:
   [_splashkit.io_](https://github.com/splashkit/splashkit.io/tree/develop/source/articles/guides/2018-08-10-routing-with-servers.html.md.erb)
   [_splashkit.io-starlight_](https://github.com/thoth-tech/splashkit.io-starlight/blob/master/src/content/docs/guides/Networking/routing-with-servers.mdx)
-- Website Links: [_Live_](https://splashkit.io/guides/networking/routing-with-servers/)
+- Website Links:
+  [_Live_](https://splashkit.io/guides/networking/routing-with-servers/)
 
 #### _How to make a RESTful API call using Splashkit_
 
@@ -241,7 +253,8 @@ is going to make a website using SplashKit.
 - Repo Links:
   [_splashkit.io_](https://github.com/splashkit/splashkit.io/tree/develop/source/articles/guides/2018-10-03-restful-api-call.html.md.erb)
   [_splashkit.io-starlight_](https://github.com/thoth-tech/splashkit.io-starlight/blob/master/src/content/docs/guides/Networking/index.mdx)
-- Website Links: [_Live_](https://splashkit.io/guides/networking/restful-api-call/)
+- Website Links:
+  [_Live_](https://splashkit.io/guides/networking/restful-api-call/)
 
 ---
 
@@ -251,9 +264,10 @@ is going to make a website using SplashKit.
 
 - Overview: An introduction to interacting with databases via SplashKit.
 - Status: Needs Improvement/Checking
-  - The tutorial is well written and engaging. Only thing missing perhaps is a better explanation of
-    what a database is, since SplashKit is targetted at beginnners who may not know what they are. A
-    visual example with tables might be good?
+  - The tutorial is well written and engaging. Only thing missing perhaps is a
+    better explanation of what a database is, since SplashKit is targetted at
+    beginnners who may not know what they are. A visual example with tables
+    might be good?
 - Repo Links:
   [_splashkit.io_](https://github.com/splashkit/splashkit.io/tree/develop/source/articles/guides/2017-10-03-using-databases.html.md)
   [_splashkit.io-starlight_](https://github.com/thoth-tech/splashkit.io-starlight/blob/master/src/content/docs/guides/Database/using-databases.mdx)
@@ -261,7 +275,8 @@ is going to make a website using SplashKit.
 
 #### _Getting Started With SplashKit Database_
 
-- Overview: A much more in-depth tutorial on the database functions (closer to an API reference).
+- Overview: A much more in-depth tutorial on the database functions (closer to
+  an API reference).
 - Status: Completed
 - Repo Links:
   [_documentation_](https://github.com/thoth-tech/documentation/blob/main/docs/Splashkit/Applications/Tutorials%20and%20Research/Tutorial%20Proposals/Tutorial%20Markdowns/Getting%20Started%20With%20SplashKit%20Database.md)
@@ -276,8 +291,9 @@ is going to make a website using SplashKit.
 
 - Overview: A short explanation of JSON with a code example.
 - Status: Needs improvement
-  - Doesn't provide much explanation of JSON nor why one would want to use it. The code example
-    clearly demonstrates writing, but is missing reading that data back in.
+  - Doesn't provide much explanation of JSON nor why one would want to use it.
+    The code example clearly demonstrates writing, but is missing reading that
+    data back in.
 - Repo Links:
   [_splashkit.io_](https://github.com/splashkit/splashkit.io/tree/develop/source/articles/guides/2017-10-03-using-json.html.md)
   [_splashkit.io-starlight_](https://github.com/thoth-tech/splashkit.io-starlight/blob/master/src/content/docs/guides/JSON/using-json.mdx)
@@ -294,7 +310,8 @@ is going to make a website using SplashKit.
 - Repo Links:
   [_splashkit.io_](https://github.com/splashkit/splashkit.io/tree/develop/source/articles/guides/2017-10-03-useful-utilities.html.md)
   [_splashkit.io-starlight_](https://github.com/thoth-tech/splashkit.io-starlight/blob/master/src/content/docs/guides/Utilities/useful-utilities.md)
-- Website Links: [_Live_](https://splashkit.io/guides/utilities/useful-utilities/)
+- Website Links:
+  [_Live_](https://splashkit.io/guides/utilities/useful-utilities/)
 
 ---
 
@@ -302,21 +319,23 @@ is going to make a website using SplashKit.
 
 :::note[Thoughts]
 
-While these tutorials are quite decent, they suffer from what seems to be a big problem. There isn't
-actually a completed project that the tutorials are leading up to, and since some of the parts are
-written by different people, there is a lack of continuity. Something introduced by one tutorial (as
-an example: creating a floor using sprites), is then forgotten about in a future tutorial (which
-then opts to quickly add a ground by drawing rectangles).
+While these tutorials are quite decent, they suffer from what seems to be a big
+problem. There isn't actually a completed project that the tutorials are leading
+up to, and since some of the parts are written by different people, there is a
+lack of continuity. Something introduced by one tutorial (as an example:
+creating a floor using sprites), is then forgotten about in a future tutorial
+(which then opts to quickly add a ground by drawing rectangles).
 
-It would be good if there was a 'source-of-truth' codebase for the finished game, that can then be
-used as a base to keep the tutorials cohesive even when written by different people.
+It would be good if there was a 'source-of-truth' codebase for the finished
+game, that can then be used as a base to keep the tutorials cohesive even when
+written by different people.
 
 :::
 
 #### _Creating a 2D Metroidvania Game (1, 2, 5, 6, 12)_
 
-- Overview: A series on producing a Metroidvania game, have only skim read. Seems quite thorough and
-  well written.
+- Overview: A series on producing a Metroidvania game, have only skim read.
+  Seems quite thorough and well written.
 - Status: Completed
 - Repo Links:
   [_SplashKit-Tutorial_](https://github.com/thoth-tech/SplashKit-Tutorial/blob/main/Tutorials/Creating%20a%202D%20Metroidvania%20Game%20Using%20Splashkit/)
@@ -325,10 +344,12 @@ used as a base to keep the tutorials cohesive even when written by different peo
 
 - Overview: See above.
 
-**Note:** There are **two** 'Part 2's, with somewhat overlapping content. Someone will need to
-choose which one to use in the final series, or merge bits of them together. While this tutorial
-suggests it comes after the _other_ part 2, I would recommend putting this one first, since this one
-covers project creation with `skm new`, and doesn't go into as much detail about drawing graphics.
+**Note:** There are **two** 'Part 2's, with somewhat overlapping content.
+Someone will need to choose which one to use in the final series, or merge bits
+of them together. While this tutorial suggests it comes after the _other_ part
+2, I would recommend putting this one first, since this one covers project
+creation with `skm new`, and doesn't go into as much detail about drawing
+graphics.
 
 - Status: Completed
 - Repo Links:
@@ -388,16 +409,17 @@ covers project creation with `skm new`, and doesn't go into as much detail about
 
 - Overview: Tutorials on the syntax of CMake.
 - Status: Needs Improvement/Checking
-  - While these are well written, they don't have a whole lot to do with SplashKit aside from the
-    final one (see below). Should they use and reference the SplashKit cmake file as an example each
-    time?
+  - While these are well written, they don't have a whole lot to do with
+    SplashKit aside from the final one (see below). Should they use and
+    reference the SplashKit cmake file as an example each time?
 - Repo Links:
   [_SplashKit-Tutorial_](https://github.com/thoth-tech/SplashKit-Tutorial/blob/main/Tutorials/Cmake%20Tutorial/)
   [_splashkit.io-starlight_](https://github.com/thoth-tech/splashkit.io-starlight/blob/master/src/content/docs/guides/Others/Cmake/)
 - Proposal Repo Links:
   [_SplashKit-Tutorial_](https://github.com/thoth-tech/SplashKit-Tutorial/blob/main/Tutorial%20Proposals/Building%20the%20SplashKit%20Core%20Library%20with%20CMake.md)
   [_documentation_](https://github.com/thoth-tech/documentation/blob/main/docs/Splashkit/Applications/Tutorials%20and%20Research/Tutorial%20Proposals/Building%20the%20SplashKit%20Core%20Library%20with%20CMake.md)
-- Website Links: [_Live_](https://splashkit.io/guides/others/cmake/1-get-started/)
+- Website Links:
+  [_Live_](https://splashkit.io/guides/others/cmake/1-get-started/)
 
 #### _CMake #9. Building the SplashKit Core Library with CMake_
 
@@ -409,17 +431,19 @@ covers project creation with `skm new`, and doesn't go into as much detail about
 - Proposal Repo Links:
   [_SplashKit-Tutorial_](https://github.com/thoth-tech/SplashKit-Tutorial/blob/main/Tutorial%20Proposals/Building%20the%20SplashKit%20Core%20Library%20with%20CMake.md)
   [_documentation_](https://github.com/thoth-tech/documentation/blob/main/docs/Splashkit/Applications/Tutorials%20and%20Research/Tutorial%20Proposals/Building%20the%20SplashKit%20Core%20Library%20with%20CMake.md)
-- Website Links: [_Live_](https://splashkit.io/guides/others/cmake/9-cmake-with-splashkit/)
+- Website Links:
+  [_Live_](https://splashkit.io/guides/others/cmake/9-cmake-with-splashkit/)
 
 #### _Publishing in SplashKit - C# / C++_
 
-- Overview: Short tutorial explaining how to publish a game made in SplashKit, with regards to
-  assets and such.
+- Overview: Short tutorial explaining how to publish a game made in SplashKit,
+  with regards to assets and such.
 - Status: Completed
 - Repo Links:
   [_documentation_](https://github.com/thoth-tech/documentation/blob/main/docs/Splashkit/Applications/Tutorials%20and%20Research/Tutorial%20Proposals/Tutorial%20Markdowns/Publishing%20with%20SplashKit%20-%20C%23)
   [_splashkit.io-starlight_](https://github.com/thoth-tech/splashkit.io-starlight/blob/master/src/content/docs/guides/Others/Publishing%20with%20SplashKit%20Csharp.md)
-- Website Links: [_Live_](https://splashkit.io/guides/others/publishing-with-splashkit-csharp/)
+- Website Links:
+  [_Live_](https://splashkit.io/guides/others/publishing-with-splashkit-csharp/)
 
 ---
 
@@ -438,12 +462,14 @@ covers project creation with `skm new`, and doesn't go into as much detail about
 
 #### _Game Concept Ideas_
 
-- Overview: An article on resources to help with coming up with game concepts and resources.
+- Overview: An article on resources to help with coming up with game concepts
+  and resources.
 - Status: Needs improvement
-  - While it's solid as an article, the way it presents itself as the first tutorial in a series
-    (which as far as I can tell does not exist) makes its actual goal confusing. Unless further
-    tutorials in this series will be made, I suggest re-writing parts of it to make it self
-    contained. Is it actually a proposal? If so, why is it so long?
+  - While it's solid as an article, the way it presents itself as the first
+    tutorial in a series (which as far as I can tell does not exist) makes its
+    actual goal confusing. Unless further tutorials in this series will be made,
+    I suggest re-writing parts of it to make it self contained. Is it actually a
+    proposal? If so, why is it so long?
 - Repo Links:
   [_SplashKit-Tutorial_](https://github.com/thoth-tech/SplashKit-Tutorial/blob/main/Tutorials/Game%20Concept.md)
   [_SplashKit-Tutorial_](https://github.com/thoth-tech/SplashKit-Tutorial/blob/main/Game%20Concept.md)
@@ -452,15 +478,16 @@ covers project creation with `skm new`, and doesn't go into as much detail about
 
 - Overview: An article describing some principles of UX/UI
 - Status: Needs improvement
-  - Same thoughts as above. It's solid as an introductory article, but it isn't a tutorial. Again,
-    perhaps it's a proposal?
+  - Same thoughts as above. It's solid as an introductory article, but it isn't
+    a tutorial. Again, perhaps it's a proposal?
 - Repo Links:
   [_SplashKit-Tutorial_](https://github.com/thoth-tech/SplashKit-Tutorial/blob/main/Tutorials/2d%20Racer%20Design%20tutorial.md)
   [_SplashKit-Tutorial_](https://github.com/thoth-tech/SplashKit-Tutorial/blob/main/2d%20Racer%20Design%20tutorial.md)
 
 #### _Controls_
 
-- Overview: A list of the controls needed to be compatible with the arcade machine. Not a tutorial.
+- Overview: A list of the controls needed to be compatible with the arcade
+  machine. Not a tutorial.
 - Status: Needs improvement
   - The file itself is fine, but it shouldn't be in tutorials.
 - Repo Links:
@@ -483,8 +510,8 @@ covers project creation with `skm new`, and doesn't go into as much detail about
 
 - Overview: Proposal for introduction to audio and music functions.
 - Status: Incomplete
-  - Seems to overlap with 'Get started with SplashKit Audio' but much more in-depth. Possibly a good
-    replacement.
+  - Seems to overlap with 'Get started with SplashKit Audio' but much more
+    in-depth. Possibly a good replacement.
 - Repo Links:
   [_SplashKit-Tutorial_](https://github.com/thoth-tech/SplashKit-Tutorial/blob/main/Tutorial%20Proposals/Audio%20Series/Basic%20Audio%20Manipulation%20in%20Splashkit.md)
   [_documentation_](https://github.com/thoth-tech/documentation/blob/main/docs/Splashkit/Applications/Tutorials%20and%20Research/Tutorial%20Proposals/Basic%20Audio%20Manipulation%20in%20Splashkit.md)
@@ -493,8 +520,8 @@ covers project creation with `skm new`, and doesn't go into as much detail about
 
 - Overview: Covers sound and music resource management.
 - Status: Incomplete
-  - Seems to overlap with 'Get started with SplashKit Audio' but much more in-depth. Possibly a good
-    replacement.
+  - Seems to overlap with 'Get started with SplashKit Audio' but much more
+    in-depth. Possibly a good replacement.
 - Repo Links:
   [_SplashKit-Tutorial_](https://github.com/thoth-tech/SplashKit-Tutorial/blob/main/Tutorial%20Proposals/Audio%20Series/Managing%20Audio%20Resources%20in%20Splashkit.md)
 
@@ -502,8 +529,8 @@ covers project creation with `skm new`, and doesn't go into as much detail about
 
 - Overview: Covers specifically sound effects, playing them, etc.
 - Status: Incomplete
-  - Seems to overlap with 'Get started with SplashKit Audio' but much more in-depth. Possibly a good
-    replacement.
+  - Seems to overlap with 'Get started with SplashKit Audio' but much more
+    in-depth. Possibly a good replacement.
 - Repo Links:
   [_SplashKit-Tutorial_](https://github.com/thoth-tech/SplashKit-Tutorial/blob/main/Tutorial%20Proposals/Audio%20Series/Working%20with%20Sound%20Effects%20in%20Splashkit.md)
 
@@ -519,8 +546,9 @@ covers project creation with `skm new`, and doesn't go into as much detail about
 
 - Overview: Covers SplashKit project setup + other commands.
 - Status: Probably incomplete.
-  - Overlaps with 'Getting Started: C++, C#, Python, and Pascal - Windows'. See above. Also mostly
-    already covered by 'Getting Started With SplashKit - Windows C#/C++'
+  - Overlaps with 'Getting Started: C++, C#, Python, and Pascal - Windows'. See
+    above. Also mostly already covered by 'Getting Started With SplashKit -
+    Windows C#/C++'
 - Repo Links:
   [_SplashKit-Tutorial_](<https://github.com/thoth-tech/SplashKit-Tutorial/blob/main/Tutorial%20Proposals/Understanding%20SplashKit%20Manager%20(SKM)%20Shell%20Commands.md>)
   [_documentation_](<https://github.com/thoth-tech/documentation/blob/main/docs/Splashkit/Applications/Tutorials%20and%20Research/Tutorial%20Proposals/Understanding%20SplashKit%20Manager%20(SKM)%20Shell%20Commands.md>)
@@ -550,25 +578,27 @@ covers project creation with `skm new`, and doesn't go into as much detail about
 
 - Overview: Covers installing MSYS2, SplashKit and VSCode + project setup.
 - Status: Archived - too much overlap.
-  - Overlaps with 'Understanding SplashKit Manager (SKM) Shell Commands'. See below. Also mostly
-    already covered by 'Getting Started With SplashKit - Windows C#/C++'
+  - Overlaps with 'Understanding SplashKit Manager (SKM) Shell Commands'. See
+    below. Also mostly already covered by 'Getting Started With SplashKit -
+    Windows C#/C++'
 - Repo Links:
   [_SplashKit-Tutorial_](https://github.com/thoth-tech/SplashKit-Tutorial/blob/main/Tutorial%20Proposals/Getting%20Started%20in%20Splashkit%20Outline.md)
   [_documentation_](https://github.com/thoth-tech/documentation/blob/main/docs/Splashkit/Applications/Tutorials%20and%20Research/Tutorial%20Proposals/Getting%20Started%20in%20Splashkit%20Outline.md)
 
 ## [For Reference] Current SplashKit Tutorial/Proposal Directories
 
-All the directories listed below contain either tutorials or proposals (or both). In its current
-state, tutorials and proposals seem to be mixed together and files from the same series are
-scattered across folders. There is also a lot of duplication.
+All the directories listed below contain either tutorials or proposals (or
+both). In its current state, tutorials and proposals seem to be mixed together
+and files from the same series are scattered across folders. There is also a lot
+of duplication.
 
 The current plan for future tutorials seems to be to store all tutorials under
-[splashkit.io-starlight](https://github.com/thoth-tech/splashkit.io-starlight), and all tutorial
-proposals under
-[ThothTech-Documentation-Website](https://github.com/thoth-tech/ThothTech-Documentation-Website). We
-should attempt to migrate all tutorials to fit under that structure at some point. There are also
-some completed tutorials that are not currently live on any site - it should be investigated if
-there is a reason for this.
+[splashkit.io-starlight](https://github.com/thoth-tech/splashkit.io-starlight),
+and all tutorial proposals under
+[ThothTech-Documentation-Website](https://github.com/thoth-tech/ThothTech-Documentation-Website).
+We should attempt to migrate all tutorials to fit under that structure at some
+point. There are also some completed tutorials that are not currently live on
+any site - it should be investigated if there is a reason for this.
 
 ### Tutorials
 

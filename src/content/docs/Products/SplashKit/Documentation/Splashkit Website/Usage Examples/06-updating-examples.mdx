@@ -1,8 +1,8 @@
 ---
 title: Updating Usage Examples by Adding a Missing Language
 description:
-  Learn how to update an existing usage example by adding a missing language to the Splashkit
-  website.
+  Learn how to update an existing usage example by adding a missing language to
+  the Splashkit website.
 sidebar:
   label: Updating Usage Examples
 draft: true
@@ -11,12 +11,13 @@ draft: true
 import { Tabs, TabItem } from "@astrojs/starlight/components";
 import { FileTree } from "@astrojs/starlight/components";
 
-This guide explains how to add a missing language to an existing usage example for the Splashkit
-website.
+This guide explains how to add a missing language to an existing usage example
+for the Splashkit website.
 
 ### Steps to Update a Usage Example with a Missing Language
 
-When updating an existing usage example with a missing language, your contribution should include:
+When updating an existing usage example with a missing language, your
+contribution should include:
 
 1. Code in the missing language(s)
 2. Consistent comments and formatting across all language versions
@@ -28,17 +29,20 @@ When updating an existing usage example with a missing language, your contributi
 
 1. ### Reviewing Existing Examples
 
-   Planner cards are typically created to update existing examples with missing languages. Review
-   the planner board to find examples that need additional languages to be added.
+   Planner cards are typically created to update existing examples with missing
+   languages. Review the planner board to find examples that need additional
+   languages to be added.
 
-   For instance, if an example of `dec_to_hex` exists in C++ and Python but lacks a C# version and
-   there is a planner card for it, you can add the missing C# version.
+   For instance, if an example of `dec_to_hex` exists in C++ and Python but
+   lacks a C# version and there is a planner card for it, you can add the
+   missing C# version.
 
 2. ### Writing the Program in the Missing Language
 
-   Write the program in the missing language while maintaining consistency with the other versions.
-   Follow similar structure, naming conventions, and commenting styles. Below is an example for
-   adding C# to an existing C++ example:
+   Write the program in the missing language while maintaining consistency with
+   the other versions. Follow similar structure, naming conventions, and
+   commenting styles. Below is an example for adding C# to an existing C++
+   example:
 
    **Original C++ Code:**
 
@@ -70,7 +74,8 @@ When updating an existing usage example with a missing language, your contributi
 
    **C# Version (Top-level statements):**
 
-   Note, for C# top-level statements, use `using static SplashKitSDK.SplashKit;`.
+   Note, for C# top-level statements, use
+   `using static SplashKitSDK.SplashKit;`.
 
    ```csharp
    using static SplashKitSDK.SplashKit;
@@ -129,18 +134,20 @@ When updating an existing usage example with a missing language, your contributi
 
    ```
 
-   See how the structure and comments are consistent across all versions, with syntax changes
-   specific to the language. This consistency helps readers understand the program's structure and
-   function. If you need some help in understanding OOP and top level statements in C#, refer to the
+   See how the structure and comments are consistent across all versions, with
+   syntax changes specific to the language. This consistency helps readers
+   understand the program's structure and function. If you need some help in
+   understanding OOP and top level statements in C#, refer to the
    [OOP Styling](/products/splashkit/documentation/splashkit-website/tutorials-documentation/04-oop-styling)
    guide.
 
 3. ### Naming Files for the New Language Version
 
-   Rename the files according to Splashkit’s conventions. Use the same naming pattern as the
-   existing example.
+   Rename the files according to Splashkit’s conventions. Use the same naming
+   pattern as the existing example.
 
-   For instance, if you add C# to a `write_line` example, you would name the two files as:
+   For instance, if you add C# to a `write_line` example, you would name the two
+   files as:
 
    ```plaintext
    write_line-1-example-top-level.cs
@@ -149,8 +156,8 @@ When updating an existing usage example with a missing language, your contributi
 
 4. ### Adding the New Files to the Splashkit Starlight.io Repo
 
-   Add the new files to the `usage-example` folder under the appropriate function category,
-   following the existing file structure:
+   Add the new files to the `usage-example` folder under the appropriate
+   function category, following the existing file structure:
 
 <FileTree>
 
@@ -162,8 +169,8 @@ When updating an existing usage example with a missing language, your contributi
 
 </FileTree>
 
-For detailed naming and placement rules, refer to [CONTRIBUTING.md] the `CONTRIBUTING.mdx` file
-which can be found in the SplashKit Startlight. Repo at:
+For detailed naming and placement rules, refer to [CONTRIBUTING.md] the
+`CONTRIBUTING.mdx` file which can be found in the SplashKit Startlight. Repo at:
 
 <FileTree>
 
@@ -176,6 +183,6 @@ which can be found in the SplashKit Startlight. Repo at:
 ### Next Steps
 
 After adding the files, follow the steps in
-[Usage Example Pull Requests](/products/splashkit/05-pull-request-template/) to submit for review.
-For peer review, refer to the
+[Usage Example Pull Requests](/products/splashkit/05-pull-request-template/) to
+submit for review. For peer review, refer to the
 [Peer Review Guide for Usage Examples](/products/splashkit/documentation/splashkit-website/usage-examples/04-usage-peer-review).

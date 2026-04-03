@@ -8,12 +8,13 @@ import { Tabs, TabItem } from "@astrojs/starlight/components";
 import { Code } from "@astrojs/starlight/components";
 import { Steps } from "@astrojs/starlight/components";
 
-To help with assembling the company reports/handover documents, we have a Python script that fetches
-the current tasks from the MS Teams Planner board and exports them as a `csv`, for inclusion as a
-table in the document. It uses the Microsoft Graph API to access the data.
+To help with assembling the company reports/handover documents, we have a Python
+script that fetches the current tasks from the MS Teams Planner board and
+exports them as a `csv`, for inclusion as a table in the document. It uses the
+Microsoft Graph API to access the data.
 
-The script can be found [here](/scripts/MSTeamsPlannerExportScript.py). It's pretty simple to use,
-and for a step-by-step guide see below:
+The script can be found [here](/scripts/MSTeamsPlannerExportScript.py). It's
+pretty simple to use, and for a step-by-step guide see below:
 
 ## Steps
 
@@ -21,20 +22,22 @@ and for a step-by-step guide see below:
 
 1. **Open the Terminal**
 
-   Open up your favourite terminal, and navigate it to where you'd like the resulting `csv` file to
-   be saved.
+   Open up your favourite terminal, and navigate it to where you'd like the
+   resulting `csv` file to be saved.
 
 2. **Download and Run the Script**
 
-   Copy and paste the following command into your terminal, then press **Enter**:
+   Copy and paste the following command into your terminal, then press
+   **Enter**:
 
    <Code
      code="curl -O https://raw.githubusercontent.com/thoth-tech/ThothTech-Documentation-Website/refs/heads/main/public/scripts/MSTeamsPlannerExportScript.py && python MSTeamsPlannerExportScript.py"
      lang="bash"
    ></Code>
 
-   This just downloads the Python script mentioned above, and runs it. The script doesn't require
-   any additional dependencies, and _should_ work on any platform.
+   This just downloads the Python script mentioned above, and runs it. The
+   script doesn't require any additional dependencies, and _should_ work on any
+   platform.
 
 3. **Authorize the Script**
 
@@ -49,12 +52,14 @@ and for a step-by-step guide see below:
    Waiting for user authorization... (Will check again in 5 seconds)
    ```
 
-   Simply navigate to that URL in your browser, and enter the code - this will authorize the script
-   to read your planner board/tasks, and basic user data (to retrieve member names, etc).
+   Simply navigate to that URL in your browser, and enter the code - this will
+   authorize the script to read your planner board/tasks, and basic user data
+   (to retrieve member names, etc).
 
 4. **Choose a Planner Board**
 
-   Once authorized, a list of planner boards you have access to will appear, e.g:
+   Once authorized, a list of planner boards you have access to will appear,
+   e.g:
 
    ```shell
    --------------------
@@ -73,10 +78,11 @@ and for a step-by-step guide see below:
    >
    ```
 
-   Just type in the number beside the board you want to export data from, and press enter.
+   Just type in the number beside the board you want to export data from, and
+   press enter.
 
-   If you don't see the one you are expecting, make sure you have opened that plan at least once in
-   MS Teams - then choose option 0 to reload.
+   If you don't see the one you are expecting, make sure you have opened that
+   plan at least once in MS Teams - then choose option 0 to reload.
 
    Once you choose a board, it'll fetch the task data!
 
@@ -97,9 +103,10 @@ and for a step-by-step guide see below:
 
 5. **Choose the Export Format**
 
-   Next it'll ask which format you'd like to export as; you'll probably want `document` for company
-   reports. You can also use `raw` mode, which will also output the task's bucket, along with
-   unassigned tasks - this can be useful for further analysis.
+   Next it'll ask which format you'd like to export as; you'll probably want
+   `document` for company reports. You can also use `raw` mode, which will also
+   output the task's bucket, along with unassigned tasks - this can be useful
+   for further analysis.
 
    ```shell
    --------------------
@@ -114,9 +121,10 @@ and for a step-by-step guide see below:
 
 6. **Choose Which Buckets to Export**
 
-   Now you can choose which buckets to export. You can enter a comma delimited set of numbers for
-   which buckets you would like to export data from (e.g `1,4,5`). You can also use @ and then a
-   word to select all buckets with that word (e.g `1,7,@Complete`)
+   Now you can choose which buckets to export. You can enter a comma delimited
+   set of numbers for which buckets you would like to export data from (e.g
+   `1,4,5`). You can also use @ and then a word to select all buckets with that
+   word (e.g `1,7,@Complete`)
 
    Enter `ALL` to export all of them
 
@@ -157,13 +165,13 @@ and for a step-by-step guide see below:
    > y
    ```
 
-   Here I've chosen a common one, `@Review,@Complete`, to export all tasks in review/complete
-   buckets.
+   Here I've chosen a common one, `@Review,@Complete`, to export all tasks in
+   review/complete buckets.
 
 7. **Done!**
 
-   Finally it'll begin exporting! This can take some time, since it still needs to gather additional
-   information for each task (such as attachments, etc).
+   Finally it'll begin exporting! This can take some time, since it still needs
+   to gather additional information for each task (such as attachments, etc).
 
    ```shell
    Buckets selected - we can export the data now!
@@ -177,6 +185,7 @@ and for a step-by-step guide see below:
    --------------------
    ```
 
-   Once it's finished you can find the output inside the same folder you opened the terminal in!
+   Once it's finished you can find the output inside the same folder you opened
+   the terminal in!
 
 </Steps>

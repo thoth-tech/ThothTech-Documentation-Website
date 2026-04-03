@@ -6,23 +6,26 @@ title: "Panopto Upload Process"
 
 ## Overview
 
-This document outlines key information about the process of uploading videos to Panopto using the
-Panopto REST API. While this isn't a comprehensive guide, it highlights the steps involved in
-creating a session, performing a multipart upload of the video file, creating the manifest, and
-finalising the upload. This serves as an informational resource for implementing the video upload
-functionality in the future. Additional research and context will be needed to fully integrate these
-steps.
+This document outlines key information about the process of uploading videos to
+Panopto using the Panopto REST API. While this isn't a comprehensive guide, it
+highlights the steps involved in creating a session, performing a multipart
+upload of the video file, creating the manifest, and finalising the upload. This
+serves as an informational resource for implementing the video upload
+functionality in the future. Additional research and context will be needed to
+fully integrate these steps.
 
 ---
 
 ## Step 1: Create a Session for Video Upload
 
-Before uploading a video, a session must be created. The session provides the necessary details for
-the upload process, including the upload target and session ID.
+Before uploading a video, a session must be created. The session provides the
+necessary details for the upload process, including the upload target and
+session ID.
 
 ### Call the Session Creation API
 
-The session creation process is triggered by sending a POST request to the `sessionUpload` endpoint.
+The session creation process is triggered by sending a POST request to the
+`sessionUpload` endpoint.
 
 - **API Endpoint:**
 
@@ -61,17 +64,19 @@ The session creation process is triggered by sending a POST request to the `sess
 
 ## Step 2: Upload Video via Multipart Upload
 
-Panopto supports multipart uploads for large video files. This step uploads the video in parts to
-the `upload target` specified in the session creation response.
+Panopto supports multipart uploads for large video files. This step uploads the
+video in parts to the `upload target` specified in the session creation
+response.
 
 #### 1. Initiate Multipart Upload
 
-- Get the Upload URL: After creating a session, extract the `UploadTarget` URL from the session
-  creation response. This URL specifies where the video should be uploaded.
+- Get the Upload URL: After creating a session, extract the `UploadTarget` URL
+  from the session creation response. This URL specifies where the video should
+  be uploaded.
 
-- Use `Net::HTTP` and `URI` for Multipart Upload: Use Ruby's standard libraries to handle the
-  multipart upload. The following example demonstrates how to upload a file in parts using
-  `Net::HTTP:`
+- Use `Net::HTTP` and `URI` for Multipart Upload: Use Ruby's standard libraries
+  to handle the multipart upload. The following example demonstrates how to
+  upload a file in parts using `Net::HTTP:`
 
 ```ruby
 
@@ -103,8 +108,8 @@ end
 
 ### 2. Upload Parts
 
-- Split the Video File: Split the video into parts, each no larger than 5MB. You can adjust the part
-  size as needed.
+- Split the Video File: Split the video into parts, each no larger than 5MB. You
+  can adjust the part size as needed.
 
 - Upload Each Part: Iterate over the parts and upload them using `Net::HTTP:`
 
@@ -129,8 +134,9 @@ end
 
 ### 3. Complete Multipart Upload
 
-- Finalise the Upload: Once all parts have been uploaded, call the `complete_multipart_upload`
-  method to combine the parts into one video file in Panopto.
+- Finalise the Upload: Once all parts have been uploaded, call the
+  `complete_multipart_upload` method to combine the parts into one video file in
+  Panopto.
 
 ```ruby
 # Finalise the upload once all parts are uploaded
@@ -146,8 +152,9 @@ end
 
 ## Step 3: Create and Upload the Manifest File
 
-Once the video is uploaded, the next step is to create the manifest file. The manifest provides
-metadata for the video, including its title, description, and the file name.
+Once the video is uploaded, the next step is to create the manifest file. The
+manifest provides metadata for the video, including its title, description, and
+the file name.
 
 ### 1. Create the Manifest File
 
@@ -172,7 +179,8 @@ Copy code
 
 ### 2. Upload the Manifest File
 
-- The manifest file is uploaded in the same way as the video parts, using `multipart upload`.
+- The manifest file is uploaded in the same way as the video parts, using
+  `multipart upload`.
 
 ```ruby
 manifest_file = 'upload_manifest_generated.xml'
@@ -195,8 +203,8 @@ while chunk = file.read(5 * 1024 * 1024)  # 5MB per part
 
 ## Step 4: Finalise the Upload
 
-After uploading the video and the manifest file, the final step is to finalise the session marking
-it as complete.
+After uploading the video and the manifest file, the final step is to finalise
+the session marking it as complete.
 
 ### 1. Send the PUT Request to Finalise Session
 
@@ -228,8 +236,8 @@ RestClient.put(
 
 ## 2. Monitor the Upload Status
 
-- Check for Processing: After finalising, periodically check the `session state` to ensure it is
-  processed and completed.
+- Check for Processing: After finalising, periodically check the `session state`
+  to ensure it is processed and completed.
 
 Polling Example:
 

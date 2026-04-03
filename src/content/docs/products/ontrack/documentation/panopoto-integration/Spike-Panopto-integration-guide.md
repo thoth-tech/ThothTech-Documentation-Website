@@ -8,10 +8,11 @@ title: "Spike Guidance: Integrating Panopto with OnTrack"
 
 **Task**: Add Panopto Configuration to Environment Files
 
-**File Location**: `src/environments/environment.ts` and `src/environments/environment.prod.ts`
+**File Location**: `src/environments/environment.ts` and
+`src/environments/environment.prod.ts`
 
-**Description**: Add the Panopto API endpoint and client credentials to the environment
-configuration files.
+**Description**: Add the Panopto API endpoint and client credentials to the
+environment configuration files.
 
 **Example**:
 
@@ -86,7 +87,8 @@ export class PanoptoAuthService {
 
 **File Location**: `src/app/components`
 
-**Description**: Create a component that allows users to embed Panopto videos using embed codes.
+**Description**: Create a component that allows users to embed Panopto videos
+using embed codes.
 
 **Example**:
 
@@ -126,7 +128,8 @@ export class PanoptoVideoComponent {
 
 **File Location**: `src/app/components`
 
-**Description**: Create a component that allows users to upload videos to Panopto.
+**Description**: Create a component that allows users to upload videos to
+Panopto.
 
 **Example**:
 
@@ -182,7 +185,8 @@ export class VideoUploadComponent {
 
 **File Location**: `src/app/components`
 
-**Description**: Create a component to fetch and display metadata of a Panopto video.
+**Description**: Create a component to fetch and display metadata of a Panopto
+video.
 
 **Example**:
 
@@ -248,7 +252,12 @@ import { VideoUploadComponent } from "./components/video-upload.component";
 import { VideoMetadataComponent } from "./components/video-metadata.component";
 
 @NgModule({
-  declarations: [AppComponent, PanoptoVideoComponent, VideoUploadComponent, VideoMetadataComponent],
+  declarations: [
+    AppComponent,
+    PanoptoVideoComponent,
+    VideoUploadComponent,
+    VideoMetadataComponent,
+  ],
   imports: [BrowserModule, FormsModule, HttpClientModule],
   providers: [PanoptoAuthService],
   bootstrap: [AppComponent],
@@ -264,7 +273,8 @@ export class DoubtfireAngularModule {}
 
 **File Location**: `app/controllers`
 
-**Description**: Create a controller to handle OAuth2 authentication with Panopto.
+**Description**: Create a controller to handle OAuth2 authentication with
+Panopto.
 
 **Example**:
 

@@ -6,13 +6,15 @@ title: Dockerization feasibility check
 
 ### Preamble
 
-The aim of this study is to check the feasibility of Dockerizing the Indigenous Art Gallery Project.
+The aim of this study is to check the feasibility of Dockerizing the Indigenous
+Art Gallery Project.
 
 ### Research Information
 
-The biggest hurdle within this project will be understanding the Docker platform and gaining some
-familiarity with it as I have no prior experience using Docker. I have identified the following
-resources to cross check the feasibility of this task.
+The biggest hurdle within this project will be understanding the Docker platform
+and gaining some familiarity with it as I have no prior experience using Docker.
+I have identified the following resources to cross check the feasibility of this
+task.
 
 <https://v2.vuejs.org/v2/cookbook/dockerize-vuejs-app.html>
 
@@ -30,18 +32,19 @@ resources to cross check the feasibility of this task.
 
 ### Outcome
 
-After some preliminary research, it was determined that a Docker image must first be created. This
-is done by including a Dockerfile in the root directory of the project. Once the requisite details
-are included in the Dockerfile, it is a matter of building a container image and running the
-container.
+After some preliminary research, it was determined that a Docker image must
+first be created. This is done by including a Dockerfile in the root directory
+of the project. Once the requisite details are included in the Dockerfile, it is
+a matter of building a container image and running the container.
 
-This process will ned to be completed for both the front and back ends as they should be kept in
-seperate containers as best practice.
+This process will ned to be completed for both the front and back ends as they
+should be kept in seperate containers as best practice.
 
 ### Plan
 
-From this week I will begin more serious up-skilling on Docker. Once I am equipped with a better
-understanding of the platform, I will begin preparing the Dockerfiles for the front and back ends
-and building the container images. By week 6 I want to have at least one of the containers up and
-running - I will most likely begin with the backend as I am more familiar with this part of the
+From this week I will begin more serious up-skilling on Docker. Once I am
+equipped with a better understanding of the platform, I will begin preparing the
+Dockerfiles for the front and back ends and building the container images. By
+week 6 I want to have at least one of the containers up and running - I will
+most likely begin with the backend as I am more familiar with this part of the
 project given I contributed to building it.
