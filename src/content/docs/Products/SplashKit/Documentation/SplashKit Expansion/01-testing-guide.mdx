@@ -1,122 +1,79 @@
 ---
-title: Unit Testing Guide
+title: Testing Guide
 ---
 
-import { FileTree, Steps, Tabs, TabItem } from "@astrojs/starlight/components";
+import { Steps, Tabs, TabItem } from "@astrojs/starlight/components";
 
-## Introduction
+You cannot create new programs with splashkit-core as you do when using the traditional SplashKit
+library. Instead, two programs are generated which can be configured to test its functionality:
+`sktest` and `skunit_tests`. They are built with CMake using a preconfigured `CMakeLists.txt` file,
+which builds the SplashKit library and both test programs.
 
-SplashKit uses [Catch2 2.x](https://github.com/catchorg/Catch2/tree/v2.x) as a framework for unit
-tests.
+### Making Changes
 
-Tests are written in C++ with the aid of macros from Catch2. Test files are located at:
+`sktest` is built with the .cpp files from `splashkit-core/coresdk/src/test/`. To add your own
+tests, modify one or more of the files such as `test_animation.cpp`. Tests in `sktest` tend to focus
+on demonstrating the output of functions, and require a human to validate that output. They are
+written in standard C++ and can make use of SplashKit functions.
 
-<FileTree>
-
-- coresdk
-  - src
-    - test
-      - unit_test_main.cpp
-      - `unit_test_<name>.cpp`
-
-</FileTree>
-
-`unit_test_main.cpp` is the entry point for all unit tests. You do not need to modify this to write
-your own tests or update existing ones.
-
-The `unit_test_<name>.cpp` files contain tests for related parts of SplashKit. For example,
-`unit_test_utilities.cpp` has tests for SplashKit's utility functions. A test file must include the
-Catch2 header file along with any other includes required:
-
-```cpp
-#include "catch.hpp"
-```
-
-## Writing a Unit Test
-
-At a minimum, a unit test consists of a `TEST_CASE` and an assertion (usually `REQUIRE`):
-
-```cpp
-TEST_CASE("gets the number of milliseconds that have passed since the program was started", "[current_ticks]")
-{
-    unsigned int result = current_ticks();
-    REQUIRE(result >= 0);
-}
-```
-
-`TEST_CASE(name, [,tags])` defines a test case with the given name and, optionally, one or more
-tags.
-
-`REQUIRE` evaluates an expression and aborts the test as a failure if the result is false.
-`REQUIRE_FALSE` is similar but fails if the expression evaluates true. There are
-[other assertion macros](https://github.com/catchorg/Catch2/blob/v2.x/docs/assertions.md#top) but
-these are the most common.
-
-A test may contain multiple assertions:
-
-```cpp
-TEST_CASE("random number float between 0 and 1 is generated", "[rnd]")
-{
-    float result = rnd();
-    REQUIRE(result >= 0);
-    REQUIRE(result <= 1);
-}
-```
-
-You may write tests that have some common steps, such as defining a variable. You can define one or
-more `SECTION(name)` inside a `TEST_CASE`. The `TEST_CASE` is run from the start for each `SECTION`.
-
-```cpp
-TEST_CASE("return a SplashKit resource of resource_kind with name filename as a string", "[file_as_string]")
-{
-    const resource_kind RESOURCE = resource_kind::BUNDLE_RESOURCE;
-    const string RESOURCE_PATH = "blah.txt";
-
-    SECTION("filename is a valid file")
-    {
-        string result = file_as_string(RESOURCE_PATH, RESOURCE);
-        string expected = "BITMAP,ufo,ufo.png\n";
-        REQUIRE(result == expected);
-    }
-    SECTION("filename is an empty string")
-    {
-        string result = file_as_string("", RESOURCE);
-        string expected = "";
-        REQUIRE(result == expected);
-    }
-    SECTION("filename is an invalid file")
-    {
-        string result = file_as_string("invalid.txt", RESOURCE);
-        string expected = "";
-        REQUIRE(result == expected);
-    }
-}
-```
-
-This test has three `SECTION`s, so the `TEST_CASE` will run three times. Each time, the `RESOURCE`
-and `RESOURCE_PATH` variables will be defined.
+`skunit_tests` is built with the .cpp files from `splashkit-core/coresdk/src/test/unit_tests/`.
+When it runs, all unit tests from all files in this folder are executed. Additional files can be
+added to this folder if necessary. If adding a new file, copy the structure from one of the existing
+unit test files. Unlike `sktest`, tests here need to be written as Catch2 test cases and
+`#include "catch.hpp"` must be present in a given file for it to be compiled into `skunit_tests`.
+These tests evaluate actual output against expected output and produce an error if a test fails. See
+the
+[unit testing guide](/products/splashkit/documentation/splashkit-expansion/02-unit-testing-guide)
+for a more in depth explanation of how unit tests are written.
 
 ## Building the test project
+
+If a change is made to the code, the build process needs to be run. This applies whether changes
+were made to coresdk files (such as adding new functions to SplashKit or changing existing code) or
+new tests were added to sktest or skunit_tests.
+
+### From the command line
+
+<Tabs syncKey="platform">
+<TabItem label="Linux/WSL">
+
+```shell
+cd projects/cmake
+cmake --preset Linux
+cmake --build build/
+```
+
+</TabItem>
+<TabItem label="macOS">
+
+```shell
+cd projects/cmake
+cmake --preset macOS
+cmake --build build/
+```
+
+</TabItem>
+<TabItem label="Windows (MSYS)">
+
+```shell
+cd projects/cmake
+cmake --preset Windows
+cmake --build build/
+```
+
+</TabItem>
+</Tabs>
+
+### In VS Code
 
 <Tabs syncKey="platform">
 <TabItem label="Linux/WSL">
 <Steps>
 
-1. Open a terminal and install prerequisites with these commands:
-
-   ```shell
-   sudo apt-get update
-   sudo apt-get upgrade -y
-   sudo apt-get install -y \
-   git build-essential cmake g++ libpng-dev libcurl4-openssl-dev libsdl2-dev \
-   libsdl2-mixer-dev libsdl2-gfx-dev libsdl2-image-dev libsdl2-net-dev libsdl2-ttf-dev \
-   libmikmod-dev libbz2-dev libflac-dev libvorbis-dev libwebp-dev libfreetype6-dev
-   ```
-
-2. Install the CMake Tools extension from the VS Code extension browser or
+1. Install the CMake Tools extension from the VS Code extension browser or
    [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools).
 
-3. Configure the extension:  
+2. Configure the extension:  
    Select `${workspaceFolder}/projects/cmake/CMakeLists.txt`  
    ![Select CMake Lists](images/build-unit-tests/1-select-cmakelists.png)  
    Select the Linux preset  
@@ -124,23 +81,13 @@ and `RESOURCE_PATH` variables will be defined.
    Select the Default configure preset  
    ![Select Default preset](images/build-unit-tests/2-select-preset-default.png)  
    In the CMake Tools extension click the button
-   ![Build target button](images/build-unit-tests/select-target.png) next to Build and select
-   skunit_tests  
-   ![Select build target](images/build-unit-tests/3-target-unit-tests.png)  
+   ![Build target button](images/build-unit-tests/select-target.png) next to Build and select all  
+   ![Select build target](images/build-unit-tests/3-target.png)  
    Click the button ![Select Default preset](images/build-unit-tests/select-target.png) next to
    Debug and select skunit_tests  
    ![Select debug/launch target](images/build-unit-tests/4-debug-target.png)
 
-4. Build test project:  
-   From the command line:
-
-   ```shell
-   cd projects/cmake
-   cmake --preset Linux
-   cmake --build build/
-   ```
-
-   Or in VS Code:  
+3. Build test project:  
    In the CMake Tools extension, click the Build button. The test project will also be built when
    you refresh tests on the Testing tab of VS Code.  
    ![Build tests](images/build-unit-tests/5-build.png)
@@ -161,43 +108,26 @@ and `RESOURCE_PATH` variables will be defined.
    Select the Default configure preset  
    ![Select Default preset](images/build-unit-tests/2-select-preset-default.png)  
    In the CMake Tools extension click the button
-   ![Build target button](images/build-unit-tests/select-target.png) next to Build and select
-   skunit_tests  
-   ![Select build target](images/build-unit-tests/3-target-unit-tests.png)  
+   ![Build target button](images/build-unit-tests/select-target.png) next to Build and select all  
+   ![Select build target](images/build-unit-tests/3-target.png)  
    Click the button ![Select Default preset](images/build-unit-tests/select-target.png) next to
    Debug and select skunit_tests  
    ![Select debug/launch target](images/build-unit-tests/4-debug-target.png)
 
 3. Build test project:  
-   From the command line:
-
-   ```shell
-   cd projects/cmake
-   cmake --preset macOS
-   cmake --build build/
-   ```
-
-   Or in VS Code:  
    In the CMake Tools extension, click Build. The test project will also be built when you refresh
    tests on the Testing tab of VS Code.  
    ![Build tests](images/build-unit-tests/5-build.png)
 
 </Steps>
 </TabItem>
-<TabItem label="Windows">
+<TabItem label="Windows (MSYS)">
 <Steps>
 
-1. Open the MINGW64 terminal and install prerequisites with these commands:
-
-   ```shell
-   pacman -Syu
-   pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-gdb mingw-w64-x86_64-cmake mingw-w64-x86_64-make
-   ```
-
-2. Install the CMake Tools extension from the VS Code extension browser or
+1. Install the CMake Tools extension from the VS Code extension browser or
    [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools).
 
-3. Configure the extension:  
+2. Configure the extension:  
    Select `${workspaceFolder}/projects/cmake/CMakeLists.txt`  
    ![Select CMake Lists](images/build-unit-tests/1-select-cmakelists.png)  
    Select the Windows preset  
@@ -205,23 +135,13 @@ and `RESOURCE_PATH` variables will be defined.
    Select the Default configure preset  
    ![Select Default preset](images/build-unit-tests/2-select-preset-default.png)  
    In the CMake Tools extension click the button
-   ![Build target button](images/build-unit-tests/select-target.png) next to Build and select
-   skunit_tests  
-   ![Select build target](images/build-unit-tests/3-target-unit-tests.png)  
+   ![Build target button](images/build-unit-tests/select-target.png) next to Build and select all  
+   ![Select build target](images/build-unit-tests/3-target.png)  
    Click the button ![Select Default preset](images/build-unit-tests/select-target.png) next to
    Debug and select skunit_tests  
    ![Select debug/launch target](images/build-unit-tests/4-debug-target.png)
 
-4. Build test project:  
-   From the command line:
-
-   ```shell
-   cd projects/cmake
-   cmake --preset Windows
-   cmake --build build/
-   ```
-
-   Or in VS Code:  
+3. Build test project:  
    In the CMake Tools extension, click Build. The test project will also be built when you refresh
    tests on the Testing tab of VS Code.  
    ![Build tests](images/build-unit-tests/5-build.png)
@@ -230,15 +150,99 @@ and `RESOURCE_PATH` variables will be defined.
 </TabItem>
 </Tabs>
 
-## Running unit tests
+## Running Tests
 
-### From the command line
+After building the test programs, the compiled executables wiil be found in the `splashkit-core/bin`
+directory. Running tests differs depending on if the tests are part of `sktest` or `skunit_tests`.
+
+### The sktest program
+
+<Tabs>
+<TabItem label="Linux/WSL">
+
+To run `sktest`, open a terminal and enter:
+
+```shell
+cd splashkit-core/bin
+./sktest
+```
+
+</TabItem>
+<TabItem label="macOS">
+
+To run `sktest`, open a terminal and enter:
+
+```shell
+cd splashkit-core/bin
+./sktest
+```
+
+</TabItem>
+<TabItem label="Windows (MSYS)">
+
+To run `sktest`, open the MinGW terminal and enter:
+
+```shell
+cd splashkit-core/bin
+./sktest.exe
+```
+
+</TabItem>
+</Tabs>
+
+A menu will be presented, showing a list of all the tests that are part of sktest. Select a test to
+run by entering the corresponding number.
+
+```plaintext
+---------------------
+ SplashKit Dev Tests
+---------------------
+ -1: Quit
+ 0: Animations
+ 1: Audio
+ 2: Bundles
+ 3: Camera
+ 4: Geometry
+ 5: Graphics
+ 6: Input
+ 7: Logging
+ 8: Physics
+ 9: Resources
+ 10: Shape drawing
+ 11: Sprite tests
+ 12: Terminal
+ 13: Text
+ 14: Timers
+ 15: Windows
+ 16: Cave Escape
+ 17: Web Server
+ 18: RESTful Web Service
+ 19: Network conversions
+ 20: UDP Networking Test
+ 21: TCP Networking Test
+ 22: GPIO Tests
+ 23: ADC Tests
+ 24: Motor Driver Tests
+ 25: Servo Driver Tests
+ 26: Remote GPIO Tests
+ 27: GPIO Tests - SPI
+ 28: UI Tests
+---------------------
+ Select test to run:
+```
+
+### Unit tests
+
+Unit tests are built with the same process as `sktest`, but run with the `skunit_tests` program.
+
+#### From the command line
 
 <Tabs syncKey="platform">
 <TabItem label="Linux/WSL">
 
 - It's a good idea to run the unit tests in a random order so that you can confirm that they run
-  indepedently of one another:
+  indepedently of one another. If tests run in order, you may miss issues that occur when a test
+  runs without the tests before it passing.
 
   ```shell
   cd ../../bin
@@ -262,7 +266,8 @@ and `RESOURCE_PATH` variables will be defined.
 <TabItem label="macOS">
 
 - It's a good idea to run the unit tests in a random order so that you can confirm that they run
-  indepedently of one another:
+  indepedently of one another. If tests run in order, you may miss issues that occur when a test
+  runs without the tests before it passing.
 
   ```shell
   cd ../../bin
@@ -283,10 +288,11 @@ and `RESOURCE_PATH` variables will be defined.
   run all of the tests with "string" in the name.
 
 </TabItem>
-<TabItem label="Windows">
+<TabItem label="Windows (MSYS)">
 
 - It's a good idea to run the unit tests in a random order so that you can confirm that they run
-  indepedently of one another:
+  indepedently of one another. If tests run in order, you may miss issues that occur when a test
+  runs without the tests before it passing.
 
   ```shell
   cd ../../bin
@@ -309,10 +315,10 @@ and `RESOURCE_PATH` variables will be defined.
 </TabItem>
 </Tabs>
 
-### In VS Code
+#### In VS Code
 
-You can run tests from the Testing tab in VS Code
-![Testing tab](images/run-unit-tests/1-testing-tab.png)
+You can run tests from the Testing tab in VS Code if you've set up the CMake Tools extension as
+outlined above ![Testing tab](images/run-unit-tests/1-testing-tab.png)
 
 - Running all tests:  
   Click Run Tests. Each test will be run and the status of each can be seen in the test list after a
@@ -322,8 +328,3 @@ You can run tests from the Testing tab in VS Code
   Click Run Test next to any test on the test list to run it  
   ![Run Test](images/run-unit-tests/3-run-test.png)  
   ![Test status](images/run-unit-tests/4-test-status.png)
-
-## See Also
-
-- [Catch2 tutorial](https://github.com/catchorg/Catch2/blob/v2.x/docs/tutorial.md)
-- [Catch2 reference](https://github.com/catchorg/Catch2/blob/v2.x/docs/Readme.md)
