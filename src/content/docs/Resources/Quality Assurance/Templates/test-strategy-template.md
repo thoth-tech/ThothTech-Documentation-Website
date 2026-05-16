@@ -10,9 +10,10 @@ A high-level summary of the project
 
 ### **Example**
 
-This strategy outlines what quality provides to the project, what type of testing is done, and how
-testing is carried out. The aim is to ensure quality in all phases of the development lifecycle to
-deliver a great experience for our users.
+This strategy outlines what quality provides to the project, what type of
+testing is done, and how testing is carried out. The aim is to ensure quality in
+all phases of the development lifecycle to deliver a great experience for our
+users.
 
 ## **References**
 
@@ -23,14 +24,16 @@ Relevant links and helpful information about the project and its tech stack
 - GitHubproject: \<github link\>
 - Jasmine is used as a unit testing framework
   [https://jasmine.github.io/](https://jasmine.github.io/)
-- Cypress is used for end-to-end testing [https://www.cypress.io/](https://www.cypress.io/)
+- Cypress is used for end-to-end testing
+  [https://www.cypress.io/](https://www.cypress.io/)
 - Karma is used for testing automation
   [https://karma-runner.github.io/latest/index.html](https://karma-runner.github.io/latest/index.html)
 - App is built using Node.js: [http://nodejs.org/](http://nodejs.org/)
 
 ## QA Deliverables\*\*
 
-What artifacts QA will provide to the team (eg, Test Strategy, Sample Test Plan, Bug reports)
+What artifacts QA will provide to the team (eg, Test Strategy, Sample Test Plan,
+Bug reports)
 
 ### \*\*Examples
 
@@ -40,15 +43,16 @@ What artifacts QA will provide to the team (eg, Test Strategy, Sample Test Plan,
 
 ## Test Management
 
-What resources are used to carry out testing in terms of tooling, environments, supported platforms
-and versions, and test data
+What resources are used to carry out testing in terms of tooling, environments,
+supported platforms and versions, and test data
 
 ### Examples
 
-- Jenkins is used to build test versions of the application off of master and PRs
+- Jenkins is used to build test versions of the application off of master and
+  PRs
 - VMs are used to test the applications in Windows
-- Test runs are input in Testpad to make it clear what scenarios were tested and if those scenarios
-  pass or fail
+- Test runs are input in Testpad to make it clear what scenarios were tested and
+  if those scenarios pass or fail
 - Supported operating systems are Windows 7 and 10 and Mac
 - Test data will include user accounts
 

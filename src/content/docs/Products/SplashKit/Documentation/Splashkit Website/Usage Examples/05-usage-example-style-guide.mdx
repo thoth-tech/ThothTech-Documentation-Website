@@ -9,17 +9,19 @@ import { Steps, Tabs, TabItem } from "@astrojs/starlight/components";
 
 ## Code Style and Formatting Guide
 
-This guide aims to introduce new team members to some standard practices for contributing to
-splashkit, such as variable declarations, formatting across languages and general do's and don'ts
+This guide aims to introduce new team members to some standard practices for
+contributing to splashkit, such as variable declarations, formatting across
+languages and general do's and don'ts
 
 ## Naming Conventions
 
-These are general naming conventions for variables, functions, namespaces and more that should be
-used when creating usage examples for SplashKit.
+These are general naming conventions for variables, functions, namespaces and
+more that should be used when creating usage examples for SplashKit.
 
 ### 1. Variable declarations
 
-Variable declarations for SplashKit usage examples should be in the following format:
+Variable declarations for SplashKit usage examples should be in the following
+format:
 
 | Language | Naming convention | Variable Example       |
 | -------- | ----------------- | ---------------------- |
@@ -103,7 +105,8 @@ variable_name = "This is snake case"
 
 ### 2. Function and Methods
 
-When calling and naming functions and methods using SplashKit we do the following:
+When calling and naming functions and methods using SplashKit we do the
+following:
 
 | Language             | Naming convention | Function/Method Example              |
 | -------------------- | ----------------- | ------------------------------------ |
@@ -114,19 +117,21 @@ When calling and naming functions and methods using SplashKit we do the followin
 
 :::tip[Python function names]
 
-Python function names will often differ from other languages due to python not handling function
-overloads. The example above shows the difference for this overload of Refresh Screen.
+Python function names will often differ from other languages due to python not
+handling function overloads. The example above shows the difference for this
+overload of Refresh Screen.
 
-You can check the correct function signature in the [API Documentation](https://splashkit.io/api/)
-pages.
+You can check the correct function signature in the
+[API Documentation](https://splashkit.io/api/) pages.
 
 :::
 
 ### 3. C# Namespaces (Object-Oriented)
 
-The namespace for a usage example in C# (Object-Oriented version) should be written in Pascal case,
-and will follow the convention of: The name of the function being demonstrated, with the word
-"Example" added on the end, also written in Pascal case.
+The namespace for a usage example in C# (Object-Oriented version) should be
+written in Pascal case, and will follow the convention of: The name of the
+function being demonstrated, with the word "Example" added on the end, also
+written in Pascal case.
 
 **For example**:
 
@@ -141,8 +146,9 @@ namespace DrawRectangleExample
 
 ### 4. Window Names
 
-When using windows to display any graphics the window name should be a description of what is
-happening on the window rather than the name of the function you are displaying.
+When using windows to display any graphics the window name should be a
+description of what is happening on the window rather than the name of the
+function you are displaying.
 
 | Good Window Name                         | Bad Window Name                        |
 | ---------------------------------------- | -------------------------------------- |
@@ -153,10 +159,11 @@ happening on the window rather than the name of the function you are displaying.
 
 ### Code Comments
 
-Code comments should be used to explain the _why_ behind code, not the _what_. Code comments should
-be clear and concise
+Code comments should be used to explain the _why_ behind code, not the _what_.
+Code comments should be clear and concise
 
-A good Comment should explain the intent or purpose A bad comment will state the obvious
+A good Comment should explain the intent or purpose A bad comment will state the
+obvious
 
 | Do                                            | Don't                                                                            |
 | --------------------------------------------- | -------------------------------------------------------------------------------- |
@@ -189,9 +196,10 @@ if (playerHealth <= 0)
 
 ### Braces and Indentation
 
-- **Braces:** Place braces (curly brackets) on the line following the declaration.
-- **Indentation:** Between any new pair of curly brackets (`{`, `}`), write your code **4** further
-  spaces in from the left.
+- **Braces:** Place braces (curly brackets) on the line following the
+  declaration.
+- **Indentation:** Between any new pair of curly brackets (`{`, `}`), write your
+  code **4** further spaces in from the left.
 
 **Do**:
 
@@ -213,7 +221,8 @@ int main() {
 ### If Statements
 
 - The if statement condition should be on its own line.
-- Use braces, even if just 1 line below, as this is easier for beginners to read.
+- Use braces, even if just 1 line below, as this is easier for beginners to
+  read.
 
 **Do**:
 
@@ -232,8 +241,8 @@ if (mouse_clicked(LEFT_BUTTON)) x-= SPEED;
 
 ### Graphical Examples
 
-- If your program is using a Graphical Window, any text information should be displayed on the
-  Window.
+- If your program is using a Graphical Window, any text information should be
+  displayed on the Window.
 - Do not use terminal outputs when using a graphics window in your program.
 
 ### Looping
@@ -244,13 +253,14 @@ if (mouse_clicked(LEFT_BUTTON)) x-= SPEED;
 
 ### Use simple code
 
-As SplashKit usage examples are targeted to beginners, so it's important to keep the code as simple
-and readable as possible.
+As SplashKit usage examples are targeted to beginners, so it's important to keep
+the code as simple and readable as possible.
 
 Avoid using advanced features such as:
 
-- **Ternary statements/operators** (`condition ? value-if-true : value-if-false`), and instead,
-  stick to traditional if/else statements.
+- **Ternary statements/operators**
+  (`condition ? value-if-true : value-if-false`), and instead, stick to
+  traditional if/else statements.
 
 ## C# OOP vs Top Level
 
@@ -258,16 +268,16 @@ Avoid using advanced features such as:
 
 **Top-Level Statements**:
 
-- Top-level statements allow you to write C# code without explicitly defining a class or `Main`
-  method.
-- Uses the directive: `using static SplashKitSDK.SplashKit;`, so SplashKit functions are called
-  directly, such as `WriteLine("Hello!");`.
+- Top-level statements allow you to write C# code without explicitly defining a
+  class or `Main` method.
+- Uses the directive: `using static SplashKitSDK.SplashKit;`, so SplashKit
+  functions are called directly, such as `WriteLine("Hello!");`.
 
 **Object-Oriented Programming (OOP)**:
 
 - OOP-style C# code requires defining a `Main` method inside a class.
-- Uses `using SplashKitSDK;`, meaning all SplashKit commands are prefixed with `SplashKit.` (e.g.,
-  `SplashKit.WriteLine("Hello!");`).
+- Uses `using SplashKitSDK;`, meaning all SplashKit commands are prefixed with
+  `SplashKit.` (e.g., `SplashKit.WriteLine("Hello!");`).
 
 ### Some key differences
 
@@ -277,8 +287,9 @@ When converting to OOP you should try and create and use objects where possible.
 
 :::
 
-Some key differences to note when converting between OOP and top level statements are that OOP
-should be seeking to highlight the objectivity where possible.
+Some key differences to note when converting between OOP and top level
+statements are that OOP should be seeking to highlight the objectivity where
+possible.
 
 Note the code examples below:
 
@@ -320,15 +331,17 @@ Delay(5000);
 CloseWindow(window);
 ```
 
-The two code blocks here are functionally identical, but highlight some key differences between top
-level code and OOP code.
+The two code blocks here are functionally identical, but highlight some key
+differences between top level code and OOP code.
 
-Notice in the OOP code, we create the `rectangle` and `window` objects, and then perform the drawing
-of the rectangles through the objects' methods. In the top level code however we are calling
-functions and passing in the object as parameters.
+Notice in the OOP code, we create the `rectangle` and `window` objects, and then
+perform the drawing of the rectangles through the objects' methods. In the top
+level code however we are calling functions and passing in the object as
+parameters.
 
-Another key difference here, in OOP we call the color class `Color` and specify the colour we want
-via the member `Red` whereas in Top Level code we call the function `ColorRed()`.
+Another key difference here, in OOP we call the color class `Color` and specify
+the colour we want via the member `Red` whereas in Top Level code we call the
+function `ColorRed()`.
 
 :::tip[Using SplashKit.OpenWindow]
 
@@ -473,7 +486,8 @@ WriteLine("Hello, " + name + "!");
 
   :::note[Namespace naming]
 
-  In the namespace name, replace `FunctionName` with the name of the function, using PascalCase.
+  In the namespace name, replace `FunctionName` with the name of the function,
+  using PascalCase.
 
   :::
 
@@ -485,16 +499,17 @@ WriteLine("Hello, " + name + "!");
 
   :::note[Variables with SplashKit types]
 
-  If your code has variables with a SplashKit data type, such as `Window`, `Bitmap`, etc, then you
-  will need to include `using SplashKitSDK;` as well.
+  If your code has variables with a SplashKit data type, such as `Window`,
+  `Bitmap`, etc, then you will need to include `using SplashKitSDK;` as well.
 
-  You can then comment this line out, and check that only the SplashKit variables have error
-  squiggles, then uncomment the line again.
+  You can then comment this line out, and check that only the SplashKit
+  variables have error squiggles, then uncomment the line again.
 
   :::
 
 - Remove `namespace`, `class`, and `Main` method wrappers.
 - Remove `SplashKit.` prefixes.
 
-Using this guide, you can quickly convert between top-level statements and OOP formats in SplashKit
-tutorials, making the code accessible for different programming preferences.
+Using this guide, you can quickly convert between top-level statements and OOP
+formats in SplashKit tutorials, making the code accessible for different
+programming preferences.

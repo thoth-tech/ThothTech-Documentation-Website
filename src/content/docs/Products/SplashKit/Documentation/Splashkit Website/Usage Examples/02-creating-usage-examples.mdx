@@ -1,6 +1,8 @@
 ---
 title: Guide to creating usage examples
-description: Learn how to create, submit, and review usage examples for the Splashkit website.
+description:
+  Learn how to create, submit, and review usage examples for the Splashkit
+  website.
 sidebar:
   label: Creating Usage Examples
 ---
@@ -12,11 +14,13 @@ This guide explains how to create a usage example for the Splashkit website.
 
 ### What are Usage Examples?
 
-Usage examples demonstrate a specific Splashkit function within a simple, small program. The goal is
-to keep the program minimal while clearly showing how the function works or how it can be utilised.
+Usage examples demonstrate a specific Splashkit function within a simple, small
+program. The goal is to keep the program minimal while clearly showing how the
+function works or how it can be utilised.
 
-For instance, the `write_line` example on the Splashkit site shows how the `write_line` function
-works, with a relevant title, program code, and a file showing the program output.
+For instance, the `write_line` example on the Splashkit site shows how the
+`write_line` function works, with a relevant title, program code, and a file
+showing the program output.
 
 ![example showing on site for write line function](./images/usageexample.png)
 
@@ -33,32 +37,36 @@ An initial usage example includes 6 files:
 
 1. ### Choosing a Function
 
-   The planner board has numerous usage example suggestions for various functions, however you are
-   welcomed and encouraged to come up with your own creative ideas for these. Scroll through the
-   [API Documentation](https://splashkit.io/api/) to find various functions you could use for the
-   usage example, when coming up with an idea, make sure to also check to see if anyone else has
-   already done it.
+   The planner board has numerous usage example suggestions for various
+   functions, however you are welcomed and encouraged to come up with your own
+   creative ideas for these. Scroll through the
+   [API Documentation](https://splashkit.io/api/) to find various functions you
+   could use for the usage example, when coming up with an idea, make sure to
+   also check to see if anyone else has already done it.
 
-   The goal is to create **one usage example per function** in the SplashKit library. Building out
-   these single examples for each function is the priority to round out the variety of examples
-   available.
+   The goal is to create **one usage example per function** in the SplashKit
+   library. Building out these single examples for each function is the priority
+   to round out the variety of examples available.
 
-   If you come up with a creative idea for a function that already has an example, please share it
-   in the SplashKit group chat or reach out to your Capstone Mentor to discuss whether it's a good
-   idea to add another example for that function.
+   If you come up with a creative idea for a function that already has an
+   example, please share it in the SplashKit group chat or reach out to your
+   Capstone Mentor to discuss whether it's a good idea to add another example
+   for that function.
 
 2. ### Creating The Program
 
-   Create the program with as few lines of code as possible. You'll need to write the program in
-   C++, C# (using top-level statements and OOP version), and Python, all using Splashkit. Start with
-   the language you're most comfortable with, then convert it to the others.
+   Create the program with as few lines of code as possible. You'll need to
+   write the program in C++, C# (using top-level statements and OOP version),
+   and Python, all using Splashkit. Start with the language you're most
+   comfortable with, then convert it to the others.
 
-   Note for C# to-level: Use `using static SplashKitSDK.SplashKit;`. For the OOP version: use
-   `using SplashKitSDK;`.
+   Note for C# to-level: Use `using static SplashKitSDK.SplashKit;`. For the OOP
+   version: use `using SplashKitSDK;`.
 
    #### Example
 
-   If C++ is your strength, begin by creating a small program like this `dec_to_hex` example:
+   If C++ is your strength, begin by creating a small program like this
+   `dec_to_hex` example:
 
    ```cpp
    #include "splashkit.h"
@@ -86,9 +94,10 @@ An initial usage example includes 6 files:
    }
    ```
 
-   This example includes meaningful comments that clearly explain each part of the program, which
-   helps readers understand both the structure and function. When converting to C#, notice that the
-   structure and comments are kept consistent, with syntax changes specific to the language:
+   This example includes meaningful comments that clearly explain each part of
+   the program, which helps readers understand both the structure and function.
+   When converting to C#, notice that the structure and comments are kept
+   consistent, with syntax changes specific to the language:
 
    ```csharp
    using static SplashKitSDK.SplashKit;
@@ -117,20 +126,21 @@ An initial usage example includes 6 files:
 
    **Title:** Simple Decimal to Hexadecimal Converter
 
-   Take a screenshot of the output window and save it. If the screenshot is of the terminal window,
-   please crop out any commands used to run the program.
+   Take a screenshot of the output window and save it. If the screenshot is of
+   the terminal window, please crop out any commands used to run the program.
 
 4. ### Adding these files to Splashkit Starlight.io
 
-   Now that you're done, you should have the following 6 files when completing an initial usage
-   example PR:
+   Now that you're done, you should have the following 6 files when completing
+   an initial usage example PR:
 
 <FileTree>
-  - txt file - C++ file - python file - C# (top-level statements) file - C# (OOP) file - Screenshot
-  of the output
+  - txt file - C++ file - python file - C# (top-level statements) file - C#
+  (OOP) file - Screenshot of the output
 </FileTree>
 
-Now you'll need to rename these before adding them to the Splashkit Starlight.io repo.
+Now you'll need to rename these before adding them to the Splashkit Starlight.io
+repo.
 
 #### Example
 
@@ -151,13 +161,15 @@ In a separate pull request, to add to existing examples:
 write_line-1-hello-world-beyond.cpp
 ```
 
-Now you can add these files to the Splashkit Starlight.io repo. If when you add them you find there
-is already some files of a usage example using this same function, then you should increment the
-number in the file name by 1. Furthermore, it is important that you use the function's unique global
-name for the files names _(This only applies for functions that are overloaded.)_
+Now you can add these files to the Splashkit Starlight.io repo. If when you add
+them you find there is already some files of a usage example using this same
+function, then you should increment the number in the file name by 1.
+Furthermore, it is important that you use the function's unique global name for
+the files names _(This only applies for functions that are overloaded.)_
 
-Now that your files are named, add all of your files to the `usage-examples` folder under the
-appropriate function category (e.g., `terminal/`). The location in the Statlight.io repo is:
+Now that your files are named, add all of your files to the `usage-examples`
+folder under the appropriate function category (e.g., `terminal/`). The location
+in the Statlight.io repo is:
 
 <FileTree>
 
@@ -192,8 +204,9 @@ appropriate function category (e.g., `terminal/`). The location in the Statlight
 
 </FileTree>
 
-For more information regarding the proper file naming and placement can be found within the repo in
-the `CONTRIBUTING.mdx`. The location of the file can be found here:
+For more information regarding the proper file naming and placement can be found
+within the repo in the `CONTRIBUTING.mdx`. The location of the file can be found
+here:
 
 <FileTree>
 
@@ -206,6 +219,7 @@ the `CONTRIBUTING.mdx`. The location of the file can be found here:
 ## Next Steps
 
 Now follow the steps in
-[Usage Example Pull Requests](/products/splashkit/05-pull-request-template/), and submit your usage
-example for review. For doing a peer review, follow the steps in
+[Usage Example Pull Requests](/products/splashkit/05-pull-request-template/),
+and submit your usage example for review. For doing a peer review, follow the
+steps in
 [Peer Review Guide for Usage Examples](/products/splashkit/documentation/splashkit-website/usage-examples/04-usage-peer-review).

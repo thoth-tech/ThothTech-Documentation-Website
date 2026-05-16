@@ -18,14 +18,16 @@ folder.
 
 ## 1. Download Ubuntu and Rufus
 
-- Download [Ubuntu](https://ubuntu.com/download/desktop) from the official website.
+- Download [Ubuntu](https://ubuntu.com/download/desktop) from the official
+  website.
 - Download [Rufus](https://rufus.ie/en/).
 
 ## 2. Create a Bootable USB Drive
 
 1. Open Rufus.
 2. Select the USB drive from the 'Device' dropdown.
-3. Click the 'SELECT' button to choose the Ubuntu ISO (should be in your downloads folder).
+3. Click the 'SELECT' button to choose the Ubuntu ISO (should be in your
+   downloads folder).
 4. Click the 'START' button at the bottom.
 
    ![Rufus Start](/rufus_screenshot.png)
@@ -37,14 +39,14 @@ folder.
 
    ![Boot Keys](/bootkeys.png)
 
-3. There should be a list of boot options including Windows Boot Manager. Select the bootable USB
-   with the Ubuntu ISO.
+3. There should be a list of boot options including Windows Boot Manager. Select
+   the bootable USB with the Ubuntu ISO.
 4. The Ubuntu OS will load in portable mode from the USB.
 
 ## 4. Install Ubuntu on External SSD
 
-1. After booting into Ubuntu you should be provided with the option to Try Ubuntu or Install Ubuntu.
-   Select Install Ubuntu.
+1. After booting into Ubuntu you should be provided with the option to Try
+   Ubuntu or Install Ubuntu. Select Install Ubuntu.
 
    ![Ubuntu Boot Options](/ubuntu_options.png)
 
@@ -52,7 +54,8 @@ folder.
 
    ![Ubuntu Desktop](/install_ubuntu.png)
 
-3. Proceed through the initial steps until you reach the "Installation type" step.
+3. Proceed through the initial steps until you reach the "Installation type"
+   step.
 4. Choose the "Something else" option to manually configure partitions.
 5. Identify the external SSD as a device like `/dev/sdb`.
 
@@ -84,8 +87,8 @@ folder.
    cd Downloads
    ```
 
-5. Enter the following command in the terminal to connect to the wifi network and follow the prompts
-   to enter your Deakin username and password.
+5. Enter the following command in the terminal to connect to the wifi network
+   and follow the prompts to enter your Deakin username and password.
 
    ```shell
     sh SecureW2_JoinNow.run
@@ -116,7 +119,8 @@ folder.
 
 ## 7. Clone OnTrack Repository
 
-1. Clone the OnTrack repository (change `YOUR_USERNAME` to your GitHub username):
+1. Clone the OnTrack repository (change `YOUR_USERNAME` to your GitHub
+   username):
 
    ```shell
    git clone --recurse-submodules git clone https://github.com/YOUR_USERNAME/doubtfire-deploy
@@ -129,7 +133,8 @@ folder.
    code .
    ```
 
-3. Run change remotes script in the integrated terminal to change the remote to your own repository.
+3. Run change remotes script in the integrated terminal to change the remote to
+   your own repository.
 
    ```shell
    ./change-remotes.sh
@@ -139,6 +144,6 @@ folder.
 
 ## 8. Run OnTrack
 
-1. After re-opening vscode, the script should automatically run and open the OnTrack application in
-   your browser.
+1. After re-opening vscode, the script should automatically run and open the
+   OnTrack application in your browser.
 2. Happy coding!

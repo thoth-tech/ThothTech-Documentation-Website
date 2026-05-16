@@ -2,8 +2,8 @@
 title: Adding Games to Arcade Machine
 ---
 
-> many of these steps are eser to perform via the GUI all commands below are for CLI but can start
-> the GUI by typing `startx` in the terminal
+> many of these steps are eser to perform via the GUI all commands below are for
+> CLI but can start the GUI by typing `startx` in the terminal
 
 ## C++ Programs
 
@@ -60,8 +60,9 @@ title: Adding Games to Arcade Machine
      ~/Games/MyGame/MyGame
      ```
 
-   - > Note: Some C++ programs may not run correctly when executed from a remote directory in which
-     > case make the script chagne to the program directory first
+   - > Note: Some C++ programs may not run correctly when executed from a remote
+     > directory in which case make the script chagne to the program directory
+     > first
 
      ```
       #!/bin/bash
@@ -119,9 +120,10 @@ git clone https://github.com/Thoth-Tech/MyGame.git
 
         - you may need to change into a sub directory first
 
-    > Compiling as a standalone program is presently required for C# games as dotnet and splashkit
-    > paths are not loaded on CLI boot, paths are presently loaded by bashrc which only run on
-    > interactive login shells. i.e. when you login to the desktop.
+    > Compiling as a standalone program is presently required for C# games as
+    > dotnet and splashkit paths are not loaded on CLI boot, paths are presently
+    > loaded by bashrc which only run on interactive login shells. i.e. when you
+    > login to the desktop.
 
 ```
 skm dotnet publish --sc

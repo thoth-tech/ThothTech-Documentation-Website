@@ -45,20 +45,24 @@ description: 6.5P Task, T3 2024
 
 ## Executive Summary
 
-Thoth Tech is an education-focused technology company located in Melbourne, Australia. Thoth Tech's
-mission is to build, operate, and deploy tools that enhance education outcomes by empowering
-students, connecting them with tutors, and facilitating personalised learning experiences.
+Thoth Tech is an education-focused technology company located in Melbourne,
+Australia. Thoth Tech's mission is to build, operate, and deploy tools that
+enhance education outcomes by empowering students, connecting them with tutors,
+and facilitating personalised learning experiences.
 
-We value excellence and collaboration. We strive to deliver all our products in exceptional quality,
-making sure it is sustainable in the long run. We continuously meet this goal while empowering our
-people through established frameworks and a safe and supportive learning environment.
+We value excellence and collaboration. We strive to deliver all our products in
+exceptional quality, making sure it is sustainable in the long run. We
+continuously meet this goal while empowering our people through established
+frameworks and a safe and supportive learning environment.
 
-This report will outline the company structure, objectives, and projects for Trimester 3, 2024. This
-trimester, Thoth Tech will be running the two main products: OnTrack and SplashKit.
+This report will outline the company structure, objectives, and projects for
+Trimester 3, 2024. This trimester, Thoth Tech will be running the two main
+products: OnTrack and SplashKit.
 
 ## Showcase Video
 
-This video summarises the accomplishments made at Thoth Tech for Trimester 3 2024:
+This video summarises the accomplishments made at Thoth Tech for Trimester 3
+2024:
 [Thoth Tech Company Showcase Video](https://deakin.au.panopto.com/Panopto/Pages/Viewer.aspx?id=fc3d2072-cc34-4d3d-bfc4-b247003a2e81)
 
 ## Leadership Team
@@ -89,146 +93,175 @@ This video summarises the accomplishments made at Thoth Tech for Trimester 3 202
 
 ### Leadership Responsibilities
 
-The following are the key responsibilities of the company student leadership team throughout the
-trimester:
+The following are the key responsibilities of the company student leadership
+team throughout the trimester:
 
-1. **Company Presentation in the First Junior Lecture** Introduce the company, its projects, and the
-   required skill sets to inspire and recruit potential junior students.
-   - **Presentation Preparation**: Student leads must prepare and organise a PowerPoint presentation
-     that effectively represents each of their projects during Week 0.
-   - **Aligning with Goals**: Clearly articulate how each project aligns with Thoth Tech's goals,
-     vision, and broader objectives within the capstone program.
-   - **Highlighting Opportunities**: Showcase the unique opportunities that being part of Thoth Tech
-     provides, such as exposure to innovative projects, experienced mentors, and the chance to
-     develop skills in real-world scenarios.
-   - **Targeted Recruitment**: Emphasise the qualities, skills, and mindsets the company values to
-     attract the most motivated and capable junior students who can contribute meaningfully to the
-     company's objectives.
-   - **Inspiring Participation**: Use compelling visuals, project examples, and contributions from
-     previous cohorts to inspire students and demonstrate the value of joining Thoth Tech.
-   - **Engaging Delivery**: Present in a way that connects with the audience, using a tone that is
-     both professional and approachable, to ensure students feel welcomed and excited about the
-     opportunity to join the company.
+1. **Company Presentation in the First Junior Lecture** Introduce the company,
+   its projects, and the required skill sets to inspire and recruit potential
+   junior students.
+   - **Presentation Preparation**: Student leads must prepare and organise a
+     PowerPoint presentation that effectively represents each of their projects
+     during Week 0.
+   - **Aligning with Goals**: Clearly articulate how each project aligns with
+     Thoth Tech's goals, vision, and broader objectives within the capstone
+     program.
+   - **Highlighting Opportunities**: Showcase the unique opportunities that
+     being part of Thoth Tech provides, such as exposure to innovative projects,
+     experienced mentors, and the chance to develop skills in real-world
+     scenarios.
+   - **Targeted Recruitment**: Emphasise the qualities, skills, and mindsets the
+     company values to attract the most motivated and capable junior students
+     who can contribute meaningfully to the company's objectives.
+   - **Inspiring Participation**: Use compelling visuals, project examples, and
+     contributions from previous cohorts to inspire students and demonstrate the
+     value of joining Thoth Tech.
+   - **Engaging Delivery**: Present in a way that connects with the audience,
+     using a tone that is both professional and approachable, to ensure students
+     feel welcomed and excited about the opportunity to join the company.
 
-2. **Host First Company-Wide Meeting and Onboard Students** Provide a detailed overview of company
-   and project goals, meeting schedules, and expectations for the trimester through a structured and
-   inclusive onboarding process.
-   - **Multiple Onboarding Sessions**: Organise several onboarding sessions to ensure the widest
-     possible audience is captured, accommodating different learning styles, time zones, and
-     availability. This approach ensures that all junior students, regardless of their
-     circumstances, receive the information they need to succeed.
-   - **Consistent Structure and Delivery**: Ensure consistency across all onboarding sessions by
-     following a standardised agenda and delivery method. Assign experienced team members or senior
-     leads to conduct these sessions, ensuring the same key messages and expectations are conveyed
-     uniformly.
-   - **Comprehensive Onboarding Materials**: Provide clear, accessible onboarding materials, such as
-     slide decks, documentation, and walkthrough videos, that junior students can refer back to
-     after the sessions.
-   - **Interactive Elements**: Include interactive components, such as Q&A sessions, small group
-     discussions, or hands-on demonstrations, to engage participants and help them better understand
-     processes, tools, and workflows.
-   - **Foster Team Building**: Build rapport among team members and establish a positive and
-     collaborative company culture from the start.
+2. **Host First Company-Wide Meeting and Onboard Students** Provide a detailed
+   overview of company and project goals, meeting schedules, and expectations
+   for the trimester through a structured and inclusive onboarding process.
+   - **Multiple Onboarding Sessions**: Organise several onboarding sessions to
+     ensure the widest possible audience is captured, accommodating different
+     learning styles, time zones, and availability. This approach ensures that
+     all junior students, regardless of their circumstances, receive the
+     information they need to succeed.
+   - **Consistent Structure and Delivery**: Ensure consistency across all
+     onboarding sessions by following a standardised agenda and delivery method.
+     Assign experienced team members or senior leads to conduct these sessions,
+     ensuring the same key messages and expectations are conveyed uniformly.
+   - **Comprehensive Onboarding Materials**: Provide clear, accessible
+     onboarding materials, such as slide decks, documentation, and walkthrough
+     videos, that junior students can refer back to after the sessions.
+   - **Interactive Elements**: Include interactive components, such as Q&A
+     sessions, small group discussions, or hands-on demonstrations, to engage
+     participants and help them better understand processes, tools, and
+     workflows.
+   - **Foster Team Building**: Build rapport among team members and establish a
+     positive and collaborative company culture from the start.
 
-3. **Weekly Company Leadership Team Meetings** Facilitate regular meetings to report on project
-   progress and address concerns with company stakeholders.
-   - **Scheduling**: Date and time to be decided by members in the first week according to
-     availability.
-   - **Rotating Leadership**: Each week, a different member should take the lead in directing the
-     meeting. Initially, senior members should guide these sessions to set the tone and structure,
-     gradually handing off the responsibility to junior members as the trimester progresses. This
-     approach fosters leadership development and prepares juniors for future roles.
-   - **Structured Agenda**: Ensure meetings follow a structured agenda with updates on project
-     progress, blockers, and upcoming tasks, allowing for efficient use of time.
-   - **Productivity Focus**: Make meetings productive by assigning clear action items and deadlines,
-     and ensuring all follow-ups are tracked and reviewed in subsequent sessions.
+3. **Weekly Company Leadership Team Meetings** Facilitate regular meetings to
+   report on project progress and address concerns with company stakeholders.
+   - **Scheduling**: Date and time to be decided by members in the first week
+     according to availability.
+   - **Rotating Leadership**: Each week, a different member should take the lead
+     in directing the meeting. Initially, senior members should guide these
+     sessions to set the tone and structure, gradually handing off the
+     responsibility to junior members as the trimester progresses. This approach
+     fosters leadership development and prepares juniors for future roles.
+   - **Structured Agenda**: Ensure meetings follow a structured agenda with
+     updates on project progress, blockers, and upcoming tasks, allowing for
+     efficient use of time.
+   - **Productivity Focus**: Make meetings productive by assigning clear action
+     items and deadlines, and ensuring all follow-ups are tracked and reviewed
+     in subsequent sessions.
 
-4. **Project Mentorship and Guidance** Actively support project teams by providing leadership,
-   technical expertise, and problem-solving guidance to peers and junior team members alike.
-   - **Mentor Peers and Juniors**: Provide mentorship to both peers and junior team members,
-     recognising that even senior contributors may require guidance and support to meet their
-     objectives effectively.
-   - **Champion Each Project**: Act as champions for the projects under your leadership, advocating
-     for their success in leadership meetings and ensuring they align with company goals.
-   - **Resolve Blockers**: Proactively identify and address blockers, facilitating solutions
-     wherever possible. Escalate unresolved issues to ensure progress is not stalled.
-   - **Promote Collaboration**: Encourage cross-team collaboration by sharing insights, fostering
-     knowledge exchange, and aligning project efforts with the overall vision of the company.
+4. **Project Mentorship and Guidance** Actively support project teams by
+   providing leadership, technical expertise, and problem-solving guidance to
+   peers and junior team members alike.
+   - **Mentor Peers and Juniors**: Provide mentorship to both peers and junior
+     team members, recognising that even senior contributors may require
+     guidance and support to meet their objectives effectively.
+   - **Champion Each Project**: Act as champions for the projects under your
+     leadership, advocating for their success in leadership meetings and
+     ensuring they align with company goals.
+   - **Resolve Blockers**: Proactively identify and address blockers,
+     facilitating solutions wherever possible. Escalate unresolved issues to
+     ensure progress is not stalled.
+   - **Promote Collaboration**: Encourage cross-team collaboration by sharing
+     insights, fostering knowledge exchange, and aligning project efforts with
+     the overall vision of the company.
 
-5. **Communication and Collaboration** Maintain clear and open communication across teams to align
-   project goals, foster innovation, and enhance overall company contributions.
-   - **Promote Cross-Team Collaboration**: Actively encourage collaboration between teams,
-     recognising that greater collaboration has historically helped overcome creativity blocks and
-     inspired more innovative and exciting contributions across the company.
-   - **Regular Updates**: Provide consistent updates on project progress, challenges, and
-     opportunities for alignment to ensure all teams are aware of each other's work and can
-     contribute to shared goals.
-   - **Facilitate Knowledge Sharing**: Create opportunities for knowledge exchange, such as
-     collaborative sessions or showcases, to inspire creativity and strengthen the collective output
-     of the company.
-   - **Focus on Alignment**: Ensure that all communication and collaborative efforts are aligned
-     with the company's broader objectives, creating a cohesive strategy that drives success.
-   - **Designate a Communications Lead**: Nominate one leadership member to act as the
-     communications lead for the company. This individual will represent the leadership team by
-     communicating key messages, updates, and announcements to the entire company through the main
-     Thoth Tech channel. This ensures consistent and clear communication across all teams.
+5. **Communication and Collaboration** Maintain clear and open communication
+   across teams to align project goals, foster innovation, and enhance overall
+   company contributions.
+   - **Promote Cross-Team Collaboration**: Actively encourage collaboration
+     between teams, recognising that greater collaboration has historically
+     helped overcome creativity blocks and inspired more innovative and exciting
+     contributions across the company.
+   - **Regular Updates**: Provide consistent updates on project progress,
+     challenges, and opportunities for alignment to ensure all teams are aware
+     of each other's work and can contribute to shared goals.
+   - **Facilitate Knowledge Sharing**: Create opportunities for knowledge
+     exchange, such as collaborative sessions or showcases, to inspire
+     creativity and strengthen the collective output of the company.
+   - **Focus on Alignment**: Ensure that all communication and collaborative
+     efforts are aligned with the company's broader objectives, creating a
+     cohesive strategy that drives success.
+   - **Designate a Communications Lead**: Nominate one leadership member to act
+     as the communications lead for the company. This individual will represent
+     the leadership team by communicating key messages, updates, and
+     announcements to the entire company through the main Thoth Tech channel.
+     This ensures consistent and clear communication across all teams.
 
-6. **Complete Company Deliverables: Progress, Handover, and Showcase Reports and Videos** Ensure
-   timely and high-quality submissions of all required deliverables.
-   - **Team Collaboration**: Collaborate with project teams to gather insights, ensuring all
-     deliverables include comprehensive updates that accurately reflect the progress and
-     contributions of the entire company.
-   - **Representation of the Company**: Remember that as a leadership team member, you are
-     representing the company. Ensure that the reports and videos serve as a voice for others in
-     your teams, highlighting their achievements and aligning with the company's overall goals and
-     vision.
-   - **Submission Responsibility**: These reports must be submitted by 1 senior and 1 junior on
-     behalf of the company, with appropriate communications made on Teams to ensure transparency and
-     accountability.
+6. **Complete Company Deliverables: Progress, Handover, and Showcase Reports and
+   Videos** Ensure timely and high-quality submissions of all required
+   deliverables.
+   - **Team Collaboration**: Collaborate with project teams to gather insights,
+     ensuring all deliverables include comprehensive updates that accurately
+     reflect the progress and contributions of the entire company.
+   - **Representation of the Company**: Remember that as a leadership team
+     member, you are representing the company. Ensure that the reports and
+     videos serve as a voice for others in your teams, highlighting their
+     achievements and aligning with the company's overall goals and vision.
+   - **Submission Responsibility**: These reports must be submitted by 1 senior
+     and 1 junior on behalf of the company, with appropriate communications made
+     on Teams to ensure transparency and accountability.
 
-7. **Represent the Company in Leadership Meetings** Advocate for the company's needs and ensure
-   alignment with the broader goals of the capstone program.
-   - **Present Team Updates**: Present the company's progress, challenges, and successes in
-     program-level leadership meetings, ensuring a clear and accurate representation of team
-     activities.
-   - **Voice Team Wins and Issues**: Take responsibility for voicing both problems and achievements
-     from the team, ensuring that concerns are addressed, and successes are celebrated.
-   - **Communicate with Leadership**: Use the opportunity to communicate with the company director
-     and product owners to ensure that progress aligns with the overall company goals and vision.
-   - **Build Relationships**: Foster strong relationships with stakeholders and mentors to secure
-     support and resources for company objectives.
+7. **Represent the Company in Leadership Meetings** Advocate for the company's
+   needs and ensure alignment with the broader goals of the capstone program.
+   - **Present Team Updates**: Present the company's progress, challenges, and
+     successes in program-level leadership meetings, ensuring a clear and
+     accurate representation of team activities.
+   - **Voice Team Wins and Issues**: Take responsibility for voicing both
+     problems and achievements from the team, ensuring that concerns are
+     addressed, and successes are celebrated.
+   - **Communicate with Leadership**: Use the opportunity to communicate with
+     the company director and product owners to ensure that progress aligns with
+     the overall company goals and vision.
+   - **Build Relationships**: Foster strong relationships with stakeholders and
+     mentors to secure support and resources for company objectives.
 
-8. **Encourage Innovation and Best Practices** Promote a culture of innovation, inclusivity, and
-   continuous improvement within the company.
-   - **Leverage Evidence-Based Decision-Making**: Use the leadership team as a platform to analyse
-     data, feedback, and outcomes to make informed and evidence-based choices that drive project
-     success.
-   - **Share Resources and Techniques**: Share new tools, techniques, and resources to enhance
-     project quality, fostering a culture of learning and adaptability.
-   - **Empower Team Members**: Encourage juniors and peers to take ownership of tasks, explore
-     creative solutions, and contribute ideas that challenge the status quo.
-   - **Foster Inclusivity**: Promote an environment where all team members feel empowered to
-     participate and contribute, ensuring diverse perspectives are considered in decision-making.
+8. **Encourage Innovation and Best Practices** Promote a culture of innovation,
+   inclusivity, and continuous improvement within the company.
+   - **Leverage Evidence-Based Decision-Making**: Use the leadership team as a
+     platform to analyse data, feedback, and outcomes to make informed and
+     evidence-based choices that drive project success.
+   - **Share Resources and Techniques**: Share new tools, techniques, and
+     resources to enhance project quality, fostering a culture of learning and
+     adaptability.
+   - **Empower Team Members**: Encourage juniors and peers to take ownership of
+     tasks, explore creative solutions, and contribute ideas that challenge the
+     status quo.
+   - **Foster Inclusivity**: Promote an environment where all team members feel
+     empowered to participate and contribute, ensuring diverse perspectives are
+     considered in decision-making.
 
-9. **Foster Team Morale and Collaboration** Actively support team morale and address interpersonal
-   challenges to maintain a cohesive and motivated team environment.
-   - **Celebrate Achievements**: Recognise and celebrate individual and team accomplishments across
-     the company to boost morale and reinforce a sense of achievement.
-   - **Promote Inclusivity**: Ensure that all voices are heard and valued, creating an inclusive
-     environment where everyone feels comfortable contributing to discussions and decisions.
-   - **Encourage Collaboration**: Actively foster collaboration across teams by organising joint
-     sessions, workshops, or brainstorming meetings to strengthen relationships and drive
-     innovation.
-   - **Be Approachable**: As a leader, maintain an open-door policy where team members feel
-     comfortable approaching you with concerns, feedback, or ideas for improvement.
+9. **Foster Team Morale and Collaboration** Actively support team morale and
+   address interpersonal challenges to maintain a cohesive and motivated team
+   environment.
+   - **Celebrate Achievements**: Recognise and celebrate individual and team
+     accomplishments across the company to boost morale and reinforce a sense of
+     achievement.
+   - **Promote Inclusivity**: Ensure that all voices are heard and valued,
+     creating an inclusive environment where everyone feels comfortable
+     contributing to discussions and decisions.
+   - **Encourage Collaboration**: Actively foster collaboration across teams by
+     organising joint sessions, workshops, or brainstorming meetings to
+     strengthen relationships and drive innovation.
+   - **Be Approachable**: As a leader, maintain an open-door policy where team
+     members feel comfortable approaching you with concerns, feedback, or ideas
+     for improvement.
 
-By fulfilling these responsibilities, the leadership team ensures that Thoth Tech continues to grow,
-innovate, and succeed in achieving its objectives while fostering a collaborative and enriching
-environment for all contributors.
+By fulfilling these responsibilities, the leadership team ensures that Thoth
+Tech continues to grow, innovate, and succeed in achieving its objectives while
+fostering a collaborative and enriching environment for all contributors.
 
-All past company reports, showcase videos, and relevant assets can be found here:
-[Company Documents & Videos](https://deakin365.sharepoint.com/sites/ThothTech2) &
-[Thoth Tech Documentation Website](https://thoth-tech.netlify.app)
+All past company reports, showcase videos, and relevant assets can be found
+here:
+[Company Documents & Videos](https://deakin365.sharepoint.com/sites/ThothTech2)
+& [Thoth Tech Documentation Website](https://thoth-tech.netlify.app)
 
 ## Company Structure
 
@@ -238,21 +271,24 @@ All past company reports, showcase videos, and relevant assets can be found here
 
 ### Project Overview
 
-OnTrack, also known as Doubtfire, is a sophisticated Learning Management System (LMS) tailored for
-skill-based course delivery. Developed for institutions such as Deakin University and other global
-educational entities, the platform facilitates seamless interaction between tutors and students,
-offering a structured and efficient learning environment.
+OnTrack, also known as Doubtfire, is a sophisticated Learning Management System
+(LMS) tailored for skill-based course delivery. Developed for institutions such
+as Deakin University and other global educational entities, the platform
+facilitates seamless interaction between tutors and students, offering a
+structured and efficient learning environment.
 
-Designed to enhance student engagement and improve learning outcomes, OnTrack prioritizes a
-practical, hands-on approach that aligns with the needs of contemporary education. It enables tutors
-to manage and deliver skill-based courses with ease while automating administrative tasks like
-grading and attendance, thus allowing educators to focus on teaching and providing personalized
-feedback.
+Designed to enhance student engagement and improve learning outcomes, OnTrack
+prioritizes a practical, hands-on approach that aligns with the needs of
+contemporary education. It enables tutors to manage and deliver skill-based
+courses with ease while automating administrative tasks like grading and
+attendance, thus allowing educators to focus on teaching and providing
+personalized feedback.
 
-The platform's interactive features, including real-time progress tracking and feedback, support
-student motivation and engagement by providing insights into academic performance and identifying
-areas for improvement. In doing so, OnTrack not only fosters student development but also enhances
-the teaching process, making it an indispensable tool for modern educational institutions.
+The platform's interactive features, including real-time progress tracking and
+feedback, support student motivation and engagement by providing insights into
+academic performance and identifying areas for improvement. In doing so, OnTrack
+not only fosters student development but also enhances the teaching process,
+making it an indispensable tool for modern educational institutions.
 
 ### User Manual
 
@@ -261,7 +297,8 @@ Tutorial Videos on Setting Up Your Local Development Environment
 - [T3 2023 Setup demo](https://deakin365.sharepoint.com/:v:/s/ThothTech2/ESrgw0W_21pLn7kqS86WoJgBG71EPo7VPSp8AXt151JC2g?e=AZyu7I)
   by Satika Jayawardena
 
-- [T2 2023 Setup demo](https://video.deakin.edu.au/media/t/1_6degiyrj) by Daniel Maddern
+- [T2 2023 Setup demo](https://video.deakin.edu.au/media/t/1_6degiyrj) by Daniel
+  Maddern
 
 - [T1 2024 Common setup error solutions](https://teams.microsoft.com/l/message/19:bd20175d09414f079490a2403f7fca74@thread.tacv2/1711021331051)
   by Satika Jayawardena
@@ -280,33 +317,35 @@ Tutorial Videos on Setting Up Your Local Development Environment
 
 #### Document Website Expansion
 
-- Conducted an in-depth audit and survey of current documentation. Identified gaps and created a
-  backlog for Rails Backend.
-- Updated documentation for the Frontend and Backend systems to ensure alignment with recent feature
-  updates and new workflows.
-- Integrated improved documentation for OnTrack's related modules, streamlining the onboarding
-  process for new developers.
+- Conducted an in-depth audit and survey of current documentation. Identified
+  gaps and created a backlog for Rails Backend.
+- Updated documentation for the Frontend and Backend systems to ensure alignment
+  with recent feature updates and new workflows.
+- Integrated improved documentation for OnTrack's related modules, streamlining
+  the onboarding process for new developers.
 
 #### Cyber Security Audit
 
-- Conducted a comprehensive Web Security Audit, addressing vulnerabilities in areas such as:
+- Conducted a comprehensive Web Security Audit, addressing vulnerabilities in
+  areas such as:
   - Broken Access Control
   - Identification and Authentication Failures
   - Security Misconfiguration
   - Injection Attacks
   - Vulnerable and Outdated Components
-- Implemented fixes for critical vulnerabilities to enhance the platform's overall security and
-  reliability.
+- Implemented fixes for critical vulnerabilities to enhance the platform's
+  overall security and reliability.
 
 #### Feature Development
 
-- Worked on implementing a Google Sign-In functionality, simplifying the user login process and
-  enhancing authentication security.
-- Developed a new visualization for Target Grades and Charts, improving analytics and reporting
-  features for users.
+- Worked on implementing a Google Sign-In functionality, simplifying the user
+  login process and enhancing authentication security.
+- Developed a new visualization for Target Grades and Charts, improving
+  analytics and reporting features for users.
 - Added support for video uploads based on Panopto integration.
-- Designed a Notification System Proof of Concept (PoC) to improve communication within the
-  application, based on sending email when the tutor marks the submission as "resubmit."
+- Designed a Notification System Proof of Concept (PoC) to improve communication
+  within the application, based on sending email when the tutor marks the
+  submission as "resubmit."
 
 #### Migrate to Modern Codebase
 
@@ -319,22 +358,23 @@ Tutorial Videos on Setting Up Your Local Development Environment
 
 #### Documentation Improvement
 
-- Linked API documentation with usage examples for seamless understanding and navigation.
-- Enhanced the documentation backlog with detailed records and reference links for ongoing and
-  future development tasks.
-- Introduced new visualization elements in the documentation to make technical concepts more
-  accessible to stakeholders.
+- Linked API documentation with usage examples for seamless understanding and
+  navigation.
+- Enhanced the documentation backlog with detailed records and reference links
+  for ongoing and future development tasks.
+- Introduced new visualization elements in the documentation to make technical
+  concepts more accessible to stakeholders.
 - Enhanced Frontend Migration documentation.
 - Created general setup documentation.
 
 #### Backend Updates
 
-- Worked on refactoring organization management, including site administrator logic and organization
-  switch logic for improved performance.
-- Introduced APIs for historical tracking of Target Grade changes, providing clear audit trails and
-  data accuracy.
-- Fixed a bug related to adjusting the automatic extension on "resubmit," ensuring it is awarded one
-  week from the date of feedback.
+- Worked on refactoring organization management, including site administrator
+  logic and organization switch logic for improved performance.
+- Introduced APIs for historical tracking of Target Grade changes, providing
+  clear audit trails and data accuracy.
+- Fixed a bug related to adjusting the automatic extension on "resubmit,"
+  ensuring it is awarded one week from the date of feedback.
 - Worked on ZIP File Upload and their subsequent presentation to the tutors.
 
 #### List of Completed Deliverables
@@ -374,16 +414,17 @@ Tutorial Videos on Setting Up Your Local Development Environment
 
 ### Roadmap
 
-Working on implementing a Google Sign-In functionality, simplifying the user login process and
-enhancing authentication security.
+Working on implementing a Google Sign-In functionality, simplifying the user
+login process and enhancing authentication security.
 
-Developed a new visualization for Target Grades and Charts, improving analytics and reporting
-features for users.
+Developed a new visualization for Target Grades and Charts, improving analytics
+and reporting features for users.
 
 Adding support for video uploads based on Panopto integration.
 
-Designed a Notification System Proof of Concept (PoC) to improve communication within the
-application, based on sending email when the tutor marks the submission as resubmit.
+Designed a Notification System Proof of Concept (PoC) to improve communication
+within the application, based on sending email when the tutor marks the
+submission as resubmit.
 
 Documentation Website – Enhancement
 
@@ -395,112 +436,129 @@ Frontend Migration – AngularJS and CoffeeScript to Angular and TypeScript
 
 #### Git and GitHub Training
 
-During the onboarding process, it is crucial for students to gain a strong understanding of Git and
-GitHub, as these tools are integral to the project. Students will be required to create pull
-requests and collaborate effectively within the repository.
+During the onboarding process, it is crucial for students to gain a strong
+understanding of Git and GitHub, as these tools are integral to the project.
+Students will be required to create pull requests and collaborate effectively
+within the repository.
 
-To support this, the capstone project includes valuable resources such as Git and GitHub training
-websites and demo videos, which are attached to this document. These resources are designed to
-provide a comprehensive foundation in version control and project collaboration.
+To support this, the capstone project includes valuable resources such as Git
+and GitHub training websites and demo videos, which are attached to this
+document. These resources are designed to provide a comprehensive foundation in
+version control and project collaboration.
 
 #### Familiarity with Planner Boards and Agile Methodology
 
-It is essential for students to become proficient in using planner boards and understanding agile
-methodologies. One of the recurring challenges this trimester has been a lack of consistency in
-updating task cards and associating pull requests with corresponding tasks.
+It is essential for students to become proficient in using planner boards and
+understanding agile methodologies. One of the recurring challenges this
+trimester has been a lack of consistency in updating task cards and associating
+pull requests with corresponding tasks.
 
-To address this, students must ensure they actively maintain and update planner boards, enabling the
-team to stay aligned and contribute effectively. This practice will promote smoother collaboration
-and more efficient project progress.
+To address this, students must ensure they actively maintain and update planner
+boards, enabling the team to stay aligned and contribute effectively. This
+practice will promote smoother collaboration and more efficient project
+progress.
 
 ### Lessons Learned
 
 #### Mentorship and Leadership
 
-Mentors were very helpful and guided us well, making sure we completed our tasks on time. However,
-many students didn’t attend mentor meetings, which made it hard for them to understand tasks and
-finish them. Attending these meetings is important to stay on track.
+Mentors were very helpful and guided us well, making sure we completed our tasks
+on time. However, many students didn’t attend mentor meetings, which made it
+hard for them to understand tasks and finish them. Attending these meetings is
+important to stay on track.
 
 #### Planner Board and Task Updates
 
-Students didn’t know how to use the planner board properly, so tasks and cards weren’t updated on
-time. This caused delays and confusion in the team. Learning how to use the planner board will help
-everyone stay organized and work together better.
+Students didn’t know how to use the planner board properly, so tasks and cards
+weren’t updated on time. This caused delays and confusion in the team. Learning
+how to use the planner board will help everyone stay organized and work together
+better.
 
 #### Frontend Tasks and GitHub Knowledge
 
-Many students struggled with front-end migration tasks because they didn’t know enough about GitHub
-or how to use it well. This delayed their work. Training on tools like Git and GitHub is very
-important so that tasks can be done faster and more easily.
+Many students struggled with front-end migration tasks because they didn’t know
+enough about GitHub or how to use it well. This delayed their work. Training on
+tools like Git and GitHub is very important so that tasks can be done faster and
+more easily.
 
 #### Skill Growth and Learning
 
-To meet project needs, students need to improve their skills regularly. Learning tools, time
-management, and problem-solving are key areas to focus on.
+To meet project needs, students need to improve their skills regularly. Learning
+tools, time management, and problem-solving are key areas to focus on.
 
 #### Time Management
 
-Many tasks were delayed because students didn’t manage their time well. Creating clear plans,
-updating progress, and sticking to timelines can help avoid this in the future.
+Many tasks were delayed because students didn’t manage their time well. Creating
+clear plans, updating progress, and sticking to timelines can help avoid this in
+the future.
 
 ### Product Development Life Cycle
 
-We continue to use Agile methodologies to deliver updates and new features for OnTrack. Our approach
-includes 2-week sprints focused on completing tasks, and weekly stand-up meetings to assess
-progress, share updates, discuss roadblocks, and assign new tasks via Teams Planner cards.
+We continue to use Agile methodologies to deliver updates and new features for
+OnTrack. Our approach includes 2-week sprints focused on completing tasks, and
+weekly stand-up meetings to assess progress, share updates, discuss roadblocks,
+and assign new tasks via Teams Planner cards.
 
 #### New Tasks
 
-New tasks are assigned by the project mentor during the weekly stand-up meetings. Once you are
-assigned a task, be sure to assign yourself to the corresponding Teams Planner card and attach your
-draft or completed pull request when you begin work.
+New tasks are assigned by the project mentor during the weekly stand-up
+meetings. Once you are assigned a task, be sure to assign yourself to the
+corresponding Teams Planner card and attach your draft or completed pull request
+when you begin work.
 
-If you have an idea for a new feature or enhancement, schedule a meeting with the project mentor to
-discuss it. Upon approval, create a new card or backlog column in Teams Planner to track the task.
-If the feature is large, start researching the benefits and challenges, and create a Spike document,
-which can be committed to the documentation repository.
+If you have an idea for a new feature or enhancement, schedule a meeting with
+the project mentor to discuss it. Upon approval, create a new card or backlog
+column in Teams Planner to track the task. If the feature is large, start
+researching the benefits and challenges, and create a Spike document, which can
+be committed to the documentation repository.
 
 Spike templates are available in the documentation repository.
 
 #### Definition of Done
 
-A task is considered complete once it has been fully tested, functions as expected, and is
-documented in a well-organized pull request. The task must also undergo peer review and be approved
-by your mentor. Ensure that the corresponding Teams Planner card is updated and keep in
-communication with your reviewer and mentor until your contribution is merged into the upstream
+A task is considered complete once it has been fully tested, functions as
+expected, and is documented in a well-organized pull request. The task must also
+undergo peer review and be approved by your mentor. Ensure that the
+corresponding Teams Planner card is updated and keep in communication with your
+reviewer and mentor until your contribution is merged into the upstream
 `doubtfire-lms` repository.
 
 #### Task Review
 
-Each pull request requires a mandatory peer review before a mentor review. After creating the pull
-request, contact a teammate to review it. Tag them as the reviewer in both the Teams Planner card
-and the GitHub pull request.
+Each pull request requires a mandatory peer review before a mentor review. After
+creating the pull request, contact a teammate to review it. Tag them as the
+reviewer in both the Teams Planner card and the GitHub pull request.
 
-As a reviewer, ensure that you test the code by pulling the changes locally and reviewing the
-syntax, logic, and output. If any changes are needed, update the contribution and notify the
-reviewer. Once the updates are made, the pull request will be automatically updated.
+As a reviewer, ensure that you test the code by pulling the changes locally and
+reviewing the syntax, logic, and output. If any changes are needed, update the
+contribution and notify the reviewer. Once the updates are made, the pull
+request will be automatically updated.
 
-After the peer review is complete, notify the mentor for their review. Once approved, you can submit
-the pull request to the upstream repository for the final review.
+After the peer review is complete, notify the mentor for their review. Once
+approved, you can submit the pull request to the upstream repository for the
+final review.
 
 #### Testing
 
-For frontend changes, test the functionality in the browser or run specification tests as needed.
-For backend changes, use browser interactions or tools like Postman to test functionality.
-Additionally, GitHub CI Actions will run tests automatically when changes are pushed.
+For frontend changes, test the functionality in the browser or run specification
+tests as needed. For backend changes, use browser interactions or tools like
+Postman to test functionality. Additionally, GitHub CI Actions will run tests
+automatically when changes are pushed.
 
-In the pull request template, include detailed instructions on how others can test your changes.
-Always provide before-and-after screenshots to show the outcome of your modifications.
+In the pull request template, include detailed instructions on how others can
+test your changes. Always provide before-and-after screenshots to show the
+outcome of your modifications.
 
 #### Branching Strategy
 
-When starting a new contribution, fork all three `thoth-tech` repositories (`deploy`, `web`, and
-`API`) to your GitHub profile. Create a new branch from the development branch of the relevant
-repository. For example, for frontend migrations, you would create a branch from the `doubtfire-web`
-development branch.
+When starting a new contribution, fork all three `thoth-tech` repositories
+(`deploy`, `web`, and `API`) to your GitHub profile. Create a new branch from
+the development branch of the relevant repository. For example, for frontend
+migrations, you would create a branch from the `doubtfire-web` development
+branch.
 
-Follow the **Branch Prefixes and Commit Message Format** in the Contributing Guide when naming
-branches and creating commits.
+Follow the **Branch Prefixes and Commit Message Format** in the Contributing
+Guide when naming branches and creating commits.
 
 ### Product Architecture
 
@@ -509,23 +567,28 @@ OnTrack is built using four main components:
 - **Frontend Client**: Responsible for user interactions
 - **Backend API**: Handles requests and serves data
 - **Database**: Stores application data
-- **Deployment Infrastructure**: Ensures that OnTrack is properly deployed and maintained
+- **Deployment Infrastructure**: Ensures that OnTrack is properly deployed and
+  maintained
 
 #### Tech Stack
 
-- **Frontend**: Currently being migrated from AngularJS and CoffeeScript to Angular 17 and
-  TypeScript. The stack also includes HTML, SCSS, and Tailwind CSS.
+- **Frontend**: Currently being migrated from AngularJS and CoffeeScript to
+  Angular 17 and TypeScript. The stack also includes HTML, SCSS, and Tailwind
+  CSS.
 
-- **Backend**: Built on Ruby on Rails with the Grape Framework. It uses MariaDB as the database
-  engine. Docker is used for deployment and local development.
+- **Backend**: Built on Ruby on Rails with the Grape Framework. It uses MariaDB
+  as the database engine. Docker is used for deployment and local development.
 
 ### Source Code
 
 The following are the relevant GitHub repositories to this project:
 
-- **Deployment**: [thoth-tech/doubtfire-deploy](https://github.com/thoth-tech/doubtfire-deploy)
-- **Frontend**: [thoth-tech/doubtfire-web](https://github.com/thoth-tech/doubtfire-web)
-- **Backend**: [thoth-tech/doubtfire-api](https://github.com/thoth-tech/doubtfire-api)
+- **Deployment**:
+  [thoth-tech/doubtfire-deploy](https://github.com/thoth-tech/doubtfire-deploy)
+- **Frontend**:
+  [thoth-tech/doubtfire-web](https://github.com/thoth-tech/doubtfire-web)
+- **Backend**:
+  [thoth-tech/doubtfire-api](https://github.com/thoth-tech/doubtfire-api)
 - **OnTrack Documentation Website**:
   [thoth-tech/doubtfire-astro](https://github.com/thoth-tech/doubtfire-astro)
 - **Documentation**:
@@ -538,73 +601,78 @@ The following are the relevant GitHub repositories to this project:
 ### Login Credentials
 
 Refer to the Working with Dev Containers section of the
-[Contributing Guide](https://github.com/thoth-tech/doubtfire-deploy/blob/main/CONTRIBUTING.md) for
-authentication credentials for locally deployed OnTrack.
+[Contributing Guide](https://github.com/thoth-tech/doubtfire-deploy/blob/main/CONTRIBUTING.md)
+for authentication credentials for locally deployed OnTrack.
 
 ## Project 2: SplashKit
 
 ### Project Overview
 
-SplashKit is a versatile and user-friendly programming framework designed to introduce students to
-programming through the engaging process of 2D game development. Primarily coded in C++, SplashKit
-also supports a variety of other languages, including C#, Python, Pascal, and, more recently,
-JavaScript.
+SplashKit is a versatile and user-friendly programming framework designed to
+introduce students to programming through the engaging process of 2D game
+development. Primarily coded in C++, SplashKit also supports a variety of other
+languages, including C#, Python, Pascal, and, more recently, JavaScript.
 
-The SplashKit Software Development Kit (SDK) offers seamless integration with popular development
-environments, enabling the easy incorporation of robust graphics and game development capabilities
-into projects. With a single codebase, developers can create games and applications that run across
-multiple platforms, including Windows, macOS, and Linux. The SplashKit SDK is renowned for its
-intuitive interface and a comprehensive set of features that streamline the game development
-process.
+The SplashKit Software Development Kit (SDK) offers seamless integration with
+popular development environments, enabling the easy incorporation of robust
+graphics and game development capabilities into projects. With a single
+codebase, developers can create games and applications that run across multiple
+platforms, including Windows, macOS, and Linux. The SplashKit SDK is renowned
+for its intuitive interface and a comprehensive set of features that streamline
+the game development process.
 
-Additionally, SplashKit provides an extensive array of detailed documentation and tutorials,
-designed to help students get started quickly and maximise their use of the SDK. This wealth of
-resources empowers learners to progress at their own pace and fully explore the capabilities of
-SplashKit, making it an invaluable tool for both beginners and more advanced users.
+Additionally, SplashKit provides an extensive array of detailed documentation
+and tutorials, designed to help students get started quickly and maximise their
+use of the SDK. This wealth of resources empowers learners to progress at their
+own pace and fully explore the capabilities of SplashKit, making it an
+invaluable tool for both beginners and more advanced users.
 
 SplashKit ran the following projects during T3 2024:
 
 #### **SplashKit Website & Tutorials**
 
-Powered by the Starlight framework, the revamped SplashKit website aims to offer an enriched and
-user-friendly experience for developers and learners. The SplashKit Website will also feature
-tutorials aimed at helping students learn and explore SplashKit's functionality. The focus is on
-developing smaller, high-quality tutorials across C++, C#, and Python, rather than extensive series.
+Powered by the Starlight framework, the revamped SplashKit website aims to offer
+an enriched and user-friendly experience for developers and learners. The
+SplashKit Website will also feature tutorials aimed at helping students learn
+and explore SplashKit's functionality. The focus is on developing smaller,
+high-quality tutorials across C++, C#, and Python, rather than extensive series.
 
 #### **SplashKit Expansion**
 
-The Expansion team is responsible for maintaining and enhancing the SplashKit core. This includes
-bug fixes, feature improvements, and refining installation and usage workflows through package
-creation and addressing installation issues.
+The Expansion team is responsible for maintaining and enhancing the SplashKit
+core. This includes bug fixes, feature improvements, and refining installation
+and usage workflows through package creation and addressing installation issues.
 
 #### **SplashKit Online**
 
-SplashKit Online is developing a web-based IDE that allows students to write and run code directly
-in their browsers. Initially launched as a prototype in 2023, the 2024 goal is to mature this tool
-into a comprehensive product, including C# support and an embeddable version for the SplashKit
-website.
+SplashKit Online is developing a web-based IDE that allows students to write and
+run code directly in their browsers. Initially launched as a prototype in 2023,
+the 2024 goal is to mature this tool into a comprehensive product, including C#
+support and an embeddable version for the SplashKit website.
 
-_SplashKit also has two other main lines of effort, however these did not be run in T3 2024:_
+_SplashKit also has two other main lines of effort, however these did not be run
+in T3 2024:_
 
 #### **Arcade Machines**
 
-The university has acquired four arcade machines equipped with Raspberry Pi 3B+ units, designed to
-showcase games developed with SplashKit. The short-term goal is to prepare these platforms for
-students to display their SplashKit creations. The medium-term goal is to streamline the process for
-first-year students to easily upload and test their games.
+The university has acquired four arcade machines equipped with Raspberry Pi 3B+
+units, designed to showcase games developed with SplashKit. The short-term goal
+is to prepare these platforms for students to display their SplashKit creations.
+The medium-term goal is to streamline the process for first-year students to
+easily upload and test their games.
 
 #### **Game Development**
 
-The Game Development team is dedicated to creating and enhancing games that run on the arcade
-machines. Their mission is to demonstrate SplashKit's capabilities and inspire students by
-showcasing what can be achieved with the framework.
+The Game Development team is dedicated to creating and enhancing games that run
+on the arcade machines. Their mission is to demonstrate SplashKit's capabilities
+and inspire students by showcasing what can be achieved with the framework.
 
 ### User Manual
 
 A suite of resources for getting started with SplashKit can be found on the
-[SplashKit Product Page](https://thoth-tech.netlify.app/products/splashkit/) of the Thoth Tech
-Documentation site. The below details some specific contributing documents that sit in the
-repositories for the relevant teams.
+[SplashKit Product Page](https://thoth-tech.netlify.app/products/splashkit/) of
+the Thoth Tech Documentation site. The below details some specific contributing
+documents that sit in the repositories for the relevant teams.
 
 #### Arcade Machines
 
@@ -635,98 +703,113 @@ repositories for the relevant teams.
 
 ##### Ray-Tracing and Collision Functions
 
-- **Bitmap and Sprite Ray Collision Functions**: Enabled advanced ray-tracing in 2D and 3D
-  environments with bitmap-ray and sprite-ray collision detection for more complex visual effects.
-- **Ray Intersection Functions for Primitive Shapes**: Added ray intersection functions for
-  rectangles, circles, triangles, and quads, providing detailed intersection data or Boolean results
-  for ease of use.
+- **Bitmap and Sprite Ray Collision Functions**: Enabled advanced ray-tracing in
+  2D and 3D environments with bitmap-ray and sprite-ray collision detection for
+  more complex visual effects.
+- **Ray Intersection Functions for Primitive Shapes**: Added ray intersection
+  functions for rectangles, circles, triangles, and quads, providing detailed
+  intersection data or Boolean results for ease of use.
 
-- **New Function - `quad_from`**: Developed `quad_from` to construct a quad around a segment with a
-  specified width, supporting advanced geometry operations.
+- **New Function - `quad_from`**: Developed `quad_from` to construct a quad
+  around a segment with a specified width, supporting advanced geometry
+  operations.
 
 - **Collision Classification and Resolution Functions**:
-  - **`calculate_collision_direction`**: Classifies collision direction between objects.
-  - **`resolve_collision`**: Resolves overlap without altering velocities, supporting AABB and pixel
-    collisions.
+  - **`calculate_collision_direction`**: Classifies collision direction between
+    objects.
+  - **`resolve_collision`**: Resolves overlap without altering velocities,
+    supporting AABB and pixel collisions.
 
-- **Additional Intersection Functions**: Introduced functions for collision detection between
-  different shape pairs:
-  - `circle_quad_intersect`, `rectangle_circle_intersect`, `triangle_quad_intersect`.
+- **Additional Intersection Functions**: Introduced functions for collision
+  detection between different shape pairs:
+  - `circle_quad_intersect`, `rectangle_circle_intersect`,
+    `triangle_quad_intersect`.
 
 - **Bug Fixes**:
-  - Resolved the `bitmap_bounding_circle` bug that impacted ray collision detection.
+  - Resolved the `bitmap_bounding_circle` bug that impacted ray collision
+    detection.
   - Fixed bug in `line_intersects_rect` for lines within rectangles.
   - Corrected tangent point bug for accurate collision behaviour.
 
 ##### Particle System
 
-- **Dynamic Particle Emission**: Emit particles from a circular area, supporting both continuous and
-  burst emission modes for diverse effects. Add randomness to particle size, speed, and direction
-  for natural, less uniform effects, enhancing realism in particle-based simulations.
+- **Dynamic Particle Emission**: Emit particles from a circular area, supporting
+  both continuous and burst emission modes for diverse effects. Add randomness
+  to particle size, speed, and direction for natural, less uniform effects,
+  enhancing realism in particle-based simulations.
 
-- **Lifespan and Removal Management**: Configure individual particle lifespans in milliseconds.
-  Automatically removes expired particles to ensure memory optimization. Detect and remove particles
-  that move off-screen, maintaining performance without manual intervention.
+- **Lifespan and Removal Management**: Configure individual particle lifespans
+  in milliseconds. Automatically removes expired particles to ensure memory
+  optimization. Detect and remove particles that move off-screen, maintaining
+  performance without manual intervention.
 
-- **Customizable Particle Appearance**: Define static or varying particle sizes and colours,
-  including support for gradient transitions over the particle’s lifetime. Smoothly fade particle
-  opacity over time, creating elegant effects like smoke dispersal or spark dimming. Specify
-  particle rendering order to prevent visual interference with UI or background elements.
+- **Customizable Particle Appearance**: Define static or varying particle sizes
+  and colours, including support for gradient transitions over the particle’s
+  lifetime. Smoothly fade particle opacity over time, creating elegant effects
+  like smoke dispersal or spark dimming. Specify particle rendering order to
+  prevent visual interference with UI or background elements.
 
-- **Motion and Dynamics**: Control particle speed and direction using an adjustable emission angle
-  range. Simulate gravity or deceleration for lifelike motion dynamics, such as falling leaves or
-  drifting snow.
+- **Motion and Dynamics**: Control particle speed and direction using an
+  adjustable emission angle range. Simulate gravity or deceleration for lifelike
+  motion dynamics, such as falling leaves or drifting snow.
 
-- **Emitter and System Management**: Dynamically reposition emitters, supporting static or relative
-  positioning for moving objects (e.g., following a character). Manage multiple independent particle
-  systems simultaneously, each with unique configurations and behaviors. Optimize performance by
-  updating all particles in a system collectively.
+- **Emitter and System Management**: Dynamically reposition emitters, supporting
+  static or relative positioning for moving objects (e.g., following a
+  character). Manage multiple independent particle systems simultaneously, each
+  with unique configurations and behaviors. Optimize performance by updating all
+  particles in a system collectively.
 
-- **Bug Fixes**: Resolved issues with **particle lifespan exceeding bounds**, ensuring consistent
-  removal at the correct time. Fixed **off-screen particle cleanup** to prevent memory leaks.
-  Addressed visual glitches related to overlapping particles in layered rendering.
+- **Bug Fixes**: Resolved issues with **particle lifespan exceeding bounds**,
+  ensuring consistent removal at the correct time. Fixed **off-screen particle
+  cleanup** to prevent memory leaks. Addressed visual glitches related to
+  overlapping particles in layered rendering.
 
 ##### Code Quality and Performance Enhancements
 
-- **Extensive Function Overloads**: Developed 24 overloads for `calculate_collision_direction` and
-  `resolve_collision` to ensure compatibility across all shape combinations.
+- **Extensive Function Overloads**: Developed 24 overloads for
+  `calculate_collision_direction` and `resolve_collision` to ensure
+  compatibility across all shape combinations.
 - **Precision Updates and Bug Fixes**:
-  - Updated sprite, geometry, and point methods for better precision (using `double` instead of
-    `float`).
-  - Fixed bugs in sprite collision and geometry functions, ensuring correct calculations at edges
-    and corners.
+  - Updated sprite, geometry, and point methods for better precision (using
+    `double` instead of `float`).
+  - Fixed bugs in sprite collision and geometry functions, ensuring correct
+    calculations at edges and corners.
   - Fixed a bug in Python for `replace_all` due to the parameter name.
-- **Code Duplication Reduction**: Minimized redundant code using void pointers and downcasting
-  techniques, improving code maintainability despite added complexity.
+- **Code Duplication Reduction**: Minimized redundant code using void pointers
+  and downcasting techniques, improving code maintainability despite added
+  complexity.
 
-- **Proposed Refactor for OOP Approach**: Suggested refactoring SplashKit to adopt an OOP approach
-  for better code structure, improving debugging and maintainability.
+- **Proposed Refactor for OOP Approach**: Suggested refactoring SplashKit to
+  adopt an OOP approach for better code structure, improving debugging and
+  maintainability.
 
 ##### Testing and Documentation
 
-- **Comprehensive Unit Tests**: Developed unit tests for sprites and geometry methods, ensuring the
-  robustness and reliability of core functions.
+- **Comprehensive Unit Tests**: Developed unit tests for sprites and geometry
+  methods, ensuring the robustness and reliability of core functions.
 
-- **Updated Geometry Methods**: Added and refined unit tests for geometry functions, addressing
-  precision issues and improving documentation clarity.
+- **Updated Geometry Methods**: Added and refined unit tests for geometry
+  functions, addressing precision issues and improving documentation clarity.
 
 - **Documentation Overhaul**:
   - Improved clarity of method descriptions, especially for edge cases (e.g.,
     `closest_point_on_circle`).
-  - Updated documentation for accuracy in sprite collision and geometry operations.
+  - Updated documentation for accuracy in sprite collision and geometry
+    operations.
 
 ##### Input Validation and Conversion Functions
 
 - **New Input Validation Functions**:
   - `is_binary`, `is_hex`, `is_octal` for validating number formats.
 
-- **New Conversion Functions**: Added conversion functions to handle various numeric and encoding
-  formats:
-  - `dec_to_bin`, `bin_to_dec`, `hex_to_bin`, `bin_to_hex`, `oct_to_dec`, `dec_to_oct`, `hex_to_ct`,
-    `ct_to_hex`, `base64_encode`, `base64_decode`.
+- **New Conversion Functions**: Added conversion functions to handle various
+  numeric and encoding formats:
+  - `dec_to_bin`, `bin_to_dec`, `hex_to_bin`, `bin_to_hex`, `oct_to_dec`,
+    `dec_to_oct`, `hex_to_ct`, `ct_to_hex`, `base64_encode`, `base64_decode`.
 
 - **Mathematical Functions**: Introduced foundational mathematical functions:
-  - `calculate_square_root`, `is_prime_number`, `greatest_common_divisor`, `least_common_multiple`.
+  - `calculate_square_root`, `is_prime_number`, `greatest_common_divisor`,
+    `least_common_multiple`.
 
 ##### Networking and Address Functions
 
@@ -734,139 +817,149 @@ repositories for the relevant teams.
   - Added a new function `is_valid_ipv4` to validate IPv4 addresses using regex.
 
 - **MAC Address Conversion**:
-  - Added `mac_to_hex` and `hex_to_mac` for MAC address conversions between hexadecimal and standard
-    MAC format.
+  - Added `mac_to_hex` and `hex_to_mac` for MAC address conversions between
+    hexadecimal and standard MAC format.
 
 #### SplashKit Website & Tutorials
 
 - **Usage Example Generation Script Fixes**:
-  - Resolved bugs in the usage example generation script, resulting in a more efficient development
-    process.
+  - Resolved bugs in the usage example generation script, resulting in a more
+    efficient development process.
 
 - **Expanded Usage Examples**:
-  - Significantly expanded usage examples across various categories, enhancing the site's quality.
-    Additions include comprehensive examples for Graphics and Geometry functions, along with
-    completed examples for Physics, Utilities, and Terminal functions.
+  - Significantly expanded usage examples across various categories, enhancing
+    the site's quality. Additions include comprehensive examples for Graphics
+    and Geometry functions, along with completed examples for Physics,
+    Utilities, and Terminal functions.
 
 - **API Documentation Linkage**:
-  - Linked API documentation pages to their corresponding usage examples, improving user experience
-    and site navigation.
-  - Seamlessly linked function in the API documentation pages to their use cases in tutorials anad
-    guides for easier navigation across resources.
+  - Linked API documentation pages to their corresponding usage examples,
+    improving user experience and site navigation.
+  - Seamlessly linked function in the API documentation pages to their use cases
+    in tutorials anad guides for easier navigation across resources.
 
 - **Documentation Overhaul**:
-  - Overhauled the SplashKit documentation pages with a reorganized structure and new usage example
-    guides to enhance accessibility and usability.
+  - Overhauled the SplashKit documentation pages with a reorganized structure
+    and new usage example guides to enhance accessibility and usability.
 
 - **Enum Syntax Support Across Multiple Languages**:
-  - Added support for displaying enum syntax across multiple languages on the website, improving
-    accessibility for diverse users.
+  - Added support for displaying enum syntax across multiple languages on the
+    website, improving accessibility for diverse users.
 
 - **Updated README Files**:
-  - Updated multiple README files with additional information and a more structured format to
-    improve clarity.
+  - Updated multiple README files with additional information and a more
+    structured format to improve clarity.
 
 - **SplashKit Blog**:
-  - Introduced the SplashKit Blog as a proof of concept to centralize updates and news, enhancing
-    accessibility for users.
+  - Introduced the SplashKit Blog as a proof of concept to centralize updates
+    and news, enhancing accessibility for users.
 
 - **Updated Installation Guides**:
-  - Updated installation guides to streamline the process and added support for multiple Linux
-    distributions. Expanded VS Code installation guides now include Python-specific extensions.
+  - Updated installation guides to streamline the process and added support for
+    multiple Linux distributions. Expanded VS Code installation guides now
+    include Python-specific extensions.
 
 - **Python Developer Tools**:
-  - Added Python tools to language-specific pages for all operating systems, broadening support for
-    Python developers.
+  - Added Python tools to language-specific pages for all operating systems,
+    broadening support for Python developers.
 
 - **Linux Compatibility Fixes**:
-  - Addressed a Linux bash/zsh compatibility issue on the troubleshooting page, improving overall
-    flow and usability.
+  - Addressed a Linux bash/zsh compatibility issue on the troubleshooting page,
+    improving overall flow and usability.
 
 - **Community Engagement Tools**:
-  - Established a blog and contributor resources to encourage community feedback and tutorial
-    contributions.
+  - Established a blog and contributor resources to encourage community feedback
+    and tutorial contributions.
 
 - **SplashKit Online Integration**:
   - Integrated SplashKit Online into the Usage Examples pages.
-  - A dedicated SplashKit Online feature page has also been added to allow users to directly
-    interact with SplashKit Online.
-  - Created a SplashKit Online component for tutorials, allowing it to be incorporated into existing
-    and future tutorial pages.
+  - A dedicated SplashKit Online feature page has also been added to allow users
+    to directly interact with SplashKit Online.
+  - Created a SplashKit Online component for tutorials, allowing it to be
+    incorporated into existing and future tutorial pages.
 
 - **Custom Accordion Button**:
-  - Added a custom accordion button that allows users to add their own content as a slot. Users can
-    also apply custom styling to both the button and its content, offering greater flexibility and
-    control over the presentation.
+  - Added a custom accordion button that allows users to add their own content
+    as a slot. Users can also apply custom styling to both the button and its
+    content, offering greater flexibility and control over the presentation.
 
 - **SplashKit Physics Tutorial Series Enhancements**:
-  - Reviewed and adjusted existing physics tutorials to improve clarity, update content, and ensure
-    alignment with project standards.
+  - Reviewed and adjusted existing physics tutorials to improve clarity, update
+    content, and ensure alignment with project standards.
   - Introduced 3 new raycasting tutorials:
     - Basics
     - Illumination
     - 2D to 3D Projection
-  - Added `.cpp` files to simplify integration with corresponding `.mdx` files and enhance SplashKit
-    Online functionality.
+  - Added `.cpp` files to simplify integration with corresponding `.mdx` files
+    and enhance SplashKit Online functionality.
 
-- **SplashKit vs No SplashKit Comparison Programs In Support of _Beyond SplashKit_ Initiative**:
-  - Added various programs to compare SplashKit versus No SplashKit versions including Math,
-    Cryptography, Graphics, and Audio.
-    - The SplashKit versions demonstrate the abstraction provided by the SDK to simplify complexity
-    - The No SplashKit versions show the underlying processes that occur in the backend when certain
-      SplashKit functions are called, providing a deeper understanding of the SDK's operations.
-    - Added a nested tab in the C++ section of the usage examples specifically for the Beyond
-      SplashKit tutorials.
-    - Updated the CONTRIBUTING file to include guidelines for file naming conventions for Beyond
-      SplashKit files:
+- **SplashKit vs No SplashKit Comparison Programs In Support of _Beyond
+  SplashKit_ Initiative**:
+  - Added various programs to compare SplashKit versus No SplashKit versions
+    including Math, Cryptography, Graphics, and Audio.
+    - The SplashKit versions demonstrate the abstraction provided by the SDK to
+      simplify complexity
+    - The No SplashKit versions show the underlying processes that occur in the
+      backend when certain SplashKit functions are called, providing a deeper
+      understanding of the SDK's operations.
+    - Added a nested tab in the C++ section of the usage examples specifically
+      for the Beyond SplashKit tutorials.
+    - Updated the CONTRIBUTING file to include guidelines for file naming
+      conventions for Beyond SplashKit files:
 
 - **Algolia DocSearch Integration**:
-  - Integrated Algolia DocSearch into the SplashKit website for improved search functionality with
-    custom ranking and new features to save recent and favourite results.
+  - Integrated Algolia DocSearch into the SplashKit website for improved search
+    functionality with custom ranking and new features to save recent and
+    favourite results.
 
 - **Colour Generation and Selection Tools**:
-  - **Colour Generator**: A tool for visualising and generating precise RGB(A) and HSB colour
-    values, with real-time visual feedback. The tool also provides corresponding SplashKit functions
-    in C++, C#, and Python for easy integration.
-  - **Colour Palette**: An interactive tool displaying SplashKit's predefined colours, allowing
-    users to select colours and see how to implement them in their projects.
+  - **Colour Generator**: A tool for visualising and generating precise RGB(A)
+    and HSB colour values, with real-time visual feedback. The tool also
+    provides corresponding SplashKit functions in C++, C#, and Python for easy
+    integration.
+  - **Colour Palette**: An interactive tool displaying SplashKit's predefined
+    colours, allowing users to select colours and see how to implement them in
+    their projects.
 
 - **Create New Troubleshooting Page for MacOS: zshrc Issue**:
-  - Addressed the ModuleNotFoundError issue by guiding users to update their .zshrc file to properly
-    link to the Homebrew-installed Python version.
+  - Addressed the ModuleNotFoundError issue by guiding users to update their
+    .zshrc file to properly link to the Homebrew-installed Python version.
 
 - **Tutorials Reviews**:
-  - Various tutorials have been reviewed and updated to enhance their documentation and improve
-    readability, making the guides more user-friendly.
+  - Various tutorials have been reviewed and updated to enhance their
+    documentation and improve readability, making the guides more user-friendly.
 
 #### SplashKit Online
 
 - **Notification System Updates**:
-  - Resolved visibility issues with compilation and runtime alerts, improving user experience by
-    ensuring notifications remain visible throughout processes.
+  - Resolved visibility issues with compilation and runtime alerts, improving
+    user experience by ensuring notifications remain visible throughout
+    processes.
 
 - **SplashKit Submodule Sync**:
-  - Synced SplashKit Online's submodule reference with the latest version of SplashKit, ensuring
-    compatibility with the most recent features and bug fixes.
+  - Synced SplashKit Online's submodule reference with the latest version of
+    SplashKit, ensuring compatibility with the most recent features and bug
+    fixes.
 
 - **Action Queues Implementation**:
-  - Implemented action queues to address concurrency issues, enabling synchronous execution of
-    actions and enhancing stability within the IDE.
+  - Implemented action queues to address concurrency issues, enabling
+    synchronous execution of actions and enhancing stability within the IDE.
 
 - **Project Loading via URL**:
-  - Enabled users to load project zip files directly via a URL, simplifying project loading and
-    improving ease of use for developers.
+  - Enabled users to load project zip files directly via a URL, simplifying
+    project loading and improving ease of use for developers.
 
 - **SplashKit Online IDE Integration**:
-  - Integrated the SplashKit Online IDE into the main website, providing seamless access and
-    interaction with the library directly from the site.
+  - Integrated the SplashKit Online IDE into the main website, providing
+    seamless access and interaction with the library directly from the site.
 
 - **Load Time Improvements**:
-  - Optimized loading times by storing pre-decompressed versions of assets, improving performance
-    and user experience during project loading.
+  - Optimized loading times by storing pre-decompressed versions of assets,
+    improving performance and user experience during project loading.
 
 - **Autocomplete Functionality**:
-  - Introduced autocomplete to assist developers in typing out functions and parameters, enhancing
-    productivity and reducing coding errors.
+  - Introduced autocomplete to assist developers in typing out functions and
+    parameters, enhancing productivity and reducing coding errors.
 
 #### List of Completed Deliverables
 
@@ -1272,308 +1365,356 @@ repositories for the relevant teams.
 
 #### SplashKit Expansion
 
-- **Comprehensive Testing and Bug Fixing**: Develop a robust test suite for SplashKit
-  functionalities, including procedural and OOP versions, to ensure stability across the library.
-- **Enhanced Raspberry Pi Support**: Add advanced GPIO control features and ensure compatibility
-  with the latest Raspberry Pi models, keeping SplashKit relevant for IoT projects and expanding its
-  potential use cases.
-- **Rust Translation**: Translate the SplashKit framework into Rust, expanding its usability for a
-  wider audience and enabling developers in other ecosystems to leverage SplashKit's functionality.
-- **Enhanced Input Handling**: Implement support for a wider variety of input devices, such as game
-  controllers, VR headsets, and external sensors. This would make SplashKit even more versatile for
-  a range of interactive applications beyond just keyboard and mouse input.
-- **Fix Pascal Compilation**: Fix the issue where the resulting execuatable from pascal programs not
-  being recognised as a executable.
+- **Comprehensive Testing and Bug Fixing**: Develop a robust test suite for
+  SplashKit functionalities, including procedural and OOP versions, to ensure
+  stability across the library.
+- **Enhanced Raspberry Pi Support**: Add advanced GPIO control features and
+  ensure compatibility with the latest Raspberry Pi models, keeping SplashKit
+  relevant for IoT projects and expanding its potential use cases.
+- **Rust Translation**: Translate the SplashKit framework into Rust, expanding
+  its usability for a wider audience and enabling developers in other ecosystems
+  to leverage SplashKit's functionality.
+- **Enhanced Input Handling**: Implement support for a wider variety of input
+  devices, such as game controllers, VR headsets, and external sensors. This
+  would make SplashKit even more versatile for a range of interactive
+  applications beyond just keyboard and mouse input.
+- **Fix Pascal Compilation**: Fix the issue where the resulting execuatable from
+  pascal programs not being recognised as a executable.
 
 #### SplashKit Website & Tutorials
 
-- **Expand Onboarding Hub**: Build a detailed resource centre with learning paths, guides, and
-  tutorial templates.
-- **Advanced Tutorials**: Develop in-depth tutorials on AI and advanced game development topics.
-- **Comprehensive Usage Examples**: Create examples for every SplashKit function to improve
-  accessibility for students.
-- **Beyond SplashKit Projects**: Develop resources showcasing how to build applications without
-  SplashKit.
-- **Data Analytics Integration**: Integrate data analytics to track the most-viewed pages on the
-  website, facilitating data-driven decisions to improve user engagement.
-- **GitHub Page Deployment**: Migrate SplashKit and Thoth Tech Documentation websites to GitHub
-  pages and deploying previews for pull requests.
+- **Expand Onboarding Hub**: Build a detailed resource centre with learning
+  paths, guides, and tutorial templates.
+- **Advanced Tutorials**: Develop in-depth tutorials on AI and advanced game
+  development topics.
+- **Comprehensive Usage Examples**: Create examples for every SplashKit function
+  to improve accessibility for students.
+- **Beyond SplashKit Projects**: Develop resources showcasing how to build
+  applications without SplashKit.
+- **Data Analytics Integration**: Integrate data analytics to track the
+  most-viewed pages on the website, facilitating data-driven decisions to
+  improve user engagement.
+- **GitHub Page Deployment**: Migrate SplashKit and Thoth Tech Documentation
+  websites to GitHub pages and deploying previews for pull requests.
 
 #### SplashKit Online
 
-- **Expanded Project Management**: Add tools for creating, saving, loading, and managing multiple
-  projects with version control.
-- **Interface Improvements**: Refine layouts and workflows, and introduce debugging tools like
-  breakpoints and code autocomplete.
-- **Collaborative Features**: Implement real-time collaboration tools for shared project work.
-- **C# Support**: Continue developing browser-based C# compilation and execution features.
+- **Expanded Project Management**: Add tools for creating, saving, loading, and
+  managing multiple projects with version control.
+- **Interface Improvements**: Refine layouts and workflows, and introduce
+  debugging tools like breakpoints and code autocomplete.
+- **Collaborative Features**: Implement real-time collaboration tools for shared
+  project work.
+- **C# Support**: Continue developing browser-based C# compilation and execution
+  features.
 
 #### Game Development
 
 - **Establish Standardised Implementation Patterns**:
-  - Enforce the decoupling of data/functionality and state/render patterns to improve modularity and
-    maintainability.
-  - Develop and document a prescribed implementation pattern to ensure consistency and quality
-    across all projects.
+  - Enforce the decoupling of data/functionality and state/render patterns to
+    improve modularity and maintainability.
+  - Develop and document a prescribed implementation pattern to ensure
+    consistency and quality across all projects.
 
 - **Develop a "10 Minute Game"**:
-  - Collaboratively plan and execute the development of a simple game (e.g., idle game, tower
-    defence, or survivor.io-like).
-  - Prioritise implementing core game mechanics in the first sprint to establish a functional
-    baseline.
-  - Dedicate the latter half of the trimester to improving visual representation, adding "juice,"
-    and creating variations of core game elements (e.g., enemies, powerups, weapons).
-  - This approach ensures core functionality is completed within a single trimester, while
-    additional features are developed using a standardised interface that integrates seamlessly with
-    the core game types.
+  - Collaboratively plan and execute the development of a simple game (e.g.,
+    idle game, tower defence, or survivor.io-like).
+  - Prioritise implementing core game mechanics in the first sprint to establish
+    a functional baseline.
+  - Dedicate the latter half of the trimester to improving visual
+    representation, adding "juice," and creating variations of core game
+    elements (e.g., enemies, powerups, weapons).
+  - This approach ensures core functionality is completed within a single
+    trimester, while additional features are developed using a standardised
+    interface that integrates seamlessly with the core game types.
 
 - **Iterate on Prescribed Patterns**:
-  - Adjust and refine the implementation pattern based on student feedback and practical
-    experiences.
+  - Adjust and refine the implementation pattern based on student feedback and
+    practical experiences.
 
 - **Generate Development Artifacts**:
-  - Create comprehensive documentation on the implementation of discrete game systems, including:
-    - Terrain generation systems (e.g., IDW, random walk, noise-based techniques).
+  - Create comprehensive documentation on the implementation of discrete game
+    systems, including:
+    - Terrain generation systems (e.g., IDW, random walk, noise-based
+      techniques).
     - 2D light marching.
     - Threaded state update and render patterns.
 
 - **Improve Documentation**:
-  - Address the lack of adequate documentation for existing games to significantly reduce onboarding
-    time for new contributors.
+  - Address the lack of adequate documentation for existing games to
+    significantly reduce onboarding time for new contributors.
   - For completed games, create:
     - UML diagrams.
     - Overviews of gameplay mechanics.
     - Guides for creating levels in each game's format.
-  - Improve the discoverability of existing documentation and resources by updating README files to
-    reflect current focus areas and ensuring all documentation is easy to find and navigate.
+  - Improve the discoverability of existing documentation and resources by
+    updating README files to reflect current focus areas and ensuring all
+    documentation is easy to find and navigate.
 
 - **Complete Core Functionality of Incomplete Games**:
-  - Focus on finishing key core functionalities for games currently in development (e.g., _Sky
-    Surge_, _Single Combat_).
+  - Focus on finishing key core functionalities for games currently in
+    development (e.g., _Sky Surge_, _Single Combat_).
 
 - **Extend Gameplay and Functionality of Completed Games**:
-  - Enhance and expand gameplay and features in completed games to ensure they remain engaging and
-    challenging for players.
+  - Enhance and expand gameplay and features in completed games to ensure they
+    remain engaging and challenging for players.
 
 #### Arcade Machine
 
 - **Consolidate Documentation**:
-  - Centralise all documentation in a single location or repository to improve accessibility and
-    ensure consistency across projects.
+  - Centralise all documentation in a single location or repository to improve
+    accessibility and ensure consistency across projects.
 
 - **Add Additional Modes to the Arcade Machine Software**:
-  - **Kiosk Mode**: Display only published games, making it ideal for showcasing at events or
-    exhibitions.
-  - **Normal Mode**: Show both published and test games, catering to developers and testers.
+  - **Kiosk Mode**: Display only published games, making it ideal for showcasing
+    at events or exhibitions.
+  - **Normal Mode**: Show both published and test games, catering to developers
+    and testers.
 
 - **Implement Voting System**:
-  - Integrate a voting system to give greater significance to the star ranking currently available
-    on the machines, enhancing user engagement and feedback mechanisms.
+  - Integrate a voting system to give greater significance to the star ranking
+    currently available on the machines, enhancing user engagement and feedback
+    mechanisms.
 
 - **Correct C# Compatibility for ARM**:
-  - Address the issue of .NET not running correctly in the emulated Raspberry Pi environment used
-    for C++ games, ensuring seamless compatibility for C# games.
+  - Address the issue of .NET not running correctly in the emulated Raspberry Pi
+    environment used for C++ games, ensuring seamless compatibility for C#
+    games.
 
 - **Implement Versioning for Compiled Games**:
-  - Introduce versioning to manage updates effectively, reducing potential issues with game
-    compatibility and ensuring a smooth update process.
+  - Introduce versioning to manage updates effectively, reducing potential
+    issues with game compatibility and ensuring a smooth update process.
 
-- **Continue Development of [Flipper](https://github.com/thoth-tech/flipper) Game Packaging Tool**:
-  - Advance the development of the _Flipper_ tool to streamline game packaging, deployment, and
-    compatibility across platforms.
+- **Continue Development of [Flipper](https://github.com/thoth-tech/flipper)
+  Game Packaging Tool**:
+  - Advance the development of the _Flipper_ tool to streamline game packaging,
+    deployment, and compatibility across platforms.
 
 ### Open Issues
 
 #### Communication Between Project Groups
 
-The company is still missing opportunities for collaboration and innovation, which have proven to be
-the greatest benefits of working together across teams. While this issue is largely
-personality-driven, fostering a culture of collaboration could set the company up for long-term
-success. Although no new initiatives for inter-team showcases or additional meetings were introduced
-this trimester, there has been notable progress in sharing problems and successes between teams.
-This has been especially beneficial as shared challenges often arise across projects, creating
-opportunities to reduce duplication in problem resolution.
+The company is still missing opportunities for collaboration and innovation,
+which have proven to be the greatest benefits of working together across teams.
+While this issue is largely personality-driven, fostering a culture of
+collaboration could set the company up for long-term success. Although no new
+initiatives for inter-team showcases or additional meetings were introduced this
+trimester, there has been notable progress in sharing problems and successes
+between teams. This has been especially beneficial as shared challenges often
+arise across projects, creating opportunities to reduce duplication in problem
+resolution.
 
-Moving forward, it is recommended that the company formalise opportunities for collaboration, such
-as regular inter-team syncs or a shared problem-solving forum. Establishing a framework to encourage
-open discussions on successes, blockers, and lessons learned could streamline workflows, reduce
-redundancies, and spark more innovative solutions across teams.
+Moving forward, it is recommended that the company formalise opportunities for
+collaboration, such as regular inter-team syncs or a shared problem-solving
+forum. Establishing a framework to encourage open discussions on successes,
+blockers, and lessons learned could streamline workflows, reduce redundancies,
+and spark more innovative solutions across teams.
 
 #### Onboarding Information and Codebase Exploration
 
-Despite efforts to improve onboarding this trimester, including creating more structured handover
-documents and documentation for tools and processes, onboarding remains a significant challenge.
-This is particularly evident during intensive trimesters, where time constraints amplify the
-difficulty of quickly bringing new team members up to speed. Some new team members struggled to
-fully explore and understand the existing codebase, leading to inefficiencies and delayed
-contributions.
+Despite efforts to improve onboarding this trimester, including creating more
+structured handover documents and documentation for tools and processes,
+onboarding remains a significant challenge. This is particularly evident during
+intensive trimesters, where time constraints amplify the difficulty of quickly
+bringing new team members up to speed. Some new team members struggled to fully
+explore and understand the existing codebase, leading to inefficiencies and
+delayed contributions.
 
-While this issue has been partially mitigated through mentorship, onboarding sessions, and the
-introduction of the onboarding hub, there is still considerable room for refinement. The onboarding
-hub represents a step in the right direction, but further efforts are needed to improve its
-structure and content. Future cohorts would benefit from more organised repositories, clear and
-up-to-date developer guides, detailed setup instructions, and practical walkthroughs of key
-projects. Prioritising onboarding improvements will ensure new contributors can make meaningful
-contributions early in their engagement with the company.
+While this issue has been partially mitigated through mentorship, onboarding
+sessions, and the introduction of the onboarding hub, there is still
+considerable room for refinement. The onboarding hub represents a step in the
+right direction, but further efforts are needed to improve its structure and
+content. Future cohorts would benefit from more organised repositories, clear
+and up-to-date developer guides, detailed setup instructions, and practical
+walkthroughs of key projects. Prioritising onboarding improvements will ensure
+new contributors can make meaningful contributions early in their engagement
+with the company.
 
 #### Task Review Bottlenecks
 
-The process of requiring two peer reviews and a mentor review before marking tasks as complete,
-while rigorous, led to a backlog of tasks awaiting review. This created bottlenecks, particularly
-toward the end of the trimester, leaving many tasks in progress but not officially completed. Future
-teams could address this by re-evaluating the review process, potentially relaxing the requirement
+The process of requiring two peer reviews and a mentor review before marking
+tasks as complete, while rigorous, led to a backlog of tasks awaiting review.
+This created bottlenecks, particularly toward the end of the trimester, leaving
+many tasks in progress but not officially completed. Future teams could address
+this by re-evaluating the review process, potentially relaxing the requirement
 for smaller tasks or creating a more structured review schedule to avoid delays.
 
 #### Lack of Strategic Vision
 
-One of the key challenges faced by the company is the absence of a cohesive strategic vision guiding
-the development efforts. While many contributors are engaged in coding or creating projects, these
-efforts often lack alignment with the company's broader goals and objectives. Instead, projects are
-sometimes undertaken or showcased without a clear understanding of their long-term value or impact
-on the company's mission. This results in inefficiencies and a lack of focus on delivering
-meaningful outcomes.
+One of the key challenges faced by the company is the absence of a cohesive
+strategic vision guiding the development efforts. While many contributors are
+engaged in coding or creating projects, these efforts often lack alignment with
+the company's broader goals and objectives. Instead, projects are sometimes
+undertaken or showcased without a clear understanding of their long-term value
+or impact on the company's mission. This results in inefficiencies and a lack of
+focus on delivering meaningful outcomes.
 
-The implementation of analytics features represents a step in the right direction toward adopting a
-more strategic, data-driven approach. Analytics tools can provide invaluable insights into user
-behaviour, engagement patterns, and areas for improvement. By leveraging these insights, the company
-can prioritise efforts that align with user needs and organisational objectives.
+The implementation of analytics features represents a step in the right
+direction toward adopting a more strategic, data-driven approach. Analytics
+tools can provide invaluable insights into user behaviour, engagement patterns,
+and areas for improvement. By leveraging these insights, the company can
+prioritise efforts that align with user needs and organisational objectives.
 
-Future contributors should consider further integration of analytics features on the SplashKit
-website and actively use the data to guide decision-making. Ethical data practices should also be
-firmly established to maintain trust and transparency. Emphasising strategic planning and the use of
-data-driven methodologies will help the company focus its resources on impactful projects, setting a
-clear path for sustained success.
+Future contributors should consider further integration of analytics features on
+the SplashKit website and actively use the data to guide decision-making.
+Ethical data practices should also be firmly established to maintain trust and
+transparency. Emphasising strategic planning and the use of data-driven
+methodologies will help the company focus its resources on impactful projects,
+setting a clear path for sustained success.
 
 ### Lessons Learned
 
 #### The Importance of Collaboration
 
-This trimester highlighted the transformative value of collaboration across teams. While individual
-teams often achieved significant progress, the most exciting and innovative contributions emerged
-when teams worked together. Sharing successes and challenges across teams not only led to creative
-problem-solving but also reduced redundancy and inefficiencies. However, fostering this
-collaborative culture requires active effort and leadership. Future cohorts should focus on
-strengthening inter-team communication and creating opportunities for shared problem-solving
-sessions or showcases to maintain momentum and innovation.
+This trimester highlighted the transformative value of collaboration across
+teams. While individual teams often achieved significant progress, the most
+exciting and innovative contributions emerged when teams worked together.
+Sharing successes and challenges across teams not only led to creative
+problem-solving but also reduced redundancy and inefficiencies. However,
+fostering this collaborative culture requires active effort and leadership.
+Future cohorts should focus on strengthening inter-team communication and
+creating opportunities for shared problem-solving sessions or showcases to
+maintain momentum and innovation.
 
 #### Refining Onboarding Practices
 
-Onboarding remains one of the most critical and challenging aspects of the capstone program. This
-trimester saw improvements through enhanced documentation and the onboarding hub, but the process
-still needs refinement to address the varying learning styles and technical backgrounds of incoming
-contributors. Clearer documentation, better-organised repositories, and a structured series of
-onboarding sessions tailored to different experience levels can significantly improve the onboarding
-experience and reduce time to productivity.
+Onboarding remains one of the most critical and challenging aspects of the
+capstone program. This trimester saw improvements through enhanced documentation
+and the onboarding hub, but the process still needs refinement to address the
+varying learning styles and technical backgrounds of incoming contributors.
+Clearer documentation, better-organised repositories, and a structured series of
+onboarding sessions tailored to different experience levels can significantly
+improve the onboarding experience and reduce time to productivity.
 
 #### Strategic Alignment is Key
 
-A major lesson this trimester was recognising the need for a clear, strategic alignment of projects
-with the company's long-term goals. Some contributions lacked a direct connection to the broader
-objectives of the company, with efforts sometimes focused more on showcasing individual skills
-rather than driving the company's mission forward. Initiatives like integrating analytics tools to
-make data-driven decisions are a step toward addressing this, but a cultural shift is needed to
-ensure all work aligns with company priorities. Future cohorts should emphasise the importance of
-aligning their efforts with the company's vision, using metrics and strategic planning to guide
-their contributions.
+A major lesson this trimester was recognising the need for a clear, strategic
+alignment of projects with the company's long-term goals. Some contributions
+lacked a direct connection to the broader objectives of the company, with
+efforts sometimes focused more on showcasing individual skills rather than
+driving the company's mission forward. Initiatives like integrating analytics
+tools to make data-driven decisions are a step toward addressing this, but a
+cultural shift is needed to ensure all work aligns with company priorities.
+Future cohorts should emphasise the importance of aligning their efforts with
+the company's vision, using metrics and strategic planning to guide their
+contributions.
 
 #### Balancing Innovation with Execution
 
-The trimester demonstrated that while innovation is critical, it must be balanced with the execution
-of foundational tasks. Some projects focused heavily on experimentation, which, while valuable,
-sometimes came at the expense of completing core functionality or addressing immediate needs. Future
-cohorts should strive to balance creative exploration with meeting the practical requirements of the
-company, ensuring that innovative ideas are grounded in tangible outcomes.
+The trimester demonstrated that while innovation is critical, it must be
+balanced with the execution of foundational tasks. Some projects focused heavily
+on experimentation, which, while valuable, sometimes came at the expense of
+completing core functionality or addressing immediate needs. Future cohorts
+should strive to balance creative exploration with meeting the practical
+requirements of the company, ensuring that innovative ideas are grounded in
+tangible outcomes.
 
 #### Documentation is an Ongoing Process
 
-This trimester reinforced the lesson that good documentation is a continuous, collaborative effort.
-While significant progress was made, gaps in documentation still caused delays and inefficiencies.
-Future contributors should be encouraged to document as they go, treating it as an integral part of
-their workflow rather than an afterthought.
+This trimester reinforced the lesson that good documentation is a continuous,
+collaborative effort. While significant progress was made, gaps in documentation
+still caused delays and inefficiencies. Future contributors should be encouraged
+to document as they go, treating it as an integral part of their workflow rather
+than an afterthought.
 
 ### Product Development Life Cycle
 
 #### New Tasks
 
-In SplashKit, individuals are encouraged to take ownership of tasks by assigning themselves to
-cards. Generally, you are free to assign yourself to any card unless explicitly noted otherwise. To
-ensure clarity and alignment with project goals, the process for creating and assigning new tasks is
-as follows:
+In SplashKit, individuals are encouraged to take ownership of tasks by assigning
+themselves to cards. Generally, you are free to assign yourself to any card
+unless explicitly noted otherwise. To ensure clarity and alignment with project
+goals, the process for creating and assigning new tasks is as follows:
 
-- **Identify a Problem or Opportunity**: If you notice an area for improvement or have an idea for a
-  new feature, discuss it with a mentor. This can be done during stand-ups, team meetings, or direct
-  one-on-one communication with the mentor.
-- **Approval Process**: Once the problem or opportunity is discussed, the mentor will evaluate its
-  relevance and feasibility. If approved, either you or the mentor will create a card in Planner
-  (located in Teams) to outline the task's scope and requirements.
-- **Assign Yourself to a Task**: After the card is created, you can assign yourself to it. Ensure
-  you fully understand the task's objectives and any dependencies before starting work.
-- **Collaborate if Necessary**: For larger or complex tasks, coordinate with other team members to
-  determine if the task can be shared or requires input from multiple contributors.
+- **Identify a Problem or Opportunity**: If you notice an area for improvement
+  or have an idea for a new feature, discuss it with a mentor. This can be done
+  during stand-ups, team meetings, or direct one-on-one communication with the
+  mentor.
+- **Approval Process**: Once the problem or opportunity is discussed, the mentor
+  will evaluate its relevance and feasibility. If approved, either you or the
+  mentor will create a card in Planner (located in Teams) to outline the task's
+  scope and requirements.
+- **Assign Yourself to a Task**: After the card is created, you can assign
+  yourself to it. Ensure you fully understand the task's objectives and any
+  dependencies before starting work.
+- **Collaborate if Necessary**: For larger or complex tasks, coordinate with
+  other team members to determine if the task can be shared or requires input
+  from multiple contributors.
 
 **Key Clarifications**:
 
-1. New tasks should always align with the trimester's priorities and company objectives.
-2. Avoid creating duplicate tasks by checking the project board or consulting with teammates.
+1. New tasks should always align with the trimester's priorities and company
+   objectives.
+2. Avoid creating duplicate tasks by checking the project board or consulting
+   with teammates.
 
-This refined process ensures tasks are effectively prioritised, assigned, and executed while
-maintaining a clear workflow and open communication.
+This refined process ensures tasks are effectively prioritised, assigned, and
+executed while maintaining a clear workflow and open communication.
 
 #### Definition of Done
 
-A task is only considered fully done once it has been completed, submitted as a pull request, and
-reviewed by two other students who approve it (see below). Once a mentor reviews it, it may be
-considered fully complete or potentially moved back to "doing" if deemed unsatisfactory.
+A task is only considered fully done once it has been completed, submitted as a
+pull request, and reviewed by two other students who approve it (see below).
+Once a mentor reviews it, it may be considered fully complete or potentially
+moved back to "doing" if deemed unsatisfactory.
 
-**Reflection**: While this process aims to maintain a high standard of quality and accountability,
-it has become apparent that the volume of pull requests often outpaces the capacity for reviews.
-This creates a backlog where many tasks remain "in progress" by the end of the trimester, awaiting
-review. To address this, it is recommended to revise the process to ensure timely reviews, such as
-implementing a structured review schedule, assigning specific reviewers for each task, or reducing
-the number of mandatory peer reviews to one in certain cases. Encouraging a culture of prioritising
-task reviews as part of daily workflows may help alleviate this bottleneck and increase the number
-of tasks marked as "completed" within the trimester.
+**Reflection**: While this process aims to maintain a high standard of quality
+and accountability, it has become apparent that the volume of pull requests
+often outpaces the capacity for reviews. This creates a backlog where many tasks
+remain "in progress" by the end of the trimester, awaiting review. To address
+this, it is recommended to revise the process to ensure timely reviews, such as
+implementing a structured review schedule, assigning specific reviewers for each
+task, or reducing the number of mandatory peer reviews to one in certain cases.
+Encouraging a culture of prioritising task reviews as part of daily workflows
+may help alleviate this bottleneck and increase the number of tasks marked as
+"completed" within the trimester.
 
 #### Task Review
 
-Two mandatory peer reviews must be completed before the mentor review. Once a pull request is
-created:
+Two mandatory peer reviews must be completed before the mentor review. Once a
+pull request is created:
 
-1. **Contact a Reviewer**: Reach out to a teammate for a review and, upon agreement, tag them under
-   the Teams Planner card and GitHub pull request as the reviewer.
+1. **Contact a Reviewer**: Reach out to a teammate for a review and, upon
+   agreement, tag them under the Teams Planner card and GitHub pull request as
+   the reviewer.
 2. **Reviewer Responsibilities**: Review the code by:
    - Checking syntax, logic, and output.
    - Pulling the changes onto your local machine to test functionality.
 3. **Feedback Process**: If the reviewer requests changes:
    - Update the contribution based on the feedback.
-   - Notify the reviewer once changes are committed and pushed. This will automatically update the
-     pull request, eliminating the need to create a new one.
-4. **Completion of Peer Reviews**: Once two peer reviews are completed and the contribution is
-   deemed correct, the pull request can be moved to the "Mentor Review" column.
+   - Notify the reviewer once changes are committed and pushed. This will
+     automatically update the pull request, eliminating the need to create a new
+     one.
+4. **Completion of Peer Reviews**: Once two peer reviews are completed and the
+   contribution is deemed correct, the pull request can be moved to the "Mentor
+   Review" column.
 
 [Watch this tutorial video by Satika Jayawardena](https://deakin365.sharepoint.com/:v:/r/sites/ThothTech2/Shared%20Documents/OnTrack/Demo%20videos/pull-request-demo.mov?csf=1&web=1&e=a6p1gg&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 for a step-by-step guide on creating and reviewing pull requests.
 
-Once the pull request is in the "Mentor Review" column, a mentor will review the work. If
-satisfactory, it will be marked as complete and moved to the current sprint's "Complete" column. If
-additional changes are needed, the task may be moved back to "Doing" for further refinement.
+Once the pull request is in the "Mentor Review" column, a mentor will review the
+work. If satisfactory, it will be marked as complete and moved to the current
+sprint's "Complete" column. If additional changes are needed, the task may be
+moved back to "Doing" for further refinement.
 
-**Reflection**: The current process ensures quality and collaboration; however, it often results in
-delays due to the high volume of tasks awaiting review. To improve efficiency:
+**Reflection**: The current process ensures quality and collaboration; however,
+it often results in delays due to the high volume of tasks awaiting review. To
+improve efficiency:
 
 - Encourage a structured schedule for reviews.
 - Promote accountability among team members for timely reviews.
-- Streamline the review process for smaller or less complex tasks by requiring only one peer review
-  before the mentor review. These changes could help reduce bottlenecks and ensure more tasks reach
-  completion within the sprint timeline.
+- Streamline the review process for smaller or less complex tasks by requiring
+  only one peer review before the mentor review. These changes could help reduce
+  bottlenecks and ensure more tasks reach completion within the sprint timeline.
 
-Please refer to the [SplashKit Product Page](https://thoth-tech.netlify.app/products/splashkit/) on
+Please refer to the
+[SplashKit Product Page](https://thoth-tech.netlify.app/products/splashkit/) on
 the Thoth Tech Documentation Site for peer review templates and guidance.
 
 #### Testing
 
-Testing strategies depend on the project – please see each project's onboarding information for more
-details.
+Testing strategies depend on the project – please see each project's onboarding
+information for more details.
 
 #### Branching Strategy
 
@@ -1583,97 +1724,115 @@ for guidelines on creating Git branches and commits for contributions.
 
 ### Product Architecture
 
-The SplashKit ecosystem is a robust and interconnected suite of tools and platforms designed to
-simplify game development and enhance learning for both beginners and experienced developers. Its
-architecture comprises several components, each serving a distinct role while synergising to create
-a seamless user experience:
+The SplashKit ecosystem is a robust and interconnected suite of tools and
+platforms designed to simplify game development and enhance learning for both
+beginners and experienced developers. Its architecture comprises several
+components, each serving a distinct role while synergising to create a seamless
+user experience:
 
 #### SplashKit SDK (Core Foundation)
 
-At the heart of the ecosystem is the SplashKit SDK, a versatile toolkit that enables cross-platform
-game development. Built using **C++**, **SDL**, and **OpenGL**, the SDK provides the underlying
-functionality for things such as graphics, input handling, and audio. The automated translation into
-**C#**, **Python**, and **Pascal** further extends its reach to diverse programming communities.
+At the heart of the ecosystem is the SplashKit SDK, a versatile toolkit that
+enables cross-platform game development. Built using **C++**, **SDL**, and
+**OpenGL**, the SDK provides the underlying functionality for things such as
+graphics, input handling, and audio. The automated translation into **C#**,
+**Python**, and **Pascal** further extends its reach to diverse programming
+communities.
 
-- **Integration:** The SDK powers all games developed within the ecosystem, supports tools like
-  SplashKit Online, and forms the basis of the games showcased on the SplashKit.io website.
+- **Integration:** The SDK powers all games developed within the ecosystem,
+  supports tools like SplashKit Online, and forms the basis of the games
+  showcased on the SplashKit.io website.
 
 #### SplashKit.io Website (User Portal)
 
-The website serves as the primary interface for developers, offering access to **API
-documentation**, **installation guides**, and **tutorials**. Built using **Starlight (Astro)**,
-**React**, **SolidJS**, and **Tailwind CSS**, it ensures a responsive, user-friendly experience.
-Dockerised deployment with **Node.js** ensures scalability and consistency.
+The website serves as the primary interface for developers, offering access to
+**API documentation**, **installation guides**, and **tutorials**. Built using
+**Starlight (Astro)**, **React**, **SolidJS**, and **Tailwind CSS**, it ensures
+a responsive, user-friendly experience. Dockerised deployment with **Node.js**
+ensures scalability and consistency.
 
-- **Interaction:** The website recently saw integration with SplashKit Online, linking directly to
-  interactive examples and development tools. It also showcases games developed using SplashKit and
-  connects users to the broader community.
+- **Interaction:** The website recently saw integration with SplashKit Online,
+  linking directly to interactive examples and development tools. It also
+  showcases games developed using SplashKit and connects users to the broader
+  community.
 
 #### SplashKit Online (Interactive Development)
 
-SplashKit Online extends the SDK's capabilities by providing a web-based **IDE** that supports
-real-time coding and testing. Powered by **WebAssembly (WASM)** and **Emscripten**, the platform
-allows users to experiment with **C++** and **JavaScript** code directly in their browsers without
-the need for local installations.
+SplashKit Online extends the SDK's capabilities by providing a web-based **IDE**
+that supports real-time coding and testing. Powered by **WebAssembly (WASM)**
+and **Emscripten**, the platform allows users to experiment with **C++** and
+**JavaScript** code directly in their browsers without the need for local
+installations.
 
-- **Role in Ecosystem:** This component is an exciting new tool that can be used for onboarding new
-  developers, particularly beginners, enabling them to dive into SplashKit with minimal setup.
+- **Role in Ecosystem:** This component is an exciting new tool that can be used
+  for onboarding new developers, particularly beginners, enabling them to dive
+  into SplashKit with minimal setup.
 
 #### Arcade Machine (Hardware Integration)
 
-Developed in collaboration with **Deakin University**, the arcade machines run on **Raspberry Pi**
-hardware, leveraging **emulationstation** and **retropie**. These machines allow developers to test
-and showcase their games in a real-world arcade environment, offering a tactile experience that
-bridges software and hardware.
+Developed in collaboration with **Deakin University**, the arcade machines run
+on **Raspberry Pi** hardware, leveraging **emulationstation** and **retropie**.
+These machines allow developers to test and showcase their games in a real-world
+arcade environment, offering a tactile experience that bridges software and
+hardware.
 
-- **Interaction:** Games created using the SplashKit SDK can be directly uploaded and tested on
-  these machines, demonstrating the SDK's versatility.
+- **Interaction:** Games created using the SplashKit SDK can be directly
+  uploaded and tested on these machines, demonstrating the SDK's versatility.
 
 #### Game Development (Showcase Content)
 
-The Game Development team produces games that highlight the capabilities of the SplashKit SDK. These
-games, typically developed in **C++** or **C#**, showcase advanced features like dynamic graphics,
-audio handling, and AI systems, serving as inspiration and learning tools for new developers.
+The Game Development team produces games that highlight the capabilities of the
+SplashKit SDK. These games, typically developed in **C++** or **C#**, showcase
+advanced features like dynamic graphics, audio handling, and AI systems, serving
+as inspiration and learning tools for new developers.
 
-- **Feedback Loop:** These games not only demonstrate SplashKit's potential but also inform SDK
-  improvements based on practical usage and user feedback.
+- **Feedback Loop:** These games not only demonstrate SplashKit's potential but
+  also inform SDK improvements based on practical usage and user feedback.
 
 #### Tech Stack
 
 ##### SplashKit.io Website
 
-- **Starlight (Astro):** A modern static site generator for building fast, highly optimised
-  websites.
-- **React, SolidJS:** Enable dynamic interactivity for specific pages and components.
+- **Starlight (Astro):** A modern static site generator for building fast,
+  highly optimised websites.
+- **React, SolidJS:** Enable dynamic interactivity for specific pages and
+  components.
 - **Tailwind CSS:** Provides consistent, rapid styling for the site.
 - **Node.js:** Powers backend infrastructure for server-side operations.
 - **Docker:** Ensures consistent development and deployment environments.
 
 ##### SplashKit SDK
 
-- **C++:** The primary programming language for high-performance SDK development.
-- **SDL, OpenGL:** Provide core functionality for graphics rendering and input handling.
-- **CMake and Clang/LLVM:** Streamline cross-platform builds and ensure code quality.
-- **Automated Translation (C#, Python, Pascal):** Expands accessibility by supporting multiple
-  programming languages.
+- **C++:** The primary programming language for high-performance SDK
+  development.
+- **SDL, OpenGL:** Provide core functionality for graphics rendering and input
+  handling.
+- **CMake and Clang/LLVM:** Streamline cross-platform builds and ensure code
+  quality.
+- **Automated Translation (C#, Python, Pascal):** Expands accessibility by
+  supporting multiple programming languages.
 
 ##### SplashKit Online
 
-- **WebAssembly (WASM) and Emscripten:** Allow C++ code to be executed directly in the browser.
-- **JavaScript:** Provides seamless interactivity and functionality for browser-based development.
+- **WebAssembly (WASM) and Emscripten:** Allow C++ code to be executed directly
+  in the browser.
+- **JavaScript:** Provides seamless interactivity and functionality for
+  browser-based development.
 - **Node/NPM:** Handles dependency management and operates the test server.
 
 ##### Arcade Machine
 
-- **Raspberry Pi:** Affordable and flexible hardware platform used for arcade machines.
-- **emulationstation, retropie:** Facilitate the arcade interface and integration with
-  SplashKit-developed games.
+- **Raspberry Pi:** Affordable and flexible hardware platform used for arcade
+  machines.
+- **emulationstation, retropie:** Facilitate the arcade interface and
+  integration with SplashKit-developed games.
 
 ##### Game Development
 
-- **C++, C#:** Industry-standard programming languages for creating high-quality games.
-- **Game Design Best Practices:** Ensure games demonstrate the full capabilities of SplashKit while
-  adhering to professional standards.
+- **C++, C#:** Industry-standard programming languages for creating high-quality
+  games.
+- **Game Design Best Practices:** Ensure games demonstrate the full capabilities
+  of SplashKit while adhering to professional standards.
 
 ### Source Code
 

@@ -9,8 +9,8 @@ Download current arcade Image from here (accessible to Thoth-Tech Team Members):
 
 SHA256 Hash `31f0ea11c8492000d003108bf84afbb261ad6ee7c1be989f52a2b4add9d8821e`
 
-Use a program like [etcher](https://etcher.balena.io/) to create a bootable USB or SD card with the
-Arcade image.
+Use a program like [etcher](https://etcher.balena.io/) to create a bootable USB
+or SD card with the Arcade image.
 
 1. Open etcher
 2. Select image
@@ -39,11 +39,11 @@ These are the Credentials setup on the image
 
 ## Connect to eduroam
 
-Two changes need to be made to allow the Pi to access the eduroam network. One to network interfaces
-and one to wpa_supplicant:
+Two changes need to be made to allow the Pi to access the eduroam network. One
+to network interfaces and one to wpa_supplicant:
 
-1. Modify /etc/network/interfaces to bring the wlan0 interface up automatically, use DHCP and read
-   from the wpa_supplicant config
+1. Modify /etc/network/interfaces to bring the wlan0 interface up automatically,
+   use DHCP and read from the wpa_supplicant config
    - From the console open the interfaces file:
 
      ```shell
@@ -89,8 +89,9 @@ and one to wpa_supplicant:
      }
      ```
 
-   - Replace **YOURUSERNAME** and **YOURPASSWORD** with the arcade machine's eduroam login
-     credentials. Ensure you include the domain I.E. "<arcademachine@deakin.edu.au>"
+   - Replace **YOURUSERNAME** and **YOURPASSWORD** with the arcade machine's
+     eduroam login credentials. Ensure you include the domain I.E.
+     "<arcademachine@deakin.edu.au>"
    - Press Ctrl+X to exit and press **y** when prompted to save your changes.
 
 3. Reboot and test network connectivity
@@ -100,7 +101,8 @@ and one to wpa_supplicant:
      sudo reboot
      ```
 
-   - Test network connectivity by pinging an external site, for example Google's DNS:
+   - Test network connectivity by pinging an external site, for example Google's
+     DNS:
 
      ```shell
      ping 8.8.8.8
@@ -110,14 +112,16 @@ and one to wpa_supplicant:
 
 ### 1. Install SplashKit
 
-- Follow the [Linux (Ubuntu) Installation Guide](https://splashkit.io/installation/linux/) on the
-  SplashKit website.
-- Primarly perform steps 1 and 2, VS code is optional unless you whish to adjust programming on the
-  PI directly.
+- Follow the
+  [Linux (Ubuntu) Installation Guide](https://splashkit.io/installation/linux/)
+  on the SplashKit website.
+- Primarly perform steps 1 and 2, VS code is optional unless you whish to adjust
+  programming on the PI directly.
 
 ### 2. Install .NET (dotnet)
 
-- You can refer to [this page](https://learn.microsoft.com/en-us/dotnet/iot/deployment) but these
+- You can refer to
+  [this page](https://learn.microsoft.com/en-us/dotnet/iot/deployment) but these
   are the core commands:
   1. Run this install script
 
@@ -182,8 +186,8 @@ and one to wpa_supplicant:
    nano ~/.emulationstation/es_systems.cfg
    ```
 
-8. Add the following configuration code to the `es_systems.cfg` file: Or, you can download a copy
-   from here:
+8. Add the following configuration code to the `es_systems.cfg` file: Or, you
+   can download a copy from here:
    <a href="https://raw.githubusercontent.com/thoth-tech/ThothTech-Documentation-Website/refs/heads/main/public/arcade-machine-files/es_systems.cfg" download>Click
    to Download</a>
 
@@ -327,13 +331,13 @@ and one to wpa_supplicant:
 
 ### Setup WiFi Access Point (Optional)
 
-This will set the PI up as a WiFi Access Point so you can SSH in when the USB ports are not
-accessible.
+This will set the PI up as a WiFi Access Point so you can SSH in when the USB
+ports are not accessible.
 
 [Basic Guide Availble Here](https://gist.github.com/narate/d3f001c97e1c981a59f94cd76f041140)
 
-Enter the following commands, the SSID is set to Arcade1 - change the number for the machine you are
-working on.
+Enter the following commands, the SSID is set to Arcade1 - change the number for
+the machine you are working on.
 
 ```shell
 nmcli con add type wifi ifname wlan0 con-name Hostspot autoconnect yes ssid Arcade1
@@ -343,10 +347,13 @@ nmcli con modify Hostspot wifi-sec.psk "GamesAreFun"
 nmcli con up Hostspot
 ```
 
-The Pi will now be broadcasting a WiFi network called Arcade1 with the password GamesAreFun
+The Pi will now be broadcasting a WiFi network called Arcade1 with the password
+GamesAreFun
 
-- The IP address of the Pi will be 10.42.0.1/24 this current setup does not allow for DHCP so any
-- connecting client will need to manually set an IP address in use the following settings:
+- The IP address of the Pi will be 10.42.0.1/24 this current setup does not
+  allow for DHCP so any
+- connecting client will need to manually set an IP address in use the following
+  settings:
 
   IP Address: 10.42.0.2 Subnet Mask: 255.255.255.0 Gateway: 10.42.0.1
 
@@ -382,18 +389,19 @@ The Pi will now be broadcasting a WiFi network called Arcade1 with the password 
 
 ## Installing the Splashkit Theme
 
-1. Download the Themes folder located at: docs/Splashkit/Applications/Arcade Machines/Arcade Machine
-   Setup/Files
+1. Download the Themes folder located at: docs/Splashkit/Applications/Arcade
+   Machines/Arcade Machine Setup/Files
 
-2. Copy the Themes folder into your .emulationstation folder, located at ~/.emulationstation on the
-   Raspberry Pi or at %HOMEPATH%/.emulationstation on windows devices.
+2. Copy the Themes folder into your .emulationstation folder, located at
+   ~/.emulationstation on the Raspberry Pi or at %HOMEPATH%/.emulationstation on
+   windows devices.
 
-3. In the es_systems.cfg file, located in the file paths mentioned in step 2, you will need to
-   change the XML code for the theme to be "sk."
+3. In the es_systems.cfg file, located in the file paths mentioned in step 2,
+   you will need to change the XML code for the theme to be "sk."
 
    ![es_systems.cfg file open showing where to change the theme](/docs/Splashkit/Applications/Arcade%20Machines/Arcade%20Machine%20Setup/Images/SystemThemeSetup.jpg)
 
-4. Launch EmulationStation, open the start menu, and under UI settings change Theme set to
-   "Splashkit."
+4. Launch EmulationStation, open the start menu, and under UI settings change
+   Theme set to "Splashkit."
 
    ![Theme Set selection in EmulationStation](/docs/Splashkit/Applications/Arcade%20Machines/Arcade%20Machine%20Setup/Images/SettingsThemeSelection.png)

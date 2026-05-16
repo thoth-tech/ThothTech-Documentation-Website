@@ -11,10 +11,11 @@ To navigate through the pages of the website, use the navigation bar menus.
 
 ![Navbar](/website-img1.png)
 
-After clicking on Products nav menu, you will be directed to the OnTrack page, after which you have
-to click Products to navigate through the various product pages.
+After clicking on Products nav menu, you will be directed to the OnTrack page,
+after which you have to click Products to navigate through the various product
+pages.
 
 ![Navbar](/website-img2.png)
 
-**Note: The PDF design and figma file can be found in the Company Operations Repo >> Projects >>
-Thoth Tech Website.**
+**Note: The PDF design and figma file can be found in the Company Operations
+Repo >> Projects >> Thoth Tech Website.**

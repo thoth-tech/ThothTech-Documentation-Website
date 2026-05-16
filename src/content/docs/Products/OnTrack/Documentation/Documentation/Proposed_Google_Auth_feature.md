@@ -2,10 +2,11 @@
 title: Google Authentication Implementation in Ruby on Rails Introduction
 ---
 
-This report details the attempted implementation of Google authentication using the
-google-api-client gem, challenges encountered, and a proposal for a new approach using the
-google-authenticator library available here the goal is to establish a secure, robust, and efficient
-authentication system within a Ruby on Rails application.
+This report details the attempted implementation of Google authentication using
+the google-api-client gem, challenges encountered, and a proposal for a new
+approach using the google-authenticator library available here the goal is to
+establish a secure, robust, and efficient authentication system within a Ruby on
+Rails application.
 
 ## What Was Tried and Why It Didn't Work
 
@@ -13,28 +14,30 @@ authentication system within a Ruby on Rails application.
 
 1. **Setup Using google-api-client:**
    - Integrated the gem to handle Google OAuth 2.0.
-   - Created an endpoint in authentication_api.rb for Google authentication (/auth/google).
+   - Created an endpoint in authentication_api.rb for Google authentication
+     (/auth/google).
    - Configured token verification using Google::Apis::Oauth2V2::Oauth2Service.
    - Generated temporary tokens for authenticated users.
 
 2. **Challenges Identified:**
-   - **Token Validation Failures:** Issues with API key configuration and scope validation caused
-     intermittent failures.
-   - **Complexity in Library Usage:** The google-api-client gem required extensive configuration and
-     debugging for basic functionality.
-   - **Session Management:** Temporary tokens generated lacked proper integration with the
-     application's session flow.
+   - **Token Validation Failures:** Issues with API key configuration and scope
+     validation caused intermittent failures.
+   - **Complexity in Library Usage:** The google-api-client gem required
+     extensive configuration and debugging for basic functionality.
+   - **Session Management:** Temporary tokens generated lacked proper
+     integration with the application's session flow.
 
 ## Proposed Approach: Using google-authenticator
 
-The [Google-authenticator](https://github.com/jaredonline/google-authenticator) library offers a
-simplified and efficient way to implement Google OAuth 2.0. It abstracts much of the complexity of
-token validation and user data retrieval.
+The [Google-authenticator](https://github.com/jaredonline/google-authenticator)
+library offers a simplified and efficient way to implement Google OAuth 2.0. It
+abstracts much of the complexity of token validation and user data retrieval.
 
 ### Key Benefits
 
 - Simplified integration of Google authentication.
-- Minimal configuration with a focus on token validation and secure user onboarding.
+- Minimal configuration with a focus on token validation and secure user
+  onboarding.
 - Lightweight and developer-friendly, reducing overhead.
 
 ### Implementation Plan Using google-authenticator
@@ -123,7 +126,8 @@ token validation and user data retrieval.
 
 ## Conclusion
 
-The switch to the google-authenticator library addresses the shortcomings of the previous approach
-while simplifying the integration process. This plan provides a clear path toward a reliable and
-secure Google authentication mechanism in the application. By leveraging this lightweight library,
-we can reduce complexity and improve user experience.
+The switch to the google-authenticator library addresses the shortcomings of the
+previous approach while simplifying the integration process. This plan provides
+a clear path toward a reliable and secure Google authentication mechanism in the
+application. By leveraging this lightweight library, we can reduce complexity
+and improve user experience.

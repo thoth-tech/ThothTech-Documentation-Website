@@ -1,7 +1,8 @@
 ---
 title: Task-Dashboard Migration Investigation
 description:
-  Investigation report for completing the task-dashboard migration from AngularJS to Angular
+  Investigation report for completing the task-dashboard migration from
+  AngularJS to Angular
 ---
 
 # Task-Dashboard Migration Investigation
@@ -14,9 +15,10 @@ description:
 
 ## What I Found
 
-The task-dashboard migration is about 80% done. The Angular components exist and work (I can see
-them running in `inbox.component.html`), but the main dashboard view still loads the old AngularJS
-directives. We have two parallel systems running.
+The task-dashboard migration is about 80% done. The Angular components exist and
+work (I can see them running in `inbox.component.html`), but the main dashboard
+view still loads the old AngularJS directives. We have two parallel systems
+running.
 
 ---
 
@@ -32,7 +34,8 @@ I went through the code and found these 7 card components that got migrated:
 6. TaskStatusCardComponent
 7. TaskAssessmentCardComponent
 
-All work fine - just need to finish switching the main dashboard over to use them.
+All work fine - just need to finish switching the main dashboard over to use
+them.
 
 ---
 
@@ -64,9 +67,10 @@ All work fine - just need to finish switching the main dashboard over to use the
 
 ## Why It's Tricky
 
-These changes need to happen together. If I update the template but not the state registration,
-routing breaks. If I delete files before updating the template, the dashboard stops loading. Can't
-split this into many small PRs - it's one atomic change.
+These changes need to happen together. If I update the template but not the
+state registration, routing breaks. If I delete files before updating the
+template, the dashboard stops loading. Can't split this into many small PRs -
+it's one atomic change.
 
 ---
 
@@ -114,11 +118,12 @@ Step 4: Delete old files
 
 ## Risk Level: Low
 
-The Angular components already work. This is just switching which template system renders them. If
-something breaks, we can revert quickly since the old files are still in git history.
+The Angular components already work. This is just switching which template
+system renders them. If something breaks, we can revert quickly since the old
+files are still in git history.
 
-Main risk: making sure no other files reference `<task-dashboard>` besides the main dashboard
-template.
+Main risk: making sure no other files reference `<task-dashboard>` besides the
+main dashboard template.
 
 ---
 

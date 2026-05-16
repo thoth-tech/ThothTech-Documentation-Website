@@ -1,6 +1,7 @@
 ---
 title: Full Angular Migration Plan - Inbox Component
-description: Complete migration plan for inbox component including parent dependency chain
+description:
+  Complete migration plan for inbox component including parent dependency chain
 ---
 
 # Full Angular Migration Plan: Inbox Component
@@ -27,8 +28,8 @@ units/tasks/inbox/inbox.coffee (Child)
     Uses: unit, unitRole, taskData
 ```
 
-**The problem:** Inbox component needs data from two AngularJS parent states. Can't fully migrate
-inbox until parents are migrated.
+**The problem:** Inbox component needs data from two AngularJS parent states.
+Can't fully migrate inbox until parents are migrated.
 
 ---
 
@@ -58,10 +59,11 @@ inbox until parents are migrated.
 
 ### PR 1: Migrate units/index (START HERE)
 
-**Status:** Already started - https://github.com/thoth-tech/doubtfire-web/pull/435
+**Status:** Already started -
+https://github.com/thoth-tech/doubtfire-web/pull/435
 
-Migrate the root parent first. Replace AngularJS state with Angular resolvers that provide unit and
-unitRole data.
+Migrate the root parent first. Replace AngularJS state with Angular resolvers
+that provide unit and unitRole data.
 
 **Files to change:**
 
@@ -136,5 +138,6 @@ Each PR needs to verify:
 
 ## Key Principle
 
-**Bottom-up migration:** Start at the root (units/index), work down to the child (inbox). Each PR is
-independently testable and valuable even if later ones are delayed.
+**Bottom-up migration:** Start at the root (units/index), work down to the child
+(inbox). Each PR is independently testable and valuable even if later ones are
+delayed.

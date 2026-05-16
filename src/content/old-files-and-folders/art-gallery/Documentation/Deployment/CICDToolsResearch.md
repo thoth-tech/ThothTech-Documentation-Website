@@ -4,8 +4,8 @@ title: CI/CD Technologies
 
 Author: Chloe Hulme
 
-Research discussing popular CI/CD tools, and which is best suited to automating the Art Gallery's
-deployment.
+Research discussing popular CI/CD tools, and which is best suited to automating
+the Art Gallery's deployment.
 
 ## Jenkins
 
@@ -94,22 +94,27 @@ deployment.
 - Free tier is limited
 - On-premise service, infrastructure management required
 
-┌----------------------------------┼---Jenkins---CircleCI-----GitLab----GitHub Actions---TeamCity-┐
-|Completely free-------------------┼---- ✓ ----┼---- ✗ ----┼---- ✗ ----┼----- ✗ ------┼---- ✗ ----|
-|Free-tier available---------------┼---- ✓ ----┼---- ✓ ----┼---- ✓ ----┼----- ✓ ------┼---- ✓ ----|
-|Cloud hosted----------------------┼---- ✗ ----┼---- ✓ ----┼---- ✗ ----┼----- ✓ ------┼---- ✗ ----|
-|Branch-specific deployment--------┼---- ✓ ----┼---- ✓ ----┼---- ✓ ----┼----- ✓ ------┼---- ✓ ----|
-|Natively integration with GitHub--┼---- ✓ ----┼---- ✓ ----┼---- ✓ ----┼----- ✓ ------┼---- ✓ ----|
-|Native support for Docker---------┼---- ✗ ----┼---- ✓ ----┼---- ✓ ----┼----- ✓ ------┼---- ✗ ----|
-|Ease of setup/config--------------┼---- ✗ ----┼---- ✓ ----┼---- ✓ ----┼----- ✓ ------┼---- ✓ ----|
-|Well-established tool-------------┼---- ✓ ----┼---- ✓ ----┼---- ✗ ----┼----- ✗ ------┼---- ✓ ----|
+┌----------------------------------┼---Jenkins---CircleCI-----GitLab----GitHub
+Actions---TeamCity-┐ |Completely free-------------------┼---- ✓ ----┼---- ✗
+----┼---- ✗ ----┼----- ✗ ------┼---- ✗ ----| |Free-tier
+available---------------┼---- ✓ ----┼---- ✓ ----┼---- ✓ ----┼----- ✓ ------┼----
+✓ ----| |Cloud hosted----------------------┼---- ✗ ----┼---- ✓ ----┼---- ✗
+----┼----- ✓ ------┼---- ✗ ----| |Branch-specific deployment--------┼---- ✓
+----┼---- ✓ ----┼---- ✓ ----┼----- ✓ ------┼---- ✓ ----| |Natively integration
+with GitHub--┼---- ✓ ----┼---- ✓ ----┼---- ✓ ----┼----- ✓ ------┼---- ✓ ----|
+|Native support for Docker---------┼---- ✗ ----┼---- ✓ ----┼---- ✓ ----┼----- ✓
+------┼---- ✗ ----| |Ease of setup/config--------------┼---- ✗ ----┼---- ✓
+----┼---- ✓ ----┼----- ✓ ------┼---- ✓ ----| |Well-established
+tool-------------┼---- ✓ ----┼---- ✓ ----┼---- ✗ ----┼----- ✗ ------┼---- ✓
+----|
 └──-----------------------------------------------------------------------------------------------┘
 
-**Recommendation:** GitHub Actions is the best choice as a CI/CD pipeline tool in this project. The
-team is already familiar with this tool given the currently utilised CI pipeline. Additionally, the
-generous free tier makes this an attractive choice. Finally, centralising our work will allow us to
-streamline future changes/fixes to our pipeline as the team inevitably hands the project over to
-future cohorts.
+**Recommendation:** GitHub Actions is the best choice as a CI/CD pipeline tool
+in this project. The team is already familiar with this tool given the currently
+utilised CI pipeline. Additionally, the generous free tier makes this an
+attractive choice. Finally, centralising our work will allow us to streamline
+future changes/fixes to our pipeline as the team inevitably hands the project
+over to future cohorts.
 
-UPDATE (27/7): After discussion with the client, it is confirmed that GitHub Actions will be our
-CI/CD tool of choice.
+UPDATE (27/7): After discussion with the client, it is confirmed that GitHub
+Actions will be our CI/CD tool of choice.

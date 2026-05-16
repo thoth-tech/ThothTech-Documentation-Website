@@ -1,6 +1,8 @@
 ---
 title: Get Your Environment Set Up
-description: This is a step-by-step guide on how to get started within the SplashKit Starlight repo.
+description:
+  This is a step-by-step guide on how to get started within the SplashKit
+  Starlight repo.
 sidebar:
   label: "- Setting Up Your Environment"
   order: 2
@@ -10,25 +12,26 @@ import { Steps, Aside, Tabs, TabItem } from "@astrojs/starlight/components";
 
 ## Install Necessary Tools
 
-First things first, you'll need to install the necessary tools to get started working within
-SplashKit.io.
+First things first, you'll need to install the necessary tools to get started
+working within SplashKit.io.
 
 ### 1. Install GIT
 
-Git is essential for version control, allowing you to clone repositories, commit changes, and
-collaborate. Before you start, ensure you have Git installed on your system.
+Git is essential for version control, allowing you to clone repositories, commit
+changes, and collaborate. Before you start, ensure you have Git installed on
+your system.
 
-- Windows: Download Git from [here](https://git-scm.com/download/win) and run the installer `.exe`
-  file.
-- macOS: Git should already be installed, but you can install it with [homebrew](https://brew.sh/)
-  using the following command in your terminal:
+- Windows: Download Git from [here](https://git-scm.com/download/win) and run
+  the installer `.exe` file.
+- macOS: Git should already be installed, but you can install it with
+  [homebrew](https://brew.sh/) using the following command in your terminal:
 
   ```shell
   brew install git
   ```
 
-- Linux: Install using the package manager. For example, on Ubuntu or Debian, run the following
-  command:
+- Linux: Install using the package manager. For example, on Ubuntu or Debian,
+  run the following command:
 
   ```shell
   sudo apt-get install git
@@ -43,29 +46,30 @@ git --version
 ### 2. Download and Install VS Code
 
 - Download VS Code: Visit the official
-  [VS Code download page](https://code.visualstudio.com/download) and select the appropriate
-  installer for your operating system (Windows, macOS, or Linux).
+  [VS Code download page](https://code.visualstudio.com/download) and select the
+  appropriate installer for your operating system (Windows, macOS, or Linux).
 
 - Install VS Code:
   - Windows: Run the downloaded `.exe` file and follow the installation wizard.
-  - macOS: Open the `.dmg` file and drag the Visual Studio Code icon to the Applications folder.
-  - Linux: Install using the appropriate package manager or by downloading the `.deb` or `.rpm`
-    package from the website.
+  - macOS: Open the `.dmg` file and drag the Visual Studio Code icon to the
+    Applications folder.
+  - Linux: Install using the appropriate package manager or by downloading the
+    `.deb` or `.rpm` package from the website.
 
 - Launch VS Code: Once installed, launch Visual Studio Code.
 
 ### 3. Download and Install Node.js
 
 - Download Node.js: Go to the official
-  [Node.js website](https://nodejs.org/en/download/package-manager) and download the LTS version for
-  your operating system.
+  [Node.js website](https://nodejs.org/en/download/package-manager) and download
+  the LTS version for your operating system.
 - Install Node.js:
   - Windows: Run the downloaded `.msi` file and follow the installation wizard.
   - macOS: Open the `.pkg` file and follow the instructions.
   - Linux: You can use a package manager or install it via NodeSource.
 
-- Verify Installation: Open a terminal (or command prompt) and check if Node.js is installed
-  correctly by running the following command:
+- Verify Installation: Open a terminal (or command prompt) and check if Node.js
+  is installed correctly by running the following command:
 
   ```shell
   node -v
@@ -73,7 +77,8 @@ git --version
 
   This should return the version number of Node.js.
 
-  Also, verify the installation of npm (Node Package Manager) by running the following command:
+  Also, verify the installation of npm (Node Package Manager) by running the
+  following command:
 
   ```shell
   npm -v
@@ -83,27 +88,30 @@ git --version
 
 ### 4. Install SplashKit
 
-Head to the [SplashKit.io](https://splashkit.io/) website and follow the instructions for your
-specific operating system to install SplashKit.
+Head to the [SplashKit.io](https://splashkit.io/) website and follow the
+instructions for your specific operating system to install SplashKit.
 
 ### 5. Install Docker
 
-Head to [Docker](https://docs.docker.com/engine/install/) and install Docker for your specific
-operating system.
+Head to [Docker](https://docs.docker.com/engine/install/) and install Docker for
+your specific operating system.
 
 ### 6. Install Extensions for VS Code
 
-- Node.js Extension: Install the Node.js extension in VS Code for better integration:
+- Node.js Extension: Install the Node.js extension in VS Code for better
+  integration:
   - Open VS Code and go to the Extensions sidebar.
   - Search for "Node.js Extension Pack" and install it.
 
-- GitHub Extension: This allows you to interact with GitHub directly from VS Code.:
-  - In the Extensions sidebar, search for "GitHub Pull Requests and Issues" and install it.
+- GitHub Extension: This allows you to interact with GitHub directly from VS
+  Code.:
+  - In the Extensions sidebar, search for "GitHub Pull Requests and Issues" and
+    install it.
 
 ### 7. Install Dependencies
 
-- Once the project is cloned, navigate to the Project Directory: In the terminal, change into the
-  cloned project directory:
+- Once the project is cloned, navigate to the Project Directory: In the
+  terminal, change into the cloned project directory:
 
   ```shell
   cd <project-directory>
@@ -124,27 +132,32 @@ This will install all the necessary packages listed in the `package.json` file.
 ### 8. Installing WSL
 
 <Aside>The next steps are only required for SplashKit Core members</Aside>
-WSL is a built-in Linux distribution virtual machine for Windows. splashkit-core will be installed
-to the Linux distribution. The official SplashKit installation instructions can be found here:
-[Windows (WSL) Installation Overview](https://splashkit.io/installation/windows-wsl).
+WSL is a built-in Linux distribution virtual machine for Windows. splashkit-core
+will be installed to the Linux distribution. The official SplashKit installation
+instructions can be found here: [Windows (WSL) Installation
+Overview](https://splashkit.io/installation/windows-wsl).
 
 ### 9. Installing Windows Terminal (optional)
 
-Windows Terminal is an updated Command Prompt with many useful features. It is not mandatory to
-install, however it is recommended due to its ease of use. More information about Windows Terminal
-can be found here: [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/).It can be
-installed through the Microsoft Store.
+Windows Terminal is an updated Command Prompt with many useful features. It is
+not mandatory to install, however it is recommended due to its ease of use. More
+information about Windows Terminal can be found here:
+[Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/).It can
+be installed through the Microsoft Store.
 
-By default, new tabs will open as a Command Prompt, with WSL terminals being accessible with the
-down-arrow. Since WSL will be used so frequently, there is the option to change the default tab to
-WSL. Open the settings by clicking the down arrow and selecting ‘Settings’. In the ‘Startup’ tab,
-‘Default profile’ allows you to change the default tab type to WSL.
+By default, new tabs will open as a Command Prompt, with WSL terminals being
+accessible with the down-arrow. Since WSL will be used so frequently, there is
+the option to change the default tab to WSL. Open the settings by clicking the
+down arrow and selecting ‘Settings’. In the ‘Startup’ tab, ‘Default profile’
+allows you to change the default tab type to WSL.
 
 ## Contributing
 
-You are should now be ready to start contributing to your team project. Make sure you head over to
-the [Planner board etiquette](/products/splashkit/07-planner-board) page and familiarize yourself
-with how to correctly interact with the Microsoft Teams Planner board and then get started.
+You are should now be ready to start contributing to your team project. Make
+sure you head over to the
+[Planner board etiquette](/products/splashkit/07-planner-board) page and
+familiarize yourself with how to correctly interact with the Microsoft Teams
+Planner board and then get started.
 
-If you are unfamiliar with how to start contributing through GitHub, check out the
-[GitHub guide.](/products/splashkit/03-github-guide)
+If you are unfamiliar with how to start contributing through GitHub, check out
+the [GitHub guide.](/products/splashkit/03-github-guide)
