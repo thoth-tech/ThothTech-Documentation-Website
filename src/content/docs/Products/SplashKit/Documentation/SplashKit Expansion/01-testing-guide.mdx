@@ -1,0 +1,359 @@
+---
+title: Testing Guide
+---
+
+import { Steps, Tabs, TabItem } from "@astrojs/starlight/components";
+
+You cannot create new programs with splashkit-core as you do when using the traditional SplashKit
+library. Instead, two programs are generated which can be configured to test its functionality:
+`sktest` and `skunit_tests`. They are built with CMake using a preconfigured `CMakeLists.txt` file,
+which builds the SplashKit library and both test programs.
+
+### Making Changes
+
+`sktest` is built with the .cpp files from `splashkit-core/coresdk/src/test/`. To add your own
+tests, modify one or more of the files such as `test_animation.cpp`. Tests in `sktest` tend to focus
+on demonstrating the output of functions, and require a human to validate that output. They are
+written in standard C++ and can make use of SplashKit functions.
+
+`skunit_tests` is built with the .cpp files from `splashkit-core/coresdk/src/test/unit_tests/`. When
+it runs, all unit tests from all files in this folder are executed. Additional files can be added to
+this folder if necessary. If adding a new file, copy the structure from one of the existing unit
+test files. Unlike `sktest`, tests here need to be written as Catch2 test cases and
+`#include "catch.hpp"` must be present in a given file for it to be compiled into `skunit_tests`.
+These tests evaluate actual output against expected output and produce an error if a test fails. See
+the
+[unit testing guide](/products/splashkit/documentation/splashkit-expansion/02-writing-unit-tests)
+for a more in depth explanation of how unit tests are written.
+
+## Building the test project
+
+If a change is made to the code, the build process needs to be run. This applies whether changes
+were made to coresdk files (such as adding new functions to SplashKit or changing existing code) or
+new tests were added to sktest or skunit_tests.
+
+### Install prerequisites
+
+<Tabs syncKey="platform">
+<TabItem label="Linux/WSL">
+
+Open a terminal and install prerequisites with these commands:
+
+```shell
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get install -y \
+git build-essential cmake g++ libpng-dev libcurl4-openssl-dev libsdl2-dev \
+libsdl2-mixer-dev libsdl2-gfx-dev libsdl2-image-dev libsdl2-net-dev libsdl2-ttf-dev \
+libmikmod-dev libbz2-dev libflac-dev libvorbis-dev libwebp-dev libfreetype6-dev
+```
+
+</TabItem>
+<TabItem label="Windows (MSYS)">
+
+Open the MINGW64 terminal and install prerequisites with these commands:
+
+```shell
+pacman -Syu
+pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-gdb mingw-w64-x86_64-cmake mingw-w64-x86_64-make
+```
+
+</TabItem>
+</Tabs>
+
+### Build from the command line
+
+<Tabs syncKey="platform">
+<TabItem label="Linux/WSL">
+
+```shell
+cd projects/cmake
+cmake --preset Linux
+cmake --build build/
+```
+
+</TabItem>
+<TabItem label="macOS">
+
+```shell
+cd projects/cmake
+cmake --preset macOS
+cmake --build build/
+```
+
+</TabItem>
+<TabItem label="Windows (MSYS)">
+
+```shell
+cd projects/cmake
+cmake --preset Windows
+cmake --build build/
+```
+
+</TabItem>
+</Tabs>
+
+### Build in VS Code
+
+<Tabs syncKey="platform">
+<TabItem label="Linux/WSL">
+<Steps>
+
+1. Install the CMake Tools extension from the VS Code extension browser or
+   [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools).
+
+2. Configure the extension:  
+   Select `${workspaceFolder}/projects/cmake/CMakeLists.txt`  
+   ![Select CMake Lists](images/build-unit-tests/1-select-cmakelists.png)  
+   Select the Linux preset  
+   ![Select Linux preset](images/build-unit-tests/2-select-preset-linux.png)  
+   Select the Default configure preset  
+   ![Select Default preset](images/build-unit-tests/2-select-preset-default.png)  
+   In the CMake Tools extension click the button
+   ![Build target button](images/build-unit-tests/select-target.png) next to Build and select all  
+   ![Select build target](images/build-unit-tests/3-target.png)  
+   Click the button ![Select Default preset](images/build-unit-tests/select-target.png) next to
+   Debug and select skunit_tests  
+   ![Select debug/launch target](images/build-unit-tests/4-debug-target.png)
+
+3. Build test project:  
+   In the CMake Tools extension, click the Build button. The test project will also be built when
+   you refresh tests on the Testing tab of VS Code.  
+   ![Build tests](images/build-unit-tests/5-build.png)
+
+</Steps>
+</TabItem>
+<TabItem label="macOS">
+<Steps>
+
+1. Install the CMake Tools extension from the VS Code extension browser or
+   [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools).
+
+2. Configure the extension:  
+   Select `${workspaceFolder}/projects/cmake/CMakeLists.txt`  
+   ![Select CMake Lists](images/build-unit-tests/1-select-cmakelists.png)  
+   Select the macOS preset  
+   ![Select macOS preset](images/build-unit-tests/2-select-preset-mac.png)  
+   Select the Default configure preset  
+   ![Select Default preset](images/build-unit-tests/2-select-preset-default.png)  
+   In the CMake Tools extension click the button
+   ![Build target button](images/build-unit-tests/select-target.png) next to Build and select all  
+   ![Select build target](images/build-unit-tests/3-target.png)  
+   Click the button ![Select Default preset](images/build-unit-tests/select-target.png) next to
+   Debug and select skunit_tests  
+   ![Select debug/launch target](images/build-unit-tests/4-debug-target.png)
+
+3. Build test project:  
+   In the CMake Tools extension, click Build. The test project will also be built when you refresh
+   tests on the Testing tab of VS Code.  
+   ![Build tests](images/build-unit-tests/5-build.png)
+
+</Steps>
+</TabItem>
+<TabItem label="Windows (MSYS)">
+<Steps>
+
+1. Install the CMake Tools extension from the VS Code extension browser or
+   [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools).
+
+2. Configure the extension:  
+   Select `${workspaceFolder}/projects/cmake/CMakeLists.txt`  
+   ![Select CMake Lists](images/build-unit-tests/1-select-cmakelists.png)  
+   Select the Windows preset  
+   ![Select Windows preset](images/build-unit-tests/2-select-preset-windows.png)  
+   Select the Default configure preset  
+   ![Select Default preset](images/build-unit-tests/2-select-preset-default.png)  
+   In the CMake Tools extension click the button
+   ![Build target button](images/build-unit-tests/select-target.png) next to Build and select all  
+   ![Select build target](images/build-unit-tests/3-target.png)  
+   Click the button ![Select Default preset](images/build-unit-tests/select-target.png) next to
+   Debug and select skunit_tests  
+   ![Select debug/launch target](images/build-unit-tests/4-debug-target.png)
+
+3. Build test project:  
+   In the CMake Tools extension, click Build. The test project will also be built when you refresh
+   tests on the Testing tab of VS Code.  
+   ![Build tests](images/build-unit-tests/5-build.png)
+
+</Steps>
+</TabItem>
+</Tabs>
+
+## Running Tests
+
+After building the test programs, the compiled executables wiil be found in the `splashkit-core/bin`
+directory. Running tests differs depending on if the tests are part of `sktest` or `skunit_tests`.
+
+### The sktest program
+
+<Tabs>
+<TabItem label="Linux/WSL">
+
+To run `sktest`, open a terminal and enter:
+
+```shell
+cd splashkit-core/bin
+./sktest
+```
+
+</TabItem>
+<TabItem label="macOS">
+
+To run `sktest`, open a terminal and enter:
+
+```shell
+cd splashkit-core/bin
+./sktest
+```
+
+</TabItem>
+<TabItem label="Windows (MSYS)">
+
+To run `sktest`, open the MinGW terminal and enter:
+
+```shell
+cd splashkit-core/bin
+./sktest.exe
+```
+
+</TabItem>
+</Tabs>
+
+A menu will be presented, showing a list of all the tests that are part of sktest. Select a test to
+run by entering the corresponding number.
+
+```plaintext
+---------------------
+ SplashKit Dev Tests
+---------------------
+ -1: Quit
+ 0: Animations
+ 1: Audio
+ 2: Bundles
+ 3: Camera
+ 4: Geometry
+ 5: Graphics
+ 6: Input
+ 7: Logging
+ 8: Physics
+ 9: Resources
+ 10: Shape drawing
+ 11: Sprite tests
+ 12: Terminal
+ 13: Text
+ 14: Timers
+ 15: Windows
+ 16: Cave Escape
+ 17: Web Server
+ 18: RESTful Web Service
+ 19: Network conversions
+ 20: UDP Networking Test
+ 21: TCP Networking Test
+ 22: GPIO Tests
+ 23: ADC Tests
+ 24: Motor Driver Tests
+ 25: Servo Driver Tests
+ 26: Remote GPIO Tests
+ 27: GPIO Tests - SPI
+ 28: UI Tests
+---------------------
+ Select test to run:
+```
+
+### Unit tests
+
+Unit tests are built with the same process as `sktest`, but run with the `skunit_tests` program.
+
+#### From the command line
+
+<Tabs syncKey="platform">
+<TabItem label="Linux/WSL">
+
+- It's a good idea to run the unit tests in a random order so that you can confirm that they run
+  indepedently of one another. If tests run in order, you may miss issues that occur when a test
+  runs without the tests before it passing.
+
+  ```shell
+  cd ../../bin
+  ./skunit_tests --order rand
+  ```
+
+  By default, this will only show reports for failed tests. To show reports for successful tests as
+  well, use the option `--success`. More command line options can be found in
+  [Catch2's documentation](https://github.com/catchorg/Catch2/blob/v2.x/docs/command-line.md).
+
+- If you want to run a specific test, or group of tests, you can do so:
+
+  ```shell
+  ./skunit_tests <test spec>
+  ```
+
+  The `test spec` can be a test name or tags and supports wildcards. For example, `*string*` would
+  run all of the tests with "string" in the name.
+
+</TabItem>
+<TabItem label="macOS">
+
+- It's a good idea to run the unit tests in a random order so that you can confirm that they run
+  indepedently of one another. If tests run in order, you may miss issues that occur when a test
+  runs without the tests before it passing.
+
+  ```shell
+  cd ../../bin
+  ./skunit_tests --order rand
+  ```
+
+  By default, this will only show reports for failed tests. To show reports for successful tests as
+  well, use the option `--success`. More command line options can be found in
+  [Catch2's documentation](https://github.com/catchorg/Catch2/blob/v2.x/docs/command-line.md).
+
+- If you want to run a specific test, or group of tests, you can do so:
+
+  ```shell
+  ./skunit_tests <test spec>
+  ```
+
+  The `test spec` can be a test name or tags and supports wildcards. For example, `*string*` would
+  run all of the tests with "string" in the name.
+
+</TabItem>
+<TabItem label="Windows (MSYS)">
+
+- It's a good idea to run the unit tests in a random order so that you can confirm that they run
+  indepedently of one another. If tests run in order, you may miss issues that occur when a test
+  runs without the tests before it passing.
+
+  ```shell
+  cd ../../bin
+  ./skunit_tests.exe --order rand
+  ```
+
+  By default, this will only show reports for failed tests. To show reports for successful tests as
+  well, use the option `--success`. More command line options can be found in
+  [Catch2's documentation](https://github.com/catchorg/Catch2/blob/v2.x/docs/command-line.md).
+
+- If you want to run a specific test, or group of tests, you can do so:
+
+  ```shell
+  ./skunit_tests.exe <test spec>
+  ```
+
+  The `test spec` can be a test name or tags and supports wildcards. For example, `*string*` would
+  run all of the tests with "string" in the name.
+
+</TabItem>
+</Tabs>
+
+#### In VS Code
+
+You can run tests from the Testing tab in VS Code if you've set up the CMake Tools extension as
+outlined above ![Testing tab](images/run-unit-tests/1-testing-tab.png)
+
+- Running all tests:  
+  Click Run Tests. Each test will be run and the status of each can be seen in the test list after a
+  test runs.  
+  ![Run Tests](images/run-unit-tests/2-run-tests.png)
+- Running a specific test:  
+  Click Run Test next to any test on the test list to run it  
+  ![Run Test](images/run-unit-tests/3-run-test.png)  
+  ![Test status](images/run-unit-tests/4-test-status.png)
