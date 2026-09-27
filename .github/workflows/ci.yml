@@ -4,25 +4,32 @@ on:
   pull_request:
   push:
     branches:
-    - main
-    - development
+      - main
+      - development
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Linelint
         uses: fernandrone/linelint@master
+
       - name: Set up Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: 24.14.0
+          cache: npm
+
       - name: Install dependencies
-        run: npm install
+        run: npm ci
+
       - name: Prettier
         run: npm run format:check
+
       - name: Vale
         run: |
           curl -L -o vale.tar.gz "https://github.com/errata-ai/vale/releases/download/v3.13.0/vale_3.13.0_Linux_64-bit.tar.gz"
@@ -31,3 +38,6 @@ jobs:
           rm vale.tar.gz
           vale --version
           npm run prose:check
+
+      - name: Build and validate documentation
+        run: npm run build
