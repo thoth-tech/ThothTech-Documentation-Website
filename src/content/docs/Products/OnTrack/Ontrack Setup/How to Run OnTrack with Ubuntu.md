@@ -5,7 +5,7 @@ title: How to Run OnTrack with Ubuntu on an External SSD
 :::note
 
 More Set Up guides located in the
-[Front End Migration/Deploy OnTrack](/products/ontrack/documentation/front-end-migration/deploy-ontrack/setting-up-doubtfire)
+[Documentation/Extended Setup Guide](/products/ontrack/documentation/extended-setup-guide/docker-compose-with-wsl2)
 folder.
 
 :::
