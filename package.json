@@ -11,7 +11,8 @@
     "format": "prettier --write \"**/*.md\" && prettier --write \"**/*.mdx\"",
     "format:check": "prettier --check \"**/*.md\" && prettier --check \"**/*.mdx\"",
     "prose:check": "vale src/content/docs --minAlertLevel error",
-    "lint": "npm run format:check && npm run prose:check"
+    "lint": "npm run format:check && npm run prose:check",
+    "docs:analyze": "node scripts/documentation-search-analyzer.mjs"
   },
   "dependencies": {
     "@astrojs/netlify": "^7.0.4",
