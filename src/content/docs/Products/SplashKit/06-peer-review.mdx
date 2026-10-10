@@ -201,7 +201,7 @@ these steps when reviewing a PR in the SplashKit Starlight repository.
 
      </TabItem>
 
-     <TabItem label ="Expansion/WebDev">
+      <TabItem label ="Expansion/WebDev">
 
    ```md
    ## General Information
@@ -241,9 +241,79 @@ these steps when reviewing a PR in the SplashKit Starlight repository.
    - [ ] Checklist Completion: Have all relevant checklist items been reviewed and completed?
    ```
 
-     </TabItem>
+      </TabItem>
 
-   </Tabs>
+      <TabItem label ="Usage Examples">
+
+   ```md
+   ## Usage Example Review Checklist
+
+   Use this checklist when reviewing SplashKit usage example Pull Requests to help maintain
+   consistency, quality, and clarity across contributions.
+
+   ### Required Files
+
+   - [ ] C++ implementation included (`.cpp`)
+   - [ ] Python implementation included (`.py`)
+   - [ ] C# OOP implementation included (`-oop.cs`)
+   - [ ] C# Top-Level implementation included (`-top-level.cs`)
+   - [ ] Relevant media asset included (`.png`, `.gif`, or `.webm` as appropriate)
+   - [ ] Text description included (`.txt`)
+
+   ### API Focus
+
+   - [ ] The example clearly demonstrates the intended SplashKit API/function.
+   - [ ] The example focuses primarily on one SplashKit API/function.
+   - [ ] SplashKit functions are used instead of language-specific alternatives where possible.
+   - [ ] Additional functionality does not distract from the API being demonstrated.
+   - [ ] The example is simple and understandable for new SplashKit users.
+
+   ### Cross-Language Consistency
+
+   - [ ] C++, Python, C# OOP, and C# Top-Level demonstrate the same core behaviour.
+   - [ ] Equivalent SplashKit APIs are used consistently across supported languages.
+   - [ ] Comments, terminology, and functionality are reasonably consistent across implementations.
+   - [ ] File names follow the existing SplashKit usage example naming convention.
+
+   ### Code Quality
+
+   - [ ] The code is clear, readable, and easy to follow.
+   - [ ] Variable names are meaningful and consistent.
+   - [ ] Comments are included where they improve understanding.
+   - [ ] Unnecessary complexity and unrelated functionality have been avoided.
+
+   ### Testing
+
+   - [ ] The example has been tested and runs successfully.
+   - [ ] The C++ implementation compiles and runs successfully.
+   - [ ] The Python implementation runs successfully.
+   - [ ] The C# implementations use the appropriate SplashKit APIs and syntax.
+   - [ ] The demonstrated behaviour matches the purpose of the usage example.
+
+   ### Media Asset and Description
+   - [ ] The media asset (`.png`, `.gif`, or `.webm`) clearly demonstrates the functionality of the example, where applicable.
+   - [ ] The media asset matches the submitted implementation.
+   - [ ] The `.txt` description clearly and concisely describes the example.
+
+   ### Repository Cleanliness
+
+   - [ ] No compiled executables or build artefacts are included.
+   - [ ] No `.dSYM` directories are included.
+   - [ ] No log or temporary files are included.
+   - [ ] No unrelated files or changes are included in the Pull Request.
+
+   ### Final Review
+
+   - [ ] All required usage example files are present.
+   - [ ] The example remains focused on the intended SplashKit API.
+   - [ ] The implementations are consistent across supported languages.
+   - [ ] Previous review feedback has been addressed, where applicable.
+   - [ ] The Pull Request is ready for approval.
+   ```
+
+      </TabItem>
+
+    </Tabs>
 
    #### Splashkit Review Prompts
    - **Type of Change**: Does this Pull Request correctly identify the type of change (bug fix, new
