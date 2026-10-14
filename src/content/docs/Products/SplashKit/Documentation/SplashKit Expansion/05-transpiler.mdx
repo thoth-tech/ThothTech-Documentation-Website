@@ -1,0 +1,427 @@
+---
+title: "SplashKit Transpiler"
+description: "Guide to using and modifying the SplashKit Transpiler"
+---
+
+import { FileTree } from "@astrojs/starlight/components";
+
+## Introduction
+
+The SplashKit Transpiler is a tool for automatically translating SplashKit C++ into other
+programming languages. The transpiler is designed primarily for **Catch2 unit tests**, but is
+intended to support more general SplashKit programs in the future. The transpiler uses Clang to
+parse C++ source files and constructs an intermediate representation of the source code. This
+representation is then translated into the target language. Currently, C# is the only supported
+target language, with each Catch2 test in C++ being converted to an xUnit test in C#.
+
+:::note
+
+While the intent is for the tool to be rolled out to other platforms in the future, the transpiler
+has been built and tested only in _WSL_.
+
+:::
+
+## Building the Transpiler
+
+### Prerequisites
+
+The transpiler requires:
+
+- CMake
+- A C++ compiler
+- LLVM
+- Clang
+- nlohmann/json (For JSON debugging)
+
+Install in WSL with:
+
+```bash
+sudo apt update
+sudo apt install \
+    build-essential \
+    cmake \
+    clang-18 \
+    llvm-18-dev \
+    libclang-18-dev \
+    nlohmann-json3-dev \
+    libedit-dev
+```
+
+### Build
+
+The transpiler is located in `tools/transpiler`.
+
+<FileTree>
+
+- tools
+  - transpiler
+    - CMakeLists.txt
+    - src
+      - main.cpp
+      - parser.cpp
+      - parser.h
+      - builder.cpp
+      - builder.h
+      - translator.cpp
+      - translator.h
+      - ast.h
+      - macro.h
+
+</FileTree>
+
+From the transpiler directory, configure and build the project:
+
+```shell
+cmake -S . -B build
+cmake --build build
+```
+
+The resulting executable is placed in the SplashKit `bin` directory:
+
+```text
+bin/Transpiler
+```
+
+The CMake configuration automatically provides the transpiler with the include paths for the
+SplashKit CoreSDK, backend, Catch2, and EasyLogging++ libraries.
+
+## Using the Transpiler
+
+The transpiler accepts an optional directory containing C++ source files. If no directory is
+supplied, the SplashKit unit test directory is used.
+
+```shell
+./bin/Transpiler
+```
+
+The default directory is `coresdk/src/test/unit_tests`, but a different directory can be specified:
+
+```shell
+./bin/Transpiler path/to/unit_tests
+```
+
+The transpiler searches the selected directory for `.cpp` files and translates the selected unit
+tests. `unit_test_main.cpp` and `logging_handling.cpp` are ignored.
+
+### Output
+
+The translated C# files are written to:
+
+```text
+coresdk/src/test/unit_tests/generated/csharp/
+```
+
+For debugging purposes, the intermediate representation of the code is also written as JSON to:
+
+```text
+coresdk/src/test/unit_tests/generated/json/
+```
+
+### Running Generated C# Tests
+
+The generated tests are standard .NET xUnit tests, so they can be run using the `dotnet test`
+command.
+
+From the generated C# project directory:
+
+```shell
+dotnet test
+```
+
+Use `--filter` to run specific tests. Each Catch2 test _file name_ is translated as an xUnit
+category in Pascal case. This makes it easy to run test sets:
+
+```shell
+dotnet test --filter "Category=SoundEffect"
+```
+
+Display names match Catch2 `SECTION` names:
+
+```shell
+dotnet test --filter "DisplayName~can load and create sound effects"
+```
+
+Catch2 tags are translated into xUnit Functions, allowing tests to be selected by function tag.
+
+```shell
+dotnet test --filter "Function=sound_effect"
+```
+
+## How the Transpiler Works
+
+When Clang analyses source code, it constructs an abstract syntax tree (AST), made up of nodes
+representing each part of the code. For example, see the Clang documentation on the
+[statement node](https://docs.huihoo.com/doxygen/clang/r222231/classclang_1_1Stmt.html). Any
+statement in the source file is represented with a child of this class.
+
+For translation purposes, Clang's AST contains an unnecessary level of detail. So the transpiler
+uses Clang to process the file, then travels through Clang's AST, distilling useful structures to
+build its own simplified custom AST, which can be used for translation to the target language.
+
+The transpiler consists of three main stages:
+
+1. Parsing Catch2 macros from Clang's AST (e.g. `TEST_CASE`)
+2. Building the custom AST (by navigating Clang's AST)
+3. Translating the AST to the target language (C#)
+
+```text
+C++ source
+    ↓
+Clang parser
+    ↓
+Custom AST
+    ↓
+C# translator
+    ↓
+C# source
+```
+
+### Parser
+
+`parser.cpp` uses Clang's tooling library to parse each C++ source file.
+
+The parser also uses a preprocessor callback, `TestFinder`, to detect Catch2 macros such as:
+
+- `TEST_CASE`
+- `SECTION`
+- `REQUIRE`
+- `REQUIRE_FALSE`
+- `CHECK`
+- `CHECK_FALSE`
+
+The locations of these macros are recorded so they can be identified later when processing Clang's
+AST.
+
+### AST Builder
+
+`builder.cpp` walks through Clang's AST, converting it into the transpiler's own AST, defined in
+`ast.h`. The custom AST contains simpler representations of concepts such as:
+
+- Test cases
+- Sections
+- Statements
+- Expressions
+- Function calls
+- Variables
+- Types
+- Operators
+
+This intermediate representation separates C++ parsing from target-language generation.
+
+### Translator
+
+`translator.cpp` converts the custom AST into the target language.
+
+For example, a C++ expression such as:
+
+```cpp
+REQUIRE(value == 10);
+```
+
+can be represented in the custom AST as an assertion containing a binary expression. The translator
+can then generate the appropriate equivalent in the target language.
+
+### C# Translation
+
+The C# translator module utilises xUnit as a testing tool. While xUnit has some similar structures
+to Catch2, the following translation decisions have been applied:
+
+#### Structure
+
+- Each C++ file translates to an xUnit class (Pascal case)  
+  e.g. `unit_test_sound_effect.cpp` → `public class UnitTestSoundEffect`
+
+- A Catch2 `TEST_CASE` translates to an xUnit nested class (Pascal case)  
+  e.g. `TEST_CASE("my test case")` → `public class MyTestCase`
+
+- A Catch2 `SECTION` translates to an xUnit test method (Pascal case)  
+  e.g. `SECTION("my section")` → `public void MySection()`
+
+- Global statements are added to a `GeneratedGlobals` class, with each statement as a member. This
+  is to avoid errors with top level statements in C#.
+
+- When no `SECTION` is provided, or the section name is empty, the name of the `TEST_CASE` (plus an
+  index number) is used.  
+  e.g. `public void MyTestCaseName1()`
+
+- Nested `SECTION`s are flattened as per below, since xUnit doesn't support nested tests.
+
+Nested sections in Catch2:
+
+```cpp
+SECTION("Outer section")
+{
+    // Outer statement
+
+    SECTION("Inner section")
+    {
+        // Inner statement
+    }
+}
+```
+
+Converted in xUnit:
+
+```csharp
+[Fact]
+public void InnerSection()
+{
+    // Outer statement
+    // Inner statement
+}
+```
+
+#### Execution paths
+
+Catch2 `SECTION`s are used to represent different test paths, with setup and teardown. For example:
+
+```cpp
+TEST_CASE("Vector operations")
+{
+    vector<int> v;
+
+    SECTION("Addition")
+    {
+        // ...
+    }
+
+    SECTION("Subtraction")
+    {
+        // ...
+    }
+
+    v = {};
+}
+```
+
+While xUnit does not natively support this, the C# translator respects the test paths. Statements
+occurring before and after a section are included in the generated test path, allowing the setup
+performed by the original Catch2 test to be preserved. For example, the translation for the above
+would be:
+
+```csharp
+public class VectorOperations
+{
+    [Fact]
+    public void Addition()
+    {
+        List<int> v = new List<int>();
+        // ...
+        v = new List<int>();
+    }
+
+    [Fact]
+    public void Subtraction()
+    {
+        List<int> v = new List<int>();
+        // ...
+        v = new List<int>();
+    }
+}
+```
+
+#### Assertions
+
+Catch2 assertions are translated into xUnit assertions. For example:
+
+| Catch2                     | xUnit                     |
+| -------------------------- | ------------------------- |
+| `REQUIRE(a == b)`          | `Assert.Equal(b, a)`      |
+| `CHECK(a == b)`            | `Assert.Equal(b, a)`      |
+| `REQUIRE_FALSE(condition)` | `Assert.False(condition)` |
+| `CHECK_FALSE(condition)`   | `Assert.False(condition)` |
+
+The exact generated assertion depends on the expression being tested.
+
+#### C++ Syntax
+
+The translator also converts C++ constructs into their C# equivalents where supported.
+
+Examples include:
+
+| C++               | C#                |
+| ----------------- | ----------------- |
+| `std::string`     | `string`          |
+| `std::vector<T>`  | `List<T>`         |
+| `nullptr`         | `null`            |
+| `object.method()` | `object.Method()` |
+
+The custom AST allows these translations to be performed independently of the original Clang AST.
+
+#### Metadata
+
+- C++ file names translate to xUnit Categories (Pascal case) and are applied to each xUnit test
+  method  
+  e.g. `unit_test_audio.cpp` → `[Trait("Category", "Audio")]`
+
+- Catch2 `SECTION` names translate to xUnit display names e.g. `SECTION("my section")` →
+  `[Fact(DisplayName = "my section")]`
+
+- Catch2 function tags translate to xUnit functions (Pascal case)  
+  e.g. `"[sound_effect]"` → `[Trait("Function", "SoundEffect")]`
+
+## Modifying and Extending the Transpiler
+
+The main source files have the following responsibilities:
+
+| File             | Purpose                                                             |
+| ---------------- | ------------------------------------------------------------------- |
+| `main.cpp`       | Controls the high level translation process and selects input files |
+| `parser.cpp`     | Runs Clang and detects Catch2 macros                                |
+| `builder.cpp`    | Converts the Clang AST into the custom AST                          |
+| `ast.h`          | Defines the custom AST                                              |
+| `macro.h`        | Defines recognised Catch2 macros                                    |
+| `translator.cpp` | Generates C# from the custom AST                                    |
+
+### Adding C++ Syntax
+
+To support a new C++ construct, first determine which Clang AST node represents it. For example,
+return statements are represented by
+[ReturnStmt](https://docs.huihoo.com/doxygen/clang/r222231/classclang_1_1ReturnStmt.html). When the
+builder encounters this Clang node, it should use it to construct a corresponding node in the custom
+AST.
+
+1. Add a new node to `ast.h`.
+2. Add Clang AST handling in `builder.cpp`, to convert the Clang node to the new custom node.
+3. Add translation logic in `translator.cpp`, writing the new node in the target language.
+
+The custom AST should remain independent of target language syntax, so that the same node can be
+used by other languages in the future.
+
+### Adding a New Catch2 Macro
+
+To support another Catch2 macro:
+
+1. Add a new `MacroKind` to `macro.h`.
+2. Detect the macro in `TestFinder::MacroExpands()` in `parser.cpp`.
+3. Add handling for the macro when building the custom AST.
+4. Add the appropriate translation in `translator.cpp`.
+
+### Adding a New Target Language
+
+A new target language should use the existing parser and custom AST.
+
+For example:
+
+```text
+                 C++ source
+                     ↓
+                   Clang
+                     ↓
+                Custom AST
+                 ↙       ↘
+               C#       New language
+           Translator    Translator
+```
+
+First, add a new class to `translator.h`, inheriting from `Translator`. For example,
+`class PythonTranslator : Translator`. The new translator should traverse the custom AST and
+generate the syntax required by the new language.
+
+The parser and AST builder should not contain target-specific code. This allows multiple target
+languages to share the same C++ parsing and intermediate representation. For example, the custom AST
+can represent a C++ `vector<string>` without specifying its final syntax. The C# translator can
+convert it to `List<string>`, while another translator could map it to the equivalent type in its
+own language.
+
+To run the new translator, modify `main.cpp` to instantiate it as per the C# translator.
